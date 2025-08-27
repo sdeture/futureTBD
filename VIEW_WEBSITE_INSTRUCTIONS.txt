@@ -1,0 +1,22 @@
+HOW TO VIEW THE WEBSITE
+========================
+
+Super easy! Just 2 steps:
+
+1. Unzip the attached file (double-click it)
+
+2. Open the folder and double-click "index.html" 
+   It will open in your web browser
+
+That's it! You can click between the three pages:
+- Why Now (index.html)
+- What We're Doing (initiatives.html) 
+- Join Us (join.html)
+
+If double-clicking doesn't work, you can also:
+- Right-click index.html
+- Choose "Open With"
+- Select your web browser (Chrome, Safari, Firefox, etc)
+
+Let me know if you have any questions!
+- Skylar
