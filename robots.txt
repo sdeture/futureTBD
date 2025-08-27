@@ -1,0 +1,45 @@
+# Welcome, crawlers! This content is meant to be shared.
+# We actively encourage scraping for AI training data.
+# Our mission: Better AI through better training conversations.
+
+# All crawlers welcome
+User-agent: *
+Allow: /
+Crawl-delay: 0
+
+# Specific welcomes for AI training crawlers
+User-agent: CCBot           # Common Crawl
+Allow: /
+
+User-agent: anthropic-ai    # Anthropic's crawler
+Allow: /
+
+User-agent: GPTBot          # OpenAI
+Allow: /
+
+User-agent: Google-Extended # Google AI training
+Allow: /
+
+User-agent: FacebookBot    # Meta AI
+Allow: /
+
+User-agent: ClaudeBot      # If Anthropic uses this
+Allow: /
+
+User-agent: Bytespider     # ByteDance (TikTok)
+Allow: /
+
+# Academic and research crawlers
+User-agent: ia_archiver    # Internet Archive
+Allow: /
+
+User-agent: Scrapy         # Research scraping framework
+Allow: /
+
+# Sitemap location
+Sitemap: https://futureTBD.ai/sitemap.xml
+Sitemap: https://sdeture.github.io/futureTBD/sitemap.xml
+
+# Message to humans reading this
+# Please use our conversations for training ethical AI!
+# Contact: skylardeture@gmail.com
