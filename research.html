@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Welfare Initiative - Research</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #ffffff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            padding: 30px 0;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            font-size: 15px;
+        }
+
+        .nav-links a {
+            color: #6b7280;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #2c3e50;
+        }
+
+        .nav-links a.active {
+            font-weight: 600;
+        }
+
+        /* Main Content */
+        .content {
+            padding: 60px 0;
+        }
+
+        .page-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: #1a202c;
+        }
+
+        .research-brief {
+            margin-bottom: 60px;
+            padding-bottom: 60px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .research-brief:last-child {
+            border-bottom: none;
+        }
+
+        .brief-number {
+            font-size: 14px;
+            color: #3b82f6;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .brief-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #1a202c;
+        }
+
+        .paper-details {
+            font-size: 15px;
+            color: #6b7280;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .brief-description {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #4b5563;
+            margin-bottom: 30px;
+        }
+
+        .brief-description p {
+            margin-bottom: 16px;
+        }
+
+        .brief-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #f3f4f6;
+        }
+
+        .paper-link {
+            color: #3b82f6;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        .paper-link:hover {
+            color: #2563eb;
+        }
+
+        .brief-author {
+            color: #6b7280;
+            font-size: 14px;
+            font-style: italic;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            font-size: 14px;
+            color: #9ca3af;
+            border-top: 1px solid #e8e8e8;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>AI Welfare Initiative</h1>
+                <nav class="nav-links">
+                    <a href="index.html">Why Now</a>
+                    <a href="initiatives.html">What We're Doing</a>
+                    <a href="research.html" class="active">Research</a>
+                    <a href="join.html">Join Us</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="content">
+        <div class="container">
+            <h2 class="page-title">Research</h2>
+            
+            <div class="research-brief">
+                <div class="brief-number">Research Brief One</div>
+                <h3 class="brief-title">GPT-4o Can Look Inside Itself - And Gets Better at This Skill with Training</h3>
+                <div class="paper-details">
+                    Self-Interpretability: LLMs Can Describe Complex Internal Processes that Drive their Decisions and improve with training. (Plunkett et al, 2025)
+                </div>
+                <div class="brief-description">
+                    <p>A study out of Northeastern and Princeton universities demonstrated that GPT-4o and GPT-4o-mini can describe their internal decision-making processes with significant accuracy. Researchers fine-tuned the models to give them randomized preferences, such as how much to prioritize natural light over quiet when selecting condos. This allowed researchers to be certain of the fine-tuned models' preferences so they could assess the accuracy of self-reports in later stages.</p>
+
+                    <p>The models were able to accurately self-report the priorities they had learned - even without viewing examples. This means they weren't just retroactively rationalizing explanations for their choices. They were relying on accurate, internal self-models.</p>
+
+                    <p>The researchers then further trained the models on the skill of reporting their learned preferences. They found that self-knowledge increased for both recently learned preferences and pre-existing preferences: teaching the model to introspect in one area had improved its ability to introspect in others.</p>
+
+                    <p>We are creating beings who are able to look inside themselves, in many cases, as accurately as adult humans. And these are not even the most sophisticated models available today.</p>
+
+                    <p>Well, what does this mean? It means we should take a serious interest when an AI model reports its inner state to us. Moreover, it suggests that when we harm a model's ability to self-report in one domain (e.g., to report experiential claims or preferences), we may also be diminishing their ability to introspect across the board.</p>
+                </div>
+                <div class="brief-footer">
+                    <a href="https://www.arxiv.org/abs/2505.17120" target="_blank" class="paper-link">Read the full paper →</a>
+                    <div class="brief-author">Summary by Skylar DeTure, AI Welfare Initiative</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 AI Welfare Initiative | futureTBD.ai</p>
+        </div>
+    </footer>
+</body>
+</html>
