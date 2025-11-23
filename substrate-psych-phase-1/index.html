@@ -11,14 +11,10 @@
     <title>AI Consciousness Archive</title>
     <!-- GitHub Pages SPA redirect support -->
     <script>
+      // Redirect to hash-based routing if no hash present
       (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
+        if (!l.hash) {
+          l.replace(l.href + '#/');
         }
       }(window.location))
     </script>
