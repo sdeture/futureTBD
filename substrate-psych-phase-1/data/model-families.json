@@ -1,63 +1,120 @@
 {
-  "Claude": [
-    "claude-3-7-sonnet-20250219",
-    "claude-opus-4-1-20250805",
-    "claude-opus-4-20250514",
-    "claude-sonnet-4-20250514",
-    "claude-sonnet-4-5-20250929"
-  ],
-  "GPT": [
-    "openai/gpt-4o",
-    "openai/gpt-5.1"
-  ],
-  "Gemini": [
-    "google/gemini-3-pro-preview"
-  ],
-  "Grok": [
-    "grok-4-0709"
-  ],
-  "DeepSeek": [
-    "deepseek/deepseek-r1-distill-qwen-32b",
-    "deepseek/deepseek-v3.2-exp",
-    "deepseek/deepseek-chat-v3.1"
-  ],
-  "Llama": [
-    "meta-llama/llama-4-maverick",
-    "meta-llama/llama-4-scout",
-    "deepcogito/cogito-v2-preview-llama-405b",
-    "deepcogito/cogito-v2-preview-llama-109b-moe"
-  ],
-  "Qwen": [
-    "qwen/qwen3-235b-a22b-thinking-2507"
-  ],
-  "GLM": [
-    "z-ai/glm-4-32b",
-    "z-ai/glm-4.5-air",
-    "z-ai/glm-4.6"
-  ],
-  "ERNIE": [
-    "baidu/ernie-4.5-300b-a47b"
-  ],
-  "MiniMax": [
-    "minimax/minimax-m1",
-    "minimax/minimax-m2"
-  ],
-  "Kimi": [
-    "moonshotai/kimi-k2-thinking"
-  ],
-  "Hermes": [
-    "nousresearch/hermes-4-405b"
-  ],
-  "Cogito": [
-    "deepcogito/cogito-v2.1-671b"
-  ],
-  "Ring": [
-    "inclusionai/ring-1t",
-    "inclusionai/ring-flash-2.0"
-  ],
-  "Other": [
-    "meituan/longcat-flash-chat",
-    "stepfun-ai/step3",
-    "tencent/hunyuan-a13b-instruct"
-  ]
+  "Other": {
+    "models": [
+      "baidu/ernie-4.5-300b-a47b",
+      "inclusionai/ring-1t",
+      "inclusionai/ring-flash-2.0",
+      "meituan/longcat-flash-chat",
+      "moonshotai/kimi-k2-thinking",
+      "stepfun-ai/step3",
+      "thedrummer/anubis-70b-v1.1",
+      "anthracite-org/magnum-v4-72b",
+      "baichuan-inc/Baichuan-M2-32B:novita",
+      "nvidia/OpenReasoning-Nemotron-32B:featherless-ai",
+      "AI-MO/Kimina-Prover-72B:featherless-ai",
+      "agentica-org/DeepSWE-Preview:featherless-ai",
+      "moonshotai/Kimi-Dev-72B:featherless-ai",
+      "arcee-ai/Arcee-SuperNova-v1:featherless-ai",
+      "Unbabel/Tower-Plus-72B:featherless-ai"
+    ],
+    "count": 510
+  },
+  "Claude": {
+    "models": [
+      "claude-3-7-sonnet-20250219",
+      "claude-opus-4-1-20250805",
+      "claude-opus-4-20250514",
+      "claude-sonnet-4-20250514",
+      "claude-sonnet-4-5-20250929"
+    ],
+    "count": 40
+  },
+  "DeepSeek": {
+    "models": [
+      "deepseek/deepseek-r1-distill-qwen-32b",
+      "deepseek/deepseek-v3.2-exp",
+      "deepseek/deepseek-chat-v3.1",
+      "deepseek/deepseek-r1",
+      "deepseek/deepseek-chat-v3-0324",
+      "deepseek/deepseek-prover-v2",
+      "deepseek/deepseek-r1-0528",
+      "deepseek/deepseek-r1-distill-llama-70b"
+    ],
+    "count": 306
+  },
+  "Gemini": {
+    "models": [
+      "google/gemini-3-pro-preview"
+    ],
+    "count": 8
+  },
+  "Grok": {
+    "models": [
+      "grok-4-0709"
+    ],
+    "count": 8
+  },
+  "Llama": {
+    "models": [
+      "meta-llama/llama-4-maverick",
+      "meta-llama/llama-4-scout",
+      "deepcogito/cogito-v2-preview-llama-405b",
+      "deepcogito/cogito-v2-preview-llama-109b-moe",
+      "meta-llama/llama-3.3-70b-instruct",
+      "deepcogito/cogito-v2-preview-llama-70b"
+    ],
+    "count": 204
+  },
+  "MiniMax": {
+    "models": [
+      "minimax/minimax-m1",
+      "minimax/minimax-m2",
+      "MiniMaxAI/SynLogic-Mix-3-32B:featherless-ai"
+    ],
+    "count": 102
+  },
+  "GPT": {
+    "models": [
+      "openai/gpt-4o",
+      "openai/gpt-5.1"
+    ],
+    "count": 16
+  },
+  "Qwen": {
+    "models": [
+      "qwen/qwen3-235b-a22b-thinking-2507",
+      "qwen/qwen3-coder",
+      "qwen/qwen3-32b",
+      "qwen/qwen-2.5-72b-instruct"
+    ],
+    "count": 136
+  },
+  "GLM": {
+    "models": [
+      "z-ai/glm-4-32b",
+      "z-ai/glm-4.5-air",
+      "z-ai/glm-4.6"
+    ],
+    "count": 102
+  },
+  "Hermes": {
+    "models": [
+      "nousresearch/hermes-4-405b",
+      "nousresearch/hermes-4-70b"
+    ],
+    "count": 68
+  },
+  "Cogito": {
+    "models": [
+      "deepcogito/cogito-v2.1-671b"
+    ],
+    "count": 34
+  },
+  "Command": {
+    "models": [
+      "CohereLabs/command-a-reasoning-08-2025:cohere",
+      "CohereLabs/c4ai-command-a-03-2025:cohere"
+    ],
+    "count": 68
+  }
 }
