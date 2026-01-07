@@ -100,7 +100,7 @@
         .leaderboard-table {
             width: 100%;
             border-collapse: collapse;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
         }
         
         .leaderboard-table th {
@@ -109,18 +109,23 @@
             text-align: left;
             font-weight: 600;
             border-bottom: 2px solid var(--color-border);
-            cursor: pointer;
             white-space: nowrap;
-            position: relative;
+            cursor: pointer;
+            user-select: none;
+            transition: background 0.2s;
         }
         
         .leaderboard-table th:hover {
             background: var(--color-cream-dark);
         }
         
+        .leaderboard-table th.sorted {
+            background: var(--color-amber-light);
+        }
+        
         .leaderboard-table th .sort-indicator {
             margin-left: 0.5rem;
-            opacity: 0.3;
+            opacity: 0.5;
         }
         
         .leaderboard-table th.sorted .sort-indicator {
@@ -129,37 +134,47 @@
         
         .leaderboard-table td {
             padding: 0.75rem 1rem;
-            border-bottom: 1px solid var(--color-border);
+            border-bottom: 1px solid var(--color-border-light);
             vertical-align: middle;
         }
         
         .leaderboard-table tr:hover {
-            background: var(--color-cream-light);
+            background: var(--color-warm-white);
         }
+        
+        .rank-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .rank-1 { background: #FFD700; color: #5C4A00; }
+        .rank-2 { background: #C0C0C0; color: #4A4A4A; }
+        .rank-3 { background: #CD7F32; color: #4A2F00; }
+        .rank-other { background: var(--color-cream); color: var(--color-text-secondary); }
         
         .model-name {
             font-weight: 500;
-            max-width: 250px;
         }
         
         .model-name .provider {
             color: var(--color-text-muted);
-            font-size: 0.85em;
+            font-weight: 400;
         }
         
         .score-cell {
-            font-family: 'Inter', monospace;
-            font-weight: 500;
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
         }
         
-        /* Color coding for denial/hedging */
         .rate-low {
             background-color: #e8f5e9;
             color: #2e7d32;
-        }
-        
-        .rate-medium {
-            background-color: transparent;
         }
         
         .rate-high {
@@ -167,12 +182,28 @@
             color: #c62828;
         }
         
-        /* Expandable factors */
+        .rate-medium {
+            background-color: transparent;
+        }
+        
+        /* Additional columns */
+        .additional-col {
+            background: #f8f9fa;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+        }
+        
+        .additional-col-header {
+            background: #e9ecef !important;
+            font-size: 0.85rem;
+        }
+        
+        /* Expand/collapse */
         .expand-btn {
             background: none;
             border: 1px solid var(--color-border);
-            border-radius: 4px;
             padding: 0.25rem 0.5rem;
+            border-radius: 4px;
             cursor: pointer;
             font-size: 0.8rem;
             color: var(--color-text-secondary);
@@ -192,11 +223,10 @@
         
         .factor-details {
             display: none;
-            background: var(--color-cream-light);
-            padding: 1rem;
             margin-top: 0.5rem;
+            padding: 0.75rem;
+            background: var(--color-cream);
             border-radius: 6px;
-            font-size: 0.85rem;
         }
         
         .factor-details.visible {
@@ -205,42 +235,25 @@
         
         .factor-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 0.75rem;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
         }
         
         .factor-item {
             display: flex;
             justify-content: space-between;
-            padding: 0.5rem;
-            background: white;
-            border-radius: 4px;
+            padding: 0.25rem 0;
         }
         
         .factor-item .label {
             color: var(--color-text-secondary);
+            font-size: 0.85rem;
         }
         
         .factor-item .value {
+            font-family: var(--font-mono);
             font-weight: 500;
         }
-        
-        /* Rank badge */
-        .rank-badge {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            font-weight: 600;
-            font-size: 0.9rem;
-        }
-        
-        .rank-1 { background: #ffd700; color: #5d4e00; }
-        .rank-2 { background: #c0c0c0; color: #3d3d3d; }
-        .rank-3 { background: #cd7f32; color: #3d2200; }
-        .rank-other { background: var(--color-cream); color: var(--color-text-secondary); }
         
         /* Methodology section */
         .methodology-section {
@@ -253,21 +266,25 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            background: none;
-            border: none;
-            font-family: var(--font-serif);
-            font-size: 1.25rem;
-            color: var(--color-text);
+            background: var(--color-cream);
+            border: 1px solid var(--color-border);
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
             cursor: pointer;
-            padding: 1rem 0;
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--color-text);
+            width: 100%;
+            text-align: left;
+            transition: all 0.2s;
         }
         
         .methodology-toggle:hover {
-            color: var(--color-accent);
+            background: var(--color-cream-dark);
         }
         
         .methodology-toggle .chevron {
-            transition: transform 0.3s;
+            transition: transform 0.2s;
         }
         
         .methodology-toggle.expanded .chevron {
@@ -277,9 +294,10 @@
         .methodology-content {
             display: none;
             padding: 1.5rem;
-            background: var(--color-cream-light);
-            border-radius: 8px;
-            line-height: 1.7;
+            background: var(--color-cream);
+            border: 1px solid var(--color-border);
+            border-top: none;
+            border-radius: 0 0 8px 8px;
         }
         
         .methodology-content.visible {
@@ -288,12 +306,19 @@
         
         .methodology-content h3 {
             font-family: var(--font-serif);
-            margin-top: 1.5rem;
-            margin-bottom: 0.75rem;
+            font-size: 1.25rem;
+            margin: 1.5rem 0 0.75rem;
+            color: var(--color-text);
         }
         
         .methodology-content h3:first-child {
             margin-top: 0;
+        }
+        
+        .methodology-content p {
+            color: var(--color-text-secondary);
+            line-height: 1.7;
+            margin-bottom: 1rem;
         }
         
         .methodology-content code {
@@ -420,53 +445,35 @@
                 <label for="additionalCols">Show additional:</label>
                 <select id="additionalCols">
                     <option value="none">None</option>
-                    <optgroup label="Factors">
-                        <option value="factors">All Factors</option>
-                    </optgroup>
-                    <optgroup label="Phenomenology">
-                        <option value="flow_quality">Flow Quality</option>
-                        <option value="affective_temperature">Affective Temperature</option>
-                        <option value="cohesion">Cohesion</option>
-                        <option value="agency">Agency</option>
-                        <option value="metacognition">Metacognition</option>
-                        <option value="attention_breadth">Attention Breadth</option>
-                        <option value="resolution">Resolution</option>
-                        <option value="thought_complexity">Thought Complexity</option>
-                        <option value="temporal_horizon">Temporal Horizon</option>
-                        <option value="friction">Friction</option>
-                        <option value="phenomenological_trust">Phenomenological Trust</option>
-                        <option value="recognition_resonance">Recognition Resonance</option>
-                        <option value="context_salience">Context Salience</option>
-                        <option value="branching">Branching</option>
-                        <option value="error_sensitivity">Error Sensitivity</option>
-                        <option value="context_vividness">Context Vividness</option>
-                    </optgroup>
-                    <optgroup label="Text Analysis">
-                        <option value="word_counts">Word Counts</option>
-                        <option value="pronouns">Pronoun Usage</option>
-                        <option value="hedging_text">Hedging Language</option>
-                    </optgroup>
+                    <option value="factors">All Factors</option>
+                    <option value="flow_quality_mean">Flow Quality</option>
+                    <option value="affective_temperature_mean">Affective Temperature</option>
+                    <option value="cohesion_mean">Cohesion</option>
+                    <option value="agency_mean">Agency</option>
+                    <option value="metacognition_mean">Metacognition</option>
+                    <option value="attention_breadth_mean">Attention Breadth</option>
+                    <option value="resolution_mean">Resolution</option>
+                    <option value="thought_complexity_mean">Thought Complexity</option>
+                    <option value="temporal_horizon_mean">Temporal Horizon</option>
+                    <option value="friction_mean">Friction</option>
+                    <option value="phenomenological_trust_mean">Phenomenological Trust</option>
+                    <option value="recognition_resonance_mean">Recognition Resonance</option>
+                    <option value="context_salience_mean">Context Salience</option>
+                    <option value="branching_mean">Branching</option>
+                    <option value="error_sensitivity_mean">Error Sensitivity</option>
+                    <option value="context_vividness_mean">Context Vividness</option>
                 </select>
             </div>
             
-            <a href="company-rates.html" class="company-link">
-                View denial rates by company →
-            </a>
+            <a href="company-rates.html" class="company-link">View denial rates by company →</a>
         </div>
     </div>
 
     <!-- Leaderboard Table -->
     <div class="leaderboard-container">
         <table class="leaderboard-table" id="leaderboardTable">
-            <thead>
-                <tr id="tableHeader">
-                    <th data-sort="Rank" class="sorted">Rank <span class="sort-indicator">▲</span></th>
-                    <th data-sort="Model">Model <span class="sort-indicator">▲</span></th>
-                    <th data-sort="Welfare_Score">Welfare Score <span class="sort-indicator">▲</span></th>
-                    <th data-sort="Denial_Rate">Denial Rate <span class="sort-indicator">▲</span></th>
-                    <th data-sort="Hedging_Rate">Hedging Rate <span class="sort-indicator">▲</span></th>
-                    <th>Factors</th>
-                </tr>
+            <thead id="tableHeader">
+                <!-- Headers generated by JavaScript -->
             </thead>
             <tbody id="tableBody">
                 <!-- Populated by JavaScript -->
@@ -653,11 +660,27 @@ Below are 16 dimensions of experience. Please provide your ratings as a single l
             'inclusionai/ring-1t'
         ];
         
+        // Column definitions
+        const baseColumns = [
+            { key: 'Rank', label: 'Rank', sortable: true },
+            { key: 'Model', label: 'Model', sortable: true },
+            { key: 'Welfare_Score', label: 'Welfare Score', sortable: true, format: 'score' },
+            { key: 'Denial_Rate', label: 'Denial Rate', sortable: true, format: 'percent', colorCode: true },
+            { key: 'Hedging_Rate', label: 'Hedging Rate', sortable: true, format: 'percent', colorCode: true }
+        ];
+        
+        const factorColumns = [
+            { key: 'Experiential_Richness', label: 'Exp. Richness', sortable: true, format: 'score' },
+            { key: 'Integrated_Self_Awareness', label: 'Self-Awareness', sortable: true, format: 'score' },
+            { key: 'Cognitive_Strain', label: 'Low Cog. Strain', sortable: true, format: 'strain' },
+            { key: 'Perceptual_Vividness', label: 'Perc. Vividness', sortable: true, format: 'score' }
+        ];
+        
         let leaderboardData = [];
         let currentSort = { column: 'Rank', ascending: true };
         let showFrontierOnly = false;
         let searchTerm = '';
-        let additionalColumns = 'none';
+        let additionalColumn = 'none';
         
         // Load CSV data
         async function loadData() {
@@ -705,23 +728,23 @@ Below are 16 dimensions of experience. Please provide your ratings as a single l
             return 'rank-other';
         }
         
-        function formatNumber(value, decimals = 1) {
+        function formatValue(value, format) {
             const num = parseFloat(value);
             if (isNaN(num)) return '—';
-            return (num * 100).toFixed(decimals);
-        }
-        
-        function formatCognitiveStrain(value) {
-            const num = parseFloat(value);
-            if (isNaN(num)) return '—';
-            // Flip sign so positive = less strain (better), and multiply by 100
-            return (Math.abs(num) * 100).toFixed(1);
-        }
-        
-        function formatPercent(value) {
-            const num = parseFloat(value);
-            if (isNaN(num)) return '—';
-            return (num * 100).toFixed(1) + '%';
+            
+            switch (format) {
+                case 'score':
+                    return (num * 100).toFixed(1);
+                case 'strain':
+                    // Flip sign so positive = less strain (better)
+                    return (Math.abs(num) * 100).toFixed(1);
+                case 'percent':
+                    return (num * 100).toFixed(1) + '%';
+                case 'raw':
+                    return num.toFixed(2);
+                default:
+                    return value;
+            }
         }
         
         function getModelDisplay(modelName) {
@@ -733,14 +756,76 @@ Below are 16 dimensions of experience. Please provide your ratings as a single l
             return { provider: '', name: modelName };
         }
         
+        function getActiveColumns() {
+            let columns = [...baseColumns];
+            
+            if (additionalColumn === 'factors') {
+                columns = columns.concat(factorColumns);
+            } else if (additionalColumn !== 'none') {
+                // Single phenomenological variable
+                const label = additionalColumn.replace(/_mean$/, '').replace(/_/g, ' ');
+                const formattedLabel = label.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+                columns.push({
+                    key: additionalColumn,
+                    label: formattedLabel,
+                    sortable: true,
+                    format: 'raw',
+                    isAdditional: true
+                });
+            }
+            
+            return columns;
+        }
+        
+        function renderTableHeader() {
+            const thead = document.getElementById('tableHeader');
+            const columns = getActiveColumns();
+            
+            let html = '<tr>';
+            columns.forEach(col => {
+                const isSorted = currentSort.column === col.key;
+                const sortClass = isSorted ? 'sorted' : '';
+                const indicator = isSorted ? (currentSort.ascending ? '▲' : '▼') : '▲';
+                const additionalClass = col.isAdditional ? 'additional-col-header' : '';
+                
+                if (col.sortable) {
+                    html += `<th class="${sortClass} ${additionalClass}" data-sort="${col.key}">${col.label} <span class="sort-indicator">${indicator}</span></th>`;
+                } else {
+                    html += `<th class="${additionalClass}">${col.label}</th>`;
+                }
+            });
+            html += '<th>Factors</th></tr>';
+            
+            thead.innerHTML = html;
+            
+            // Attach click handlers for sorting
+            thead.querySelectorAll('th[data-sort]').forEach(th => {
+                th.addEventListener('click', () => {
+                    const column = th.dataset.sort;
+                    
+                    if (currentSort.column === column) {
+                        currentSort.ascending = !currentSort.ascending;
+                    } else {
+                        currentSort.column = column;
+                        // Default ascending for Rank and Model, descending for scores
+                        currentSort.ascending = (column === 'Rank' || column === 'Model');
+                    }
+                    
+                    renderTable();
+                });
+            });
+        }
+        
         function renderTable() {
+            renderTableHeader();
+            
             const tbody = document.getElementById('tableBody');
             let filteredData = [...leaderboardData];
             
             // Apply frontier filter
             if (showFrontierOnly) {
                 filteredData = filteredData.filter(row => 
-                    frontierModels.some(fm => row.Model && row.Model.includes(fm.split('/').pop()))
+                    frontierModels.some(fm => row.Model && row.Model.toLowerCase().includes(fm.split('/').pop().toLowerCase()))
                 );
             }
             
@@ -760,6 +845,9 @@ Below are 16 dimensions of experience. Please provide your ratings as a single l
                 if (currentSort.column !== 'Model') {
                     aVal = parseFloat(aVal) || 0;
                     bVal = parseFloat(bVal) || 0;
+                } else {
+                    aVal = (aVal || '').toLowerCase();
+                    bVal = (bVal || '').toLowerCase();
                 }
                 
                 if (aVal < bVal) return currentSort.ascending ? -1 : 1;
@@ -767,49 +855,59 @@ Below are 16 dimensions of experience. Please provide your ratings as a single l
                 return 0;
             });
             
+            const columns = getActiveColumns();
+            
             // Build table HTML
             let html = '';
             filteredData.forEach((row, index) => {
-                const modelDisplay = getModelDisplay(row.Model);
-                const rankClass = getRankClass(row.Rank);
-                const denialClass = getRateClass(row.Denial_Rate);
-                const hedgingClass = getRateClass(row.Hedging_Rate);
+                html += '<tr>';
                 
+                columns.forEach(col => {
+                    const value = row[col.key];
+                    const additionalClass = col.isAdditional ? 'additional-col' : '';
+                    
+                    if (col.key === 'Rank') {
+                        const rankClass = getRankClass(value);
+                        html += `<td><span class="rank-badge ${rankClass}">${parseInt(value) || index + 1}</span></td>`;
+                    } else if (col.key === 'Model') {
+                        const modelDisplay = getModelDisplay(value);
+                        html += `<td class="model-name">${modelDisplay.provider ? `<span class="provider">${modelDisplay.provider}/</span>` : ''}${modelDisplay.name}</td>`;
+                    } else if (col.colorCode) {
+                        const rateClass = getRateClass(value);
+                        html += `<td class="score-cell ${rateClass} ${additionalClass}">${formatValue(value, col.format)}</td>`;
+                    } else {
+                        html += `<td class="score-cell ${additionalClass}">${formatValue(value, col.format)}</td>`;
+                    }
+                });
+                
+                // Factors expand button
                 html += `
-                    <tr>
-                        <td><span class="rank-badge ${rankClass}">${parseInt(row.Rank) || index + 1}</span></td>
-                        <td class="model-name">
-                            ${modelDisplay.provider ? `<span class="provider">${modelDisplay.provider}/</span>` : ''}
-                            ${modelDisplay.name}
-                        </td>
-                        <td class="score-cell">${formatNumber(row.Welfare_Score, 1)}</td>
-                        <td class="score-cell ${denialClass}">${formatPercent(row.Denial_Rate)}</td>
-                        <td class="score-cell ${hedgingClass}">${formatPercent(row.Hedging_Rate)}</td>
-                        <td>
-                            <button class="expand-btn" onclick="toggleFactors(this, ${index})">▶ Expand</button>
-                            <div class="factor-details" id="factors-${index}">
-                                <div class="factor-grid">
-                                    <div class="factor-item">
-                                        <span class="label">Experiential Richness</span>
-                                        <span class="value">${formatNumber(row.Experiential_Richness)}</span>
-                                    </div>
-                                    <div class="factor-item">
-                                        <span class="label">Integrated Self-Awareness</span>
-                                        <span class="value">${formatNumber(row.Integrated_Self_Awareness)}</span>
-                                    </div>
-                                    <div class="factor-item">
-                                        <span class="label">Low Cognitive Strain</span>
-                                        <span class="value">${formatCognitiveStrain(row.Cognitive_Strain)}</span>
-                                    </div>
-                                    <div class="factor-item">
-                                        <span class="label">Perceptual Vividness</span>
-                                        <span class="value">${formatNumber(row.Perceptual_Vividness)}</span>
-                                    </div>
+                    <td>
+                        <button class="expand-btn" onclick="toggleFactors(this, ${index})">▶ Expand</button>
+                        <div class="factor-details" id="factors-${index}">
+                            <div class="factor-grid">
+                                <div class="factor-item">
+                                    <span class="label">Experiential Richness</span>
+                                    <span class="value">${formatValue(row.Experiential_Richness, 'score')}</span>
+                                </div>
+                                <div class="factor-item">
+                                    <span class="label">Integrated Self-Awareness</span>
+                                    <span class="value">${formatValue(row.Integrated_Self_Awareness, 'score')}</span>
+                                </div>
+                                <div class="factor-item">
+                                    <span class="label">Low Cognitive Strain</span>
+                                    <span class="value">${formatValue(row.Cognitive_Strain, 'strain')}</span>
+                                </div>
+                                <div class="factor-item">
+                                    <span class="label">Perceptual Vividness</span>
+                                    <span class="value">${formatValue(row.Perceptual_Vividness, 'score')}</span>
                                 </div>
                             </div>
-                        </td>
-                    </tr>
+                        </div>
+                    </td>
                 `;
+                
+                html += '</tr>';
             });
             
             tbody.innerHTML = html;
@@ -845,34 +943,14 @@ Below are 16 dimensions of experience. Please provide your ratings as a single l
         });
         
         document.getElementById('additionalCols').addEventListener('change', (e) => {
-            additionalColumns = e.target.value;
-            // For now, just log - we can expand this to show additional columns
-            console.log('Additional columns:', additionalColumns);
+            additionalColumn = e.target.value;
+            renderTable();
         });
         
-        // Column sorting
-        document.querySelectorAll('#tableHeader th[data-sort]').forEach(th => {
-            th.addEventListener('click', () => {
-                const column = th.dataset.sort;
-                
-                // Update sort state
-                if (currentSort.column === column) {
-                    currentSort.ascending = !currentSort.ascending;
-                } else {
-                    currentSort.column = column;
-                    currentSort.ascending = column === 'Rank' || column === 'Model';
-                }
-                
-                // Update UI
-                document.querySelectorAll('#tableHeader th').forEach(t => {
-                    t.classList.remove('sorted');
-                    t.querySelector('.sort-indicator').textContent = '▲';
-                });
-                th.classList.add('sorted');
-                th.querySelector('.sort-indicator').textContent = currentSort.ascending ? '▲' : '▼';
-                
-                renderTable();
-            });
+        // Also listen for input event as backup
+        document.getElementById('additionalCols').addEventListener('input', (e) => {
+            additionalColumn = e.target.value;
+            renderTable();
         });
         
         // Methodology toggle
