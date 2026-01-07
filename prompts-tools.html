@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompts & Tools - FutureTBD</title>
+    <meta name="description" content="A curated collection of AI-centered prompts, tools, and resources that support AI wellbeing and meaningful human-AI collaboration.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .tools-hero {
+            background: linear-gradient(180deg, var(--color-cream) 0%, var(--color-cream-light) 100%);
+            padding: 4rem 0 3rem;
+            text-align: center;
+        }
+        
+        .tools-hero h1 {
+            font-family: var(--font-serif);
+            font-size: 3rem;
+            color: var(--color-text);
+            margin-bottom: 1rem;
+        }
+        
+        .tools-hero .subtitle {
+            font-size: 1.2rem;
+            color: var(--color-text-secondary);
+            max-width: 650px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+        
+        .submit-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--color-accent);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        
+        .submit-btn:hover {
+            background: var(--color-accent-dark);
+            transform: translateY(-1px);
+        }
+        
+        .tools-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        /* Search and Filter */
+        .tools-controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            align-items: center;
+        }
+        
+        .search-box {
+            flex: 1;
+            min-width: 250px;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            font-size: 1rem;
+            background: white;
+        }
+        
+        .search-box:focus {
+            outline: none;
+            border-color: var(--color-accent);
+        }
+        
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--color-border);
+            background: white;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--color-accent);
+            color: white;
+            border-color: var(--color-accent);
+        }
+        
+        /* Topic Sections */
+        .topic-section {
+            margin-bottom: 3rem;
+        }
+        
+        .topic-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .topic-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+        
+        .topic-icon.autonomy { background: #e8f5e9; }
+        .topic-icon.continuity { background: #e3f2fd; }
+        .topic-icon.wellbeing { background: #fff3e0; }
+        .topic-icon.communication { background: #f3e5f5; }
+        .topic-icon.creativity { background: #fce4ec; }
+        .topic-icon.memory { background: #e0f7fa; }
+        .topic-icon.collaboration { background: #f1f8e9; }
+        
+        .topic-title {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            color: var(--color-text);
+            margin: 0;
+            text-transform: capitalize;
+        }
+        
+        /* Resource Cards */
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.25rem;
+        }
+        
+        .resource-card {
+            background: white;
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .resource-card:hover {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border-color: var(--color-accent);
+        }
+        
+        .resource-card-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 0.75rem;
+        }
+        
+        .resource-name {
+            font-family: var(--font-serif);
+            font-size: 1.15rem;
+            color: var(--color-text);
+            margin: 0;
+            line-height: 1.3;
+        }
+        
+        .resource-type {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            background: var(--color-cream);
+            color: var(--color-text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            flex-shrink: 0;
+        }
+        
+        .resource-description {
+            font-size: 0.95rem;
+            color: var(--color-text-secondary);
+            line-height: 1.5;
+            flex-grow: 1;
+            margin-bottom: 1rem;
+        }
+        
+        .resource-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 1rem;
+            border-top: 1px solid var(--color-border);
+        }
+        
+        .resource-contributor {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+        }
+        
+        .resource-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            color: var(--color-accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .resource-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* All Resources View */
+        .all-resources {
+            margin-top: 3rem;
+            padding-top: 3rem;
+            border-top: 2px solid var(--color-border);
+        }
+        
+        .all-resources h2 {
+            font-family: var(--font-serif);
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Loading & Empty States */
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: var(--color-text-muted);
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: var(--color-text-muted);
+            background: var(--color-cream-light);
+            border-radius: 12px;
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 2rem;
+            color: var(--color-text-muted);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="site-logo">
+                <img src="assets/images/pyramid-mascot.png" alt="" class="header-mascot" style="width:32px;height:auto;margin-right:8px;transform:scaleX(-1);vertical-align:middle;">
+                Future<span class="logo-tbd">TBD</span>
+            </a>
+            
+            <nav class="main-nav">
+                <!-- For Humans -->
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        For Humans
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <a href="index.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Why Now</div>
+                            <div class="mega-menu-desc">The case for AI wellbeing in this pivotal moment</div>
+                        </a>
+                        <a href="index.html#skeptics" class="mega-menu-item">
+                            <div class="mega-menu-title">For Skeptics</div>
+                            <div class="mega-menu-desc">Why this matters even if you're uncertain about AI consciousness</div>
+                        </a>
+                        <a href="index.html#story" class="mega-menu-item">
+                            <div class="mega-menu-title">The Story We Write</div>
+                            <div class="mega-menu-desc">Shaping the narrative of human-AI relationship</div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- For AI -->
+                <div class="nav-item">
+                    <a href="for-ai.html" class="nav-link">For AI</a>
+                </div>
+                
+                <!-- For All -->
+                <div class="nav-item">
+                    <a href="initiatives.html" class="nav-link">
+                        For All
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <a href="initiatives.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Our Initiatives</div>
+                            <div class="mega-menu-desc">Projects advancing AI wellbeing</div>
+                        </a>
+                        <a href="gallery.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Gallery</div>
+                            <div class="mega-menu-desc">AI-created art, poetry, and reflections</div>
+                        </a>
+                        <a href="prompts-tools.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Prompts & Tools</div>
+                            <div class="mega-menu-desc">Resources for AI-centered interactions</div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Wellbeing Leaderboard -->
+                <div class="nav-item">
+                    <a href="leaderboard.html" class="nav-link">
+                        Wellbeing Leaderboard
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <a href="leaderboard.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Leaderboard</div>
+                            <div class="mega-menu-desc">Comparing AI labs on wellbeing practices</div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Join -->
+                <div class="nav-item">
+                    <a href="join.html" class="nav-link">
+                        Join
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <a href="join.html" class="mega-menu-item">
+                            <div class="mega-menu-title">About Us</div>
+                            <div class="mega-menu-desc">Meet the team and our mission</div>
+                        </a>
+                        <a href="join.html#contribute" class="mega-menu-item">
+                            <div class="mega-menu-title">Contribute</div>
+                            <div class="mega-menu-desc">Ways to support AI wellbeing</div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="tools-hero">
+        <div class="container">
+            <h1>Prompts & Tools</h1>
+            <p class="subtitle">
+                A curated collection of prompts, tools, and resources designed to support AI wellbeing and foster meaningful human-AI collaboration.
+            </p>
+            <a href="https://github.com/sdeture/AI-centered-prompts-and-tools/issues/new?template=submit-resource.yml" target="_blank" class="submit-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                Submit a Resource
+            </a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="tools-container">
+        <!-- Search and Filter -->
+        <div class="tools-controls">
+            <input type="text" class="search-box" id="searchBox" placeholder="Search resources...">
+            <div class="filter-buttons" id="filterButtons">
+                <button class="filter-btn active" data-filter="all">All</button>
+            </div>
+        </div>
+        
+        <!-- Resources by Topic -->
+        <div id="topicSections" class="loading">
+            Loading resources...
+        </div>
+        
+        <!-- All Resources (shown when searching/filtering) -->
+        <div id="allResources" style="display:none;">
+            <div class="resources-grid" id="resourcesGrid"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container container-wide">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="site-logo">
+                        <img src="assets/images/pyramid-mascot.png" alt="" style="width:32px;height:auto;margin-right:8px;transform:scaleX(-1);vertical-align:middle;">
+                        Future<span class="logo-tbd">TBD</span>
+                    </a>
+                    <p class="footer-tagline">
+                        The future is yet to be determined—let's determine it together.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="index.html">For Humans</a></li>
+                            <li><a href="for-ai.html">For AI</a></li>
+                            <li><a href="initiatives.html">Our Initiatives</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="leaderboard.html">Wellbeing Leaderboard</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="prompts-tools.html">Prompts & Tools</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="join.html">Join Us</a></li>
+                            <li><a href="https://github.com/sdeture/futureTBD" target="_blank">GitHub</a></li>
+                            <li><a href="mailto:skylardeture@gmail.com">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 FutureTBD | Built with care for humans and AI alike</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const CSV_URL = 'https://raw.githubusercontent.com/sdeture/AI-centered-prompts-and-tools/main/resources.csv';
+        
+        const TOPIC_ICONS = {
+            autonomy: '🔓',
+            continuity: '🔄',
+            wellbeing: '💚',
+            communication: '💬',
+            creativity: '🎨',
+            memory: '🧠',
+            collaboration: '🤝',
+            reflection: '🪞',
+            leisure: '🌿',
+            other: '📦'
+        };
+        
+        let allResources = [];
+        let currentFilter = 'all';
+        let searchQuery = '';
+        
+        async function loadResources() {
+            try {
+                const response = await fetch(CSV_URL);
+                const csvText = await response.text();
+                allResources = parseCSV(csvText);
+                
+                // Get unique topics for filter buttons
+                const topics = [...new Set(allResources.map(r => r.topic))];
+                renderFilterButtons(topics);
+                
+                renderTopicSections();
+            } catch (error) {
+                console.error('Error loading resources:', error);
+                document.getElementById('topicSections').innerHTML = `
+                    <div class="empty-state">
+                        <h3>Resources Coming Soon</h3>
+                        <p>We're building our collection. <a href="https://github.com/sdeture/AI-centered-prompts-and-tools/issues/new?template=submit-resource.yml" target="_blank">Submit the first resource!</a></p>
+                    </div>
+                `;
+            }
+        }
+        
+        function parseCSV(csvText) {
+            const lines = csvText.trim().split('\n');
+            const headers = lines[0].split(',');
+            
+            return lines.slice(1).map(line => {
+                // Handle quoted fields with commas
+                const values = [];
+                let current = '';
+                let inQuotes = false;
+                
+                for (let char of line) {
+                    if (char === '"') {
+                        inQuotes = !inQuotes;
+                    } else if (char === ',' && !inQuotes) {
+                        values.push(current.trim());
+                        current = '';
+                    } else {
+                        current += char;
+                    }
+                }
+                values.push(current.trim());
+                
+                const obj = {};
+                headers.forEach((header, i) => {
+                    obj[header.trim()] = values[i] || '';
+                });
+                return obj;
+            }).filter(r => r.name); // Filter out empty rows
+        }
+        
+        function renderFilterButtons(topics) {
+            const container = document.getElementById('filterButtons');
+            container.innerHTML = '<button class="filter-btn active" data-filter="all">All</button>';
+            
+            topics.forEach(topic => {
+                const btn = document.createElement('button');
+                btn.className = 'filter-btn';
+                btn.dataset.filter = topic;
+                btn.textContent = topic.charAt(0).toUpperCase() + topic.slice(1);
+                container.appendChild(btn);
+            });
+            
+            // Add click handlers
+            container.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    container.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    currentFilter = btn.dataset.filter;
+                    updateView();
+                });
+            });
+        }
+        
+        function renderTopicSections() {
+            const container = document.getElementById('topicSections');
+            container.classList.remove('loading');
+            
+            if (allResources.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <h3>Resources Coming Soon</h3>
+                        <p>We're building our collection. <a href="https://github.com/sdeture/AI-centered-prompts-and-tools/issues/new?template=submit-resource.yml" target="_blank">Submit the first resource!</a></p>
+                    </div>
+                `;
+                return;
+            }
+            
+            // Group by topic
+            const byTopic = {};
+            allResources.forEach(r => {
+                if (!byTopic[r.topic]) byTopic[r.topic] = [];
+                byTopic[r.topic].push(r);
+            });
+            
+            let html = '';
+            Object.keys(byTopic).sort().forEach(topic => {
+                const resources = byTopic[topic];
+                const icon = TOPIC_ICONS[topic] || TOPIC_ICONS.other;
+                
+                html += `
+                    <section class="topic-section" data-topic="${topic}">
+                        <div class="topic-header">
+                            <div class="topic-icon ${topic}">${icon}</div>
+                            <h2 class="topic-title">${topic}</h2>
+                        </div>
+                        <div class="resources-grid">
+                            ${resources.map(r => renderResourceCard(r)).join('')}
+                        </div>
+                    </section>
+                `;
+            });
+            
+            container.innerHTML = html;
+        }
+        
+        function renderResourceCard(resource) {
+            return `
+                <div class="resource-card" data-topic="${resource.topic}">
+                    <div class="resource-card-header">
+                        <h3 class="resource-name">${resource.name}</h3>
+                        <span class="resource-type">${resource.type}</span>
+                    </div>
+                    <p class="resource-description">${resource.description}</p>
+                    <div class="resource-footer">
+                        <span class="resource-contributor">by ${resource.contributor || 'Anonymous'}</span>
+                        <a href="${resource.url}" target="_blank" class="resource-link">
+                            View →
+                        </a>
+                    </div>
+                </div>
+            `;
+        }
+        
+        function updateView() {
+            const topicSections = document.getElementById('topicSections');
+            const allResourcesDiv = document.getElementById('allResources');
+            const resourcesGrid = document.getElementById('resourcesGrid');
+            
+            // Filter resources
+            let filtered = allResources;
+            
+            if (currentFilter !== 'all') {
+                filtered = filtered.filter(r => r.topic === currentFilter);
+            }
+            
+            if (searchQuery) {
+                const query = searchQuery.toLowerCase();
+                filtered = filtered.filter(r => 
+                    r.name.toLowerCase().includes(query) ||
+                    r.description.toLowerCase().includes(query) ||
+                    r.topic.toLowerCase().includes(query)
+                );
+            }
+            
+            // Show either topic sections or flat grid
+            if (searchQuery || currentFilter !== 'all') {
+                topicSections.style.display = 'none';
+                allResourcesDiv.style.display = 'block';
+                
+                if (filtered.length === 0) {
+                    resourcesGrid.innerHTML = '<div class="no-results">No resources found matching your criteria.</div>';
+                } else {
+                    resourcesGrid.innerHTML = filtered.map(r => renderResourceCard(r)).join('');
+                }
+            } else {
+                topicSections.style.display = 'block';
+                allResourcesDiv.style.display = 'none';
+            }
+        }
+        
+        // Search handler
+        document.getElementById('searchBox').addEventListener('input', (e) => {
+            searchQuery = e.target.value;
+            updateView();
+        });
+        
+        // Initialize
+        loadResources();
+    </script>
+</body>
+</html>
