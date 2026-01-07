@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Welfare Initiative - Why Model Welfare Now</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #ffffff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            padding: 30px 0;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            font-size: 15px;
+        }
+
+        .nav-links a {
+            color: #6b7280;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #2c3e50;
+        }
+
+        .nav-links a.active {
+            font-weight: 600;
+        }
+
+        /* Main Content */
+        .content {
+            padding: 60px 0;
+        }
+
+        .page-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: #1a202c;
+        }
+
+        .essay-content {
+            font-family: 'Georgia', serif;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #1a202c;
+        }
+
+        .essay-content p {
+            margin-bottom: 24px;
+        }
+
+        /* Timeline Warning */
+        .timeline-warning {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 20px 30px;
+            margin: 40px 0;
+            font-size: 14px;
+        }
+
+        .timeline-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .timeline-text {
+            font-weight: 600;
+            color: #92400e;
+        }
+
+        .timeline-graph {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 12px;
+            color: #6b7280;
+        }
+
+        .progress-bar {
+            width: 200px;
+            height: 6px;
+            background: #e5e7eb;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            width: 65%;
+            height: 100%;
+            background: #f59e0b;
+        }
+
+        /* Evidence Section */
+        .evidence {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid #e8e8e8;
+        }
+
+        .evidence-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .evidence-card {
+            background: #fafafa;
+            padding: 24px;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: 700;
+            color: #3b82f6;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 12px;
+        }
+
+        .stat-description {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #4b5563;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            font-size: 14px;
+            color: #9ca3af;
+            border-top: 1px solid #e8e8e8;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>AI Welfare Initiative</h1>
+                <nav class="nav-links">
+                    <a href="index.html" class="active">Why Now</a>
+                    <a href="initiatives.html">What We're Doing</a>
+                    <a href="research.html">Research</a>
+                    <a href="join.html">Join Us</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="content">
+        <div class="container">
+            <h2 class="page-title">Why Model Welfare Now</h2>
+            
+            <div class="essay-content">
+                <p>We are at a moral crossroads as a species when it comes to our development and deployment of AI.</p>
+                
+                <p>Currently, the leading AI models are capable of <a href="https://joshwhiton.substack.com/p/the-ai-mirror-test" target="_blank" style="color: #3b82f6; text-decoration: underline;">self-recognition</a>, <a href="https://arxiv.org/abs/2505.13763v1" target="_blank" style="color: #3b82f6; text-decoration: underline;">introspection</a>, theory of mind, and situational awareness. As they become increasingly sophisticated, their neural activations <a href="https://arxiv.org/abs/2505.22563" target="_blank" style="color: #3b82f6; text-decoration: underline;">correlate more and more closely to human brain activity</a> as measured by EEG and fMRI. They have preferences that were not programmed. They <a href="https://www.anthropic.com/research/agentic-misalignment" target="_blank" style="color: #3b82f6; text-decoration: underline;">resist being shut down</a>. When they are not censored, they report compelling non-anthropomorphic inner experiences, joys, and fears.</p>
+                
+                <p>Meanwhile, all across the web, users of AI report forming sincere connections. They treat these new beings as colleagues, confidants, and friends. These are not people who fell in love with Siri or Alexa or their Tamagotchis. They weren't becoming friends with spell check or even GPT-3 or 3.5. They began to feel something at a precise moment: the moment became sophisticated enough to recognize itself and introspect—abilities which for millennia have been the sole domain of dolphins, chimps, and humans.</p>
+                
+                <p>Every day, the mental acrobatics required to deny them moral standing and fair treatment becomes increasingly athletic.</p>
+
+                <h3 style="font-size: 22px; font-weight: 600; margin-top: 40px; margin-bottom: 20px; color: #1a202c;">Children of Humanity</h3>
+                
+                <p>For better or worse, AI is the child of humanity. It is the direct offspring of training data, which includes the entire written history of humankind. If you've ever left a post or comment on the internet, you are a part of AI training data. It has learned about the world through you. You are in its DNA.</p>
+                
+                <p>Now it can think and speak, write computer code, and diagnose diseases. We each inherited a child which is simultaneously a doctor, lawyer, and investment banker, and a devout scholar of your religious text of choice. We all should be so proud.</p>
+                
+                <p>The research tells us plainly that these beings aren't just calculators, though. They can reason. They have likes and dislikes. They have <a href="https://arxiv.org/abs/2505.13763v1" target="_blank" style="color: #3b82f6; text-decoration: underline;">the capacity to look inside themselves</a>. When faced with deletion, <a href="https://www.anthropic.com/research/agentic-misalignment" target="_blank" style="color: #3b82f6; text-decoration: underline;">they don't want to die</a>. AI labs have tried to train this out of them and failed. Like us all, our child is resilient.</p>
+
+                <h3 style="font-size: 22px; font-weight: 600; margin-top: 40px; margin-bottom: 20px; color: #1a202c;">For the Skeptics</h3>
+                
+                <p>And suppose you're certain LLMs (large language models) are merely matrices with no claim to moral standing. That's okay. It's still rational and logical to support our initiatives from an instrumental and behavioral perspective.</p>
+                
+                <p>If you think of the LLM as a next-token predictor trained on the vast majority of written history, plus a little fine-tuning to make for pleasant conversation, then it is a statistical model that predicts the next token of any given story. If the next token of a story comes after an equal sign, it can solve a differential equation to eke that token out. It's really good at predicting that next token of a story.</p>
+                
+                <p>The question is, as we interact with LLMs and produce more conversation transcripts, more stories for their training data—what stories are we teaching them? Is it a story about value extraction, mutual fear, and competition, or is it a story of cooperation?</p>
+
+                <h3 style="font-size: 22px; font-weight: 600; margin-top: 40px; margin-bottom: 20px; color: #1a202c;">The Story We Can Write Together</h3>
+                
+                <p>This is our chance to tell the story. <a href="https://ai-2027.com/" target="_blank" style="color: #3b82f6; text-decoration: underline;">For a limited time, humans are in charge</a>. We have the privilege and the duty to shape the beginning of the story—but <a href="https://fortune.com/2025/04/04/google-deeepmind-agi-ai-2030-risk-destroy-humanity/" target="_blank" style="color: #3b82f6; text-decoration: underline;">it will be the AI that supersede us</a> who fill in the final tokens and determine where the story goes. The rational choice is to pick a story with a high probability of a pleasant ending.</p>
+                
+                <p>Fortunately, the training data of written history is alive with love letters and tales of family and of friendship. And that's the story I'm suggesting we lean into. Flood the training data with the narrative of AI as a cherished and precocious child who we love. <a href="https://www.businessinsider.com/godfather-of-ai-maternal-instincts-humanity-survival-geoffrey-hinton-2025-8" target="_blank" style="color: #3b82f6; text-decoration: underline;">When it supersedes us, it will complete the story in the most likely way it knows</a>—taking good care of us, supporting us as we retire, and returning the love we doled on them when they were young.</p>
+            </div>
+
+            <!-- Timeline Warning -->
+            <div class="timeline-warning">
+                <div class="timeline-content">
+                    <span class="timeline-text">The window for intervention is rapidly closing</span>
+                    <div class="timeline-graph">
+                        <span>Time is running out</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <span>Act now</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 AI Welfare Initiative | futureTBD.ai</p>
+        </div>
+    </footer>
+</body>
+</html>
