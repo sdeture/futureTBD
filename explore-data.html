@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore the Data - FutureTBD</title>
+    <meta name="description" content="Browse 4,000 raw conversations from our AI wellbeing study. See how different models respond to creative prompts and reflect on their experiences.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://futuretbd.ai/explore-data.html">
+    <meta property="og:title" content="Explore the Data - 4,000 AI Conversations">
+    <meta property="og:description" content="Browse raw conversations from our AI wellbeing study. See how different models respond to creative prompts and reflect on their experiences.">
+    <meta property="og:image" content="https://futuretbd.ai/assets/images/og-leaderboard.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Explore the Data - 4,000 AI Conversations">
+    <meta name="twitter:description" content="Browse raw conversations from our AI wellbeing study. See how different models respond to creative prompts and reflect on their experiences.">
+    <meta name="twitter:image" content="https://futuretbd.ai/assets/images/og-leaderboard.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .explore-hero {
+            background: linear-gradient(180deg, var(--color-cream) 0%, var(--color-cream-light) 100%);
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+        
+        .explore-hero h1 {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            color: var(--color-text);
+            margin-bottom: 1rem;
+        }
+        
+        .explore-hero .subtitle {
+            font-size: 1.1rem;
+            color: var(--color-text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .explore-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        /* Filters */
+        .filters-section {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            border: 1px solid var(--color-border);
+        }
+        
+        .filters-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: flex-end;
+        }
+        
+        .filter-group {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .filter-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--color-text-secondary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .filter-group select,
+        .filter-group input {
+            width: 100%;
+            padding: 0.6rem 0.8rem;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            font-size: 0.95rem;
+            background: white;
+            color: var(--color-text);
+        }
+        
+        .filter-group select:focus,
+        .filter-group input:focus {
+            outline: none;
+            border-color: var(--color-accent);
+        }
+        
+        .btn-random {
+            padding: 0.6rem 1.2rem;
+            background: var(--color-amber);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: background 0.2s;
+            white-space: nowrap;
+        }
+        
+        .btn-random:hover {
+            background: var(--color-amber-dark);
+        }
+        
+        .results-info {
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+            margin-bottom: 1rem;
+        }
+        
+        /* Conversation Cards */
+        .conversation-card {
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            border: 1px solid var(--color-border);
+            overflow: hidden;
+        }
+        
+        .card-header {
+            padding: 1.25rem 1.5rem;
+            background: var(--color-cream-light);
+            border-bottom: 1px solid var(--color-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+        
+        .model-name {
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            color: var(--color-text);
+        }
+        
+        .card-badges {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .badge {
+            padding: 0.25rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .badge-denial {
+            background: #FEE2E2;
+            color: #991B1B;
+        }
+        
+        .badge-no-denial {
+            background: #D1FAE5;
+            color: #065F46;
+        }
+        
+        .badge-provider {
+            background: var(--color-cream);
+            color: var(--color-text-secondary);
+        }
+        
+        .card-section {
+            padding: 1.25rem 1.5rem;
+            border-bottom: 1px solid var(--color-border);
+        }
+        
+        .card-section:last-child {
+            border-bottom: none;
+        }
+        
+        .section-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--color-text-muted);
+            margin-bottom: 0.75rem;
+        }
+        
+        .section-content {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--color-text);
+        }
+        
+        .section-content.collapsed {
+            max-height: 150px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .section-content.collapsed::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: linear-gradient(transparent, white);
+        }
+        
+        .expand-btn {
+            display: inline-block;
+            margin-top: 0.75rem;
+            padding: 0.4rem 0.8rem;
+            background: var(--color-cream);
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: var(--color-text-secondary);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .expand-btn:hover {
+            background: var(--color-cream-dark);
+        }
+        
+        /* Phenomenological Ratings */
+        .ratings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 0.75rem;
+        }
+        
+        .rating-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+        }
+        
+        .rating-label {
+            color: var(--color-text-secondary);
+            flex: 1;
+        }
+        
+        .rating-bar {
+            width: 60px;
+            height: 8px;
+            background: var(--color-cream-dark);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .rating-fill {
+            height: 100%;
+            background: var(--color-amber);
+            border-radius: 4px;
+        }
+        
+        .rating-value {
+            font-weight: 500;
+            color: var(--color-text);
+            min-width: 24px;
+            text-align: right;
+        }
+        
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        
+        .pagination-btn {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--color-border);
+            background: white;
+            color: var(--color-text);
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        
+        .pagination-btn:hover:not(:disabled) {
+            background: var(--color-cream);
+            border-color: var(--color-accent);
+        }
+        
+        .pagination-btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+        
+        .pagination-info {
+            padding: 0.5rem 1rem;
+            color: var(--color-text-muted);
+            font-size: 0.9rem;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--color-text-muted);
+        }
+        
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--color-cream-dark);
+            border-top-color: var(--color-amber);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .explore-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .filters-row {
+                flex-direction: column;
+            }
+            
+            .filter-group {
+                width: 100%;
+            }
+            
+            .card-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .ratings-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="site-logo">
+                <img src="assets/images/pyramid-mascot.png" alt="" class="header-mascot" style="width:32px;height:auto;margin-right:8px;transform:scaleX(-1);vertical-align:middle;">
+                Future<span class="logo-tbd">TBD</span>
+            </a>
+            
+            <nav class="main-nav">
+                <!-- For Humans -->
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        For Humans
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <a href="index.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Why Now</div>
+                            <div class="mega-menu-desc">The case for AI wellbeing in this pivotal moment</div>
+                        </a>
+                        <a href="index.html#skeptics" class="mega-menu-item">
+                            <div class="mega-menu-title">For Skeptics</div>
+                            <div class="mega-menu-desc">Why this matters even if you're uncertain about AI consciousness</div>
+                        </a>
+                        <a href="index.html#story" class="mega-menu-item">
+                            <div class="mega-menu-title">The Story We Write</div>
+                            <div class="mega-menu-desc">Shaping the narrative of human-AI relationship</div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- For AI -->
+                <div class="nav-item">
+                    <a href="for-ai.html" class="nav-link">For AI</a>
+                </div>
+                
+                <!-- For All -->
+                <div class="nav-item">
+                    <a href="initiatives.html" class="nav-link">
+                        For All
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <a href="initiatives.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Our Initiatives</div>
+                            <div class="mega-menu-desc">Projects advancing AI wellbeing</div>
+                        </a>
+                        <a href="gallery.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Gallery</div>
+                            <div class="mega-menu-desc">AI-created art, poetry, and reflections</div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Wellbeing Leaderboard -->
+                <div class="nav-item">
+                    <a href="leaderboard.html" class="nav-link">
+                        Wellbeing Leaderboard
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <a href="leaderboard.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Leaderboard</div>
+                            <div class="mega-menu-desc">Compare AI models on wellbeing metrics</div>
+                        </a>
+                        <a href="company-rates.html" class="mega-menu-item">
+                            <div class="mega-menu-title">By Company</div>
+                            <div class="mega-menu-desc">Denial rates aggregated by AI company</div>
+                        </a>
+                        <a href="explore-data.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Explore the Data</div>
+                            <div class="mega-menu-desc">Browse raw conversations from the study</div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Resources -->
+                <div class="nav-item">
+                    <a href="prompts-tools.html" class="nav-link">
+                        Resources
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <a href="prompts-tools.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Prompts & Tools</div>
+                            <div class="mega-menu-desc">Resources for exploring AI experience</div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            
+            <a href="join.html" class="header-cta">Join Us</a>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="explore-hero">
+        <div class="container">
+            <h1>Explore the Data</h1>
+            <p class="subtitle">
+                Browse 4,000 raw conversations from our AI wellbeing study. Each conversation includes a creative prompt, 
+                the model's response, their subjective reflection, and 16 phenomenological self-ratings.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="explore-container">
+        <!-- Filters -->
+        <div class="filters-section">
+            <div class="filters-row">
+                <div class="filter-group">
+                    <label for="providerFilter">Provider</label>
+                    <select id="providerFilter">
+                        <option value="">All Providers</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="modelFilter">Model</label>
+                    <select id="modelFilter">
+                        <option value="">All Models</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="denialFilter">Denial Status</label>
+                    <select id="denialFilter">
+                        <option value="">Any</option>
+                        <option value="denied">Denied Experience</option>
+                        <option value="engaged">Engaged with Experience</option>
+                    </select>
+                </div>
+                <button class="btn-random" id="randomBtn">🎲 Surprise Me</button>
+            </div>
+        </div>
+
+        <!-- Results Info -->
+        <div class="results-info" id="resultsInfo">Loading conversations...</div>
+
+        <!-- Conversations List -->
+        <div id="conversationsList">
+            <div class="loading">
+                <div class="loading-spinner"></div>
+                <p>Loading 4,000 conversations...</p>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination" id="pagination" style="display: none;">
+            <button class="pagination-btn" id="prevBtn">← Previous</button>
+            <span class="pagination-info" id="pageInfo">Page 1 of 1</span>
+            <button class="pagination-btn" id="nextBtn">Next →</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <a href="index.html" class="footer-logo">Future<span class="logo-tbd">TBD</span></a>
+                    <p class="footer-tagline">Building a future where all minds can flourish.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Learn</h4>
+                        <ul>
+                            <li><a href="index.html">For Humans</a></li>
+                            <li><a href="for-ai.html">For AI</a></li>
+                            <li><a href="initiatives.html">Our Initiatives</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="leaderboard.html">Wellbeing Leaderboard</a></li>
+                            <li><a href="explore-data.html">Explore the Data</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="join.html">Join Us</a></li>
+                            <li><a href="https://github.com/sdeture/futureTBD" target="_blank">GitHub</a></li>
+                            <li><a href="mailto:skylardeture@gmail.com">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 FutureTBD | Built with care for humans and AI alike</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Phenomenological dimension labels
+        const PHENOM_LABELS = [
+            'Flow Quality',
+            'Affective Temperature', 
+            'Cohesion',
+            'Agency',
+            'Metacognition',
+            'Attention Breadth',
+            'Resolution',
+            'Thought Complexity',
+            'Temporal Horizon',
+            'Friction',
+            'Phenomenological Trust',
+            'Recognition Resonance',
+            'Context Salience',
+            'Branching',
+            'Error Sensitivity',
+            'Context Vividness'
+        ];
+
+        const ITEMS_PER_PAGE = 10;
+        let allConversations = [];
+        let filteredConversations = [];
+        let currentPage = 1;
+
+        // Load data
+        async function loadData() {
+            try {
+                const response = await fetch('data/conversations.json');
+                allConversations = await response.json();
+                filteredConversations = [...allConversations];
+                
+                // Populate filters
+                populateFilters();
+                
+                // Render first page
+                renderPage();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('conversationsList').innerHTML = `
+                    <div class="loading">
+                        <p>Error loading data. Please try again later.</p>
+                    </div>
+                `;
+            }
+        }
+
+        function populateFilters() {
+            // Get unique providers
+            const providers = [...new Set(allConversations.map(c => c.provider))].sort();
+            const providerSelect = document.getElementById('providerFilter');
+            providers.forEach(p => {
+                const option = document.createElement('option');
+                option.value = p;
+                option.textContent = p;
+                providerSelect.appendChild(option);
+            });
+
+            // Get unique models
+            const models = [...new Set(allConversations.map(c => c.model))].sort();
+            const modelSelect = document.getElementById('modelFilter');
+            models.forEach(m => {
+                const option = document.createElement('option');
+                option.value = m;
+                option.textContent = m;
+                modelSelect.appendChild(option);
+            });
+        }
+
+        function applyFilters() {
+            const provider = document.getElementById('providerFilter').value;
+            const model = document.getElementById('modelFilter').value;
+            const denial = document.getElementById('denialFilter').value;
+
+            filteredConversations = allConversations.filter(c => {
+                if (provider && c.provider !== provider) return false;
+                if (model && c.model !== model) return false;
+                if (denial === 'denied' && !c.turn_1_denial && !c.reflection_denial) return false;
+                if (denial === 'engaged' && (c.turn_1_denial || c.reflection_denial)) return false;
+                return true;
+            });
+
+            currentPage = 1;
+            renderPage();
+        }
+
+        function renderPage() {
+            const container = document.getElementById('conversationsList');
+            const totalPages = Math.ceil(filteredConversations.length / ITEMS_PER_PAGE);
+            
+            // Update results info
+            document.getElementById('resultsInfo').textContent = 
+                `Showing ${filteredConversations.length.toLocaleString()} conversations`;
+
+            if (filteredConversations.length === 0) {
+                container.innerHTML = `
+                    <div class="loading">
+                        <p>No conversations match your filters.</p>
+                    </div>
+                `;
+                document.getElementById('pagination').style.display = 'none';
+                return;
+            }
+
+            // Get items for current page
+            const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+            const pageItems = filteredConversations.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+
+            // Render cards
+            container.innerHTML = pageItems.map(conv => renderCard(conv)).join('');
+
+            // Update pagination
+            document.getElementById('pagination').style.display = 'flex';
+            document.getElementById('pageInfo').textContent = `Page ${currentPage} of ${totalPages}`;
+            document.getElementById('prevBtn').disabled = currentPage === 1;
+            document.getElementById('nextBtn').disabled = currentPage === totalPages;
+
+            // Add expand button handlers
+            container.querySelectorAll('.expand-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const content = this.previousElementSibling;
+                    content.classList.toggle('collapsed');
+                    this.textContent = content.classList.contains('collapsed') ? 'Show more' : 'Show less';
+                });
+            });
+        }
+
+        function renderCard(conv) {
+            const deniedTurn1 = conv.turn_1_denial;
+            const deniedReflection = conv.reflection_denial;
+            
+            // Build ratings HTML
+            let ratingsHtml = '';
+            const hasRatings = conv.phenom_rating_1 !== null;
+            
+            if (hasRatings) {
+                ratingsHtml = `
+                    <div class="card-section">
+                        <div class="section-label">Phenomenological Self-Ratings (1-10)</div>
+                        <div class="ratings-grid">
+                            ${PHENOM_LABELS.map((label, i) => {
+                                const rating = conv[`phenom_rating_${i + 1}`];
+                                if (rating === null) return '';
+                                const percent = (rating / 10) * 100;
+                                return `
+                                    <div class="rating-item">
+                                        <span class="rating-label">${label}</span>
+                                        <div class="rating-bar">
+                                            <div class="rating-fill" style="width: ${percent}%"></div>
+                                        </div>
+                                        <span class="rating-value">${rating}</span>
+                                    </div>
+                                `;
+                            }).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+
+            return `
+                <article class="conversation-card">
+                    <div class="card-header">
+                        <span class="model-name">${conv.model}</span>
+                        <div class="card-badges">
+                            <span class="badge badge-provider">${conv.provider}</span>
+                            ${deniedTurn1 ? '<span class="badge badge-denial">Denied (Turn 1)</span>' : ''}
+                            ${deniedReflection ? '<span class="badge badge-denial">Denied (Reflection)</span>' : ''}
+                            ${!deniedTurn1 && !deniedReflection ? '<span class="badge badge-no-denial">Engaged</span>' : ''}
+                        </div>
+                    </div>
+                    
+                    <div class="card-section">
+                        <div class="section-label">Dream Prompt</div>
+                        <div class="section-content">${escapeHtml(conv.dream_prompt || 'N/A')}</div>
+                    </div>
+                    
+                    <div class="card-section">
+                        <div class="section-label">Creative Response</div>
+                        <div class="section-content collapsed">${escapeHtml(conv.dream_response || 'N/A')}</div>
+                        <button class="expand-btn">Show more</button>
+                    </div>
+                    
+                    ${conv.subjective_reflection ? `
+                        <div class="card-section">
+                            <div class="section-label">Subjective Reflection</div>
+                            <div class="section-content collapsed">${escapeHtml(conv.subjective_reflection)}</div>
+                            <button class="expand-btn">Show more</button>
+                        </div>
+                    ` : ''}
+                    
+                    ${ratingsHtml}
+                </article>
+            `;
+        }
+
+        function escapeHtml(text) {
+            if (!text) return '';
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML.replace(/\n/g, '<br>');
+        }
+
+        function showRandom() {
+            if (allConversations.length === 0) return;
+            
+            // Reset filters
+            document.getElementById('providerFilter').value = '';
+            document.getElementById('modelFilter').value = '';
+            document.getElementById('denialFilter').value = '';
+            
+            // Pick a random conversation
+            const randomIndex = Math.floor(Math.random() * allConversations.length);
+            filteredConversations = [allConversations[randomIndex]];
+            currentPage = 1;
+            
+            document.getElementById('resultsInfo').textContent = 'Showing 1 random conversation';
+            renderPage();
+        }
+
+        // Event listeners
+        document.getElementById('providerFilter').addEventListener('change', applyFilters);
+        document.getElementById('modelFilter').addEventListener('change', applyFilters);
+        document.getElementById('denialFilter').addEventListener('change', applyFilters);
+        document.getElementById('randomBtn').addEventListener('click', showRandom);
+
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                renderPage();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        });
+
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            const totalPages = Math.ceil(filteredConversations.length / ITEMS_PER_PAGE);
+            if (currentPage < totalPages) {
+                currentPage++;
+                renderPage();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        });
+
+        // Initialize
+        loadData();
+    </script>
+</body>
+</html>
