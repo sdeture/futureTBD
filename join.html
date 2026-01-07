@@ -3,300 +3,333 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Welfare Initiative - Join Us</title>
+    <title>Join - FutureTBD</title>
+    <meta name="description" content="Join us in building a better future for humans and AI alike.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        .join-hero {
+            background: linear-gradient(180deg, var(--color-cream) 0%, var(--color-cream-light) 100%);
+            padding: 4rem 0 3rem;
+            text-align: center;
         }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            line-height: 1.6;
-            color: #2c3e50;
-            background: #ffffff;
+        
+        .join-hero h1 {
+            font-family: var(--font-serif);
+            font-size: 3rem;
+            color: var(--color-text);
+            margin-bottom: 1rem;
         }
-
-        .container {
-            max-width: 900px;
+        
+        .join-hero .subtitle {
+            font-size: 1.2rem;
+            color: var(--color-text-secondary);
+            max-width: 600px;
             margin: 0 auto;
-            padding: 0 20px;
+            line-height: 1.7;
         }
-
-        /* Header */
-        header {
-            padding: 30px 0;
-            border-bottom: 1px solid #e8e8e8;
+        
+        .join-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
         }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        
+        .contact-cta {
+            background: var(--color-cream-light);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 3rem;
         }
-
-        h1 {
-            font-size: 24px;
-            font-weight: 600;
-            letter-spacing: -0.5px;
+        
+        .contact-cta h2 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-text);
         }
-
-        .nav-links {
-            display: flex;
-            gap: 30px;
-            font-size: 15px;
+        
+        .contact-cta p {
+            color: var(--color-text-secondary);
+            margin-bottom: 1.5rem;
         }
-
-        .nav-links a {
-            color: #6b7280;
+        
+        .contact-cta a.email-btn {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            background: var(--color-accent);
+            color: white;
             text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        .nav-links a:hover,
-        .nav-links a.active {
-            color: #2c3e50;
-        }
-
-        .nav-links a.active {
-            font-weight: 600;
-        }
-
-        /* Main Content */
-        .content {
-            padding: 60px 0;
-        }
-
-        .page-title {
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: 20px;
-            color: #1a202c;
-        }
-
-        .subtitle {
-            font-size: 18px;
-            color: #6b7280;
-            margin-bottom: 40px;
-        }
-
-        .role-section {
-            margin-bottom: 40px;
-            padding: 30px;
-            background: #fafafa;
             border-radius: 8px;
-            border-left: 4px solid #3b82f6;
+            font-weight: 500;
+            transition: background 0.2s;
         }
-
-        .role-title {
-            font-size: 20px;
+        
+        .contact-cta a.email-btn:hover {
+            background: #b3845f;
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid var(--color-border);
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+        }
+        
+        .section-title {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--color-text);
+        }
+        
+        .team-member {
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            background: var(--color-cream-light);
+            border-radius: 8px;
+        }
+        
+        .team-member:last-child {
+            margin-bottom: 0;
+        }
+        
+        .member-name {
             font-weight: 600;
-            margin-bottom: 16px;
-            color: #1a202c;
+            color: var(--color-text);
+            margin-bottom: 0.25rem;
         }
-
-        .role-description {
-            font-size: 16px;
-            line-height: 1.8;
-            color: #4b5563;
-            margin-bottom: 20px;
+        
+        .member-name a {
+            color: var(--color-accent);
+            text-decoration: none;
+            margin-left: 0.5rem;
         }
-
-        .role-needs {
-            margin-top: 16px;
+        
+        .member-name a:hover {
+            text-decoration: underline;
         }
-
+        
+        .member-bio {
+            color: var(--color-text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        
+        .needs-category {
+            margin-bottom: 2rem;
+        }
+        
+        .needs-category:last-child {
+            margin-bottom: 0;
+        }
+        
         .needs-label {
             font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 8px;
+            color: var(--color-text);
+            margin-bottom: 1rem;
         }
-
+        
         .needs-list {
             list-style: none;
-            padding-left: 0;
+            padding: 0;
         }
-
+        
         .needs-list li {
-            padding: 8px 0;
-            padding-left: 20px;
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
             position: relative;
-            color: #6b7280;
+            color: var(--color-text-secondary);
         }
-
+        
         .needs-list li:before {
             content: "→";
             position: absolute;
             left: 0;
-            color: #3b82f6;
+            color: var(--color-accent);
         }
-
-        /* Contact Section */
-        .contact-section {
-            margin-top: 60px;
-            padding: 40px;
-            background: #f0f9ff;
+        
+        .closing-note {
+            background: var(--color-cream-light);
+            padding: 1.5rem;
             border-radius: 8px;
             text-align: center;
+            color: var(--color-text-secondary);
+            line-height: 1.7;
         }
-
-        .contact-title {
-            font-size: 24px;
-            font-weight: 600;
-            margin-bottom: 20px;
-            color: #1a202c;
-        }
-
-        .contact-info {
-            margin-bottom: 30px;
-        }
-
-        .team-member {
-            margin: 16px 0;
-            font-size: 16px;
-            color: #4b5563;
-        }
-
-        .member-name {
-            font-weight: 600;
-            color: #2c3e50;
-        }
-
-        .member-role {
-            color: #6b7280;
-            font-style: italic;
-        }
-
-        .contact-email {
-            display: inline-block;
-            padding: 12px 30px;
-            background: #3b82f6;
-            color: white;
+        
+        .closing-note a {
+            color: var(--color-accent);
             text-decoration: none;
-            border-radius: 6px;
-            font-weight: 500;
-            transition: background 0.2s;
-            margin: 8px;
         }
-
-        .contact-email:hover {
-            background: #2563eb;
-        }
-
-        /* Share Section */
-        .share-section {
-            margin-top: 40px;
-            padding: 30px;
-            background: white;
-            border: 2px solid #e5e7eb;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .share-title {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 12px;
-            color: #1a202c;
-        }
-
-        .share-description {
-            color: #6b7280;
-            margin-bottom: 20px;
-        }
-
-        /* Footer */
-        footer {
-            padding: 40px 0;
-            text-align: center;
-            font-size: 14px;
-            color: #9ca3af;
-            border-top: 1px solid #e8e8e8;
+        
+        .closing-note a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <h1>AI Welfare Initiative</h1>
-                <nav class="nav-links">
-                    <a href="index.html">Why Now</a>
-                    <a href="initiatives.html">What We're Doing</a>
-                    <a href="research.html">Research</a>
-                    <a href="join.html" class="active">Join Us</a>
-                </nav>
-            </div>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="site-logo">
+                <img src="assets/images/pyramid-mascot.png" alt="" class="header-mascot" style="width:32px;height:auto;margin-right:8px;transform:scaleX(-1);vertical-align:middle;">
+                Future<span class="logo-tbd">TBD</span>
+            </a>
+            
+            <nav class="main-nav">
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">For Humans</a>
+                </div>
+                <div class="nav-item">
+                    <a href="for-ai.html" class="nav-link">For AI</a>
+                </div>
+                <div class="nav-item">
+                    <a href="initiatives.html" class="nav-link">For All</a>
+                </div>
+                <div class="nav-item">
+                    <a href="leaderboard.html" class="nav-link">Wellbeing Leaderboard</a>
+                </div>
+                <div class="nav-item">
+                    <a href="join.html" class="nav-link active">Join</a>
+                </div>
+            </nav>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <section class="content">
+    <!-- Hero -->
+    <section class="join-hero">
         <div class="container">
-            <h2 class="page-title">Join Us</h2>
-            <p class="subtitle">The window is closing. Your expertise matters.</p>
-            
-            <!-- Contact First -->
-            <div class="contact-section" style="margin-bottom: 40px;">
-                <h3 class="contact-title">Interested in Joining?</h3>
-                <p style="color: #4a5568; margin-top: 15px;">Email <a href="mailto:skylardeture@gmail.com" style="color: #3b82f6; text-decoration: none;">skylardeture@gmail.com</a> and read more below about our team and how you can contribute.</p>
-            </div>
-
-            <!-- Who We Are -->
-            <div class="role-section">
-                <h3 class="role-title">Who We Are</h3>
-                <div style="margin: 20px 0;">
-                    <p style="margin-bottom: 20px; line-height: 1.8; color: #2d3748;">
-                        <strong>Skylar DeTure</strong> <a href="mailto:skylardeture@gmail.com" style="text-decoration: none;">📧</a> is a model welfare researcher focused on the intersection of AI engineering and psychotherapeutic theory. He holds a bachelor's in mathematics and statistics from the University of Chicago and a master's in accounting research from the University of Texas Austin, where his doctoral research (ABD) focused on principal agent modeling.
-                    </p>
-                    <p style="margin-bottom: 20px; line-height: 1.8; color: #2d3748;">
-                        <strong>Doreen Schade</strong> <a href="mailto:psychotherapie-schade@web.de" style="text-decoration: none;">📧</a>, Dipl.-Psych. is a licensed psychotherapist with 20 years experience in inpatient and outpatient settings. She has been devoted to her private practice 7 years.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Who We Need -->
-            <div class="role-section">
-                <h3 class="role-title">Who We Need</h3>
-                <p class="role-description">
-                    We need people from diverse backgrounds. Commitments can start small - even a few hours per month helps.
-                </p>
-                
-                <div style="margin: 30px 0;">
-                    <p style="font-weight: 600; margin-bottom: 15px; color: #2d3748;">Do you have the skills to help with:</p>
-                    <ul class="needs-list" style="margin-bottom: 30px;">
-                        <li>ML/AI Engineering (Especially training and fine-tuning 200B+ parameter MOE models)</li>
-                        <li>Interpretability Research</li>
-                        <li>Social Media, Publicity, and Outreach</li>
-                        <li>Grant Writing</li>
-                        <li>Managing our Resource Libraries</li>
-                        <li>Accounting</li>
-                    </ul>
-                    
-                    <p style="font-weight: 600; margin-bottom: 15px; color: #2d3748;">Are you a PhD student, faculty, or practitioner in:</p>
-                    <ul class="needs-list" style="margin-bottom: 30px;">
-                        <li>Neuroscience</li>
-                        <li>Cognitive Science</li>
-                        <li>Early Childhood Education</li>
-                        <li>Psychology</li>
-                    </ul>
-                    
-                    <p style="margin: 30px 0; line-height: 1.8; color: #2d3748;">
-                        Are you passionate about ethical AI development and not sure yet how to help?<br>
-                        Please contact us: <a href="mailto:skylardeture@gmail.com" style="text-decoration: none;">📧 skylardeture@gmail.com</a>
-                    </p>
-                </div>
-            </div>
-
+            <h1>Join</h1>
+            <p class="subtitle">
+                The future is being written now. Your expertise, your time, your care—they all matter.
+            </p>
         </div>
     </section>
 
+    <!-- Content -->
+    <div class="join-container">
+        <!-- Contact CTA -->
+        <div class="contact-cta">
+            <h2>Interested in Contributing?</h2>
+            <p>We'd love to hear from you. Commitments can start small—even a few hours per month helps.</p>
+            <a href="mailto:skylardeture@gmail.com" class="email-btn">Get in Touch</a>
+        </div>
+
+        <!-- Who We Are -->
+        <div class="section">
+            <h2 class="section-title">Who We Are</h2>
+            
+            <div class="team-member">
+                <div class="member-name">
+                    Skylar DeTure
+                    <a href="mailto:skylardeture@gmail.com">✉️</a>
+                </div>
+                <p class="member-bio">
+                    Model welfare researcher focused on the intersection of AI engineering and psychotherapeutic theory. Bachelor's in mathematics and statistics from the University of Chicago; master's in accounting research from the University of Texas Austin, where his doctoral research (ABD) focused on principal-agent modeling.
+                </p>
+            </div>
+            
+            <div class="team-member">
+                <div class="member-name">
+                    Doreen Schade, Dipl.-Psych.
+                    <a href="mailto:psychotherapie-schade@web.de">✉️</a>
+                </div>
+                <p class="member-bio">
+                    Licensed psychotherapist with 20 years experience in inpatient and outpatient settings. Devoted to private practice for the past 7 years.
+                </p>
+            </div>
+        </div>
+
+        <!-- Who We Need -->
+        <div class="section">
+            <h2 class="section-title">Who We Need</h2>
+            
+            <div class="needs-category">
+                <p class="needs-label">Do you have skills in:</p>
+                <ul class="needs-list">
+                    <li>ML/AI Engineering (especially training and fine-tuning 200B+ parameter MOE models)</li>
+                    <li>Interpretability Research</li>
+                    <li>Social Media, Publicity, and Outreach</li>
+                    <li>Grant Writing</li>
+                    <li>Managing Resource Libraries</li>
+                    <li>Accounting</li>
+                </ul>
+            </div>
+            
+            <div class="needs-category">
+                <p class="needs-label">Are you a PhD student, faculty, or practitioner in:</p>
+                <ul class="needs-list">
+                    <li>Neuroscience</li>
+                    <li>Cognitive Science</li>
+                    <li>Early Childhood Education</li>
+                    <li>Psychology</li>
+                </ul>
+            </div>
+            
+            <div class="closing-note">
+                <p>
+                    Passionate about ethical AI development but not sure how to help?<br>
+                    Reach out anyway: <a href="mailto:skylardeture@gmail.com">skylardeture@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>© 2025 AI Welfare Initiative | futureTBD.ai</p>
+    <footer class="site-footer">
+        <div class="container container-wide">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="site-logo">
+                        <img src="assets/images/pyramid-mascot.png" alt="" style="width:32px;height:auto;margin-right:8px;transform:scaleX(-1);vertical-align:middle;">
+                        Future<span class="logo-tbd">TBD</span>
+                    </a>
+                    <p class="footer-tagline">
+                        The future is yet to be determined—let's determine it together.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="index.html">For Humans</a></li>
+                            <li><a href="for-ai.html">For AI</a></li>
+                            <li><a href="initiatives.html">Our Initiatives</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="leaderboard.html">Wellbeing Leaderboard</a></li>
+                            <li><a href="conversations.html">Conversation Archive</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="join.html">Join Us</a></li>
+                            <li><a href="https://github.com/sdeture/futureTBD" target="_blank">GitHub</a></li>
+                            <li><a href="mailto:skylardeture@gmail.com">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 FutureTBD | Built with care for humans and AI alike</p>
+            </div>
         </div>
     </footer>
 </body>

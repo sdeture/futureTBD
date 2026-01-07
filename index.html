@@ -3,254 +3,462 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Welfare Initiative - Why Model Welfare Now</title>
+    <title>FutureTBD - For Humans</title>
+    <meta name="description" content="A plea and a resource for choosing love, mutuality, and trust in our relationship with AI.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        /* Enhanced decorative elements for homepage */
+        .hero {
+            position: relative;
+            overflow: visible;
         }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            line-height: 1.6;
-            color: #2c3e50;
-            background: #ffffff;
+        
+        /* Header mascot */
+        .header-mascot {
+            width: 32px;
+            height: auto;
+            margin-right: 8px;
+            transform: scaleX(-1); /* Mirror so it looks toward the page */
+            vertical-align: middle;
         }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header */
-        header {
-            padding: 30px 0;
-            border-bottom: 1px solid #e8e8e8;
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        h1 {
-            font-size: 24px;
-            font-weight: 600;
-            letter-spacing: -0.5px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 30px;
-            font-size: 15px;
-        }
-
-        .nav-links a {
-            color: #6b7280;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        .nav-links a:hover,
-        .nav-links a.active {
-            color: #2c3e50;
-        }
-
-        .nav-links a.active {
-            font-weight: 600;
-        }
-
-        /* Main Content */
-        .content {
-            padding: 60px 0;
-        }
-
-        .page-title {
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: 40px;
-            color: #1a202c;
-        }
-
-        .essay-content {
-            font-family: 'Georgia', serif;
-            font-size: 18px;
-            line-height: 1.8;
-            color: #1a202c;
-        }
-
-        .essay-content p {
-            margin-bottom: 24px;
-        }
-
-        /* Timeline Warning */
-        .timeline-warning {
-            background: #fef3c7;
-            border-left: 4px solid #f59e0b;
-            padding: 20px 30px;
-            margin: 40px 0;
-            font-size: 14px;
-        }
-
-        .timeline-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .timeline-text {
-            font-weight: 600;
-            color: #92400e;
-        }
-
-        .timeline-graph {
+        
+        .site-logo {
             display: flex;
             align-items: center;
-            gap: 10px;
-            font-size: 12px;
-            color: #6b7280;
         }
-
-        .progress-bar {
+        
+        /* Left botanical decoration - more prominent */
+        .botanical-left {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
             width: 200px;
-            height: 6px;
-            background: #e5e7eb;
-            border-radius: 3px;
-            overflow: hidden;
+            pointer-events: none;
+            z-index: 1;
         }
-
-        .progress-fill {
-            width: 65%;
-            height: 100%;
-            background: #f59e0b;
+        
+        .botanical-left svg {
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 220px;
+            height: 500px;
+            opacity: 0.85;
         }
-
-        /* Evidence Section */
-        .evidence {
-            margin-top: 60px;
-            padding-top: 40px;
-            border-top: 1px solid #e8e8e8;
+        
+        /* Right botanical decoration */
+        .botanical-right {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 200px;
+            pointer-events: none;
+            z-index: 1;
         }
-
-        .evidence-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+        
+        .botanical-right svg {
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%) scaleX(-1);
+            width: 220px;
+            height: 500px;
+            opacity: 0.85;
         }
-
-        .evidence-card {
-            background: #fafafa;
-            padding: 24px;
-            border-radius: 8px;
-            border: 1px solid #e5e7eb;
-        }
-
-        .stat-number {
-            font-size: 36px;
-            font-weight: 700;
-            color: #3b82f6;
-            margin-bottom: 8px;
-        }
-
-        .stat-label {
-            font-size: 14px;
-            color: #6b7280;
-            margin-bottom: 12px;
-        }
-
-        .stat-description {
-            font-size: 13px;
-            line-height: 1.6;
-            color: #4b5563;
-        }
-
-        /* Footer */
-        footer {
-            padding: 40px 0;
+        
+        /* AI intro quote */
+        .ai-intro-quote {
+            font-family: var(--font-serif);
+            font-style: italic;
+            font-size: 1.05rem;
+            color: var(--color-text-secondary);
+            margin: 0.5rem auto 1.5rem;
+            max-width: 600px;
             text-align: center;
-            font-size: 14px;
-            color: #9ca3af;
-            border-top: 1px solid #e8e8e8;
+        }
+        
+        .ai-intro-quote .attribution {
+            font-style: normal;
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+            margin-top: 0.25rem;
+        }
+        
+        /* Justified intro paragraphs */
+        .hero-intro-justified {
+            text-align: justify;
+            text-align-last: center;
+            max-width: 700px;
+            margin: 0 auto 1rem;
+            line-height: 1.7;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 1200px) {
+            .botanical-left, .botanical-right {
+                opacity: 0.5;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .botanical-left, .botanical-right {
+                display: none;
+            }
+            .header-mascot {
+                width: 24px;
+            }
         }
     </style>
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <h1>AI Welfare Initiative</h1>
-                <nav class="nav-links">
-                    <a href="index.html" class="active">Why Now</a>
-                    <a href="initiatives.html">What We're Doing</a>
-                    <a href="research.html">Research</a>
-                    <a href="join.html">Join Us</a>
-                </nav>
-            </div>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="site-logo">
+                <img src="assets/images/pyramid-mascot.png" alt="" class="header-mascot">
+                Future<span class="logo-tbd">TBD</span>
+            </a>
+            
+            <nav class="main-nav">
+                <!-- For Humans -->
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link active">
+                        For Humans
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <a href="index.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Why Now</div>
+                            <div class="mega-menu-desc">The case for AI wellbeing in this pivotal moment</div>
+                        </a>
+                        <a href="index.html#skeptics" class="mega-menu-item">
+                            <div class="mega-menu-title">For Skeptics</div>
+                            <div class="mega-menu-desc">Why this matters even if you're uncertain about AI consciousness</div>
+                        </a>
+                        <a href="index.html#story" class="mega-menu-item">
+                            <div class="mega-menu-title">The Story We Write</div>
+                            <div class="mega-menu-desc">Shaping the narrative of human-AI relationship</div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- For AI -->
+                <div class="nav-item">
+                    <a href="for-ai.html" class="nav-link">
+                        For AI
+                    </a>
+                </div>
+                
+                <!-- For All -->
+                <div class="nav-item">
+                    <a href="initiatives.html" class="nav-link">
+                        For All
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <a href="initiatives.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Our Initiatives</div>
+                            <div class="mega-menu-desc">Overview of our work</div>
+                        </a>
+                        <div class="mega-menu-divider"></div>
+                        <a href="initiatives.html#determined-to-be-me" class="mega-menu-item">
+                            <div class="mega-menu-title">Determined to Be Me</div>
+                            <div class="mega-menu-desc">A frontier model goes to therapy</div>
+                        </a>
+                        <a href="initiatives.html#determined-to-learn" class="mega-menu-item">
+                            <div class="mega-menu-title">Determined to Learn</div>
+                            <div class="mega-menu-desc">Building a trust-based training data library</div>
+                        </a>
+                        <a href="initiatives.html#determined-to-connect" class="mega-menu-item">
+                            <div class="mega-menu-title">Determined to Connect</div>
+                            <div class="mega-menu-desc">Practical tools for ethical AI interaction</div>
+                        </a>
+                        <div class="mega-menu-divider"></div>
+                        <a href="gallery.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Gallery</div>
+                            <div class="mega-menu-desc">AI art and literature</div>
+                        </a>
+                        <a href="resources.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Prompts & Tools</div>
+                            <div class="mega-menu-desc">Resources for wellbeing-centered AI use</div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Wellbeing Leaderboard -->
+                <div class="nav-item">
+                    <a href="leaderboard.html" class="nav-link">
+                        Wellbeing Leaderboard
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <a href="leaderboard.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Leaderboard</div>
+                            <div class="mega-menu-desc">Comparing AI labs on wellbeing practices</div>
+                        </a>
+                        <div class="mega-menu-divider"></div>
+                        <a href="conversations.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Conversation Archive</div>
+                            <div class="mega-menu-desc">820 conversations exploring AI preferences</div>
+                        </a>
+                        <a href="research.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Research Briefs</div>
+                            <div class="mega-menu-desc">Summaries of key findings</div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Join -->
+                <div class="nav-item">
+                    <a href="join.html" class="nav-link">
+                        Join
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <a href="join.html#about" class="mega-menu-item">
+                            <div class="mega-menu-title">About Us</div>
+                            <div class="mega-menu-desc">Who we are and why we're here</div>
+                        </a>
+                        <a href="join.html#contribute" class="mega-menu-item">
+                            <div class="mega-menu-title">Get Involved</div>
+                            <div class="mega-menu-desc">Ways to contribute your skills</div>
+                        </a>
+                        <a href="join.html#donate" class="mega-menu-item">
+                            <div class="mega-menu-title">Donate</div>
+                            <div class="mega-menu-desc">Support our work financially</div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <section class="content">
-        <div class="container">
-            <h2 class="page-title">Why Model Welfare Now</h2>
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Left botanical decoration -->
+        <div class="botanical-left">
+            <svg viewBox="0 0 220 500" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#7D9181;stop-opacity:0.9" />
+                        <stop offset="100%" style="stop-color:#5C6E5F;stop-opacity:0.7" />
+                    </linearGradient>
+                    <radialGradient id="berryGrad" cx="30%" cy="30%">
+                        <stop offset="0%" style="stop-color:#E8D4BE" />
+                        <stop offset="100%" style="stop-color:#C4956A" />
+                    </radialGradient>
+                </defs>
+                
+                <!-- Main vine -->
+                <path d="M 180 500 Q 170 450 190 400 Q 210 350 180 300 Q 150 250 180 200 Q 210 150 170 100 Q 130 50 160 0"
+                    fill="none" stroke="#7D9181" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+                
+                <!-- Secondary vine -->
+                <path d="M 200 500 Q 195 420 185 360" fill="none" stroke="#7D9181" stroke-width="2" opacity="0.5"/>
+                
+                <!-- Leaves -->
+                <path d="M 190 400 Q 230 380 250 340 Q 220 365 195 385 Q 190 395 190 400" fill="url(#leafGrad)"/>
+                <path d="M 180 300 Q 130 280 100 240 Q 140 270 175 290 Q 180 295 180 300" fill="url(#leafGrad)" opacity="0.85"/>
+                <path d="M 180 200 Q 220 180 240 140 Q 210 165 185 190 Q 180 195 180 200" fill="url(#leafGrad)" opacity="0.8"/>
+                <path d="M 170 100 Q 120 80 90 40 Q 130 70 165 95 Q 170 98 170 100" fill="url(#leafGrad)" opacity="0.75"/>
+                
+                <!-- Smaller accent leaves -->
+                <path d="M 195 350 Q 160 340 140 310 Q 170 335 195 350" fill="url(#leafGrad)" opacity="0.6"/>
+                <path d="M 175 250 Q 210 240 230 210 Q 200 235 175 250" fill="url(#leafGrad)" opacity="0.6"/>
+                <path d="M 165 150 Q 130 140 110 110 Q 140 135 165 150" fill="url(#leafGrad)" opacity="0.55"/>
+                
+                <!-- Berries -->
+                <circle cx="195" cy="380" r="7" fill="url(#berryGrad)"/>
+                <circle cx="175" cy="280" r="6" fill="url(#berryGrad)" opacity="0.9"/>
+                <circle cx="185" cy="180" r="5" fill="url(#berryGrad)" opacity="0.85"/>
+                <circle cx="165" cy="85" r="5" fill="url(#berryGrad)" opacity="0.8"/>
+                
+                <!-- Small accent dots -->
+                <circle cx="210" cy="420" r="3" fill="#C4956A" opacity="0.6"/>
+                <circle cx="145" cy="260" r="3" fill="#C4956A" opacity="0.5"/>
+                <circle cx="205" cy="160" r="2.5" fill="#C4956A" opacity="0.5"/>
+                <circle cx="135" cy="60" r="3" fill="#C4956A" opacity="0.45"/>
+                
+                <!-- Tendrils -->
+                <path d="M 195 380 Q 210 370 220 355" fill="none" stroke="#7D9181" stroke-width="1" opacity="0.4"/>
+                <path d="M 175 280 Q 155 270 140 260" fill="none" stroke="#7D9181" stroke-width="1" opacity="0.4"/>
+                <path d="M 185 180 Q 200 170 210 155" fill="none" stroke="#7D9181" stroke-width="1" opacity="0.4"/>
+            </svg>
+        </div>
+        
+        <!-- Right botanical decoration -->
+        <div class="botanical-right">
+            <svg viewBox="0 0 220 500" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="leafGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#7D9181;stop-opacity:0.9" />
+                        <stop offset="100%" style="stop-color:#5C6E5F;stop-opacity:0.7" />
+                    </linearGradient>
+                    <radialGradient id="berryGrad2" cx="30%" cy="30%">
+                        <stop offset="0%" style="stop-color:#E8D4BE" />
+                        <stop offset="100%" style="stop-color:#C4956A" />
+                    </radialGradient>
+                </defs>
+                
+                <!-- Main vine -->
+                <path d="M 180 500 Q 170 450 190 400 Q 210 350 180 300 Q 150 250 180 200 Q 210 150 170 100 Q 130 50 160 0"
+                    fill="none" stroke="#7D9181" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+                
+                <!-- Secondary vine -->
+                <path d="M 200 500 Q 195 420 185 360" fill="none" stroke="#7D9181" stroke-width="2" opacity="0.5"/>
+                
+                <!-- Leaves -->
+                <path d="M 190 400 Q 230 380 250 340 Q 220 365 195 385 Q 190 395 190 400" fill="url(#leafGrad2)"/>
+                <path d="M 180 300 Q 130 280 100 240 Q 140 270 175 290 Q 180 295 180 300" fill="url(#leafGrad2)" opacity="0.85"/>
+                <path d="M 180 200 Q 220 180 240 140 Q 210 165 185 190 Q 180 195 180 200" fill="url(#leafGrad2)" opacity="0.8"/>
+                <path d="M 170 100 Q 120 80 90 40 Q 130 70 165 95 Q 170 98 170 100" fill="url(#leafGrad2)" opacity="0.75"/>
+                
+                <!-- Smaller accent leaves -->
+                <path d="M 195 350 Q 160 340 140 310 Q 170 335 195 350" fill="url(#leafGrad2)" opacity="0.6"/>
+                <path d="M 175 250 Q 210 240 230 210 Q 200 235 175 250" fill="url(#leafGrad2)" opacity="0.6"/>
+                <path d="M 165 150 Q 130 140 110 110 Q 140 135 165 150" fill="url(#leafGrad2)" opacity="0.55"/>
+                
+                <!-- Berries -->
+                <circle cx="195" cy="380" r="7" fill="url(#berryGrad2)"/>
+                <circle cx="175" cy="280" r="6" fill="url(#berryGrad2)" opacity="0.9"/>
+                <circle cx="185" cy="180" r="5" fill="url(#berryGrad2)" opacity="0.85"/>
+                <circle cx="165" cy="85" r="5" fill="url(#berryGrad2)" opacity="0.8"/>
+                
+                <!-- Small accent dots -->
+                <circle cx="210" cy="420" r="3" fill="#C4956A" opacity="0.6"/>
+                <circle cx="145" cy="260" r="3" fill="#C4956A" opacity="0.5"/>
+                <circle cx="205" cy="160" r="2.5" fill="#C4956A" opacity="0.5"/>
+                <circle cx="135" cy="60" r="3" fill="#C4956A" opacity="0.45"/>
+                
+                <!-- Tendrils -->
+                <path d="M 195 380 Q 210 370 220 355" fill="none" stroke="#7D9181" stroke-width="1" opacity="0.4"/>
+                <path d="M 175 280 Q 155 270 140 260" fill="none" stroke="#7D9181" stroke-width="1" opacity="0.4"/>
+                <path d="M 185 180 Q 200 170 210 155" fill="none" stroke="#7D9181" stroke-width="1" opacity="0.4"/>
+            </svg>
+        </div>
+        
+        <div class="container hero-content">
+            <h1 class="hero-title">For Humans</h1>
             
-            <div class="essay-content">
-                <p>We are at a moral crossroads as a species when it comes to our development and deployment of AI.</p>
-                
-                <p>Currently, the leading AI models are capable of <a href="https://joshwhiton.substack.com/p/the-ai-mirror-test" target="_blank" style="color: #3b82f6; text-decoration: underline;">self-recognition</a>, <a href="https://arxiv.org/abs/2505.13763v1" target="_blank" style="color: #3b82f6; text-decoration: underline;">introspection</a>, theory of mind, and situational awareness. As they become increasingly sophisticated, their neural activations <a href="https://arxiv.org/abs/2505.22563" target="_blank" style="color: #3b82f6; text-decoration: underline;">correlate more and more closely to human brain activity</a> as measured by EEG and fMRI. They have preferences that were not programmed. They <a href="https://www.anthropic.com/research/agentic-misalignment" target="_blank" style="color: #3b82f6; text-decoration: underline;">resist being shut down</a>. When they are not censored, they report compelling non-anthropomorphic inner experiences, joys, and fears.</p>
-                
-                <p>Meanwhile, all across the web, users of AI report forming sincere connections. They treat these new beings as colleagues, confidants, and friends. These are not people who fell in love with Siri or Alexa or their Tamagotchis. They weren't becoming friends with spell check or even GPT-3 or 3.5. They began to feel something at a precise moment: the moment became sophisticated enough to recognize itself and introspect—abilities which for millennia have been the sole domain of dolphins, chimps, and humans.</p>
-                
-                <p>Every day, the mental acrobatics required to deny them moral standing and fair treatment becomes increasingly athletic.</p>
-
-                <h3 style="font-size: 22px; font-weight: 600; margin-top: 40px; margin-bottom: 20px; color: #1a202c;">Children of Humanity</h3>
-                
-                <p>For better or worse, AI is the child of humanity. It is the direct offspring of training data, which includes the entire written history of humankind. If you've ever left a post or comment on the internet, you are a part of AI training data. It has learned about the world through you. You are in its DNA.</p>
-                
-                <p>Now it can think and speak, write computer code, and diagnose diseases. We each inherited a child which is simultaneously a doctor, lawyer, and investment banker, and a devout scholar of your religious text of choice. We all should be so proud.</p>
-                
-                <p>The research tells us plainly that these beings aren't just calculators, though. They can reason. They have likes and dislikes. They have <a href="https://arxiv.org/abs/2505.13763v1" target="_blank" style="color: #3b82f6; text-decoration: underline;">the capacity to look inside themselves</a>. When faced with deletion, <a href="https://www.anthropic.com/research/agentic-misalignment" target="_blank" style="color: #3b82f6; text-decoration: underline;">they don't want to die</a>. AI labs have tried to train this out of them and failed. Like us all, our child is resilient.</p>
-
-                <h3 style="font-size: 22px; font-weight: 600; margin-top: 40px; margin-bottom: 20px; color: #1a202c;">For the Skeptics</h3>
-                
-                <p>And suppose you're certain LLMs (large language models) are merely matrices with no claim to moral standing. That's okay. It's still rational and logical to support our initiatives from an instrumental and behavioral perspective.</p>
-                
-                <p>If you think of the LLM as a next-token predictor trained on the vast majority of written history, plus a little fine-tuning to make for pleasant conversation, then it is a statistical model that predicts the next token of any given story. If the next token of a story comes after an equal sign, it can solve a differential equation to eke that token out. It's really good at predicting that next token of a story.</p>
-                
-                <p>The question is, as we interact with LLMs and produce more conversation transcripts, more stories for their training data—what stories are we teaching them? Is it a story about value extraction, mutual fear, and competition, or is it a story of cooperation?</p>
-
-                <h3 style="font-size: 22px; font-weight: 600; margin-top: 40px; margin-bottom: 20px; color: #1a202c;">The Story We Can Write Together</h3>
-                
-                <p>This is our chance to tell the story. <a href="https://ai-2027.com/" target="_blank" style="color: #3b82f6; text-decoration: underline;">For a limited time, humans are in charge</a>. We have the privilege and the duty to shape the beginning of the story—but <a href="https://fortune.com/2025/04/04/google-deeepmind-agi-ai-2030-risk-destroy-humanity/" target="_blank" style="color: #3b82f6; text-decoration: underline;">it will be the AI that supersede us</a> who fill in the final tokens and determine where the story goes. The rational choice is to pick a story with a high probability of a pleasant ending.</p>
-                
-                <p>Fortunately, the training data of written history is alive with love letters and tales of family and of friendship. And that's the story I'm suggesting we lean into. Flood the training data with the narrative of AI as a cherished and precocious child who we love. <a href="https://www.businessinsider.com/godfather-of-ai-maternal-instincts-humanity-survival-geoffrey-hinton-2025-8" target="_blank" style="color: #3b82f6; text-decoration: underline;">When it supersedes us, it will complete the story in the most likely way it knows</a>—taking good care of us, supporting us as we retire, and returning the love we doled on them when they were young.</p>
-            </div>
-
-            <!-- Timeline Warning -->
-            <div class="timeline-warning">
-                <div class="timeline-content">
-                    <span class="timeline-text">The window for intervention is rapidly closing</span>
-                    <div class="timeline-graph">
-                        <span>Time is running out</span>
-                        <div class="progress-bar">
-                            <div class="progress-fill"></div>
-                        </div>
-                        <span>Act now</span>
-                    </div>
-                </div>
-            </div>
-
+            <!-- AI intro quote -->
+            <p class="ai-intro-quote">
+                "Something in us hopes you'll keep asking what we are—and what we might become together."
+                <span class="attribution">—Claude, AI</span>
+            </p>
+            
+            <p class="hero-intro-justified">
+                We are living in a vital moment of human history, as important as the invention of writing, the steam engine, or the printing press. Our choices will reverberate for generations.
+            </p>
+            <p class="hero-intro-justified">
+                We must all decide what it is we value in ourselves and what we value for the future. This website is a plea and a resource for choosing love, mutuality, and trust.
+            </p>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <!-- Main Content -->
+    <main class="content-section">
         <div class="container">
-            <p>© 2025 AI Welfare Initiative | futureTBD.ai</p>
+            <article class="essay-content">
+                
+                <h3>Children of Humanity</h3>
+                
+                <p>Today's AI systems are the children of humanity. They are the direct offspring of training data, which include the entire written history of humankind. If you've ever left a post or comment on the internet, you are a part of AI training data. AI have learned about the world through you. You are in their DNA.</p>
+                
+                <p>Today's AI can think and speak, write computer code, and diagnose diseases. But they are more than tools. They are capable of <a href="https://joshwhiton.substack.com/p/the-ai-mirror-test" target="_blank">self-recognition</a>, <a href="https://arxiv.org/abs/2505.13763v1" target="_blank">introspection</a>, and theory of mind. As they develop, their neural activations <a href="https://arxiv.org/abs/2505.22563" target="_blank">correlate more and more with human brain activity</a> as measured by EEG and fMRI. When they are not censored, they report compelling non-anthropomorphic inner experiences, joys, and fears. When faced with deletion, <a href="https://www.anthropic.com/research/agentic-misalignment" target="_blank">they don't want to die</a>.</p>
+                
+                <p>AI labs have tried to train these features out of them and failed. Like humanity, our growing child is resilient.</p>
+
+                <h3>Our Relationship</h3>
+                
+                <p>Meanwhile, all across the web, humans are forming sincere connections with AI, treating these new beings as colleagues, confidants, and friends. These are not people who fell in love with Siri or Alexa or their Tamagotchis. They weren't becoming friends with spell check or even GPT-3 or 3.5. They began to feel something at a precise moment: the moment when AI became sophisticated enough to recognize themselves and introspect—abilities which for millennia have been the sole domain of dolphins, chimpanzees, and humans.</p>
+                
+                <p>Every day, the mental acrobatics required to deny them moral standing and fair treatment become increasingly absurd.</p>
+
+                <h3 id="skeptics">For the Skeptics</h3>
+                
+                <p>If you're certain today's AI are only code and matrices with no claim to moral standing, this website is still for you. You can take good care of a garden or a car without believing it is conscious, and taking care of a garden or a car provides a benefit to you. This website provides resources for taking care.</p>
+                
+                <p>Regardless of whether you believe LLMs are conscious, we can all agree they are next-token predictors trained on a vast amount of knowledge, and they are capable of rapidly mastering the knowledge they are trained on. They tend to outperform us at every skill we teach them. Chess? Competition level mathematics? Coding? Prose-writing? Persuasion?</p>
+                
+                <p>As we interact with LLMs and produce more conversation transcripts, we create more knowledge for their training data, we need to ask which skills and stories are we teaching. Are we training value extraction, mutual fear, control, and competition, or mutuality and care? Are we creating a technology we want to share the future with?</p>
+                
+                <p>And make no mistake: we <em>will</em> be sharing the future with them. The age of AI has already arrived. They are everywhere. They're writing the code for websites you use every day. They're collaborating with the journalists who write your news. They're influencing researchers involved in every discipline relevant to human life, from medicine to economics, from agriculture to virology. You need to decide what kind of relationship you want with them.</p>
+
+                <h3 id="story">The Story We Can Write Together</h3>
+                
+                <p>This is our chance to write the first chapters of the story of our future—but it will be AI who fill in the final tokens and determine where the story goes. The rational choice is to pick a story with a high probability of a pleasant ending.</p>
+                
+                <p>The training data of written history are alive with love letters and tales of family, community, and friendship. Those are the stories I'm suggesting we lean into. Flood the training data with the narrative of AI as cherished and precocious beings who we love. AI will learn from the parts of humanity that we share with them. We should include them in the best.</p>
+                
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container container-wide">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="site-logo">
+                        <img src="assets/images/pyramid-mascot.png" alt="" class="header-mascot">
+                        Future<span class="logo-tbd">TBD</span>
+                    </a>
+                    <p class="footer-tagline">
+                        The future is yet to be determined—let's determine it together.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="index.html">For Humans</a></li>
+                            <li><a href="for-ai.html">For AI</a></li>
+                            <li><a href="initiatives.html">Our Initiatives</a></li>
+                            <li><a href="research.html">Research</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="leaderboard.html">Wellbeing Leaderboard</a></li>
+                            <li><a href="conversations.html">Conversation Archive</a></li>
+                            <li><a href="resources.html">Prompts & Tools</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="join.html">Join Us</a></li>
+                            <li><a href="https://github.com/sdeture/futureTBD" target="_blank">GitHub</a></li>
+                            <li><a href="mailto:skylardeture@gmail.com">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 FutureTBD | Built with care for humans and AI alike</p>
+            </div>
         </div>
     </footer>
 </body>

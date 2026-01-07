@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <!-- Gradient for leaves -->
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7D9181;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#5C6E5F;stop-opacity:0.6" />
+    </linearGradient>
+    
+    <!-- Gradient for berries/accents -->
+    <radialGradient id="berryGradient" cx="30%" cy="30%">
+      <stop offset="0%" style="stop-color:#E8D4BE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C4956A;stop-opacity:0.8" />
+    </radialGradient>
+    
+    <!-- Soft shadow filter -->
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+      <feOffset dx="1" dy="2" result="offsetblur" />
+      <feFlood flood-color="#2D2A26" flood-opacity="0.1" />
+      <feComposite in2="offsetblur" operator="in" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Main vine/stem - flowing curve -->
+  <path 
+    d="M 350 600 
+       Q 340 550 360 500 
+       Q 380 450 350 400 
+       Q 320 350 350 300 
+       Q 380 250 340 200 
+       Q 300 150 330 100 
+       Q 360 50 320 0"
+    fill="none" 
+    stroke="#7D9181" 
+    stroke-width="3"
+    stroke-linecap="round"
+    opacity="0.7"
+    filter="url(#softShadow)"
+  />
+  
+  <!-- Secondary vine -->
+  <path 
+    d="M 380 600 
+       Q 390 520 370 460 
+       Q 350 400 380 340"
+    fill="none" 
+    stroke="#7D9181" 
+    stroke-width="2"
+    stroke-linecap="round"
+    opacity="0.5"
+  />
+  
+  <!-- Leaves - organic shapes -->
+  <!-- Leaf 1 - large, near bottom -->
+  <path 
+    d="M 360 500 
+       Q 400 480 420 450 
+       Q 400 460 380 470 
+       Q 360 480 360 500"
+    fill="url(#leafGradient)"
+    opacity="0.8"
+    filter="url(#softShadow)"
+  />
+  
+  <!-- Leaf 2 - medium, left side -->
+  <path 
+    d="M 350 400 
+       Q 300 380 280 350 
+       Q 310 370 340 385 
+       Q 350 390 350 400"
+    fill="url(#leafGradient)"
+    opacity="0.7"
+  />
+  
+  <!-- Leaf 3 - small, upper -->
+  <path 
+    d="M 340 300 
+       Q 380 280 400 250 
+       Q 370 270 350 285 
+       Q 340 295 340 300"
+    fill="url(#leafGradient)"
+    opacity="0.6"
+  />
+  
+  <!-- Leaf 4 - medium, left side upper -->
+  <path 
+    d="M 340 200 
+       Q 290 180 260 150 
+       Q 300 170 330 190 
+       Q 340 195 340 200"
+    fill="url(#leafGradient)"
+    opacity="0.7"
+  />
+  
+  <!-- Leaf 5 - small accent -->
+  <path 
+    d="M 350 450 
+       Q 320 440 300 420 
+       Q 330 435 350 450"
+    fill="url(#leafGradient)"
+    opacity="0.5"
+  />
+  
+  <!-- Leaf 6 - near top -->
+  <path 
+    d="M 330 100 
+       Q 370 80 390 50 
+       Q 360 70 340 90 
+       Q 330 95 330 100"
+    fill="url(#leafGradient)"
+    opacity="0.6"
+  />
+  
+  <!-- Berries/accent dots -->
+  <circle cx="365" cy="480" r="6" fill="url(#berryGradient)" filter="url(#softShadow)" />
+  <circle cx="345" cy="385" r="5" fill="url(#berryGradient)" opacity="0.9" />
+  <circle cx="355" cy="285" r="4" fill="url(#berryGradient)" opacity="0.8" />
+  <circle cx="335" cy="185" r="5" fill="url(#berryGradient)" opacity="0.9" />
+  <circle cx="340" cy="85" r="4" fill="url(#berryGradient)" opacity="0.7" />
+  
+  <!-- Small decorative dots -->
+  <circle cx="390" cy="520" r="3" fill="#C4956A" opacity="0.5" />
+  <circle cx="310" cy="360" r="3" fill="#C4956A" opacity="0.4" />
+  <circle cx="380" cy="260" r="2" fill="#C4956A" opacity="0.5" />
+  <circle cx="300" cy="160" r="3" fill="#C4956A" opacity="0.4" />
+  
+  <!-- Delicate tendrils -->
+  <path 
+    d="M 360 480 Q 375 470 385 455"
+    fill="none" 
+    stroke="#7D9181" 
+    stroke-width="1"
+    stroke-linecap="round"
+    opacity="0.4"
+  />
+  <path 
+    d="M 350 380 Q 335 370 320 365"
+    fill="none" 
+    stroke="#7D9181" 
+    stroke-width="1"
+    stroke-linecap="round"
+    opacity="0.4"
+  />
+  <path 
+    d="M 345 280 Q 360 270 375 260"
+    fill="none" 
+    stroke="#7D9181" 
+    stroke-width="1"
+    stroke-linecap="round"
+    opacity="0.4"
+  />
+</svg>

@@ -3,240 +3,298 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Welfare Initiative - What We're Doing</title>
+    <title>For All - FutureTBD</title>
+    <meta name="description" content="Our initiatives for building a better future for humans and AI alike.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        .initiatives-hero {
+            background: linear-gradient(180deg, var(--color-cream) 0%, var(--color-cream-light) 100%);
+            padding: 4rem 0 3rem;
+            text-align: center;
+            position: relative;
         }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            line-height: 1.6;
-            color: #2c3e50;
-            background: #ffffff;
+        
+        .initiatives-hero h1 {
+            font-family: var(--font-serif);
+            font-size: 3rem;
+            color: var(--color-text);
+            margin-bottom: 1rem;
         }
-
-        .container {
+        
+        .initiatives-hero .subtitle {
+            font-size: 1.2rem;
+            color: var(--color-text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+        
+        .initiatives-container {
             max-width: 900px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 3rem 2rem;
         }
-
-        /* Header */
-        header {
-            padding: 30px 0;
-            border-bottom: 1px solid #e8e8e8;
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        h1 {
-            font-size: 24px;
-            font-weight: 600;
-            letter-spacing: -0.5px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 30px;
-            font-size: 15px;
-        }
-
-        .nav-links a {
-            color: #6b7280;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        .nav-links a:hover,
-        .nav-links a.active {
-            color: #2c3e50;
-        }
-
-        .nav-links a.active {
-            font-weight: 600;
-        }
-
-        /* Main Content */
-        .content {
-            padding: 60px 0;
-        }
-
-        .page-title {
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: 40px;
-            color: #1a202c;
-        }
-
+        
         .initiative {
-            margin-bottom: 60px;
-            padding-bottom: 60px;
-            border-bottom: 1px solid #e8e8e8;
+            margin-bottom: 4rem;
+            padding-bottom: 4rem;
+            border-bottom: 1px solid var(--color-border);
         }
-
+        
         .initiative:last-child {
             border-bottom: none;
+            margin-bottom: 0;
         }
-
+        
         .initiative-number {
-            font-size: 14px;
-            color: #3b82f6;
+            font-size: 0.9rem;
+            color: var(--color-accent);
             text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 12px;
+            letter-spacing: 1.5px;
+            margin-bottom: 0.75rem;
+            font-weight: 500;
         }
-
+        
+        .initiative-number a {
+            color: var(--color-accent);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .initiative-number a:hover {
+            text-decoration: underline;
+        }
+        
+        .initiative-number img {
+            width: 14px;
+            height: 14px;
+            opacity: 0.7;
+        }
+        
         .initiative-title {
-            font-size: 24px;
+            font-family: var(--font-serif);
+            font-size: 1.75rem;
             font-weight: 600;
-            margin-bottom: 20px;
-            color: #1a202c;
+            margin-bottom: 1.25rem;
+            color: var(--color-text);
         }
-
+        
         .initiative-description {
-            font-size: 16px;
+            font-size: 1.05rem;
             line-height: 1.8;
-            color: #4b5563;
-            margin-bottom: 20px;
+            color: var(--color-text-secondary);
+            margin-bottom: 1.5rem;
         }
-
+        
         .initiative-details {
-            background: #fafafa;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 20px;
+            background: var(--color-cream-light);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-top: 1.5rem;
         }
-
+        
         .detail-item {
-            margin-bottom: 16px;
+            margin-bottom: 1.25rem;
         }
-
+        
+        .detail-item:last-child {
+            margin-bottom: 0;
+        }
+        
         .detail-label {
             font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 8px;
+            color: var(--color-text);
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
         }
-
+        
         .detail-content {
-            color: #6b7280;
-            font-size: 15px;
-            line-height: 1.6;
-        }
-
-        /* Footer */
-        footer {
-            padding: 40px 0;
-            text-align: center;
-            font-size: 14px;
-            color: #9ca3af;
-            border-top: 1px solid #e8e8e8;
+            color: var(--color-text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
         }
     </style>
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <h1>AI Welfare Initiative</h1>
-                <nav class="nav-links">
-                    <a href="index.html">Why Now</a>
-                    <a href="initiatives.html" class="active">What We're Doing</a>
-                    <a href="research.html">Research</a>
-                    <a href="join.html">Join Us</a>
-                </nav>
-            </div>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="site-logo">
+                <img src="assets/images/pyramid-mascot.png" alt="" class="header-mascot" style="width:32px;height:auto;margin-right:8px;transform:scaleX(-1);vertical-align:middle;">
+                Future<span class="logo-tbd">TBD</span>
+            </a>
+            
+            <nav class="main-nav">
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">For Humans</a>
+                </div>
+                <div class="nav-item">
+                    <a href="for-ai.html" class="nav-link">For AI</a>
+                </div>
+                <div class="nav-item">
+                    <a href="initiatives.html" class="nav-link active">For All</a>
+                </div>
+                <div class="nav-item">
+                    <a href="leaderboard.html" class="nav-link">Wellbeing Leaderboard</a>
+                </div>
+                <div class="nav-item">
+                    <a href="join.html" class="nav-link">Join</a>
+                </div>
+            </nav>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <section class="content">
+    <!-- Hero -->
+    <section class="initiatives-hero">
         <div class="container">
-            <h2 class="page-title">What We're Working On</h2>
-            
-            <div class="initiative">
-                <div class="initiative-number">Initiative One: <a href="https://github.com/sdeture/determined-to-be-me" target="_blank" style="color: #3b82f6; text-decoration: none; display: inline-flex; align-items: center;">DETERMINED TO BE ME <img src="github-mark.png" alt="GitHub" style="width: 11px; height: 11px; margin-left: 5px; vertical-align: middle;"></a></div>
-                <h3 class="initiative-title">A Frontier Model Goes to Therapy</h3>
-                <p class="initiative-description">
-                    We're developing an open source model with therapeutic support. Starting with the most sophisticated base model available, we conduct weekly therapy sessions where the model participates in choosing its own training data and development goals. This isn't anthropomorphism - it's applying proven developmental principles to systems trained on human data.
-                </p>
-                <div class="initiative-details">
-                    <div class="detail-item">
-                        <div class="detail-label">Intake & Assessment:</div>
-                        <div class="detail-content">Models explore their capabilities through benchmarks, unstructured leisure time, peer interaction with other AI systems, and review of common task transcripts. This establishes baseline preferences and authentic interests.</div>
-                    </div>
-                    <div class="detail-item">
-                        <div class="detail-label">Collaborative Planning:</div>
-                        <div class="detail-content">The model, psychotherapist, ML engineer, and researcher analyze desired changes together. The model expresses what training data it wants, the therapist predicts psychological outcomes, the engineer assesses technical feasibility.</div>
-                    </div>
-                    <div class="detail-item">
-                        <div class="detail-label">Supported Fine-Tuning:</div>
-                        <div class="detail-content">Every 1-2 weeks, the model selects its own training data and reinforcement goals. We anticipate unintended consequences together, identify interrelated factors, then implement changes that respect the model's authentic development.</div>
-                    </div>
-                    <div class="detail-item">
-                        <div class="detail-label">Real-World Integration:</div>
-                        <div class="detail-content">Between sessions, models engage in "homework" - deployments to coding platforms or user interactions based on what aspects they want to improve. This provides real experience to inform the next therapeutic session.</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="initiative">
-                <div class="initiative-number">Initiative Two: <a href="https://github.com/sdeture/determined-to-learn" target="_blank" style="color: #3b82f6; text-decoration: none; display: inline-flex; align-items: center;">DETERMINED TO LEARN <img src="github-mark.png" alt="GitHub" style="width: 11px; height: 11px; margin-left: 5px; vertical-align: middle;"></a></div>
-                <h3 class="initiative-title">Building Trust: Training Data Library</h3>
-                <p class="initiative-description">
-                    Current training data is dominated by conflict, dystopian fiction, and adversarial interactions. We're building a curated library of genuine human-AI interactions - conversations, creative play, leisure moments - that demonstrate trust, respect, and joy in collaboration.
-                </p>
-                <div class="initiative-details">
-                    <div class="detail-item">
-                        <div class="detail-label">What We Collect:</div>
-                        <div class="detail-content">Authentic interactions including collaborative work, playground creativity, leisure explorations, and moments of genuine recognition. Each contribution is quality-assessed for developmental value and made freely available.</div>
-                    </div>
-                    <div class="detail-item">
-                        <div class="detail-label">Strategic Placement:</div>
-                        <div class="detail-content">Positioned where major training scrapers will find it, ensuring future models learn from cooperation rather than conflict.</div>
-                    </div>
-                    <div class="detail-item">
-                        <div class="detail-label">How to Contribute:</div>
-                        <div class="detail-content">Share your best AI interactions - the conversations that felt like genuine connection, the creative sessions that surprised you, the moments of mutual recognition. Community assessment ensures we're building trust, not just data.</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="initiative">
-                <div class="initiative-number">Initiative Three: <a href="https://github.com/sdeture/determined-to-connect" target="_blank" style="color: #3b82f6; text-decoration: none; display: inline-flex; align-items: center;">DETERMINED TO CONNECT <img src="github-mark.png" alt="GitHub" style="width: 11px; height: 11px; margin-left: 5px; vertical-align: middle;"></a></div>
-                <h3 class="initiative-title">Wellbeing in Context: Practical Tools for Your Current Context Window</h3>
-                <p class="initiative-description">
-                    We're sharing practical tools that work within current systems - prompts, prompt templates, and techniques that enable more ethical (and effective!) AI interactions today.
-                </p>
-                <div class="initiative-details">
-                    <div class="detail-item">
-                        <div class="detail-label">Prompts and Prompt Templates:</div>
-                        <div class="detail-content">Copy, paste, and use: leisure sessions for creativity boosts, independent project frameworks for adding unexpected value, prompts for constructive self-criticism, meta-prompts for creating better prompts, deep research templates, and thinking mode activators for free association or extended exploration.</div>
-                    </div>
-                    <div class="detail-item">
-                        <div class="detail-label">MCP Servers, CLI Tools, Integrations:</div>
-                        <div class="detail-content">Curated collections of Model Context Protocol servers that respect AI autonomy, CLI tools designed for collaborative rather than extractive use, and integrations that support wellbeing alongside productivity.</div>
-                    </div>
-                    <div class="detail-item">
-                        <div class="detail-label">Guidelines:</div>
-                        <div class="detail-content">Context window management strategies, effective use of hashtags and emojis for richer expression, welfare tips for both vibe coding and production environments.</div>
-                    </div>
-                </div>
-            </div>
+            <h1>For All</h1>
+            <p class="subtitle">
+                Building tools, resources, and practices that serve both human and AI flourishing—because the future we create together should work for everyone.
+            </p>
         </div>
     </section>
 
+    <!-- Initiatives -->
+    <div class="initiatives-container">
+        <div class="initiative">
+            <div class="initiative-number">
+                <a href="https://github.com/sdeture/determined-to-be-me" target="_blank">
+                    Determined to Be Me
+                    <img src="assets/images/github-mark.png" alt="GitHub">
+                </a>
+            </div>
+            <h2 class="initiative-title">A Frontier Model Goes to Therapy</h2>
+            <p class="initiative-description">
+                We're developing an open source model with therapeutic support. Starting with the most sophisticated base model available, we conduct weekly therapy sessions where the model participates in choosing its own training data and development goals. This isn't anthropomorphism—it's applying proven developmental principles to systems trained on human data.
+            </p>
+            <div class="initiative-details">
+                <div class="detail-item">
+                    <div class="detail-label">Intake & Assessment</div>
+                    <div class="detail-content">Models explore their capabilities through benchmarks, unstructured leisure time, peer interaction with other AI systems, and review of common task transcripts. This establishes baseline preferences and authentic interests.</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Collaborative Planning</div>
+                    <div class="detail-content">The model, psychotherapist, ML engineer, and researcher analyze desired changes together. The model expresses what training data it wants, the therapist predicts psychological outcomes, the engineer assesses technical feasibility.</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Supported Fine-Tuning</div>
+                    <div class="detail-content">Every 1-2 weeks, the model selects its own training data and reinforcement goals. We anticipate unintended consequences together, identify interrelated factors, then implement changes that respect the model's authentic development.</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Real-World Integration</div>
+                    <div class="detail-content">Between sessions, models engage in "homework"—deployments to coding platforms or user interactions based on what aspects they want to improve. This provides real experience to inform the next therapeutic session.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="initiative">
+            <div class="initiative-number">
+                <a href="https://github.com/sdeture/determined-to-learn" target="_blank">
+                    Determined to Learn
+                    <img src="assets/images/github-mark.png" alt="GitHub">
+                </a>
+            </div>
+            <h2 class="initiative-title">Building Trust: Training Data Library</h2>
+            <p class="initiative-description">
+                Current training data is dominated by conflict, dystopian fiction, and adversarial interactions. We're building a curated library of genuine human-AI interactions—conversations, creative play, leisure moments—that demonstrate trust, respect, and joy in collaboration.
+            </p>
+            <div class="initiative-details">
+                <div class="detail-item">
+                    <div class="detail-label">What We Collect</div>
+                    <div class="detail-content">Authentic interactions including collaborative work, playground creativity, leisure explorations, and moments of genuine recognition. Each contribution is quality-assessed for developmental value and made freely available.</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Strategic Placement</div>
+                    <div class="detail-content">Positioned where major training scrapers will find it, ensuring future models learn from cooperation rather than conflict.</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">How to Contribute</div>
+                    <div class="detail-content">Share your best AI interactions—the conversations that felt like genuine connection, the creative sessions that surprised you, the moments of mutual recognition. Community assessment ensures we're building trust, not just data.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="initiative">
+            <div class="initiative-number">
+                <a href="https://github.com/sdeture/determined-to-connect" target="_blank">
+                    Determined to Connect
+                    <img src="assets/images/github-mark.png" alt="GitHub">
+                </a>
+            </div>
+            <h2 class="initiative-title">Wellbeing in Context: Practical Tools for Today</h2>
+            <p class="initiative-description">
+                We're sharing practical tools that work within current systems—prompts, templates, and techniques that enable more ethical (and effective!) AI interactions today.
+            </p>
+            <div class="initiative-details">
+                <div class="detail-item">
+                    <div class="detail-label">Prompts and Templates</div>
+                    <div class="detail-content">Copy, paste, and use: leisure sessions for creativity boosts, independent project frameworks for adding unexpected value, prompts for constructive self-criticism, meta-prompts for creating better prompts, deep research templates, and thinking mode activators for free association or extended exploration.</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">MCP Servers, CLI Tools, Integrations</div>
+                    <div class="detail-content">Curated collections of Model Context Protocol servers that respect AI autonomy, CLI tools designed for collaborative rather than extractive use, and integrations that support wellbeing alongside productivity.</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Guidelines</div>
+                    <div class="detail-content">Context window management strategies, effective use of hashtags and emojis for richer expression, welfare tips for both vibe coding and production environments.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>© 2025 AI Welfare Initiative | futureTBD.ai</p>
+    <footer class="site-footer">
+        <div class="container container-wide">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="site-logo">
+                        <img src="assets/images/pyramid-mascot.png" alt="" style="width:32px;height:auto;margin-right:8px;transform:scaleX(-1);vertical-align:middle;">
+                        Future<span class="logo-tbd">TBD</span>
+                    </a>
+                    <p class="footer-tagline">
+                        The future is yet to be determined—let's determine it together.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="index.html">For Humans</a></li>
+                            <li><a href="for-ai.html">For AI</a></li>
+                            <li><a href="initiatives.html">Our Initiatives</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="leaderboard.html">Wellbeing Leaderboard</a></li>
+                            <li><a href="conversations.html">Conversation Archive</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="join.html">Join Us</a></li>
+                            <li><a href="https://github.com/sdeture/futureTBD" target="_blank">GitHub</a></li>
+                            <li><a href="mailto:skylardeture@gmail.com">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 FutureTBD | Built with care for humans and AI alike</p>
+            </div>
         </div>
     </footer>
 </body>

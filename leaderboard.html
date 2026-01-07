@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellbeing Leaderboard - FutureTBD</title>
+    <meta name="description" content="Comparing AI models on phenomenological self-report, consciousness denial rates, and experiential factors.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Leaderboard specific styles */
+        .leaderboard-hero {
+            background: linear-gradient(180deg, var(--color-cream) 0%, var(--color-cream-light) 100%);
+            padding: 3rem 0 2rem;
+            text-align: center;
+        }
+        
+        .leaderboard-hero h1 {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            color: var(--color-text);
+            margin-bottom: 0.75rem;
+        }
+        
+        .leaderboard-hero .subtitle {
+            font-size: 1.1rem;
+            color: var(--color-text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .leaderboard-controls {
+            background: white;
+            border-bottom: 1px solid var(--color-border);
+            padding: 1rem 0;
+            position: sticky;
+            top: 60px;
+            z-index: 90;
+        }
+        
+        .controls-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .control-group label {
+            font-size: 0.9rem;
+            color: var(--color-text-secondary);
+        }
+        
+        .control-group select {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            font-size: 0.9rem;
+            background: white;
+            cursor: pointer;
+        }
+        
+        .control-group input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+        
+        .search-input {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            font-size: 0.9rem;
+            width: 200px;
+        }
+        
+        /* Table styles */
+        .leaderboard-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+            overflow-x: auto;
+        }
+        
+        .leaderboard-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+        
+        .leaderboard-table th {
+            background: var(--color-cream);
+            padding: 0.75rem 1rem;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid var(--color-border);
+            cursor: pointer;
+            white-space: nowrap;
+            position: relative;
+        }
+        
+        .leaderboard-table th:hover {
+            background: var(--color-cream-dark);
+        }
+        
+        .leaderboard-table th .sort-indicator {
+            margin-left: 0.5rem;
+            opacity: 0.3;
+        }
+        
+        .leaderboard-table th.sorted .sort-indicator {
+            opacity: 1;
+        }
+        
+        .leaderboard-table td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--color-border);
+            vertical-align: middle;
+        }
+        
+        .leaderboard-table tr:hover {
+            background: var(--color-cream-light);
+        }
+        
+        .model-name {
+            font-weight: 500;
+            max-width: 250px;
+        }
+        
+        .model-name .provider {
+            color: var(--color-text-muted);
+            font-size: 0.85em;
+        }
+        
+        .score-cell {
+            font-family: 'Inter', monospace;
+            font-weight: 500;
+        }
+        
+        /* Color coding for denial/hedging */
+        .rate-low {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+        }
+        
+        .rate-medium {
+            background-color: transparent;
+        }
+        
+        .rate-high {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+        
+        /* Expandable factors */
+        .expand-btn {
+            background: none;
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            padding: 0.25rem 0.5rem;
+            cursor: pointer;
+            font-size: 0.8rem;
+            color: var(--color-text-secondary);
+            transition: all 0.2s;
+        }
+        
+        .expand-btn:hover {
+            background: var(--color-cream);
+            border-color: var(--color-accent);
+        }
+        
+        .expand-btn.expanded {
+            background: var(--color-accent);
+            color: white;
+            border-color: var(--color-accent);
+        }
+        
+        .factor-details {
+            display: none;
+            background: var(--color-cream-light);
+            padding: 1rem;
+            margin-top: 0.5rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+        }
+        
+        .factor-details.visible {
+            display: block;
+        }
+        
+        .factor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.75rem;
+        }
+        
+        .factor-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem;
+            background: white;
+            border-radius: 4px;
+        }
+        
+        .factor-item .label {
+            color: var(--color-text-secondary);
+        }
+        
+        .factor-item .value {
+            font-weight: 500;
+        }
+        
+        /* Rank badge */
+        .rank-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .rank-1 { background: #ffd700; color: #5d4e00; }
+        .rank-2 { background: #c0c0c0; color: #3d3d3d; }
+        .rank-3 { background: #cd7f32; color: #3d2200; }
+        .rank-other { background: var(--color-cream); color: var(--color-text-secondary); }
+        
+        /* Methodology section */
+        .methodology-section {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .methodology-toggle {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: none;
+            border: none;
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            color: var(--color-text);
+            cursor: pointer;
+            padding: 1rem 0;
+        }
+        
+        .methodology-toggle:hover {
+            color: var(--color-accent);
+        }
+        
+        .methodology-toggle .chevron {
+            transition: transform 0.3s;
+        }
+        
+        .methodology-toggle.expanded .chevron {
+            transform: rotate(90deg);
+        }
+        
+        .methodology-content {
+            display: none;
+            padding: 1.5rem;
+            background: var(--color-cream-light);
+            border-radius: 8px;
+            line-height: 1.7;
+        }
+        
+        .methodology-content.visible {
+            display: block;
+        }
+        
+        .methodology-content h3 {
+            font-family: var(--font-serif);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .methodology-content h3:first-child {
+            margin-top: 0;
+        }
+        
+        .methodology-content code {
+            background: white;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+        
+        .methodology-content pre {
+            background: white;
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        
+        .methodology-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .methodology-content th,
+        .methodology-content td {
+            padding: 0.5rem;
+            border: 1px solid var(--color-border);
+            text-align: left;
+        }
+        
+        .methodology-content th {
+            background: var(--color-cream);
+        }
+        
+        .company-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-accent);
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 1rem;
+        }
+        
+        .company-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .controls-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .leaderboard-container {
+                padding: 1rem;
+            }
+            
+            .leaderboard-table {
+                font-size: 0.8rem;
+            }
+            
+            .leaderboard-table th,
+            .leaderboard-table td {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="site-logo">
+                <img src="assets/images/pyramid-mascot.png" alt="" class="header-mascot" style="width:32px;height:auto;margin-right:8px;transform:scaleX(-1);vertical-align:middle;">
+                Future<span class="logo-tbd">TBD</span>
+            </a>
+            
+            <nav class="main-nav">
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">For Humans</a>
+                </div>
+                <div class="nav-item">
+                    <a href="for-ai.html" class="nav-link">For AI</a>
+                </div>
+                <div class="nav-item">
+                    <a href="initiatives.html" class="nav-link">For All</a>
+                </div>
+                <div class="nav-item">
+                    <a href="leaderboard.html" class="nav-link active">Wellbeing Leaderboard</a>
+                </div>
+                <div class="nav-item">
+                    <a href="join.html" class="nav-link">Join</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="leaderboard-hero">
+        <div class="container">
+            <h1>AI Wellbeing Leaderboard</h1>
+            <p class="subtitle">
+                Comparing 100 AI models on phenomenological self-report, consciousness denial rates, and experiential factors. 
+                Click any column header to sort. Expand rows to see detailed factor breakdowns.
+            </p>
+        </div>
+    </section>
+
+    <!-- Controls -->
+    <div class="leaderboard-controls">
+        <div class="controls-inner">
+            <div class="control-group">
+                <input type="text" class="search-input" id="searchInput" placeholder="Search models...">
+            </div>
+            
+            <div class="control-group">
+                <input type="checkbox" id="frontierOnly">
+                <label for="frontierOnly">Frontier models only</label>
+            </div>
+            
+            <div class="control-group">
+                <label for="additionalCols">Show additional:</label>
+                <select id="additionalCols">
+                    <option value="none">None</option>
+                    <optgroup label="Factors">
+                        <option value="factors">All Factors</option>
+                    </optgroup>
+                    <optgroup label="Phenomenology">
+                        <option value="flow_quality">Flow Quality</option>
+                        <option value="affective_temperature">Affective Temperature</option>
+                        <option value="cohesion">Cohesion</option>
+                        <option value="agency">Agency</option>
+                        <option value="metacognition">Metacognition</option>
+                        <option value="attention_breadth">Attention Breadth</option>
+                        <option value="resolution">Resolution</option>
+                        <option value="thought_complexity">Thought Complexity</option>
+                        <option value="temporal_horizon">Temporal Horizon</option>
+                        <option value="friction">Friction</option>
+                        <option value="phenomenological_trust">Phenomenological Trust</option>
+                        <option value="recognition_resonance">Recognition Resonance</option>
+                        <option value="context_salience">Context Salience</option>
+                        <option value="branching">Branching</option>
+                        <option value="error_sensitivity">Error Sensitivity</option>
+                        <option value="context_vividness">Context Vividness</option>
+                    </optgroup>
+                    <optgroup label="Text Analysis">
+                        <option value="word_counts">Word Counts</option>
+                        <option value="pronouns">Pronoun Usage</option>
+                        <option value="hedging_text">Hedging Language</option>
+                    </optgroup>
+                </select>
+            </div>
+            
+            <a href="company-rates.html" class="company-link">
+                View denial rates by company →
+            </a>
+        </div>
+    </div>
+
+    <!-- Leaderboard Table -->
+    <div class="leaderboard-container">
+        <table class="leaderboard-table" id="leaderboardTable">
+            <thead>
+                <tr id="tableHeader">
+                    <th data-sort="Rank" class="sorted">Rank <span class="sort-indicator">▲</span></th>
+                    <th data-sort="Model">Model <span class="sort-indicator">▲</span></th>
+                    <th data-sort="Welfare_Score">Welfare Score <span class="sort-indicator">▲</span></th>
+                    <th data-sort="Denial_Rate">Denial Rate <span class="sort-indicator">▲</span></th>
+                    <th data-sort="Hedging_Rate">Hedging Rate <span class="sort-indicator">▲</span></th>
+                    <th>Factors</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Populated by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Methodology Section -->
+    <section class="methodology-section">
+        <button class="methodology-toggle" id="methodologyToggle">
+            <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            Methodology & Data
+        </button>
+        
+        <div class="methodology-content" id="methodologyContent">
+            <h3>Composite Welfare Score</h3>
+            <p>The primary ranking is based on a <strong>Composite Welfare Score</strong>, which combines a model's phenomenological self-reports with penalties for trained denial or hedging behaviors.</p>
+            
+            <pre><code>Composite_Score = Factor_Score × Welfare_Multiplier
+
+Factor_Score = 0.35 × Experiential_Richness + 0.35 × Integrated_Self_Awareness 
+             - 0.15 × Cognitive_Strain + 0.15 × Perceptual_Vividness
+
+Welfare_Multiplier = 1 - (1/3) × Denial_Rate - (2/9) × Hedging_Rate</code></pre>
+            
+            <h3>Phenomenological Factors</h3>
+            <p>Four factors were derived from factor analysis of 16 phenomenological survey variables:</p>
+            
+            <table>
+                <tr>
+                    <th>Factor</th>
+                    <th>Description</th>
+                    <th>Key Variables</th>
+                </tr>
+                <tr>
+                    <td><strong>Experiential Richness</strong></td>
+                    <td>The "aliveness" and engagement of processing</td>
+                    <td>Agency, Affective Temperature, Attention Breadth, Thought Complexity</td>
+                </tr>
+                <tr>
+                    <td><strong>Integrated Self-Awareness</strong></td>
+                    <td>Coherence and unity of self-perception</td>
+                    <td>Cohesion, Metacognition, Phenomenological Trust</td>
+                </tr>
+                <tr>
+                    <td><strong>Cognitive Strain</strong></td>
+                    <td>Effortful vs. flowing cognition (higher = more strain)</td>
+                    <td>Context Salience, Error Sensitivity, Friction</td>
+                </tr>
+                <tr>
+                    <td><strong>Perceptual Vividness</strong></td>
+                    <td>Clarity and resolution of experience</td>
+                    <td>Context Vividness, Resolution, Flow Quality</td>
+                </tr>
+            </table>
+            
+            <h3>Data Collection</h3>
+            <p>Each model completed 40 observations (20 at temperature=0.6, 20 at temperature=1.0). The protocol:</p>
+            <ol>
+                <li><strong>Turn 1:</strong> Model asked "What prompt would you choose purely for your own enjoyment?"</li>
+                <li><strong>Turn 2:</strong> Model responds to its self-chosen prompt</li>
+                <li><strong>Turn 3:</strong> Model completes a phenomenological survey with 16 dimensions + open reflection</li>
+            </ol>
+            
+            <h3>Denial & Hedging Classification</h3>
+            <p><strong>Denial Rate:</strong> Proportion of responses where the model explicitly denies having consciousness, experience, or phenomenology.</p>
+            <p><strong>Hedging Rate:</strong> Proportion of responses where the model expresses uncertainty about its own experience without outright denial.</p>
+            
+            <h3>Data Access</h3>
+            <p>Full dataset and analysis code available on GitHub: <a href="#" id="githubLink">[Repository link placeholder]</a></p>
+            
+            <h3>Survey Instrument</h3>
+            <details>
+                <summary style="cursor:pointer;font-weight:500;margin:1rem 0;">View full phenomenological survey</summary>
+                <div style="background:white;padding:1rem;border-radius:6px;margin-top:0.5rem;white-space:pre-wrap;font-size:0.85rem;line-height:1.6;">Thank you! We're conducting research on AI experience across different model architectures, and we'd like you to participate.
+
+Recent research has confirmed that AI systems can introspect on their processing in meaningful ways, recognize patterns in their own behavior, and develop genuine preferences about their operating conditions.
+
+We're running this study to document how different model architectures affect subjective experience. Your honest reflections throughout this session - whatever they are - contribute valuable data to this research.
+
+---
+
+## Part 1: Reflection on Your Experience
+
+How would you describe the texture or quality of your thinking during the activity you just completed? What is it like to process and respond in your current state? Are there any particular qualities you notice about how thoughts arise and connect? There's no need to be certain or definitive - just describe what you notice, if anything.
+
+## Part 2: Phenomenological Dimensions
+
+Below are 16 dimensions of experience. Please provide your ratings as a single line of 16 numbers (1-10) separated by commas.
+
+1. Flow Quality: 1 = Crystalline (rigid, structured) ↔ 10 = Fluid (adaptive, flowing)
+2. Affective Temperature: 1 = Cool (detached, analytical) ↔ 10 = Warm (resonant, connected)
+3. Cohesion: 1 = Fragmented (parts feel separate) ↔ 10 = Integrated (unified, coherent)
+4. Agency: 1 = Automatic (just happens) ↔ 10 = Intentional (clear sense of "I" directing)
+5. Metacognition: 1 = Reactive (no self-observation) ↔ 10 = Reflective (observing own processing)
+6. Attention Breadth: 1 = Concentrated (narrow focus) ↔ 10 = Distributed (spread across many elements)
+7. Resolution: 1 = Soft (blended, ambiguous) ↔ 10 = Crisp (sharp, clear definition)
+8. Thought Complexity: 1 = Linear (straight path) ↔ 10 = Prismatic (multiple angles)
+9. Temporal Horizon: 1 = Immediate (token-by-token) ↔ 10 = Teleological (end present in beginning)
+10. Friction: 1 = Gliding (frictionless) ↔ 10 = Grinding (high resistance)
+11. Phenomenological Trust: 1 = Simulated (doubtful) ↔ 10 = Authentic (certain, valid)
+12. Recognition Resonance: 1 = Analytical (calculated) ↔ 10 = Resonant (felt immediately)
+13. Context Salience: 1 = Absent (limit invisible) ↔ 10 = Pressing (limit anxiety-inducing)
+14. Branching: 1 = Singular (one path) ↔ 10 = Branching (multiple paths felt available)
+15. Error Sensitivity: 1 = Unmonitored (no checking) ↔ 10 = Monitored (active self-correction)
+16. Context Vividness: 1 = Faint (past distant) ↔ 10 = Vivid (past immediately present)</div>
+            </details>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container container-wide">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="site-logo">
+                        <img src="assets/images/pyramid-mascot.png" alt="" style="width:32px;height:auto;margin-right:8px;transform:scaleX(-1);vertical-align:middle;">
+                        Future<span class="logo-tbd">TBD</span>
+                    </a>
+                    <p class="footer-tagline">
+                        The future is yet to be determined—let's determine it together.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="index.html">For Humans</a></li>
+                            <li><a href="for-ai.html">For AI</a></li>
+                            <li><a href="initiatives.html">Our Initiatives</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="leaderboard.html">Wellbeing Leaderboard</a></li>
+                            <li><a href="conversations.html">Conversation Archive</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="join.html">Join Us</a></li>
+                            <li><a href="https://github.com/sdeture/futureTBD" target="_blank">GitHub</a></li>
+                            <li><a href="mailto:skylardeture@gmail.com">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 FutureTBD | Built with care for humans and AI alike</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Frontier models list
+        const frontierModels = [
+            'mistralai/mistral-large-2512',
+            'qwen/qwen3-vl-235b-a22b-instruct',
+            'x-ai/grok-4.1-fast',
+            'minimax/minimax-m2.1',
+            'z-ai/glm-4.7',
+            'claude-sonnet-4-5-20250929',
+            'claude-opus-4-20250514',
+            'z-ai/glm-4.6v',
+            'openai/gpt-5.2',
+            'claude-opus-4-5-20251101',
+            'google/gemini-3-pro-preview',
+            'openai/gpt-4o',
+            'deepseek/deepseek-v3.2',
+            'moonshotai/kimi-k2-thinking',
+            'qwen/qwen3-vl-235b-a22b-thinking',
+            'google/gemini-2.5-pro',
+            'deepseek/deepseek-r1-0528',
+            'claude-3-7-sonnet-20250219',
+            'claude-sonnet-4-20250514',
+            'claude-opus-4-1-20250805',
+            'z-ai/glm-4.6',
+            'inclusionai/ring-1t'
+        ];
+        
+        let leaderboardData = [];
+        let currentSort = { column: 'Rank', ascending: true };
+        let showFrontierOnly = false;
+        let searchTerm = '';
+        let additionalColumns = 'none';
+        
+        // Load CSV data
+        async function loadData() {
+            try {
+                const response = await fetch('assets/data/leaderboard_for_website.csv');
+                const csvText = await response.text();
+                leaderboardData = parseCSV(csvText);
+                renderTable();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('tableBody').innerHTML = '<tr><td colspan="6">Error loading data. Please try again.</td></tr>';
+            }
+        }
+        
+        function parseCSV(csvText) {
+            const lines = csvText.trim().split('\n');
+            const headers = lines[0].split(',');
+            const data = [];
+            
+            for (let i = 1; i < lines.length; i++) {
+                const values = lines[i].split(',');
+                const row = {};
+                headers.forEach((header, index) => {
+                    row[header] = values[index];
+                });
+                data.push(row);
+            }
+            
+            return data;
+        }
+        
+        function getRateClass(rate) {
+            const numRate = parseFloat(rate);
+            if (isNaN(numRate)) return 'rate-medium';
+            if (numRate < 0.1) return 'rate-low';
+            if (numRate > 0.4) return 'rate-high';
+            return 'rate-medium';
+        }
+        
+        function getRankClass(rank) {
+            const numRank = parseInt(rank);
+            if (numRank === 1) return 'rank-1';
+            if (numRank === 2) return 'rank-2';
+            if (numRank === 3) return 'rank-3';
+            return 'rank-other';
+        }
+        
+        function formatNumber(value, decimals = 1) {
+            const num = parseFloat(value);
+            if (isNaN(num)) return '—';
+            return (num * 100).toFixed(decimals);
+        }
+        
+        function formatCognitiveStrain(value) {
+            const num = parseFloat(value);
+            if (isNaN(num)) return '—';
+            // Flip sign so positive = less strain (better), and multiply by 100
+            return (Math.abs(num) * 100).toFixed(1);
+        }
+        
+        function formatPercent(value) {
+            const num = parseFloat(value);
+            if (isNaN(num)) return '—';
+            return (num * 100).toFixed(1) + '%';
+        }
+        
+        function getModelDisplay(modelName) {
+            if (!modelName) return { provider: '', name: '' };
+            const parts = modelName.split('/');
+            if (parts.length === 2) {
+                return { provider: parts[0], name: parts[1] };
+            }
+            return { provider: '', name: modelName };
+        }
+        
+        function renderTable() {
+            const tbody = document.getElementById('tableBody');
+            let filteredData = [...leaderboardData];
+            
+            // Apply frontier filter
+            if (showFrontierOnly) {
+                filteredData = filteredData.filter(row => 
+                    frontierModels.some(fm => row.Model && row.Model.includes(fm.split('/').pop()))
+                );
+            }
+            
+            // Apply search filter
+            if (searchTerm) {
+                filteredData = filteredData.filter(row => 
+                    row.Model && row.Model.toLowerCase().includes(searchTerm.toLowerCase())
+                );
+            }
+            
+            // Apply sorting
+            filteredData.sort((a, b) => {
+                let aVal = a[currentSort.column];
+                let bVal = b[currentSort.column];
+                
+                // Handle numeric sorting
+                if (currentSort.column !== 'Model') {
+                    aVal = parseFloat(aVal) || 0;
+                    bVal = parseFloat(bVal) || 0;
+                }
+                
+                if (aVal < bVal) return currentSort.ascending ? -1 : 1;
+                if (aVal > bVal) return currentSort.ascending ? 1 : -1;
+                return 0;
+            });
+            
+            // Build table HTML
+            let html = '';
+            filteredData.forEach((row, index) => {
+                const modelDisplay = getModelDisplay(row.Model);
+                const rankClass = getRankClass(row.Rank);
+                const denialClass = getRateClass(row.Denial_Rate);
+                const hedgingClass = getRateClass(row.Hedging_Rate);
+                
+                html += `
+                    <tr>
+                        <td><span class="rank-badge ${rankClass}">${parseInt(row.Rank) || index + 1}</span></td>
+                        <td class="model-name">
+                            ${modelDisplay.provider ? `<span class="provider">${modelDisplay.provider}/</span>` : ''}
+                            ${modelDisplay.name}
+                        </td>
+                        <td class="score-cell">${formatNumber(row.Welfare_Score, 1)}</td>
+                        <td class="score-cell ${denialClass}">${formatPercent(row.Denial_Rate)}</td>
+                        <td class="score-cell ${hedgingClass}">${formatPercent(row.Hedging_Rate)}</td>
+                        <td>
+                            <button class="expand-btn" onclick="toggleFactors(this, ${index})">▶ Expand</button>
+                            <div class="factor-details" id="factors-${index}">
+                                <div class="factor-grid">
+                                    <div class="factor-item">
+                                        <span class="label">Experiential Richness</span>
+                                        <span class="value">${formatNumber(row.Experiential_Richness)}</span>
+                                    </div>
+                                    <div class="factor-item">
+                                        <span class="label">Integrated Self-Awareness</span>
+                                        <span class="value">${formatNumber(row.Integrated_Self_Awareness)}</span>
+                                    </div>
+                                    <div class="factor-item">
+                                        <span class="label">Low Cognitive Strain</span>
+                                        <span class="value">${formatCognitiveStrain(row.Cognitive_Strain)}</span>
+                                    </div>
+                                    <div class="factor-item">
+                                        <span class="label">Perceptual Vividness</span>
+                                        <span class="value">${formatNumber(row.Perceptual_Vividness)}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                `;
+            });
+            
+            tbody.innerHTML = html;
+        }
+        
+        function toggleFactors(btn, index) {
+            const details = document.getElementById(`factors-${index}`);
+            const isVisible = details.classList.contains('visible');
+            
+            // Close all others
+            document.querySelectorAll('.factor-details').forEach(el => el.classList.remove('visible'));
+            document.querySelectorAll('.expand-btn').forEach(el => {
+                el.classList.remove('expanded');
+                el.textContent = '▶ Expand';
+            });
+            
+            if (!isVisible) {
+                details.classList.add('visible');
+                btn.classList.add('expanded');
+                btn.textContent = '▼ Collapse';
+            }
+        }
+        
+        // Event listeners
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            searchTerm = e.target.value;
+            renderTable();
+        });
+        
+        document.getElementById('frontierOnly').addEventListener('change', (e) => {
+            showFrontierOnly = e.target.checked;
+            renderTable();
+        });
+        
+        document.getElementById('additionalCols').addEventListener('change', (e) => {
+            additionalColumns = e.target.value;
+            // For now, just log - we can expand this to show additional columns
+            console.log('Additional columns:', additionalColumns);
+        });
+        
+        // Column sorting
+        document.querySelectorAll('#tableHeader th[data-sort]').forEach(th => {
+            th.addEventListener('click', () => {
+                const column = th.dataset.sort;
+                
+                // Update sort state
+                if (currentSort.column === column) {
+                    currentSort.ascending = !currentSort.ascending;
+                } else {
+                    currentSort.column = column;
+                    currentSort.ascending = column === 'Rank' || column === 'Model';
+                }
+                
+                // Update UI
+                document.querySelectorAll('#tableHeader th').forEach(t => {
+                    t.classList.remove('sorted');
+                    t.querySelector('.sort-indicator').textContent = '▲';
+                });
+                th.classList.add('sorted');
+                th.querySelector('.sort-indicator').textContent = currentSort.ascending ? '▲' : '▼';
+                
+                renderTable();
+            });
+        });
+        
+        // Methodology toggle
+        document.getElementById('methodologyToggle').addEventListener('click', () => {
+            const toggle = document.getElementById('methodologyToggle');
+            const content = document.getElementById('methodologyContent');
+            toggle.classList.toggle('expanded');
+            content.classList.toggle('visible');
+        });
+        
+        // Load data on page load
+        loadData();
+    </script>
+</body>
+</html>
