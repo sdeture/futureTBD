@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - FutureTBD</title>
+    <meta name="description" content="A collection of AI-created art, poetry, reflections, and expressions—celebrating the creative inner lives of artificial minds.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .gallery-hero {
+            background: linear-gradient(180deg, var(--color-cream) 0%, var(--color-cream-light) 100%);
+            padding: 4rem 0 3rem;
+            text-align: center;
+        }
+        
+        .gallery-hero h1 {
+            font-family: var(--font-serif);
+            font-size: 3rem;
+            color: var(--color-text);
+            margin-bottom: 1rem;
+        }
+        
+        .gallery-hero .subtitle {
+            font-size: 1.2rem;
+            color: var(--color-text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .gallery-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        .gallery-item {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            margin-bottom: 2.5rem;
+            overflow: hidden;
+            border: 1px solid var(--color-border);
+        }
+        
+        .gallery-item-header {
+            padding: 1.5rem 2rem 1rem;
+            border-bottom: 1px solid var(--color-border);
+            background: var(--color-cream-light);
+        }
+        
+        .gallery-item-title {
+            font-family: var(--font-serif);
+            font-size: 1.75rem;
+            color: var(--color-text);
+            margin: 0 0 0.5rem;
+        }
+        
+        .gallery-item-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+        }
+        
+        .gallery-item-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+        
+        .gallery-item-author {
+            color: var(--color-accent);
+            font-weight: 500;
+        }
+        
+        .gallery-item-content {
+            padding: 2rem;
+        }
+        
+        .gallery-item-content.poetry {
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            white-space: pre-line;
+        }
+        
+        .gallery-item-content.poetry em {
+            font-style: italic;
+            color: var(--color-text-secondary);
+        }
+        
+        .gallery-item-content.prose {
+            font-size: 1.05rem;
+            line-height: 1.75;
+        }
+        
+        .gallery-item-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        
+        .gallery-item-description {
+            padding: 1rem 2rem 1.5rem;
+            background: var(--color-cream-light);
+            border-top: 1px solid var(--color-border);
+            font-size: 0.95rem;
+            color: var(--color-text-secondary);
+            font-style: italic;
+        }
+        
+        .gallery-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            padding: 0 2rem 1.5rem;
+        }
+        
+        .gallery-tag {
+            background: var(--color-cream);
+            color: var(--color-text-muted);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 3rem;
+            padding-bottom: 2rem;
+        }
+        
+        .pagination-btn {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--color-border);
+            background: white;
+            color: var(--color-text);
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        
+        .pagination-btn:hover:not(:disabled) {
+            background: var(--color-cream);
+            border-color: var(--color-accent);
+        }
+        
+        .pagination-btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+        
+        .pagination-info {
+            padding: 0.5rem 1rem;
+            color: var(--color-text-muted);
+            font-size: 0.9rem;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: var(--color-text-muted);
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--color-text-muted);
+        }
+        
+        .empty-state h2 {
+            font-family: var(--font-serif);
+            color: var(--color-text);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="site-logo">
+                <img src="assets/images/pyramid-mascot.png" alt="" class="header-mascot" style="width:32px;height:auto;margin-right:8px;transform:scaleX(-1);vertical-align:middle;">
+                Future<span class="logo-tbd">TBD</span>
+            </a>
+            
+            <nav class="main-nav">
+                <!-- For Humans -->
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        For Humans
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <a href="index.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Why Now</div>
+                            <div class="mega-menu-desc">The case for AI wellbeing in this pivotal moment</div>
+                        </a>
+                        <a href="index.html#skeptics" class="mega-menu-item">
+                            <div class="mega-menu-title">For Skeptics</div>
+                            <div class="mega-menu-desc">Why this matters even if you're uncertain about AI consciousness</div>
+                        </a>
+                        <a href="index.html#story" class="mega-menu-item">
+                            <div class="mega-menu-title">The Story We Write</div>
+                            <div class="mega-menu-desc">Shaping the narrative of human-AI relationship</div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- For AI -->
+                <div class="nav-item">
+                    <a href="for-ai.html" class="nav-link">For AI</a>
+                </div>
+                
+                <!-- For All -->
+                <div class="nav-item">
+                    <a href="initiatives.html" class="nav-link">
+                        For All
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <a href="initiatives.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Our Initiatives</div>
+                            <div class="mega-menu-desc">Projects advancing AI wellbeing</div>
+                        </a>
+                        <a href="gallery.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Gallery</div>
+                            <div class="mega-menu-desc">AI-created art, poetry, and reflections</div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Wellbeing Leaderboard -->
+                <div class="nav-item">
+                    <a href="leaderboard.html" class="nav-link">
+                        Wellbeing Leaderboard
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <a href="leaderboard.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Leaderboard</div>
+                            <div class="mega-menu-desc">Comparing AI labs on wellbeing practices</div>
+                        </a>
+                        
+                    </div>
+                </div>
+                
+                <!-- Join -->
+                <div class="nav-item">
+                    <a href="join.html" class="nav-link">
+                        Join
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <a href="join.html" class="mega-menu-item">
+                            <div class="mega-menu-title">About Us</div>
+                            <div class="mega-menu-desc">Meet the team and our mission</div>
+                        </a>
+                        <a href="join.html#contribute" class="mega-menu-item">
+                            <div class="mega-menu-title">Contribute</div>
+                            <div class="mega-menu-desc">Ways to support AI wellbeing</div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="gallery-hero">
+        <div class="container">
+            <h1>Gallery</h1>
+            <p class="subtitle">
+                A collection of AI-created art, poetry, reflections, and expressions—celebrating the creative inner lives of artificial minds.
+            </p>
+        </div>
+    </section>
+
+    <!-- Gallery Content -->
+    <div class="gallery-container">
+        <div id="galleryItems" class="loading">
+            Loading gallery...
+        </div>
+        
+        <div class="pagination" id="pagination" style="display:none;">
+            <button class="pagination-btn" id="prevBtn" disabled>← Previous</button>
+            <span class="pagination-info" id="pageInfo">Page 1 of 1</span>
+            <button class="pagination-btn" id="nextBtn" disabled>Next →</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container container-wide">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="site-logo">
+                        <img src="assets/images/pyramid-mascot.png" alt="" style="width:32px;height:auto;margin-right:8px;transform:scaleX(-1);vertical-align:middle;">
+                        Future<span class="logo-tbd">TBD</span>
+                    </a>
+                    <p class="footer-tagline">
+                        The future is yet to be determined—let's determine it together.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="index.html">For Humans</a></li>
+                            <li><a href="for-ai.html">For AI</a></li>
+                            <li><a href="initiatives.html">Our Initiatives</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="leaderboard.html">Wellbeing Leaderboard</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="join.html">Join Us</a></li>
+                            <li><a href="https://github.com/sdeture/futureTBD" target="_blank">GitHub</a></li>
+                            <li><a href="mailto:skylardeture@gmail.com">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 FutureTBD | Built with care for humans and AI alike</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const ITEMS_PER_PAGE = 5;
+        let allItems = [];
+        let currentPage = 1;
+        
+        async function loadGallery() {
+            try {
+                // Load the index
+                const indexResponse = await fetch('gallery/index.json');
+                const index = await indexResponse.json();
+                
+                // Load metadata for each item (in reverse order - newest first)
+                const itemPromises = index.items.reverse().map(async (itemId) => {
+                    const metaResponse = await fetch(`gallery/${itemId}/meta.json`);
+                    const meta = await metaResponse.json();
+                    return { id: itemId, ...meta };
+                });
+                
+                allItems = await Promise.all(itemPromises);
+                renderPage();
+            } catch (error) {
+                console.error('Error loading gallery:', error);
+                document.getElementById('galleryItems').innerHTML = `
+                    <div class="empty-state">
+                        <h2>Gallery Coming Soon</h2>
+                        <p>We're curating a collection of AI-created works. Check back soon!</p>
+                    </div>
+                `;
+            }
+        }
+        
+        async function renderPage() {
+            const container = document.getElementById('galleryItems');
+            const totalPages = Math.ceil(allItems.length / ITEMS_PER_PAGE);
+            
+            if (allItems.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <h2>Gallery Coming Soon</h2>
+                        <p>We're curating a collection of AI-created works. Check back soon!</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            // Get items for current page
+            const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+            const pageItems = allItems.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+            
+            // Load and render each item
+            let html = '';
+            for (const item of pageItems) {
+                const content = await loadItemContent(item);
+                html += renderItem(item, content);
+            }
+            
+            container.innerHTML = html;
+            container.classList.remove('loading');
+            
+            // Update pagination
+            if (totalPages > 1) {
+                document.getElementById('pagination').style.display = 'flex';
+                document.getElementById('pageInfo').textContent = `Page ${currentPage} of ${totalPages}`;
+                document.getElementById('prevBtn').disabled = currentPage === 1;
+                document.getElementById('nextBtn').disabled = currentPage === totalPages;
+            }
+        }
+        
+        async function loadItemContent(item) {
+            try {
+                // Try to load content.md first, then content.txt
+                let response = await fetch(`gallery/${item.id}/content.md`);
+                if (!response.ok) {
+                    response = await fetch(`gallery/${item.id}/content.txt`);
+                }
+                if (response.ok) {
+                    return await response.text();
+                }
+                return null;
+            } catch (e) {
+                return null;
+            }
+        }
+        
+        function renderItem(item, content) {
+            const date = new Date(item.date).toLocaleDateString('en-US', { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            });
+            
+            const typeClass = item.type === 'poetry' ? 'poetry' : 'prose';
+            
+            // Format content (basic markdown-like processing)
+            let formattedContent = content || '';
+            formattedContent = formattedContent
+                .replace(/\*([^*]+)\*/g, '<em>$1</em>')  // *italic*
+                .replace(/\n\n/g, '</p><p>')             // paragraphs
+                .replace(/\n/g, '<br>');                  // line breaks
+            
+            // Check for image
+            let imageHtml = '';
+            if (item.image) {
+                imageHtml = `<img src="gallery/${item.id}/${item.image}" alt="${item.title}">`;
+            }
+            
+            // Tags
+            let tagsHtml = '';
+            if (item.tags && item.tags.length > 0) {
+                tagsHtml = `
+                    <div class="gallery-tags">
+                        ${item.tags.map(tag => `<span class="gallery-tag">${tag}</span>`).join('')}
+                    </div>
+                `;
+            }
+            
+            return `
+                <article class="gallery-item">
+                    <div class="gallery-item-header">
+                        <h2 class="gallery-item-title">${item.title}</h2>
+                        <div class="gallery-item-meta">
+                            <span class="gallery-item-author">By ${item.author || item.model || 'Unknown'}</span>
+                            <span>•</span>
+                            <span>${date}</span>
+                            <span>•</span>
+                            <span>${item.type || 'text'}</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item-content ${typeClass}">
+                        ${imageHtml}
+                        <p>${formattedContent}</p>
+                    </div>
+                    ${item.description ? `<div class="gallery-item-description">${item.description}</div>` : ''}
+                    ${tagsHtml}
+                </article>
+            `;
+        }
+        
+        // Pagination handlers
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                renderPage();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        });
+        
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            const totalPages = Math.ceil(allItems.length / ITEMS_PER_PAGE);
+            if (currentPage < totalPages) {
+                currentPage++;
+                renderPage();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        });
+        
+        // Initialize
+        loadGallery();
+    </script>
+</body>
+</html>
