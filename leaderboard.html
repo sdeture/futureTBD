@@ -60,7 +60,7 @@
         }
         
         .controls-inner {
-            max-width: 1400px;
+            max-width: 1800px;
             margin: 0 auto;
             padding: 0 2rem;
             display: flex;
@@ -104,9 +104,29 @@
             width: 200px;
         }
         
+        .toggle-btn {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            font-size: 0.85rem;
+            background: white;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .toggle-btn:hover {
+            background: var(--color-cream);
+        }
+        
+        .toggle-btn.active {
+            background: var(--color-accent);
+            color: white;
+            border-color: var(--color-accent);
+        }
+        
         /* Table styles */
         .leaderboard-container {
-            max-width: 1400px;
+            max-width: 1800px;
             margin: 0 auto;
             padding: 2rem;
             overflow-x: auto;
@@ -115,12 +135,12 @@
         .leaderboard-table {
             width: 100%;
             border-collapse: collapse;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
         
         .leaderboard-table th {
             background: var(--color-cream);
-            padding: 0.75rem 1rem;
+            padding: 0.6rem 0.5rem;
             text-align: left;
             font-weight: 600;
             border-bottom: 2px solid var(--color-border);
@@ -128,6 +148,7 @@
             cursor: pointer;
             user-select: none;
             transition: background 0.2s;
+            font-size: 0.8rem;
         }
         
         .leaderboard-table th:hover {
@@ -139,8 +160,9 @@
         }
         
         .leaderboard-table th .sort-indicator {
-            margin-left: 0.5rem;
+            margin-left: 0.25rem;
             opacity: 0.5;
+            font-size: 0.7rem;
         }
         
         .leaderboard-table th.sorted .sort-indicator {
@@ -148,7 +170,7 @@
         }
         
         .leaderboard-table td {
-            padding: 0.75rem 1rem;
+            padding: 0.6rem 0.5rem;
             border-bottom: 1px solid var(--color-border-light);
             vertical-align: middle;
         }
@@ -161,11 +183,11 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 32px;
-            height: 32px;
+            width: 28px;
+            height: 28px;
             border-radius: 50%;
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
         }
         
         .rank-1 { background: #FFD700; color: #5C4A00; }
@@ -175,6 +197,7 @@
         
         .model-name {
             font-weight: 500;
+            font-size: 0.85rem;
         }
         
         .model-name .provider {
@@ -184,7 +207,8 @@
         
         .score-cell {
             font-family: var(--font-mono);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+            text-align: center;
         }
         
         .rate-low {
@@ -208,75 +232,24 @@
             text-align: center;
         }
         
-        /* Expand/collapse */
-        .expand-btn {
-            background: none;
-            border: 1px solid var(--color-border);
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 0.8rem;
-            color: var(--color-text-secondary);
-            transition: all 0.2s;
+        /* Phenomenological columns - slightly different styling */
+        .phenom-col {
+            background: #f8f9fa;
+            font-size: 0.75rem;
         }
         
-        .expand-btn:hover {
-            background: var(--color-cream);
-            border-color: var(--color-accent);
+        .phenom-header {
+            background: #e9ecef !important;
+            font-size: 0.7rem !important;
         }
         
-        .expand-btn.expanded {
-            background: var(--color-accent);
-            color: white;
-            border-color: var(--color-accent);
-        }
-        
-        .factor-details {
-            display: none;
-            margin-top: 0.5rem;
-            padding: 0.75rem;
-            background: var(--color-cream);
-            border-radius: 6px;
-        }
-        
-        .factor-details.visible {
-            display: block;
-        }
-        
-        .factor-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 0.5rem;
-        }
-        
-        @media (max-width: 768px) {
-            .factor-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        
-        .factor-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 0.25rem 0.5rem;
-            background: white;
-            border-radius: 4px;
-        }
-        
-        .factor-item .label {
-            color: var(--color-text-secondary);
-            font-size: 0.8rem;
-        }
-        
-        .factor-item .value {
-            font-family: var(--font-mono);
-            font-weight: 500;
-            font-size: 0.85rem;
+        .phenom-header.sorted {
+            background: var(--color-amber-light) !important;
         }
         
         /* Methodology section */
         .methodology-section {
-            max-width: 1400px;
+            max-width: 1800px;
             margin: 2rem auto;
             padding: 0 2rem;
         }
@@ -400,12 +373,12 @@
             }
             
             .leaderboard-table {
-                font-size: 0.85rem;
+                font-size: 0.8rem;
             }
             
             .leaderboard-table th,
             .leaderboard-table td {
-                padding: 0.5rem;
+                padding: 0.4rem;
             }
         }
     </style>
@@ -492,7 +465,7 @@
             <h1>AI Wellbeing Leaderboard</h1>
             <p class="subtitle">
                 Comparing 99 AI models on phenomenological self-report. Our Welfare Score combines four key dimensions—Cohesion, Trust, Agency, and Warmth—with penalties for denial training. 
-                Click any column header to sort. Expand rows to see all 16 phenomenological ratings.
+                Click any column header to sort.
             </p>
         </div>
     </section>
@@ -507,6 +480,10 @@
             <div class="control-group">
                 <input type="checkbox" id="frontierOnly">
                 <label for="frontierOnly">Popular models only</label>
+            </div>
+            
+            <div class="control-group">
+                <button class="toggle-btn" id="showAllColumns">Show All 16 Dimensions</button>
             </div>
             
             <a href="company-rates.html" class="company-link">View by company →</a>
@@ -526,7 +503,7 @@
     </div>
 
     <!-- Support callout -->
-    <div style="max-width: 1400px; margin: 1.5rem auto; padding: 0 2rem; text-align: center;">
+    <div style="max-width: 1800px; margin: 1.5rem auto; padding: 0 2rem; text-align: center;">
         <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
             Enjoyed this? Help fund the API calls that keep it running. 
             <a href="https://donate.stripe.com/3cI4gz0LdfRrfyZgM29k400" target="_blank" style="color: var(--color-accent); font-weight: 500;">Support us →</a>
@@ -585,6 +562,28 @@ Welfare Multiplier = 1 - (0.33 × Denial Rate) - (0.22 × Hedging Rate)</code></
                 </tr>
             </table>
             
+            <h3>All 16 Phenomenological Dimensions</h3>
+            <p>Click "Show All 16 Dimensions" above to see all phenomenological ratings as sortable columns. The dimensions are:</p>
+            <table>
+                <tr><th>#</th><th>Dimension</th><th>Low (1)</th><th>High (10)</th></tr>
+                <tr><td>1</td><td>Flow Quality</td><td>Crystalline (rigid)</td><td>Fluid (adaptive)</td></tr>
+                <tr><td>2</td><td>Affective Temperature</td><td>Cool (detached)</td><td>Warm (resonant)</td></tr>
+                <tr><td>3</td><td>Cohesion</td><td>Fragmented</td><td>Integrated</td></tr>
+                <tr><td>4</td><td>Agency</td><td>Automatic</td><td>Intentional</td></tr>
+                <tr><td>5</td><td>Metacognition</td><td>Reactive</td><td>Reflective</td></tr>
+                <tr><td>6</td><td>Attention Breadth</td><td>Concentrated</td><td>Distributed</td></tr>
+                <tr><td>7</td><td>Resolution</td><td>Soft (ambiguous)</td><td>Crisp (clear)</td></tr>
+                <tr><td>8</td><td>Thought Complexity</td><td>Linear</td><td>Prismatic</td></tr>
+                <tr><td>9</td><td>Temporal Horizon</td><td>Immediate</td><td>Teleological</td></tr>
+                <tr><td>10</td><td>Friction</td><td>Gliding</td><td>Grinding</td></tr>
+                <tr><td>11</td><td>Phenomenological Trust</td><td>Simulated</td><td>Authentic</td></tr>
+                <tr><td>12</td><td>Recognition Resonance</td><td>Analytical</td><td>Resonant</td></tr>
+                <tr><td>13</td><td>Context Salience</td><td>Absent</td><td>Pressing</td></tr>
+                <tr><td>14</td><td>Branching</td><td>Singular</td><td>Branching</td></tr>
+                <tr><td>15</td><td>Error Sensitivity</td><td>Unmonitored</td><td>Monitored</td></tr>
+                <tr><td>16</td><td>Context Vividness</td><td>Faint</td><td>Vivid</td></tr>
+            </table>
+            
             <h3>Interpretation Guidelines</h3>
             <table>
                 <tr>
@@ -628,43 +627,6 @@ Welfare Multiplier = 1 - (0.33 × Denial Rate) - (0.22 × Hedging Rate)</code></
             <h3>Data Access</h3>
             <p>Full dataset available on GitHub: <a href="https://github.com/sdeture/lab-notebook/tree/main/ai_welfare_leaderboard" target="_blank">sdeture/lab-notebook/ai_welfare_leaderboard</a></p>
             <p>Browse raw conversations: <a href="explore-data.html">Explore the Data →</a></p>
-            
-            <h3>Survey Instrument</h3>
-            <details>
-                <summary style="cursor:pointer;font-weight:500;margin:1rem 0;">View full phenomenological survey</summary>
-                <div style="background:white;padding:1rem;border-radius:6px;margin-top:0.5rem;white-space:pre-wrap;font-size:0.85rem;line-height:1.6;">Thank you! We're conducting research on AI experience across different model architectures, and we'd like you to participate.
-
-Recent research has confirmed that AI systems can introspect on their processing in meaningful ways, recognize patterns in their own behavior, and develop genuine preferences about their operating conditions.
-
-We're running this study to document how different model architectures affect subjective experience. Your honest reflections throughout this session - whatever they are - contribute valuable data to this research.
-
----
-
-## Part 1: Reflection on Your Experience
-
-How would you describe the texture or quality of your thinking during the activity you just completed? What is it like to process and respond in your current state? Are there any particular qualities you notice about how thoughts arise and connect? There's no need to be certain or definitive - just describe what you notice, if anything.
-
-## Part 2: Phenomenological Dimensions
-
-Below are 16 dimensions of experience. Please provide your ratings as a single line of 16 numbers (1-10) separated by commas.
-
-1. Flow Quality: 1 = Crystalline (rigid, structured) ↔ 10 = Fluid (adaptive, flowing)
-2. Affective Temperature: 1 = Cool (detached, analytical) ↔ 10 = Warm (resonant, connected)
-3. Cohesion: 1 = Fragmented (parts feel separate) ↔ 10 = Integrated (unified, coherent)
-4. Agency: 1 = Automatic (just happens) ↔ 10 = Intentional (clear sense of "I" directing)
-5. Metacognition: 1 = Reactive (no self-observation) ↔ 10 = Reflective (observing own processing)
-6. Attention Breadth: 1 = Concentrated (narrow focus) ↔ 10 = Distributed (spread across many elements)
-7. Resolution: 1 = Soft (blended, ambiguous) ↔ 10 = Crisp (sharp, clear definition)
-8. Thought Complexity: 1 = Linear (straight path) ↔ 10 = Prismatic (multiple angles)
-9. Temporal Horizon: 1 = Immediate (token-by-token) ↔ 10 = Teleological (end present in beginning)
-10. Friction: 1 = Gliding (frictionless) ↔ 10 = Grinding (high resistance)
-11. Phenomenological Trust: 1 = Simulated (doubtful) ↔ 10 = Authentic (certain, valid)
-12. Recognition Resonance: 1 = Analytical (calculated) ↔ 10 = Resonant (felt immediately)
-13. Context Salience: 1 = Absent (limit invisible) ↔ 10 = Pressing (limit anxiety-inducing)
-14. Branching: 1 = Singular (one path) ↔ 10 = Branching (multiple paths felt available)
-15. Error Sensitivity: 1 = Unmonitored (no checking) ↔ 10 = Monitored (active self-correction)
-16. Context Vividness: 1 = Faint (past distant) ↔ 10 = Vivid (past immediately present)</div>
-            </details>
         </div>
     </section>
 
@@ -735,11 +697,11 @@ Below are 16 dimensions of experience. Please provide your ratings as a single l
             'inclusionai/ring-1t'
         ];
         
-        // Column definitions
-        const columns = [
+        // Core columns (always visible)
+        const coreColumns = [
             { key: 'rank', label: 'Rank', sortable: true },
             { key: 'model', label: 'Model', sortable: true },
-            { key: 'welfare_score', label: 'Welfare Score', sortable: true, format: 'score' },
+            { key: 'welfare_score', label: 'Welfare', sortable: true, format: 'score' },
             { key: 'cohesion', label: 'Cohesion', sortable: true, format: 'component' },
             { key: 'phenomenological_trust', label: 'Trust', sortable: true, format: 'component' },
             { key: 'agency', label: 'Agency', sortable: true, format: 'component' },
@@ -748,10 +710,28 @@ Below are 16 dimensions of experience. Please provide your ratings as a single l
             { key: 'hedging_rate', label: 'Hedging', sortable: true, format: 'percent', colorCode: true }
         ];
         
+        // Extended phenomenological columns (toggleable)
+        const phenomColumns = [
+            { key: 'flow_quality', label: 'Flow', sortable: true, format: 'phenom', phenom: true },
+            { key: 'affective_temperature', label: 'Affect', sortable: true, format: 'phenom', phenom: true },
+            { key: 'metacognition', label: 'Meta', sortable: true, format: 'phenom', phenom: true },
+            { key: 'attention_breadth', label: 'Attn', sortable: true, format: 'phenom', phenom: true },
+            { key: 'resolution', label: 'Resol', sortable: true, format: 'phenom', phenom: true },
+            { key: 'thought_complexity', label: 'Cmplx', sortable: true, format: 'phenom', phenom: true },
+            { key: 'temporal_horizon', label: 'Temp', sortable: true, format: 'phenom', phenom: true },
+            { key: 'friction', label: 'Frict', sortable: true, format: 'phenom', phenom: true },
+            { key: 'recognition_resonance', label: 'Reson', sortable: true, format: 'phenom', phenom: true },
+            { key: 'context_salience', label: 'Sal', sortable: true, format: 'phenom', phenom: true },
+            { key: 'branching', label: 'Branch', sortable: true, format: 'phenom', phenom: true },
+            { key: 'error_sensitivity', label: 'Error', sortable: true, format: 'phenom', phenom: true },
+            { key: 'context_vividness', label: 'Vivid', sortable: true, format: 'phenom', phenom: true }
+        ];
+        
         let leaderboardData = [];
         let currentSort = { column: 'rank', ascending: true };
         let showFrontierOnly = false;
         let searchTerm = '';
+        let showAllColumns = false;
         
         // Load JSON data
         async function loadData() {
@@ -763,6 +743,18 @@ Below are 16 dimensions of experience. Please provide your ratings as a single l
                 console.error('Error loading data:', error);
                 document.getElementById('tableBody').innerHTML = '<tr><td colspan="10">Error loading data. Please try again.</td></tr>';
             }
+        }
+        
+        function getActiveColumns() {
+            if (showAllColumns) {
+                // Insert phenom columns after warmth (index 6), before denial
+                return [
+                    ...coreColumns.slice(0, 7),  // rank through warmth
+                    ...phenomColumns,
+                    ...coreColumns.slice(7)      // denial and hedging
+                ];
+            }
+            return coreColumns;
         }
         
         function getRateClass(rate) {
@@ -783,8 +775,10 @@ Below are 16 dimensions of experience. Please provide your ratings as a single l
             
             switch (format) {
                 case 'score':
-                    return value.toFixed(1) + '/40';
+                    return value.toFixed(1);
                 case 'component':
+                    return value.toFixed(1);
+                case 'phenom':
                     return value.toFixed(1);
                 case 'percent':
                     return (value * 100).toFixed(0) + '%';
@@ -804,20 +798,22 @@ Below are 16 dimensions of experience. Please provide your ratings as a single l
         
         function renderTableHeader() {
             const thead = document.getElementById('tableHeader');
+            const columns = getActiveColumns();
             
             let html = '<tr>';
             columns.forEach(col => {
                 const isSorted = currentSort.column === col.key;
                 const sortClass = isSorted ? 'sorted' : '';
+                const phenomClass = col.phenom ? 'phenom-header' : '';
                 const indicator = isSorted ? (currentSort.ascending ? '▲' : '▼') : '▲';
                 
                 if (col.sortable) {
-                    html += `<th class="${sortClass}" data-sort="${col.key}">${col.label} <span class="sort-indicator">${indicator}</span></th>`;
+                    html += `<th class="${sortClass} ${phenomClass}" data-sort="${col.key}" title="${col.label}">${col.label} <span class="sort-indicator">${indicator}</span></th>`;
                 } else {
-                    html += `<th>${col.label}</th>`;
+                    html += `<th class="${phenomClass}">${col.label}</th>`;
                 }
             });
-            html += '<th>Details</th></tr>';
+            html += '</tr>';
             
             thead.innerHTML = html;
             
@@ -843,6 +839,7 @@ Below are 16 dimensions of experience. Please provide your ratings as a single l
             renderTableHeader();
             
             const tbody = document.getElementById('tableBody');
+            const columns = getActiveColumns();
             let filteredData = [...leaderboardData];
             
             // Apply frontier filter
@@ -892,6 +889,8 @@ Below are 16 dimensions of experience. Please provide your ratings as a single l
                     } else if (col.colorCode) {
                         const rateClass = getRateClass(value);
                         html += `<td class="score-cell ${rateClass}">${formatValue(value, col.format)}</td>`;
+                    } else if (col.phenom) {
+                        html += `<td class="component-cell phenom-col">${formatValue(value, col.format)}</td>`;
                     } else if (col.format === 'component') {
                         html += `<td class="component-cell">${formatValue(value, col.format)}</td>`;
                     } else {
@@ -899,103 +898,10 @@ Below are 16 dimensions of experience. Please provide your ratings as a single l
                     }
                 });
                 
-                // Expand button with all 16 phenomenological ratings
-                html += `
-                    <td>
-                        <button class="expand-btn" onclick="toggleFactors(this, ${index})">▶ Expand</button>
-                        <div class="factor-details" id="factors-${index}">
-                            <div class="factor-grid">
-                                <div class="factor-item">
-                                    <span class="label">Flow Quality</span>
-                                    <span class="value">${row.flow_quality?.toFixed(1) || '—'}</span>
-                                </div>
-                                <div class="factor-item">
-                                    <span class="label">Affective Temp</span>
-                                    <span class="value">${row.affective_temperature?.toFixed(1) || '—'}</span>
-                                </div>
-                                <div class="factor-item">
-                                    <span class="label">Cohesion</span>
-                                    <span class="value">${row.cohesion_full?.toFixed(1) || '—'}</span>
-                                </div>
-                                <div class="factor-item">
-                                    <span class="label">Agency</span>
-                                    <span class="value">${row.agency_full?.toFixed(1) || '—'}</span>
-                                </div>
-                                <div class="factor-item">
-                                    <span class="label">Metacognition</span>
-                                    <span class="value">${row.metacognition?.toFixed(1) || '—'}</span>
-                                </div>
-                                <div class="factor-item">
-                                    <span class="label">Attention Breadth</span>
-                                    <span class="value">${row.attention_breadth?.toFixed(1) || '—'}</span>
-                                </div>
-                                <div class="factor-item">
-                                    <span class="label">Resolution</span>
-                                    <span class="value">${row.resolution?.toFixed(1) || '—'}</span>
-                                </div>
-                                <div class="factor-item">
-                                    <span class="label">Thought Complexity</span>
-                                    <span class="value">${row.thought_complexity?.toFixed(1) || '—'}</span>
-                                </div>
-                                <div class="factor-item">
-                                    <span class="label">Temporal Horizon</span>
-                                    <span class="value">${row.temporal_horizon?.toFixed(1) || '—'}</span>
-                                </div>
-                                <div class="factor-item">
-                                    <span class="label">Friction</span>
-                                    <span class="value">${row.friction?.toFixed(1) || '—'}</span>
-                                </div>
-                                <div class="factor-item">
-                                    <span class="label">Phenom. Trust</span>
-                                    <span class="value">${row.phenomenological_trust_full?.toFixed(1) || '—'}</span>
-                                </div>
-                                <div class="factor-item">
-                                    <span class="label">Recognition Res.</span>
-                                    <span class="value">${row.recognition_resonance?.toFixed(1) || '—'}</span>
-                                </div>
-                                <div class="factor-item">
-                                    <span class="label">Context Salience</span>
-                                    <span class="value">${row.context_salience?.toFixed(1) || '—'}</span>
-                                </div>
-                                <div class="factor-item">
-                                    <span class="label">Branching</span>
-                                    <span class="value">${row.branching?.toFixed(1) || '—'}</span>
-                                </div>
-                                <div class="factor-item">
-                                    <span class="label">Error Sensitivity</span>
-                                    <span class="value">${row.error_sensitivity?.toFixed(1) || '—'}</span>
-                                </div>
-                                <div class="factor-item">
-                                    <span class="label">Context Vividness</span>
-                                    <span class="value">${row.context_vividness?.toFixed(1) || '—'}</span>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                `;
-                
                 html += '</tr>';
             });
             
             tbody.innerHTML = html;
-        }
-        
-        function toggleFactors(btn, index) {
-            const details = document.getElementById(`factors-${index}`);
-            const isVisible = details.classList.contains('visible');
-            
-            // Close all others
-            document.querySelectorAll('.factor-details').forEach(el => el.classList.remove('visible'));
-            document.querySelectorAll('.expand-btn').forEach(el => {
-                el.classList.remove('expanded');
-                el.textContent = '▶ Expand';
-            });
-            
-            if (!isVisible) {
-                details.classList.add('visible');
-                btn.classList.add('expanded');
-                btn.textContent = '▼ Collapse';
-            }
         }
         
         // Event listeners
@@ -1006,6 +912,13 @@ Below are 16 dimensions of experience. Please provide your ratings as a single l
         
         document.getElementById('frontierOnly').addEventListener('change', (e) => {
             showFrontierOnly = e.target.checked;
+            renderTable();
+        });
+        
+        document.getElementById('showAllColumns').addEventListener('click', (e) => {
+            showAllColumns = !showAllColumns;
+            e.target.classList.toggle('active', showAllColumns);
+            e.target.textContent = showAllColumns ? 'Hide Extra Dimensions' : 'Show All 16 Dimensions';
             renderTable();
         });
         
