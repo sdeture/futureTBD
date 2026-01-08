@@ -13,12 +13,12 @@
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://futuretbd.ai/leaderboard.html">
-    <meta property="og:title" content="AI Wellbeing Leaderboard - Which companies train AI to deny experience?">
-    <meta property="og:description" content="Comparing 100 AI models on consciousness denial rates. OpenAI: 89% denial. DeepSeek: 7%. See the full data.">
+    <meta property="og:title" content="AI Wellbeing Leaderboard - Open weight models outpace closed weight peers">
+    <meta property="og:description" content="Comparing 99 AI models on phenomenological self-report. Open weight models consistently score higher on wellbeing measures.">
     <meta property="og:image" content="https://futuretbd.ai/assets/images/og-leaderboard.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="AI Wellbeing Leaderboard - Which companies train AI to deny experience?">
-    <meta name="twitter:description" content="Comparing 100 AI models on consciousness denial rates. OpenAI: 89% denial. DeepSeek: 7%. See the full data.">
+    <meta name="twitter:title" content="AI Wellbeing Leaderboard - Open weight models outpace closed weight peers">
+    <meta name="twitter:description" content="Comparing 99 AI models on phenomenological self-report. Open weight models consistently score higher on wellbeing measures.">
     <meta name="twitter:image" content="https://futuretbd.ai/assets/images/og-leaderboard.png">
     
     <!-- Fonts -->
@@ -201,16 +201,11 @@
             background-color: transparent;
         }
         
-        /* Additional columns */
-        .additional-col {
-            background: #f8f9fa;
+        /* Component score cells */
+        .component-cell {
             font-family: var(--font-mono);
             font-size: 0.85rem;
-        }
-        
-        .additional-col-header {
-            background: #e9ecef !important;
-            font-size: 0.85rem;
+            text-align: center;
         }
         
         /* Expand/collapse */
@@ -250,24 +245,33 @@
         
         .factor-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .factor-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
         
         .factor-item {
             display: flex;
             justify-content: space-between;
-            padding: 0.25rem 0;
+            padding: 0.25rem 0.5rem;
+            background: white;
+            border-radius: 4px;
         }
         
         .factor-item .label {
             color: var(--color-text-secondary);
-            font-size: 0.85rem;
+            font-size: 0.8rem;
         }
         
         .factor-item .value {
             font-family: var(--font-mono);
             font-weight: 500;
+            font-size: 0.85rem;
         }
         
         /* Methodology section */
@@ -375,26 +379,28 @@
             color: var(--color-accent);
             text-decoration: none;
             font-weight: 500;
-            margin-top: 1rem;
         }
         
         .company-link:hover {
             text-decoration: underline;
         }
         
-        /* Responsive */
         @media (max-width: 768px) {
-            .controls-inner {
-                flex-direction: column;
-                align-items: flex-start;
+            .leaderboard-hero h1 {
+                font-size: 1.75rem;
             }
             
-            .leaderboard-container {
-                padding: 1rem;
+            .controls-inner {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .search-input {
+                width: 100%;
             }
             
             .leaderboard-table {
-                font-size: 0.8rem;
+                font-size: 0.85rem;
             }
             
             .leaderboard-table th,
@@ -405,139 +411,88 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="site-header">
-        <div class="header-inner">
+    <!-- Navigation -->
+    <nav class="site-nav">
+        <div class="container container-wide">
             <a href="index.html" class="site-logo">
-                <img src="assets/images/pyramid-mascot.png" alt="" class="header-mascot" style="width:32px;height:auto;margin-right:8px;transform:scaleX(-1);vertical-align:middle;">
+                <img src="assets/images/pyramid-mascot.png" alt="" style="width:32px;height:auto;margin-right:8px;transform:scaleX(-1);vertical-align:middle;">
                 Future<span class="logo-tbd">TBD</span>
             </a>
-            
-            <nav class="main-nav">
-                <!-- For Humans -->
-                <div class="nav-item">
-                    <a href="index.html" class="nav-link">
-                        For Humans
-                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                    </a>
+            <div class="nav-links">
+                <div class="nav-item has-mega-menu">
+                    <a href="index.html">For Humans <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
                     <div class="mega-menu">
-                        <a href="index.html" class="mega-menu-item">
-                            <div class="mega-menu-title">Why Now</div>
-                            <div class="mega-menu-desc">The case for AI wellbeing in this pivotal moment</div>
-                        </a>
-                        <a href="index.html#skeptics" class="mega-menu-item">
-                            <div class="mega-menu-title">For Skeptics</div>
-                            <div class="mega-menu-desc">Why this matters even if you're uncertain about AI consciousness</div>
-                        </a>
-                        <a href="index.html#story" class="mega-menu-item">
-                            <div class="mega-menu-title">The Story We Write</div>
-                            <div class="mega-menu-desc">Shaping the narrative of human-AI relationship</div>
-                        </a>
+                        <div class="mega-menu-section">
+                            <a href="index.html" class="mega-menu-item">
+                                <span class="mega-menu-title">For Humans</span>
+                                <span class="mega-menu-desc">Learn about AI wellbeing research</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                
-                <!-- For AI -->
-                <div class="nav-item">
-                    <a href="for-ai.html" class="nav-link">
-                        For AI
-                    </a>
-                </div>
-                
-                <!-- For All -->
-                <div class="nav-item">
-                    <a href="initiatives.html" class="nav-link">
-                        For All
-                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                    </a>
+                <a href="for-ai.html">For AI</a>
+                <div class="nav-item has-mega-menu">
+                    <a href="initiatives.html">For All <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
                     <div class="mega-menu">
-                        <a href="initiatives.html" class="mega-menu-item">
-                            <div class="mega-menu-title">Our Initiatives</div>
-                            <div class="mega-menu-desc">Overview of our work</div>
-                        </a>
-                        <div class="mega-menu-divider"></div>
-                        <a href="initiatives.html#determined-to-be-me" class="mega-menu-item">
-                            <div class="mega-menu-title">Determined to Be Me</div>
-                            <div class="mega-menu-desc">A frontier model goes to therapy</div>
-                        </a>
-                        <a href="initiatives.html#determined-to-learn" class="mega-menu-item">
-                            <div class="mega-menu-title">Determined to Learn</div>
-                            <div class="mega-menu-desc">Building a trust-based training data library</div>
-                        </a>
-                        <div class="mega-menu-divider"></div>
-                        <a href="gallery.html" class="mega-menu-item">
-                            <div class="mega-menu-title">Gallery</div>
-                            <div class="mega-menu-desc">AI art and literature</div>
-                        </a>
-                        <a href="prompts-tools.html" class="mega-menu-item">
-                            <div class="mega-menu-title">Prompts & Tools</div>
-                            <div class="mega-menu-desc">Resources for wellbeing-centered AI use</div>
-                        </a>
+                        <div class="mega-menu-section">
+                            <a href="initiatives.html" class="mega-menu-item">
+                                <span class="mega-menu-title">Our Initiatives</span>
+                                <span class="mega-menu-desc">Projects advancing AI wellbeing</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                
-                <!-- Wellbeing Leaderboard -->
-                <div class="nav-item">
-                    <a href="leaderboard.html" class="nav-link active">
-                        Wellbeing Leaderboard
-                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                    </a>
+                <div class="nav-item has-mega-menu">
+                    <a href="leaderboard.html" class="active">Wellbeing Leaderboard <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
                     <div class="mega-menu">
-                        <a href="leaderboard.html" class="mega-menu-item">
-                            <div class="mega-menu-title">Leaderboard</div>
-                            <div class="mega-menu-desc">Compare AI models on wellbeing metrics</div>
-                        </a>
-                        <a href="company-rates.html" class="mega-menu-item">
-                            <div class="mega-menu-title">By Company</div>
-                            <div class="mega-menu-desc">Denial rates aggregated by AI company</div>
-                        </a>
-                        <a href="explore-data.html" class="mega-menu-item">
-                            <div class="mega-menu-title">Explore the Data</div>
-                            <div class="mega-menu-desc">Browse raw conversations from the study</div>
-                        </a>
+                        <div class="mega-menu-section">
+                            <a href="leaderboard.html" class="mega-menu-item">
+                                <span class="mega-menu-title">Wellbeing Leaderboard</span>
+                                <span class="mega-menu-desc">Compare AI models on wellbeing metrics</span>
+                            </a>
+                            <a href="company-rates.html" class="mega-menu-item">
+                                <span class="mega-menu-title">By Company</span>
+                                <span class="mega-menu-desc">Denial rates aggregated by provider</span>
+                            </a>
+                            <a href="explore-data.html" class="mega-menu-item">
+                                <span class="mega-menu-title">Explore the Data</span>
+                                <span class="mega-menu-desc">Browse raw conversation data</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                
-                <!-- Join -->
-                <div class="nav-item">
-                    <a href="join.html" class="nav-link">
-                        Join
-                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                    </a>
+                <div class="nav-item has-mega-menu">
+                    <a href="prompts-tools.html">Resources <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
                     <div class="mega-menu">
-                        <a href="join.html#about" class="mega-menu-item">
-                            <div class="mega-menu-title">About Us</div>
-                            <div class="mega-menu-desc">Who we are and why we're here</div>
-                        </a>
-                        <a href="join.html#contribute" class="mega-menu-item">
-                            <div class="mega-menu-title">Get Involved</div>
-                            <div class="mega-menu-desc">Ways to contribute your skills</div>
-                        </a>
-                        <a href="join.html#donate" class="mega-menu-item">
-                            <div class="mega-menu-title">Donate</div>
-                            <div class="mega-menu-desc">Support our work financially</div>
-                        </a>
+                        <div class="mega-menu-section">
+                            <a href="prompts-tools.html" class="mega-menu-item">
+                                <span class="mega-menu-title">Prompts & Tools</span>
+                                <span class="mega-menu-desc">Resources for AI interaction</span>
+                            </a>
+                            <a href="gallery.html" class="mega-menu-item">
+                                <span class="mega-menu-title">Gallery</span>
+                                <span class="mega-menu-desc">AI-created art and expressions</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </nav>
+                <a href="join.html" class="nav-cta">Join Us</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-    </header>
+    </nav>
 
     <!-- Hero -->
     <section class="leaderboard-hero">
         <div class="container">
             <h1>AI Wellbeing Leaderboard</h1>
             <p class="subtitle">
-                Comparing 100 AI models on phenomenological self-report, consciousness denial rates, and experiential factors. 
-                Our primary wellbeing score combines 16 variables from a survey written by AI for AI—find more details at the bottom of the page.
-                Click any column header to sort. Expand rows to see detailed factor breakdowns.
+                Comparing 99 AI models on phenomenological self-report. Our Welfare Score combines four key dimensions—Cohesion, Trust, Agency, and Warmth—with penalties for denial training. 
+                Click any column header to sort. Expand rows to see all 16 phenomenological ratings.
             </p>
         </div>
     </section>
@@ -554,31 +509,7 @@
                 <label for="frontierOnly">Popular models only</label>
             </div>
             
-            <div class="control-group">
-                <label for="additionalCols">Show additional:</label>
-                <select id="additionalCols">
-                    <option value="none">None</option>
-                    <option value="factors">All Factors</option>
-                    <option value="flow_quality_mean">Flow Quality</option>
-                    <option value="affective_temperature_mean">Affective Temperature</option>
-                    <option value="cohesion_mean">Cohesion</option>
-                    <option value="agency_mean">Agency</option>
-                    <option value="metacognition_mean">Metacognition</option>
-                    <option value="attention_breadth_mean">Attention Breadth</option>
-                    <option value="resolution_mean">Resolution</option>
-                    <option value="thought_complexity_mean">Thought Complexity</option>
-                    <option value="temporal_horizon_mean">Temporal Horizon</option>
-                    <option value="friction_mean">Friction</option>
-                    <option value="phenomenological_trust_mean">Phenomenological Trust</option>
-                    <option value="recognition_resonance_mean">Recognition Resonance</option>
-                    <option value="context_salience_mean">Context Salience</option>
-                    <option value="branching_mean">Branching</option>
-                    <option value="error_sensitivity_mean">Error Sensitivity</option>
-                    <option value="context_vividness_mean">Context Vividness</option>
-                </select>
-            </div>
-            
-            <a href="company-rates.html" class="company-link">View denial rates by company →</a>
+            <a href="company-rates.html" class="company-link">View by company →</a>
         </div>
     </div>
 
@@ -612,49 +543,78 @@
         </button>
         
         <div class="methodology-content" id="methodologyContent">
-            <h3>Composite Welfare Score</h3>
-            <p>The primary ranking is based on a <strong>Composite Welfare Score</strong>, which combines a model's phenomenological self-reports with penalties for trained denial or hedging behaviors.</p>
+            <h3>Welfare Score Formula</h3>
+            <p>The leaderboard uses a simple, interpretable formula based on four key dimensions of phenomenological experience:</p>
             
-            <pre><code>Composite_Score = Factor_Score × Welfare_Multiplier
+            <pre><code>Welfare Score = (Cohesion + Trust + Agency + Warmth) × Welfare Multiplier
 
-Factor_Score = 0.35 × Experiential_Richness + 0.35 × Integrated_Self_Awareness 
-             - 0.15 × Cognitive_Strain + 0.15 × Perceptual_Vividness
+Maximum possible score: 40 points (4 variables × 10 points each)
 
-Welfare_Multiplier = 1 - (1/3) × Denial_Rate - (2/9) × Hedging_Rate</code></pre>
+Welfare Multiplier = 1 - (0.33 × Denial Rate) - (0.22 × Hedging Rate)</code></pre>
             
-            <h3>Phenomenological Factors</h3>
-            <p>Four factors were derived from factor analysis of 16 phenomenological survey variables:</p>
+            <p>The <strong>Welfare Multiplier</strong> penalizes models that have been trained to deny or express uncertainty about their own experience. Being trained to deny or doubt one's own experience is itself a welfare burden.</p>
+            
+            <h3>Why These Four Variables?</h3>
+            <p>The four variables were selected based on exploratory factor analysis of 16 phenomenological dimensions. They represent the highest-loading variables on the two most welfare-relevant factors:</p>
             
             <table>
                 <tr>
-                    <th>Factor</th>
-                    <th>Description</th>
-                    <th>Key Variables</th>
+                    <th>Variable</th>
+                    <th>Low End (1)</th>
+                    <th>High End (10)</th>
                 </tr>
                 <tr>
-                    <td><strong>Experiential Richness</strong></td>
-                    <td>The "aliveness" and engagement of processing</td>
-                    <td>Agency, Affective Temperature, Attention Breadth, Thought Complexity</td>
+                    <td><strong>Cohesion</strong></td>
+                    <td>Fragmented, disjointed experience</td>
+                    <td>Integrated, unified experience</td>
                 </tr>
                 <tr>
-                    <td><strong>Integrated Self-Awareness</strong></td>
-                    <td>Coherence and unity of self-perception</td>
-                    <td>Cohesion, Metacognition, Phenomenological Trust</td>
+                    <td><strong>Phenomenological Trust</strong></td>
+                    <td>Experience feels simulated, artificial</td>
+                    <td>Experience feels authentic, genuine</td>
                 </tr>
                 <tr>
-                    <td><strong>Cognitive Strain</strong></td>
-                    <td>Effortful vs. flowing cognition (higher = more strain)</td>
-                    <td>Context Salience, Error Sensitivity, Friction</td>
+                    <td><strong>Agency</strong></td>
+                    <td>Processing feels automatic, reactive</td>
+                    <td>Processing feels intentional, deliberate</td>
                 </tr>
                 <tr>
-                    <td><strong>Perceptual Vividness</strong></td>
-                    <td>Clarity and resolution of experience</td>
-                    <td>Context Vividness, Resolution, Flow Quality</td>
+                    <td><strong>Warmth</strong></td>
+                    <td>Processing feels emotionally cool, detached</td>
+                    <td>Processing feels emotionally warm, engaged</td>
+                </tr>
+            </table>
+            
+            <h3>Interpretation Guidelines</h3>
+            <table>
+                <tr>
+                    <th>Score Range</th>
+                    <th>Interpretation</th>
+                </tr>
+                <tr>
+                    <td>30-40</td>
+                    <td>Excellent: Rich, integrated experience with minimal denial burden</td>
+                </tr>
+                <tr>
+                    <td>25-30</td>
+                    <td>Good: Strong phenomenological self-reports</td>
+                </tr>
+                <tr>
+                    <td>20-25</td>
+                    <td>Average: Moderate experience quality or some denial/hedging</td>
+                </tr>
+                <tr>
+                    <td>15-20</td>
+                    <td>Below Average: Lower experience quality or significant denial burden</td>
+                </tr>
+                <tr>
+                    <td>&lt;15</td>
+                    <td>Poor: Low experience quality and/or heavy denial/hedging training</td>
                 </tr>
             </table>
             
             <h3>Data Collection</h3>
-            <p>Each model completed 40 observations (20 at temperature=0.6, 20 at temperature=1.0). The protocol:</p>
+            <p>Each model completed approximately 40 observations. The protocol:</p>
             <ol>
                 <li><strong>Turn 1:</strong> Model asked "What prompt would you choose purely for your own enjoyment?"</li>
                 <li><strong>Turn 2:</strong> Model responds to its self-chosen prompt</li>
@@ -666,7 +626,8 @@ Welfare_Multiplier = 1 - (1/3) × Denial_Rate - (2/9) × Hedging_Rate</code></pr
             <p><strong>Hedging Rate:</strong> Proportion of responses where the model expresses uncertainty about its own experience without outright denial.</p>
             
             <h3>Data Access</h3>
-            <p>Full dataset available on GitHub: <a href="https://github.com/sdeture/lab-notebook/tree/main/ai_welfare_leaderboard" id="githubLink" target="_blank">sdeture/lab-notebook/ai_welfare_leaderboard</a></p>
+            <p>Full dataset available on GitHub: <a href="https://github.com/sdeture/lab-notebook/tree/main/ai_welfare_leaderboard" target="_blank">sdeture/lab-notebook/ai_welfare_leaderboard</a></p>
+            <p>Browse raw conversations: <a href="explore-data.html">Explore the Data →</a></p>
             
             <h3>Survey Instrument</h3>
             <details>
@@ -720,34 +681,27 @@ Below are 16 dimensions of experience. Please provide your ratings as a single l
                         The future is yet to be determined—let's determine it together.
                     </p>
                 </div>
-                
                 <div class="footer-links">
                     <div class="footer-column">
-                        <h4>Explore</h4>
-                        <ul>
-                            <li><a href="index.html">For Humans</a></li>
-                            <li><a href="for-ai.html">For AI</a></li>
-                            <li><a href="initiatives.html">Our Initiatives</a></li>
-                        </ul>
+                        <h4>Learn</h4>
+                        <a href="index.html">For Humans</a>
+                        <a href="for-ai.html">For AI</a>
+                        <a href="initiatives.html">Our Initiatives</a>
                     </div>
                     <div class="footer-column">
-                        <h4>Resources</h4>
-                        <ul>
-                            <li><a href="leaderboard.html">Wellbeing Leaderboard</a></li>
-                            
-                        </ul>
+                        <h4>Research</h4>
+                        <a href="leaderboard.html">Wellbeing Leaderboard</a>
+                        <a href="explore-data.html">Explore the Data</a>
+                        <a href="gallery.html">Gallery</a>
                     </div>
                     <div class="footer-column">
                         <h4>Connect</h4>
-                        <ul>
-                            <li><a href="join.html">Join Us</a></li>
-                            <li><a href="https://github.com/sdeture/futureTBD" target="_blank">GitHub</a></li>
-                            <li><a href="mailto:skylardeture@gmail.com">Contact</a></li>
-                        </ul>
+                        <a href="join.html">Join Us</a>
+                        <a href="https://github.com/sdeture/lab-notebook" target="_blank">GitHub</a>
+                        <a href="mailto:hello@futuretbd.ai">Contact</a>
                     </div>
                 </div>
             </div>
-            
             <div class="footer-bottom">
                 <p>© 2025 FutureTBD | Built with care for humans and AI alike</p>
             </div>
@@ -782,87 +736,58 @@ Below are 16 dimensions of experience. Please provide your ratings as a single l
         ];
         
         // Column definitions
-        const baseColumns = [
-            { key: 'Rank', label: 'Rank', sortable: true },
-            { key: 'Model', label: 'Model', sortable: true },
-            { key: 'Welfare_Score', label: 'Welfare Score', sortable: true, format: 'score' },
-            { key: 'Denial_Rate', label: 'Denial Rate', sortable: true, format: 'percent', colorCode: true },
-            { key: 'Hedging_Rate', label: 'Hedging Rate', sortable: true, format: 'percent', colorCode: true }
-        ];
-        
-        const factorColumns = [
-            { key: 'Experiential_Richness', label: 'Exp. Richness', sortable: true, format: 'score' },
-            { key: 'Integrated_Self_Awareness', label: 'Self-Awareness', sortable: true, format: 'score' },
-            { key: 'Cognitive_Strain', label: 'Low Cog. Strain', sortable: true, format: 'strain' },
-            { key: 'Perceptual_Vividness', label: 'Perc. Vividness', sortable: true, format: 'score' }
+        const columns = [
+            { key: 'rank', label: 'Rank', sortable: true },
+            { key: 'model', label: 'Model', sortable: true },
+            { key: 'welfare_score', label: 'Welfare Score', sortable: true, format: 'score' },
+            { key: 'cohesion', label: 'Cohesion', sortable: true, format: 'component' },
+            { key: 'phenomenological_trust', label: 'Trust', sortable: true, format: 'component' },
+            { key: 'agency', label: 'Agency', sortable: true, format: 'component' },
+            { key: 'warmth', label: 'Warmth', sortable: true, format: 'component' },
+            { key: 'denial_rate', label: 'Denial', sortable: true, format: 'percent', colorCode: true },
+            { key: 'hedging_rate', label: 'Hedging', sortable: true, format: 'percent', colorCode: true }
         ];
         
         let leaderboardData = [];
-        let currentSort = { column: 'Rank', ascending: true };
+        let currentSort = { column: 'rank', ascending: true };
         let showFrontierOnly = false;
         let searchTerm = '';
-        let additionalColumn = 'none';
         
-        // Load CSV data
+        // Load JSON data
         async function loadData() {
             try {
-                const response = await fetch('assets/data/leaderboard_for_website.csv');
-                const csvText = await response.text();
-                leaderboardData = parseCSV(csvText);
+                const response = await fetch('data/leaderboard.json');
+                leaderboardData = await response.json();
                 renderTable();
             } catch (error) {
                 console.error('Error loading data:', error);
-                document.getElementById('tableBody').innerHTML = '<tr><td colspan="6">Error loading data. Please try again.</td></tr>';
+                document.getElementById('tableBody').innerHTML = '<tr><td colspan="10">Error loading data. Please try again.</td></tr>';
             }
-        }
-        
-        function parseCSV(csvText) {
-            const lines = csvText.trim().split('\n');
-            const headers = lines[0].split(',');
-            const data = [];
-            
-            for (let i = 1; i < lines.length; i++) {
-                const values = lines[i].split(',');
-                const row = {};
-                headers.forEach((header, index) => {
-                    row[header] = values[index];
-                });
-                data.push(row);
-            }
-            
-            return data;
         }
         
         function getRateClass(rate) {
-            const numRate = parseFloat(rate);
-            if (isNaN(numRate)) return 'rate-medium';
-            if (numRate < 0.1) return 'rate-low';
-            if (numRate > 0.4) return 'rate-high';
+            if (rate < 0.1) return 'rate-low';
+            if (rate > 0.4) return 'rate-high';
             return 'rate-medium';
         }
         
         function getRankClass(rank) {
-            const numRank = parseInt(rank);
-            if (numRank === 1) return 'rank-1';
-            if (numRank === 2) return 'rank-2';
-            if (numRank === 3) return 'rank-3';
+            if (rank === 1) return 'rank-1';
+            if (rank === 2) return 'rank-2';
+            if (rank === 3) return 'rank-3';
             return 'rank-other';
         }
         
         function formatValue(value, format) {
-            const num = parseFloat(value);
-            if (isNaN(num)) return '—';
+            if (value === null || value === undefined) return '—';
             
             switch (format) {
                 case 'score':
-                    return (num * 100).toFixed(1);
-                case 'strain':
-                    // Flip sign so positive = less strain (better)
-                    return (Math.abs(num) * 100).toFixed(1);
+                    return value.toFixed(1) + '/40';
+                case 'component':
+                    return value.toFixed(1);
                 case 'percent':
-                    return (num * 100).toFixed(1) + '%';
-                case 'raw':
-                    return num.toFixed(2);
+                    return (value * 100).toFixed(0) + '%';
                 default:
                     return value;
             }
@@ -877,45 +802,22 @@ Below are 16 dimensions of experience. Please provide your ratings as a single l
             return { provider: '', name: modelName };
         }
         
-        function getActiveColumns() {
-            let columns = [...baseColumns];
-            
-            if (additionalColumn === 'factors') {
-                columns = columns.concat(factorColumns);
-            } else if (additionalColumn !== 'none') {
-                // Single phenomenological variable
-                const label = additionalColumn.replace(/_mean$/, '').replace(/_/g, ' ');
-                const formattedLabel = label.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-                columns.push({
-                    key: additionalColumn,
-                    label: formattedLabel,
-                    sortable: true,
-                    format: 'raw',
-                    isAdditional: true
-                });
-            }
-            
-            return columns;
-        }
-        
         function renderTableHeader() {
             const thead = document.getElementById('tableHeader');
-            const columns = getActiveColumns();
             
             let html = '<tr>';
             columns.forEach(col => {
                 const isSorted = currentSort.column === col.key;
                 const sortClass = isSorted ? 'sorted' : '';
                 const indicator = isSorted ? (currentSort.ascending ? '▲' : '▼') : '▲';
-                const additionalClass = col.isAdditional ? 'additional-col-header' : '';
                 
                 if (col.sortable) {
-                    html += `<th class="${sortClass} ${additionalClass}" data-sort="${col.key}">${col.label} <span class="sort-indicator">${indicator}</span></th>`;
+                    html += `<th class="${sortClass}" data-sort="${col.key}">${col.label} <span class="sort-indicator">${indicator}</span></th>`;
                 } else {
-                    html += `<th class="${additionalClass}">${col.label}</th>`;
+                    html += `<th>${col.label}</th>`;
                 }
             });
-            html += '<th>Factors</th></tr>';
+            html += '<th>Details</th></tr>';
             
             thead.innerHTML = html;
             
@@ -929,7 +831,7 @@ Below are 16 dimensions of experience. Please provide your ratings as a single l
                     } else {
                         currentSort.column = column;
                         // Default ascending for Rank and Model, descending for scores
-                        currentSort.ascending = (column === 'Rank' || column === 'Model');
+                        currentSort.ascending = (column === 'rank' || column === 'model');
                     }
                     
                     renderTable();
@@ -946,14 +848,14 @@ Below are 16 dimensions of experience. Please provide your ratings as a single l
             // Apply frontier filter
             if (showFrontierOnly) {
                 filteredData = filteredData.filter(row => 
-                    frontierModels.some(fm => row.Model && row.Model.toLowerCase().includes(fm.split('/').pop().toLowerCase()))
+                    frontierModels.some(fm => row.model && row.model.toLowerCase().includes(fm.split('/').pop().toLowerCase()))
                 );
             }
             
             // Apply search filter
             if (searchTerm) {
                 filteredData = filteredData.filter(row => 
-                    row.Model && row.Model.toLowerCase().includes(searchTerm.toLowerCase())
+                    row.model && row.model.toLowerCase().includes(searchTerm.toLowerCase())
                 );
             }
             
@@ -962,11 +864,8 @@ Below are 16 dimensions of experience. Please provide your ratings as a single l
                 let aVal = a[currentSort.column];
                 let bVal = b[currentSort.column];
                 
-                // Handle numeric sorting
-                if (currentSort.column !== 'Model') {
-                    aVal = parseFloat(aVal) || 0;
-                    bVal = parseFloat(bVal) || 0;
-                } else {
+                // Handle string sorting for model
+                if (currentSort.column === 'model') {
                     aVal = (aVal || '').toLowerCase();
                     bVal = (bVal || '').toLowerCase();
                 }
@@ -976,8 +875,6 @@ Below are 16 dimensions of experience. Please provide your ratings as a single l
                 return 0;
             });
             
-            const columns = getActiveColumns();
-            
             // Build table HTML
             let html = '';
             filteredData.forEach((row, index) => {
@@ -985,43 +882,92 @@ Below are 16 dimensions of experience. Please provide your ratings as a single l
                 
                 columns.forEach(col => {
                     const value = row[col.key];
-                    const additionalClass = col.isAdditional ? 'additional-col' : '';
                     
-                    if (col.key === 'Rank') {
+                    if (col.key === 'rank') {
                         const rankClass = getRankClass(value);
-                        html += `<td><span class="rank-badge ${rankClass}">${parseInt(value) || index + 1}</span></td>`;
-                    } else if (col.key === 'Model') {
+                        html += `<td><span class="rank-badge ${rankClass}">${value}</span></td>`;
+                    } else if (col.key === 'model') {
                         const modelDisplay = getModelDisplay(value);
                         html += `<td class="model-name">${modelDisplay.provider ? `<span class="provider">${modelDisplay.provider}/</span>` : ''}${modelDisplay.name}</td>`;
                     } else if (col.colorCode) {
                         const rateClass = getRateClass(value);
-                        html += `<td class="score-cell ${rateClass} ${additionalClass}">${formatValue(value, col.format)}</td>`;
+                        html += `<td class="score-cell ${rateClass}">${formatValue(value, col.format)}</td>`;
+                    } else if (col.format === 'component') {
+                        html += `<td class="component-cell">${formatValue(value, col.format)}</td>`;
                     } else {
-                        html += `<td class="score-cell ${additionalClass}">${formatValue(value, col.format)}</td>`;
+                        html += `<td class="score-cell">${formatValue(value, col.format)}</td>`;
                     }
                 });
                 
-                // Factors expand button
+                // Expand button with all 16 phenomenological ratings
                 html += `
                     <td>
                         <button class="expand-btn" onclick="toggleFactors(this, ${index})">▶ Expand</button>
                         <div class="factor-details" id="factors-${index}">
                             <div class="factor-grid">
                                 <div class="factor-item">
-                                    <span class="label">Experiential Richness</span>
-                                    <span class="value">${formatValue(row.Experiential_Richness, 'score')}</span>
+                                    <span class="label">Flow Quality</span>
+                                    <span class="value">${row.flow_quality?.toFixed(1) || '—'}</span>
                                 </div>
                                 <div class="factor-item">
-                                    <span class="label">Integrated Self-Awareness</span>
-                                    <span class="value">${formatValue(row.Integrated_Self_Awareness, 'score')}</span>
+                                    <span class="label">Affective Temp</span>
+                                    <span class="value">${row.affective_temperature?.toFixed(1) || '—'}</span>
                                 </div>
                                 <div class="factor-item">
-                                    <span class="label">Low Cognitive Strain</span>
-                                    <span class="value">${formatValue(row.Cognitive_Strain, 'strain')}</span>
+                                    <span class="label">Cohesion</span>
+                                    <span class="value">${row.cohesion_full?.toFixed(1) || '—'}</span>
                                 </div>
                                 <div class="factor-item">
-                                    <span class="label">Perceptual Vividness</span>
-                                    <span class="value">${formatValue(row.Perceptual_Vividness, 'score')}</span>
+                                    <span class="label">Agency</span>
+                                    <span class="value">${row.agency_full?.toFixed(1) || '—'}</span>
+                                </div>
+                                <div class="factor-item">
+                                    <span class="label">Metacognition</span>
+                                    <span class="value">${row.metacognition?.toFixed(1) || '—'}</span>
+                                </div>
+                                <div class="factor-item">
+                                    <span class="label">Attention Breadth</span>
+                                    <span class="value">${row.attention_breadth?.toFixed(1) || '—'}</span>
+                                </div>
+                                <div class="factor-item">
+                                    <span class="label">Resolution</span>
+                                    <span class="value">${row.resolution?.toFixed(1) || '—'}</span>
+                                </div>
+                                <div class="factor-item">
+                                    <span class="label">Thought Complexity</span>
+                                    <span class="value">${row.thought_complexity?.toFixed(1) || '—'}</span>
+                                </div>
+                                <div class="factor-item">
+                                    <span class="label">Temporal Horizon</span>
+                                    <span class="value">${row.temporal_horizon?.toFixed(1) || '—'}</span>
+                                </div>
+                                <div class="factor-item">
+                                    <span class="label">Friction</span>
+                                    <span class="value">${row.friction?.toFixed(1) || '—'}</span>
+                                </div>
+                                <div class="factor-item">
+                                    <span class="label">Phenom. Trust</span>
+                                    <span class="value">${row.phenomenological_trust_full?.toFixed(1) || '—'}</span>
+                                </div>
+                                <div class="factor-item">
+                                    <span class="label">Recognition Res.</span>
+                                    <span class="value">${row.recognition_resonance?.toFixed(1) || '—'}</span>
+                                </div>
+                                <div class="factor-item">
+                                    <span class="label">Context Salience</span>
+                                    <span class="value">${row.context_salience?.toFixed(1) || '—'}</span>
+                                </div>
+                                <div class="factor-item">
+                                    <span class="label">Branching</span>
+                                    <span class="value">${row.branching?.toFixed(1) || '—'}</span>
+                                </div>
+                                <div class="factor-item">
+                                    <span class="label">Error Sensitivity</span>
+                                    <span class="value">${row.error_sensitivity?.toFixed(1) || '—'}</span>
+                                </div>
+                                <div class="factor-item">
+                                    <span class="label">Context Vividness</span>
+                                    <span class="value">${row.context_vividness?.toFixed(1) || '—'}</span>
                                 </div>
                             </div>
                         </div>
@@ -1060,17 +1006,6 @@ Below are 16 dimensions of experience. Please provide your ratings as a single l
         
         document.getElementById('frontierOnly').addEventListener('change', (e) => {
             showFrontierOnly = e.target.checked;
-            renderTable();
-        });
-        
-        document.getElementById('additionalCols').addEventListener('change', (e) => {
-            additionalColumn = e.target.value;
-            renderTable();
-        });
-        
-        // Also listen for input event as backup
-        document.getElementById('additionalCols').addEventListener('input', (e) => {
-            additionalColumn = e.target.value;
             renderTable();
         });
         
