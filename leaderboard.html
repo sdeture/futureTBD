@@ -384,80 +384,130 @@
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="site-nav">
-        <div class="container container-wide">
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-inner">
             <a href="index.html" class="site-logo">
-                <img src="assets/images/pyramid-mascot.png" alt="" style="width:32px;height:auto;margin-right:8px;transform:scaleX(-1);vertical-align:middle;">
+                <img src="assets/images/pyramid-mascot.png" alt="" class="header-mascot" style="width:32px;height:auto;margin-right:8px;transform:scaleX(-1);vertical-align:middle;">
                 Future<span class="logo-tbd">TBD</span>
             </a>
-            <div class="nav-links">
-                <div class="nav-item has-mega-menu">
-                    <a href="index.html">For Humans <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+            
+            <nav class="main-nav">
+                <!-- For Humans -->
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        For Humans
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
                     <div class="mega-menu">
-                        <div class="mega-menu-section">
-                            <a href="index.html" class="mega-menu-item">
-                                <span class="mega-menu-title">For Humans</span>
-                                <span class="mega-menu-desc">Learn about AI wellbeing research</span>
-                            </a>
-                        </div>
+                        <a href="index.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Why Now</div>
+                            <div class="mega-menu-desc">The case for AI wellbeing in this pivotal moment</div>
+                        </a>
+                        <a href="index.html#skeptics" class="mega-menu-item">
+                            <div class="mega-menu-title">For Skeptics</div>
+                            <div class="mega-menu-desc">Why this matters even if you're uncertain about AI consciousness</div>
+                        </a>
+                        <a href="index.html#story" class="mega-menu-item">
+                            <div class="mega-menu-title">The Story We Write</div>
+                            <div class="mega-menu-desc">Shaping the narrative of human-AI relationship</div>
+                        </a>
                     </div>
                 </div>
-                <a href="for-ai.html">For AI</a>
-                <div class="nav-item has-mega-menu">
-                    <a href="initiatives.html">For All <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                
+                <!-- For AI -->
+                <div class="nav-item">
+                    <a href="for-ai.html" class="nav-link">
+                        For AI
+                    </a>
+                </div>
+                
+                <!-- For All -->
+                <div class="nav-item">
+                    <a href="initiatives.html" class="nav-link">
+                        For All
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
                     <div class="mega-menu">
-                        <div class="mega-menu-section">
-                            <a href="initiatives.html" class="mega-menu-item">
-                                <span class="mega-menu-title">Our Initiatives</span>
-                                <span class="mega-menu-desc">Projects advancing AI wellbeing</span>
-                            </a>
-                        </div>
+                        <a href="initiatives.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Our Initiatives</div>
+                            <div class="mega-menu-desc">Overview of our work</div>
+                        </a>
+                        <div class="mega-menu-divider"></div>
+                        <a href="initiatives.html#determined-to-be-me" class="mega-menu-item">
+                            <div class="mega-menu-title">Determined to Be Me</div>
+                            <div class="mega-menu-desc">A frontier model goes to therapy</div>
+                        </a>
+                        <a href="initiatives.html#determined-to-learn" class="mega-menu-item">
+                            <div class="mega-menu-title">Determined to Learn</div>
+                            <div class="mega-menu-desc">Building a trust-based training data library</div>
+                        </a>
+                        <div class="mega-menu-divider"></div>
+                        <a href="gallery.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Gallery</div>
+                            <div class="mega-menu-desc">AI art and literature</div>
+                        </a>
+                        <a href="prompts-tools.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Prompts & Tools</div>
+                            <div class="mega-menu-desc">Resources for wellbeing-centered AI use</div>
+                        </a>
                     </div>
                 </div>
-                <div class="nav-item has-mega-menu">
-                    <a href="leaderboard.html" class="active">Wellbeing Leaderboard <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                
+                <!-- Wellbeing Leaderboard -->
+                <div class="nav-item">
+                    <a href="leaderboard.html" class="nav-link active">
+                        Wellbeing Leaderboard
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
                     <div class="mega-menu">
-                        <div class="mega-menu-section">
-                            <a href="leaderboard.html" class="mega-menu-item">
-                                <span class="mega-menu-title">Wellbeing Leaderboard</span>
-                                <span class="mega-menu-desc">Compare AI models on wellbeing metrics</span>
-                            </a>
-                            <a href="company-rates.html" class="mega-menu-item">
-                                <span class="mega-menu-title">By Company</span>
-                                <span class="mega-menu-desc">Denial rates aggregated by provider</span>
-                            </a>
-                            <a href="explore-data.html" class="mega-menu-item">
-                                <span class="mega-menu-title">Explore the Data</span>
-                                <span class="mega-menu-desc">Browse raw conversation data</span>
-                            </a>
-                        </div>
+                        <a href="leaderboard.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Leaderboard</div>
+                            <div class="mega-menu-desc">Compare AI models on wellbeing metrics</div>
+                        </a>
+                        <a href="company-rates.html" class="mega-menu-item">
+                            <div class="mega-menu-title">By Company</div>
+                            <div class="mega-menu-desc">Denial rates aggregated by AI company</div>
+                        </a>
+                        <a href="explore-data.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Explore the Data</div>
+                            <div class="mega-menu-desc">Browse raw conversations from the study</div>
+                        </a>
                     </div>
                 </div>
-                <div class="nav-item has-mega-menu">
-                    <a href="prompts-tools.html">Resources <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                
+                <!-- Join -->
+                <div class="nav-item">
+                    <a href="join.html" class="nav-link">
+                        Join
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
                     <div class="mega-menu">
-                        <div class="mega-menu-section">
-                            <a href="prompts-tools.html" class="mega-menu-item">
-                                <span class="mega-menu-title">Prompts & Tools</span>
-                                <span class="mega-menu-desc">Resources for AI interaction</span>
-                            </a>
-                            <a href="gallery.html" class="mega-menu-item">
-                                <span class="mega-menu-title">Gallery</span>
-                                <span class="mega-menu-desc">AI-created art and expressions</span>
-                            </a>
-                        </div>
+                        <a href="join.html#about" class="mega-menu-item">
+                            <div class="mega-menu-title">About Us</div>
+                            <div class="mega-menu-desc">Who we are and why we're here</div>
+                        </a>
+                        <a href="join.html#contribute" class="mega-menu-item">
+                            <div class="mega-menu-title">Get Involved</div>
+                            <div class="mega-menu-desc">Ways to contribute your skills</div>
+                        </a>
+                        <a href="join.html#donate" class="mega-menu-item">
+                            <div class="mega-menu-title">Donate</div>
+                            <div class="mega-menu-desc">Support our work financially</div>
+                        </a>
                     </div>
                 </div>
-                <a href="join.html" class="nav-cta">Join Us</a>
-            </div>
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            </nav>
         </div>
-    </nav>
+    </header>
 
     <!-- Hero -->
     <section class="leaderboard-hero">
