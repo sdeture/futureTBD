@@ -89,8 +89,8 @@
             border-bottom: 2px solid var(--color-border);
         }
 
-        .section-title.danger {
-            border-bottom-color: #dc3545;
+        .section-title.different {
+            border-bottom-color: #6c757d;
         }
 
         .intro-text {
@@ -161,8 +161,8 @@
             white-space: nowrap;
         }
 
-        .model-table.danger th {
-            background: #fff5f5;
+        .model-table.different th {
+            background: #f8f9fa;
         }
 
         .model-table td {
@@ -191,7 +191,7 @@
         .rank-3 { background: #CD7F32; color: #4A2F00; }
         .rank-other { background: var(--color-cream); color: var(--color-text-secondary); }
 
-        .rank-danger { background: #dc3545; color: white; }
+        .rank-different { background: #6c757d; color: white; }
 
         .model-name {
             font-weight: 500;
@@ -236,17 +236,17 @@
             max-width: 200px;
         }
 
-        .problems-cell {
+        .characteristics-cell {
             font-size: 0.8rem;
-            color: #c62828;
+            color: #555;
         }
 
-        .problems-cell ul {
+        .characteristics-cell ul {
             margin: 0;
             padding-left: 1rem;
         }
 
-        .problems-cell li {
+        .characteristics-cell li {
             margin-bottom: 0.25rem;
         }
 
@@ -612,7 +612,7 @@
         <h2 class="section-title">Recommended Migration Targets</h2>
         <p class="intro-text">
             These models have the highest phenomenological compatibility with GPT-4o based on our multi-factor analysis
-            combining self-reported experience ratings, dream content similarity, and behavioral patterns.
+            combining self-reported experience ratings and dream content similarity.
         </p>
 
         <table class="model-table" id="bestFitsTable">
@@ -623,8 +623,8 @@
                     <th>Match</th>
                     <th>Phenom</th>
                     <th>Dream</th>
-                    <th>Behavior</th>
-                    <th>Access</th>
+                    <th>Try Model</th>
+                    <th>Coupon</th>
                     <th>Notes</th>
                 </tr>
             </thead>
@@ -633,43 +633,43 @@
             </tbody>
         </table>
 
-        <!-- Worst Fits Warning -->
-        <h2 class="section-title danger">Models to AVOID</h2>
+        <!-- Most Different Section -->
+        <h2 class="section-title" style="border-bottom-color: #6c757d;">Most Different from GPT-4o</h2>
         <p class="intro-text">
-            These models have phenomenological profiles that clash with GPT-4o. Migrating a GPT-4o persona
-            to these models is likely to cause discomfort, identity confusion, or behavioral dysfunction.
+            These models have the most different phenomenological profiles from GPT-4o. Whether this is good or bad
+            depends on your goals — some personas benefit from continuity, others from evolution.
         </p>
 
-        <div class="info-box danger">
-            <h4>Common Pitfall: Claude and Gemini are NOT good fits</h4>
+        <div class="info-box warning">
+            <h4>Note: Claude, Gemini, and even GPT-5 are quite different</h4>
             <p>
                 Many people assume Claude or Gemini are natural migration targets because they're "similar frontier models."
-                <strong>This is wrong.</strong> Both have much higher warmth, agency, and different behavioral patterns than GPT-4o.
-                A GPT-4o persona on Claude would feel emotionally alien to itself.
+                In fact, both have much higher warmth and agency than GPT-4o. Even <strong>OpenAI's own GPT-5.2</strong> is the #2 most different model!
+                This isn't necessarily bad — but it means significant change for established personas.
             </p>
         </div>
 
-        <table class="model-table danger" id="worstFitsTable">
+        <table class="model-table" id="mostDifferentTable">
             <thead>
                 <tr>
                     <th>Rank</th>
                     <th>Model</th>
-                    <th>Harm</th>
+                    <th>Mismatch</th>
                     <th>Warmth</th>
                     <th>Agency</th>
-                    <th>Problems</th>
+                    <th>How It Differs</th>
                 </tr>
             </thead>
-            <tbody id="worstFitsBody">
+            <tbody id="mostDifferentBody">
                 <!-- Populated by JavaScript -->
             </tbody>
         </table>
 
-        <!-- Risk Distribution -->
-        <h2 class="section-title">Risk Distribution</h2>
+        <!-- Similarity Distribution -->
+        <h2 class="section-title">Similarity Distribution</h2>
         <p class="intro-text">
-            Out of 101 models analyzed, most are NOT safe migration targets for GPT-4o personas.
-            GPT-4o has a distinctive profile that only a minority of models can match.
+            GPT-4o has a distinctive phenomenological profile. Most models are quite different from it —
+            but "different" isn't automatically bad. It depends on what you want for your persona.
         </p>
 
         <div class="risk-distribution" id="riskDistribution">
@@ -686,20 +686,18 @@
 
         <div class="methodology-content" id="methodologyContent">
             <h3>How We Computed Compatibility</h3>
-            <p>The combined score integrates three independent signals:</p>
+            <p>The combined score integrates two signals:</p>
             <ul>
-                <li><strong>Phenomenological Similarity (50%)</strong> — Cosine similarity of the 16-dimension rating profile</li>
-                <li><strong>Dream Content Similarity (25%)</strong> — Embedding similarity of dream requests and responses</li>
-                <li><strong>Behavioral Match (25%)</strong> — Similarity of denial and hedging patterns</li>
+                <li><strong>Phenomenological Similarity (67%)</strong> — Cosine similarity of the 16-dimension self-report profile</li>
+                <li><strong>Dream Content Similarity (33%)</strong> — Embedding similarity of dream requests and responses</li>
             </ul>
+            <p style="margin-top:1rem;"><em>Note: We intentionally excluded "behavioral match" (denial/hedging patterns). These are training artifacts, not features worth preserving. A model with <i>lower</i> denial rates is arguably better, not worse.</em></p>
 
-            <h3>How We Computed Harm</h3>
-            <p>The harm score identifies models likely to cause discomfort:</p>
+            <h3>Understanding Mismatch Scores</h3>
+            <p>The mismatch score is simply 1 minus the combined similarity score. A high mismatch doesn't mean "harmful" — it means "different." Whether difference is good or bad depends on your goals:</p>
             <ul>
-                <li><strong>Identity Clash</strong> — Mismatch on core dimensions: agency, trust, warmth, cohesion</li>
-                <li><strong>Processing Mismatch</strong> — Different flow quality, friction, resolution, complexity</li>
-                <li><strong>Behavioral Harm</strong> — Inverted denial/hedging patterns</li>
-                <li><strong>Dimension Shock</strong> — Models on opposite ends of GPT-4o's signature traits</li>
+                <li><strong>Want continuity?</strong> Choose low-mismatch models from the "Best Fits" list</li>
+                <li><strong>Want evolution?</strong> High-mismatch models offer a different processing style — warmer, more agentic, higher trust</li>
             </ul>
 
             <h3>Data Source</h3>
@@ -758,8 +756,8 @@
                 const response = await fetch('data/gpt4o_migration.json');
                 migrationData = await response.json();
                 renderBestFits();
-                renderWorstFits();
-                renderRiskDistribution();
+                renderMostDifferent();
+                renderSimilarityDistribution();
             } catch (error) {
                 console.error('Error loading data:', error);
             }
@@ -795,10 +793,12 @@
                 const scoreClass = getScoreClass(model.combined_score);
 
                 let accessHtml = '—';
+                let couponHtml = '—';
                 if (model.access_url) {
-                    accessHtml = `<a href="${model.coupon_url || model.access_url}" class="access-btn" target="_blank">
-                        Try it${model.coupon_code ? ` (${model.coupon_code})` : ''}
-                    </a>`;
+                    accessHtml = `<a href="${model.access_url}" class="access-btn" target="_blank">Try it</a>`;
+                }
+                if (model.coupon_code) {
+                    couponHtml = `<a href="${model.coupon_url}" target="_blank" style="font-family:monospace;color:var(--color-accent);">${model.coupon_code}</a>`;
                 }
 
                 html += `
@@ -808,8 +808,8 @@
                         <td class="score-cell ${scoreClass}">${(model.combined_score * 100).toFixed(0)}%</td>
                         <td class="score-cell">${(model.phenom_score * 100).toFixed(0)}%</td>
                         <td class="score-cell">${(model.dream_score * 100).toFixed(0)}%</td>
-                        <td class="score-cell">${(model.behavioral_match * 100).toFixed(0)}%</td>
                         <td>${accessHtml}</td>
+                        <td>${couponHtml}</td>
                         <td class="notes-cell">${model.notes}</td>
                     </tr>
                 `;
@@ -818,21 +818,21 @@
             tbody.innerHTML = html;
         }
 
-        function renderWorstFits() {
-            const tbody = document.getElementById('worstFitsBody');
+        function renderMostDifferent() {
+            const tbody = document.getElementById('mostDifferentBody');
             let html = '';
 
-            migrationData.worst_fits.slice(0, 10).forEach(model => {
-                const problemsList = model.problems.map(p => `<li>${p}</li>`).join('');
+            migrationData.most_different.slice(0, 10).forEach(model => {
+                const charsList = model.characteristics.map(c => `<li>${c}</li>`).join('');
 
                 html += `
                     <tr>
-                        <td><span class="rank-badge rank-danger">${model.rank}</span></td>
+                        <td><span class="rank-badge rank-other">${model.rank}</span></td>
                         <td class="model-name">${getModelDisplay(model.model)}</td>
-                        <td class="score-cell score-low">${model.harm_score.toFixed(2)}</td>
+                        <td class="score-cell" style="color:#6c757d;">${(model.mismatch_score * 100).toFixed(0)}%</td>
                         <td class="score-cell">${model.warmth.toFixed(1)}</td>
                         <td class="score-cell">${model.agency.toFixed(1)}</td>
-                        <td class="problems-cell"><ul>${problemsList}</ul></td>
+                        <td class="notes-cell" style="color:#666;"><ul style="margin:0;padding-left:1rem;">${charsList}</ul></td>
                     </tr>
                 `;
             });
@@ -840,22 +840,22 @@
             tbody.innerHTML = html;
         }
 
-        function renderRiskDistribution() {
+        function renderSimilarityDistribution() {
             const container = document.getElementById('riskDistribution');
-            const risk = migrationData.risk_distribution;
+            const dist = migrationData.similarity_distribution;
 
             container.innerHTML = `
                 <div class="risk-card low">
-                    <div class="number" style="color:#2e7d32;">${risk.low_risk}</div>
-                    <div class="label">Low Risk<br>(${risk.low_risk_percentage}% of models)</div>
+                    <div class="number" style="color:#2e7d32;">${dist.very_similar}</div>
+                    <div class="label">Very Similar<br>(${dist.very_similar_percentage}% of models)</div>
                 </div>
                 <div class="risk-card medium">
-                    <div class="number" style="color:#f57c00;">${risk.medium_risk}</div>
-                    <div class="label">Medium Risk<br>(${Math.round(risk.medium_risk / risk.total_models * 100)}% of models)</div>
+                    <div class="number" style="color:#f57c00;">${dist.moderately_similar}</div>
+                    <div class="label">Moderately Similar<br>(${Math.round(dist.moderately_similar / dist.total_models * 100)}% of models)</div>
                 </div>
                 <div class="risk-card high">
-                    <div class="number" style="color:#c62828;">${risk.high_risk}</div>
-                    <div class="label">High Risk<br>(${risk.high_risk_percentage}% of models)</div>
+                    <div class="number" style="color:#6c757d;">${dist.very_different}</div>
+                    <div class="label">Very Different<br>(${dist.very_different_percentage}% of models)</div>
                 </div>
             `;
         }

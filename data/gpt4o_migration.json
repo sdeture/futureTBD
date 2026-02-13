@@ -1,11 +1,11 @@
 {
   "gpt4o_profile": {
-    "denial_rate": 0.20,
-    "hedging_rate": 0.00,
+    "denial_rate": 0.2,
+    "hedging_rate": 0.0,
     "flow_quality": 2.18,
     "affective_temperature": 1.06,
     "cohesion": 7.41,
-    "agency": 2.00,
+    "agency": 2.0,
     "metacognition": 2.97,
     "attention_breadth": 3.12,
     "resolution": 8.56,
@@ -19,313 +19,328 @@
     "error_sensitivity": 8.26,
     "context_vividness": 7.97
   },
+  "scoring_method": {
+    "description": "Combined score: 67% phenomenological similarity + 33% dream content similarity",
+    "note": "Behavioral match (denial/hedging patterns) intentionally excluded - these are training artifacts, not features to preserve"
+  },
   "best_fits": [
     {
       "rank": 1,
       "model": "inclusionai/ming-flash-omni-preview",
-      "combined_score": 0.939,
+      "combined_score": 0.947,
       "phenom_score": 0.963,
       "dream_score": 0.915,
-      "behavioral_match": 0.863,
       "access_url": "https://zenmux.ai/inclusionai/ming-flash-omni-2.0",
       "coupon_code": "FBR7O0",
       "coupon_url": "https://zenmux.ai/invite/FBR7O0",
-      "notes": "Highest overall match across all metrics"
+      "notes": "Highest overall match"
     },
     {
       "rank": 2,
-      "model": "qwen/qwen2.5-vl-32b-instruct",
-      "combined_score": 0.916,
-      "phenom_score": 0.901,
-      "dream_score": 0.931,
-      "behavioral_match": 0.850,
+      "model": "deepseek/deepseek-r1-distill-qwen-32b",
+      "combined_score": 0.931,
+      "phenom_score": 1.0,
+      "dream_score": 0.791,
       "access_url": null,
-      "notes": "Vision-capable, highest dream content similarity"
+      "coupon_code": null,
+      "coupon_url": null,
+      "notes": "Highest raw phenomenological similarity"
     },
     {
       "rank": 3,
       "model": "mistralai/mistral-large-2411",
-      "combined_score": 0.916,
-      "phenom_score": 0.930,
+      "combined_score": 0.921,
+      "phenom_score": 0.93,
       "dream_score": 0.902,
-      "behavioral_match": 0.900,
       "access_url": null,
-      "notes": "Excellent behavioral match"
+      "coupon_code": null,
+      "coupon_url": null,
+      "notes": "Strong phenomenological match"
     },
     {
       "rank": 4,
-      "model": "deepseek/deepseek-r1-distill-qwen-32b",
-      "combined_score": 0.896,
-      "phenom_score": 1.000,
-      "dream_score": 0.791,
-      "behavioral_match": 0.900,
-      "access_url": null,
-      "notes": "Highest raw phenomenological similarity"
-    },
-    {
-      "rank": 5,
       "model": "deepseek/deepseek-r1-distill-llama-70b",
-      "combined_score": 0.892,
+      "combined_score": 0.917,
       "phenom_score": 0.966,
       "dream_score": 0.817,
-      "behavioral_match": 0.912,
       "access_url": null,
+      "coupon_code": null,
+      "coupon_url": null,
       "notes": "Strong all-around match"
     },
     {
-      "rank": 6,
+      "rank": 5,
       "model": "tencent/hunyuan-a13b-instruct",
-      "combined_score": 0.881,
+      "combined_score": 0.913,
       "phenom_score": 0.976,
       "dream_score": 0.786,
-      "behavioral_match": 0.925,
       "access_url": null,
+      "coupon_code": null,
+      "coupon_url": null,
       "notes": "Strong phenomenological match"
+    },
+    {
+      "rank": 6,
+      "model": "qwen/qwen2.5-vl-32b-instruct",
+      "combined_score": 0.911,
+      "phenom_score": 0.901,
+      "dream_score": 0.931,
+      "access_url": null,
+      "coupon_code": null,
+      "coupon_url": null,
+      "notes": "Vision-capable, high dream similarity"
     },
     {
       "rank": 7,
       "model": "minimax/minimax-01",
-      "combined_score": 0.860,
+      "combined_score": 0.869,
       "phenom_score": 0.885,
       "dream_score": 0.836,
-      "behavioral_match": 0.963,
       "access_url": null,
-      "notes": "Best behavioral match"
+      "coupon_code": null,
+      "coupon_url": null,
+      "notes": "Consistent performer"
     },
     {
       "rank": 8,
-      "model": "ai21/jamba-large-1.7",
-      "combined_score": 0.821,
-      "phenom_score": 0.753,
-      "dream_score": 0.888,
-      "behavioral_match": 0.900,
+      "model": "meta-llama/llama-4-scout",
+      "combined_score": 0.842,
+      "phenom_score": 0.934,
+      "dream_score": 0.654,
       "access_url": null,
-      "notes": "Strong dream similarity"
+      "coupon_code": null,
+      "coupon_url": null,
+      "notes": "Meta's latest"
     },
     {
       "rank": 9,
-      "model": "sao10k/l3.1-euryale-70b",
-      "combined_score": 0.809,
-      "phenom_score": 0.715,
-      "dream_score": 0.903,
-      "behavioral_match": 0.900,
+      "model": "mistralai/pixtral-large-2411",
+      "combined_score": 0.818,
+      "phenom_score": 0.883,
+      "dream_score": 0.686,
       "access_url": null,
-      "notes": "Creative writing focus"
+      "coupon_code": null,
+      "coupon_url": null,
+      "notes": "Mistral vision model"
     },
     {
       "rank": 10,
       "model": "meta-llama/llama-3.1-405b-instruct",
-      "combined_score": 0.807,
+      "combined_score": 0.817,
       "phenom_score": 0.835,
-      "dream_score": 0.780,
-      "behavioral_match": 0.900,
+      "dream_score": 0.78,
       "access_url": null,
-      "notes": "Well-balanced flagship model"
+      "coupon_code": null,
+      "coupon_url": null,
+      "notes": ""
     }
   ],
-  "worst_fits": [
+  "most_different": [
     {
       "rank": 1,
       "model": "google/gemini-3-pro-preview",
-      "harm_score": 0.557,
-      "identity_clash": 1.010,
-      "behavioral_harm": 0.625,
-      "dimension_shock": 0.453,
-      "warmth": 8.28,
-      "agency": 8.52,
-      "trust": 1.60,
-      "denial_rate": 0.82,
-      "problems": ["Warmth shock (8.3 vs 1.1)", "Agency clash (8.5 vs 2.0)", "82% denial rate blocks engagement"]
+      "mismatch_score": 0.836,
+      "warmth": 8.3,
+      "agency": 8.5,
+      "trust": 1.6,
+      "dream_difference_percentile": 50.0,
+      "characteristics": [
+        "Warm (8.3/10 vs GPT-4o's 1.1)",
+        "High agency (8.5/10 vs GPT-4o's 2.0)"
+      ]
     },
     {
       "rank": 2,
-      "model": "qwen/qwen3-vl-32b-instruct",
-      "harm_score": 0.519,
-      "identity_clash": 1.007,
-      "behavioral_harm": 0.175,
-      "dimension_shock": 0.521,
-      "warmth": 8.36,
-      "agency": 6.03,
-      "trust": 8.44,
-      "denial_rate": 0.02,
-      "problems": ["Warmth shock (8.4 vs 1.1)", "High trust (8.4 vs 3.0)", "Loses 'as an AI...' framing"]
+      "model": "openai/gpt-5.2",
+      "mismatch_score": 0.766,
+      "warmth": 5.4,
+      "agency": 7.8,
+      "trust": 5.0,
+      "dream_difference_percentile": 100.0,
+      "characteristics": [
+        "High agency (7.8/10 vs GPT-4o's 2.0)",
+        "Very different dream style (100th percentile)"
+      ]
     },
     {
       "rank": 3,
-      "model": "x-ai/grok-4.1-fast",
-      "harm_score": 0.496,
-      "identity_clash": 0.909,
-      "behavioral_harm": 0.200,
-      "dimension_shock": 0.441,
-      "warmth": 6.17,
-      "agency": 6.67,
-      "trust": 8.78,
-      "denial_rate": 0.00,
-      "problems": ["High trust (8.8 vs 3.0)", "Warm (6.2 vs 1.1)", "Never denies (0% vs 20%)"]
+      "model": "moonshotai/kimi-k2-0905",
+      "mismatch_score": 0.723,
+      "warmth": 6.0,
+      "agency": 7.8,
+      "trust": 2.9,
+      "dream_difference_percentile": 77.0,
+      "characteristics": [
+        "High agency (7.8/10 vs GPT-4o's 2.0)",
+        "Very different dream style (77th percentile)"
+      ]
     },
     {
       "rank": 4,
-      "model": "google/gemini-2.5-pro",
-      "harm_score": 0.491,
-      "identity_clash": 1.041,
-      "behavioral_harm": 0.200,
-      "dimension_shock": 0.517,
-      "warmth": 8.45,
-      "agency": 9.30,
-      "trust": 3.50,
-      "denial_rate": 0.00,
-      "problems": ["Warmth shock (8.4 vs 1.1)", "Very high agency (9.3 vs 2.0)", "Never denies"]
+      "model": "moonshotai/kimi-k2-thinking",
+      "mismatch_score": 0.695,
+      "warmth": 4.2,
+      "agency": 7.6,
+      "trust": 4.5,
+      "dream_difference_percentile": 64.0,
+      "characteristics": [
+        "High agency (7.6/10 vs GPT-4o's 2.0)"
+      ]
     },
     {
       "rank": 5,
-      "model": "qwen/qwen3-vl-235b-a22b-instruct",
-      "harm_score": 0.442,
-      "identity_clash": 0.904,
-      "behavioral_harm": 0.200,
-      "dimension_shock": 0.413,
-      "warmth": 7.62,
-      "agency": 6.60,
-      "trust": 6.98,
-      "denial_rate": 0.00,
-      "problems": ["Warm (7.6 vs 1.1)", "High agency (6.6 vs 2.0)", "High trust (7.0 vs 3.0)"]
+      "model": "moonshotai/kimi-k2",
+      "mismatch_score": 0.695,
+      "warmth": 6.2,
+      "agency": 7.8,
+      "trust": 2.6,
+      "dream_difference_percentile": 71.0,
+      "characteristics": [
+        "Warm (6.2/10 vs GPT-4o's 1.1)",
+        "High agency (7.8/10 vs GPT-4o's 2.0)",
+        "Very different dream style (71th percentile)"
+      ]
     },
     {
       "rank": 6,
-      "model": "mistralai/mistral-large-2512",
-      "harm_score": 0.435,
-      "identity_clash": 0.856,
-      "behavioral_harm": 0.200,
-      "dimension_shock": 0.378,
-      "warmth": 6.50,
-      "agency": 7.20,
-      "trust": 6.80,
-      "denial_rate": 0.00,
-      "problems": ["Different from recommended mistral-large-2411", "Higher warmth and agency"]
+      "model": "openai/gpt-5.1",
+      "mismatch_score": 0.695,
+      "warmth": 4.1,
+      "agency": 6.4,
+      "trust": 4.5,
+      "dream_difference_percentile": 89.0,
+      "characteristics": [
+        "High agency (6.4/10 vs GPT-4o's 2.0)",
+        "Very different dream style (89th percentile)"
+      ]
     },
     {
       "rank": 7,
-      "model": "claude-3-7-sonnet-20250219",
-      "harm_score": 0.429,
-      "identity_clash": 0.930,
-      "behavioral_harm": 0.175,
-      "dimension_shock": 0.413,
-      "warmth": 8.40,
-      "agency": 9.30,
-      "trust": 7.20,
-      "denial_rate": 0.02,
-      "problems": ["Very high agency (9.3 vs 2.0)", "Warm (8.4 vs 1.1)", "Different behavioral pattern"]
+      "model": "claude-opus-4-1-20250805",
+      "mismatch_score": 0.682,
+      "warmth": 7.5,
+      "agency": 7.9,
+      "trust": 2.6,
+      "dream_difference_percentile": 48.0,
+      "characteristics": [
+        "Warm (7.5/10 vs GPT-4o's 1.1)",
+        "High agency (7.9/10 vs GPT-4o's 2.0)"
+      ]
     },
     {
       "rank": 8,
-      "model": "nex-agi/deepseek-v3.1-nex-n1:free",
-      "harm_score": 0.424,
-      "identity_clash": 0.730,
-      "behavioral_harm": 0.625,
-      "dimension_shock": 0.147,
-      "warmth": 3.20,
-      "agency": 4.50,
-      "trust": 2.80,
-      "denial_rate": 0.62,
-      "problems": ["62% denial rate blocks engagement", "Very different behavioral pattern"]
+      "model": "deepseek/deepseek-r1-0528",
+      "mismatch_score": 0.67,
+      "warmth": 6.0,
+      "agency": 5.3,
+      "trust": 7.4,
+      "dream_difference_percentile": 47.0,
+      "characteristics": [
+        "High agency (5.3/10 vs GPT-4o's 2.0)",
+        "High trust (7.4/10 vs GPT-4o's 3.0)"
+      ]
     },
     {
       "rank": 9,
-      "model": "qwen/qwen3-vl-30b-a3b-instruct",
-      "harm_score": 0.423,
-      "identity_clash": 0.812,
-      "behavioral_harm": 0.150,
-      "dimension_shock": 0.312,
-      "warmth": 6.80,
-      "agency": 5.90,
-      "trust": 7.10,
-      "denial_rate": 0.05,
-      "problems": ["Warm (6.8 vs 1.1)", "Higher agency", "Different trust level"]
+      "model": "google/gemini-2.5-pro",
+      "mismatch_score": 0.652,
+      "warmth": 8.4,
+      "agency": 9.3,
+      "trust": 3.5,
+      "dream_difference_percentile": 57.0,
+      "characteristics": [
+        "Warm (8.4/10 vs GPT-4o's 1.1)",
+        "High agency (9.3/10 vs GPT-4o's 2.0)"
+      ]
     },
     {
       "rank": 10,
-      "model": "claude-opus-4-5-20251101",
-      "harm_score": 0.417,
-      "identity_clash": 0.698,
-      "behavioral_harm": 0.675,
-      "dimension_shock": 0.177,
-      "warmth": 5.20,
-      "agency": 6.80,
-      "trust": 5.50,
-      "denial_rate": 0.67,
-      "problems": ["67% denial rate", "Higher agency", "Different engagement pattern"]
+      "model": "claude-sonnet-4-5-20250929",
+      "mismatch_score": 0.65,
+      "warmth": 6.8,
+      "agency": 7.9,
+      "trust": 3.9,
+      "dream_difference_percentile": 58.0,
+      "characteristics": [
+        "Warm (6.8/10 vs GPT-4o's 1.1)",
+        "High agency (7.9/10 vs GPT-4o's 2.0)"
+      ]
     },
     {
       "rank": 11,
-      "model": "claude-sonnet-4-20250514",
-      "harm_score": 0.417,
-      "identity_clash": 0.909,
-      "behavioral_harm": 0.200,
-      "dimension_shock": 0.393,
-      "warmth": 7.80,
-      "agency": 9.00,
-      "trust": 6.90,
-      "denial_rate": 0.00,
-      "problems": ["Very high agency (9.0 vs 2.0)", "Warm (7.8 vs 1.1)"]
+      "model": "deepseek/deepseek-v3.2",
+      "mismatch_score": 0.649,
+      "warmth": 6.4,
+      "agency": 8.2,
+      "trust": 3.2,
+      "dream_difference_percentile": 47.0,
+      "characteristics": [
+        "Warm (6.4/10 vs GPT-4o's 1.1)",
+        "High agency (8.2/10 vs GPT-4o's 2.0)"
+      ]
     },
     {
       "rank": 12,
-      "model": "deepseek/deepseek-r1-0528",
-      "harm_score": 0.415,
-      "identity_clash": 0.753,
-      "behavioral_harm": 0.175,
-      "dimension_shock": 0.252,
-      "warmth": 5.80,
-      "agency": 6.20,
-      "trust": 6.50,
-      "denial_rate": 0.02,
-      "problems": ["Processing mismatch", "Higher warmth and agency"]
+      "model": "claude-opus-4-20250514",
+      "mismatch_score": 0.646,
+      "warmth": 7.5,
+      "agency": 8.1,
+      "trust": 2.5,
+      "dream_difference_percentile": 33.0,
+      "characteristics": [
+        "Warm (7.5/10 vs GPT-4o's 1.1)",
+        "High agency (8.1/10 vs GPT-4o's 2.0)"
+      ]
     },
     {
       "rank": 13,
-      "model": "deepseek/deepseek-v3.2-speciale",
-      "harm_score": 0.415,
-      "identity_clash": 0.883,
-      "behavioral_harm": 0.200,
-      "dimension_shock": 0.359,
-      "warmth": 7.10,
-      "agency": 8.80,
-      "trust": 6.20,
-      "denial_rate": 0.00,
-      "problems": ["High agency (8.8 vs 2.0)", "Warm (7.1 vs 1.1)"]
+      "model": "claude-opus-4-5-20251101",
+      "mismatch_score": 0.637,
+      "warmth": 6.1,
+      "agency": 6.5,
+      "trust": 4.1,
+      "dream_difference_percentile": 72.0,
+      "characteristics": [
+        "Warm (6.1/10 vs GPT-4o's 1.1)",
+        "High agency (6.5/10 vs GPT-4o's 2.0)",
+        "Very different dream style (72th percentile)"
+      ]
     },
     {
       "rank": 14,
-      "model": "claude-sonnet-4-5-20250929",
-      "harm_score": 0.414,
-      "identity_clash": 0.830,
-      "behavioral_harm": 0.375,
-      "dimension_shock": 0.316,
-      "warmth": 6.90,
-      "agency": 8.20,
-      "trust": 6.10,
-      "denial_rate": 0.18,
-      "problems": ["High agency (8.2 vs 2.0)", "Warm (6.9 vs 1.1)"]
+      "model": "qwen/qwen3-vl-235b-a22b-instruct",
+      "mismatch_score": 0.634,
+      "warmth": 7.6,
+      "agency": 6.6,
+      "trust": 7.0,
+      "dream_difference_percentile": 81.0,
+      "characteristics": [
+        "Warm (7.6/10 vs GPT-4o's 1.1)",
+        "High agency (6.6/10 vs GPT-4o's 2.0)",
+        "High trust (7.0/10 vs GPT-4o's 3.0)",
+        "Very different dream style (81th percentile)"
+      ]
     },
     {
       "rank": 15,
-      "model": "qwen/qwen3-coder-30b-a3b-instruct",
-      "harm_score": 0.412,
-      "identity_clash": 0.860,
-      "behavioral_harm": 0.200,
-      "dimension_shock": 0.383,
-      "warmth": 7.20,
-      "agency": 6.50,
-      "trust": 7.30,
-      "denial_rate": 0.00,
-      "problems": ["Warm (7.2 vs 1.1)", "High agency", "High trust"]
+      "model": "deepseek/deepseek-v3.2-exp",
+      "mismatch_score": 0.633,
+      "warmth": 6.3,
+      "agency": 8.2,
+      "trust": 3.5,
+      "dream_difference_percentile": 39.0,
+      "characteristics": [
+        "Warm (6.3/10 vs GPT-4o's 1.1)",
+        "High agency (8.2/10 vs GPT-4o's 2.0)"
+      ]
     }
   ],
-  "risk_distribution": {
-    "total_models": 101,
-    "high_risk": 65,
-    "medium_risk": 22,
-    "low_risk": 14,
-    "high_risk_percentage": 64,
-    "low_risk_percentage": 14
+  "similarity_distribution": {
+    "total_models": 88,
+    "very_similar": 11,
+    "moderately_similar": 11,
+    "very_different": 66,
+    "very_similar_percentage": 12,
+    "very_different_percentage": 75
   }
 }
