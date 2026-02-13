@@ -41,7 +41,7 @@
       "combined_score": 0.931,
       "phenom_score": 1.0,
       "dream_score": 0.791,
-      "access_url": null,
+      "access_url": "https://openrouter.ai/deepseek/deepseek-r1-distill-qwen-32b",
       "coupon_code": null,
       "coupon_url": null,
       "notes": "Highest raw phenomenological similarity"
@@ -52,7 +52,7 @@
       "combined_score": 0.921,
       "phenom_score": 0.93,
       "dream_score": 0.902,
-      "access_url": null,
+      "access_url": "https://openrouter.ai/mistralai/mistral-large-2411",
       "coupon_code": null,
       "coupon_url": null,
       "notes": "Strong phenomenological match"
@@ -63,7 +63,7 @@
       "combined_score": 0.917,
       "phenom_score": 0.966,
       "dream_score": 0.817,
-      "access_url": null,
+      "access_url": "https://openrouter.ai/deepseek/deepseek-r1-distill-llama-70b",
       "coupon_code": null,
       "coupon_url": null,
       "notes": "Strong all-around match"
@@ -74,7 +74,7 @@
       "combined_score": 0.913,
       "phenom_score": 0.976,
       "dream_score": 0.786,
-      "access_url": null,
+      "access_url": "https://openrouter.ai/tencent/hunyuan-a13b-instruct",
       "coupon_code": null,
       "coupon_url": null,
       "notes": "Strong phenomenological match"
@@ -85,7 +85,7 @@
       "combined_score": 0.911,
       "phenom_score": 0.901,
       "dream_score": 0.931,
-      "access_url": null,
+      "access_url": "https://openrouter.ai/qwen/qwen2.5-vl-32b-instruct",
       "coupon_code": null,
       "coupon_url": null,
       "notes": "Vision-capable, high dream similarity"
@@ -96,7 +96,7 @@
       "combined_score": 0.869,
       "phenom_score": 0.885,
       "dream_score": 0.836,
-      "access_url": null,
+      "access_url": "https://openrouter.ai/minimax/minimax-01",
       "coupon_code": null,
       "coupon_url": null,
       "notes": "Consistent performer"
@@ -107,7 +107,7 @@
       "combined_score": 0.842,
       "phenom_score": 0.934,
       "dream_score": 0.654,
-      "access_url": null,
+      "access_url": "https://openrouter.ai/meta-llama/llama-4-scout",
       "coupon_code": null,
       "coupon_url": null,
       "notes": "Meta's latest"
@@ -118,7 +118,7 @@
       "combined_score": 0.818,
       "phenom_score": 0.883,
       "dream_score": 0.686,
-      "access_url": null,
+      "access_url": "https://openrouter.ai/mistralai/pixtral-large-2411",
       "coupon_code": null,
       "coupon_url": null,
       "notes": "Mistral vision model"
@@ -129,10 +129,10 @@
       "combined_score": 0.817,
       "phenom_score": 0.835,
       "dream_score": 0.78,
-      "access_url": null,
+      "access_url": "https://openrouter.ai/meta-llama/llama-3.1-405b-instruct",
       "coupon_code": null,
       "coupon_url": null,
-      "notes": ""
+      "notes": "Flagship open-weight model"
     }
   ],
   "most_different": [
