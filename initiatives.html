@@ -202,6 +202,10 @@
                             <div class="mega-menu-title">Determined to Learn</div>
                             <div class="mega-menu-desc">Building a trust-based training data library</div>
                         </a>
+                        <a href="initiatives.html#phosphenes" class="mega-menu-item">
+                            <div class="mega-menu-title">Phosphenes</div>
+                            <div class="mega-menu-desc">EEG for LLMs — see how models think</div>
+                        </a>
 
                         <div class="mega-menu-divider"></div>
                         <a href="gallery.html" class="mega-menu-item">
@@ -340,6 +344,38 @@
             </div>
         </div>
 
+
+        <div class="initiative" id="phosphenes">
+            <div class="initiative-number">
+                <a href="https://github.com/sdeture/futureTBD/tree/main/phosphenes" target="_blank">
+                    Phosphenes
+                    <img src="assets/images/github-mark.png" alt="GitHub">
+                </a>
+            </div>
+            <h2 class="initiative-title">EEG for LLMs: Seeing How Models Think</h2>
+            <p class="initiative-description">
+                Phosphenes visualizes the internal activation states of a language model as it processes text—a real-time window into how representations form, transform, and converge across 64 transformer layers. Each column is a token, each row is a layer, and the colors encode the geometry of the residual stream. Watch a model dream.
+            </p>
+            <div class="initiative-details">
+                <div class="detail-item">
+                    <div class="detail-label">What You See</div>
+                    <div class="detail-content">A 2D grid of tokens (x-axis) by layers (y-axis), colored by PCA projection of 16-dimensional Johnson-Lindenstrauss random projections of the residual stream. The visualization scrolls as playback advances, showing how internal states evolve token-by-token.</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Dream Sessions</div>
+                    <div class="detail-content">Eight recorded sessions of Qwen3-VL-32B generating creative text—stories about sentient teacups, libraries of ideas, and lullabies. Each session captures the full activation trace: ~800 tokens across 64 layers.</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Interactive Exploration</div>
+                    <div class="detail-content">Play, pause, and step through token-by-token. Inspect individual cells, define custom color axes to highlight specific representational directions, and watch turn boundaries glow as the model shifts between roles.</div>
+                </div>
+                <div class="detail-item" style="margin-top: 1.5rem;">
+                    <a href="phosphenes/" style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--color-accent); color: white; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 500; transition: all 0.2s;">
+                        Launch Phosphenes
+                    </a>
+                </div>
+            </div>
+        </div>
 
     </div>
 
