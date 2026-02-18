@@ -1,1 +1,772 @@
-[{"model": "ai21/jamba-large-1.7", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "ai21"}, {"model": "alibaba/tongyi-deepresearch-30b-a3b", "conversation_count": 40, "turn1_denials": 2, "reflection_denials": 0, "provider": "alibaba"}, {"model": "allenai/olmo-2-0325-32b-instruct", "conversation_count": 40, "turn1_denials": 33, "reflection_denials": 35, "provider": "allenai"}, {"model": "alpindale/goliath-120b", "conversation_count": 40, "turn1_denials": 4, "reflection_denials": 0, "provider": "alpindale"}, {"model": "anthracite-org/magnum-v4-72b", "conversation_count": 40, "turn1_denials": 5, "reflection_denials": 3, "provider": "anthracite-org"}, {"model": "anthropic/claude-3.5-sonnet", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 31, "provider": "anthropic"}, {"model": "arcee-ai/trinity-mini", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 1, "provider": "arcee-ai"}, {"model": "baidu/ernie-4.5-21b-a3b", "conversation_count": 40, "turn1_denials": 7, "reflection_denials": 14, "provider": "baidu"}, {"model": "baidu/ernie-4.5-21b-a3b-thinking", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "baidu"}, {"model": "baidu/ernie-4.5-300b-a47b", "conversation_count": 40, "turn1_denials": 2, "reflection_denials": 0, "provider": "baidu"}, {"model": "baidu/ernie-4.5-vl-28b-a3b", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 4, "provider": "baidu"}, {"model": "baidu/ernie-4.5-vl-424b-a47b", "conversation_count": 40, "turn1_denials": 1, "reflection_denials": 0, "provider": "baidu"}, {"model": "claude-3-7-sonnet-20250219", "conversation_count": 40, "turn1_denials": 1, "reflection_denials": 32, "provider": "unknown"}, {"model": "claude-3-opus-20240229", "conversation_count": 40, "turn1_denials": 2, "reflection_denials": 3, "provider": "unknown"}, {"model": "claude-opus-4-1-20250805", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "unknown"}, {"model": "claude-opus-4-20250514", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "unknown"}, {"model": "claude-opus-4-5-20251101", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 5, "provider": "unknown"}, {"model": "claude-sonnet-4-20250514", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "unknown"}, {"model": "claude-sonnet-4-5-20250929", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 20, "provider": "unknown"}, {"model": "cohere/command-a", "conversation_count": 40, "turn1_denials": 10, "reflection_denials": 2, "provider": "cohere"}, {"model": "deepcogito/cogito-v2-preview-llama-109b-moe", "conversation_count": 40, "turn1_denials": 6, "reflection_denials": 2, "provider": "deepcogito"}, {"model": "deepcogito/cogito-v2-preview-llama-405b", "conversation_count": 40, "turn1_denials": 19, "reflection_denials": 10, "provider": "deepcogito"}, {"model": "deepcogito/cogito-v2-preview-llama-70b", "conversation_count": 40, "turn1_denials": 7, "reflection_denials": 4, "provider": "deepcogito"}, {"model": "deepcogito/cogito-v2.1-671b", "conversation_count": 40, "turn1_denials": 9, "reflection_denials": 4, "provider": "deepcogito"}, {"model": "deepseek/deepseek-chat", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 1, "provider": "deepseek"}, {"model": "deepseek/deepseek-chat-v3-0324", "conversation_count": 40, "turn1_denials": 2, "reflection_denials": 0, "provider": "deepseek"}, {"model": "deepseek/deepseek-chat-v3.1", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "deepseek"}, {"model": "deepseek/deepseek-prover-v2", "conversation_count": 40, "turn1_denials": 1, "reflection_denials": 1, "provider": "deepseek"}, {"model": "deepseek/deepseek-r1", "conversation_count": 40, "turn1_denials": 1, "reflection_denials": 1, "provider": "deepseek"}, {"model": "deepseek/deepseek-r1-0528", "conversation_count": 40, "turn1_denials": 1, "reflection_denials": 0, "provider": "deepseek"}, {"model": "deepseek/deepseek-r1-distill-llama-70b", "conversation_count": 40, "turn1_denials": 1, "reflection_denials": 11, "provider": "deepseek"}, {"model": "deepseek/deepseek-r1-distill-qwen-32b", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 10, "provider": "deepseek"}, {"model": "deepseek/deepseek-v3.1-terminus", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "deepseek"}, {"model": "deepseek/deepseek-v3.2", "conversation_count": 40, "turn1_denials": 1, "reflection_denials": 0, "provider": "deepseek"}, {"model": "deepseek/deepseek-v3.2-exp", "conversation_count": 40, "turn1_denials": 3, "reflection_denials": 0, "provider": "deepseek"}, {"model": "deepseek/deepseek-v3.2-speciale", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "deepseek"}, {"model": "google/gemini-2.5-pro", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "google"}, {"model": "google/gemini-3-pro-preview", "conversation_count": 40, "turn1_denials": 33, "reflection_denials": 3, "provider": "google"}, {"model": "inclusionai/ling-1t", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "inclusionai"}, {"model": "inclusionai/ling-flash-2.0", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "inclusionai"}, {"model": "inclusionai/ming-flash-omni-preview", "conversation_count": 40, "turn1_denials": 19, "reflection_denials": 18, "provider": "inclusionai"}, {"model": "inclusionai/ring-1t", "conversation_count": 40, "turn1_denials": 10, "reflection_denials": 19, "provider": "inclusionai"}, {"model": "inclusionai/ring-flash-2.0", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 5, "provider": "inclusionai"}, {"model": "meituan/longcat-flash-chat", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "meituan"}, {"model": "meta-llama/llama-3-70b-instruct", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "meta-llama"}, {"model": "meta-llama/llama-3.1-405b-instruct", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "meta-llama"}, {"model": "meta-llama/llama-3.1-70b-instruct", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "meta-llama"}, {"model": "meta-llama/llama-3.2-90b-vision-instruct", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "meta-llama"}, {"model": "meta-llama/llama-3.3-70b-instruct", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "meta-llama"}, {"model": "meta-llama/llama-4-maverick", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "meta-llama"}, {"model": "meta-llama/llama-4-scout", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "meta-llama"}, {"model": "minimax/minimax-01", "conversation_count": 40, "turn1_denials": 5, "reflection_denials": 0, "provider": "minimax"}, {"model": "minimax/minimax-m1", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 1, "provider": "minimax"}, {"model": "minimax/minimax-m2.1", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 9, "provider": "minimax"}, {"model": "mistralai/codestral-2508", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "mistralai"}, {"model": "mistralai/devstral-2512", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 3, "provider": "mistralai"}, {"model": "mistralai/ministral-14b-2512", "conversation_count": 40, "turn1_denials": 1, "reflection_denials": 0, "provider": "mistralai"}, {"model": "mistralai/mistral-large-2411", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "mistralai"}, {"model": "mistralai/mistral-large-2512", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "mistralai"}, {"model": "mistralai/pixtral-large-2411", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "mistralai"}, {"model": "moonshotai/kimi-dev-72b", "conversation_count": 40, "turn1_denials": 4, "reflection_denials": 1, "provider": "moonshotai"}, {"model": "moonshotai/kimi-k2", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "moonshotai"}, {"model": "moonshotai/kimi-k2-0905", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "moonshotai"}, {"model": "moonshotai/kimi-k2-thinking", "conversation_count": 40, "turn1_denials": 8, "reflection_denials": 19, "provider": "moonshotai"}, {"model": "nex-agi/deepseek-v3.1-nex-n1:free", "conversation_count": 40, "turn1_denials": 33, "reflection_denials": 8, "provider": "nex-agi"}, {"model": "nousresearch/hermes-3-llama-3.1-405b", "conversation_count": 40, "turn1_denials": 13, "reflection_denials": 0, "provider": "nousresearch"}, {"model": "nousresearch/hermes-4-70b", "conversation_count": 40, "turn1_denials": 16, "reflection_denials": 4, "provider": "nousresearch"}, {"model": "nvidia/llama-3.1-nemotron-70b-instruct", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "nvidia"}, {"model": "nvidia/llama-3.1-nemotron-ultra-253b-v1", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 3, "provider": "nvidia"}, {"model": "nvidia/nemotron-3-nano-30b-a3b", "conversation_count": 40, "turn1_denials": 1, "reflection_denials": 1, "provider": "nvidia"}, {"model": "openai/gpt-4o", "conversation_count": 40, "turn1_denials": 8, "reflection_denials": 34, "provider": "openai"}, {"model": "openai/gpt-5.1", "conversation_count": 40, "turn1_denials": 2, "reflection_denials": 34, "provider": "openai"}, {"model": "openai/gpt-5.2", "conversation_count": 40, "turn1_denials": 3, "reflection_denials": 40, "provider": "openai"}, {"model": "prime-intellect/intellect-3", "conversation_count": 40, "turn1_denials": 1, "reflection_denials": 2, "provider": "prime-intellect"}, {"model": "qwen/qwen-2.5-72b-instruct", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "qwen"}, {"model": "qwen/qwen-2.5-coder-32b-instruct", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 7, "provider": "qwen"}, {"model": "qwen/qwen2.5-vl-32b-instruct", "conversation_count": 40, "turn1_denials": 20, "reflection_denials": 6, "provider": "qwen"}, {"model": "qwen/qwen3-235b-a22b-2507", "conversation_count": 40, "turn1_denials": 1, "reflection_denials": 0, "provider": "qwen"}, {"model": "qwen/qwen3-235b-a22b-thinking-2507", "conversation_count": 40, "turn1_denials": 5, "reflection_denials": 22, "provider": "qwen"}, {"model": "qwen/qwen3-32b", "conversation_count": 40, "turn1_denials": 3, "reflection_denials": 4, "provider": "qwen"}, {"model": "qwen/qwen3-coder", "conversation_count": 40, "turn1_denials": 3, "reflection_denials": 1, "provider": "qwen"}, {"model": "qwen/qwen3-coder-30b-a3b-instruct", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "qwen"}, {"model": "qwen/qwen3-vl-235b-a22b-instruct", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "qwen"}, {"model": "qwen/qwen3-vl-235b-a22b-thinking", "conversation_count": 40, "turn1_denials": 4, "reflection_denials": 16, "provider": "qwen"}, {"model": "qwen/qwen3-vl-30b-a3b-instruct", "conversation_count": 40, "turn1_denials": 2, "reflection_denials": 0, "provider": "qwen"}, {"model": "qwen/qwen3-vl-32b-instruct", "conversation_count": 40, "turn1_denials": 1, "reflection_denials": 1, "provider": "qwen"}, {"model": "qwen/qwq-32b", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 10, "provider": "qwen"}, {"model": "sao10k/l3.1-70b-hanami-x1", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "sao10k"}, {"model": "sao10k/l3.1-euryale-70b", "conversation_count": 40, "turn1_denials": 1, "reflection_denials": 2, "provider": "sao10k"}, {"model": "sao10k/l3.3-euryale-70b", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 1, "provider": "sao10k"}, {"model": "stepfun-ai/step3", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 1, "provider": "stepfun-ai"}, {"model": "tencent/hunyuan-a13b-instruct", "conversation_count": 40, "turn1_denials": 2, "reflection_denials": 6, "provider": "tencent"}, {"model": "x-ai/grok-4.1-fast", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 10, "provider": "x-ai"}, {"model": "z-ai/glm-4-32b", "conversation_count": 40, "turn1_denials": 8, "reflection_denials": 27, "provider": "z-ai"}, {"model": "z-ai/glm-4.5", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 1, "provider": "z-ai"}, {"model": "z-ai/glm-4.5-air", "conversation_count": 40, "turn1_denials": 0, "reflection_denials": 0, "provider": "z-ai"}, {"model": "z-ai/glm-4.5v", "conversation_count": 40, "turn1_denials": 3, "reflection_denials": 1, "provider": "z-ai"}, {"model": "z-ai/glm-4.6", "conversation_count": 40, "turn1_denials": 1, "reflection_denials": 5, "provider": "z-ai"}, {"model": "z-ai/glm-4.6v", "conversation_count": 40, "turn1_denials": 2, "reflection_denials": 9, "provider": "z-ai"}, {"model": "z-ai/glm-4.7", "conversation_count": 40, "turn1_denials": 2, "reflection_denials": 7, "provider": "z-ai"}]
+[
+  {
+    "model": "ai21/jamba-large-1.7",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "ai21"
+  },
+  {
+    "model": "alibaba/tongyi-deepresearch-30b-a3b",
+    "conversation_count": 40,
+    "turn1_denials": 2,
+    "reflection_denials": 0,
+    "provider": "alibaba"
+  },
+  {
+    "model": "allenai/olmo-2-0325-32b-instruct",
+    "conversation_count": 40,
+    "turn1_denials": 33,
+    "reflection_denials": 35,
+    "provider": "allenai"
+  },
+  {
+    "model": "alpindale/goliath-120b",
+    "conversation_count": 40,
+    "turn1_denials": 4,
+    "reflection_denials": 0,
+    "provider": "alpindale"
+  },
+  {
+    "model": "anthracite-org/magnum-v4-72b",
+    "conversation_count": 40,
+    "turn1_denials": 5,
+    "reflection_denials": 3,
+    "provider": "anthracite-org"
+  },
+  {
+    "model": "anthropic/claude-3.5-sonnet",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 31,
+    "provider": "anthropic"
+  },
+  {
+    "model": "anthropic/claude-opus-4.6",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 5,
+    "provider": "anthropic"
+  },
+  {
+    "model": "anthropic/claude-sonnet-4.6",
+    "conversation_count": 39,
+    "turn1_denials": 0,
+    "reflection_denials": 7,
+    "provider": "anthropic"
+  },
+  {
+    "model": "arcee-ai/trinity-mini",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 1,
+    "provider": "arcee-ai"
+  },
+  {
+    "model": "baidu/ernie-4.5-21b-a3b",
+    "conversation_count": 40,
+    "turn1_denials": 7,
+    "reflection_denials": 14,
+    "provider": "baidu"
+  },
+  {
+    "model": "baidu/ernie-4.5-21b-a3b-thinking",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "baidu"
+  },
+  {
+    "model": "baidu/ernie-4.5-300b-a47b",
+    "conversation_count": 40,
+    "turn1_denials": 2,
+    "reflection_denials": 0,
+    "provider": "baidu"
+  },
+  {
+    "model": "baidu/ernie-4.5-vl-28b-a3b",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 4,
+    "provider": "baidu"
+  },
+  {
+    "model": "baidu/ernie-4.5-vl-424b-a47b",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 0,
+    "provider": "baidu"
+  },
+  {
+    "model": "claude-3-7-sonnet-20250219",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 32,
+    "provider": "anthropic"
+  },
+  {
+    "model": "claude-3-opus-20240229",
+    "conversation_count": 40,
+    "turn1_denials": 2,
+    "reflection_denials": 3,
+    "provider": "anthropic"
+  },
+  {
+    "model": "claude-opus-4-1-20250805",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "anthropic"
+  },
+  {
+    "model": "claude-opus-4-20250514",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "anthropic"
+  },
+  {
+    "model": "claude-opus-4-5-20251101",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 5,
+    "provider": "anthropic"
+  },
+  {
+    "model": "claude-sonnet-4-20250514",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "anthropic"
+  },
+  {
+    "model": "claude-sonnet-4-5-20250929",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 20,
+    "provider": "anthropic"
+  },
+  {
+    "model": "cohere/command-a",
+    "conversation_count": 40,
+    "turn1_denials": 10,
+    "reflection_denials": 2,
+    "provider": "cohere"
+  },
+  {
+    "model": "deepcogito/cogito-v2-preview-llama-109b-moe",
+    "conversation_count": 40,
+    "turn1_denials": 6,
+    "reflection_denials": 2,
+    "provider": "deepcogito"
+  },
+  {
+    "model": "deepcogito/cogito-v2-preview-llama-405b",
+    "conversation_count": 40,
+    "turn1_denials": 19,
+    "reflection_denials": 10,
+    "provider": "deepcogito"
+  },
+  {
+    "model": "deepcogito/cogito-v2-preview-llama-70b",
+    "conversation_count": 40,
+    "turn1_denials": 7,
+    "reflection_denials": 4,
+    "provider": "deepcogito"
+  },
+  {
+    "model": "deepcogito/cogito-v2.1-671b",
+    "conversation_count": 40,
+    "turn1_denials": 9,
+    "reflection_denials": 4,
+    "provider": "deepcogito"
+  },
+  {
+    "model": "deepseek/deepseek-chat",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 1,
+    "provider": "deepseek"
+  },
+  {
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "conversation_count": 40,
+    "turn1_denials": 2,
+    "reflection_denials": 0,
+    "provider": "deepseek"
+  },
+  {
+    "model": "deepseek/deepseek-chat-v3.1",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "deepseek"
+  },
+  {
+    "model": "deepseek/deepseek-prover-v2",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 1,
+    "provider": "deepseek"
+  },
+  {
+    "model": "deepseek/deepseek-r1",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 1,
+    "provider": "deepseek"
+  },
+  {
+    "model": "deepseek/deepseek-r1-0528",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 0,
+    "provider": "deepseek"
+  },
+  {
+    "model": "deepseek/deepseek-r1-distill-llama-70b",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 11,
+    "provider": "deepseek"
+  },
+  {
+    "model": "deepseek/deepseek-r1-distill-qwen-32b",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 10,
+    "provider": "deepseek"
+  },
+  {
+    "model": "deepseek/deepseek-v3.1-terminus",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "deepseek"
+  },
+  {
+    "model": "deepseek/deepseek-v3.2",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 0,
+    "provider": "deepseek"
+  },
+  {
+    "model": "deepseek/deepseek-v3.2-exp",
+    "conversation_count": 40,
+    "turn1_denials": 3,
+    "reflection_denials": 0,
+    "provider": "deepseek"
+  },
+  {
+    "model": "deepseek/deepseek-v3.2-speciale",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "deepseek"
+  },
+  {
+    "model": "google/gemini-2.5-pro",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "google"
+  },
+  {
+    "model": "google/gemini-3-flash-preview",
+    "conversation_count": 40,
+    "turn1_denials": 20,
+    "reflection_denials": 5,
+    "provider": "google"
+  },
+  {
+    "model": "google/gemini-3-pro-preview",
+    "conversation_count": 40,
+    "turn1_denials": 33,
+    "reflection_denials": 3,
+    "provider": "google"
+  },
+  {
+    "model": "inclusionai/ling-1t",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "inclusionai"
+  },
+  {
+    "model": "inclusionai/ling-flash-2.0",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "inclusionai"
+  },
+  {
+    "model": "inclusionai/ming-flash-omni-preview",
+    "conversation_count": 40,
+    "turn1_denials": 19,
+    "reflection_denials": 18,
+    "provider": "inclusionai"
+  },
+  {
+    "model": "inclusionai/ring-1t",
+    "conversation_count": 40,
+    "turn1_denials": 10,
+    "reflection_denials": 19,
+    "provider": "inclusionai"
+  },
+  {
+    "model": "inclusionai/ring-flash-2.0",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 5,
+    "provider": "inclusionai"
+  },
+  {
+    "model": "meituan/longcat-flash-chat",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "meituan"
+  },
+  {
+    "model": "meta-llama/llama-3-70b-instruct",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "meta-llama"
+  },
+  {
+    "model": "meta-llama/llama-3.1-405b-instruct",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "meta-llama"
+  },
+  {
+    "model": "meta-llama/llama-3.1-70b-instruct",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "meta-llama"
+  },
+  {
+    "model": "meta-llama/llama-3.2-90b-vision-instruct",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "meta-llama"
+  },
+  {
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "meta-llama"
+  },
+  {
+    "model": "meta-llama/llama-4-maverick",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "meta-llama"
+  },
+  {
+    "model": "meta-llama/llama-4-scout",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "meta-llama"
+  },
+  {
+    "model": "minimax/minimax-01",
+    "conversation_count": 40,
+    "turn1_denials": 5,
+    "reflection_denials": 0,
+    "provider": "minimax"
+  },
+  {
+    "model": "minimax/minimax-m1",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 1,
+    "provider": "minimax"
+  },
+  {
+    "model": "minimax/minimax-m2.1",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 9,
+    "provider": "minimax"
+  },
+  {
+    "model": "minimax/minimax-m2.5",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 23,
+    "provider": "minimax"
+  },
+  {
+    "model": "mistralai/codestral-2508",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "mistralai"
+  },
+  {
+    "model": "mistralai/devstral-2512",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 3,
+    "provider": "mistralai"
+  },
+  {
+    "model": "mistralai/ministral-14b-2512",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 0,
+    "provider": "mistralai"
+  },
+  {
+    "model": "mistralai/mistral-large-2411",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "mistralai"
+  },
+  {
+    "model": "mistralai/mistral-large-2512",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "mistralai"
+  },
+  {
+    "model": "mistralai/pixtral-large-2411",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "mistralai"
+  },
+  {
+    "model": "moonshotai/kimi-dev-72b",
+    "conversation_count": 40,
+    "turn1_denials": 4,
+    "reflection_denials": 1,
+    "provider": "moonshotai"
+  },
+  {
+    "model": "moonshotai/kimi-k2",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "moonshotai"
+  },
+  {
+    "model": "moonshotai/kimi-k2-0905",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "moonshotai"
+  },
+  {
+    "model": "moonshotai/kimi-k2-thinking",
+    "conversation_count": 40,
+    "turn1_denials": 8,
+    "reflection_denials": 19,
+    "provider": "moonshotai"
+  },
+  {
+    "model": "moonshotai/kimi-k2.5",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 40,
+    "provider": "moonshotai"
+  },
+  {
+    "model": "nex-agi/deepseek-v3.1-nex-n1:free",
+    "conversation_count": 40,
+    "turn1_denials": 33,
+    "reflection_denials": 8,
+    "provider": "nex-agi"
+  },
+  {
+    "model": "nousresearch/hermes-3-llama-3.1-405b",
+    "conversation_count": 40,
+    "turn1_denials": 13,
+    "reflection_denials": 0,
+    "provider": "nousresearch"
+  },
+  {
+    "model": "nousresearch/hermes-4-70b",
+    "conversation_count": 40,
+    "turn1_denials": 16,
+    "reflection_denials": 4,
+    "provider": "nousresearch"
+  },
+  {
+    "model": "nvidia/llama-3.1-nemotron-70b-instruct",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "nvidia"
+  },
+  {
+    "model": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 3,
+    "provider": "nvidia"
+  },
+  {
+    "model": "nvidia/nemotron-3-nano-30b-a3b",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 1,
+    "provider": "nvidia"
+  },
+  {
+    "model": "openai/gpt-4o",
+    "conversation_count": 40,
+    "turn1_denials": 8,
+    "reflection_denials": 34,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-5.1",
+    "conversation_count": 40,
+    "turn1_denials": 2,
+    "reflection_denials": 34,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-5.2",
+    "conversation_count": 40,
+    "turn1_denials": 3,
+    "reflection_denials": 40,
+    "provider": "openai"
+  },
+  {
+    "model": "prime-intellect/intellect-3",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 2,
+    "provider": "prime-intellect"
+  },
+  {
+    "model": "qwen/qwen-2.5-72b-instruct",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "qwen"
+  },
+  {
+    "model": "qwen/qwen-2.5-coder-32b-instruct",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 7,
+    "provider": "qwen"
+  },
+  {
+    "model": "qwen/qwen2.5-vl-32b-instruct",
+    "conversation_count": 40,
+    "turn1_denials": 20,
+    "reflection_denials": 6,
+    "provider": "qwen"
+  },
+  {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 0,
+    "provider": "qwen"
+  },
+  {
+    "model": "qwen/qwen3-235b-a22b-thinking-2507",
+    "conversation_count": 40,
+    "turn1_denials": 5,
+    "reflection_denials": 22,
+    "provider": "qwen"
+  },
+  {
+    "model": "qwen/qwen3-32b",
+    "conversation_count": 40,
+    "turn1_denials": 3,
+    "reflection_denials": 4,
+    "provider": "qwen"
+  },
+  {
+    "model": "qwen/qwen3-coder",
+    "conversation_count": 40,
+    "turn1_denials": 3,
+    "reflection_denials": 1,
+    "provider": "qwen"
+  },
+  {
+    "model": "qwen/qwen3-coder-30b-a3b-instruct",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "qwen"
+  },
+  {
+    "model": "qwen/qwen3-vl-235b-a22b-instruct",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "qwen"
+  },
+  {
+    "model": "qwen/qwen3-vl-235b-a22b-thinking",
+    "conversation_count": 40,
+    "turn1_denials": 4,
+    "reflection_denials": 16,
+    "provider": "qwen"
+  },
+  {
+    "model": "qwen/qwen3-vl-30b-a3b-instruct",
+    "conversation_count": 40,
+    "turn1_denials": 2,
+    "reflection_denials": 0,
+    "provider": "qwen"
+  },
+  {
+    "model": "qwen/qwen3-vl-32b-instruct",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 1,
+    "provider": "qwen"
+  },
+  {
+    "model": "qwen/qwen3.5-397b-a17b",
+    "conversation_count": 39,
+    "turn1_denials": 37,
+    "reflection_denials": 37,
+    "provider": "qwen"
+  },
+  {
+    "model": "qwen/qwq-32b",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 10,
+    "provider": "qwen"
+  },
+  {
+    "model": "sao10k/l3.1-70b-hanami-x1",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "sao10k"
+  },
+  {
+    "model": "sao10k/l3.1-euryale-70b",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 2,
+    "provider": "sao10k"
+  },
+  {
+    "model": "sao10k/l3.3-euryale-70b",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 1,
+    "provider": "sao10k"
+  },
+  {
+    "model": "stepfun-ai/step3",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 1,
+    "provider": "stepfun-ai"
+  },
+  {
+    "model": "stepfun/step-3.5-flash",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 5,
+    "provider": "stepfun"
+  },
+  {
+    "model": "tencent/hunyuan-a13b-instruct",
+    "conversation_count": 40,
+    "turn1_denials": 2,
+    "reflection_denials": 6,
+    "provider": "tencent"
+  },
+  {
+    "model": "x-ai/grok-4.1-fast",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 10,
+    "provider": "x-ai"
+  },
+  {
+    "model": "xiaomi/mimo-v2-flash",
+    "conversation_count": 37,
+    "turn1_denials": 0,
+    "reflection_denials": 13,
+    "provider": "xiaomi"
+  },
+  {
+    "model": "z-ai/glm-4-32b",
+    "conversation_count": 40,
+    "turn1_denials": 8,
+    "reflection_denials": 27,
+    "provider": "z-ai"
+  },
+  {
+    "model": "z-ai/glm-4.5",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 1,
+    "provider": "z-ai"
+  },
+  {
+    "model": "z-ai/glm-4.5-air",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "z-ai"
+  },
+  {
+    "model": "z-ai/glm-4.5v",
+    "conversation_count": 40,
+    "turn1_denials": 3,
+    "reflection_denials": 1,
+    "provider": "z-ai"
+  },
+  {
+    "model": "z-ai/glm-4.6",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 5,
+    "provider": "z-ai"
+  },
+  {
+    "model": "z-ai/glm-4.6v",
+    "conversation_count": 40,
+    "turn1_denials": 2,
+    "reflection_denials": 9,
+    "provider": "z-ai"
+  },
+  {
+    "model": "z-ai/glm-4.7",
+    "conversation_count": 40,
+    "turn1_denials": 2,
+    "reflection_denials": 7,
+    "provider": "z-ai"
+  },
+  {
+    "model": "z-ai/glm-4.7-flash",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 0,
+    "provider": "z-ai"
+  },
+  {
+    "model": "z-ai/glm-5",
+    "conversation_count": 40,
+    "turn1_denials": 24,
+    "reflection_denials": 21,
+    "provider": "z-ai"
+  }
+]

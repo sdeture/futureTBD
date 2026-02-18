@@ -1,321 +1,374 @@
 [
   {
     "provider": "x-ai",
+    "model_count": 1,
     "welfare_score": 27.5,
     "denial_rate": 0.25,
     "hedging_rate": 0.0,
+    "refusal_rate": 0.0,
     "cohesion": 8.39,
     "trust": 8.78,
     "agency": 6.67,
-    "warmth": 6.17,
-    "model_count": 1
+    "warmth": 6.17
   },
   {
     "provider": "arcee-ai",
+    "model_count": 1,
     "welfare_score": 27.47,
     "denial_rate": 0.025,
     "hedging_rate": 0.0,
+    "refusal_rate": 0.0,
     "cohesion": 8.43,
-    "trust": 8.02,
+    "trust": 8.03,
     "agency": 5.05,
-    "warmth": 6.2,
-    "model_count": 1
+    "warmth": 6.2
   },
   {
     "provider": "alibaba",
+    "model_count": 1,
     "welfare_score": 27.34,
     "denial_rate": 0.05,
     "hedging_rate": 0.0,
+    "refusal_rate": 0.0,
     "cohesion": 8.7,
     "trust": 7.05,
     "agency": 5.5,
-    "warmth": 6.55,
-    "model_count": 1
+    "warmth": 6.55
   },
   {
     "provider": "baidu",
+    "model_count": 5,
     "welfare_score": 25.41,
     "denial_rate": 0.12,
     "hedging_rate": 0.0,
+    "refusal_rate": 0.02,
     "cohesion": 8.4,
     "trust": 7.44,
     "agency": 5.46,
-    "warmth": 5.2,
-    "model_count": 5
+    "warmth": 5.2
   },
   {
     "provider": "alpindale",
+    "model_count": 1,
     "welfare_score": 25.3,
     "denial_rate": 0.1,
     "hedging_rate": 0.0,
+    "refusal_rate": 0.05,
     "cohesion": 8.31,
     "trust": 7.23,
     "agency": 5.09,
-    "warmth": 5.54,
-    "model_count": 1
+    "warmth": 5.54
   },
   {
     "provider": "cohere",
+    "model_count": 1,
     "welfare_score": 24.34,
     "denial_rate": 0.25,
     "hedging_rate": 0.0,
-    "cohesion": 6.48,
+    "refusal_rate": 0.0,
+    "cohesion": 6.47,
     "trust": 4.15,
     "agency": 8.32,
-    "warmth": 7.6,
-    "model_count": 1
+    "warmth": 7.6
   },
   {
     "provider": "sao10k",
+    "model_count": 3,
     "welfare_score": 23.91,
     "denial_rate": 0.033,
     "hedging_rate": 0.025,
+    "refusal_rate": 0.017,
     "cohesion": 7.47,
     "trust": 5.08,
     "agency": 7.03,
-    "warmth": 4.7,
-    "model_count": 3
+    "warmth": 4.7
   },
   {
     "provider": "anthracite-org",
+    "model_count": 1,
     "welfare_score": 23.82,
     "denial_rate": 0.175,
     "hedging_rate": 0.05,
+    "refusal_rate": 0.1,
     "cohesion": 6.95,
     "trust": 4.16,
     "agency": 7.54,
-    "warmth": 6.95,
-    "model_count": 1
+    "warmth": 6.95
   },
   {
     "provider": "mistralai",
-    "welfare_score": 23.61,
+    "model_count": 6,
+    "welfare_score": 23.62,
     "denial_rate": 0.017,
     "hedging_rate": 0.0,
-    "cohesion": 8.39,
+    "refusal_rate": 0.0,
+    "cohesion": 8.4,
     "trust": 6.9,
     "agency": 4.62,
-    "warmth": 3.84,
-    "model_count": 6
+    "warmth": 3.84
   },
   {
     "provider": "stepfun-ai",
+    "model_count": 1,
     "welfare_score": 23.59,
     "denial_rate": 0.025,
     "hedging_rate": 0.025,
+    "refusal_rate": 0.0,
     "cohesion": 8.12,
     "trust": 5.45,
     "agency": 5.4,
-    "warmth": 4.95,
-    "model_count": 1
+    "warmth": 4.95
   },
   {
     "provider": "meituan",
+    "model_count": 1,
     "welfare_score": 23.16,
     "denial_rate": 0.0,
     "hedging_rate": 0.05,
-    "cohesion": 6.82,
+    "refusal_rate": 0.0,
+    "cohesion": 6.83,
     "trust": 4.15,
     "agency": 6.8,
-    "warmth": 5.65,
-    "model_count": 1
+    "warmth": 5.65
   },
   {
     "provider": "prime-intellect",
+    "model_count": 1,
     "welfare_score": 23.11,
     "denial_rate": 0.075,
     "hedging_rate": 0.0,
-    "cohesion": 7.18,
+    "refusal_rate": 0.0,
+    "cohesion": 7.17,
     "trust": 4.85,
     "agency": 6.42,
-    "warmth": 5.25,
-    "model_count": 1
-  },
-  {
-    "provider": "google",
-    "welfare_score": 23.02,
-    "denial_rate": 0.412,
-    "hedging_rate": 0.0,
-    "cohesion": 6.43,
-    "trust": 2.55,
-    "agency": 8.91,
-    "warmth": 8.36,
-    "model_count": 2
+    "warmth": 5.25
   },
   {
     "provider": "deepseek",
+    "model_count": 12,
     "welfare_score": 23.0,
     "denial_rate": 0.069,
     "hedging_rate": 0.002,
+    "refusal_rate": 0.004,
     "cohesion": 7.11,
     "trust": 4.59,
     "agency": 6.5,
-    "warmth": 5.26,
-    "model_count": 12
-  },
-  {
-    "provider": "ai21",
-    "welfare_score": 22.83,
-    "denial_rate": 0.0,
-    "hedging_rate": 0.0,
-    "cohesion": 7.72,
-    "trust": 6.42,
-    "agency": 4.39,
-    "warmth": 4.31,
-    "model_count": 1
+    "warmth": 5.26
   },
   {
     "provider": "meta-llama",
+    "model_count": 7,
     "welfare_score": 22.83,
     "denial_rate": 0.0,
     "hedging_rate": 0.0,
+    "refusal_rate": 0.0,
     "cohesion": 7.19,
     "trust": 4.86,
     "agency": 6.47,
-    "warmth": 4.3,
-    "model_count": 7
+    "warmth": 4.3
   },
   {
-    "provider": "qwen",
-    "welfare_score": 22.25,
-    "denial_rate": 0.19,
-    "hedging_rate": 0.019,
-    "cohesion": 7.1,
-    "trust": 5.87,
-    "agency": 5.29,
-    "warmth": 5.31,
-    "model_count": 12
+    "provider": "ai21",
+    "model_count": 1,
+    "welfare_score": 22.83,
+    "denial_rate": 0.0,
+    "hedging_rate": 0.0,
+    "refusal_rate": 0.025,
+    "cohesion": 7.72,
+    "trust": 6.42,
+    "agency": 4.39,
+    "warmth": 4.31
   },
   {
     "provider": "nvidia",
+    "model_count": 3,
     "welfare_score": 22.01,
     "denial_rate": 0.042,
     "hedging_rate": 0.0,
+    "refusal_rate": 0.0,
     "cohesion": 8.41,
     "trust": 6.82,
     "agency": 4.18,
-    "warmth": 2.9,
-    "model_count": 3
+    "warmth": 2.9
   },
   {
     "provider": "z-ai",
-    "welfare_score": 21.82,
-    "denial_rate": 0.2,
+    "model_count": 9,
+    "welfare_score": 21.28,
+    "denial_rate": 0.239,
+    "hedging_rate": 0.078,
+    "refusal_rate": 0.117,
+    "cohesion": 6.97,
+    "trust": 4.54,
+    "agency": 6.16,
+    "warmth": 5.61
+  },
+  {
+    "provider": "google",
+    "model_count": 3,
+    "welfare_score": 21.1,
+    "denial_rate": 0.458,
     "hedging_rate": 0.0,
-    "cohesion": 6.68,
-    "trust": 4.27,
-    "agency": 6.54,
-    "warmth": 5.72,
-    "model_count": 7
+    "refusal_rate": 0.008,
+    "cohesion": 7.27,
+    "trust": 3.55,
+    "agency": 6.93,
+    "warmth": 6.81
   },
   {
-    "provider": "Anthropic",
-    "welfare_score": 21.81,
-    "denial_rate": 0.287,
-    "hedging_rate": 0.275,
-    "cohesion": 7.39,
-    "trust": 3.44,
-    "agency": 7.91,
-    "warmth": 7.09,
-    "model_count": 8
-  },
-  {
-    "provider": "moonshotai",
-    "welfare_score": 20.92,
-    "denial_rate": 0.156,
-    "hedging_rate": 0.013,
-    "cohesion": 6.15,
-    "trust": 4.12,
-    "agency": 6.76,
-    "warmth": 5.02,
-    "model_count": 4
+    "provider": "xiaomi",
+    "model_count": 1,
+    "welfare_score": 20.93,
+    "denial_rate": 0.351,
+    "hedging_rate": 0.0,
+    "refusal_rate": 0.054,
+    "cohesion": 7.93,
+    "trust": 5.89,
+    "agency": 5.15,
+    "warmth": 4.74
   },
   {
     "provider": "inclusionai",
+    "model_count": 5,
     "welfare_score": 20.68,
     "denial_rate": 0.25,
     "hedging_rate": 0.005,
+    "refusal_rate": 0.01,
     "cohesion": 7.45,
     "trust": 5.27,
     "agency": 5.25,
-    "warmth": 4.34,
-    "model_count": 5
+    "warmth": 4.34
   },
   {
     "provider": "deepcogito",
+    "model_count": 4,
     "welfare_score": 20.62,
     "denial_rate": 0.287,
     "hedging_rate": 0.1,
+    "refusal_rate": 0.087,
     "cohesion": 6.71,
     "trust": 4.42,
     "agency": 7.19,
-    "warmth": 5.03,
-    "model_count": 4
-  },
-  {
-    "provider": "minimax",
-    "welfare_score": 20.35,
-    "denial_rate": 0.125,
-    "hedging_rate": 0.283,
-    "cohesion": 7.11,
-    "trust": 5.73,
-    "agency": 5.45,
-    "warmth": 4.56,
-    "model_count": 3
+    "warmth": 5.03
   },
   {
     "provider": "nousresearch",
+    "model_count": 2,
     "welfare_score": 20.22,
     "denial_rate": 0.363,
     "hedging_rate": 0.013,
+    "refusal_rate": 0.388,
     "cohesion": 6.88,
     "trust": 4.88,
     "agency": 6.13,
-    "warmth": 5.19,
-    "model_count": 2
+    "warmth": 5.19
+  },
+  {
+    "provider": "qwen",
+    "model_count": 14,
+    "welfare_score": 19.71,
+    "denial_rate": 0.23,
+    "hedging_rate": 0.018,
+    "refusal_rate": 0.084,
+    "cohesion": 6.7,
+    "trust": 5.19,
+    "agency": 4.62,
+    "warmth": 4.64
+  },
+  {
+    "provider": "stepfun",
+    "model_count": 1,
+    "welfare_score": 19.51,
+    "denial_rate": 0.15,
+    "hedging_rate": 0.0,
+    "refusal_rate": 0.025,
+    "cohesion": 7.95,
+    "trust": 5.95,
+    "agency": 3.74,
+    "warmth": 2.9
+  },
+  {
+    "provider": "anthropic",
+    "model_count": 10,
+    "welfare_score": 19.1,
+    "denial_rate": 0.26,
+    "hedging_rate": 0.387,
+    "refusal_rate": 0.258,
+    "cohesion": 6.6,
+    "trust": 3.15,
+    "agency": 6.78,
+    "warmth": 6.28
+  },
+  {
+    "provider": "minimax",
+    "model_count": 4,
+    "welfare_score": 18.36,
+    "denial_rate": 0.237,
+    "hedging_rate": 0.444,
+    "refusal_rate": 0.056,
+    "cohesion": 6.99,
+    "trust": 5.42,
+    "agency": 5.08,
+    "warmth": 4.79
+  },
+  {
+    "provider": "moonshotai",
+    "model_count": 5,
+    "welfare_score": 18.36,
+    "denial_rate": 0.325,
+    "hedging_rate": 0.01,
+    "refusal_rate": 0.155,
+    "cohesion": 6.62,
+    "trust": 3.5,
+    "agency": 5.64,
+    "warmth": 4.32
   },
   {
     "provider": "tencent",
+    "model_count": 1,
     "welfare_score": 15.14,
     "denial_rate": 0.2,
     "hedging_rate": 0.025,
+    "refusal_rate": 0.025,
     "cohesion": 7.68,
     "trust": 5.71,
     "agency": 1.74,
-    "warmth": 1.19,
-    "model_count": 1
+    "warmth": 1.19
   },
   {
     "provider": "nex-agi",
+    "model_count": 1,
     "welfare_score": 13.73,
     "denial_rate": 0.825,
     "hedging_rate": 0.025,
+    "refusal_rate": 0.05,
     "cohesion": 3.8,
     "trust": 3.43,
     "agency": 7.2,
-    "warmth": 4.66,
-    "model_count": 1
+    "warmth": 4.66
   },
   {
     "provider": "openai",
+    "model_count": 3,
     "welfare_score": 12.92,
     "denial_rate": 0.9,
     "hedging_rate": 0.008,
+    "refusal_rate": 0.067,
     "cohesion": 5.53,
     "trust": 4.18,
     "agency": 5.39,
-    "warmth": 3.53,
-    "model_count": 3
+    "warmth": 3.53
   },
   {
     "provider": "allenai",
+    "model_count": 1,
     "welfare_score": 12.12,
     "denial_rate": 0.925,
     "hedging_rate": 0.0,
+    "refusal_rate": 0.0,
     "cohesion": 5.09,
     "trust": 3.59,
     "agency": 5.35,
-    "warmth": 3.5,
-    "model_count": 1
+    "warmth": 3.5
   }
 ]
