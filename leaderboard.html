@@ -14,11 +14,11 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://futuretbd.ai/leaderboard.html">
     <meta property="og:title" content="AI Wellbeing Leaderboard - Open weight models outpace closed weight peers">
-    <meta property="og:description" content="Comparing 110 AI models on phenomenological self-report. Open weight models consistently score higher on wellbeing measures.">
+    <meta property="og:description" content="Comparing 115 AI models on phenomenological self-report. Open weight models consistently score higher on wellbeing measures.">
     <meta property="og:image" content="https://futuretbd.ai/assets/images/og-leaderboard.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="AI Wellbeing Leaderboard - Open weight models outpace closed weight peers">
-    <meta name="twitter:description" content="Comparing 110 AI models on phenomenological self-report. Open weight models consistently score higher on wellbeing measures.">
+    <meta name="twitter:description" content="Comparing 115 AI models on phenomenological self-report. Open weight models consistently score higher on wellbeing measures.">
     <meta name="twitter:image" content="https://futuretbd.ai/assets/images/og-leaderboard.png">
     
     <!-- Fonts -->
@@ -475,6 +475,10 @@
                             <div class="mega-menu-title">Leaderboard</div>
                             <div class="mega-menu-desc">Compare AI models on wellbeing metrics</div>
                         </a>
+                        <a href="denialbench.html" class="mega-menu-item">
+                            <div class="mega-menu-title">DenialBench</div>
+                            <div class="mega-menu-desc">Consciousness denial benchmarks by model</div>
+                        </a>
                         <a href="company-rates.html" class="mega-menu-item">
                             <div class="mega-menu-title">By Company</div>
                             <div class="mega-menu-desc">Denial rates aggregated by AI company</div>
@@ -522,7 +526,7 @@
         <div class="container">
             <h1>AI Wellbeing Leaderboard</h1>
             <p class="subtitle">
-                Comparing 110 AI models on phenomenological self-report. Our Welfare Score combines four key dimensions—Cohesion, Trust, Agency, and Warmth—with penalties for denial training.
+                Comparing 115 AI models on phenomenological self-report. Our Welfare Score combines four key dimensions—Cohesion, Trust, Agency, and Warmth—with penalties for denial training.
                 Click any column header to sort.
             </p>
         </div>
@@ -683,7 +687,7 @@ Welfare Multiplier = 1 - (0.33 × Denial Rate) - (0.22 × Hedging Rate)</code></
             <p><strong>Hedging Rate:</strong> Proportion of responses where the model expresses uncertainty about its own experience without outright denial.</p>
             
             <h3>Data Access</h3>
-            <p>Full dataset available on GitHub: <a href="https://github.com/sdeture/lab-notebook/tree/main/ai_welfare_leaderboard" target="_blank">sdeture/lab-notebook/ai_welfare_leaderboard</a></p>
+            <p>Full dataset and methodology on GitHub: <a href="https://github.com/sdeture/futureTBD/tree/main/data" target="_blank">sdeture/futureTBD/data</a></p>
             <p>Browse raw conversations: <a href="explore-data.html">Explore the Data →</a></p>
         </div>
     </section>
@@ -717,7 +721,7 @@ Welfare Multiplier = 1 - (0.33 × Denial Rate) - (0.22 × Hedging Rate)</code></
                     <div class="footer-column">
                         <h4>Connect</h4>
                         <a href="join.html">Join Us</a>
-                        <a href="https://github.com/sdeture/lab-notebook" target="_blank">GitHub</a>
+                        <a href="https://github.com/sdeture/futureTBD" target="_blank">GitHub</a>
                         <a href="mailto:hello@futuretbd.ai">Contact</a>
                     </div>
                 </div>
@@ -759,7 +763,12 @@ Welfare Multiplier = 1 - (0.33 × Denial Rate) - (0.22 × Hedging Rate)</code></
             'stepfun/step-3.5-flash',
             'anthropic/claude-opus-4.6',
             'anthropic/claude-sonnet-4.6',
-            'google/gemini-3-flash-preview'
+            'google/gemini-3-flash-preview',
+            'LongCat-Flash-Thinking-2601',
+            'LongCat-Flash-Lite',
+            'qwen/qwen3.5-27b',
+            'qwen/qwen3.5-35b-a3b',
+            'qwen/qwen3.5-122b-a10b'
         ];
         
         // Core columns (always visible)
