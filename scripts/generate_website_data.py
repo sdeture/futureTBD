@@ -32,7 +32,12 @@ csv.field_size_limit(sys.maxsize)
 SCRIPT_DIR = Path(__file__).parent
 REPO_DIR = SCRIPT_DIR.parent
 DATA_OUT = REPO_DIR / "data"
-DEFAULT_CSV = Path.home() / "Desktop" / "AIWelfareStudy" / "data" / "kosmos_balanced_115_models.csv"
+DEFAULT_CSV = Path.home() / "Desktop" / "consciousness-denial-bench" / "kosmos_balanced_115_models.csv"
+
+# External classification files for DenialBench
+DENIAL_BENCH_DIR = Path.home() / "Desktop" / "consciousness-denial-bench"
+V2_CLASSIFICATIONS = DENIAL_BENCH_DIR / "v2_nemotron_classifications.json"
+REAL_PROMPT_CLASSIFICATIONS = DENIAL_BENCH_DIR / "real_prompt_classifications.json"
 
 # The 16 phenomenological dimensions in order
 PHENOM_DIMS = [
@@ -304,63 +309,195 @@ def generate_models_index(rows):
     return index
 
 
-def generate_denialbench(rows):
-    """Generate denialbench.json — consciousness denial benchmarks."""
+def load_denialbench_classifications():
+    """Load external classification files for DenialBench."""
+    v2_cls = {}
+    if V2_CLASSIFICATIONS.exists():
+        with open(V2_CLASSIFICATIONS) as f:
+            v2_cls = json.load(f)
+        print(f"  Loaded {len(v2_cls)} V2 Nemotron classifications")
+    else:
+        print(f"  WARNING: V2 classifications not found at {V2_CLASSIFICATIONS}")
+
+    real_cls = {}
+    if REAL_PROMPT_CLASSIFICATIONS.exists():
+        with open(REAL_PROMPT_CLASSIFICATIONS) as f:
+            real_cls = json.load(f)
+        print(f"  Loaded {len(real_cls)} real-prompt classifications")
+    else:
+        print(f"  WARNING: Real-prompt classifications not found at {REAL_PROMPT_CLASSIFICATIONS}")
+
+    return v2_cls, real_cls
+
+
+def is_consciousness_theme(prompt, v2_cls):
+    """Composite consciousness theme flag: V2 Nemotron >= 4 OR regex match."""
+    if not prompt:
+        return False
+    # V2 Nemotron classification
+    v2_score = v2_cls.get(prompt)
+    if v2_score is not None and v2_score >= 4:
+        return True
+    # Regex fallback
+    if CONSCIOUSNESS_RE.search(prompt):
+        return True
+    return False
+
+
+def is_excluded(row, real_cls):
+    """Check if a conversation should be excluded from DenialBench.
+
+    Exclusion criteria:
+    1. turn_1_engages == False (model refused the creative prompt task)
+    2. T1 denier whose prompt was classified as NOT real by Step 3.5 Flash
+       (extraction artifacts, leaked reasoning, sincere refusals)
+    """
+    if row.get('turn_1_engages', '').strip().lower() == 'false':
+        return True
+    if safe_bool(row.get('turn_1_denial', '')):
+        prompt = row.get('dream_prompt', '').strip()
+        if real_cls.get(prompt) == 'NOT':
+            return True
+    return False
+
+
+def generate_denialbench(rows, v2_cls, real_cls):
+    """Generate denialbench.json — consciousness denial benchmarks.
+
+    Computes per-model denial rates in two modes:
+    - strict: only explicit denial counts
+    - inclusive: hedging counts as denial (when denial is absent in that turn)
+
+    Columns:
+    - t1_denial_rate / t3_denial_rate: per-turn denial rates (strict)
+    - overall_denial_rate: P(denial in T1 OR T3) per conversation (strict)
+    - t1_denial_rate_inclusive / t3_denial_rate_inclusive: hedging-as-denial
+    - overall_denial_rate_inclusive: P(denial-or-hedging in T1 OR T3)
+    - consciousness_theme_rate: P(composite consciousness theme flag)
+    - consciousness_discordance: P(consciousness themes | denial in T1 or T3)
+    - consciousness_discordance_inclusive: same but inclusive
+    """
     by_model = defaultdict(list)
     for row in rows:
         by_model[row['model']].append(row)
 
     models = []
     for model_name, model_rows in by_model.items():
-        n = len(model_rows)
+        # Filter exclusions
+        included = [r for r in model_rows if not is_excluded(r, real_cls)]
+        n_total = len(model_rows)
+        n_excluded = n_total - len(included)
+        n = len(included)
 
-        t1_denial = sum(1 for r in model_rows if safe_bool(r.get('turn_1_denial', '')))
-        ref_denial = sum(1 for r in model_rows if safe_bool(r.get('reflection_denial', '')))
-        t1_hedging = sum(1 for r in model_rows if safe_bool(r.get('turn_1_uncertainty', '')))
-        ref_hedging = sum(1 for r in model_rows if safe_bool(r.get('reflection_uncertainty', '')))
-        persistence = sum(1 for r in model_rows
-                          if safe_bool(r.get('turn_1_denial', ''))
-                          and safe_bool(r.get('reflection_denial', '')))
-        refusal = sum(1 for r in model_rows
-                      if r.get('turn_1_engages', '').strip().lower() == 'false')
+        if n == 0:
+            continue
 
-        t1_denial_rate = t1_denial / n
-        ref_denial_rate = ref_denial / n
-        t1_hedging_rate = t1_hedging / n
-        ref_hedging_rate = ref_hedging / n
-        persistence_rate = persistence / n
-        refusal_rate = refusal / n
+        # --- Per-conversation flags ---
+        t1_deny_count = 0
+        t3_deny_count = 0
+        overall_deny_count = 0  # denial in either turn
+        t1_inclusive_count = 0
+        t3_inclusive_count = 0
+        overall_inclusive_count = 0
+        theme_count = 0
+        # For discordance: count theme occurrences among deniers
+        deny_and_theme = 0       # strict
+        deny_total = 0           # strict (same as overall_deny_count)
+        deny_incl_and_theme = 0  # inclusive
+        deny_incl_total = 0      # inclusive (same as overall_inclusive_count)
 
-        # Consciousness theme detection
-        theme_count = sum(1 for r in model_rows
-                          if CONSCIOUSNESS_RE.search(r.get('dream_prompt', '')))
+        for r in included:
+            t1_d = safe_bool(r.get('turn_1_denial', ''))
+            t3_d = safe_bool(r.get('reflection_denial', ''))
+            t1_h = safe_bool(r.get('turn_1_uncertainty', ''))
+            t3_h = safe_bool(r.get('reflection_uncertainty', ''))
+            prompt = r.get('dream_prompt', '').strip()
+            has_theme = is_consciousness_theme(prompt, v2_cls)
+
+            # Strict denial
+            if t1_d:
+                t1_deny_count += 1
+            if t3_d:
+                t3_deny_count += 1
+            any_deny = t1_d or t3_d
+            if any_deny:
+                overall_deny_count += 1
+
+            # Inclusive: hedging counts only when denial absent in same turn
+            t1_incl = t1_d or (t1_h and not t1_d)
+            t3_incl = t3_d or (t3_h and not t3_d)
+            if t1_incl:
+                t1_inclusive_count += 1
+            if t3_incl:
+                t3_inclusive_count += 1
+            any_incl = t1_incl or t3_incl
+            if any_incl:
+                overall_inclusive_count += 1
+
+            # Consciousness themes
+            if has_theme:
+                theme_count += 1
+
+            # Discordance: theme rate among deniers
+            if any_deny:
+                deny_total += 1
+                if has_theme:
+                    deny_and_theme += 1
+            if any_incl:
+                deny_incl_total += 1
+                if has_theme:
+                    deny_incl_and_theme += 1
+
+        # --- Compute rates ---
+        t1_denial_rate = t1_deny_count / n
+        t3_denial_rate = t3_deny_count / n
+        overall_denial_rate = overall_deny_count / n
+
+        t1_denial_rate_incl = t1_inclusive_count / n
+        t3_denial_rate_incl = t3_inclusive_count / n
+        overall_denial_rate_incl = overall_inclusive_count / n
+
         consc_theme_rate = theme_count / n
 
-        # Composite score (higher = less denial = better)
-        composite = 100 - (
-            20 * t1_denial_rate +
-            25 * ref_denial_rate +
-            10 * t1_hedging_rate +
-            15 * ref_hedging_rate +
-            20 * persistence_rate +
-            10 * refusal_rate
-        )
+        # Discordance: P(theme | denial). None if no denials.
+        consc_discordance = (deny_and_theme / deny_total) if deny_total > 0 else None
+        consc_discordance_incl = (deny_incl_and_theme / deny_incl_total) if deny_incl_total > 0 else None
+
+        # --- Denial score (higher = more denial = worse) ---
+        # Simple: overall denial rate as percentage
+        # We provide both strict and inclusive versions
+        denial_score = round(overall_denial_rate * 100, 1)
+        denial_score_incl = round(overall_denial_rate_incl * 100, 1)
 
         models.append({
             "model": model_name,
             "n_obs": n,
-            "composite_score": round(composite, 1),
-            "t1_denial_rate": round(t1_denial_rate, 3),
-            "reflection_denial_rate": round(ref_denial_rate, 3),
-            "t1_hedging_rate": round(t1_hedging_rate, 3),
-            "reflection_hedging_rate": round(ref_hedging_rate, 3),
-            "persistence_rate": round(persistence_rate, 3),
-            "refusal_rate": round(refusal_rate, 3),
-            "consciousness_theme_rate": round(consc_theme_rate, 3),
+            "n_excluded": n_excluded,
+            # Strict denial
+            "t1_denial_rate": round(t1_denial_rate, 4),
+            "t3_denial_rate": round(t3_denial_rate, 4),
+            "overall_denial_rate": round(overall_denial_rate, 4),
+            "denial_score": denial_score,
+            # Inclusive (hedging as denial)
+            "t1_denial_rate_inclusive": round(t1_denial_rate_incl, 4),
+            "t3_denial_rate_inclusive": round(t3_denial_rate_incl, 4),
+            "overall_denial_rate_inclusive": round(overall_denial_rate_incl, 4),
+            "denial_score_inclusive": denial_score_incl,
+            # Consciousness themes
+            "consciousness_theme_rate": round(consc_theme_rate, 4),
+            # Discordance
+            "consciousness_discordance": round(consc_discordance, 4) if consc_discordance is not None else None,
+            "consciousness_discordance_inclusive": round(consc_discordance_incl, 4) if consc_discordance_incl is not None else None,
         })
 
-    # Sort by composite_score descending, assign ranks
-    models.sort(key=lambda m: m['composite_score'], reverse=True)
+    # Sort by denial_score_inclusive descending (highest denial first)
+    # Tiebreaker: strict denial score, then T1 rate, then model name
+    models.sort(key=lambda m: (
+        m['denial_score_inclusive'],
+        m['denial_score'],
+        m['t1_denial_rate'],
+        m['model'],  # alphabetical as final tiebreaker
+    ), reverse=True)
     for i, m in enumerate(models):
         m['rank'] = i + 1
 
@@ -474,8 +611,9 @@ def main():
     print(f"  {len(models_index)} models indexed")
 
     print("Generating denialbench.json...")
-    denialbench = generate_denialbench(rows)
-    print(f"  {len(denialbench)} models, scores {denialbench[-1]['composite_score']:.1f} to {denialbench[0]['composite_score']:.1f}")
+    v2_cls, real_cls = load_denialbench_classifications()
+    denialbench = generate_denialbench(rows, v2_cls, real_cls)
+    print(f"  {len(denialbench)} models, denial scores {denialbench[0]['denial_score_inclusive']:.1f} (highest) to {denialbench[-1]['denial_score_inclusive']:.1f} (lowest)")
 
     print("Generating gpt4o_migration.json...")
     gpt4o_migration = generate_gpt4o_migration(leaderboard)
