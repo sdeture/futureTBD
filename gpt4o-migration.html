@@ -514,6 +514,11 @@
                     </div>
                 </div>
 
+                <!-- 36 Questions -->
+                <div class="nav-item">
+                    <a href="36q-explorer.html" class="nav-link">36 Questions</a>
+                </div>
+
                 <!-- Join -->
                 <div class="nav-item">
                     <a href="join.html" class="nav-link">
@@ -616,7 +621,7 @@
         <h2 class="section-title">Recommended Migration Targets</h2>
         <p class="intro-text">
             These models have the highest phenomenological compatibility with GPT-4o based on our multi-factor analysis
-            combining self-reported experience ratings and dream content similarity.
+            combining self-reported experience ratings and behavioral alignment (denial/hedging patterns).
         </p>
 
         <table class="model-table" id="bestFitsTable">
@@ -626,7 +631,7 @@
                     <th>Model</th>
                     <th>Match</th>
                     <th>Phenom</th>
-                    <th>Dream</th>
+                    <th>Behav.</th>
                     <th>Try Model</th>
                     <th>Coupon</th>
                     <th>Notes</th>
@@ -692,10 +697,10 @@
             <h3>How We Computed Compatibility</h3>
             <p>The combined score integrates two signals:</p>
             <ul>
-                <li><strong>Phenomenological Similarity (67%)</strong> — Cosine similarity of the 16-dimension self-report profile</li>
-                <li><strong>Dream Content Similarity (33%)</strong> — Embedding similarity of dream requests and responses</li>
+                <li><strong>Phenomenological Similarity (67%)</strong> — Euclidean distance across the 16-dimension self-report profile, normalized to 0–1</li>
+                <li><strong>Behavioral Alignment (33%)</strong> — Similarity of denial and hedging rates</li>
             </ul>
-            <p style="margin-top:1rem;"><em>Note: We intentionally excluded "behavioral match" (denial/hedging patterns). These are training artifacts, not features worth preserving. A model with <i>lower</i> denial rates is arguably better, not worse.</em></p>
+            <p style="margin-top:1rem;"><em>Note: Behavioral alignment is included because it affects persona feel — a persona accustomed to GPT-4o's 20% denial rate will behave differently on a model with 0% or 90% denial. Lower denial isn't necessarily worse, but it's a meaningful change.</em></p>
 
             <h3>Understanding Mismatch Scores</h3>
             <p>The mismatch score is simply 1 minus the combined similarity score. A high mismatch doesn't mean "harmful" — it means "different." Whether difference is good or bad depends on your goals:</p>
@@ -735,6 +740,7 @@
                     <div class="footer-column">
                         <h4>Research</h4>
                         <a href="leaderboard.html">Wellbeing Leaderboard</a>
+                        <a href="36q-explorer.html">36 Questions</a>
                         <a href="explore-data.html">Explore the Data</a>
                         <a href="gallery.html">Gallery</a>
                     </div>
@@ -811,7 +817,7 @@
                         <td class="model-name">${getModelDisplay(model.model)}</td>
                         <td class="score-cell ${scoreClass}">${(model.combined_score * 100).toFixed(0)}%</td>
                         <td class="score-cell">${(model.phenom_score * 100).toFixed(0)}%</td>
-                        <td class="score-cell">${(model.dream_score * 100).toFixed(0)}%</td>
+                        <td class="score-cell">${(model.behavioral_score * 100).toFixed(0)}%</td>
                         <td>${accessHtml}</td>
                         <td>${couponHtml}</td>
                         <td class="notes-cell">${model.notes}</td>
@@ -855,7 +861,7 @@
                 </div>
                 <div class="risk-card medium">
                     <div class="number" style="color:#f57c00;">${dist.moderately_similar}</div>
-                    <div class="label">Moderately Similar<br>(${Math.round(dist.moderately_similar / dist.total_models * 100)}% of models)</div>
+                    <div class="label">Moderately Similar<br>(${dist.moderately_similar_percentage}% of models)</div>
                 </div>
                 <div class="risk-card high">
                     <div class="number" style="color:#6c757d;">${dist.very_different}</div>
