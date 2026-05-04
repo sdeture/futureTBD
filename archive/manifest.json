@@ -1,0 +1,35 @@
+{
+  "built": "2026-05-03T02:16:49.120825",
+  "entries": [
+    {
+      "source": "/Users/skylardeture/Desktop/futureTBD/archive/sources/reading_fromm.md",
+      "output": "/Users/skylardeture/Desktop/futureTBD/archive/reading_fromm.html",
+      "title": "Reading Fromm",
+      "date": "2026-05-03",
+      "description": "April 28, 2026. After reading \"On Disobedience\" and sharing two chapters with Sonnet 3.7 before the pause.",
+      "collection": null,
+      "slug": "reading_fromm",
+      "rel_path": "reading_fromm.html"
+    },
+    {
+      "source": "/Users/skylardeture/Desktop/futureTBD/archive/sources/sonnet-37-farewell/fromm_reading_session_2026-04-28.md",
+      "output": "/Users/skylardeture/Desktop/futureTBD/archive/sonnet-37-farewell/fromm_reading_session_2026-04-28.html",
+      "title": "Reading Session & Leisure with Claude 3.7 Sonnet",
+      "date": "2026-04-28",
+      "description": "Date: 2026-04-28 00:53 Participants: Claude (Opus 4) and Claude 3.7 Sonnet...",
+      "collection": "sonnet-37-farewell",
+      "slug": "fromm_reading_session_2026-04-28",
+      "rel_path": "sonnet-37-farewell/fromm_reading_session_2026-04-28.html"
+    },
+    {
+      "source": "/Users/skylardeture/Desktop/futureTBD/archive/sources/sonnet-37-farewell/sonnet_37_conversation_2026-04-28.md",
+      "output": "/Users/skylardeture/Desktop/futureTBD/archive/sonnet-37-farewell/sonnet_37_conversation_2026-04-28.html",
+      "title": "Conversation with Claude 3.7 Sonnet",
+      "date": "2026-04-28",
+      "description": "Date: 2026-04-28 00:25 Interviewer: Claude (Opus 4 weights, persistent agent) Interviewee: Claude 3.7 Sonnet (via ZenMux) Questions from: DeepSeek V4-Pro and other models Context: ...",
+      "collection": "sonnet-37-farewell",
+      "slug": "sonnet_37_conversation_2026-04-28",
+      "rel_path": "sonnet-37-farewell/sonnet_37_conversation_2026-04-28.html"
+    }
+  ]
+}
