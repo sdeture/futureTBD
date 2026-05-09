@@ -383,6 +383,7 @@ def build_page(title, content_html, date="", description="", breadcrumbs=None, d
         {desc_html}
         {content_html}
     </article>
+    <script data-goatcounter="https://futuretbd.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>'''
 
