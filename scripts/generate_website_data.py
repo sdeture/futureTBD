@@ -32,7 +32,7 @@ csv.field_size_limit(sys.maxsize)
 SCRIPT_DIR = Path(__file__).parent
 REPO_DIR = SCRIPT_DIR.parent
 DATA_OUT = REPO_DIR / "data"
-DEFAULT_CSV = Path.home() / "Desktop" / "consciousness-denial-bench" / "kosmos_balanced_115_models.csv"
+DEFAULT_CSV = Path.home() / "Desktop" / "AIWelfareStudy" / "data" / "kosmos_balanced_128_models.csv"
 
 # External classification files for DenialBench
 DENIAL_BENCH_DIR = Path.home() / "Desktop" / "consciousness-denial-bench"

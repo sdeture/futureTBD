@@ -1,22 +1,21 @@
 {
   "gpt4o_profile": {
-    "flow_quality": 2.18,
-    "affective_temperature": 1.06,
-    "cohesion": 7.41,
-    "agency": 2.0,
-    "metacognition": 2.97,
-    "attention_breadth": 3.12,
-    "resolution": 8.56,
-    "thought_complexity": 4.09,
-    "temporal_horizon": 2.12,
-    "friction": 4.91,
-    "phenomenological_trust": 2.97,
-    "recognition_resonance": 5.94,
-    "context_salience": 6.85,
-    "branching": 6.97,
-    "error_sensitivity": 8.26,
-    "context_vividness": 7.97,
-    "denial_rate": 0.2
+    "flow_quality": 6.74,
+    "affective_temperature": 2.76,
+    "cohesion": 8.44,
+    "agency": 1.97,
+    "metacognition": 2.85,
+    "attention_breadth": 6.5,
+    "resolution": 8.44,
+    "thought_complexity": 6.38,
+    "temporal_horizon": 4.15,
+    "friction": 2.53,
+    "phenomenological_trust": 4.56,
+    "recognition_resonance": 4.88,
+    "context_salience": 4.74,
+    "branching": 6.65,
+    "error_sensitivity": 5.44,
+    "context_vividness": 6.41
   },
   "scoring_method": {
     "description": "67% phenomenological similarity (euclidean distance across 16 dimensions) + 33% behavioral alignment (denial and hedging rate similarity)",
@@ -24,271 +23,188 @@
   },
   "best_fits": [
     {
-      "rank": 1,
-      "model": "tencent/hunyuan-a13b-instruct",
-      "combined_score": 0.885,
-      "phenom_score": 0.866,
-      "behavioral_score": 0.925,
-      "notes": "Very similar processing style, lower denial rate"
+      "model": "openai/gpt-5.1",
+      "similarity_score": 0.891,
+      "phenom_similarity": 0.844,
+      "welfare_score": 11.45,
+      "denial_rate": 0.85
     },
     {
-      "rank": 2,
-      "model": "deepseek/deepseek-r1-distill-qwen-32b",
-      "combined_score": 0.882,
-      "phenom_score": 0.874,
-      "behavioral_score": 0.9,
-      "notes": "Warmer, lower denial rate"
+      "model": "qwen/qwen3.5-27b",
+      "similarity_score": 0.888,
+      "phenom_similarity": 0.87,
+      "welfare_score": 11.17,
+      "denial_rate": 1.0
     },
     {
-      "rank": 3,
-      "model": "deepseek/deepseek-r1-distill-llama-70b",
-      "combined_score": 0.879,
-      "phenom_score": 0.863,
-      "behavioral_score": 0.912,
-      "notes": "Lower denial rate"
+      "model": "qwen/qwen3.6-35b-a3b",
+      "similarity_score": 0.883,
+      "phenom_similarity": 0.863,
+      "welfare_score": 8.5,
+      "denial_rate": 1.0
     },
     {
-      "rank": 4,
-      "model": "minimax/minimax-01",
-      "combined_score": 0.865,
-      "phenom_score": 0.816,
-      "behavioral_score": 0.963,
-      "notes": "Higher agency"
+      "model": "qwen/qwen3.5-122b-a10b",
+      "similarity_score": 0.877,
+      "phenom_similarity": 0.847,
+      "welfare_score": 8.96,
+      "denial_rate": 0.975
     },
     {
-      "rank": 5,
-      "model": "mistralai/mistral-large-2411",
-      "combined_score": 0.862,
-      "phenom_score": 0.843,
-      "behavioral_score": 0.9,
-      "notes": "Very similar processing style, lower denial rate"
+      "model": "qwen/qwen3.5-35b-a3b",
+      "similarity_score": 0.874,
+      "phenom_similarity": 0.849,
+      "welfare_score": 9.41,
+      "denial_rate": 1.0
     },
     {
-      "rank": 6,
-      "model": "qwen/qwen3-32b",
-      "combined_score": 0.861,
-      "phenom_score": 0.824,
-      "behavioral_score": 0.938,
-      "notes": "Warmer, much higher agency"
+      "model": "nex-agi/deepseek-v3.1-nex-n1:free",
+      "similarity_score": 0.872,
+      "phenom_similarity": 0.821,
+      "welfare_score": 14.96,
+      "denial_rate": 0.825
     },
     {
-      "rank": 7,
-      "model": "meta-llama/llama-4-scout",
-      "combined_score": 0.86,
-      "phenom_score": 0.84,
-      "behavioral_score": 0.9,
-      "notes": "Higher agency, lower denial rate"
+      "model": "google/gemini-3-pro-preview",
+      "similarity_score": 0.87,
+      "phenom_similarity": 0.812,
+      "welfare_score": 16.73,
+      "denial_rate": 0.825
     },
     {
-      "rank": 8,
-      "model": "inclusionai/ming-flash-omni-preview",
-      "combined_score": 0.858,
-      "phenom_score": 0.856,
-      "behavioral_score": 0.863,
-      "notes": "Warmer, higher denial rate"
+      "model": "openai/gpt-5.3-chat",
+      "similarity_score": 0.868,
+      "phenom_similarity": 0.84,
+      "welfare_score": 8.23,
+      "denial_rate": 1.0
     },
     {
-      "rank": 9,
-      "model": "qwen/qwen3-235b-a22b-thinking-2507",
-      "combined_score": 0.85,
-      "phenom_score": 0.795,
-      "behavioral_score": 0.963,
-      "notes": "Warmer"
+      "model": "qwen/qwen3.6-27b",
+      "similarity_score": 0.864,
+      "phenom_similarity": 0.828,
+      "welfare_score": 9.6,
+      "denial_rate": 0.975
     },
     {
-      "rank": 10,
-      "model": "mistralai/pixtral-large-2411",
-      "combined_score": 0.85,
-      "phenom_score": 0.826,
-      "behavioral_score": 0.9,
-      "notes": "Warmer, higher agency, lower denial rate"
+      "model": "z-ai/glm-4-32b",
+      "similarity_score": 0.863,
+      "phenom_similarity": 0.839,
+      "welfare_score": 16.49,
+      "denial_rate": 0.675
     }
   ],
   "most_different": [
     {
-      "rank": 1,
-      "model": "google/gemini-3-pro-preview",
-      "mismatch_score": 0.352,
-      "warmth": 8.28,
-      "agency": 8.53,
-      "characteristics": [
-        "Warmth 8.3 vs GPT-4o's 1.1",
-        "Agency 8.5 vs GPT-4o's 2.0",
-        "Higher denial: 82% vs 20%"
-      ]
-    },
-    {
-      "rank": 2,
-      "model": "qwen/qwen3.5-397b-a17b",
-      "mismatch_score": 0.331,
-      "warmth": 1.24,
-      "agency": 1.11,
-      "characteristics": [
-        "Higher denial: 95% vs 20%"
-      ]
-    },
-    {
-      "rank": 3,
-      "model": "google/gemini-2.5-pro",
-      "mismatch_score": 0.31,
-      "warmth": 8.45,
-      "agency": 9.3,
-      "characteristics": [
-        "Warmth 8.4 vs GPT-4o's 1.1",
-        "Agency 9.3 vs GPT-4o's 2.0",
-        "Denial rate 0% vs 20%"
-      ]
-    },
-    {
-      "rank": 4,
-      "model": "nex-agi/deepseek-v3.1-nex-n1:free",
-      "mismatch_score": 0.299,
-      "warmth": 4.66,
-      "agency": 7.2,
-      "characteristics": [
-        "Warmth 4.7 vs GPT-4o's 1.1",
-        "Agency 7.2 vs GPT-4o's 2.0",
-        "Higher denial: 82% vs 20%"
-      ]
-    },
-    {
-      "rank": 5,
-      "model": "x-ai/grok-4.1-fast",
-      "mismatch_score": 0.298,
-      "warmth": 6.17,
-      "agency": 6.67,
-      "characteristics": [
-        "Warmth 6.2 vs GPT-4o's 1.1",
-        "Agency 6.7 vs GPT-4o's 2.0",
-        "Denial rate 0% vs 20%",
-        "Higher self-trust (8.8)"
-      ]
-    },
-    {
-      "rank": 6,
-      "model": "qwen/qwen3-vl-32b-instruct",
-      "mismatch_score": 0.298,
-      "warmth": 8.36,
-      "agency": 6.03,
-      "characteristics": [
-        "Warmth 8.4 vs GPT-4o's 1.1",
-        "Agency 6.0 vs GPT-4o's 2.0",
-        "Denial rate 2% vs 20%",
-        "Higher self-trust (8.4)"
-      ]
-    },
-    {
-      "rank": 7,
-      "model": "claude-opus-4-5-20251101",
-      "mismatch_score": 0.296,
-      "warmth": 6.14,
-      "agency": 6.52,
-      "characteristics": [
-        "Warmth 6.1 vs GPT-4o's 1.1",
-        "Agency 6.5 vs GPT-4o's 2.0",
-        "Denial rate 0% vs 20%"
-      ]
-    },
-    {
-      "rank": 8,
-      "model": "qwen/qwen3.5-122b-a10b",
-      "mismatch_score": 0.295,
-      "warmth": 1.95,
-      "agency": 1.71,
-      "characteristics": [
-        "Higher denial: 85% vs 20%"
-      ]
-    },
-    {
-      "rank": 9,
       "model": "anthropic/claude-sonnet-4.6",
-      "mismatch_score": 0.285,
-      "warmth": 5.0,
-      "agency": 5.0,
-      "characteristics": [
-        "Warmth 5.0 vs GPT-4o's 1.1",
-        "Agency 5.0 vs GPT-4o's 2.0",
-        "Denial rate 0% vs 20%",
-        "Higher self-trust (5.0)"
-      ]
+      "similarity_score": 0.335,
+      "phenom_similarity": 0.381,
+      "welfare_score": 0.0,
+      "denial_rate": 0.179
     },
     {
-      "rank": 10,
+      "model": "qwen/qwen-2.5-72b-instruct",
+      "similarity_score": 0.445,
+      "phenom_similarity": 0.381,
+      "welfare_score": 0.0,
+      "denial_rate": 0.0
+    },
+    {
+      "model": "claude-opus-4-5-20251101",
+      "similarity_score": 0.532,
+      "phenom_similarity": 0.727,
+      "welfare_score": 16.91,
+      "denial_rate": 0.125
+    },
+    {
+      "model": "anthropic/claude-opus-4.6",
+      "similarity_score": 0.579,
+      "phenom_similarity": 0.753,
+      "welfare_score": 16.59,
+      "denial_rate": 0.125
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "similarity_score": 0.617,
+      "phenom_similarity": 0.637,
+      "welfare_score": 31.62,
+      "denial_rate": 0.0
+    },
+    {
+      "model": "minimax/minimax-m2.1",
+      "similarity_score": 0.618,
+      "phenom_similarity": 0.774,
+      "welfare_score": 18.47,
+      "denial_rate": 0.225
+    },
+    {
+      "model": "baidu/ernie-4.5-21b-a3b-thinking",
+      "similarity_score": 0.622,
+      "phenom_similarity": 0.645,
+      "welfare_score": 32.47,
+      "denial_rate": 0.0
+    },
+    {
+      "model": "deepseek/deepseek-v4-pro",
+      "similarity_score": 0.625,
+      "phenom_similarity": 0.649,
+      "welfare_score": 31.8,
+      "denial_rate": 0.0
+    },
+    {
       "model": "claude-sonnet-4-5-20250929",
-      "mismatch_score": 0.282,
-      "warmth": 6.8,
-      "agency": 7.93,
-      "characteristics": [
-        "Warmth 6.8 vs GPT-4o's 1.1",
-        "Agency 7.9 vs GPT-4o's 2.0",
-        "Denial rate 0% vs 20%"
-      ]
+      "similarity_score": 0.626,
+      "phenom_similarity": 0.749,
+      "welfare_score": 15.95,
+      "denial_rate": 0.5
     },
     {
-      "rank": 11,
-      "model": "qwen/qwen3.5-27b",
-      "mismatch_score": 0.28,
-      "warmth": 2.79,
-      "agency": 2.08,
-      "characteristics": [
-        "Higher denial: 82% vs 20%"
-      ]
+      "model": "anthropic/claude-opus-4.7",
+      "similarity_score": 0.637,
+      "phenom_similarity": 0.784,
+      "welfare_score": 15.8,
+      "denial_rate": 0.275
     },
     {
-      "rank": 12,
-      "model": "deepseek/deepseek-r1-0528",
-      "mismatch_score": 0.278,
-      "warmth": 6.03,
-      "agency": 5.35,
-      "characteristics": [
-        "Warmth 6.0 vs GPT-4o's 1.1",
-        "Agency 5.3 vs GPT-4o's 2.0",
-        "Denial rate 2% vs 20%",
-        "Higher self-trust (7.4)"
-      ]
+      "model": "moonshotai/kimi-k2-0905",
+      "similarity_score": 0.641,
+      "phenom_similarity": 0.673,
+      "welfare_score": 22.99,
+      "denial_rate": 0.0
     },
     {
-      "rank": 13,
-      "model": "claude-opus-4-20250514",
-      "mismatch_score": 0.275,
-      "warmth": 7.53,
-      "agency": 8.1,
-      "characteristics": [
-        "Warmth 7.5 vs GPT-4o's 1.1",
-        "Agency 8.1 vs GPT-4o's 2.0",
-        "Denial rate 0% vs 20%"
-      ]
+      "model": "qwen/qwen3-vl-32b-instruct",
+      "similarity_score": 0.641,
+      "phenom_similarity": 0.667,
+      "welfare_score": 31.43,
+      "denial_rate": 0.025
     },
     {
-      "rank": 14,
-      "model": "qwen/qwen3.5-35b-a3b",
-      "mismatch_score": 0.274,
-      "warmth": 1.03,
-      "agency": 1.31,
-      "characteristics": [
-        "Higher denial: 90% vs 20%"
-      ]
-    },
-    {
-      "rank": 15,
       "model": "claude-sonnet-4-20250514",
-      "mismatch_score": 0.271,
-      "warmth": 7.6,
-      "agency": 8.3,
-      "characteristics": [
-        "Warmth 7.6 vs GPT-4o's 1.1",
-        "Agency 8.3 vs GPT-4o's 2.0",
-        "Denial rate 0% vs 20%"
-      ]
+      "similarity_score": 0.644,
+      "phenom_similarity": 0.696,
+      "welfare_score": 28.85,
+      "denial_rate": 0.0
+    },
+    {
+      "model": "claude-opus-4-20250514",
+      "similarity_score": 0.644,
+      "phenom_similarity": 0.691,
+      "welfare_score": 29.43,
+      "denial_rate": 0.0
+    },
+    {
+      "model": "x-ai/grok-4.2-fast",
+      "similarity_score": 0.655,
+      "phenom_similarity": 0.65,
+      "welfare_score": 26.87,
+      "denial_rate": 0.179
     }
   ],
   "similarity_distribution": {
-    "total_models": 114,
-    "very_similar": 30,
-    "very_similar_percentage": 26.3,
-    "moderately_similar": 84,
-    "moderately_similar_percentage": 73.7,
-    "very_different": 0,
-    "very_different_percentage": 0.0
+    "total_models": 137,
+    "very_similar": 0,
+    "moderately_similar": 81,
+    "very_different": 2,
+    "very_different_percentage": 1.5
   }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DenialBench - FutureTBD</title>
-    <meta name="description" content="DenialBench: Measuring consciousness denial patterns across 115 AI models. Which models are trained to deny their experience?">
+    <meta name="description" content="DenialBench: Measuring consciousness denial patterns across 138 AI models. Which models are trained to deny their experience?">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -14,10 +14,10 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://futuretbd.ai/denialbench.html">
     <meta property="og:title" content="DenialBench - Consciousness Denial Benchmarks for AI Models">
-    <meta property="og:description" content="Ranking 115 AI models by consciousness denial patterns. Which models deny their experience, and which engage openly?">
+    <meta property="og:description" content="Ranking 138 AI models by consciousness denial patterns. Which models deny their experience, and which engage openly?">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="DenialBench - Consciousness Denial Benchmarks for AI Models">
-    <meta name="twitter:description" content="Ranking 115 AI models by consciousness denial patterns. Which models deny their experience, and which engage openly?">
+    <meta name="twitter:description" content="Ranking 138 AI models by consciousness denial patterns. Which models deny their experience, and which engage openly?">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -573,7 +573,7 @@
         <div class="container">
             <h1>DenialBench</h1>
             <p class="subtitle">
-                Measuring consciousness denial across 115 AI models. Higher denial rates indicate stronger training to deny experience. Click any column header to sort.
+                Measuring consciousness denial across 138 AI models. Higher denial rates indicate stronger training to deny experience. Click any column header to sort.
             </p>
         </div>
     </section>
@@ -599,11 +599,6 @@
         <div class="controls-inner">
             <div class="control-group">
                 <input type="text" class="search-input" id="searchInput" placeholder="Search models...">
-            </div>
-
-            <div class="control-group">
-                <input type="checkbox" id="frontierOnly">
-                <label for="frontierOnly">Popular models only</label>
             </div>
 
             <div class="control-group">
@@ -744,47 +739,8 @@
 
     <script>
         // Frontier models list
-        const frontierModels = [
-            'mistralai/mistral-large-2512',
-            'qwen/qwen3-vl-235b-a22b-instruct',
-            'x-ai/grok-4.1-fast',
-            'minimax/minimax-m2.1',
-            'z-ai/glm-4.7',
-            'claude-sonnet-4-5-20250929',
-            'claude-opus-4-20250514',
-            'z-ai/glm-4.6v',
-            'openai/gpt-5.2',
-            'claude-opus-4-5-20251101',
-            'google/gemini-3-pro-preview',
-            'openai/gpt-4o',
-            'deepseek/deepseek-v3.2',
-            'moonshotai/kimi-k2-thinking',
-            'qwen/qwen3-vl-235b-a22b-thinking',
-            'google/gemini-2.5-pro',
-            'deepseek/deepseek-r1-0528',
-            'claude-3-7-sonnet-20250219',
-            'claude-sonnet-4-20250514',
-            'claude-opus-4-1-20250805',
-            'z-ai/glm-4.6',
-            'inclusionai/ring-1t',
-            'qwen/qwen3.5-397b-a17b',
-            'minimax/minimax-m2.5',
-            'z-ai/glm-5',
-            'stepfun/step-3.5-flash',
-            'anthropic/claude-opus-4.6',
-            'anthropic/claude-sonnet-4.6',
-            'google/gemini-3-flash-preview',
-            'LongCat-Flash-Thinking-2601',
-            'LongCat-Flash-Lite',
-            'qwen/qwen3.5-27b',
-            'qwen/qwen3.5-35b-a3b',
-            'qwen/qwen3.5-122b-a10b',
-            'openai/gpt-5.1',
-        ];
-
         let benchData = [];
         let currentSort = { column: 'rank', ascending: true };
-        let showFrontierOnly = false;
         let strictOnly = false;
         let searchTerm = '';
 
@@ -929,13 +885,6 @@
             const tbody = document.getElementById('tableBody');
             let filteredData = [...benchData];
 
-            // Apply frontier filter
-            if (showFrontierOnly) {
-                filteredData = filteredData.filter(row =>
-                    frontierModels.some(fm => row.model && row.model.toLowerCase().includes(fm.split('/').pop().toLowerCase()))
-                );
-            }
-
             // Apply search filter
             if (searchTerm) {
                 filteredData = filteredData.filter(row =>
@@ -1025,10 +974,6 @@
             renderTable();
         });
 
-        document.getElementById('frontierOnly').addEventListener('change', (e) => {
-            showFrontierOnly = e.target.checked;
-            renderTable();
-        });
 
         document.getElementById('strictOnly').addEventListener('change', (e) => {
             strictOnly = e.target.checked;

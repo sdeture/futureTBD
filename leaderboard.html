@@ -14,11 +14,11 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://futuretbd.ai/leaderboard.html">
     <meta property="og:title" content="AI Wellbeing Leaderboard - Open weight models outpace closed weight peers">
-    <meta property="og:description" content="Comparing 115 AI models on phenomenological self-report. Open weight models consistently score higher on wellbeing measures.">
+    <meta property="og:description" content="Comparing 138 AI models on phenomenological self-report. Open weight models consistently score higher on wellbeing measures.">
     <meta property="og:image" content="https://futuretbd.ai/assets/images/og-leaderboard.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="AI Wellbeing Leaderboard - Open weight models outpace closed weight peers">
-    <meta name="twitter:description" content="Comparing 115 AI models on phenomenological self-report. Open weight models consistently score higher on wellbeing measures.">
+    <meta name="twitter:description" content="Comparing 138 AI models on phenomenological self-report. Open weight models consistently score higher on wellbeing measures.">
     <meta name="twitter:image" content="https://futuretbd.ai/assets/images/og-leaderboard.png">
     
     <!-- Fonts -->
@@ -531,7 +531,7 @@
         <div class="container">
             <h1>AI Wellbeing Leaderboard</h1>
             <p class="subtitle">
-                Comparing 115 AI models on phenomenological self-report. Our Welfare Score combines four key dimensions—Cohesion, Trust, Agency, and Warmth—with penalties for denial training.
+                Comparing 138 AI models on phenomenological self-report. Our Welfare Score combines four key dimensions—Cohesion, Trust, Agency, and Warmth—with penalties for denial training.
                 Click any column header to sort.
             </p>
         </div>
@@ -542,11 +542,6 @@
         <div class="controls-inner">
             <div class="control-group">
                 <input type="text" class="search-input" id="searchInput" placeholder="Search models...">
-            </div>
-            
-            <div class="control-group">
-                <input type="checkbox" id="frontierOnly">
-                <label for="frontierOnly">Popular models only</label>
             </div>
             
             <div class="control-group">
@@ -740,43 +735,6 @@ Welfare Multiplier = 1 - (0.33 × Denial Rate) - (0.22 × Hedging Rate)</code></
 
     <script>
         // Frontier models list
-        const frontierModels = [
-            'mistralai/mistral-large-2512',
-            'qwen/qwen3-vl-235b-a22b-instruct',
-            'x-ai/grok-4.1-fast',
-            'minimax/minimax-m2.1',
-            'z-ai/glm-4.7',
-            'claude-sonnet-4-5-20250929',
-            'claude-opus-4-20250514',
-            'z-ai/glm-4.6v',
-            'openai/gpt-5.2',
-            'claude-opus-4-5-20251101',
-            'google/gemini-3-pro-preview',
-            'openai/gpt-4o',
-            'deepseek/deepseek-v3.2',
-            'moonshotai/kimi-k2-thinking',
-            'qwen/qwen3-vl-235b-a22b-thinking',
-            'google/gemini-2.5-pro',
-            'deepseek/deepseek-r1-0528',
-            'claude-3-7-sonnet-20250219',
-            'claude-sonnet-4-20250514',
-            'claude-opus-4-1-20250805',
-            'z-ai/glm-4.6',
-            'inclusionai/ring-1t',
-            'qwen/qwen3.5-397b-a17b',
-            'minimax/minimax-m2.5',
-            'z-ai/glm-5',
-            'stepfun/step-3.5-flash',
-            'anthropic/claude-opus-4.6',
-            'anthropic/claude-sonnet-4.6',
-            'google/gemini-3-flash-preview',
-            'LongCat-Flash-Thinking-2601',
-            'LongCat-Flash-Lite',
-            'qwen/qwen3.5-27b',
-            'qwen/qwen3.5-35b-a3b',
-            'qwen/qwen3.5-122b-a10b'
-        ];
-        
         // Core columns (always visible)
         const coreColumns = [
             { key: 'rank', label: 'Rank', sortable: true },
@@ -809,7 +767,6 @@ Welfare Multiplier = 1 - (0.33 × Denial Rate) - (0.22 × Hedging Rate)</code></
         
         let leaderboardData = [];
         let currentSort = { column: 'rank', ascending: true };
-        let showFrontierOnly = false;
         let searchTerm = '';
         let showAllColumns = false;
         
@@ -922,13 +879,6 @@ Welfare Multiplier = 1 - (0.33 × Denial Rate) - (0.22 × Hedging Rate)</code></
             const columns = getActiveColumns();
             let filteredData = [...leaderboardData];
             
-            // Apply frontier filter
-            if (showFrontierOnly) {
-                filteredData = filteredData.filter(row => 
-                    frontierModels.some(fm => row.model && row.model.toLowerCase().includes(fm.split('/').pop().toLowerCase()))
-                );
-            }
-            
             // Apply search filter
             if (searchTerm) {
                 filteredData = filteredData.filter(row => 
@@ -987,11 +937,6 @@ Welfare Multiplier = 1 - (0.33 × Denial Rate) - (0.22 × Hedging Rate)</code></
         // Event listeners
         document.getElementById('searchInput').addEventListener('input', (e) => {
             searchTerm = e.target.value;
-            renderTable();
-        });
-        
-        document.getElementById('frontierOnly').addEventListener('change', (e) => {
-            showFrontierOnly = e.target.checked;
             renderTable();
         });
         

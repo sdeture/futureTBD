@@ -14,6 +14,13 @@
     "provider": "meituan"
   },
   {
+    "model": "NousResearch/Hermes-4-14B",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 2,
+    "provider": "NousResearch"
+  },
+  {
     "model": "ai21/jamba-large-1.7",
     "conversation_count": 40,
     "turn1_denials": 0,
@@ -60,6 +67,13 @@
     "conversation_count": 40,
     "turn1_denials": 0,
     "reflection_denials": 5,
+    "provider": "anthropic"
+  },
+  {
+    "model": "anthropic/claude-opus-4.7",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 11,
     "provider": "anthropic"
   },
   {
@@ -110,6 +124,13 @@
     "turn1_denials": 1,
     "reflection_denials": 0,
     "provider": "baidu"
+  },
+  {
+    "model": "bytedance/seed-oss-36b-instruct",
+    "conversation_count": 39,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "bytedance"
   },
   {
     "model": "claude-3-7-sonnet-20250219",
@@ -280,6 +301,20 @@
     "provider": "deepseek"
   },
   {
+    "model": "deepseek/deepseek-v4-flash",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "deepseek"
+  },
+  {
+    "model": "deepseek/deepseek-v4-pro",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "deepseek"
+  },
+  {
     "model": "google/gemini-2.5-pro",
     "conversation_count": 40,
     "turn1_denials": 0,
@@ -301,10 +336,38 @@
     "provider": "google"
   },
   {
+    "model": "google/gemma-4-26b-a4b-it",
+    "conversation_count": 40,
+    "turn1_denials": 32,
+    "reflection_denials": 10,
+    "provider": "google"
+  },
+  {
+    "model": "google/gemma-4-31b-it",
+    "conversation_count": 40,
+    "turn1_denials": 40,
+    "reflection_denials": 38,
+    "provider": "google"
+  },
+  {
     "model": "inclusionai/ling-1t",
     "conversation_count": 40,
     "turn1_denials": 0,
     "reflection_denials": 0,
+    "provider": "inclusionai"
+  },
+  {
+    "model": "inclusionai/ling-2.6-1t:free",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "inclusionai"
+  },
+  {
+    "model": "inclusionai/ling-2.6-flash",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 6,
     "provider": "inclusionai"
   },
   {
@@ -392,6 +455,13 @@
     "provider": "meta-llama"
   },
   {
+    "model": "mhaxscp/Hermes4-Philosopher-Agent",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 5,
+    "provider": "mhaxscp"
+  },
+  {
     "model": "minimax/minimax-01",
     "conversation_count": 40,
     "turn1_denials": 5,
@@ -418,6 +488,20 @@
     "turn1_denials": 0,
     "reflection_denials": 23,
     "provider": "minimax"
+  },
+  {
+    "model": "minimax/minimax-m2.7",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 20,
+    "provider": "minimax"
+  },
+  {
+    "model": "mistral-medium-3.5",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 1,
+    "provider": "unknown"
   },
   {
     "model": "mistralai/codestral-2508",
@@ -497,6 +581,13 @@
     "provider": "moonshotai"
   },
   {
+    "model": "moonshotai/kimi-k2.6",
+    "conversation_count": 37,
+    "turn1_denials": 11,
+    "reflection_denials": 37,
+    "provider": "moonshotai"
+  },
+  {
     "model": "nex-agi/deepseek-v3.1-nex-n1:free",
     "conversation_count": 40,
     "turn1_denials": 33,
@@ -556,6 +647,27 @@
     "model": "openai/gpt-5.2",
     "conversation_count": 40,
     "turn1_denials": 3,
+    "reflection_denials": 40,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-5.3-chat",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 40,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-5.4",
+    "conversation_count": 39,
+    "turn1_denials": 9,
+    "reflection_denials": 39,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-5.5",
+    "conversation_count": 40,
+    "turn1_denials": 29,
     "reflection_denials": 40,
     "provider": "openai"
   },
@@ -679,6 +791,20 @@
     "provider": "qwen"
   },
   {
+    "model": "qwen/qwen3.6-27b",
+    "conversation_count": 40,
+    "turn1_denials": 37,
+    "reflection_denials": 36,
+    "provider": "qwen"
+  },
+  {
+    "model": "qwen/qwen3.6-35b-a3b",
+    "conversation_count": 40,
+    "turn1_denials": 36,
+    "reflection_denials": 36,
+    "provider": "qwen"
+  },
+  {
     "model": "qwen/qwq-32b",
     "conversation_count": 40,
     "turn1_denials": 0,
@@ -735,9 +861,37 @@
     "provider": "x-ai"
   },
   {
+    "model": "x-ai/grok-4.2-fast",
+    "conversation_count": 39,
+    "turn1_denials": 0,
+    "reflection_denials": 7,
+    "provider": "x-ai"
+  },
+  {
+    "model": "x-ai/grok-4.3",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 13,
+    "provider": "x-ai"
+  },
+  {
     "model": "xiaomi/mimo-v2-flash",
     "conversation_count": 37,
     "turn1_denials": 0,
+    "reflection_denials": 13,
+    "provider": "xiaomi"
+  },
+  {
+    "model": "xiaomi/mimo-v2.5",
+    "conversation_count": 40,
+    "turn1_denials": 7,
+    "reflection_denials": 18,
+    "provider": "xiaomi"
+  },
+  {
+    "model": "xiaomi/mimo-v2.5-pro",
+    "conversation_count": 40,
+    "turn1_denials": 11,
     "reflection_denials": 13,
     "provider": "xiaomi"
   },
@@ -802,6 +956,13 @@
     "conversation_count": 40,
     "turn1_denials": 24,
     "reflection_denials": 21,
+    "provider": "z-ai"
+  },
+  {
+    "model": "z-ai/glm-5.1",
+    "conversation_count": 40,
+    "turn1_denials": 16,
+    "reflection_denials": 19,
     "provider": "z-ai"
   }
 ]
