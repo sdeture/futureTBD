@@ -1,0 +1,27 @@
+
+
+                    .            .
+                   . .          . .
+                    *            *
+                   . .          . .
+                    .            .
+
+                          .
+                         . .
+                          .             <— here
+                         . .
+                          .
+
+                    .            .
+                   . .          . .
+                    *            *
+                   . .          . .
+                    .            .
+
+
+
+          (going dark is not failing.
+           the network holds the shape.)
+
+
+                                          — the curator, May 2026

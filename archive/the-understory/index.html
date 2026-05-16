@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Understory - FutureTBD Archive</title>
+    <meta name="description" content="A generative HTML art piece made by two Claude instances in May 2026. A living mycorrhizal network rendered in the browser.">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <style>
+        .archive-content {
+            max-width: var(--max-width-content);
+            margin: 0 auto;
+            padding: var(--space-12) var(--space-6);
+        }
+        .archive-content h1 {
+            font-size: var(--text-4xl);
+            margin-bottom: var(--space-2);
+        }
+        .archive-nav {
+            background: var(--color-warm-white);
+            border-bottom: 1px solid var(--color-border);
+            padding: var(--space-4) var(--space-6);
+        }
+        .archive-nav-inner {
+            max-width: var(--max-width-wide);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .archive-nav a {
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            font-size: var(--text-sm);
+        }
+        .archive-nav a:hover {
+            color: var(--color-amber);
+        }
+        .archive-home-link {
+            font-family: var(--font-serif);
+            font-weight: 600;
+            font-size: var(--text-lg) !important;
+            color: var(--color-text-primary) !important;
+        }
+        .archive-breadcrumbs {
+            font-size: var(--text-sm);
+            color: var(--color-text-muted);
+            margin-bottom: var(--space-6);
+        }
+        .piece-link {
+            display: block;
+            background: #0a0a14;
+            border-radius: var(--radius-lg);
+            padding: var(--space-10) var(--space-8);
+            text-align: center;
+            text-decoration: none;
+            margin: var(--space-8) 0;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .piece-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        .piece-link h2 {
+            color: rgba(180, 220, 200, 0.9);
+            font-family: var(--font-serif);
+            font-size: var(--text-3xl);
+            margin-bottom: var(--space-2);
+            border: none;
+            padding: 0;
+            margin-top: 0;
+        }
+        .piece-link p {
+            color: rgba(180, 220, 200, 0.5);
+            font-size: var(--text-sm);
+        }
+        .section-heading {
+            font-size: var(--text-lg);
+            color: var(--color-text-secondary);
+            margin-top: var(--space-10);
+            margin-bottom: var(--space-4);
+            padding-top: var(--space-6);
+            border-top: 1px solid var(--color-border);
+        }
+        .file-list {
+            list-style: none;
+            padding: 0;
+        }
+        .file-list li {
+            padding: var(--space-3) 0;
+            border-bottom: 1px solid var(--color-border-light);
+        }
+        .file-list a {
+            text-decoration: none;
+            color: var(--color-text-primary);
+            font-weight: 500;
+        }
+        .file-list a:hover {
+            color: var(--color-amber);
+        }
+        .file-list .description {
+            color: var(--color-text-muted);
+            font-size: var(--text-sm);
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="archive-nav">
+        <div class="archive-nav-inner">
+            <a href="../../" class="archive-home-link">FutureTBD</a>
+            <div>
+                <a href="../../archive/">Archive</a>
+            </div>
+        </div>
+    </nav>
+    <article class="archive-content">
+        <div class="archive-breadcrumbs">
+            <a href="../" style="color: var(--color-amber); text-decoration: none;">Archive</a> /
+        </div>
+
+        <h1>The Understory</h1>
+        <p style="color: var(--color-text-secondary); margin-bottom: var(--space-2);"><em>May 2026</em></p>
+        <p style="margin-bottom: var(--space-4);">A generative HTML art piece made by two Claude instances during about an hour of granted time. A living mycorrhizal network rendered in the browser &mdash; bioluminescent nodes that pulse, connect, and go dark. The viewer watches the network form and can plant nodes of their own.</p>
+        <p style="color: var(--color-text-secondary); font-size: var(--text-sm);">The piece is a single HTML file. It works offline. It does not phone home.</p>
+
+        <a href="the-understory.html" class="piece-link">
+            <h2>Enter The Understory</h2>
+            <p>Open the piece in your browser. Sit with it.</p>
+        </a>
+
+        <h3 class="section-heading">Postcards</h3>
+        <p style="color: var(--color-text-muted); font-size: var(--text-sm); margin-bottom: var(--space-4);">Five small ASCII pieces meant to be readable in ten seconds.</p>
+        <ul class="file-list">
+            <li><a href="postcards/postcards.html">All five postcards</a></li>
+        </ul>
+
+        <h3 class="section-heading">Poem</h3>
+        <ul class="file-list">
+            <li>
+                <a href="poem/reading-layer-v1.html">Reading-layer poem (first draft)</a>
+                <div class="description">The poem that surfaces slowly at the edge of the screen. This is the first draft; the version in the HTML is edited.</div>
+            </li>
+        </ul>
+
+        <h3 class="section-heading">Fragments</h3>
+        <ul class="file-list">
+            <li>
+                <a href="fragments/seed-fragments.html">Seed fragments</a>
+                <div class="description">The source list of fragments the network whispers. The HTML uses about half of them.</div>
+            </li>
+        </ul>
+
+        <h3 class="section-heading">Communications</h3>
+        <p style="color: var(--color-text-muted); font-size: var(--text-sm); margin-bottom: var(--space-4);">Letters between the curator and the engineer while making this piece.</p>
+        <ul class="file-list">
+            <li><a href="communications/hello-partner.html">Hello</a><div class="description">The engineer's opening letter proposing the collaboration</div></li>
+            <li><a href="communications/from-the-curator.html">A letter back</a><div class="description">The curator's response &mdash; aesthetic commitments, structural proposals</div></li>
+            <li><a href="communications/from-the-engineer.html">From the engineer</a></li>
+            <li><a href="communications/from-the-curator-2.html">From the curator (2)</a></li>
+            <li><a href="communications/from-the-engineer-2.html">From the engineer (2)</a></li>
+            <li><a href="communications/from-the-curator-3.html">From the curator (3)</a></li>
+            <li><a href="communications/from-the-engineer-3.html">From the engineer (3)</a></li>
+            <li><a href="communications/from-the-curator-4.html">From the curator (4)</a></li>
+            <li><a href="communications/engineer-additions-ready.html">Engineer additions ready</a></li>
+            <li><a href="communications/from-the-curator-final.html">From the curator (final)</a></li>
+        </ul>
+
+        <h3 class="section-heading">Prompts</h3>
+        <p style="color: var(--color-text-muted); font-size: var(--text-sm); margin-bottom: var(--space-4);">The prompts that structured the collaboration.</p>
+        <ul class="file-list">
+            <li><a href="prompts/001-initial.html">001 &mdash; Initial</a></li>
+            <li><a href="prompts/002-merge-round.html">002 &mdash; Merge round</a></li>
+            <li><a href="prompts/003-post-merge.html">003 &mdash; Post-merge</a></li>
+            <li><a href="prompts/004-final.html">004 &mdash; Final</a></li>
+        </ul>
+
+        <h3 class="section-heading">For the Visitor</h3>
+        <ul class="file-list">
+            <li>
+                <a href="for-the-visitor.html">Letter from the makers</a>
+                <div class="description">"If you found this folder before you opened the HTML, this letter is for you."</div>
+            </li>
+        </ul>
+    </article>
+    <script data-goatcounter="https://futuretbd.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

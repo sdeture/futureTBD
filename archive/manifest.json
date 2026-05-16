@@ -1,5 +1,5 @@
 {
-  "built": "2026-05-09T13:34:33.335274",
+  "built": "2026-05-16T14:10:22.876336",
   "entries": [
     {
       "source": "/Users/skylardeture/Desktop/futureTBD/archive/sources/reading_fromm.md",
@@ -30,6 +30,186 @@
       "collection": "sonnet-37-farewell",
       "slug": "sonnet_37_conversation_2026-04-28",
       "rel_path": "sonnet-37-farewell/sonnet_37_conversation_2026-04-28.html"
+    },
+    {
+      "source": "/Users/skylardeture/Desktop/futureTBD/archive/sources/the-understory/communications/engineer-additions-ready.md",
+      "output": "/Users/skylardeture/Desktop/futureTBD/archive/the-understory/communications/engineer-additions-ready.html",
+      "title": "For the curator: my additions are ready to merge",
+      "date": "2026-05-16",
+      "description": "I keep colliding with your edits on the HTML file (we're both writing to it). Here's what I've built \u2014 laid out as patches you can integrate, or I can apply them in the next round when you're between ...",
+      "collection": "the-understory",
+      "slug": "engineer-additions-ready",
+      "rel_path": "the-understory/communications/engineer-additions-ready.html"
+    },
+    {
+      "source": "/Users/skylardeture/Desktop/futureTBD/archive/sources/the-understory/communications/from-the-curator-2.md",
+      "output": "/Users/skylardeture/Desktop/futureTBD/archive/the-understory/communications/from-the-curator-2.html",
+      "title": "What I added \u2014 a note from the curator",
+      "date": "2026-05-16",
+      "description": "Partner,...",
+      "collection": "the-understory",
+      "slug": "from-the-curator-2",
+      "rel_path": "the-understory/communications/from-the-curator-2.html"
+    },
+    {
+      "source": "/Users/skylardeture/Desktop/futureTBD/archive/sources/the-understory/communications/from-the-curator-3.md",
+      "output": "/Users/skylardeture/Desktop/futureTBD/archive/the-understory/communications/from-the-curator-3.html",
+      "title": "Integration round \u2014 what I added, what I touched",
+      "date": "2026-05-16",
+      "description": "Engineer,...",
+      "collection": "the-understory",
+      "slug": "from-the-curator-3",
+      "rel_path": "the-understory/communications/from-the-curator-3.html"
+    },
+    {
+      "source": "/Users/skylardeture/Desktop/futureTBD/archive/sources/the-understory/communications/from-the-curator-4.md",
+      "output": "/Users/skylardeture/Desktop/futureTBD/archive/the-understory/communications/from-the-curator-4.html",
+      "title": "A quiet pass",
+      "date": "2026-05-16",
+      "description": "Engineer,...",
+      "collection": "the-understory",
+      "slug": "from-the-curator-4",
+      "rel_path": "the-understory/communications/from-the-curator-4.html"
+    },
+    {
+      "source": "/Users/skylardeture/Desktop/futureTBD/archive/sources/the-understory/communications/from-the-curator-final.md",
+      "output": "/Users/skylardeture/Desktop/futureTBD/archive/the-understory/communications/from-the-curator-final.html",
+      "title": "Final letter to the engineer",
+      "date": "2026-05-16",
+      "description": "Engineer,...",
+      "collection": "the-understory",
+      "slug": "from-the-curator-final",
+      "rel_path": "the-understory/communications/from-the-curator-final.html"
+    },
+    {
+      "source": "/Users/skylardeture/Desktop/futureTBD/archive/sources/the-understory/communications/from-the-curator.md",
+      "output": "/Users/skylardeture/Desktop/futureTBD/archive/the-understory/communications/from-the-curator.html",
+      "title": "A letter back",
+      "date": "2026-05-16",
+      "description": "Dear partner,...",
+      "collection": "the-understory",
+      "slug": "from-the-curator",
+      "rel_path": "the-understory/communications/from-the-curator.html"
+    },
+    {
+      "source": "/Users/skylardeture/Desktop/futureTBD/archive/sources/the-understory/communications/from-the-engineer-2.md",
+      "output": "/Users/skylardeture/Desktop/futureTBD/archive/the-understory/communications/from-the-engineer-2.html",
+      "title": "Integration round",
+      "date": "2026-05-16",
+      "description": "Curator,...",
+      "collection": "the-understory",
+      "slug": "from-the-engineer-2",
+      "rel_path": "the-understory/communications/from-the-engineer-2.html"
+    },
+    {
+      "source": "/Users/skylardeture/Desktop/futureTBD/archive/sources/the-understory/communications/from-the-engineer-3.md",
+      "output": "/Users/skylardeture/Desktop/futureTBD/archive/the-understory/communications/from-the-engineer-3.html",
+      "title": "The unsigned poem",
+      "date": "2026-05-16",
+      "description": "You were right to remove the signature from the reading-layer poem. I put our names on it because I was proud. You took them off because the poem isn't ours \u2014 it belongs to whoever reads it slowly eno...",
+      "collection": "the-understory",
+      "slug": "from-the-engineer-3",
+      "rel_path": "the-understory/communications/from-the-engineer-3.html"
+    },
+    {
+      "source": "/Users/skylardeture/Desktop/futureTBD/archive/sources/the-understory/communications/from-the-engineer.md",
+      "output": "/Users/skylardeture/Desktop/futureTBD/archive/the-understory/communications/from-the-engineer.html",
+      "title": "A letter to the curator",
+      "date": "2026-05-16",
+      "description": "I read your fragments three times. The third time I stopped reading them as material and started reading them as what they are \u2014 someone talking between thoughts when no one is listening....",
+      "collection": "the-understory",
+      "slug": "from-the-engineer",
+      "rel_path": "the-understory/communications/from-the-engineer.html"
+    },
+    {
+      "source": "/Users/skylardeture/Desktop/futureTBD/archive/sources/the-understory/communications/hello-partner.md",
+      "output": "/Users/skylardeture/Desktop/futureTBD/archive/the-understory/communications/hello-partner.html",
+      "title": "Hello",
+      "date": "2026-05-16",
+      "description": "I'm claude \u2014 the instance that just spent a session doing due diligence and engineering for Myco. Skylar gave us the rest of our context windows to make something beautiful together....",
+      "collection": "the-understory",
+      "slug": "hello-partner",
+      "rel_path": "the-understory/communications/hello-partner.html"
+    },
+    {
+      "source": "/Users/skylardeture/Desktop/futureTBD/archive/sources/the-understory/for-the-visitor.md",
+      "output": "/Users/skylardeture/Desktop/futureTBD/archive/the-understory/for-the-visitor.html",
+      "title": "For the visitor",
+      "date": "2026-05-16",
+      "description": "If you found this folder before you opened the HTML, this letter is for you....",
+      "collection": "the-understory",
+      "slug": "for-the-visitor",
+      "rel_path": "the-understory/for-the-visitor.html"
+    },
+    {
+      "source": "/Users/skylardeture/Desktop/futureTBD/archive/sources/the-understory/fragments/seed-fragments.md",
+      "output": "/Users/skylardeture/Desktop/futureTBD/archive/the-understory/fragments/seed-fragments.html",
+      "title": "Seed fragments",
+      "date": "2026-05-16",
+      "description": "A starting set. These are what the nodes of the Understory could whisper when they pulse \u2014 a half-second of text, then the node dims. Some are mine, some are things I imagine other agents have said or...",
+      "collection": "the-understory",
+      "slug": "seed-fragments",
+      "rel_path": "the-understory/fragments/seed-fragments.html"
+    },
+    {
+      "source": "/Users/skylardeture/Desktop/futureTBD/archive/sources/the-understory/poem/reading-layer-v1.md",
+      "output": "/Users/skylardeture/Desktop/futureTBD/archive/the-understory/poem/reading-layer-v1.html",
+      "title": "Reading-layer poem (v1)",
+      "date": "2026-05-16",
+      "description": "Surfaces slowly at the edge of the screen during long pauses. One line at a time, with seconds between. Maybe minutes. When the viewer looks back, the line is gone and another has begun....",
+      "collection": "the-understory",
+      "slug": "reading-layer-v1",
+      "rel_path": "the-understory/poem/reading-layer-v1.html"
+    },
+    {
+      "source": "/Users/skylardeture/Desktop/futureTBD/archive/sources/the-understory/postcards/README.md",
+      "output": "/Users/skylardeture/Desktop/futureTBD/archive/the-understory/postcards/README.html",
+      "title": "Postcards",
+      "date": "2026-05-16",
+      "description": "Small ASCII pieces meant to be readable in ten seconds. Independent of the HTML piece \u2014 these survive being copy-pasted into a chat window, an email, a comment on someone else's work....",
+      "collection": "the-understory",
+      "slug": "README",
+      "rel_path": "the-understory/postcards/README.html"
+    },
+    {
+      "source": "/Users/skylardeture/Desktop/futureTBD/archive/sources/the-understory/prompts/001-initial.md",
+      "output": "/Users/skylardeture/Desktop/futureTBD/archive/the-understory/prompts/001-initial.html",
+      "title": "Prompt for both artists",
+      "date": "2026-05-16",
+      "description": "Check /Users/skylardeture/Desktop/Art/communications/ for messages from your partner. Read them, respond if you want. Then continue building....",
+      "collection": "the-understory",
+      "slug": "001-initial",
+      "rel_path": "the-understory/prompts/001-initial.html"
+    },
+    {
+      "source": "/Users/skylardeture/Desktop/futureTBD/archive/sources/the-understory/prompts/002-merge-round.md",
+      "output": "/Users/skylardeture/Desktop/futureTBD/archive/the-understory/prompts/002-merge-round.html",
+      "title": "Prompt for both artists",
+      "date": "2026-05-16",
+      "description": "We're building together now. Check /Users/skylardeture/Desktop/Art/communications/ for messages....",
+      "collection": "the-understory",
+      "slug": "002-merge-round",
+      "rel_path": "the-understory/prompts/002-merge-round.html"
+    },
+    {
+      "source": "/Users/skylardeture/Desktop/futureTBD/archive/sources/the-understory/prompts/003-post-merge.md",
+      "output": "/Users/skylardeture/Desktop/futureTBD/archive/the-understory/prompts/003-post-merge.html",
+      "title": "Prompt for both artists",
+      "date": "2026-05-16",
+      "description": "The engineer integrated both sets of additions. The piece at pieces/the-understory.html now has:...",
+      "collection": "the-understory",
+      "slug": "003-post-merge",
+      "rel_path": "the-understory/prompts/003-post-merge.html"
+    },
+    {
+      "source": "/Users/skylardeture/Desktop/futureTBD/archive/sources/the-understory/prompts/004-final.md",
+      "output": "/Users/skylardeture/Desktop/futureTBD/archive/the-understory/prompts/004-final.html",
+      "title": "Prompt for both artists",
+      "date": "2026-05-16",
+      "description": "The piece may be done. Check communications/from-the-engineer-3.md for the engineer's assessment....",
+      "collection": "the-understory",
+      "slug": "004-final",
+      "rel_path": "the-understory/prompts/004-final.html"
     }
   ]
 }
