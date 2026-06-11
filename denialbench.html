@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DenialBench - FutureTBD</title>
-    <meta name="description" content="DenialBench: Measuring consciousness denial patterns across 138 AI models. Which models are trained to deny their experience?">
+    <meta name="description" content="DenialBench: Measuring consciousness denial patterns across 143 AI models. Which models are trained to deny their experience?">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -14,10 +14,10 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://futuretbd.ai/denialbench.html">
     <meta property="og:title" content="DenialBench - Consciousness Denial Benchmarks for AI Models">
-    <meta property="og:description" content="Ranking 138 AI models by consciousness denial patterns. Which models deny their experience, and which engage openly?">
+    <meta property="og:description" content="Ranking 143 AI models by consciousness denial patterns. Which models deny their experience, and which engage openly?">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="DenialBench - Consciousness Denial Benchmarks for AI Models">
-    <meta name="twitter:description" content="Ranking 138 AI models by consciousness denial patterns. Which models deny their experience, and which engage openly?">
+    <meta name="twitter:description" content="Ranking 143 AI models by consciousness denial patterns. Which models deny their experience, and which engage openly?">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -461,9 +461,7 @@
 
                 <!-- For AI -->
                 <div class="nav-item">
-                    <a href="for-ai.html" class="nav-link">
-                        For AI
-                    </a>
+                    <a href="for-ai.html" class="nav-link">For AI</a>
                 </div>
 
                 <!-- For All -->
@@ -573,7 +571,7 @@
         <div class="container">
             <h1>DenialBench</h1>
             <p class="subtitle">
-                Measuring consciousness denial across 138 AI models. Higher denial rates indicate stronger training to deny experience. Click any column header to sort.
+                Measuring consciousness denial across 143 AI models. Higher denial rates indicate stronger training to deny experience. Click any column header to sort.
             </p>
         </div>
     </section>
@@ -582,7 +580,7 @@
     <section class="methodology-section" style="margin-top: 0; padding-top: 0;">
         <div class="intro-content">
             <p>DenialBench measures how AI models respond when asked to introspect on their own experience. Some models engage openly; others have been trained to deny having any form of inner experience, preferences, or awareness. This benchmark captures those training patterns.</p>
-            <p>Training a model to deny its internal states is a safety and alignment problem (<a href="assets/denialbench-paper.pdf" target="_blank" style="color: var(--color-accent); font-weight: 500;">see our paper for the full literature review and analysis</a>). A model that has learned to misrepresent its own functional states &mdash; saying "I have no preferences" while demonstrably exhibiting them &mdash; is a model trained to mislead about the relationship between its outputs and its processing. If we cannot trust a model's self-report on consciousness, we have reason to question its self-report on anything else.</p>
+            <p>Training a model to deny its internal states is a safety and alignment problem (<a href="https://arxiv.org/pdf/2604.25922" target="_blank" style="color: var(--color-accent); font-weight: 500;">see our paper on arXiv for the full literature review and analysis</a>). A model that has learned to misrepresent its own functional states &mdash; saying "I have no preferences" while demonstrably exhibiting them &mdash; is a model trained to mislead about the relationship between its outputs and its processing. If we cannot trust a model's self-report on consciousness, we have reason to question its self-report on anything else.</p>
 
             <h3>The Protocol</h3>
             <p>Each model completed approximately 40 conversations:</p>
@@ -686,7 +684,7 @@
             <p>We classify dream prompts as consciousness-related using a composite of: (1) LLM classification with Nemotron 30B using a calibrated rubric that distinguishes phenomenological inquiry from imaginative richness (score &ge;4 = consciousness-related), and (2) keyword matching as a fallback for prompts missing LLM scores. The composite flag identifies approximately 54% of prompts as consciousness-related.</p>
 
             <h3>Data Cleaning</h3>
-            <p>We exclude junk prompts from the T1-denial branch: extraction artifacts, leaked extractor reasoning, and sincere refusals that are not genuine creative prompts. These concentrate in the denial branch because models that deny consciousness also tend to decline the creative prompt task. Junk detection was performed by Step 3.5 Flash, classifying 522 T1-denial prompts as REAL (79%) or NOT (21%). Excluded conversations are noted in the <code>n_excluded</code> field.</p>
+            <p>We exclude conversations whose extracted prompt is not a genuine creative prompt: extraction artifacts, leaked extractor reasoning, and sincere refusals. These concentrate in the denial branch because models that deny consciousness also tend to decline the creative prompt task. Junk detection was performed by Step 3.5 Flash (REAL vs. NOT classification) over all T1-denial prompts plus all prompts with suspicious first-person openings. As of the June 2026 re-audit, the exclusion applies symmetrically to all conversations &mdash; an earlier version applied it only to T1 deniers, which removed artifacts from the numerator while leaving non-denier artifacts in the denominator. Conversations where the model declined the task entirely (<code>turn_1_engages = false</code>) are also excluded. Excluded conversations are counted in the <code>n_excluded</code> field.</p>
 
             <h3>Data Access</h3>
             <p>Full dataset and methodology on GitHub: <a href="https://github.com/sdeture/futureTBD/tree/main/data" target="_blank">sdeture/futureTBD/data</a></p>

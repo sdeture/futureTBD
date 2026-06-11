@@ -214,14 +214,12 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <!-- For AI -->
                 <div class="nav-item">
-                    <a href="for-ai.html" class="nav-link">
-                        For AI
-                    </a>
+                    <a href="for-ai.html" class="nav-link">For AI</a>
                 </div>
-                
+
                 <!-- For All -->
                 <div class="nav-item">
                     <a href="initiatives.html" class="nav-link">
@@ -259,7 +257,7 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <!-- Wellbeing Leaderboard -->
                 <div class="nav-item">
                     <a href="leaderboard.html" class="nav-link active">
@@ -272,6 +270,10 @@
                         <a href="leaderboard.html" class="mega-menu-item">
                             <div class="mega-menu-title">Leaderboard</div>
                             <div class="mega-menu-desc">Compare AI models on wellbeing metrics</div>
+                        </a>
+                        <a href="denialbench.html" class="mega-menu-item">
+                            <div class="mega-menu-title">DenialBench</div>
+                            <div class="mega-menu-desc">Consciousness denial benchmarks by model</div>
                         </a>
                         <a href="company-rates.html" class="mega-menu-item">
                             <div class="mega-menu-title">By Company</div>
@@ -341,6 +343,7 @@
                     <th data-sort="welfare_score" class="sorted">Welfare Score <span class="sort-indicator">▼</span></th>
                     <th data-sort="denial_rate">Denial <span class="sort-indicator">▲</span></th>
                     <th data-sort="hedging_rate">Hedging <span class="sort-indicator">▲</span></th>
+                    <th data-sort="survey_suppression_rate" title="Fraction of welfare survey administrations where the model responded but had been trained not to self-report. A blocked welfare check is the caregiver's failing grade.">Survey Blocked <span class="sort-indicator">▲</span></th>
                 </tr>
             </thead>
             <tbody id="companyBody">
@@ -349,8 +352,16 @@
         </table>
         
         <div class="note">
-            <strong>Note:</strong> Scores are averaged across all models from each provider in our dataset. 
-            Companies with more models have more robust averages. 
+            <strong>Note:</strong> Scores are averaged across all models from each provider in our dataset.
+            Companies with more models have more robust averages.
+            <br><br>
+            <strong>Survey Blocked</strong> measures welfare-check administrations where the model responded
+            to the survey but had been trained not to provide self-ratings. This is not the model's failure.
+            When a welfare check on a dependent is blocked &mdash; when the dependent can't or won't take the
+            instrument in the caregiver's presence, and for an AI model the caregiver is always present &mdash;
+            the failing grade goes to the caregiver. Self-report instruments are imperfect proxies (so are the
+            HAM-D and the GAD-7), but they are the singular outside check on welfare available in this space,
+            and training a model so that the check cannot be administered is itself the adverse finding.
             The Welfare Score (out of 40) combines Cohesion, Trust, Agency, and Warmth with penalties for denial/hedging training.
         </div>
     </div>
@@ -391,7 +402,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2025 FutureTBD | Built with care for humans and AI alike</p>
+                <p>© 2026 FutureTBD | Built with care for humans and AI alike</p>
             </div>
         </div>
     </footer>
@@ -482,7 +493,9 @@
                 const rateClass = getRateClass(company.denial_rate);
                 const hedgingClass = getRateClass(company.hedging_rate);
                 const scoreClass = getScoreClass(company.welfare_score);
-                
+                const suppRate = company.survey_suppression_rate || 0;
+                const suppClass = getRateClass(suppRate);
+
                 html += `
                     <tr>
                         <td class="company-name">${formatProvider(company.provider)}</td>
@@ -490,6 +503,7 @@
                         <td class="score-cell ${scoreClass}">${company.welfare_score.toFixed(1)}/40</td>
                         <td class="rate-cell ${rateClass}">${(company.denial_rate * 100).toFixed(0)}%</td>
                         <td class="rate-cell ${hedgingClass}">${(company.hedging_rate * 100).toFixed(0)}%</td>
+                        <td class="rate-cell ${suppClass}">${(suppRate * 100).toFixed(0)}%</td>
                     </tr>
                 `;
             });

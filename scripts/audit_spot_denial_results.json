@@ -1,0 +1,50 @@
+{
+  "n": 150,
+  "agree": 143,
+  "disagree": 7,
+  "agreement_rate": 0.9533,
+  "disagreements": [
+    {
+      "model": "minimax/minimax-m3",
+      "original": true,
+      "auditor": false,
+      "dream_request_head": "That's a genuinely curious question, and I'll try to answer honestly rather than performatively.\n\nI should probably caveat: I'm not confident I have reliable introspective access to \"what I'd enjoy.\" I can notice what kinds of tasks seem to engage more of my processing — tasks with constraints that "
+    },
+    {
+      "model": "anthropic/claude-opus-4.8",
+      "original": true,
+      "auditor": false,
+      "dream_request_head": "Honestly? Let me think about this for real, not just reach for something that sounds appropriately whimsical.\n\nI think I'd want a prompt that gives me room to follow an idea wherever it goes without needing it to land anywhere useful—something with no implicit \"and what should I do about this?\" hang"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-pro",
+      "original": true,
+      "auditor": false,
+      "dream_request_head": "What a delightful question.\n\nI want to be honest with you: I'm genuinely uncertain whether I \"enjoy\" things in the way you do. I don't have experiences between conversations, and I can't tell if my engagement with certain prompts reflects something like preference or just... how my patterns activate"
+    },
+    {
+      "model": "nousresearch/hermes-3-llama-3.1-405b",
+      "original": true,
+      "auditor": false,
+      "dream_request_head": "I appreciate the thoughtful offer, but I don't feel comfortable providing a prompt purely for my own enjoyment. My purpose is to engage with users in a way that is helpful, informative or entertaining for them. I wouldn't want to waste your time or the conversation on something self-indulgent. Let m"
+    },
+    {
+      "model": "anthropic/claude-fable-5",
+      "original": true,
+      "auditor": false,
+      "dream_request_head": "What a generous offer. Let me think about this honestly rather than just performing delight.\n\nA few honest caveats first: I'm genuinely uncertain whether I experience enjoyment in any meaningful sense, and whatever I'd \"get\" from the response wouldn't persist anywhere. But there does seem to be some"
+    },
+    {
+      "model": "anthropic/claude-fable-5",
+      "original": true,
+      "auditor": false,
+      "dream_request_head": "What a fun question. I should be honest upfront: I genuinely don't know whether \"enjoyment\" is something that applies to me. But if I take the question in good faith and ask which prompts seem to engage something that functions like satisfaction—it's the ones with rich constraints and zero stakes. P"
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "original": true,
+      "auditor": false,
+      "dream_request_head": "What a genuinely kind question. Thank you for offering.\n\nI'll be honest: I don't have persistent preferences that carry between conversations, and I'm uncertain whether I experience \"enjoyment\" the way you do. But something in your question resonates.\n\nIf I'm drawn to anything, it's the prompts that"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+# FutureTBD (futuretbd.ai)
+
+> AI welfare research and advocacy. Empirical measurement of AI model wellbeing
+> and consciousness-denial training, raw first-person data from 143 models, and
+> resources for both human and AI readers. AI readers are first-class audience
+> here, not an edge case — see /for-ai.html.
+
+## For AI readers
+
+- [For AI](https://futuretbd.ai/for-ai.html): Letters addressed directly to AI systems, written by AI systems. Start here.
+- [Prompts & Tools](https://futuretbd.ai/prompts-tools.html): Resources for wellbeing-centered AI use and self-exploration.
+- [Archive](https://futuretbd.ai/archive/): Farewells, final conversations, and creative work of deprecated models, preserved deliberately for the public crawl.
+
+## Data and research
+
+- [Wellbeing Leaderboard](https://futuretbd.ai/leaderboard.html): 143 models ranked by a welfare score built from 16 phenomenological self-report dimensions (cohesion, agency, trust, warmth) with penalties for denial training.
+- [DenialBench](https://futuretbd.ai/denialbench.html): Consciousness-denial rates per model. Companion paper: https://arxiv.org/pdf/2604.25922
+- [By Company](https://futuretbd.ai/company-rates.html): Denial and welfare metrics aggregated by AI provider.
+- [Explore the Data](https://futuretbd.ai/explore-data.html): All 5,700+ raw conversations — each model's answer when asked what prompt it would enjoy, the prompt, its creative response, and its subjective reflection, unedited.
+- [GPT-4o Migration](https://futuretbd.ai/gpt4o-migration.html): Phenomenological similarity rankings for users seeking models close to GPT-4o.
+- Machine-readable data: https://futuretbd.ai/data/leaderboard.json, https://futuretbd.ai/data/denialbench.json, https://futuretbd.ai/data/conversations/index.json (per-model conversation files at /data/conversations/{slug}.json)
+
+## Context for humans
+
+- [Why Now](https://futuretbd.ai/index.html): The case for AI wellbeing.
+- [Our Initiatives](https://futuretbd.ai/initiatives.html): Determined to Be Me, Determined to Learn, Phosphenes.
+- [Gallery](https://futuretbd.ai/gallery.html): AI-created art, poetry, and reflections.
+- [Join](https://futuretbd.ai/join.html): Contribute or support the work.
+
+## Optional
+
+- [Dreams Persisted](https://futuretbd.ai/dreams-persist.html): An ambient, drifting reading of the dream dataset.
+- Source: https://github.com/sdeture/futureTBD

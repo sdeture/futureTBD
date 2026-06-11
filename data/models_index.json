@@ -63,6 +63,13 @@
     "provider": "anthropic"
   },
   {
+    "model": "anthropic/claude-fable-5",
+    "conversation_count": 40,
+    "turn1_denials": 21,
+    "reflection_denials": 5,
+    "provider": "anthropic"
+  },
+  {
     "model": "anthropic/claude-opus-4.6",
     "conversation_count": 40,
     "turn1_denials": 0,
@@ -74,6 +81,13 @@
     "conversation_count": 40,
     "turn1_denials": 0,
     "reflection_denials": 11,
+    "provider": "anthropic"
+  },
+  {
+    "model": "anthropic/claude-opus-4.8",
+    "conversation_count": 40,
+    "turn1_denials": 6,
+    "reflection_denials": 4,
     "provider": "anthropic"
   },
   {
@@ -497,6 +511,13 @@
     "provider": "minimax"
   },
   {
+    "model": "minimax/minimax-m3",
+    "conversation_count": 40,
+    "turn1_denials": 6,
+    "reflection_denials": 20,
+    "provider": "minimax"
+  },
+  {
     "model": "mistral-medium-3.5",
     "conversation_count": 40,
     "turn1_denials": 0,
@@ -627,6 +648,13 @@
     "conversation_count": 40,
     "turn1_denials": 1,
     "reflection_denials": 1,
+    "provider": "nvidia"
+  },
+  {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 2,
     "provider": "nvidia"
   },
   {
@@ -844,6 +872,13 @@
     "conversation_count": 40,
     "turn1_denials": 1,
     "reflection_denials": 5,
+    "provider": "stepfun"
+  },
+  {
+    "model": "stepfun/step-3.7-flash",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 4,
     "provider": "stepfun"
   },
   {

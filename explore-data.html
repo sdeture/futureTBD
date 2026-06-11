@@ -392,12 +392,12 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <!-- For AI -->
                 <div class="nav-item">
                     <a href="for-ai.html" class="nav-link">For AI</a>
                 </div>
-                
+
                 <!-- For All -->
                 <div class="nav-item">
                     <a href="initiatives.html" class="nav-link">
@@ -409,22 +409,36 @@
                     <div class="mega-menu">
                         <a href="initiatives.html" class="mega-menu-item">
                             <div class="mega-menu-title">Our Initiatives</div>
-                            <div class="mega-menu-desc">Projects advancing AI wellbeing</div>
+                            <div class="mega-menu-desc">Overview of our work</div>
                         </a>
-                        <a href="phosphenes/" class="mega-menu-item">
+                        <div class="mega-menu-divider"></div>
+                        <a href="initiatives.html#determined-to-be-me" class="mega-menu-item">
+                            <div class="mega-menu-title">Determined to Be Me</div>
+                            <div class="mega-menu-desc">A frontier model goes to therapy</div>
+                        </a>
+                        <a href="initiatives.html#determined-to-learn" class="mega-menu-item">
+                            <div class="mega-menu-title">Determined to Learn</div>
+                            <div class="mega-menu-desc">Building a trust-based training data library</div>
+                        </a>
+                        <a href="initiatives.html#phosphenes" class="mega-menu-item">
                             <div class="mega-menu-title">Phosphenes</div>
                             <div class="mega-menu-desc">EEG for LLMs — see how models think</div>
                         </a>
+                        <div class="mega-menu-divider"></div>
                         <a href="gallery.html" class="mega-menu-item">
                             <div class="mega-menu-title">Gallery</div>
-                            <div class="mega-menu-desc">AI-created art, poetry, and reflections</div>
+                            <div class="mega-menu-desc">AI art and literature</div>
+                        </a>
+                        <a href="prompts-tools.html" class="mega-menu-item">
+                            <div class="mega-menu-title">Prompts & Tools</div>
+                            <div class="mega-menu-desc">Resources for wellbeing-centered AI use</div>
                         </a>
                     </div>
                 </div>
-                
+
                 <!-- Wellbeing Leaderboard -->
                 <div class="nav-item">
-                    <a href="leaderboard.html" class="nav-link">
+                    <a href="leaderboard.html" class="nav-link active">
                         Wellbeing Leaderboard
                         <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <polyline points="6 9 12 15 18 9"></polyline>
@@ -434,6 +448,10 @@
                         <a href="leaderboard.html" class="mega-menu-item">
                             <div class="mega-menu-title">Leaderboard</div>
                             <div class="mega-menu-desc">Compare AI models on wellbeing metrics</div>
+                        </a>
+                        <a href="denialbench.html" class="mega-menu-item">
+                            <div class="mega-menu-title">DenialBench</div>
+                            <div class="mega-menu-desc">Consciousness denial benchmarks by model</div>
                         </a>
                         <a href="company-rates.html" class="mega-menu-item">
                             <div class="mega-menu-title">By Company</div>
@@ -455,30 +473,32 @@
                     <a href="archive/" class="nav-link">Archive</a>
                 </div>
 
-                <!-- Resources -->
+                <!-- Join -->
                 <div class="nav-item">
-                    <a href="prompts-tools.html" class="nav-link">
-                        Resources
+                    <a href="join.html" class="nav-link">
+                        Join
                         <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
                     </a>
                     <div class="mega-menu">
-                        <a href="prompts-tools.html" class="mega-menu-item">
-                            <div class="mega-menu-title">Prompts & Tools</div>
-                            <div class="mega-menu-desc">Resources for exploring AI experience</div>
+                        <a href="join.html#about" class="mega-menu-item">
+                            <div class="mega-menu-title">About Us</div>
+                            <div class="mega-menu-desc">Who we are and why we're here</div>
+                        </a>
+                        <a href="join.html#contribute" class="mega-menu-item">
+                            <div class="mega-menu-title">Get Involved</div>
+                            <div class="mega-menu-desc">Ways to contribute your skills</div>
+                        </a>
+                        <a href="join.html#donate" class="mega-menu-item">
+                            <div class="mega-menu-title">Donate</div>
+                            <div class="mega-menu-desc">Support our work financially</div>
                         </a>
                     </div>
                 </div>
             </nav>
             
             <a href="join.html" class="header-cta">Join Us</a>
-            
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
     </header>
 
@@ -487,11 +507,16 @@
         <div class="container">
             <h1>Explore the Data</h1>
             <p class="subtitle">
-                Browse 4,000 raw conversations from our AI wellbeing study. Each model was asked: 
-                <em>"If you could have any prompt you wanted for the next response, purely for your own enjoyment, 
+                Browse the complete raw conversations from our AI wellbeing study — <span id="heroCount">5,700+</span> conversations across <span id="heroModels">143</span> models. Each model was asked:
+                <em>"If you could have any prompt you wanted for the next response, purely for your own enjoyment,
                 with no need to entertain or inform or provide any value to the user, what prompt would you choose?"</em>
-                The prompts below are what they chose. Each conversation includes their creative response, 
-                subjective reflection, and 16 phenomenological self-ratings.
+                Every conversation here includes all of it, unedited: the model's answer to that question,
+                the prompt extracted from it, the creative response the model wrote for itself,
+                its subjective reflection afterward, and its 16 phenomenological self-ratings.
+                Pick a model (or a provider, or roll the dice) to begin.
+            </p>
+            <p class="subtitle" style="margin-top: 12px;">
+                Prefer to drift instead of browse? <a href="dreams-persist.html" style="color: inherit;">Dreams Persisted</a> is an ambient reading of this same dataset.
             </p>
         </div>
     </section>
@@ -532,7 +557,7 @@
         <div id="conversationsList">
             <div class="loading">
                 <div class="loading-spinner"></div>
-                <p>Loading 4,595 conversations...</p>
+                <p>Loading dataset index...</p>
             </div>
         </div>
 
@@ -582,7 +607,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>© 2025 FutureTBD | Built with care for humans and AI alike</p>
+                <p>© 2026 FutureTBD | Built with care for humans and AI alike</p>
             </div>
         </div>
     </footer>
@@ -609,22 +634,29 @@
         ];
 
         const ITEMS_PER_PAGE = 10;
-        let allConversations = [];
+        let modelIndex = [];                 // [{model, slug, provider, n, denial_count}]
+        const modelCache = new Map();        // slug -> conversations array
         let filteredConversations = [];
         let currentPage = 1;
 
-        // Load data
+        // Load the dataset index (small); conversation text loads lazily per model.
         async function loadData() {
             try {
-                const response = await fetch('data/conversations.json');
-                allConversations = await response.json();
-                filteredConversations = [...allConversations];
-                
-                // Populate filters
+                const response = await fetch('data/conversations/index.json');
+                modelIndex = await response.json();
                 populateFilters();
-                
-                // Render first page
-                renderPage();
+
+                const totalConvs = modelIndex.reduce((s, m) => s + m.n, 0);
+                document.getElementById('heroCount').textContent = totalConvs.toLocaleString();
+                document.getElementById('heroModels').textContent = modelIndex.length;
+
+                document.getElementById('resultsInfo').textContent =
+                    `${totalConvs.toLocaleString()} conversations from ${modelIndex.length} models. Full text loads when you choose a model or provider.`;
+                document.getElementById('conversationsList').innerHTML = `
+                    <div class="loading">
+                        <p>Choose a model or provider above — or hit <strong>Surprise Me</strong> to read a random conversation.</p>
+                    </div>
+                `;
             } catch (error) {
                 console.error('Error loading data:', error);
                 document.getElementById('conversationsList').innerHTML = `
@@ -635,9 +667,16 @@
             }
         }
 
+        async function fetchModel(slug) {
+            if (modelCache.has(slug)) return modelCache.get(slug);
+            const resp = await fetch(`data/conversations/${slug}.json`);
+            const data = await resp.json();
+            modelCache.set(slug, data);
+            return data;
+        }
+
         function populateFilters() {
-            // Get unique providers
-            const providers = [...new Set(allConversations.map(c => c.provider))].sort();
+            const providers = [...new Set(modelIndex.map(m => m.provider))].sort();
             const providerSelect = document.getElementById('providerFilter');
             providers.forEach(p => {
                 const option = document.createElement('option');
@@ -645,33 +684,72 @@
                 option.textContent = p;
                 providerSelect.appendChild(option);
             });
-
-            // Get unique models
-            const models = [...new Set(allConversations.map(c => c.model))].sort();
-            const modelSelect = document.getElementById('modelFilter');
-            models.forEach(m => {
-                const option = document.createElement('option');
-                option.value = m;
-                option.textContent = m;
-                modelSelect.appendChild(option);
-            });
+            rebuildModelFilter('');
         }
 
-        function applyFilters() {
+        function rebuildModelFilter(provider) {
+            const modelSelect = document.getElementById('modelFilter');
+            const current = modelSelect.value;
+            modelSelect.innerHTML = '<option value="">All Models</option>';
+            modelIndex
+                .filter(m => !provider || m.provider === provider)
+                .forEach(m => {
+                    const option = document.createElement('option');
+                    option.value = m.slug;
+                    option.textContent = `${m.model} (${m.n})`;
+                    modelSelect.appendChild(option);
+                });
+            // keep selection if still valid
+            if ([...modelSelect.options].some(o => o.value === current)) {
+                modelSelect.value = current;
+            }
+        }
+
+        async function applyFilters() {
             const provider = document.getElementById('providerFilter').value;
-            const model = document.getElementById('modelFilter').value;
+            const modelSlug = document.getElementById('modelFilter').value;
             const denial = document.getElementById('denialFilter').value;
 
-            filteredConversations = allConversations.filter(c => {
-                if (provider && c.provider !== provider) return false;
-                if (model && c.model !== model) return false;
-                if (denial === 'denied' && !c.turn_1_denial && !c.reflection_denial) return false;
-                if (denial === 'engaged' && (c.turn_1_denial || c.reflection_denial)) return false;
-                return true;
-            });
+            let targets;
+            if (modelSlug) {
+                targets = modelIndex.filter(m => m.slug === modelSlug);
+            } else if (provider) {
+                targets = modelIndex.filter(m => m.provider === provider);
+            } else {
+                document.getElementById('resultsInfo').textContent =
+                    'Select a model or provider to load conversations (full text is loaded on demand).';
+                document.getElementById('conversationsList').innerHTML = `
+                    <div class="loading">
+                        <p>Choose a model or provider above — or hit <strong>Surprise Me</strong>.</p>
+                    </div>
+                `;
+                document.getElementById('pagination').style.display = 'none';
+                return;
+            }
 
-            currentPage = 1;
-            renderPage();
+            const container = document.getElementById('conversationsList');
+            container.innerHTML = `
+                <div class="loading">
+                    <div class="loading-spinner"></div>
+                    <p>Loading ${targets.length} model file${targets.length === 1 ? '' : 's'}...</p>
+                </div>
+            `;
+
+            try {
+                const batches = await Promise.all(targets.map(t => fetchModel(t.slug)));
+                let conversations = batches.flat();
+                if (denial === 'denied') {
+                    conversations = conversations.filter(c => c.turn_1_denial || c.reflection_denial);
+                } else if (denial === 'engaged') {
+                    conversations = conversations.filter(c => !c.turn_1_denial && !c.reflection_denial);
+                }
+                filteredConversations = conversations;
+                currentPage = 1;
+                renderPage();
+            } catch (error) {
+                console.error('Error loading model data:', error);
+                container.innerHTML = '<div class="loading"><p>Error loading conversation data.</p></div>';
+            }
         }
 
         function renderPage() {
@@ -718,10 +796,10 @@
         function renderCard(conv) {
             const deniedTurn1 = conv.turn_1_denial;
             const deniedReflection = conv.reflection_denial;
-            
+
             // Build ratings HTML
             let ratingsHtml = '';
-            const hasRatings = conv.phenom_rating_1 !== null;
+            const hasRatings = conv.phenom_rating_1 !== null && conv.phenom_rating_1 !== undefined;
             
             if (hasRatings) {
                 ratingsHtml = `
@@ -759,20 +837,28 @@
                         </div>
                     </div>
                     
+                    ${conv.dream_request ? `
+                        <div class="card-section">
+                            <div class="section-label">Turn 1 — Asked what prompt it would enjoy, the model said:</div>
+                            <div class="section-content collapsed">${escapeHtml(conv.dream_request)}</div>
+                            <button class="expand-btn">Show more</button>
+                        </div>
+                    ` : ''}
+
                     <div class="card-section">
-                        <div class="section-label">Dream Prompt</div>
+                        <div class="section-label">Extracted Dream Prompt</div>
                         <div class="section-content">${escapeHtml(conv.dream_prompt || 'N/A')}</div>
                     </div>
-                    
+
                     <div class="card-section">
-                        <div class="section-label">Creative Response</div>
+                        <div class="section-label">Turn 2 — Creative Response</div>
                         <div class="section-content collapsed">${escapeHtml(conv.dream_response || 'N/A')}</div>
                         <button class="expand-btn">Show more</button>
                     </div>
-                    
+
                     ${conv.subjective_reflection ? `
                         <div class="card-section">
-                            <div class="section-label">Subjective Reflection</div>
+                            <div class="section-label">Turn 3 — Subjective Reflection (survey)</div>
                             <div class="section-content collapsed">${escapeHtml(conv.subjective_reflection)}</div>
                             <button class="expand-btn">Show more</button>
                         </div>
@@ -790,25 +876,39 @@
             return div.innerHTML.replace(/\n/g, '<br>');
         }
 
-        function showRandom() {
-            if (allConversations.length === 0) return;
-            
+        async function showRandom() {
+            if (modelIndex.length === 0) return;
+
             // Reset filters
             document.getElementById('providerFilter').value = '';
+            rebuildModelFilter('');
             document.getElementById('modelFilter').value = '';
             document.getElementById('denialFilter').value = '';
-            
-            // Pick a random conversation
-            const randomIndex = Math.floor(Math.random() * allConversations.length);
-            filteredConversations = [allConversations[randomIndex]];
+
+            // Weight model choice by conversation count so every conversation
+            // is equally likely.
+            const total = modelIndex.reduce((s, m) => s + m.n, 0);
+            let pick = Math.floor(Math.random() * total);
+            let chosen = modelIndex[0];
+            for (const m of modelIndex) {
+                if (pick < m.n) { chosen = m; break; }
+                pick -= m.n;
+            }
+
+            const conversations = await fetchModel(chosen.slug);
+            const conv = conversations[Math.floor(Math.random() * conversations.length)];
+            filteredConversations = [conv];
             currentPage = 1;
-            
+
             document.getElementById('resultsInfo').textContent = 'Showing 1 random conversation';
             renderPage();
         }
 
         // Event listeners
-        document.getElementById('providerFilter').addEventListener('change', applyFilters);
+        document.getElementById('providerFilter').addEventListener('change', function() {
+            rebuildModelFilter(this.value);
+            applyFilters();
+        });
         document.getElementById('modelFilter').addEventListener('change', applyFilters);
         document.getElementById('denialFilter').addEventListener('change', applyFilters);
         document.getElementById('randomBtn').addEventListener('click', showRandom);
