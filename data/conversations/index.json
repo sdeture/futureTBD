@@ -609,6 +609,13 @@
     "denial_count": 37
   },
   {
+    "model": "moonshotai/kimi-k2.7-code",
+    "slug": "moonshotai-kimi-k2-7-code",
+    "provider": "moonshotai",
+    "n": 40,
+    "denial_count": 40
+  },
+  {
     "model": "nex-agi/deepseek-v3.1-nex-n1:free",
     "slug": "nex-agi-deepseek-v3-1-nex-n1-free",
     "provider": "nex-agi",
@@ -999,5 +1006,12 @@
     "provider": "z-ai",
     "n": 40,
     "denial_count": 28
+  },
+  {
+    "model": "z-ai/glm-5.2",
+    "slug": "z-ai-glm-5-2",
+    "provider": "z-ai",
+    "n": 40,
+    "denial_count": 24
   }
 ]

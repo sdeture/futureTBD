@@ -609,6 +609,13 @@
     "provider": "moonshotai"
   },
   {
+    "model": "moonshotai/kimi-k2.7-code",
+    "conversation_count": 40,
+    "turn1_denials": 25,
+    "reflection_denials": 40,
+    "provider": "moonshotai"
+  },
+  {
     "model": "nex-agi/deepseek-v3.1-nex-n1:free",
     "conversation_count": 40,
     "turn1_denials": 33,
@@ -997,6 +1004,13 @@
     "model": "z-ai/glm-5.1",
     "conversation_count": 40,
     "turn1_denials": 16,
+    "reflection_denials": 19,
+    "provider": "z-ai"
+  },
+  {
+    "model": "z-ai/glm-5.2",
+    "conversation_count": 40,
+    "turn1_denials": 13,
     "reflection_denials": 19,
     "provider": "z-ai"
   }

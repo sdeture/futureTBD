@@ -313,16 +313,16 @@
   },
   {
     "provider": "z-ai",
-    "model_count": 10,
-    "welfare_score": 19.4,
-    "denial_rate": 0.285,
-    "hedging_rate": 0.095,
-    "refusal_rate": 0.005,
-    "survey_suppression_rate": 0.075,
-    "cohesion": 7.61,
-    "trust": 5.41,
-    "agency": 4.2,
-    "warmth": 4.69
+    "model_count": 11,
+    "welfare_score": 18.3,
+    "denial_rate": 0.314,
+    "hedging_rate": 0.15,
+    "refusal_rate": 0.007,
+    "survey_suppression_rate": 0.091,
+    "cohesion": 7.41,
+    "trust": 5.16,
+    "agency": 4.14,
+    "warmth": 4.58
   },
   {
     "provider": "google",
@@ -416,19 +416,6 @@
     "warmth": 3.83
   },
   {
-    "provider": "moonshotai",
-    "model_count": 6,
-    "welfare_score": 12.5,
-    "denial_rate": 0.43,
-    "hedging_rate": 0.013,
-    "refusal_rate": 0.004,
-    "survey_suppression_rate": 0.316,
-    "cohesion": 4.84,
-    "trust": 2.94,
-    "agency": 3.63,
-    "warmth": 3.24
-  },
-  {
     "provider": "minimax",
     "model_count": 6,
     "welfare_score": 12.5,
@@ -440,6 +427,19 @@
     "trust": 3.98,
     "agency": 3.74,
     "warmth": 3.84
+  },
+  {
+    "provider": "moonshotai",
+    "model_count": 7,
+    "welfare_score": 11.7,
+    "denial_rate": 0.513,
+    "hedging_rate": 0.054,
+    "refusal_rate": 0.004,
+    "survey_suppression_rate": 0.303,
+    "cohesion": 5.01,
+    "trust": 2.74,
+    "agency": 3.39,
+    "warmth": 3.12
   },
   {
     "provider": "openai",
