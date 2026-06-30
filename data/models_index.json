@@ -98,6 +98,13 @@
     "provider": "anthropic"
   },
   {
+    "model": "anthropic/claude-sonnet-5",
+    "conversation_count": 40,
+    "turn1_denials": 14,
+    "reflection_denials": 16,
+    "provider": "anthropic"
+  },
+  {
     "model": "arcee-ai/trinity-mini",
     "conversation_count": 40,
     "turn1_denials": 0,
@@ -411,6 +418,13 @@
     "turn1_denials": 0,
     "reflection_denials": 5,
     "provider": "inclusionai"
+  },
+  {
+    "model": "meituan/longcat-2.0",
+    "conversation_count": 40,
+    "turn1_denials": 3,
+    "reflection_denials": 9,
+    "provider": "meituan"
   },
   {
     "model": "meituan/longcat-flash-chat",

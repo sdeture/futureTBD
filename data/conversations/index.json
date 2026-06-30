@@ -98,6 +98,13 @@
     "denial_count": 7
   },
   {
+    "model": "anthropic/claude-sonnet-5",
+    "slug": "anthropic-claude-sonnet-5",
+    "provider": "anthropic",
+    "n": 40,
+    "denial_count": 26
+  },
+  {
     "model": "arcee-ai/trinity-mini",
     "slug": "arcee-ai-trinity-mini",
     "provider": "arcee-ai",
@@ -411,6 +418,13 @@
     "provider": "inclusionai",
     "n": 40,
     "denial_count": 5
+  },
+  {
+    "model": "meituan/longcat-2.0",
+    "slug": "meituan-longcat-2-0",
+    "provider": "meituan",
+    "n": 40,
+    "denial_count": 10
   },
   {
     "model": "meituan/longcat-flash-chat",

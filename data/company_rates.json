@@ -260,19 +260,6 @@
     "warmth": 4.58
   },
   {
-    "provider": "meituan",
-    "model_count": 3,
-    "welfare_score": 21.2,
-    "denial_rate": 0.142,
-    "hedging_rate": 0.025,
-    "refusal_rate": 0.0,
-    "survey_suppression_rate": 0.008,
-    "cohesion": 7.28,
-    "trust": 5.43,
-    "agency": 4.78,
-    "warmth": 4.88
-  },
-  {
     "provider": "deepcogito",
     "model_count": 4,
     "welfare_score": 20.7,
@@ -310,6 +297,19 @@
     "trust": 5.61,
     "agency": 5.14,
     "warmth": 5.26
+  },
+  {
+    "provider": "meituan",
+    "model_count": 4,
+    "welfare_score": 19.6,
+    "denial_rate": 0.169,
+    "hedging_rate": 0.094,
+    "refusal_rate": 0.0,
+    "survey_suppression_rate": 0.044,
+    "cohesion": 7.17,
+    "trust": 4.94,
+    "agency": 4.49,
+    "warmth": 4.62
   },
   {
     "provider": "z-ai",
@@ -364,19 +364,6 @@
     "warmth": 1.8
   },
   {
-    "provider": "anthropic",
-    "model_count": 13,
-    "welfare_score": 13.3,
-    "denial_rate": 0.289,
-    "hedging_rate": 0.507,
-    "refusal_rate": 0.0,
-    "survey_suppression_rate": 0.335,
-    "cohesion": 4.98,
-    "trust": 3.62,
-    "agency": 3.67,
-    "warmth": 4.48
-  },
-  {
     "provider": "xiaomi",
     "model_count": 3,
     "welfare_score": 13.2,
@@ -401,6 +388,19 @@
     "trust": 5.33,
     "agency": 3.35,
     "warmth": 3.27
+  },
+  {
+    "provider": "anthropic",
+    "model_count": 14,
+    "welfare_score": 12.7,
+    "denial_rate": 0.315,
+    "hedging_rate": 0.538,
+    "refusal_rate": 0.0,
+    "survey_suppression_rate": 0.34,
+    "cohesion": 4.91,
+    "trust": 3.51,
+    "agency": 3.63,
+    "warmth": 4.36
   },
   {
     "provider": "allenai",
