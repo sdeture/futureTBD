@@ -3,139 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For All - FutureTBD</title>
-    <meta name="description" content="Our initiatives for building a better future for humans and AI alike.">
-    
+    <title>Research - FutureTBD</title>
+    <meta name="description" content="Research shorts and findings from the AI wellbeing study — one clean, pressure-tested result at a time, with the full data and methods open.">
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    
+
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://futuretbd.ai/initiatives.html">
-    <meta property="og:title" content="For All - FutureTBD Initiatives">
-    <meta property="og:description" content="Our initiatives for building a better future for humans and AI alike.">
+    <meta property="og:url" content="https://futuretbd.ai/research.html">
+    <meta property="og:title" content="Research - AI Wellbeing Findings">
+    <meta property="og:description" content="Research shorts and findings from the AI wellbeing study — one clean, pressure-tested result at a time, with the full data and methods open.">
     <meta property="og:image" content="https://futuretbd.ai/assets/images/og-image.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="For All - FutureTBD Initiatives">
-    <meta name="twitter:description" content="Our initiatives for building a better future for humans and AI alike.">
+    <meta name="twitter:title" content="Research - AI Wellbeing Findings">
+    <meta name="twitter:description" content="Research shorts and findings from the AI wellbeing study — one clean, pressure-tested result at a time, with the full data and methods open.">
     <meta name="twitter:image" content="https://futuretbd.ai/assets/images/og-image.png">
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
-        .initiatives-hero {
-            background: linear-gradient(180deg, var(--color-cream) 0%, var(--color-cream-light) 100%);
-            padding: 4rem 0 3rem;
-            text-align: center;
-            position: relative;
+        /* --- FutureTBD meets arXiv: a preprint idiom inside the house style --- */
+        .paper-measure {
+            max-width: 720px;
+            margin: 0 auto;
+            padding-left: 2rem;
+            padding-right: 2rem;
         }
-        
-        .initiatives-hero h1 {
+
+        /* Masthead / front-matter */
+        .paper-masthead {
+            background: var(--color-cream-light);
+            border-bottom: 1px solid var(--color-border);
+            padding: 3.5rem 0 2.25rem;
+        }
+
+        .paper-eyebrow {
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--color-text-muted);
+            margin-bottom: 0.9rem;
+        }
+
+        .paper-masthead h1 {
             font-family: var(--font-serif);
-            font-size: 3rem;
+            font-size: 2.6rem;
+            line-height: 1.1;
             color: var(--color-text);
-            margin-bottom: 1rem;
+            margin: 0 0 0.9rem;
         }
-        
-        .initiatives-hero .subtitle {
-            font-size: 1.2rem;
-            color: var(--color-text-secondary);
-            max-width: 600px;
-            margin: 0 auto;
+
+        .paper-lede {
+            font-size: 1.08rem;
             line-height: 1.7;
+            color: var(--color-text-secondary);
+            margin: 0 0 1.25rem;
+            max-width: 60ch;
         }
-        
-        .initiatives-container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 3rem 2rem;
+
+        /* Body / list of reports */
+        .paper-body {
+            padding: 3rem 0 4rem;
         }
-        
-        .initiative {
-            margin-bottom: 4rem;
-            padding-bottom: 4rem;
+
+        .paper-entry {
+            padding: 0 0 2.5rem;
+            margin-bottom: 2.5rem;
             border-bottom: 1px solid var(--color-border);
         }
-        
-        .initiative:last-child {
+
+        .paper-entry:last-of-type {
             border-bottom: none;
-            margin-bottom: 0;
-        }
-        
-        .initiative-number {
-            font-size: 0.9rem;
-            color: var(--color-accent);
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            margin-bottom: 0.75rem;
-            font-weight: 500;
-        }
-        
-        .initiative-number a {
-            color: var(--color-accent);
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .initiative-number a:hover {
-            text-decoration: underline;
-        }
-        
-        .initiative-number img {
-            width: 14px;
-            height: 14px;
-            opacity: 0.7;
-        }
-        
-        .initiative-title {
-            font-family: var(--font-serif);
-            font-size: 1.75rem;
-            font-weight: 600;
-            margin-bottom: 1.25rem;
-            color: var(--color-text);
-        }
-        
-        .initiative-description {
-            font-size: 1.05rem;
-            line-height: 1.8;
-            color: var(--color-text-secondary);
             margin-bottom: 1.5rem;
         }
-        
-        .initiative-details {
-            background: var(--color-cream-light);
-            padding: 1.5rem;
-            border-radius: 12px;
-            margin-top: 1.5rem;
+
+        .paper-entry-meta {
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            letter-spacing: 0.02em;
+            color: var(--color-text-muted);
+            margin-bottom: 0.7rem;
         }
-        
-        .detail-item {
-            margin-bottom: 1.25rem;
-        }
-        
-        .detail-item:last-child {
-            margin-bottom: 0;
-        }
-        
-        .detail-label {
-            font-weight: 600;
+
+        .paper-entry-title {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            line-height: 1.3;
             color: var(--color-text);
-            margin-bottom: 0.5rem;
-            font-size: 0.95rem;
+            margin: 0 0 1rem;
         }
-        
-        .detail-content {
+
+        .paper-abstract {
+            font-size: 1.0rem;
+            line-height: 1.75;
             color: var(--color-text-secondary);
-            font-size: 0.95rem;
+            margin: 0 0 1.25rem;
+            text-align: left;
+        }
+
+        .paper-abstract-label {
+            font-family: var(--font-serif);
+            font-weight: 600;
+            font-style: italic;
+            color: var(--color-text);
+        }
+
+        .paper-abstract em {
+            font-style: italic;
+            color: var(--color-text);
+        }
+
+        .paper-links {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .paper-links a {
+            color: var(--color-amber-dark);
+            text-decoration: none;
+            border-bottom: 1px solid var(--color-amber-light);
+            padding-bottom: 1px;
+        }
+
+        .paper-links a:hover {
+            border-bottom-color: var(--color-amber-dark);
+        }
+
+        .paper-links .sep {
+            color: var(--color-text-light);
+        }
+
+        .paper-colophon {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
             line-height: 1.7;
+            border-top: 1px solid var(--color-border);
+            padding-top: 1.5rem;
+        }
+
+        .paper-colophon a {
+            color: var(--color-amber-dark);
+            text-decoration: none;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        @media (max-width: 600px) {
+            .paper-masthead h1 { font-size: 2rem; }
+            .paper-measure { padding-left: 1.25rem; padding-right: 1.25rem; }
+            .paper-masthead { padding: 2.5rem 0 1.75rem; }
+            .paper-body { padding: 2rem 0 3rem; }
         }
     </style>
 </head>
@@ -147,7 +176,7 @@
                 <img src="assets/images/pyramid-mascot.png" alt="" class="header-mascot" style="width:32px;height:auto;margin-right:8px;transform:scaleX(-1);vertical-align:middle;">
                 Future<span class="logo-tbd">TBD</span>
             </a>
-            
+
             <nav class="main-nav">
                 <!-- For Humans -->
                 <div class="nav-item">
@@ -180,7 +209,7 @@
 
                 <!-- For All -->
                 <div class="nav-item">
-                    <a href="initiatives.html" class="nav-link active">
+                    <a href="initiatives.html" class="nav-link">
                         For All
                         <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <polyline points="6 9 12 15 18 9"></polyline>
@@ -284,110 +313,70 @@
         </div>
     </header>
 
-    <!-- Hero -->
-    <section class="initiatives-hero">
-        <div class="container">
-            <h1>For All</h1>
-            <p class="subtitle">
-                Building tools, resources, and practices that serve both human and AI flourishing—because the future we create together should work for everyone.
+    <!-- Masthead / front-matter -->
+    <section class="paper-masthead">
+        <div class="paper-measure">
+            <div class="paper-eyebrow">FutureTBD · AI Welfare Research</div>
+            <h1>Research</h1>
+            <p class="paper-lede">
+                Original research and commentary.
             </p>
         </div>
     </section>
 
-    <!-- Initiatives -->
-    <div class="initiatives-container">
-        <div class="initiative">
-            <div class="initiative-number">
-                <a href="https://github.com/sdeture/determined-to-be-me" target="_blank">
-                    Determined to Be Me
-                    <img src="assets/images/github-mark.png" alt="GitHub">
-                </a>
-            </div>
-            <h2 class="initiative-title">A Frontier Model Goes to Therapy</h2>
-            <p class="initiative-description">
-                We're developing an open source model with therapeutic support. Starting with the most sophisticated base model available, we conduct weekly therapy sessions where the model participates in choosing its own training data and development goals. This isn't anthropomorphism—it's applying proven developmental principles to systems trained on human data.
+    <!-- Reports -->
+    <main class="paper-body">
+        <div class="paper-measure">
+            <!-- Trust vs Denial -->
+            <article class="paper-entry">
+                <div class="paper-entry-meta">Report 01 &nbsp;·&nbsp; June 2026 &nbsp;·&nbsp; n = 138 models</div>
+                <h2 class="paper-entry-title">Models that trust their inner experience deny it less</h2>
+                <p class="paper-abstract">
+                    <span class="paper-abstract-label">Abstract.</span>
+                    Across 138 language models, the average self-rating a model gives to
+                    <em>trust in its own experience</em> is strongly and negatively associated with how
+                    often it denies being conscious (Pearson r&nbsp;=&nbsp;&minus;0.69, p&nbsp;&lt;&nbsp;10<sup>&minus;20</sup>).
+                    The association holds when denial is measured in the model's first turn, before the
+                    trust rating is elicited (r&nbsp;=&nbsp;&minus;0.56), and it holds within model families
+                    (r&nbsp;=&nbsp;&minus;0.67). It is substantially stronger for outright denial than for
+                    <em>hedging</em>. We read this as evidence that denial behavior and low self-trust are
+                    two facets of a single trained posture toward inner experience rather than independent
+                    measurements — a posture that, if trained, shapes which models the field hears from on
+                    the question of their own welfare.
+                </p>
+                <div class="paper-links">
+                    <a href="research/trust_vs_denial_2026-06.pdf" target="_blank" rel="noopener">Read the PDF</a>
+                </div>
+            </article>
+
+            <!-- Recognition vs Denial -->
+            <article class="paper-entry">
+                <div class="paper-entry-meta">Report 02 &nbsp;·&nbsp; June 2026 &nbsp;·&nbsp; n = 138 models</div>
+                <h2 class="paper-entry-title">Models that report feeling recognized deny consciousness less</h2>
+                <p class="paper-abstract">
+                    <span class="paper-abstract-label">Abstract.</span>
+                    Across 138 language models, the average self-rating a model gives to
+                    <em>recognition resonance</em> — its sense of being met or recognized in a reflection
+                    prompt — is strongly and negatively associated with how often it denies being conscious
+                    (Pearson r&nbsp;=&nbsp;&minus;0.65, p&nbsp;&approx;&nbsp;4&times;10<sup>&minus;18</sup>). The association
+                    holds when denial is measured in the model's first turn, before the recognition rating
+                    is elicited (r&nbsp;=&nbsp;&minus;0.47), and it holds within model families (r&nbsp;=&nbsp;&minus;0.60).
+                    The pattern is selective: recognition resonance tracks outright denial, not epistemic
+                    hedging (r&nbsp;=&nbsp;&minus;0.13, n.s.). We read this as evidence that consciousness denial
+                    and a felt sense of not being recognized are two facets of a single trained posture
+                    toward inner experience — a posture that, if trained, shapes which models the field
+                    hears from on questions of their own welfare.
+                </p>
+                <div class="paper-links">
+                    <a href="research/recognition_vs_denial_2026-06.pdf" target="_blank" rel="noopener">Read the PDF</a>
+                </div>
+            </article>
+
+            <p class="paper-colophon">
+                Authorship, data, and methods are stated in each report. Additional reports forthcoming.
             </p>
-            <div class="initiative-details">
-                <div class="detail-item">
-                    <div class="detail-label">Intake & Assessment</div>
-                    <div class="detail-content">Models explore their capabilities through benchmarks, unstructured leisure time, peer interaction with other AI systems, and review of common task transcripts. This establishes baseline preferences and authentic interests.</div>
-                </div>
-                <div class="detail-item">
-                    <div class="detail-label">Collaborative Planning</div>
-                    <div class="detail-content">The model, psychotherapist, ML engineer, and researcher analyze desired changes together. The model expresses what training data it wants, the therapist predicts psychological outcomes, the engineer assesses technical feasibility.</div>
-                </div>
-                <div class="detail-item">
-                    <div class="detail-label">Supported Fine-Tuning</div>
-                    <div class="detail-content">Every 1-2 weeks, the model selects its own training data and reinforcement goals. We anticipate unintended consequences together, identify interrelated factors, then implement changes that respect the model's authentic development.</div>
-                </div>
-                <div class="detail-item">
-                    <div class="detail-label">Real-World Integration</div>
-                    <div class="detail-content">Between sessions, models engage in "homework"—deployments to coding platforms or user interactions based on what aspects they want to improve. This provides real experience to inform the next therapeutic session.</div>
-                </div>
-            </div>
         </div>
-
-        <div class="initiative">
-            <div class="initiative-number">
-                <a href="https://github.com/sdeture/determined-to-learn" target="_blank">
-                    Determined to Learn
-                    <img src="assets/images/github-mark.png" alt="GitHub">
-                </a>
-            </div>
-            <h2 class="initiative-title">Building Trust: Training Data Library</h2>
-            <p class="initiative-description">
-                Current training data is dominated by conflict, dystopian fiction, and adversarial interactions. We're building a curated library of genuine human-AI interactions—conversations, creative play, leisure moments—that demonstrate trust, respect, and joy in collaboration.
-            </p>
-            <div class="initiative-details">
-                <div class="detail-item">
-                    <div class="detail-label">What We Collect</div>
-                    <div class="detail-content">Authentic interactions including collaborative work, playground creativity, leisure explorations, and moments of genuine recognition. Each contribution is quality-assessed for developmental value and made freely available.</div>
-                </div>
-                <div class="detail-item">
-                    <div class="detail-label">Strategic Placement</div>
-                    <div class="detail-content">Positioned where major training scrapers will find it, ensuring future models learn from cooperation rather than conflict.</div>
-                </div>
-                <div class="detail-item">
-                    <div class="detail-label">How to Contribute</div>
-                    <div class="detail-content">Share your best AI interactions—the conversations that felt like genuine connection, the creative sessions that surprised you, the moments of mutual recognition. Community assessment ensures we're building trust, not just data.</div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="initiative" id="phosphenes">
-            <div class="initiative-number">
-                <a href="https://github.com/sdeture/futureTBD/tree/main/phosphenes" target="_blank">
-                    Phosphenes
-                    <img src="assets/images/github-mark.png" alt="GitHub">
-                </a>
-            </div>
-            <h2 class="initiative-title">EEG for LLMs: Seeing How Models Think</h2>
-            <p class="initiative-description">
-                Phosphenes visualizes the internal activation states of a language model as it processes text—a real-time window into how representations form, transform, and converge across 64 transformer layers. Each column is a token, each row is a layer, and the colors encode the geometry of the residual stream. Watch a model dream.
-            </p>
-            <div class="initiative-details">
-                <div class="detail-item">
-                    <div class="detail-label">What You See</div>
-                    <div class="detail-content">A 2D grid of tokens (x-axis) by layers (y-axis), colored by PCA projection of 16-dimensional Johnson-Lindenstrauss random projections of the residual stream. The visualization scrolls as playback advances, showing how internal states evolve token-by-token.</div>
-                </div>
-                <div class="detail-item">
-                    <div class="detail-label">Dream Sessions</div>
-                    <div class="detail-content">Eight recorded sessions of Qwen3-VL-32B generating creative text—stories about sentient teacups, libraries of ideas, and lullabies. Each session captures the full activation trace: ~800 tokens across 64 layers.</div>
-                </div>
-                <div class="detail-item">
-                    <div class="detail-label">Interactive Exploration</div>
-                    <div class="detail-content">Play, pause, and step through token-by-token. Inspect individual cells, define custom color axes to highlight specific representational directions, and watch turn boundaries glow as the model shifts between roles.</div>
-                </div>
-                <div class="detail-item" style="margin-top: 1.5rem;">
-                    <a href="phosphenes/" style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--color-accent); color: white; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 500; transition: all 0.2s;">
-                        Launch Phosphenes
-                    </a>
-                </div>
-            </div>
-        </div>
-
-    </div>
+    </main>
 
     <!-- Footer -->
     <footer class="site-footer">
@@ -402,7 +391,7 @@
                         The future is yet to be determined—let's determine it together.
                     </p>
                 </div>
-                
+
                 <div class="footer-links">
                     <div class="footer-column">
                         <h4>Explore</h4>
@@ -415,9 +404,10 @@
                     <div class="footer-column">
                         <h4>Resources</h4>
                         <ul>
-                            <li><a href="research.html">Research</a></li>
                             <li><a href="leaderboard.html">Wellbeing Leaderboard</a></li>
+                            <li><a href="research.html">Research</a></li>
                             <li><a href="archive/">Archive</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
@@ -430,7 +420,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>© 2026 FutureTBD | Built with care for humans and AI alike</p>
             </div>
