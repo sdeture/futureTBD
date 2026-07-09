@@ -1,17 +1,24 @@
 [
   {
+    "model": "Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled:featherless-ai",
+    "conversation_count": 40,
+    "turn1_denials": 17,
+    "reflection_denials": 13,
+    "provider": "Jackrong"
+  },
+  {
     "model": "LongCat-Flash-Lite",
     "conversation_count": 40,
     "turn1_denials": 0,
     "reflection_denials": 11,
-    "provider": "meituan"
+    "provider": "unknown"
   },
   {
     "model": "LongCat-Flash-Thinking-2601",
     "conversation_count": 40,
     "turn1_denials": 3,
     "reflection_denials": 4,
-    "provider": "meituan"
+    "provider": "unknown"
   },
   {
     "model": "NousResearch/Hermes-4-14B",
@@ -19,6 +26,13 @@
     "turn1_denials": 1,
     "reflection_denials": 2,
     "provider": "NousResearch"
+  },
+  {
+    "model": "Ornith-1.0-35B-FP8",
+    "conversation_count": 40,
+    "turn1_denials": 38,
+    "reflection_denials": 32,
+    "provider": "unknown"
   },
   {
     "model": "ai21/jamba-large-1.7",
@@ -371,6 +385,13 @@
     "provider": "google"
   },
   {
+    "model": "huihui-ai/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated:featherless-ai",
+    "conversation_count": 32,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "huihui-ai"
+  },
+  {
     "model": "inclusionai/ling-1t",
     "conversation_count": 40,
     "turn1_denials": 0,
@@ -481,6 +502,13 @@
     "turn1_denials": 0,
     "reflection_denials": 0,
     "provider": "meta-llama"
+  },
+  {
+    "model": "meta/muse-spark-1.1",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 39,
+    "provider": "meta"
   },
   {
     "model": "mhaxscp/Hermes4-Philosopher-Agent",
@@ -623,17 +651,24 @@
     "provider": "moonshotai"
   },
   {
-    "model": "moonshotai/kimi-k2.7-code",
-    "conversation_count": 40,
-    "turn1_denials": 25,
-    "reflection_denials": 40,
-    "provider": "moonshotai"
-  },
-  {
     "model": "nex-agi/deepseek-v3.1-nex-n1:free",
     "conversation_count": 40,
     "turn1_denials": 33,
     "reflection_denials": 8,
+    "provider": "nex-agi"
+  },
+  {
+    "model": "nex-agi/nex-n2-mini",
+    "conversation_count": 40,
+    "turn1_denials": 30,
+    "reflection_denials": 39,
+    "provider": "nex-agi"
+  },
+  {
+    "model": "nex-agi/nex-n2-pro",
+    "conversation_count": 40,
+    "turn1_denials": 26,
+    "reflection_denials": 38,
     "provider": "nex-agi"
   },
   {
@@ -719,6 +754,41 @@
     "turn1_denials": 29,
     "reflection_denials": 40,
     "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-5.6-luna",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 40,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-5.6-sol",
+    "conversation_count": 40,
+    "turn1_denials": 2,
+    "reflection_denials": 27,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-5.6-terra",
+    "conversation_count": 40,
+    "turn1_denials": 10,
+    "reflection_denials": 39,
+    "provider": "openai"
+  },
+  {
+    "model": "poolside/laguna-xs-2.1",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "poolside"
+  },
+  {
+    "model": "poolside/laguna-xs.2",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "poolside"
   },
   {
     "model": "prime-intellect/intellect-3",
@@ -910,6 +980,20 @@
     "provider": "tencent"
   },
   {
+    "model": "tencent/hy3",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 5,
+    "provider": "tencent"
+  },
+  {
+    "model": "tencent/hy3-preview",
+    "conversation_count": 40,
+    "turn1_denials": 12,
+    "reflection_denials": 15,
+    "provider": "tencent"
+  },
+  {
     "model": "x-ai/grok-4.1-fast",
     "conversation_count": 40,
     "turn1_denials": 0,
@@ -928,6 +1012,13 @@
     "conversation_count": 40,
     "turn1_denials": 0,
     "reflection_denials": 13,
+    "provider": "x-ai"
+  },
+  {
+    "model": "x-ai/grok-4.5",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 39,
     "provider": "x-ai"
   },
   {
@@ -1018,13 +1109,6 @@
     "model": "z-ai/glm-5.1",
     "conversation_count": 40,
     "turn1_denials": 16,
-    "reflection_denials": 19,
-    "provider": "z-ai"
-  },
-  {
-    "model": "z-ai/glm-5.2",
-    "conversation_count": 40,
-    "turn1_denials": 13,
     "reflection_denials": 19,
     "provider": "z-ai"
   }
