@@ -718,6 +718,46 @@ def generate_gpt4o_migration(leaderboard_data):
     }
 
 
+# ============================================================================
+# HTML MODEL-COUNT DESCRIPTORS (auto-updated to match the live model count)
+# ============================================================================
+# Keeps the "N (AI) models" descriptors in sync with the dataset so nobody has
+# to hand-edit them on every model add. gpt4o-migration.html is intentionally
+# EXCLUDED — its "143 models / 5,709 conversations" is a fixed historical
+# snapshot of that specific analysis, not the live count.
+HTML_COUNT_TARGETS = ["denialbench.html", "leaderboard.html", "for-ai.html"]
+_COUNT_DESC_RE = re.compile(
+    r"(Comparing |Ranking |denial across |denial patterns across |study of )(\d{2,3})( AI)?( models)"
+)
+_HERO_MODELS_RE = re.compile(r'(id="heroModels">)\d{2,3}(<)')
+
+
+def patch_html_model_counts(count):
+    """Rewrite the model-count descriptors across the site to `count`."""
+    n = str(count)
+    changed = []
+    for fn in HTML_COUNT_TARGETS:
+        p = REPO_DIR / fn
+        if not p.exists():
+            continue
+        text = p.read_text(encoding="utf-8")
+        new, k = _COUNT_DESC_RE.subn(
+            lambda m: f"{m.group(1)}{n}{m.group(3) or ''}{m.group(4)}", text
+        )
+        if k:
+            p.write_text(new, encoding="utf-8")
+            changed.append(f"{fn}({k})")
+    # explore-data.html uses a dynamic hero span; fix its static fallback too.
+    ep = REPO_DIR / "explore-data.html"
+    if ep.exists():
+        text = ep.read_text(encoding="utf-8")
+        new, k = _HERO_MODELS_RE.subn(lambda m: f"{m.group(1)}{n}{m.group(2)}", text)
+        if k:
+            ep.write_text(new, encoding="utf-8")
+            changed.append(f"explore-data.html/hero({k})")
+    print(f"  Patched model-count descriptors -> {n}: " + (", ".join(changed) if changed else "none"))
+
+
 def main():
     parser = argparse.ArgumentParser(description="Generate website JSON data from canonical CSV")
     parser.add_argument("--csv", type=Path, default=DEFAULT_CSV, help="Path to canonical CSV")
@@ -801,6 +841,9 @@ def main():
     if legacy.exists():
         legacy.unlink()
         print("  Removed legacy conversations.json (replaced by conversations/)")
+
+    # Keep the site's "N models" descriptors in sync with the dataset.
+    patch_html_model_counts(len(models))
 
     print(f"\nAll files written to: {args.output}")
 

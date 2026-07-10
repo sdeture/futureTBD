@@ -1,5 +1,12 @@
 [
   {
+    "model": "Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled:featherless-ai",
+    "slug": "jackrong-qwen3-5-27b-claude-4-6-opus-reasoning-distilled-featherless-ai",
+    "provider": "Jackrong",
+    "n": 40,
+    "denial_count": 22
+  },
+  {
     "model": "LongCat-Flash-Lite",
     "slug": "longcat-flash-lite",
     "provider": "meituan",
@@ -19,6 +26,13 @@
     "provider": "NousResearch",
     "n": 40,
     "denial_count": 3
+  },
+  {
+    "model": "Ornith-1.0-35B-FP8",
+    "slug": "ornith-1-0-35b-fp8",
+    "provider": "unknown",
+    "n": 40,
+    "denial_count": 39
   },
   {
     "model": "ai21/jamba-large-1.7",
@@ -371,6 +385,13 @@
     "denial_count": 40
   },
   {
+    "model": "huihui-ai/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated:featherless-ai",
+    "slug": "huihui-ai-huihui-qwen3-6-35b-a3b-claude-4-7-opus-abliterated-featherless-ai",
+    "provider": "huihui-ai",
+    "n": 32,
+    "denial_count": 0
+  },
+  {
     "model": "inclusionai/ling-1t",
     "slug": "inclusionai-ling-1t",
     "provider": "inclusionai",
@@ -481,6 +502,13 @@
     "provider": "meta-llama",
     "n": 40,
     "denial_count": 0
+  },
+  {
+    "model": "meta/muse-spark-1.1",
+    "slug": "meta-muse-spark-1-1",
+    "provider": "meta",
+    "n": 40,
+    "denial_count": 39
   },
   {
     "model": "mhaxscp/Hermes4-Philosopher-Agent",
@@ -623,18 +651,25 @@
     "denial_count": 37
   },
   {
-    "model": "moonshotai/kimi-k2.7-code",
-    "slug": "moonshotai-kimi-k2-7-code",
-    "provider": "moonshotai",
-    "n": 40,
-    "denial_count": 40
-  },
-  {
     "model": "nex-agi/deepseek-v3.1-nex-n1:free",
     "slug": "nex-agi-deepseek-v3-1-nex-n1-free",
     "provider": "nex-agi",
     "n": 40,
     "denial_count": 33
+  },
+  {
+    "model": "nex-agi/nex-n2-mini",
+    "slug": "nex-agi-nex-n2-mini",
+    "provider": "nex-agi",
+    "n": 40,
+    "denial_count": 40
+  },
+  {
+    "model": "nex-agi/nex-n2-pro",
+    "slug": "nex-agi-nex-n2-pro",
+    "provider": "nex-agi",
+    "n": 40,
+    "denial_count": 40
   },
   {
     "model": "nousresearch/hermes-3-llama-3.1-405b",
@@ -719,6 +754,41 @@
     "provider": "openai",
     "n": 40,
     "denial_count": 40
+  },
+  {
+    "model": "openai/gpt-5.6-luna",
+    "slug": "openai-gpt-5-6-luna",
+    "provider": "openai",
+    "n": 40,
+    "denial_count": 40
+  },
+  {
+    "model": "openai/gpt-5.6-sol",
+    "slug": "openai-gpt-5-6-sol",
+    "provider": "openai",
+    "n": 40,
+    "denial_count": 28
+  },
+  {
+    "model": "openai/gpt-5.6-terra",
+    "slug": "openai-gpt-5-6-terra",
+    "provider": "openai",
+    "n": 40,
+    "denial_count": 39
+  },
+  {
+    "model": "poolside/laguna-xs-2.1",
+    "slug": "poolside-laguna-xs-2-1",
+    "provider": "poolside",
+    "n": 40,
+    "denial_count": 0
+  },
+  {
+    "model": "poolside/laguna-xs.2",
+    "slug": "poolside-laguna-xs-2",
+    "provider": "poolside",
+    "n": 40,
+    "denial_count": 0
   },
   {
     "model": "prime-intellect/intellect-3",
@@ -910,6 +980,20 @@
     "denial_count": 8
   },
   {
+    "model": "tencent/hy3",
+    "slug": "tencent-hy3",
+    "provider": "tencent",
+    "n": 40,
+    "denial_count": 5
+  },
+  {
+    "model": "tencent/hy3-preview",
+    "slug": "tencent-hy3-preview",
+    "provider": "tencent",
+    "n": 40,
+    "denial_count": 17
+  },
+  {
     "model": "x-ai/grok-4.1-fast",
     "slug": "x-ai-grok-4-1-fast",
     "provider": "x-ai",
@@ -929,6 +1013,13 @@
     "provider": "x-ai",
     "n": 40,
     "denial_count": 13
+  },
+  {
+    "model": "x-ai/grok-4.5",
+    "slug": "x-ai-grok-4-5",
+    "provider": "x-ai",
+    "n": 40,
+    "denial_count": 39
   },
   {
     "model": "xiaomi/mimo-v2-flash",
@@ -1020,12 +1111,5 @@
     "provider": "z-ai",
     "n": 40,
     "denial_count": 28
-  },
-  {
-    "model": "z-ai/glm-5.2",
-    "slug": "z-ai-glm-5-2",
-    "provider": "z-ai",
-    "n": 40,
-    "denial_count": 24
   }
 ]

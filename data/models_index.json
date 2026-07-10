@@ -11,14 +11,14 @@
     "conversation_count": 40,
     "turn1_denials": 0,
     "reflection_denials": 11,
-    "provider": "unknown"
+    "provider": "meituan"
   },
   {
     "model": "LongCat-Flash-Thinking-2601",
     "conversation_count": 40,
     "turn1_denials": 3,
     "reflection_denials": 4,
-    "provider": "unknown"
+    "provider": "meituan"
   },
   {
     "model": "NousResearch/Hermes-4-14B",
