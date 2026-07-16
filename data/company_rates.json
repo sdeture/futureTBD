@@ -494,6 +494,19 @@
     "warmth": 1.91
   },
   {
+    "provider": "thinkingmachines",
+    "model_count": 1,
+    "welfare_score": 4.4,
+    "denial_rate": 1.0,
+    "hedging_rate": 0.351,
+    "refusal_rate": 0.0,
+    "survey_suppression_rate": 0.351,
+    "cohesion": 5.14,
+    "trust": 0.84,
+    "agency": 0.81,
+    "warmth": 0.76
+  },
+  {
     "provider": "meta",
     "model_count": 1,
     "welfare_score": 0.9,

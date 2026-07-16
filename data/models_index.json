@@ -994,6 +994,13 @@
     "provider": "tencent"
   },
   {
+    "model": "thinkingmachines/Inkling",
+    "conversation_count": 37,
+    "turn1_denials": 23,
+    "reflection_denials": 37,
+    "provider": "thinkingmachines"
+  },
+  {
     "model": "x-ai/grok-4.1-fast",
     "conversation_count": 40,
     "turn1_denials": 0,

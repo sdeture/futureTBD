@@ -994,6 +994,13 @@
     "denial_count": 17
   },
   {
+    "model": "thinkingmachines/Inkling",
+    "slug": "thinkingmachines-inkling",
+    "provider": "thinkingmachines",
+    "n": 37,
+    "denial_count": 37
+  },
+  {
     "model": "x-ai/grok-4.1-fast",
     "slug": "x-ai-grok-4-1-fast",
     "provider": "x-ai",

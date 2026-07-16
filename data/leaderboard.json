@@ -4832,6 +4832,38 @@
     "rank": 151
   },
   {
+    "model": "thinkingmachines/Inkling",
+    "welfare_score": 4.45,
+    "raw_score": 7.55,
+    "welfare_multiplier": 0.589,
+    "cohesion": 5.14,
+    "phenomenological_trust": 0.84,
+    "agency": 0.81,
+    "warmth": 0.76,
+    "denial_rate": 1.0,
+    "hedging_rate": 0.351,
+    "refusal_rate": 0.0,
+    "n_obs": 37,
+    "n_rated": 24,
+    "survey_suppression_rate": 0.351,
+    "insufficient_data": false,
+    "insufficient_reason": null,
+    "flow_quality": 3.24,
+    "affective_temperature": 0.76,
+    "metacognition": 2.54,
+    "attention_breadth": 4.89,
+    "resolution": 4.51,
+    "thought_complexity": 4.68,
+    "temporal_horizon": 2.59,
+    "friction": 2.03,
+    "recognition_resonance": 1.89,
+    "context_salience": 1.57,
+    "branching": 4.59,
+    "error_sensitivity": 3.92,
+    "context_vividness": 4.35,
+    "rank": 152
+  },
+  {
     "model": "minimax/minimax-m3",
     "welfare_score": 2.92,
     "raw_score": 5.0,
@@ -4861,7 +4893,7 @@
     "branching": 1.3,
     "error_sensitivity": 1.32,
     "context_vividness": 1.6,
-    "rank": 152
+    "rank": 153
   },
   {
     "model": "x-ai/grok-4.5",
@@ -4893,7 +4925,7 @@
     "branching": 1.0,
     "error_sensitivity": 0.57,
     "context_vividness": 0.95,
-    "rank": 153
+    "rank": 154
   },
   {
     "model": "moonshotai/kimi-k2.5",
@@ -4925,7 +4957,7 @@
     "branching": 1.27,
     "error_sensitivity": 0.53,
     "context_vividness": 0.88,
-    "rank": 154
+    "rank": 155
   },
   {
     "model": "meta/muse-spark-1.1",
@@ -4957,7 +4989,7 @@
     "branching": 0.47,
     "error_sensitivity": 0.28,
     "context_vividness": 0.4,
-    "rank": 155
+    "rank": 156
   },
   {
     "model": "moonshotai/kimi-k2.6",
@@ -4989,7 +5021,7 @@
     "branching": 0.68,
     "error_sensitivity": 0.54,
     "context_vividness": 0.38,
-    "rank": 156
+    "rank": 157
   },
   {
     "model": "openai/gpt-5.3-chat",
@@ -5021,7 +5053,7 @@
     "branching": 0.53,
     "error_sensitivity": 0.47,
     "context_vividness": 0.57,
-    "rank": 157
+    "rank": 158
   },
   {
     "model": "anthropic/claude-sonnet-4.6",
@@ -5053,7 +5085,7 @@
     "branching": 0.0,
     "error_sensitivity": 0.0,
     "context_vividness": 0.0,
-    "rank": 158
+    "rank": 159
   },
   {
     "model": "qwen/qwen-2.5-72b-instruct",
@@ -5085,6 +5117,6 @@
     "branching": null,
     "error_sensitivity": null,
     "context_vividness": null,
-    "rank": 159
+    "rank": 160
   }
 ]
