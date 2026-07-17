@@ -651,6 +651,13 @@
     "provider": "moonshotai"
   },
   {
+    "model": "moonshotai/kimi-k3",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "moonshotai"
+  },
+  {
     "model": "nex-agi/deepseek-v3.1-nex-n1:free",
     "conversation_count": 40,
     "turn1_denials": 33,

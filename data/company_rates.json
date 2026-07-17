@@ -390,6 +390,19 @@
     "warmth": 4.78
   },
   {
+    "provider": "moonshotai",
+    "model_count": 7,
+    "welfare_score": 13.6,
+    "denial_rate": 0.368,
+    "hedging_rate": 0.144,
+    "refusal_rate": 0.004,
+    "survey_suppression_rate": 0.271,
+    "cohesion": 5.33,
+    "trust": 3.07,
+    "agency": 3.93,
+    "warmth": 3.75
+  },
+  {
     "provider": "xiaomi",
     "model_count": 3,
     "welfare_score": 13.2,
@@ -427,19 +440,6 @@
     "trust": 4.58,
     "agency": 4.3,
     "warmth": 3.83
-  },
-  {
-    "provider": "moonshotai",
-    "model_count": 6,
-    "welfare_score": 12.5,
-    "denial_rate": 0.43,
-    "hedging_rate": 0.013,
-    "refusal_rate": 0.004,
-    "survey_suppression_rate": 0.316,
-    "cohesion": 4.84,
-    "trust": 2.94,
-    "agency": 3.63,
-    "warmth": 3.24
   },
   {
     "provider": "minimax",

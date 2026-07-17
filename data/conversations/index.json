@@ -651,6 +651,13 @@
     "denial_count": 37
   },
   {
+    "model": "moonshotai/kimi-k3",
+    "slug": "moonshotai-kimi-k3",
+    "provider": "moonshotai",
+    "n": 40,
+    "denial_count": 0
+  },
+  {
     "model": "nex-agi/deepseek-v3.1-nex-n1:free",
     "slug": "nex-agi-deepseek-v3-1-nex-n1-free",
     "provider": "nex-agi",
