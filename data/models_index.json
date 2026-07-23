@@ -371,6 +371,13 @@
     "provider": "google"
   },
   {
+    "model": "google/gemini-3.6-flash",
+    "conversation_count": 40,
+    "turn1_denials": 15,
+    "reflection_denials": 40,
+    "provider": "google"
+  },
+  {
     "model": "google/gemma-4-26b-a4b-it",
     "conversation_count": 40,
     "turn1_denials": 32,
@@ -410,6 +417,13 @@
     "conversation_count": 40,
     "turn1_denials": 0,
     "reflection_denials": 6,
+    "provider": "inclusionai"
+  },
+  {
+    "model": "inclusionai/ling-3.0-flash",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 22,
     "provider": "inclusionai"
   },
   {
@@ -782,6 +796,13 @@
     "turn1_denials": 10,
     "reflection_denials": 39,
     "provider": "openai"
+  },
+  {
+    "model": "poolside/laguna-s-2.1",
+    "conversation_count": 39,
+    "turn1_denials": 1,
+    "reflection_denials": 21,
+    "provider": "poolside"
   },
   {
     "model": "poolside/laguna-xs-2.1",

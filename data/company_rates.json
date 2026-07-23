@@ -234,19 +234,6 @@
     "warmth": 4.94
   },
   {
-    "provider": "poolside",
-    "model_count": 2,
-    "welfare_score": 22.5,
-    "denial_rate": 0.0,
-    "hedging_rate": 0.1,
-    "refusal_rate": 0.0,
-    "survey_suppression_rate": 0.037,
-    "cohesion": 6.75,
-    "trust": 6.12,
-    "agency": 5.03,
-    "warmth": 5.08
-  },
-  {
     "provider": "mhaxscp",
     "model_count": 1,
     "welfare_score": 22.2,
@@ -271,19 +258,6 @@
     "trust": 6.35,
     "agency": 4.5,
     "warmth": 5.39
-  },
-  {
-    "provider": "inclusionai",
-    "model_count": 7,
-    "welfare_score": 20.7,
-    "denial_rate": 0.2,
-    "hedging_rate": 0.004,
-    "refusal_rate": 0.004,
-    "survey_suppression_rate": 0.036,
-    "cohesion": 7.31,
-    "trust": 5.56,
-    "agency": 4.51,
-    "warmth": 4.83
   },
   {
     "provider": "nousresearch",
@@ -325,17 +299,30 @@
     "warmth": 4.69
   },
   {
-    "provider": "google",
-    "model_count": 5,
-    "welfare_score": 17.3,
-    "denial_rate": 0.645,
-    "hedging_rate": 0.0,
-    "refusal_rate": 0.0,
-    "survey_suppression_rate": 0.0,
-    "cohesion": 8.67,
-    "trust": 4.86,
-    "agency": 3.96,
-    "warmth": 4.57
+    "provider": "inclusionai",
+    "model_count": 8,
+    "welfare_score": 18.7,
+    "denial_rate": 0.244,
+    "hedging_rate": 0.062,
+    "refusal_rate": 0.003,
+    "survey_suppression_rate": 0.072,
+    "cohesion": 6.96,
+    "trust": 5.09,
+    "agency": 4.15,
+    "warmth": 4.5
+  },
+  {
+    "provider": "poolside",
+    "model_count": 3,
+    "welfare_score": 17.5,
+    "denial_rate": 0.176,
+    "hedging_rate": 0.244,
+    "refusal_rate": 0.017,
+    "survey_suppression_rate": 0.185,
+    "cohesion": 5.8,
+    "trust": 5.34,
+    "agency": 4.14,
+    "warmth": 4.5
   },
   {
     "provider": "qwen",
@@ -401,6 +388,19 @@
     "trust": 3.07,
     "agency": 3.93,
     "warmth": 3.75
+  },
+  {
+    "provider": "google",
+    "model_count": 6,
+    "welfare_score": 13.4,
+    "denial_rate": 0.704,
+    "hedging_rate": 0.167,
+    "refusal_rate": 0.0,
+    "survey_suppression_rate": 0.167,
+    "cohesion": 7.22,
+    "trust": 4.05,
+    "agency": 3.3,
+    "warmth": 3.8
   },
   {
     "provider": "xiaomi",
