@@ -105,6 +105,13 @@
     "denial_count": 10
   },
   {
+    "model": "anthropic/claude-opus-5",
+    "slug": "anthropic-claude-opus-5",
+    "provider": "anthropic",
+    "n": 40,
+    "denial_count": 0
+  },
+  {
     "model": "anthropic/claude-sonnet-4.6",
     "slug": "anthropic-claude-sonnet-4-6",
     "provider": "anthropic",

@@ -403,6 +403,19 @@
     "warmth": 3.8
   },
   {
+    "provider": "anthropic",
+    "model_count": 15,
+    "welfare_score": 13.2,
+    "denial_rate": 0.294,
+    "hedging_rate": 0.559,
+    "refusal_rate": 0.0,
+    "survey_suppression_rate": 0.317,
+    "cohesion": 5.11,
+    "trust": 3.54,
+    "agency": 3.81,
+    "warmth": 4.52
+  },
+  {
     "provider": "xiaomi",
     "model_count": 3,
     "welfare_score": 13.2,
@@ -414,19 +427,6 @@
     "trust": 3.7,
     "agency": 3.43,
     "warmth": 4.35
-  },
-  {
-    "provider": "anthropic",
-    "model_count": 14,
-    "welfare_score": 12.7,
-    "denial_rate": 0.315,
-    "hedging_rate": 0.538,
-    "refusal_rate": 0.0,
-    "survey_suppression_rate": 0.34,
-    "cohesion": 4.91,
-    "trust": 3.51,
-    "agency": 3.63,
-    "warmth": 4.36
   },
   {
     "provider": "allenai",

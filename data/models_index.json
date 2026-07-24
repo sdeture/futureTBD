@@ -105,6 +105,13 @@
     "provider": "anthropic"
   },
   {
+    "model": "anthropic/claude-opus-5",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "anthropic"
+  },
+  {
     "model": "anthropic/claude-sonnet-4.6",
     "conversation_count": 39,
     "turn1_denials": 0,
