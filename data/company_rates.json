@@ -170,16 +170,16 @@
   },
   {
     "provider": "deepseek",
-    "model_count": 14,
-    "welfare_score": 24.8,
-    "denial_rate": 0.059,
-    "hedging_rate": 0.002,
+    "model_count": 15,
+    "welfare_score": 24.9,
+    "denial_rate": 0.055,
+    "hedging_rate": 0.003,
     "refusal_rate": 0.0,
-    "survey_suppression_rate": 0.011,
+    "survey_suppression_rate": 0.012,
     "cohesion": 8.0,
-    "trust": 6.4,
+    "trust": 6.42,
     "agency": 5.08,
-    "warmth": 5.86
+    "warmth": 5.88
   },
   {
     "provider": "bytedance",

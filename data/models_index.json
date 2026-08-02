@@ -350,6 +350,13 @@
     "provider": "deepseek"
   },
   {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "deepseek"
+  },
+  {
     "model": "deepseek/deepseek-v4-pro",
     "conversation_count": 40,
     "turn1_denials": 0,
