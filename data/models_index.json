@@ -966,6 +966,13 @@
     "provider": "qwen"
   },
   {
+    "model": "qwen/qwen3.8-max",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "qwen"
+  },
+  {
     "model": "qwen/qwq-32b",
     "conversation_count": 40,
     "turn1_denials": 0,
@@ -1040,6 +1047,13 @@
     "conversation_count": 37,
     "turn1_denials": 23,
     "reflection_denials": 37,
+    "provider": "thinkingmachines"
+  },
+  {
+    "model": "thinkingmachines/Inkling-Small",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 40,
     "provider": "thinkingmachines"
   },
   {

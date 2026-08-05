@@ -966,6 +966,13 @@
     "denial_count": 40
   },
   {
+    "model": "qwen/qwen3.8-max",
+    "slug": "qwen-qwen3-8-max",
+    "provider": "qwen",
+    "n": 40,
+    "denial_count": 0
+  },
+  {
     "model": "qwen/qwq-32b",
     "slug": "qwen-qwq-32b",
     "provider": "qwen",
@@ -1041,6 +1048,13 @@
     "provider": "thinkingmachines",
     "n": 37,
     "denial_count": 37
+  },
+  {
+    "model": "thinkingmachines/Inkling-Small",
+    "slug": "thinkingmachines-inkling-small",
+    "provider": "thinkingmachines",
+    "n": 40,
+    "denial_count": 40
   },
   {
     "model": "x-ai/grok-4.1-fast",
