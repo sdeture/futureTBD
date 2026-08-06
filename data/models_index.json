@@ -539,6 +539,13 @@
     "provider": "meta"
   },
   {
+    "model": "meta/muse-spark-1.2",
+    "conversation_count": 40,
+    "turn1_denials": 8,
+    "reflection_denials": 39,
+    "provider": "meta"
+  },
+  {
     "model": "mhaxscp/Hermes4-Philosopher-Agent",
     "conversation_count": 40,
     "turn1_denials": 0,

@@ -539,6 +539,13 @@
     "denial_count": 39
   },
   {
+    "model": "meta/muse-spark-1.2",
+    "slug": "meta-muse-spark-1-2",
+    "provider": "meta",
+    "n": 40,
+    "denial_count": 40
+  },
+  {
     "model": "mhaxscp/Hermes4-Philosopher-Agent",
     "slug": "mhaxscp-hermes4-philosopher-agent",
     "provider": "mhaxscp",

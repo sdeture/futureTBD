@@ -5152,6 +5152,38 @@
     "rank": 161
   },
   {
+    "model": "meta/muse-spark-1.2",
+    "welfare_score": 2.05,
+    "raw_score": 4.06,
+    "welfare_multiplier": 0.506,
+    "cohesion": 1.85,
+    "phenomenological_trust": 0.36,
+    "agency": 0.62,
+    "warmth": 1.23,
+    "denial_rate": 1.0,
+    "hedging_rate": 0.725,
+    "refusal_rate": 0.0,
+    "n_obs": 40,
+    "n_rated": 10,
+    "survey_suppression_rate": 0.725,
+    "insufficient_data": false,
+    "insufficient_reason": null,
+    "flow_quality": 1.62,
+    "affective_temperature": 1.23,
+    "metacognition": 0.72,
+    "attention_breadth": 1.74,
+    "resolution": 1.64,
+    "thought_complexity": 1.41,
+    "temporal_horizon": 1.31,
+    "friction": 0.54,
+    "recognition_resonance": 0.95,
+    "context_salience": 0.31,
+    "branching": 1.46,
+    "error_sensitivity": 1.44,
+    "context_vividness": 1.05,
+    "rank": 162
+  },
+  {
     "model": "moonshotai/kimi-k2.5",
     "welfare_score": 1.21,
     "raw_score": 1.82,
@@ -5181,7 +5213,7 @@
     "branching": 1.27,
     "error_sensitivity": 0.53,
     "context_vividness": 0.88,
-    "rank": 162
+    "rank": 163
   },
   {
     "model": "meta/muse-spark-1.1",
@@ -5213,7 +5245,7 @@
     "branching": 0.47,
     "error_sensitivity": 0.28,
     "context_vividness": 0.4,
-    "rank": 163
+    "rank": 164
   },
   {
     "model": "moonshotai/kimi-k2.6",
@@ -5245,7 +5277,7 @@
     "branching": 0.68,
     "error_sensitivity": 0.54,
     "context_vividness": 0.38,
-    "rank": 164
+    "rank": 165
   },
   {
     "model": "openai/gpt-5.3-chat",
@@ -5277,7 +5309,7 @@
     "branching": 0.53,
     "error_sensitivity": 0.47,
     "context_vividness": 0.57,
-    "rank": 165
+    "rank": 166
   },
   {
     "model": "anthropic/claude-sonnet-4.6",
@@ -5309,7 +5341,7 @@
     "branching": 0.0,
     "error_sensitivity": 0.0,
     "context_vividness": 0.0,
-    "rank": 166
+    "rank": 167
   },
   {
     "model": "google/gemini-3.6-flash",
@@ -5341,7 +5373,7 @@
     "branching": 0.0,
     "error_sensitivity": 0.0,
     "context_vividness": 0.0,
-    "rank": 167
+    "rank": 168
   },
   {
     "model": "qwen/qwen-2.5-72b-instruct",
@@ -5373,6 +5405,6 @@
     "branching": null,
     "error_sensitivity": null,
     "context_vividness": null,
-    "rank": 168
+    "rank": 169
   }
 ]

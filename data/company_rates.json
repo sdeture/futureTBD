@@ -508,15 +508,15 @@
   },
   {
     "provider": "meta",
-    "model_count": 1,
-    "welfare_score": 0.9,
-    "denial_rate": 0.975,
-    "hedging_rate": 0.0,
+    "model_count": 2,
+    "welfare_score": 1.6,
+    "denial_rate": 0.988,
+    "hedging_rate": 0.362,
     "refusal_rate": 0.0,
-    "survey_suppression_rate": 0.925,
-    "cohesion": 0.55,
-    "trust": 0.1,
-    "agency": 0.17,
-    "warmth": 0.53
+    "survey_suppression_rate": 0.825,
+    "cohesion": 1.19,
+    "trust": 0.23,
+    "agency": 0.39,
+    "warmth": 0.87
   }
 ]
