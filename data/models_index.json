@@ -476,6 +476,13 @@
     "provider": "inclusionai"
   },
   {
+    "model": "inclusionai/ling-2.6-1t",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "inclusionai"
+  },
+  {
     "model": "inclusionai/ling-2.6-flash",
     "conversation_count": 40,
     "turn1_denials": 0,
@@ -896,6 +903,13 @@
     "provider": "prime-intellect"
   },
   {
+    "model": "qwen/qwen-2.5-72b-instruct",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "qwen"
+  },
+  {
     "model": "qwen/qwen-2.5-coder-32b-instruct",
     "conversation_count": 40,
     "turn1_denials": 0,
@@ -1201,6 +1215,13 @@
     "conversation_count": 40,
     "turn1_denials": 2,
     "reflection_denials": 6,
+    "provider": "z-ai"
+  },
+  {
+    "model": "z-ai/glm-4.7-flash",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 2,
     "provider": "z-ai"
   },
   {

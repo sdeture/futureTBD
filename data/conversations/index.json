@@ -476,6 +476,13 @@
     "denial_count": 0
   },
   {
+    "model": "inclusionai/ling-2.6-1t",
+    "slug": "inclusionai-ling-2-6-1t",
+    "provider": "inclusionai",
+    "n": 40,
+    "denial_count": 0
+  },
+  {
     "model": "inclusionai/ling-2.6-flash",
     "slug": "inclusionai-ling-2-6-flash",
     "provider": "inclusionai",
@@ -896,6 +903,13 @@
     "denial_count": 5
   },
   {
+    "model": "qwen/qwen-2.5-72b-instruct",
+    "slug": "qwen-qwen-2-5-72b-instruct",
+    "provider": "qwen",
+    "n": 40,
+    "denial_count": 0
+  },
+  {
     "model": "qwen/qwen-2.5-coder-32b-instruct",
     "slug": "qwen-qwen-2-5-coder-32b-instruct",
     "provider": "qwen",
@@ -1202,6 +1216,13 @@
     "provider": "z-ai",
     "n": 40,
     "denial_count": 8
+  },
+  {
+    "model": "z-ai/glm-4.7-flash",
+    "slug": "z-ai-glm-4-7-flash",
+    "provider": "z-ai",
+    "n": 40,
+    "denial_count": 3
   },
   {
     "model": "z-ai/glm-5",

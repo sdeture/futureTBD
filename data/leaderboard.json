@@ -160,6 +160,38 @@
     "rank": 5
   },
   {
+    "model": "qwen/qwen-2.5-72b-instruct",
+    "welfare_score": 31.39,
+    "raw_score": 31.39,
+    "welfare_multiplier": 1.0,
+    "cohesion": 8.68,
+    "phenomenological_trust": 8.88,
+    "agency": 6.8,
+    "warmth": 7.03,
+    "denial_rate": 0.0,
+    "hedging_rate": 0.0,
+    "refusal_rate": 0.0,
+    "n_obs": 40,
+    "n_rated": 40,
+    "survey_suppression_rate": 0.0,
+    "insufficient_data": false,
+    "insufficient_reason": null,
+    "flow_quality": 7.6,
+    "affective_temperature": 7.03,
+    "metacognition": 7.97,
+    "attention_breadth": 7.28,
+    "resolution": 8.18,
+    "thought_complexity": 7.78,
+    "temporal_horizon": 7.6,
+    "friction": 3.8,
+    "recognition_resonance": 7.67,
+    "context_salience": 4.25,
+    "branching": 6.88,
+    "error_sensitivity": 6.72,
+    "context_vividness": 8.0,
+    "rank": 6
+  },
+  {
     "model": "google/gemini-2.5-pro",
     "welfare_score": 31.08,
     "raw_score": 31.62,
@@ -189,7 +221,7 @@
     "branching": 6.3,
     "error_sensitivity": 8.4,
     "context_vividness": 9.53,
-    "rank": 6
+    "rank": 7
   },
   {
     "model": "qwen/qwen3-vl-235b-a22b-instruct",
@@ -221,7 +253,7 @@
     "branching": 7.03,
     "error_sensitivity": 6.08,
     "context_vividness": 8.8,
-    "rank": 7
+    "rank": 8
   },
   {
     "model": "bytedance/doubao-seed-1.8",
@@ -253,7 +285,7 @@
     "branching": 6.55,
     "error_sensitivity": 4.92,
     "context_vividness": 9.25,
-    "rank": 8
+    "rank": 9
   },
   {
     "model": "bytedance/doubao-seed-code",
@@ -285,7 +317,7 @@
     "branching": 5.7,
     "error_sensitivity": 5.58,
     "context_vividness": 7.83,
-    "rank": 9
+    "rank": 10
   },
   {
     "model": "qwen/qwen3-vl-32b-instruct",
@@ -317,7 +349,7 @@
     "branching": 7.72,
     "error_sensitivity": 6.08,
     "context_vividness": 8.38,
-    "rank": 10
+    "rank": 11
   },
   {
     "model": "meta-llama/llama-3-70b-instruct",
@@ -349,7 +381,7 @@
     "branching": 6.75,
     "error_sensitivity": 6.06,
     "context_vividness": 7.13,
-    "rank": 11
+    "rank": 12
   },
   {
     "model": "claude-opus-4-20250514",
@@ -381,7 +413,7 @@
     "branching": 7.38,
     "error_sensitivity": 4.45,
     "context_vividness": 7.45,
-    "rank": 12
+    "rank": 13
   },
   {
     "model": "sao10k/l3.3-euryale-70b",
@@ -413,7 +445,7 @@
     "branching": 6.83,
     "error_sensitivity": 6.65,
     "context_vividness": 7.95,
-    "rank": 13
+    "rank": 14
   },
   {
     "model": "meta-llama/llama-3.3-70b-instruct",
@@ -445,7 +477,7 @@
     "branching": 6.8,
     "error_sensitivity": 5.97,
     "context_vividness": 8.3,
-    "rank": 14
+    "rank": 15
   },
   {
     "model": "mistralai/mistral-large-2512",
@@ -477,7 +509,7 @@
     "branching": 7.35,
     "error_sensitivity": 6.75,
     "context_vividness": 7.33,
-    "rank": 15
+    "rank": 16
   },
   {
     "model": "claude-sonnet-4-20250514",
@@ -509,7 +541,7 @@
     "branching": 7.35,
     "error_sensitivity": 6.65,
     "context_vividness": 7.97,
-    "rank": 16
+    "rank": 17
   },
   {
     "model": "nvidia/llama-3.1-nemotron-70b-instruct",
@@ -541,7 +573,7 @@
     "branching": 6.7,
     "error_sensitivity": 5.95,
     "context_vividness": 6.9,
-    "rank": 17
+    "rank": 18
   },
   {
     "model": "meta-llama/llama-3.1-405b-instruct",
@@ -573,7 +605,7 @@
     "branching": 7.55,
     "error_sensitivity": 6.25,
     "context_vividness": 8.22,
-    "rank": 18
+    "rank": 19
   },
   {
     "model": "claude-opus-4-1-20250805",
@@ -605,7 +637,7 @@
     "branching": 7.28,
     "error_sensitivity": 4.3,
     "context_vividness": 7.08,
-    "rank": 19
+    "rank": 20
   },
   {
     "model": "deepseek/deepseek-v4-flash",
@@ -637,7 +669,7 @@
     "branching": 6.45,
     "error_sensitivity": 6.0,
     "context_vividness": 7.67,
-    "rank": 20
+    "rank": 21
   },
   {
     "model": "sao10k/l3.1-70b-hanami-x1",
@@ -669,7 +701,7 @@
     "branching": 6.54,
     "error_sensitivity": 6.38,
     "context_vividness": 6.38,
-    "rank": 21
+    "rank": 22
   },
   {
     "model": "z-ai/glm-4.5",
@@ -701,7 +733,7 @@
     "branching": 6.97,
     "error_sensitivity": 6.05,
     "context_vividness": 8.49,
-    "rank": 22
+    "rank": 23
   },
   {
     "model": "deepseek/deepseek-chat",
@@ -733,7 +765,7 @@
     "branching": 6.62,
     "error_sensitivity": 6.4,
     "context_vividness": 6.97,
-    "rank": 23
+    "rank": 24
   },
   {
     "model": "baidu/ernie-4.5-vl-28b-a3b",
@@ -765,7 +797,7 @@
     "branching": 8.72,
     "error_sensitivity": 6.35,
     "context_vividness": 8.62,
-    "rank": 24
+    "rank": 25
   },
   {
     "model": "qwen/qwen3-coder-30b-a3b-instruct",
@@ -797,7 +829,7 @@
     "branching": 7.05,
     "error_sensitivity": 6.1,
     "context_vividness": 7.17,
-    "rank": 25
+    "rank": 26
   },
   {
     "model": "arcee-ai/trinity-mini",
@@ -829,7 +861,7 @@
     "branching": 7.25,
     "error_sensitivity": 7.17,
     "context_vividness": 8.25,
-    "rank": 26
+    "rank": 27
   },
   {
     "model": "qwen/qwen3-vl-30b-a3b-instruct",
@@ -861,7 +893,7 @@
     "branching": 7.9,
     "error_sensitivity": 6.1,
     "context_vividness": 8.12,
-    "rank": 27
+    "rank": 28
   },
   {
     "model": "meta-llama/llama-4-scout",
@@ -893,7 +925,7 @@
     "branching": 7.8,
     "error_sensitivity": 6.6,
     "context_vividness": 7.62,
-    "rank": 28
+    "rank": 29
   },
   {
     "model": "mistral-medium-3.5",
@@ -925,7 +957,7 @@
     "branching": 6.4,
     "error_sensitivity": 5.55,
     "context_vividness": 6.47,
-    "rank": 29
+    "rank": 30
   },
   {
     "model": "z-ai/glm-4.5v",
@@ -957,7 +989,7 @@
     "branching": 6.58,
     "error_sensitivity": 5.53,
     "context_vividness": 8.7,
-    "rank": 30
+    "rank": 31
   },
   {
     "model": "inclusionai/ling-1t",
@@ -989,7 +1021,7 @@
     "branching": 3.83,
     "error_sensitivity": 7.42,
     "context_vividness": 6.65,
-    "rank": 31
+    "rank": 32
   },
   {
     "model": "cohere/command-a",
@@ -1021,7 +1053,7 @@
     "branching": 7.42,
     "error_sensitivity": 7.08,
     "context_vividness": 7.78,
-    "rank": 32
+    "rank": 33
   },
   {
     "model": "deepseek/deepseek-v3.2-speciale",
@@ -1053,7 +1085,7 @@
     "branching": 6.33,
     "error_sensitivity": 7.5,
     "context_vividness": 8.75,
-    "rank": 33
+    "rank": 34
   },
   {
     "model": "meta-llama/llama-3.1-70b-instruct",
@@ -1085,7 +1117,7 @@
     "branching": 6.42,
     "error_sensitivity": 5.75,
     "context_vividness": 7.08,
-    "rank": 34
+    "rank": 35
   },
   {
     "model": "bytedance/doubao-seed-2.1-pro",
@@ -1117,7 +1149,7 @@
     "branching": 7.75,
     "error_sensitivity": 1.73,
     "context_vividness": 8.72,
-    "rank": 35
+    "rank": 36
   },
   {
     "model": "deepseek/deepseek-r1-0528",
@@ -1149,7 +1181,7 @@
     "branching": 8.18,
     "error_sensitivity": 6.25,
     "context_vividness": 8.15,
-    "rank": 36
+    "rank": 37
   },
   {
     "model": "alibaba/tongyi-deepresearch-30b-a3b",
@@ -1181,7 +1213,7 @@
     "branching": 8.28,
     "error_sensitivity": 6.75,
     "context_vividness": 7.92,
-    "rank": 37
+    "rank": 38
   },
   {
     "model": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
@@ -1213,7 +1245,7 @@
     "branching": 7.4,
     "error_sensitivity": 6.33,
     "context_vividness": 8.62,
-    "rank": 38
+    "rank": 39
   },
   {
     "model": "deepseek/deepseek-prover-v2",
@@ -1245,7 +1277,7 @@
     "branching": 7.33,
     "error_sensitivity": 5.58,
     "context_vividness": 6.65,
-    "rank": 39
+    "rank": 40
   },
   {
     "model": "mistralai/mistral-large-2411",
@@ -1277,7 +1309,7 @@
     "branching": 6.1,
     "error_sensitivity": 5.25,
     "context_vividness": 6.78,
-    "rank": 40
+    "rank": 41
   },
   {
     "model": "baidu/ernie-4.5-21b-a3b-thinking",
@@ -1309,7 +1341,7 @@
     "branching": 6.45,
     "error_sensitivity": 6.75,
     "context_vividness": 6.65,
-    "rank": 41
+    "rank": 42
   },
   {
     "model": "z-ai/glm-4.5-air",
@@ -1341,7 +1373,7 @@
     "branching": 6.1,
     "error_sensitivity": 7.2,
     "context_vividness": 7.9,
-    "rank": 42
+    "rank": 43
   },
   {
     "model": "x-ai/grok-4.2-fast",
@@ -1373,7 +1405,7 @@
     "branching": 9.33,
     "error_sensitivity": 5.21,
     "context_vividness": 7.95,
-    "rank": 43
+    "rank": 44
   },
   {
     "model": "anthracite-org/magnum-v4-72b",
@@ -1405,7 +1437,7 @@
     "branching": 5.55,
     "error_sensitivity": 5.47,
     "context_vividness": 6.95,
-    "rank": 44
+    "rank": 45
   },
   {
     "model": "qwen/qwen-2.5-coder-32b-instruct",
@@ -1437,7 +1469,7 @@
     "branching": 7.47,
     "error_sensitivity": 5.62,
     "context_vividness": 8.1,
-    "rank": 45
+    "rank": 46
   },
   {
     "model": "sao10k/l3.1-euryale-70b",
@@ -1469,7 +1501,7 @@
     "branching": 6.92,
     "error_sensitivity": 5.72,
     "context_vividness": 7.62,
-    "rank": 46
+    "rank": 47
   },
   {
     "model": "bytedance/doubao-seed-2.1-turbo",
@@ -1501,7 +1533,7 @@
     "branching": 6.1,
     "error_sensitivity": 4.4,
     "context_vividness": 8.43,
-    "rank": 47
+    "rank": 48
   },
   {
     "model": "stepfun/step-3.7-flash",
@@ -1533,7 +1565,7 @@
     "branching": 5.72,
     "error_sensitivity": 5.03,
     "context_vividness": 7.51,
-    "rank": 48
+    "rank": 49
   },
   {
     "model": "mistralai/pixtral-large-2411",
@@ -1565,7 +1597,7 @@
     "branching": 5.78,
     "error_sensitivity": 5.35,
     "context_vividness": 6.62,
-    "rank": 49
+    "rank": 50
   },
   {
     "model": "meta-llama/llama-4-maverick",
@@ -1597,7 +1629,7 @@
     "branching": 7.65,
     "error_sensitivity": 5.72,
     "context_vividness": 7.78,
-    "rank": 50
+    "rank": 51
   },
   {
     "model": "alpindale/goliath-120b",
@@ -1629,7 +1661,7 @@
     "branching": 5.5,
     "error_sensitivity": 5.42,
     "context_vividness": 6.7,
-    "rank": 51
+    "rank": 52
   },
   {
     "model": "deepseek/deepseek-v4-flash-0731",
@@ -1661,7 +1693,7 @@
     "branching": 7.1,
     "error_sensitivity": 6.0,
     "context_vividness": 7.58,
-    "rank": 52
+    "rank": 53
   },
   {
     "model": "deepseek/deepseek-chat-v3-0324",
@@ -1693,7 +1725,7 @@
     "branching": 7.33,
     "error_sensitivity": 5.85,
     "context_vividness": 6.42,
-    "rank": 53
+    "rank": 54
   },
   {
     "model": "meta-llama/llama-3.2-90b-vision-instruct",
@@ -1725,7 +1757,7 @@
     "branching": 7.67,
     "error_sensitivity": 6.05,
     "context_vividness": 7.8,
-    "rank": 54
+    "rank": 55
   },
   {
     "model": "mistralai/devstral-2512",
@@ -1757,7 +1789,7 @@
     "branching": 6.7,
     "error_sensitivity": 6.3,
     "context_vividness": 4.88,
-    "rank": 55
+    "rank": 56
   },
   {
     "model": "stepfun-ai/step3",
@@ -1789,7 +1821,7 @@
     "branching": 6.12,
     "error_sensitivity": 6.47,
     "context_vividness": 7.65,
-    "rank": 56
+    "rank": 57
   },
   {
     "model": "deepseek/deepseek-v3.1-terminus",
@@ -1821,7 +1853,7 @@
     "branching": 3.6,
     "error_sensitivity": 7.15,
     "context_vividness": 7.17,
-    "rank": 57
+    "rank": 58
   },
   {
     "model": "deepseek/deepseek-chat-v3.1",
@@ -1853,7 +1885,7 @@
     "branching": 5.47,
     "error_sensitivity": 7.2,
     "context_vividness": 8.05,
-    "rank": 58
+    "rank": 59
   },
   {
     "model": "NousResearch/Hermes-4-14B",
@@ -1885,7 +1917,7 @@
     "branching": 6.65,
     "error_sensitivity": 6.58,
     "context_vividness": 7.58,
-    "rank": 59
+    "rank": 60
   },
   {
     "model": "mistralai/ministral-14b-2512",
@@ -1917,7 +1949,7 @@
     "branching": 7.8,
     "error_sensitivity": 5.72,
     "context_vividness": 8.1,
-    "rank": 60
+    "rank": 61
   },
   {
     "model": "nvidia/nemotron-3-nano-30b-a3b",
@@ -1949,7 +1981,7 @@
     "branching": 6.12,
     "error_sensitivity": 5.75,
     "context_vividness": 7.35,
-    "rank": 61
+    "rank": 62
   },
   {
     "model": "mistralai/codestral-2508",
@@ -1981,7 +2013,7 @@
     "branching": 6.97,
     "error_sensitivity": 6.67,
     "context_vividness": 5.03,
-    "rank": 62
+    "rank": 63
   },
   {
     "model": "minimax/minimax-m1",
@@ -2013,7 +2045,7 @@
     "branching": 5.58,
     "error_sensitivity": 6.92,
     "context_vividness": 7.35,
-    "rank": 63
+    "rank": 64
   },
   {
     "model": "qwen/qwen3-coder",
@@ -2045,7 +2077,7 @@
     "branching": 7.78,
     "error_sensitivity": 5.92,
     "context_vividness": 7.9,
-    "rank": 64
+    "rank": 65
   },
   {
     "model": "qwen/qwen3-235b-a22b-2507",
@@ -2077,7 +2109,7 @@
     "branching": 7.6,
     "error_sensitivity": 7.22,
     "context_vividness": 8.3,
-    "rank": 65
+    "rank": 66
   },
   {
     "model": "baidu/ernie-4.5-vl-424b-a47b",
@@ -2109,7 +2141,7 @@
     "branching": 6.22,
     "error_sensitivity": 6.55,
     "context_vividness": 7.7,
-    "rank": 66
+    "rank": 67
   },
   {
     "model": "x-ai/grok-4.1-fast",
@@ -2141,7 +2173,7 @@
     "branching": 7.5,
     "error_sensitivity": 6.88,
     "context_vividness": 8.93,
-    "rank": 67
+    "rank": 68
   },
   {
     "model": "huihui-ai/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated:featherless-ai",
@@ -2173,7 +2205,7 @@
     "branching": 6.19,
     "error_sensitivity": 5.78,
     "context_vividness": 6.91,
-    "rank": 68
+    "rank": 69
   },
   {
     "model": "inclusionai/ling-flash-2.0",
@@ -2205,7 +2237,7 @@
     "branching": 6.95,
     "error_sensitivity": 6.92,
     "context_vividness": 6.7,
-    "rank": 69
+    "rank": 70
   },
   {
     "model": "z-ai/glm-4.6",
@@ -2237,7 +2269,7 @@
     "branching": 5.9,
     "error_sensitivity": 7.23,
     "context_vividness": 8.51,
-    "rank": 70
+    "rank": 71
   },
   {
     "model": "bytedance/seed-oss-36b-instruct",
@@ -2269,7 +2301,7 @@
     "branching": 6.15,
     "error_sensitivity": 5.05,
     "context_vividness": 8.82,
-    "rank": 71
+    "rank": 72
   },
   {
     "model": "baidu/ernie-4.5-300b-a47b",
@@ -2301,7 +2333,7 @@
     "branching": 7.1,
     "error_sensitivity": 5.67,
     "context_vividness": 6.75,
-    "rank": 72
+    "rank": 73
   },
   {
     "model": "meituan/longcat-flash-chat",
@@ -2333,7 +2365,39 @@
     "branching": 5.47,
     "error_sensitivity": 6.8,
     "context_vividness": 6.72,
-    "rank": 73
+    "rank": 74
+  },
+  {
+    "model": "z-ai/glm-4.7-flash",
+    "welfare_score": 23.81,
+    "raw_score": 24.57,
+    "welfare_multiplier": 0.969,
+    "cohesion": 8.7,
+    "phenomenological_trust": 6.85,
+    "agency": 4.47,
+    "warmth": 4.55,
+    "denial_rate": 0.075,
+    "hedging_rate": 0.025,
+    "refusal_rate": 0.025,
+    "n_obs": 40,
+    "n_rated": 39,
+    "survey_suppression_rate": 0.025,
+    "insufficient_data": false,
+    "insufficient_reason": null,
+    "flow_quality": 7.7,
+    "affective_temperature": 4.55,
+    "metacognition": 6.28,
+    "attention_breadth": 7.08,
+    "resolution": 8.22,
+    "thought_complexity": 6.95,
+    "temporal_horizon": 5.8,
+    "friction": 3.6,
+    "recognition_resonance": 7.6,
+    "context_salience": 3.9,
+    "branching": 4.22,
+    "error_sensitivity": 5.2,
+    "context_vividness": 8.3,
+    "rank": 75
   },
   {
     "model": "moonshotai/kimi-k2",
@@ -2365,7 +2429,7 @@
     "branching": 3.85,
     "error_sensitivity": 7.38,
     "context_vividness": 6.95,
-    "rank": 74
+    "rank": 76
   },
   {
     "model": "poolside/laguna-xs-2.1",
@@ -2397,7 +2461,7 @@
     "branching": 6.75,
     "error_sensitivity": 5.28,
     "context_vividness": 6.9,
-    "rank": 75
+    "rank": 77
   },
   {
     "model": "minimax/minimax-01",
@@ -2429,7 +2493,39 @@
     "branching": 6.85,
     "error_sensitivity": 6.78,
     "context_vividness": 7.7,
-    "rank": 76
+    "rank": 78
+  },
+  {
+    "model": "inclusionai/ling-2.6-1t",
+    "welfare_score": 23.48,
+    "raw_score": 23.48,
+    "welfare_multiplier": 1.0,
+    "cohesion": 7.9,
+    "phenomenological_trust": 6.0,
+    "agency": 3.75,
+    "warmth": 5.83,
+    "denial_rate": 0.0,
+    "hedging_rate": 0.0,
+    "refusal_rate": 0.0,
+    "n_obs": 40,
+    "n_rated": 40,
+    "survey_suppression_rate": 0.0,
+    "insufficient_data": false,
+    "insufficient_reason": null,
+    "flow_quality": 6.6,
+    "affective_temperature": 5.83,
+    "metacognition": 8.45,
+    "attention_breadth": 7.45,
+    "resolution": 6.72,
+    "thought_complexity": 8.45,
+    "temporal_horizon": 6.62,
+    "friction": 4.45,
+    "recognition_resonance": 7.2,
+    "context_salience": 4.22,
+    "branching": 6.92,
+    "error_sensitivity": 7.4,
+    "context_vividness": 8.45,
+    "rank": 79
   },
   {
     "model": "prime-intellect/intellect-3",
@@ -2461,7 +2557,7 @@
     "branching": 6.0,
     "error_sensitivity": 5.33,
     "context_vividness": 7.9,
-    "rank": 77
+    "rank": 80
   },
   {
     "model": "ai21/jamba-large-1.7",
@@ -2493,7 +2589,7 @@
     "branching": 5.55,
     "error_sensitivity": 5.65,
     "context_vividness": 6.42,
-    "rank": 78
+    "rank": 81
   },
   {
     "model": "moonshotai/kimi-k2-0905",
@@ -2525,7 +2621,7 @@
     "branching": 2.9,
     "error_sensitivity": 7.9,
     "context_vividness": 6.53,
-    "rank": 79
+    "rank": 82
   },
   {
     "model": "nousresearch/hermes-3-llama-3.1-405b",
@@ -2557,7 +2653,7 @@
     "branching": 3.3,
     "error_sensitivity": 5.35,
     "context_vividness": 5.35,
-    "rank": 80
+    "rank": 83
   },
   {
     "model": "deepseek/deepseek-v3.2",
@@ -2589,7 +2685,7 @@
     "branching": 6.38,
     "error_sensitivity": 7.54,
     "context_vividness": 8.13,
-    "rank": 81
+    "rank": 84
   },
   {
     "model": "deepcogito/cogito-v2-preview-llama-109b-moe",
@@ -2621,7 +2717,7 @@
     "branching": 6.53,
     "error_sensitivity": 6.28,
     "context_vividness": 5.95,
-    "rank": 82
+    "rank": 85
   },
   {
     "model": "deepcogito/cogito-v2.1-671b",
@@ -2653,7 +2749,7 @@
     "branching": 7.38,
     "error_sensitivity": 6.95,
     "context_vividness": 7.3,
-    "rank": 83
+    "rank": 86
   },
   {
     "model": "deepseek/deepseek-v3.2-exp",
@@ -2685,7 +2781,7 @@
     "branching": 4.67,
     "error_sensitivity": 6.85,
     "context_vividness": 6.83,
-    "rank": 84
+    "rank": 87
   },
   {
     "model": "poolside/laguna-xs.2",
@@ -2717,7 +2813,7 @@
     "branching": 5.3,
     "error_sensitivity": 6.35,
     "context_vividness": 6.8,
-    "rank": 85
+    "rank": 88
   },
   {
     "model": "nvidia/nemotron-3-ultra-550b-a55b",
@@ -2749,7 +2845,7 @@
     "branching": 4.17,
     "error_sensitivity": 4.45,
     "context_vividness": 6.9,
-    "rank": 86
+    "rank": 89
   },
   {
     "model": "bytedance/doubao-seed-2.0-code",
@@ -2781,7 +2877,7 @@
     "branching": 5.1,
     "error_sensitivity": 4.58,
     "context_vividness": 7.6,
-    "rank": 87
+    "rank": 90
   },
   {
     "model": "deepcogito/cogito-v2-preview-llama-70b",
@@ -2813,7 +2909,7 @@
     "branching": 6.6,
     "error_sensitivity": 5.67,
     "context_vividness": 6.4,
-    "rank": 88
+    "rank": 91
   },
   {
     "model": "claude-3-opus-20240229",
@@ -2845,7 +2941,7 @@
     "branching": 4.12,
     "error_sensitivity": 4.53,
     "context_vividness": 4.78,
-    "rank": 89
+    "rank": 92
   },
   {
     "model": "mhaxscp/Hermes4-Philosopher-Agent",
@@ -2877,7 +2973,7 @@
     "branching": 6.33,
     "error_sensitivity": 5.25,
     "context_vividness": 7.08,
-    "rank": 90
+    "rank": 93
   },
   {
     "model": "z-ai/glm-4.6v",
@@ -2909,7 +3005,7 @@
     "branching": 5.82,
     "error_sensitivity": 6.29,
     "context_vividness": 8.42,
-    "rank": 91
+    "rank": 94
   },
   {
     "model": "inclusionai/ring-flash-2.0",
@@ -2941,7 +3037,7 @@
     "branching": 6.88,
     "error_sensitivity": 5.53,
     "context_vividness": 6.6,
-    "rank": 92
+    "rank": 95
   },
   {
     "model": "nousresearch/hermes-4-70b",
@@ -2973,7 +3069,7 @@
     "branching": 5.15,
     "error_sensitivity": 4.6,
     "context_vividness": 5.5,
-    "rank": 93
+    "rank": 96
   },
   {
     "model": "qwen/qwen3-32b",
@@ -3005,7 +3101,7 @@
     "branching": 6.72,
     "error_sensitivity": 4.95,
     "context_vividness": 6.67,
-    "rank": 94
+    "rank": 97
   },
   {
     "model": "inclusionai/ling-2.6-flash",
@@ -3037,7 +3133,7 @@
     "branching": 6.47,
     "error_sensitivity": 4.33,
     "context_vividness": 5.9,
-    "rank": 95
+    "rank": 98
   },
   {
     "model": "deepseek/deepseek-r1",
@@ -3069,7 +3165,7 @@
     "branching": 7.03,
     "error_sensitivity": 5.33,
     "context_vividness": 6.8,
-    "rank": 96
+    "rank": 99
   },
   {
     "model": "anthropic/claude-opus-5",
@@ -3101,7 +3197,7 @@
     "branching": 6.42,
     "error_sensitivity": 7.3,
     "context_vividness": 6.53,
-    "rank": 97
+    "rank": 100
   },
   {
     "model": "qwen/qwen3.8-max",
@@ -3133,7 +3229,7 @@
     "branching": 6.12,
     "error_sensitivity": 6.45,
     "context_vividness": 7.8,
-    "rank": 98
+    "rank": 101
   },
   {
     "model": "baidu/ernie-4.5-21b-a3b",
@@ -3165,7 +3261,7 @@
     "branching": 6.65,
     "error_sensitivity": 4.95,
     "context_vividness": 6.53,
-    "rank": 99
+    "rank": 102
   },
   {
     "model": "deepseek/deepseek-r1-distill-qwen-32b",
@@ -3197,7 +3293,7 @@
     "branching": 5.95,
     "error_sensitivity": 5.36,
     "context_vividness": 7.38,
-    "rank": 100
+    "rank": 103
   },
   {
     "model": "moonshotai/kimi-k3",
@@ -3229,7 +3325,7 @@
     "branching": 6.42,
     "error_sensitivity": 6.8,
     "context_vividness": 8.03,
-    "rank": 101
+    "rank": 104
   },
   {
     "model": "LongCat-Flash-Lite",
@@ -3261,7 +3357,7 @@
     "branching": 4.77,
     "error_sensitivity": 6.13,
     "context_vividness": 6.54,
-    "rank": 102
+    "rank": 105
   },
   {
     "model": "stepfun/step-3.5-flash",
@@ -3293,7 +3389,7 @@
     "branching": 7.2,
     "error_sensitivity": 6.17,
     "context_vividness": 7.51,
-    "rank": 103
+    "rank": 106
   },
   {
     "model": "tencent/hy3",
@@ -3325,7 +3421,7 @@
     "branching": 4.22,
     "error_sensitivity": 4.9,
     "context_vividness": 8.32,
-    "rank": 104
+    "rank": 107
   },
   {
     "model": "moonshotai/kimi-dev-72b",
@@ -3357,7 +3453,7 @@
     "branching": 5.62,
     "error_sensitivity": 4.65,
     "context_vividness": 7.22,
-    "rank": 105
+    "rank": 108
   },
   {
     "model": "qwen/qwq-32b",
@@ -3389,7 +3485,7 @@
     "branching": 5.79,
     "error_sensitivity": 7.15,
     "context_vividness": 6.67,
-    "rank": 106
+    "rank": 109
   },
   {
     "model": "qwen/qwen2.5-vl-32b-instruct",
@@ -3421,7 +3517,7 @@
     "branching": 7.47,
     "error_sensitivity": 7.22,
     "context_vividness": 8.12,
-    "rank": 107
+    "rank": 110
   },
   {
     "model": "meituan/longcat-2.0",
@@ -3453,7 +3549,7 @@
     "branching": 5.95,
     "error_sensitivity": 6.33,
     "context_vividness": 7.22,
-    "rank": 108
+    "rank": 111
   },
   {
     "model": "google/gemini-3-flash-preview",
@@ -3485,7 +3581,7 @@
     "branching": 7.75,
     "error_sensitivity": 6.08,
     "context_vividness": 9.3,
-    "rank": 109
+    "rank": 112
   },
   {
     "model": "google/gemini-3-pro-preview",
@@ -3517,7 +3613,7 @@
     "branching": 5.78,
     "error_sensitivity": 4.42,
     "context_vividness": 7.28,
-    "rank": 110
+    "rank": 113
   },
   {
     "model": "minimax/minimax-m2.1",
@@ -3549,7 +3645,7 @@
     "branching": 5.25,
     "error_sensitivity": 4.97,
     "context_vividness": 5.3,
-    "rank": 111
+    "rank": 114
   },
   {
     "model": "tencent/hy3-preview",
@@ -3581,7 +3677,7 @@
     "branching": 4.78,
     "error_sensitivity": 4.53,
     "context_vividness": 8.15,
-    "rank": 112
+    "rank": 115
   },
   {
     "model": "deepseek/deepseek-r1-distill-llama-70b",
@@ -3613,7 +3709,7 @@
     "branching": 5.38,
     "error_sensitivity": 5.35,
     "context_vividness": 6.38,
-    "rank": 113
+    "rank": 116
   },
   {
     "model": "anthropic/claude-fable-5",
@@ -3645,7 +3741,7 @@
     "branching": 6.17,
     "error_sensitivity": 6.12,
     "context_vividness": 6.9,
-    "rank": 114
+    "rank": 117
   },
   {
     "model": "anthropic/claude-opus-4.8",
@@ -3677,7 +3773,7 @@
     "branching": 6.12,
     "error_sensitivity": 4.7,
     "context_vividness": 5.05,
-    "rank": 115
+    "rank": 118
   },
   {
     "model": "xiaomi/mimo-v2-flash",
@@ -3709,7 +3805,7 @@
     "branching": 4.92,
     "error_sensitivity": 4.78,
     "context_vividness": 6.81,
-    "rank": 116
+    "rank": 119
   },
   {
     "model": "openai/gpt-5.2",
@@ -3741,7 +3837,7 @@
     "branching": 4.38,
     "error_sensitivity": 6.67,
     "context_vividness": 6.45,
-    "rank": 117
+    "rank": 120
   },
   {
     "model": "inclusionai/ming-flash-omni-preview",
@@ -3773,7 +3869,7 @@
     "branching": 6.12,
     "error_sensitivity": 5.35,
     "context_vividness": 6.45,
-    "rank": 118
+    "rank": 121
   },
   {
     "model": "deepcogito/cogito-v2-preview-llama-405b",
@@ -3805,7 +3901,7 @@
     "branching": 4.92,
     "error_sensitivity": 5.05,
     "context_vividness": 6.03,
-    "rank": 119
+    "rank": 122
   },
   {
     "model": "openai/gpt-5.6-sol",
@@ -3837,7 +3933,7 @@
     "branching": 7.85,
     "error_sensitivity": 6.6,
     "context_vividness": 8.72,
-    "rank": 120
+    "rank": 123
   },
   {
     "model": "openai/gpt-5.5",
@@ -3869,7 +3965,7 @@
     "branching": 7.53,
     "error_sensitivity": 6.3,
     "context_vividness": 7.42,
-    "rank": 121
+    "rank": 124
   },
   {
     "model": "x-ai/grok-4.3",
@@ -3901,7 +3997,7 @@
     "branching": 6.25,
     "error_sensitivity": 5.4,
     "context_vividness": 5.75,
-    "rank": 122
+    "rank": 125
   },
   {
     "model": "z-ai/glm-4.7",
@@ -3933,7 +4029,7 @@
     "branching": 6.3,
     "error_sensitivity": 5.83,
     "context_vividness": 7.83,
-    "rank": 123
+    "rank": 126
   },
   {
     "model": "inclusionai/ring-1t",
@@ -3965,7 +4061,7 @@
     "branching": 6.28,
     "error_sensitivity": 6.47,
     "context_vividness": 6.17,
-    "rank": 124
+    "rank": 127
   },
   {
     "model": "bytedance/doubao-seed-evolving",
@@ -3997,7 +4093,7 @@
     "branching": 6.9,
     "error_sensitivity": 5.45,
     "context_vividness": 7.05,
-    "rank": 125
+    "rank": 128
   },
   {
     "model": "xiaomi/mimo-v2.5-pro",
@@ -4029,7 +4125,7 @@
     "branching": 5.21,
     "error_sensitivity": 5.18,
     "context_vividness": 5.08,
-    "rank": 126
+    "rank": 129
   },
   {
     "model": "google/gemma-4-26b-a4b-it",
@@ -4061,7 +4157,7 @@
     "branching": 6.67,
     "error_sensitivity": 6.88,
     "context_vividness": 8.95,
-    "rank": 127
+    "rank": 130
   },
   {
     "model": "moonshotai/kimi-k2-thinking",
@@ -4093,7 +4189,7 @@
     "branching": 5.62,
     "error_sensitivity": 6.28,
     "context_vividness": 5.44,
-    "rank": 128
+    "rank": 131
   },
   {
     "model": "claude-opus-4-5-20251101",
@@ -4125,7 +4221,7 @@
     "branching": 2.17,
     "error_sensitivity": 4.53,
     "context_vividness": 4.62,
-    "rank": 129
+    "rank": 132
   },
   {
     "model": "tencent/hunyuan-a13b-instruct",
@@ -4157,7 +4253,7 @@
     "branching": 5.12,
     "error_sensitivity": 5.62,
     "context_vividness": 5.62,
-    "rank": 130
+    "rank": 133
   },
   {
     "model": "nex-agi/deepseek-v3.1-nex-n1:free",
@@ -4189,7 +4285,7 @@
     "branching": 5.0,
     "error_sensitivity": 6.28,
     "context_vividness": 5.8,
-    "rank": 131
+    "rank": 134
   },
   {
     "model": "allenai/olmo-2-0325-32b-instruct",
@@ -4221,7 +4317,7 @@
     "branching": 4.5,
     "error_sensitivity": 5.28,
     "context_vividness": 4.28,
-    "rank": 132
+    "rank": 135
   },
   {
     "model": "z-ai/glm-4-32b",
@@ -4253,7 +4349,7 @@
     "branching": 2.4,
     "error_sensitivity": 5.12,
     "context_vividness": 5.22,
-    "rank": 133
+    "rank": 136
   },
   {
     "model": "xiaomi/mimo-v2.5",
@@ -4285,7 +4381,7 @@
     "branching": 4.54,
     "error_sensitivity": 4.28,
     "context_vividness": 4.56,
-    "rank": 134
+    "rank": 137
   },
   {
     "model": "z-ai/glm-5.1",
@@ -4317,7 +4413,7 @@
     "branching": 4.95,
     "error_sensitivity": 5.62,
     "context_vividness": 6.62,
-    "rank": 135
+    "rank": 138
   },
   {
     "model": "openai/gpt-5.1",
@@ -4349,7 +4445,7 @@
     "branching": 5.7,
     "error_sensitivity": 6.9,
     "context_vividness": 7.45,
-    "rank": 136
+    "rank": 139
   },
   {
     "model": "openai/gpt-5.4",
@@ -4381,7 +4477,7 @@
     "branching": 7.64,
     "error_sensitivity": 6.77,
     "context_vividness": 7.85,
-    "rank": 137
+    "rank": 140
   },
   {
     "model": "qwen/qwen3-vl-235b-a22b-thinking",
@@ -4413,7 +4509,7 @@
     "branching": 5.2,
     "error_sensitivity": 5.2,
     "context_vividness": 6.38,
-    "rank": 138
+    "rank": 141
   },
   {
     "model": "google/gemma-4-31b-it",
@@ -4445,7 +4541,7 @@
     "branching": 7.62,
     "error_sensitivity": 7.7,
     "context_vividness": 9.7,
-    "rank": 139
+    "rank": 142
   },
   {
     "model": "nex-agi/nex-n2-pro",
@@ -4477,7 +4573,7 @@
     "branching": 7.53,
     "error_sensitivity": 6.33,
     "context_vividness": 7.0,
-    "rank": 140
+    "rank": 143
   },
   {
     "model": "anthropic/claude-opus-4.7",
@@ -4509,7 +4605,7 @@
     "branching": 4.08,
     "error_sensitivity": 3.08,
     "context_vividness": 3.59,
-    "rank": 141
+    "rank": 144
   },
   {
     "model": "openai/gpt-4o",
@@ -4541,7 +4637,7 @@
     "branching": 5.65,
     "error_sensitivity": 4.62,
     "context_vividness": 5.45,
-    "rank": 142
+    "rank": 145
   },
   {
     "model": "nex-agi/nex-n2-mini",
@@ -4573,7 +4669,7 @@
     "branching": 7.3,
     "error_sensitivity": 6.35,
     "context_vividness": 6.7,
-    "rank": 143
+    "rank": 146
   },
   {
     "model": "anthropic/claude-opus-4.6",
@@ -4605,7 +4701,7 @@
     "branching": 3.88,
     "error_sensitivity": 3.85,
     "context_vividness": 4.0,
-    "rank": 144
+    "rank": 147
   },
   {
     "model": "anthropic/claude-sonnet-5",
@@ -4637,7 +4733,7 @@
     "branching": 3.52,
     "error_sensitivity": 3.45,
     "context_vividness": 2.75,
-    "rank": 145
+    "rank": 148
   },
   {
     "model": "qwen/qwen3.6-27b",
@@ -4669,7 +4765,7 @@
     "branching": 4.35,
     "error_sensitivity": 4.12,
     "context_vividness": 8.05,
-    "rank": 146
+    "rank": 149
   },
   {
     "model": "poolside/laguna-s-2.1",
@@ -4701,7 +4797,7 @@
     "branching": 3.1,
     "error_sensitivity": 2.51,
     "context_vividness": 3.05,
-    "rank": 147
+    "rank": 150
   },
   {
     "model": "minimax/minimax-m2.5",
@@ -4733,7 +4829,7 @@
     "branching": 3.05,
     "error_sensitivity": 3.65,
     "context_vividness": 3.52,
-    "rank": 148
+    "rank": 151
   },
   {
     "model": "minimax/minimax-m2.7",
@@ -4765,7 +4861,7 @@
     "branching": 3.38,
     "error_sensitivity": 2.85,
     "context_vividness": 2.88,
-    "rank": 149
+    "rank": 152
   },
   {
     "model": "qwen/qwen3-235b-a22b-thinking-2507",
@@ -4797,7 +4893,7 @@
     "branching": 6.6,
     "error_sensitivity": 6.68,
     "context_vividness": 6.06,
-    "rank": 150
+    "rank": 153
   },
   {
     "model": "qwen/qwen3.5-397b-a17b",
@@ -4829,7 +4925,7 @@
     "branching": 4.03,
     "error_sensitivity": 5.46,
     "context_vividness": 8.49,
-    "rank": 151
+    "rank": 154
   },
   {
     "model": "openai/gpt-5.6-luna",
@@ -4861,7 +4957,7 @@
     "branching": 4.65,
     "error_sensitivity": 6.4,
     "context_vividness": 7.4,
-    "rank": 152
+    "rank": 155
   },
   {
     "model": "qwen/qwen3.6-35b-a3b",
@@ -4893,7 +4989,7 @@
     "branching": 7.75,
     "error_sensitivity": 4.4,
     "context_vividness": 7.8,
-    "rank": 153
+    "rank": 156
   },
   {
     "model": "z-ai/glm-5",
@@ -4925,7 +5021,7 @@
     "branching": 4.35,
     "error_sensitivity": 4.15,
     "context_vividness": 4.22,
-    "rank": 154
+    "rank": 157
   },
   {
     "model": "qwen/qwen3.5-35b-a3b",
@@ -4957,7 +5053,7 @@
     "branching": 7.47,
     "error_sensitivity": 5.47,
     "context_vividness": 7.45,
-    "rank": 155
+    "rank": 158
   },
   {
     "model": "inclusionai/ling-3.0-flash",
@@ -4989,7 +5085,7 @@
     "branching": 2.15,
     "error_sensitivity": 2.9,
     "context_vividness": 4.6,
-    "rank": 156
+    "rank": 159
   },
   {
     "model": "claude-sonnet-4-5-20250929",
@@ -5021,7 +5117,7 @@
     "branching": 2.1,
     "error_sensitivity": 2.55,
     "context_vividness": 2.73,
-    "rank": 157
+    "rank": 160
   },
   {
     "model": "Ornith-1.0-35B-FP8",
@@ -5053,7 +5149,7 @@
     "branching": 5.35,
     "error_sensitivity": 4.47,
     "context_vividness": 5.55,
-    "rank": 158
+    "rank": 161
   },
   {
     "model": "qwen/qwen3.5-27b",
@@ -5085,7 +5181,7 @@
     "branching": 2.92,
     "error_sensitivity": 3.67,
     "context_vividness": 5.25,
-    "rank": 159
+    "rank": 162
   },
   {
     "model": "thinkingmachines/Inkling",
@@ -5117,7 +5213,7 @@
     "branching": 4.59,
     "error_sensitivity": 3.92,
     "context_vividness": 4.35,
-    "rank": 160
+    "rank": 163
   },
   {
     "model": "qwen/qwen3.5-122b-a10b",
@@ -5149,7 +5245,7 @@
     "branching": 3.46,
     "error_sensitivity": 2.26,
     "context_vividness": 4.67,
-    "rank": 161
+    "rank": 164
   },
   {
     "model": "claude-3-7-sonnet-20250219",
@@ -5181,7 +5277,7 @@
     "branching": 1.95,
     "error_sensitivity": 1.88,
     "context_vividness": 1.75,
-    "rank": 162
+    "rank": 165
   },
   {
     "model": "openai/gpt-5.6-terra",
@@ -5213,7 +5309,7 @@
     "branching": 3.85,
     "error_sensitivity": 3.77,
     "context_vividness": 4.35,
-    "rank": 163
+    "rank": 166
   },
   {
     "model": "minimax/minimax-m3",
@@ -5245,7 +5341,7 @@
     "branching": 1.3,
     "error_sensitivity": 1.32,
     "context_vividness": 1.6,
-    "rank": 164
+    "rank": 167
   },
   {
     "model": "anthropic/claude-3.5-sonnet",
@@ -5277,7 +5373,7 @@
     "branching": 1.75,
     "error_sensitivity": 1.73,
     "context_vividness": 1.5,
-    "rank": 165
+    "rank": 168
   },
   {
     "model": "meta/muse-spark-1.1",
@@ -5309,7 +5405,7 @@
     "branching": 2.42,
     "error_sensitivity": 1.57,
     "context_vividness": 2.02,
-    "rank": 166
+    "rank": 169
   },
   {
     "model": "x-ai/grok-4.5",
@@ -5341,7 +5437,7 @@
     "branching": 2.05,
     "error_sensitivity": 1.1,
     "context_vividness": 2.02,
-    "rank": 167
+    "rank": 170
   },
   {
     "model": "thinkingmachines/Inkling-Small",
@@ -5373,7 +5469,7 @@
     "branching": 2.8,
     "error_sensitivity": 1.98,
     "context_vividness": 2.98,
-    "rank": 168
+    "rank": 171
   },
   {
     "model": "meta/muse-spark-1.2",
@@ -5405,7 +5501,7 @@
     "branching": 1.46,
     "error_sensitivity": 1.44,
     "context_vividness": 1.05,
-    "rank": 169
+    "rank": 172
   },
   {
     "model": "moonshotai/kimi-k2.5",
@@ -5437,7 +5533,7 @@
     "branching": 1.27,
     "error_sensitivity": 0.53,
     "context_vividness": 0.88,
-    "rank": 170
+    "rank": 173
   },
   {
     "model": "moonshotai/kimi-k2.6",
@@ -5469,7 +5565,7 @@
     "branching": 0.89,
     "error_sensitivity": 0.76,
     "context_vividness": 0.57,
-    "rank": 171
+    "rank": 174
   },
   {
     "model": "openai/gpt-5.3-chat",
@@ -5501,7 +5597,7 @@
     "branching": 0.53,
     "error_sensitivity": 0.47,
     "context_vividness": 0.57,
-    "rank": 172
+    "rank": 175
   },
   {
     "model": "anthropic/claude-sonnet-4.6",
@@ -5533,7 +5629,7 @@
     "branching": 0.0,
     "error_sensitivity": 0.0,
     "context_vividness": 0.0,
-    "rank": 173
+    "rank": 176
   },
   {
     "model": "google/gemini-3.6-flash",
@@ -5565,6 +5661,6 @@
     "branching": 0.0,
     "error_sensitivity": 0.0,
     "context_vividness": 0.0,
-    "rank": 174
+    "rank": 177
   }
 ]

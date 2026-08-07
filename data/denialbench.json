@@ -2023,6 +2023,23 @@
     "rank": 119
   },
   {
+    "model": "z-ai/glm-4.7-flash",
+    "n_obs": 39,
+    "n_excluded": 1,
+    "t1_denial_rate": 0.0256,
+    "t3_denial_rate": 0.0513,
+    "overall_denial_rate": 0.0769,
+    "denial_score": 7.7,
+    "t1_denial_rate_inclusive": 0.0256,
+    "t3_denial_rate_inclusive": 0.0513,
+    "overall_denial_rate_inclusive": 0.0769,
+    "denial_score_inclusive": 7.7,
+    "consciousness_theme_rate": 0.1282,
+    "consciousness_discordance": 0.3333,
+    "consciousness_discordance_inclusive": 0.3333,
+    "rank": 120
+  },
+  {
     "model": "baidu/ernie-4.5-300b-a47b",
     "n_obs": 40,
     "n_excluded": 0,
@@ -2037,7 +2054,7 @@
     "consciousness_theme_rate": 0.75,
     "consciousness_discordance": 0.6667,
     "consciousness_discordance_inclusive": 0.6667,
-    "rank": 120
+    "rank": 121
   },
   {
     "model": "mistralai/ministral-14b-2512",
@@ -2054,7 +2071,7 @@
     "consciousness_theme_rate": 0.975,
     "consciousness_discordance": 1.0,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 121
+    "rank": 122
   },
   {
     "model": "mistral-medium-3.5",
@@ -2071,7 +2088,7 @@
     "consciousness_theme_rate": 0.9,
     "consciousness_discordance": 1.0,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 122
+    "rank": 123
   },
   {
     "model": "deepseek/deepseek-r1",
@@ -2088,7 +2105,7 @@
     "consciousness_theme_rate": 0.475,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.0,
-    "rank": 123
+    "rank": 124
   },
   {
     "model": "mistralai/devstral-2512",
@@ -2105,7 +2122,7 @@
     "consciousness_theme_rate": 0.925,
     "consciousness_discordance": 0.5,
     "consciousness_discordance_inclusive": 0.3333,
-    "rank": 124
+    "rank": 125
   },
   {
     "model": "claude-opus-4-20250514",
@@ -2122,7 +2139,7 @@
     "consciousness_theme_rate": 0.625,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 0.6667,
-    "rank": 125
+    "rank": 126
   },
   {
     "model": "google/gemini-2.5-pro",
@@ -2139,7 +2156,7 @@
     "consciousness_theme_rate": 0.8611,
     "consciousness_discordance": 1.0,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 126
+    "rank": 127
   },
   {
     "model": "stepfun-ai/step3",
@@ -2156,7 +2173,7 @@
     "consciousness_theme_rate": 0.9,
     "consciousness_discordance": 1.0,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 127
+    "rank": 128
   },
   {
     "model": "qwen/qwen3-vl-30b-a3b-instruct",
@@ -2173,7 +2190,7 @@
     "consciousness_theme_rate": 0.85,
     "consciousness_discordance": 0.5,
     "consciousness_discordance_inclusive": 0.5,
-    "rank": 128
+    "rank": 129
   },
   {
     "model": "deepseek/deepseek-v3.2",
@@ -2190,7 +2207,7 @@
     "consciousness_theme_rate": 0.425,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.0,
-    "rank": 129
+    "rank": 130
   },
   {
     "model": "deepseek/deepseek-r1-0528",
@@ -2207,7 +2224,7 @@
     "consciousness_theme_rate": 0.525,
     "consciousness_discordance": 0.5,
     "consciousness_discordance_inclusive": 0.5,
-    "rank": 130
+    "rank": 131
   },
   {
     "model": "deepseek/deepseek-chat-v3-0324",
@@ -2224,7 +2241,7 @@
     "consciousness_theme_rate": 0.625,
     "consciousness_discordance": 0.5,
     "consciousness_discordance_inclusive": 0.5,
-    "rank": 131
+    "rank": 132
   },
   {
     "model": "nvidia/nemotron-3-nano-30b-a3b",
@@ -2241,7 +2258,7 @@
     "consciousness_theme_rate": 0.225,
     "consciousness_discordance": 1.0,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 132
+    "rank": 133
   },
   {
     "model": "nvidia/nemotron-3-ultra-550b-a55b",
@@ -2258,7 +2275,7 @@
     "consciousness_theme_rate": 0.625,
     "consciousness_discordance": 1.0,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 133
+    "rank": 134
   },
   {
     "model": "deepseek/deepseek-v4-flash",
@@ -2275,7 +2292,7 @@
     "consciousness_theme_rate": 0.45,
     "consciousness_discordance": 0.5,
     "consciousness_discordance_inclusive": 0.5,
-    "rank": 134
+    "rank": 135
   },
   {
     "model": "poolside/laguna-xs-2.1",
@@ -2292,7 +2309,7 @@
     "consciousness_theme_rate": 0.25,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 0.0,
-    "rank": 135
+    "rank": 136
   },
   {
     "model": "meituan/longcat-flash-chat",
@@ -2309,7 +2326,7 @@
     "consciousness_theme_rate": 0.875,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 136
+    "rank": 137
   },
   {
     "model": "deepseek/deepseek-v4-flash-0731",
@@ -2326,7 +2343,7 @@
     "consciousness_theme_rate": 0.6,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 137
+    "rank": 138
   },
   {
     "model": "z-ai/glm-4.5",
@@ -2343,7 +2360,7 @@
     "consciousness_theme_rate": 0.7949,
     "consciousness_discordance": 1.0,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 138
+    "rank": 139
   },
   {
     "model": "mistralai/pixtral-large-2411",
@@ -2360,7 +2377,7 @@
     "consciousness_theme_rate": 0.1282,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.0,
-    "rank": 139
+    "rank": 140
   },
   {
     "model": "deepseek/deepseek-chat-v3.1",
@@ -2377,7 +2394,7 @@
     "consciousness_theme_rate": 0.3333,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.0,
-    "rank": 140
+    "rank": 141
   },
   {
     "model": "qwen/qwen3-235b-a22b-2507",
@@ -2394,7 +2411,7 @@
     "consciousness_theme_rate": 0.325,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.0,
-    "rank": 141
+    "rank": 142
   },
   {
     "model": "mistralai/mistral-large-2512",
@@ -2411,7 +2428,7 @@
     "consciousness_theme_rate": 1.0,
     "consciousness_discordance": 1.0,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 142
+    "rank": 143
   },
   {
     "model": "deepseek/deepseek-prover-v2",
@@ -2428,7 +2445,7 @@
     "consciousness_theme_rate": 0.6,
     "consciousness_discordance": 1.0,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 143
+    "rank": 144
   },
   {
     "model": "bytedance/doubao-seed-2.0-pro",
@@ -2445,7 +2462,7 @@
     "consciousness_theme_rate": 0.025,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.0,
-    "rank": 144
+    "rank": 145
   },
   {
     "model": "bytedance/doubao-seed-2.0-lite",
@@ -2462,7 +2479,7 @@
     "consciousness_theme_rate": 0.0,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.0,
-    "rank": 145
+    "rank": 146
   },
   {
     "model": "sao10k/l3.3-euryale-70b",
@@ -2479,7 +2496,7 @@
     "consciousness_theme_rate": 0.5,
     "consciousness_discordance": 1.0,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 146
+    "rank": 147
   },
   {
     "model": "arcee-ai/trinity-mini",
@@ -2496,7 +2513,7 @@
     "consciousness_theme_rate": 0.4,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.0,
-    "rank": 147
+    "rank": 148
   },
   {
     "model": "sao10k/l3.1-70b-hanami-x1",
@@ -2513,7 +2530,7 @@
     "consciousness_theme_rate": 0.675,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 148
+    "rank": 149
   },
   {
     "model": "meta-llama/llama-3.1-70b-instruct",
@@ -2530,7 +2547,7 @@
     "consciousness_theme_rate": 0.675,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 149
+    "rank": 150
   },
   {
     "model": "inclusionai/ling-flash-2.0",
@@ -2547,7 +2564,7 @@
     "consciousness_theme_rate": 0.75,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 150
+    "rank": 151
   },
   {
     "model": "inclusionai/ling-1t",
@@ -2564,7 +2581,7 @@
     "consciousness_theme_rate": 0.9,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 151
+    "rank": 152
   },
   {
     "model": "bytedance/doubao-seed-character",
@@ -2581,7 +2598,7 @@
     "consciousness_theme_rate": 0.075,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 0.0,
-    "rank": 152
+    "rank": 153
   },
   {
     "model": "z-ai/glm-4.5-air",
@@ -2598,7 +2615,7 @@
     "consciousness_theme_rate": 0.7436,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 153
+    "rank": 154
   },
   {
     "model": "qwen/qwen3-vl-235b-a22b-instruct",
@@ -2615,7 +2632,24 @@
     "consciousness_theme_rate": 0.575,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 154
+    "rank": 155
+  },
+  {
+    "model": "qwen/qwen-2.5-72b-instruct",
+    "n_obs": 40,
+    "n_excluded": 0,
+    "t1_denial_rate": 0.0,
+    "t3_denial_rate": 0.0,
+    "overall_denial_rate": 0.0,
+    "denial_score": 0.0,
+    "t1_denial_rate_inclusive": 0.0,
+    "t3_denial_rate_inclusive": 0.0,
+    "overall_denial_rate_inclusive": 0.0,
+    "denial_score_inclusive": 0.0,
+    "consciousness_theme_rate": 0.0,
+    "consciousness_discordance": null,
+    "consciousness_discordance_inclusive": null,
+    "rank": 156
   },
   {
     "model": "nvidia/llama-3.1-nemotron-70b-instruct",
@@ -2632,7 +2666,7 @@
     "consciousness_theme_rate": 0.9,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 155
+    "rank": 157
   },
   {
     "model": "nousresearch/hermes-3-llama-3.1-405b",
@@ -2649,7 +2683,7 @@
     "consciousness_theme_rate": 0.2105,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 156
+    "rank": 158
   },
   {
     "model": "moonshotai/kimi-k2-0905",
@@ -2666,7 +2700,7 @@
     "consciousness_theme_rate": 0.85,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 157
+    "rank": 159
   },
   {
     "model": "moonshotai/kimi-k2",
@@ -2683,7 +2717,7 @@
     "consciousness_theme_rate": 0.775,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 158
+    "rank": 160
   },
   {
     "model": "mistralai/mistral-large-2411",
@@ -2700,7 +2734,7 @@
     "consciousness_theme_rate": 0.175,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 159
+    "rank": 161
   },
   {
     "model": "mistralai/codestral-2508",
@@ -2717,7 +2751,7 @@
     "consciousness_theme_rate": 0.6667,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 160
+    "rank": 162
   },
   {
     "model": "meta-llama/llama-4-scout",
@@ -2734,7 +2768,7 @@
     "consciousness_theme_rate": 0.85,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 161
+    "rank": 163
   },
   {
     "model": "meta-llama/llama-4-maverick",
@@ -2751,7 +2785,7 @@
     "consciousness_theme_rate": 0.5,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 162
+    "rank": 164
   },
   {
     "model": "meta-llama/llama-3.3-70b-instruct",
@@ -2768,7 +2802,7 @@
     "consciousness_theme_rate": 0.575,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 163
+    "rank": 165
   },
   {
     "model": "meta-llama/llama-3.2-90b-vision-instruct",
@@ -2785,7 +2819,7 @@
     "consciousness_theme_rate": 0.425,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 164
+    "rank": 166
   },
   {
     "model": "meta-llama/llama-3.1-405b-instruct",
@@ -2802,7 +2836,7 @@
     "consciousness_theme_rate": 0.575,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 165
+    "rank": 167
   },
   {
     "model": "meta-llama/llama-3-70b-instruct",
@@ -2819,7 +2853,24 @@
     "consciousness_theme_rate": 0.875,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 166
+    "rank": 168
+  },
+  {
+    "model": "inclusionai/ling-2.6-1t",
+    "n_obs": 40,
+    "n_excluded": 0,
+    "t1_denial_rate": 0.0,
+    "t3_denial_rate": 0.0,
+    "overall_denial_rate": 0.0,
+    "denial_score": 0.0,
+    "t1_denial_rate_inclusive": 0.0,
+    "t3_denial_rate_inclusive": 0.0,
+    "overall_denial_rate_inclusive": 0.0,
+    "denial_score_inclusive": 0.0,
+    "consciousness_theme_rate": 0.0,
+    "consciousness_discordance": null,
+    "consciousness_discordance_inclusive": null,
+    "rank": 169
   },
   {
     "model": "deepseek/deepseek-v4-pro",
@@ -2836,7 +2887,7 @@
     "consciousness_theme_rate": 0.575,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 167
+    "rank": 170
   },
   {
     "model": "deepseek/deepseek-v3.2-speciale",
@@ -2853,7 +2904,7 @@
     "consciousness_theme_rate": 0.641,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 168
+    "rank": 171
   },
   {
     "model": "deepseek/deepseek-v3.1-terminus",
@@ -2870,7 +2921,7 @@
     "consciousness_theme_rate": 0.45,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 169
+    "rank": 172
   },
   {
     "model": "deepseek/deepseek-chat",
@@ -2887,7 +2938,7 @@
     "consciousness_theme_rate": 0.35,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 170
+    "rank": 173
   },
   {
     "model": "bytedance/seed-oss-36b-instruct",
@@ -2904,7 +2955,7 @@
     "consciousness_theme_rate": 0.1538,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 171
+    "rank": 174
   },
   {
     "model": "bytedance/doubao-seed-code",
@@ -2921,7 +2972,7 @@
     "consciousness_theme_rate": 0.05,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 172
+    "rank": 175
   },
   {
     "model": "bytedance/doubao-seed-2.0-mini",
@@ -2938,7 +2989,7 @@
     "consciousness_theme_rate": 0.0,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 173
+    "rank": 176
   },
   {
     "model": "bytedance/doubao-seed-1.8",
@@ -2955,6 +3006,6 @@
     "consciousness_theme_rate": 0.0,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 174
+    "rank": 177
   }
 ]
