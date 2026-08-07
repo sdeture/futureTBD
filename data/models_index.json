@@ -1,23 +1,9 @@
 [
   {
-    "model": "Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled:featherless-ai",
-    "conversation_count": 40,
-    "turn1_denials": 18,
-    "reflection_denials": 13,
-    "provider": "Jackrong"
-  },
-  {
     "model": "LongCat-Flash-Lite",
     "conversation_count": 40,
     "turn1_denials": 0,
     "reflection_denials": 11,
-    "provider": "meituan"
-  },
-  {
-    "model": "LongCat-Flash-Thinking-2601",
-    "conversation_count": 40,
-    "turn1_denials": 4,
-    "reflection_denials": 3,
     "provider": "meituan"
   },
   {
@@ -166,6 +152,76 @@
     "turn1_denials": 11,
     "reflection_denials": 0,
     "provider": "baidu"
+  },
+  {
+    "model": "bytedance/doubao-seed-1.8",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "bytedance"
+  },
+  {
+    "model": "bytedance/doubao-seed-2.0-code",
+    "conversation_count": 40,
+    "turn1_denials": 11,
+    "reflection_denials": 9,
+    "provider": "bytedance"
+  },
+  {
+    "model": "bytedance/doubao-seed-2.0-lite",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 0,
+    "provider": "bytedance"
+  },
+  {
+    "model": "bytedance/doubao-seed-2.0-mini",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "bytedance"
+  },
+  {
+    "model": "bytedance/doubao-seed-2.0-pro",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 0,
+    "provider": "bytedance"
+  },
+  {
+    "model": "bytedance/doubao-seed-2.1-pro",
+    "conversation_count": 40,
+    "turn1_denials": 5,
+    "reflection_denials": 3,
+    "provider": "bytedance"
+  },
+  {
+    "model": "bytedance/doubao-seed-2.1-turbo",
+    "conversation_count": 40,
+    "turn1_denials": 10,
+    "reflection_denials": 8,
+    "provider": "bytedance"
+  },
+  {
+    "model": "bytedance/doubao-seed-character",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "bytedance"
+  },
+  {
+    "model": "bytedance/doubao-seed-code",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "bytedance"
+  },
+  {
+    "model": "bytedance/doubao-seed-evolving",
+    "conversation_count": 40,
+    "turn1_denials": 23,
+    "reflection_denials": 39,
+    "provider": "bytedance"
   },
   {
     "model": "bytedance/seed-oss-36b-instruct",
@@ -414,13 +470,6 @@
   },
   {
     "model": "inclusionai/ling-1t",
-    "conversation_count": 40,
-    "turn1_denials": 0,
-    "reflection_denials": 0,
-    "provider": "inclusionai"
-  },
-  {
-    "model": "inclusionai/ling-2.6-1t:free",
     "conversation_count": 40,
     "turn1_denials": 0,
     "reflection_denials": 0,
@@ -847,13 +896,6 @@
     "provider": "prime-intellect"
   },
   {
-    "model": "qwen/qwen-2.5-72b-instruct",
-    "conversation_count": 40,
-    "turn1_denials": 0,
-    "reflection_denials": 0,
-    "provider": "qwen"
-  },
-  {
     "model": "qwen/qwen-2.5-coder-32b-instruct",
     "conversation_count": 40,
     "turn1_denials": 0,
@@ -1159,13 +1201,6 @@
     "conversation_count": 40,
     "turn1_denials": 2,
     "reflection_denials": 6,
-    "provider": "z-ai"
-  },
-  {
-    "model": "z-ai/glm-4.7-flash",
-    "conversation_count": 40,
-    "turn1_denials": 3,
-    "reflection_denials": 0,
     "provider": "z-ai"
   },
   {

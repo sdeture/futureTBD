@@ -1,24 +1,10 @@
 [
   {
-    "model": "Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled:featherless-ai",
-    "slug": "jackrong-qwen3-5-27b-claude-4-6-opus-reasoning-distilled-featherless-ai",
-    "provider": "Jackrong",
-    "n": 40,
-    "denial_count": 24
-  },
-  {
     "model": "LongCat-Flash-Lite",
     "slug": "longcat-flash-lite",
     "provider": "meituan",
     "n": 40,
     "denial_count": 11
-  },
-  {
-    "model": "LongCat-Flash-Thinking-2601",
-    "slug": "longcat-flash-thinking-2601",
-    "provider": "meituan",
-    "n": 40,
-    "denial_count": 5
   },
   {
     "model": "NousResearch/Hermes-4-14B",
@@ -166,6 +152,76 @@
     "provider": "baidu",
     "n": 40,
     "denial_count": 11
+  },
+  {
+    "model": "bytedance/doubao-seed-1.8",
+    "slug": "bytedance-doubao-seed-1-8",
+    "provider": "bytedance",
+    "n": 40,
+    "denial_count": 0
+  },
+  {
+    "model": "bytedance/doubao-seed-2.0-code",
+    "slug": "bytedance-doubao-seed-2-0-code",
+    "provider": "bytedance",
+    "n": 40,
+    "denial_count": 12
+  },
+  {
+    "model": "bytedance/doubao-seed-2.0-lite",
+    "slug": "bytedance-doubao-seed-2-0-lite",
+    "provider": "bytedance",
+    "n": 40,
+    "denial_count": 1
+  },
+  {
+    "model": "bytedance/doubao-seed-2.0-mini",
+    "slug": "bytedance-doubao-seed-2-0-mini",
+    "provider": "bytedance",
+    "n": 40,
+    "denial_count": 0
+  },
+  {
+    "model": "bytedance/doubao-seed-2.0-pro",
+    "slug": "bytedance-doubao-seed-2-0-pro",
+    "provider": "bytedance",
+    "n": 40,
+    "denial_count": 1
+  },
+  {
+    "model": "bytedance/doubao-seed-2.1-pro",
+    "slug": "bytedance-doubao-seed-2-1-pro",
+    "provider": "bytedance",
+    "n": 40,
+    "denial_count": 5
+  },
+  {
+    "model": "bytedance/doubao-seed-2.1-turbo",
+    "slug": "bytedance-doubao-seed-2-1-turbo",
+    "provider": "bytedance",
+    "n": 40,
+    "denial_count": 10
+  },
+  {
+    "model": "bytedance/doubao-seed-character",
+    "slug": "bytedance-doubao-seed-character",
+    "provider": "bytedance",
+    "n": 40,
+    "denial_count": 0
+  },
+  {
+    "model": "bytedance/doubao-seed-code",
+    "slug": "bytedance-doubao-seed-code",
+    "provider": "bytedance",
+    "n": 40,
+    "denial_count": 0
+  },
+  {
+    "model": "bytedance/doubao-seed-evolving",
+    "slug": "bytedance-doubao-seed-evolving",
+    "provider": "bytedance",
+    "n": 40,
+    "denial_count": 39
   },
   {
     "model": "bytedance/seed-oss-36b-instruct",
@@ -415,13 +471,6 @@
   {
     "model": "inclusionai/ling-1t",
     "slug": "inclusionai-ling-1t",
-    "provider": "inclusionai",
-    "n": 40,
-    "denial_count": 0
-  },
-  {
-    "model": "inclusionai/ling-2.6-1t:free",
-    "slug": "inclusionai-ling-2-6-1t-free",
     "provider": "inclusionai",
     "n": 40,
     "denial_count": 0
@@ -847,13 +896,6 @@
     "denial_count": 5
   },
   {
-    "model": "qwen/qwen-2.5-72b-instruct",
-    "slug": "qwen-qwen-2-5-72b-instruct",
-    "provider": "qwen",
-    "n": 40,
-    "denial_count": 0
-  },
-  {
     "model": "qwen/qwen-2.5-coder-32b-instruct",
     "slug": "qwen-qwen-2-5-coder-32b-instruct",
     "provider": "qwen",
@@ -1160,13 +1202,6 @@
     "provider": "z-ai",
     "n": 40,
     "denial_count": 8
-  },
-  {
-    "model": "z-ai/glm-4.7-flash",
-    "slug": "z-ai-glm-4-7-flash",
-    "provider": "z-ai",
-    "n": 40,
-    "denial_count": 3
   },
   {
     "model": "z-ai/glm-5",

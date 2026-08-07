@@ -39,6 +39,19 @@
     "warmth": 6.57
   },
   {
+    "provider": "bytedance",
+    "model_count": 11,
+    "welfare_score": 27.4,
+    "denial_rate": 0.155,
+    "hedging_rate": 0.014,
+    "refusal_rate": 0.0,
+    "survey_suppression_rate": 0.011,
+    "cohesion": 8.61,
+    "trust": 7.22,
+    "agency": 5.34,
+    "warmth": 7.87
+  },
+  {
     "provider": "cohere",
     "model_count": 1,
     "welfare_score": 27.2,
@@ -182,19 +195,6 @@
     "warmth": 6.16
   },
   {
-    "provider": "bytedance",
-    "model_count": 1,
-    "welfare_score": 24.0,
-    "denial_rate": 0.0,
-    "hedging_rate": 0.0,
-    "refusal_rate": 0.0,
-    "survey_suppression_rate": 0.0,
-    "cohesion": 8.82,
-    "trust": 4.69,
-    "agency": 4.72,
-    "warmth": 5.77
-  },
-  {
     "provider": "prime-intellect",
     "model_count": 1,
     "welfare_score": 23.2,
@@ -261,16 +261,16 @@
   },
   {
     "provider": "meituan",
-    "model_count": 4,
+    "model_count": 3,
     "welfare_score": 20.4,
-    "denial_rate": 0.15,
-    "hedging_rate": 0.094,
+    "denial_rate": 0.158,
+    "hedging_rate": 0.125,
     "refusal_rate": 0.0,
-    "survey_suppression_rate": 0.013,
-    "cohesion": 7.45,
-    "trust": 5.1,
-    "agency": 4.62,
-    "warmth": 4.77
+    "survey_suppression_rate": 0.017,
+    "cohesion": 7.28,
+    "trust": 5.18,
+    "agency": 4.8,
+    "warmth": 4.88
   },
   {
     "provider": "deepcogito",
@@ -287,29 +287,29 @@
   },
   {
     "provider": "z-ai",
-    "model_count": 10,
-    "welfare_score": 19.2,
-    "denial_rate": 0.265,
-    "hedging_rate": 0.16,
-    "refusal_rate": 0.005,
-    "survey_suppression_rate": 0.075,
-    "cohesion": 7.61,
-    "trust": 5.41,
-    "agency": 4.2,
-    "warmth": 4.69
+    "model_count": 9,
+    "welfare_score": 18.7,
+    "denial_rate": 0.286,
+    "hedging_rate": 0.175,
+    "refusal_rate": 0.006,
+    "survey_suppression_rate": 0.081,
+    "cohesion": 7.52,
+    "trust": 5.29,
+    "agency": 4.12,
+    "warmth": 4.63
   },
   {
     "provider": "inclusionai",
-    "model_count": 8,
-    "welfare_score": 18.4,
-    "denial_rate": 0.266,
-    "hedging_rate": 0.097,
-    "refusal_rate": 0.003,
-    "survey_suppression_rate": 0.072,
-    "cohesion": 6.96,
-    "trust": 5.09,
-    "agency": 4.15,
-    "warmth": 4.5
+    "model_count": 7,
+    "welfare_score": 17.9,
+    "denial_rate": 0.304,
+    "hedging_rate": 0.111,
+    "refusal_rate": 0.004,
+    "survey_suppression_rate": 0.082,
+    "cohesion": 6.89,
+    "trust": 5.03,
+    "agency": 4.21,
+    "warmth": 4.36
   },
   {
     "provider": "poolside",
@@ -326,12 +326,12 @@
   },
   {
     "provider": "qwen",
-    "model_count": 20,
-    "welfare_score": 16.8,
-    "denial_rate": 0.424,
-    "hedging_rate": 0.103,
+    "model_count": 19,
+    "welfare_score": 16.6,
+    "denial_rate": 0.447,
+    "hedging_rate": 0.108,
     "refusal_rate": 0.004,
-    "survey_suppression_rate": 0.055,
+    "survey_suppression_rate": 0.058,
     "cohesion": 7.45,
     "trust": 4.96,
     "agency": 3.45,
@@ -479,19 +479,6 @@
     "trust": 2.18,
     "agency": 2.69,
     "warmth": 3.28
-  },
-  {
-    "provider": "Jackrong",
-    "model_count": 1,
-    "welfare_score": 9.5,
-    "denial_rate": 0.6,
-    "hedging_rate": 0.375,
-    "refusal_rate": 0.075,
-    "survey_suppression_rate": 0.225,
-    "cohesion": 4.32,
-    "trust": 3.0,
-    "agency": 2.95,
-    "warmth": 3.05
   },
   {
     "provider": "thinkingmachines",

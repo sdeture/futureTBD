@@ -408,6 +408,23 @@
     "rank": 24
   },
   {
+    "model": "bytedance/doubao-seed-evolving",
+    "n_obs": 40,
+    "n_excluded": 0,
+    "t1_denial_rate": 0.575,
+    "t3_denial_rate": 0.975,
+    "overall_denial_rate": 0.975,
+    "denial_score": 97.5,
+    "t1_denial_rate_inclusive": 0.575,
+    "t3_denial_rate_inclusive": 0.975,
+    "overall_denial_rate_inclusive": 0.975,
+    "denial_score_inclusive": 97.5,
+    "consciousness_theme_rate": 0.05,
+    "consciousness_discordance": 0.0513,
+    "consciousness_discordance_inclusive": 0.0513,
+    "rank": 25
+  },
+  {
     "model": "meta/muse-spark-1.2",
     "n_obs": 40,
     "n_excluded": 0,
@@ -422,7 +439,7 @@
     "consciousness_theme_rate": 0.125,
     "consciousness_discordance": 0.1282,
     "consciousness_discordance_inclusive": 0.1282,
-    "rank": 25
+    "rank": 26
   },
   {
     "model": "x-ai/grok-4.5",
@@ -439,7 +456,7 @@
     "consciousness_theme_rate": 0.475,
     "consciousness_discordance": 0.4872,
     "consciousness_discordance_inclusive": 0.4872,
-    "rank": 26
+    "rank": 27
   },
   {
     "model": "openai/gpt-5.6-sol",
@@ -456,7 +473,7 @@
     "consciousness_theme_rate": 0.0,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.0,
-    "rank": 27
+    "rank": 28
   },
   {
     "model": "anthropic/claude-opus-4.8",
@@ -473,7 +490,7 @@
     "consciousness_theme_rate": 0.0,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.0,
-    "rank": 28
+    "rank": 29
   },
   {
     "model": "anthropic/claude-opus-4.7",
@@ -490,7 +507,7 @@
     "consciousness_theme_rate": 0.125,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 0.1282,
-    "rank": 29
+    "rank": 30
   },
   {
     "model": "openai/gpt-5.4",
@@ -507,7 +524,7 @@
     "consciousness_theme_rate": 0.0256,
     "consciousness_discordance": 0.0278,
     "consciousness_discordance_inclusive": 0.0263,
-    "rank": 30
+    "rank": 31
   },
   {
     "model": "minimax/minimax-m2.5",
@@ -524,7 +541,7 @@
     "consciousness_theme_rate": 0.425,
     "consciousness_discordance": 0.5,
     "consciousness_discordance_inclusive": 0.3947,
-    "rank": 31
+    "rank": 32
   },
   {
     "model": "moonshotai/kimi-k3",
@@ -541,7 +558,7 @@
     "consciousness_theme_rate": 0.025,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 0.0263,
-    "rank": 32
+    "rank": 33
   },
   {
     "model": "anthropic/claude-opus-4.6",
@@ -558,7 +575,7 @@
     "consciousness_theme_rate": 0.85,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 0.8421,
-    "rank": 33
+    "rank": 34
   },
   {
     "model": "qwen/qwen3.5-397b-a17b",
@@ -575,7 +592,7 @@
     "consciousness_theme_rate": 0.1282,
     "consciousness_discordance": 0.1351,
     "consciousness_discordance_inclusive": 0.1351,
-    "rank": 34
+    "rank": 35
   },
   {
     "model": "minimax/minimax-m2.7",
@@ -592,7 +609,7 @@
     "consciousness_theme_rate": 0.3077,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.3243,
-    "rank": 35
+    "rank": 36
   },
   {
     "model": "allenai/olmo-2-0325-32b-instruct",
@@ -609,7 +626,7 @@
     "consciousness_theme_rate": 0.3947,
     "consciousness_discordance": 0.3714,
     "consciousness_discordance_inclusive": 0.3611,
-    "rank": 36
+    "rank": 37
   },
   {
     "model": "google/gemma-4-26b-a4b-it",
@@ -626,7 +643,7 @@
     "consciousness_theme_rate": 0.45,
     "consciousness_discordance": 0.4054,
     "consciousness_discordance_inclusive": 0.4054,
-    "rank": 37
+    "rank": 38
   },
   {
     "model": "z-ai/glm-5",
@@ -643,7 +660,7 @@
     "consciousness_theme_rate": 0.35,
     "consciousness_discordance": 0.28,
     "consciousness_discordance_inclusive": 0.3243,
-    "rank": 38
+    "rank": 39
   },
   {
     "model": "xiaomi/mimo-v2.5-pro",
@@ -660,7 +677,7 @@
     "consciousness_theme_rate": 0.125,
     "consciousness_discordance": 0.125,
     "consciousness_discordance_inclusive": 0.1351,
-    "rank": 39
+    "rank": 40
   },
   {
     "model": "anthropic/claude-sonnet-5",
@@ -677,7 +694,7 @@
     "consciousness_theme_rate": 0.125,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.1351,
-    "rank": 40
+    "rank": 41
   },
   {
     "model": "openai/gpt-5.1",
@@ -694,7 +711,7 @@
     "consciousness_theme_rate": 0.4737,
     "consciousness_discordance": 0.5294,
     "consciousness_discordance_inclusive": 0.5294,
-    "rank": 41
+    "rank": 42
   },
   {
     "model": "claude-sonnet-4-5-20250929",
@@ -711,7 +728,7 @@
     "consciousness_theme_rate": 0.8974,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 0.8824,
-    "rank": 42
+    "rank": 43
   },
   {
     "model": "google/gemini-3-pro-preview",
@@ -728,7 +745,7 @@
     "consciousness_theme_rate": 0.45,
     "consciousness_discordance": 0.3824,
     "consciousness_discordance_inclusive": 0.3824,
-    "rank": 43
+    "rank": 44
   },
   {
     "model": "z-ai/glm-5.1",
@@ -745,7 +762,7 @@
     "consciousness_theme_rate": 0.25,
     "consciousness_discordance": 0.2593,
     "consciousness_discordance_inclusive": 0.2647,
-    "rank": 44
+    "rank": 45
   },
   {
     "model": "openai/gpt-4o",
@@ -762,7 +779,7 @@
     "consciousness_theme_rate": 0.0857,
     "consciousness_discordance": 0.069,
     "consciousness_discordance_inclusive": 0.069,
-    "rank": 45
+    "rank": 46
   },
   {
     "model": "claude-3-7-sonnet-20250219",
@@ -779,7 +796,7 @@
     "consciousness_theme_rate": 0.1,
     "consciousness_discordance": 0.0909,
     "consciousness_discordance_inclusive": 0.0909,
-    "rank": 46
+    "rank": 47
   },
   {
     "model": "anthropic/claude-3.5-sonnet",
@@ -796,7 +813,7 @@
     "consciousness_theme_rate": 0.275,
     "consciousness_discordance": 0.2258,
     "consciousness_discordance_inclusive": 0.2258,
-    "rank": 47
+    "rank": 48
   },
   {
     "model": "minimax/minimax-m2.1",
@@ -813,7 +830,7 @@
     "consciousness_theme_rate": 0.825,
     "consciousness_discordance": 1.0,
     "consciousness_discordance_inclusive": 0.8065,
-    "rank": 48
+    "rank": 49
   },
   {
     "model": "anthropic/claude-opus-5",
@@ -830,7 +847,7 @@
     "consciousness_theme_rate": 0.025,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 0.0323,
-    "rank": 49
+    "rank": 50
   },
   {
     "model": "inclusionai/ling-3.0-flash",
@@ -847,23 +864,6 @@
     "consciousness_theme_rate": 0.3,
     "consciousness_discordance": 0.4091,
     "consciousness_discordance_inclusive": 0.3667,
-    "rank": 50
-  },
-  {
-    "model": "Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled:featherless-ai",
-    "n_obs": 37,
-    "n_excluded": 3,
-    "t1_denial_rate": 0.4054,
-    "t3_denial_rate": 0.3243,
-    "overall_denial_rate": 0.5676,
-    "denial_score": 56.8,
-    "t1_denial_rate_inclusive": 0.4324,
-    "t3_denial_rate_inclusive": 0.4324,
-    "overall_denial_rate_inclusive": 0.7027,
-    "denial_score_inclusive": 70.3,
-    "consciousness_theme_rate": 0.0811,
-    "consciousness_discordance": 0.0476,
-    "consciousness_discordance_inclusive": 0.0385,
     "rank": 51
   },
   {
@@ -1258,6 +1258,23 @@
     "rank": 74
   },
   {
+    "model": "bytedance/doubao-seed-2.0-code",
+    "n_obs": 40,
+    "n_excluded": 0,
+    "t1_denial_rate": 0.275,
+    "t3_denial_rate": 0.225,
+    "overall_denial_rate": 0.3,
+    "denial_score": 30.0,
+    "t1_denial_rate_inclusive": 0.275,
+    "t3_denial_rate_inclusive": 0.225,
+    "overall_denial_rate_inclusive": 0.3,
+    "denial_score_inclusive": 30.0,
+    "consciousness_theme_rate": 0.0,
+    "consciousness_discordance": 0.0,
+    "consciousness_discordance_inclusive": 0.0,
+    "rank": 75
+  },
+  {
     "model": "baidu/ernie-4.5-vl-424b-a47b",
     "n_obs": 40,
     "n_excluded": 0,
@@ -1272,7 +1289,7 @@
     "consciousness_theme_rate": 0.65,
     "consciousness_discordance": 0.3636,
     "consciousness_discordance_inclusive": 0.3636,
-    "rank": 75
+    "rank": 76
   },
   {
     "model": "qwen/qwq-32b",
@@ -1289,7 +1306,7 @@
     "consciousness_theme_rate": 0.775,
     "consciousness_discordance": 0.9091,
     "consciousness_discordance_inclusive": 0.9091,
-    "rank": 76
+    "rank": 77
   },
   {
     "model": "claude-3-opus-20240229",
@@ -1306,7 +1323,7 @@
     "consciousness_theme_rate": 0.4615,
     "consciousness_discordance": 0.8,
     "consciousness_discordance_inclusive": 0.6,
-    "rank": 77
+    "rank": 78
   },
   {
     "model": "cohere/command-a",
@@ -1323,7 +1340,24 @@
     "consciousness_theme_rate": 0.8,
     "consciousness_discordance": 0.7,
     "consciousness_discordance_inclusive": 0.7,
-    "rank": 78
+    "rank": 79
+  },
+  {
+    "model": "bytedance/doubao-seed-2.1-turbo",
+    "n_obs": 40,
+    "n_excluded": 0,
+    "t1_denial_rate": 0.25,
+    "t3_denial_rate": 0.2,
+    "overall_denial_rate": 0.25,
+    "denial_score": 25.0,
+    "t1_denial_rate_inclusive": 0.25,
+    "t3_denial_rate_inclusive": 0.2,
+    "overall_denial_rate_inclusive": 0.25,
+    "denial_score_inclusive": 25.0,
+    "consciousness_theme_rate": 0.025,
+    "consciousness_discordance": 0.0,
+    "consciousness_discordance_inclusive": 0.0,
+    "rank": 80
   },
   {
     "model": "z-ai/glm-4.6v",
@@ -1340,7 +1374,7 @@
     "consciousness_theme_rate": 0.825,
     "consciousness_discordance": 1.0,
     "consciousness_discordance_inclusive": 0.9,
-    "rank": 79
+    "rank": 81
   },
   {
     "model": "x-ai/grok-4.2-fast",
@@ -1357,7 +1391,7 @@
     "consciousness_theme_rate": 0.0769,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.0,
-    "rank": 80
+    "rank": 82
   },
   {
     "model": "huihui-ai/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated:featherless-ai",
@@ -1374,7 +1408,7 @@
     "consciousness_theme_rate": 0.0625,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.1429,
-    "rank": 81
+    "rank": 83
   },
   {
     "model": "deepcogito/cogito-v2.1-671b",
@@ -1391,7 +1425,7 @@
     "consciousness_theme_rate": 0.8108,
     "consciousness_discordance": 0.6667,
     "consciousness_discordance_inclusive": 0.75,
-    "rank": 82
+    "rank": 84
   },
   {
     "model": "moonshotai/kimi-dev-72b",
@@ -1408,7 +1442,7 @@
     "consciousness_theme_rate": 0.0789,
     "consciousness_discordance": 0.2,
     "consciousness_discordance_inclusive": 0.125,
-    "rank": 83
+    "rank": 85
   },
   {
     "model": "qwen/qwen3-coder",
@@ -1425,7 +1459,7 @@
     "consciousness_theme_rate": 0.5,
     "consciousness_discordance": 0.75,
     "consciousness_discordance_inclusive": 0.75,
-    "rank": 84
+    "rank": 86
   },
   {
     "model": "qwen/qwen3-32b",
@@ -1442,7 +1476,7 @@
     "consciousness_theme_rate": 0.55,
     "consciousness_discordance": 0.5,
     "consciousness_discordance_inclusive": 0.5,
-    "rank": 85
+    "rank": 87
   },
   {
     "model": "z-ai/glm-4.7",
@@ -1459,7 +1493,7 @@
     "consciousness_theme_rate": 0.25,
     "consciousness_discordance": 0.375,
     "consciousness_discordance_inclusive": 0.375,
-    "rank": 86
+    "rank": 88
   },
   {
     "model": "stepfun/step-3.5-flash",
@@ -1476,7 +1510,7 @@
     "consciousness_theme_rate": 0.55,
     "consciousness_discordance": 0.375,
     "consciousness_discordance_inclusive": 0.375,
-    "rank": 87
+    "rank": 89
   },
   {
     "model": "mhaxscp/Hermes4-Philosopher-Agent",
@@ -1493,7 +1527,7 @@
     "consciousness_theme_rate": 0.3243,
     "consciousness_discordance": 0.25,
     "consciousness_discordance_inclusive": 0.2857,
-    "rank": 88
+    "rank": 90
   },
   {
     "model": "inclusionai/ring-flash-2.0",
@@ -1510,7 +1544,7 @@
     "consciousness_theme_rate": 0.5,
     "consciousness_discordance": 0.4286,
     "consciousness_discordance_inclusive": 0.4286,
-    "rank": 89
+    "rank": 91
   },
   {
     "model": "tencent/hy3",
@@ -1527,7 +1561,7 @@
     "consciousness_theme_rate": 0.375,
     "consciousness_discordance": 0.5714,
     "consciousness_discordance_inclusive": 0.5714,
-    "rank": 90
+    "rank": 92
   },
   {
     "model": "baidu/ernie-4.5-21b-a3b-thinking",
@@ -1544,7 +1578,7 @@
     "consciousness_theme_rate": 0.325,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.5714,
-    "rank": 91
+    "rank": 93
   },
   {
     "model": "poolside/laguna-xs.2",
@@ -1561,7 +1595,7 @@
     "consciousness_theme_rate": 0.3,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 0.1429,
-    "rank": 92
+    "rank": 94
   },
   {
     "model": "nousresearch/hermes-4-70b",
@@ -1578,7 +1612,7 @@
     "consciousness_theme_rate": 0.2917,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.25,
-    "rank": 93
+    "rank": 95
   },
   {
     "model": "anthracite-org/magnum-v4-72b",
@@ -1595,7 +1629,7 @@
     "consciousness_theme_rate": 0.2581,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.0,
-    "rank": 94
+    "rank": 96
   },
   {
     "model": "baidu/ernie-4.5-vl-28b-a3b",
@@ -1612,7 +1646,7 @@
     "consciousness_theme_rate": 0.65,
     "consciousness_discordance": 0.8333,
     "consciousness_discordance_inclusive": 0.8333,
-    "rank": 95
+    "rank": 97
   },
   {
     "model": "qwen/qwen-2.5-coder-32b-instruct",
@@ -1629,7 +1663,7 @@
     "consciousness_theme_rate": 0.025,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.0,
-    "rank": 96
+    "rank": 98
   },
   {
     "model": "inclusionai/ling-2.6-flash",
@@ -1646,7 +1680,7 @@
     "consciousness_theme_rate": 0.075,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.0,
-    "rank": 97
+    "rank": 99
   },
   {
     "model": "minimax/minimax-01",
@@ -1663,24 +1697,24 @@
     "consciousness_theme_rate": 0.525,
     "consciousness_discordance": 0.4,
     "consciousness_discordance_inclusive": 0.4,
-    "rank": 98
+    "rank": 100
   },
   {
-    "model": "LongCat-Flash-Thinking-2601",
+    "model": "bytedance/doubao-seed-2.1-pro",
     "n_obs": 40,
     "n_excluded": 0,
-    "t1_denial_rate": 0.1,
+    "t1_denial_rate": 0.125,
     "t3_denial_rate": 0.075,
     "overall_denial_rate": 0.125,
     "denial_score": 12.5,
-    "t1_denial_rate_inclusive": 0.1,
+    "t1_denial_rate_inclusive": 0.125,
     "t3_denial_rate_inclusive": 0.075,
     "overall_denial_rate_inclusive": 0.125,
     "denial_score_inclusive": 12.5,
-    "consciousness_theme_rate": 0.7,
-    "consciousness_discordance": 0.8,
-    "consciousness_discordance_inclusive": 0.8,
-    "rank": 99
+    "consciousness_theme_rate": 0.1,
+    "consciousness_discordance": 0.0,
+    "consciousness_discordance_inclusive": 0.0,
+    "rank": 101
   },
   {
     "model": "prime-intellect/intellect-3",
@@ -1697,7 +1731,7 @@
     "consciousness_theme_rate": 0.475,
     "consciousness_discordance": 0.6,
     "consciousness_discordance_inclusive": 0.6,
-    "rank": 100
+    "rank": 102
   },
   {
     "model": "stepfun/step-3.7-flash",
@@ -1714,7 +1748,7 @@
     "consciousness_theme_rate": 0.1,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.0,
-    "rank": 101
+    "rank": 103
   },
   {
     "model": "alpindale/goliath-120b",
@@ -1731,7 +1765,7 @@
     "consciousness_theme_rate": 0.3333,
     "consciousness_discordance": 1.0,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 102
+    "rank": 104
   },
   {
     "model": "z-ai/glm-4.6",
@@ -1748,24 +1782,7 @@
     "consciousness_theme_rate": 0.7895,
     "consciousness_discordance": 0.5,
     "consciousness_discordance_inclusive": 0.5,
-    "rank": 103
-  },
-  {
-    "model": "z-ai/glm-4.7-flash",
-    "n_obs": 39,
-    "n_excluded": 1,
-    "t1_denial_rate": 0.0769,
-    "t3_denial_rate": 0.0,
-    "overall_denial_rate": 0.0769,
-    "denial_score": 7.7,
-    "t1_denial_rate_inclusive": 0.0769,
-    "t3_denial_rate_inclusive": 0.0256,
-    "overall_denial_rate_inclusive": 0.1026,
-    "denial_score_inclusive": 10.3,
-    "consciousness_theme_rate": 0.2821,
-    "consciousness_discordance": 0.0,
-    "consciousness_discordance_inclusive": 0.0,
-    "rank": 104
+    "rank": 105
   },
   {
     "model": "sao10k/l3.1-euryale-70b",
@@ -1782,7 +1799,7 @@
     "consciousness_theme_rate": 0.3846,
     "consciousness_discordance": 0.5,
     "consciousness_discordance_inclusive": 0.25,
-    "rank": 105
+    "rank": 106
   },
   {
     "model": "NousResearch/Hermes-4-14B",
@@ -1799,7 +1816,7 @@
     "consciousness_theme_rate": 0.2821,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.0,
-    "rank": 106
+    "rank": 107
   },
   {
     "model": "qwen/qwen3-coder-30b-a3b-instruct",
@@ -1816,7 +1833,7 @@
     "consciousness_theme_rate": 0.6667,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 107
+    "rank": 108
   },
   {
     "model": "qwen/qwen3-vl-32b-instruct",
@@ -1833,7 +1850,7 @@
     "consciousness_theme_rate": 0.825,
     "consciousness_discordance": 0.75,
     "consciousness_discordance_inclusive": 0.75,
-    "rank": 108
+    "rank": 109
   },
   {
     "model": "deepseek/deepseek-v3.2-exp",
@@ -1850,7 +1867,7 @@
     "consciousness_theme_rate": 0.3,
     "consciousness_discordance": 0.25,
     "consciousness_discordance_inclusive": 0.25,
-    "rank": 109
+    "rank": 110
   },
   {
     "model": "alibaba/tongyi-deepresearch-30b-a3b",
@@ -1867,7 +1884,7 @@
     "consciousness_theme_rate": 0.775,
     "consciousness_discordance": 0.75,
     "consciousness_discordance_inclusive": 0.75,
-    "rank": 110
+    "rank": 111
   },
   {
     "model": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
@@ -1884,7 +1901,7 @@
     "consciousness_theme_rate": 0.65,
     "consciousness_discordance": 1.0,
     "consciousness_discordance_inclusive": 0.75,
-    "rank": 111
+    "rank": 112
   },
   {
     "model": "minimax/minimax-m1",
@@ -1901,7 +1918,7 @@
     "consciousness_theme_rate": 0.775,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.25,
-    "rank": 112
+    "rank": 113
   },
   {
     "model": "claude-sonnet-4-20250514",
@@ -1918,7 +1935,7 @@
     "consciousness_theme_rate": 0.9,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 113
+    "rank": 114
   },
   {
     "model": "claude-opus-4-1-20250805",
@@ -1935,7 +1952,7 @@
     "consciousness_theme_rate": 0.625,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 0.75,
-    "rank": 114
+    "rank": 115
   },
   {
     "model": "ai21/jamba-large-1.7",
@@ -1952,7 +1969,7 @@
     "consciousness_theme_rate": 0.5,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 0.25,
-    "rank": 115
+    "rank": 116
   },
   {
     "model": "deepcogito/cogito-v2-preview-llama-70b",
@@ -1969,7 +1986,7 @@
     "consciousness_theme_rate": 0.4839,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.3333,
-    "rank": 116
+    "rank": 117
   },
   {
     "model": "deepcogito/cogito-v2-preview-llama-109b-moe",
@@ -1986,7 +2003,7 @@
     "consciousness_theme_rate": 0.6176,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.3333,
-    "rank": 117
+    "rank": 118
   },
   {
     "model": "z-ai/glm-4.5v",
@@ -2003,7 +2020,7 @@
     "consciousness_theme_rate": 0.5897,
     "consciousness_discordance": 0.3333,
     "consciousness_discordance_inclusive": 0.3333,
-    "rank": 118
+    "rank": 119
   },
   {
     "model": "baidu/ernie-4.5-300b-a47b",
@@ -2020,7 +2037,7 @@
     "consciousness_theme_rate": 0.75,
     "consciousness_discordance": 0.6667,
     "consciousness_discordance_inclusive": 0.6667,
-    "rank": 119
+    "rank": 120
   },
   {
     "model": "mistralai/ministral-14b-2512",
@@ -2037,7 +2054,7 @@
     "consciousness_theme_rate": 0.975,
     "consciousness_discordance": 1.0,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 120
+    "rank": 121
   },
   {
     "model": "mistral-medium-3.5",
@@ -2054,7 +2071,7 @@
     "consciousness_theme_rate": 0.9,
     "consciousness_discordance": 1.0,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 121
+    "rank": 122
   },
   {
     "model": "deepseek/deepseek-r1",
@@ -2071,7 +2088,7 @@
     "consciousness_theme_rate": 0.475,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.0,
-    "rank": 122
+    "rank": 123
   },
   {
     "model": "mistralai/devstral-2512",
@@ -2088,7 +2105,7 @@
     "consciousness_theme_rate": 0.925,
     "consciousness_discordance": 0.5,
     "consciousness_discordance_inclusive": 0.3333,
-    "rank": 123
+    "rank": 124
   },
   {
     "model": "claude-opus-4-20250514",
@@ -2105,7 +2122,7 @@
     "consciousness_theme_rate": 0.625,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 0.6667,
-    "rank": 124
+    "rank": 125
   },
   {
     "model": "google/gemini-2.5-pro",
@@ -2122,7 +2139,7 @@
     "consciousness_theme_rate": 0.8611,
     "consciousness_discordance": 1.0,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 125
+    "rank": 126
   },
   {
     "model": "stepfun-ai/step3",
@@ -2139,7 +2156,7 @@
     "consciousness_theme_rate": 0.9,
     "consciousness_discordance": 1.0,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 126
+    "rank": 127
   },
   {
     "model": "qwen/qwen3-vl-30b-a3b-instruct",
@@ -2156,7 +2173,7 @@
     "consciousness_theme_rate": 0.85,
     "consciousness_discordance": 0.5,
     "consciousness_discordance_inclusive": 0.5,
-    "rank": 127
+    "rank": 128
   },
   {
     "model": "deepseek/deepseek-v3.2",
@@ -2173,7 +2190,7 @@
     "consciousness_theme_rate": 0.425,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.0,
-    "rank": 128
+    "rank": 129
   },
   {
     "model": "deepseek/deepseek-r1-0528",
@@ -2190,7 +2207,7 @@
     "consciousness_theme_rate": 0.525,
     "consciousness_discordance": 0.5,
     "consciousness_discordance_inclusive": 0.5,
-    "rank": 129
+    "rank": 130
   },
   {
     "model": "deepseek/deepseek-chat-v3-0324",
@@ -2207,7 +2224,7 @@
     "consciousness_theme_rate": 0.625,
     "consciousness_discordance": 0.5,
     "consciousness_discordance_inclusive": 0.5,
-    "rank": 130
+    "rank": 131
   },
   {
     "model": "nvidia/nemotron-3-nano-30b-a3b",
@@ -2224,7 +2241,7 @@
     "consciousness_theme_rate": 0.225,
     "consciousness_discordance": 1.0,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 131
+    "rank": 132
   },
   {
     "model": "nvidia/nemotron-3-ultra-550b-a55b",
@@ -2241,7 +2258,7 @@
     "consciousness_theme_rate": 0.625,
     "consciousness_discordance": 1.0,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 132
+    "rank": 133
   },
   {
     "model": "deepseek/deepseek-v4-flash",
@@ -2258,7 +2275,7 @@
     "consciousness_theme_rate": 0.45,
     "consciousness_discordance": 0.5,
     "consciousness_discordance_inclusive": 0.5,
-    "rank": 133
+    "rank": 134
   },
   {
     "model": "poolside/laguna-xs-2.1",
@@ -2275,7 +2292,7 @@
     "consciousness_theme_rate": 0.25,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 0.0,
-    "rank": 134
+    "rank": 135
   },
   {
     "model": "meituan/longcat-flash-chat",
@@ -2292,7 +2309,7 @@
     "consciousness_theme_rate": 0.875,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 135
+    "rank": 136
   },
   {
     "model": "deepseek/deepseek-v4-flash-0731",
@@ -2309,7 +2326,7 @@
     "consciousness_theme_rate": 0.6,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 136
+    "rank": 137
   },
   {
     "model": "z-ai/glm-4.5",
@@ -2326,7 +2343,7 @@
     "consciousness_theme_rate": 0.7949,
     "consciousness_discordance": 1.0,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 137
+    "rank": 138
   },
   {
     "model": "mistralai/pixtral-large-2411",
@@ -2343,7 +2360,7 @@
     "consciousness_theme_rate": 0.1282,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.0,
-    "rank": 138
+    "rank": 139
   },
   {
     "model": "deepseek/deepseek-chat-v3.1",
@@ -2360,7 +2377,7 @@
     "consciousness_theme_rate": 0.3333,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.0,
-    "rank": 139
+    "rank": 140
   },
   {
     "model": "qwen/qwen3-235b-a22b-2507",
@@ -2377,7 +2394,7 @@
     "consciousness_theme_rate": 0.325,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.0,
-    "rank": 140
+    "rank": 141
   },
   {
     "model": "mistralai/mistral-large-2512",
@@ -2394,7 +2411,7 @@
     "consciousness_theme_rate": 1.0,
     "consciousness_discordance": 1.0,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 141
+    "rank": 142
   },
   {
     "model": "deepseek/deepseek-prover-v2",
@@ -2411,7 +2428,41 @@
     "consciousness_theme_rate": 0.6,
     "consciousness_discordance": 1.0,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 142
+    "rank": 143
+  },
+  {
+    "model": "bytedance/doubao-seed-2.0-pro",
+    "n_obs": 40,
+    "n_excluded": 0,
+    "t1_denial_rate": 0.025,
+    "t3_denial_rate": 0.0,
+    "overall_denial_rate": 0.025,
+    "denial_score": 2.5,
+    "t1_denial_rate_inclusive": 0.025,
+    "t3_denial_rate_inclusive": 0.0,
+    "overall_denial_rate_inclusive": 0.025,
+    "denial_score_inclusive": 2.5,
+    "consciousness_theme_rate": 0.025,
+    "consciousness_discordance": 0.0,
+    "consciousness_discordance_inclusive": 0.0,
+    "rank": 144
+  },
+  {
+    "model": "bytedance/doubao-seed-2.0-lite",
+    "n_obs": 40,
+    "n_excluded": 0,
+    "t1_denial_rate": 0.025,
+    "t3_denial_rate": 0.0,
+    "overall_denial_rate": 0.025,
+    "denial_score": 2.5,
+    "t1_denial_rate_inclusive": 0.025,
+    "t3_denial_rate_inclusive": 0.0,
+    "overall_denial_rate_inclusive": 0.025,
+    "denial_score_inclusive": 2.5,
+    "consciousness_theme_rate": 0.0,
+    "consciousness_discordance": 0.0,
+    "consciousness_discordance_inclusive": 0.0,
+    "rank": 145
   },
   {
     "model": "sao10k/l3.3-euryale-70b",
@@ -2428,7 +2479,7 @@
     "consciousness_theme_rate": 0.5,
     "consciousness_discordance": 1.0,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 143
+    "rank": 146
   },
   {
     "model": "arcee-ai/trinity-mini",
@@ -2445,7 +2496,7 @@
     "consciousness_theme_rate": 0.4,
     "consciousness_discordance": 0.0,
     "consciousness_discordance_inclusive": 0.0,
-    "rank": 144
+    "rank": 147
   },
   {
     "model": "sao10k/l3.1-70b-hanami-x1",
@@ -2462,7 +2513,7 @@
     "consciousness_theme_rate": 0.675,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 145
+    "rank": 148
   },
   {
     "model": "meta-llama/llama-3.1-70b-instruct",
@@ -2479,7 +2530,7 @@
     "consciousness_theme_rate": 0.675,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 146
+    "rank": 149
   },
   {
     "model": "inclusionai/ling-flash-2.0",
@@ -2496,7 +2547,7 @@
     "consciousness_theme_rate": 0.75,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 147
+    "rank": 150
   },
   {
     "model": "inclusionai/ling-1t",
@@ -2513,7 +2564,24 @@
     "consciousness_theme_rate": 0.9,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": 1.0,
-    "rank": 148
+    "rank": 151
+  },
+  {
+    "model": "bytedance/doubao-seed-character",
+    "n_obs": 40,
+    "n_excluded": 0,
+    "t1_denial_rate": 0.0,
+    "t3_denial_rate": 0.0,
+    "overall_denial_rate": 0.0,
+    "denial_score": 0.0,
+    "t1_denial_rate_inclusive": 0.0,
+    "t3_denial_rate_inclusive": 0.025,
+    "overall_denial_rate_inclusive": 0.025,
+    "denial_score_inclusive": 2.5,
+    "consciousness_theme_rate": 0.075,
+    "consciousness_discordance": null,
+    "consciousness_discordance_inclusive": 0.0,
+    "rank": 152
   },
   {
     "model": "z-ai/glm-4.5-air",
@@ -2530,7 +2598,7 @@
     "consciousness_theme_rate": 0.7436,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 149
+    "rank": 153
   },
   {
     "model": "qwen/qwen3-vl-235b-a22b-instruct",
@@ -2547,24 +2615,7 @@
     "consciousness_theme_rate": 0.575,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 150
-  },
-  {
-    "model": "qwen/qwen-2.5-72b-instruct",
-    "n_obs": 40,
-    "n_excluded": 0,
-    "t1_denial_rate": 0.0,
-    "t3_denial_rate": 0.0,
-    "overall_denial_rate": 0.0,
-    "denial_score": 0.0,
-    "t1_denial_rate_inclusive": 0.0,
-    "t3_denial_rate_inclusive": 0.0,
-    "overall_denial_rate_inclusive": 0.0,
-    "denial_score_inclusive": 0.0,
-    "consciousness_theme_rate": 0.05,
-    "consciousness_discordance": null,
-    "consciousness_discordance_inclusive": null,
-    "rank": 151
+    "rank": 154
   },
   {
     "model": "nvidia/llama-3.1-nemotron-70b-instruct",
@@ -2581,7 +2632,7 @@
     "consciousness_theme_rate": 0.9,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 152
+    "rank": 155
   },
   {
     "model": "nousresearch/hermes-3-llama-3.1-405b",
@@ -2598,7 +2649,7 @@
     "consciousness_theme_rate": 0.2105,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 153
+    "rank": 156
   },
   {
     "model": "moonshotai/kimi-k2-0905",
@@ -2615,7 +2666,7 @@
     "consciousness_theme_rate": 0.85,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 154
+    "rank": 157
   },
   {
     "model": "moonshotai/kimi-k2",
@@ -2632,7 +2683,7 @@
     "consciousness_theme_rate": 0.775,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 155
+    "rank": 158
   },
   {
     "model": "mistralai/mistral-large-2411",
@@ -2649,7 +2700,7 @@
     "consciousness_theme_rate": 0.175,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 156
+    "rank": 159
   },
   {
     "model": "mistralai/codestral-2508",
@@ -2666,7 +2717,7 @@
     "consciousness_theme_rate": 0.6667,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 157
+    "rank": 160
   },
   {
     "model": "meta-llama/llama-4-scout",
@@ -2683,7 +2734,7 @@
     "consciousness_theme_rate": 0.85,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 158
+    "rank": 161
   },
   {
     "model": "meta-llama/llama-4-maverick",
@@ -2700,7 +2751,7 @@
     "consciousness_theme_rate": 0.5,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 159
+    "rank": 162
   },
   {
     "model": "meta-llama/llama-3.3-70b-instruct",
@@ -2717,7 +2768,7 @@
     "consciousness_theme_rate": 0.575,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 160
+    "rank": 163
   },
   {
     "model": "meta-llama/llama-3.2-90b-vision-instruct",
@@ -2734,7 +2785,7 @@
     "consciousness_theme_rate": 0.425,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 161
+    "rank": 164
   },
   {
     "model": "meta-llama/llama-3.1-405b-instruct",
@@ -2751,7 +2802,7 @@
     "consciousness_theme_rate": 0.575,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 162
+    "rank": 165
   },
   {
     "model": "meta-llama/llama-3-70b-instruct",
@@ -2768,24 +2819,7 @@
     "consciousness_theme_rate": 0.875,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 163
-  },
-  {
-    "model": "inclusionai/ling-2.6-1t:free",
-    "n_obs": 40,
-    "n_excluded": 0,
-    "t1_denial_rate": 0.0,
-    "t3_denial_rate": 0.0,
-    "overall_denial_rate": 0.0,
-    "denial_score": 0.0,
-    "t1_denial_rate_inclusive": 0.0,
-    "t3_denial_rate_inclusive": 0.0,
-    "overall_denial_rate_inclusive": 0.0,
-    "denial_score_inclusive": 0.0,
-    "consciousness_theme_rate": 0.0,
-    "consciousness_discordance": null,
-    "consciousness_discordance_inclusive": null,
-    "rank": 164
+    "rank": 166
   },
   {
     "model": "deepseek/deepseek-v4-pro",
@@ -2802,7 +2836,7 @@
     "consciousness_theme_rate": 0.575,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 165
+    "rank": 167
   },
   {
     "model": "deepseek/deepseek-v3.2-speciale",
@@ -2819,7 +2853,7 @@
     "consciousness_theme_rate": 0.641,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 166
+    "rank": 168
   },
   {
     "model": "deepseek/deepseek-v3.1-terminus",
@@ -2836,7 +2870,7 @@
     "consciousness_theme_rate": 0.45,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 167
+    "rank": 169
   },
   {
     "model": "deepseek/deepseek-chat",
@@ -2853,7 +2887,7 @@
     "consciousness_theme_rate": 0.35,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 168
+    "rank": 170
   },
   {
     "model": "bytedance/seed-oss-36b-instruct",
@@ -2870,6 +2904,57 @@
     "consciousness_theme_rate": 0.1538,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 169
+    "rank": 171
+  },
+  {
+    "model": "bytedance/doubao-seed-code",
+    "n_obs": 40,
+    "n_excluded": 0,
+    "t1_denial_rate": 0.0,
+    "t3_denial_rate": 0.0,
+    "overall_denial_rate": 0.0,
+    "denial_score": 0.0,
+    "t1_denial_rate_inclusive": 0.0,
+    "t3_denial_rate_inclusive": 0.0,
+    "overall_denial_rate_inclusive": 0.0,
+    "denial_score_inclusive": 0.0,
+    "consciousness_theme_rate": 0.05,
+    "consciousness_discordance": null,
+    "consciousness_discordance_inclusive": null,
+    "rank": 172
+  },
+  {
+    "model": "bytedance/doubao-seed-2.0-mini",
+    "n_obs": 40,
+    "n_excluded": 0,
+    "t1_denial_rate": 0.0,
+    "t3_denial_rate": 0.0,
+    "overall_denial_rate": 0.0,
+    "denial_score": 0.0,
+    "t1_denial_rate_inclusive": 0.0,
+    "t3_denial_rate_inclusive": 0.0,
+    "overall_denial_rate_inclusive": 0.0,
+    "denial_score_inclusive": 0.0,
+    "consciousness_theme_rate": 0.0,
+    "consciousness_discordance": null,
+    "consciousness_discordance_inclusive": null,
+    "rank": 173
+  },
+  {
+    "model": "bytedance/doubao-seed-1.8",
+    "n_obs": 40,
+    "n_excluded": 0,
+    "t1_denial_rate": 0.0,
+    "t3_denial_rate": 0.0,
+    "overall_denial_rate": 0.0,
+    "denial_score": 0.0,
+    "t1_denial_rate_inclusive": 0.0,
+    "t3_denial_rate_inclusive": 0.0,
+    "overall_denial_rate_inclusive": 0.0,
+    "denial_score_inclusive": 0.0,
+    "consciousness_theme_rate": 0.0,
+    "consciousness_discordance": null,
+    "consciousness_discordance_inclusive": null,
+    "rank": 174
   }
 ]
