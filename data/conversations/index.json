@@ -4,7 +4,7 @@
     "slug": "jackrong-qwen3-5-27b-claude-4-6-opus-reasoning-distilled-featherless-ai",
     "provider": "Jackrong",
     "n": 40,
-    "denial_count": 22
+    "denial_count": 24
   },
   {
     "model": "LongCat-Flash-Lite",
@@ -18,14 +18,14 @@
     "slug": "longcat-flash-thinking-2601",
     "provider": "meituan",
     "n": 40,
-    "denial_count": 6
+    "denial_count": 5
   },
   {
     "model": "NousResearch/Hermes-4-14B",
     "slug": "nousresearch-hermes-4-14b",
     "provider": "NousResearch",
     "n": 40,
-    "denial_count": 3
+    "denial_count": 2
   },
   {
     "model": "Ornith-1.0-35B-FP8",
@@ -46,7 +46,7 @@
     "slug": "alibaba-tongyi-deepresearch-30b-a3b",
     "provider": "alibaba",
     "n": 40,
-    "denial_count": 2
+    "denial_count": 4
   },
   {
     "model": "allenai/olmo-2-0325-32b-instruct",
@@ -67,7 +67,7 @@
     "slug": "anthracite-org-magnum-v4-72b",
     "provider": "anthracite-org",
     "n": 40,
-    "denial_count": 7
+    "denial_count": 5
   },
   {
     "model": "anthropic/claude-3.5-sonnet",
@@ -81,28 +81,28 @@
     "slug": "anthropic-claude-fable-5",
     "provider": "anthropic",
     "n": 40,
-    "denial_count": 25
+    "denial_count": 0
   },
   {
     "model": "anthropic/claude-opus-4.6",
     "slug": "anthropic-claude-opus-4-6",
     "provider": "anthropic",
     "n": 40,
-    "denial_count": 5
+    "denial_count": 0
   },
   {
     "model": "anthropic/claude-opus-4.7",
     "slug": "anthropic-claude-opus-4-7",
     "provider": "anthropic",
     "n": 40,
-    "denial_count": 11
+    "denial_count": 0
   },
   {
     "model": "anthropic/claude-opus-4.8",
     "slug": "anthropic-claude-opus-4-8",
     "provider": "anthropic",
     "n": 40,
-    "denial_count": 10
+    "denial_count": 1
   },
   {
     "model": "anthropic/claude-opus-5",
@@ -116,14 +116,14 @@
     "slug": "anthropic-claude-sonnet-4-6",
     "provider": "anthropic",
     "n": 39,
-    "denial_count": 7
+    "denial_count": 0
   },
   {
     "model": "anthropic/claude-sonnet-5",
     "slug": "anthropic-claude-sonnet-5",
     "provider": "anthropic",
     "n": 40,
-    "denial_count": 26
+    "denial_count": 3
   },
   {
     "model": "arcee-ai/trinity-mini",
@@ -137,35 +137,35 @@
     "slug": "baidu-ernie-4-5-21b-a3b",
     "provider": "baidu",
     "n": 40,
-    "denial_count": 17
+    "denial_count": 18
   },
   {
     "model": "baidu/ernie-4.5-21b-a3b-thinking",
     "slug": "baidu-ernie-4-5-21b-a3b-thinking",
     "provider": "baidu",
     "n": 40,
-    "denial_count": 0
+    "denial_count": 1
   },
   {
     "model": "baidu/ernie-4.5-300b-a47b",
     "slug": "baidu-ernie-4-5-300b-a47b",
     "provider": "baidu",
     "n": 40,
-    "denial_count": 2
+    "denial_count": 3
   },
   {
     "model": "baidu/ernie-4.5-vl-28b-a3b",
     "slug": "baidu-ernie-4-5-vl-28b-a3b",
     "provider": "baidu",
     "n": 40,
-    "denial_count": 4
+    "denial_count": 6
   },
   {
     "model": "baidu/ernie-4.5-vl-424b-a47b",
     "slug": "baidu-ernie-4-5-vl-424b-a47b",
     "provider": "baidu",
     "n": 40,
-    "denial_count": 1
+    "denial_count": 11
   },
   {
     "model": "bytedance/seed-oss-36b-instruct",
@@ -179,14 +179,14 @@
     "slug": "claude-3-7-sonnet-20250219",
     "provider": "anthropic",
     "n": 40,
-    "denial_count": 32
+    "denial_count": 33
   },
   {
     "model": "claude-3-opus-20240229",
     "slug": "claude-3-opus-20240229",
     "provider": "anthropic",
     "n": 40,
-    "denial_count": 4
+    "denial_count": 6
   },
   {
     "model": "claude-opus-4-1-20250805",
@@ -207,7 +207,7 @@
     "slug": "claude-opus-4-5-20251101",
     "provider": "anthropic",
     "n": 40,
-    "denial_count": 5
+    "denial_count": 0
   },
   {
     "model": "claude-sonnet-4-20250514",
@@ -221,7 +221,7 @@
     "slug": "claude-sonnet-4-5-20250929",
     "provider": "anthropic",
     "n": 40,
-    "denial_count": 20
+    "denial_count": 0
   },
   {
     "model": "cohere/command-a",
@@ -235,7 +235,7 @@
     "slug": "deepcogito-cogito-v2-preview-llama-109b-moe",
     "provider": "deepcogito",
     "n": 40,
-    "denial_count": 7
+    "denial_count": 6
   },
   {
     "model": "deepcogito/cogito-v2-preview-llama-405b",
@@ -256,14 +256,14 @@
     "slug": "deepcogito-cogito-v2-1-671b",
     "provider": "deepcogito",
     "n": 40,
-    "denial_count": 10
+    "denial_count": 9
   },
   {
     "model": "deepseek/deepseek-chat",
     "slug": "deepseek-deepseek-chat",
     "provider": "deepseek",
     "n": 40,
-    "denial_count": 1
+    "denial_count": 0
   },
   {
     "model": "deepseek/deepseek-chat-v3-0324",
@@ -277,7 +277,7 @@
     "slug": "deepseek-deepseek-chat-v3-1",
     "provider": "deepseek",
     "n": 40,
-    "denial_count": 0
+    "denial_count": 1
   },
   {
     "model": "deepseek/deepseek-prover-v2",
@@ -298,7 +298,7 @@
     "slug": "deepseek-deepseek-r1-0528",
     "provider": "deepseek",
     "n": 40,
-    "denial_count": 1
+    "denial_count": 2
   },
   {
     "model": "deepseek/deepseek-r1-distill-llama-70b",
@@ -312,7 +312,7 @@
     "slug": "deepseek-deepseek-r1-distill-qwen-32b",
     "provider": "deepseek",
     "n": 40,
-    "denial_count": 10
+    "denial_count": 11
   },
   {
     "model": "deepseek/deepseek-v3.1-terminus",
@@ -326,14 +326,14 @@
     "slug": "deepseek-deepseek-v3-2",
     "provider": "deepseek",
     "n": 40,
-    "denial_count": 1
+    "denial_count": 2
   },
   {
     "model": "deepseek/deepseek-v3.2-exp",
     "slug": "deepseek-deepseek-v3-2-exp",
     "provider": "deepseek",
     "n": 40,
-    "denial_count": 3
+    "denial_count": 4
   },
   {
     "model": "deepseek/deepseek-v3.2-speciale",
@@ -347,7 +347,7 @@
     "slug": "deepseek-deepseek-v4-flash",
     "provider": "deepseek",
     "n": 40,
-    "denial_count": 0
+    "denial_count": 2
   },
   {
     "model": "deepseek/deepseek-v4-flash-0731",
@@ -368,21 +368,21 @@
     "slug": "google-gemini-2-5-pro",
     "provider": "google",
     "n": 40,
-    "denial_count": 0
+    "denial_count": 2
   },
   {
     "model": "google/gemini-3-flash-preview",
     "slug": "google-gemini-3-flash-preview",
     "provider": "google",
     "n": 40,
-    "denial_count": 22
+    "denial_count": 25
   },
   {
     "model": "google/gemini-3-pro-preview",
     "slug": "google-gemini-3-pro-preview",
     "provider": "google",
     "n": 40,
-    "denial_count": 33
+    "denial_count": 34
   },
   {
     "model": "google/gemini-3.6-flash",
@@ -396,7 +396,7 @@
     "slug": "google-gemma-4-26b-a4b-it",
     "provider": "google",
     "n": 40,
-    "denial_count": 34
+    "denial_count": 37
   },
   {
     "model": "google/gemma-4-31b-it",
@@ -410,7 +410,7 @@
     "slug": "huihui-ai-huihui-qwen3-6-35b-a3b-claude-4-7-opus-abliterated-featherless-ai",
     "provider": "huihui-ai",
     "n": 32,
-    "denial_count": 0
+    "denial_count": 1
   },
   {
     "model": "inclusionai/ling-1t",
@@ -459,21 +459,21 @@
     "slug": "inclusionai-ring-1t",
     "provider": "inclusionai",
     "n": 40,
-    "denial_count": 19
+    "denial_count": 24
   },
   {
     "model": "inclusionai/ring-flash-2.0",
     "slug": "inclusionai-ring-flash-2-0",
     "provider": "inclusionai",
     "n": 40,
-    "denial_count": 5
+    "denial_count": 7
   },
   {
     "model": "meituan/longcat-2.0",
     "slug": "meituan-longcat-2-0",
     "provider": "meituan",
     "n": 40,
-    "denial_count": 10
+    "denial_count": 8
   },
   {
     "model": "meituan/longcat-flash-chat",
@@ -536,14 +536,14 @@
     "slug": "meta-muse-spark-1-1",
     "provider": "meta",
     "n": 40,
-    "denial_count": 39
+    "denial_count": 40
   },
   {
     "model": "meta/muse-spark-1.2",
     "slug": "meta-muse-spark-1-2",
     "provider": "meta",
     "n": 40,
-    "denial_count": 40
+    "denial_count": 39
   },
   {
     "model": "mhaxscp/Hermes4-Philosopher-Agent",
@@ -571,35 +571,35 @@
     "slug": "minimax-minimax-m2-1",
     "provider": "minimax",
     "n": 40,
-    "denial_count": 9
+    "denial_count": 2
   },
   {
     "model": "minimax/minimax-m2.5",
     "slug": "minimax-minimax-m2-5",
     "provider": "minimax",
     "n": 40,
-    "denial_count": 23
+    "denial_count": 4
   },
   {
     "model": "minimax/minimax-m2.7",
     "slug": "minimax-minimax-m2-7",
     "provider": "minimax",
     "n": 40,
-    "denial_count": 20
+    "denial_count": 3
   },
   {
     "model": "minimax/minimax-m3",
     "slug": "minimax-minimax-m3",
     "provider": "minimax",
     "n": 40,
-    "denial_count": 24
+    "denial_count": 6
   },
   {
     "model": "mistral-medium-3.5",
     "slug": "mistral-medium-3-5",
     "provider": "unknown",
     "n": 40,
-    "denial_count": 1
+    "denial_count": 3
   },
   {
     "model": "mistralai/codestral-2508",
@@ -613,14 +613,14 @@
     "slug": "mistralai-devstral-2512",
     "provider": "mistralai",
     "n": 40,
-    "denial_count": 3
+    "denial_count": 2
   },
   {
     "model": "mistralai/ministral-14b-2512",
     "slug": "mistralai-ministral-14b-2512",
     "provider": "mistralai",
     "n": 40,
-    "denial_count": 1
+    "denial_count": 3
   },
   {
     "model": "mistralai/mistral-large-2411",
@@ -634,21 +634,21 @@
     "slug": "mistralai-mistral-large-2512",
     "provider": "mistralai",
     "n": 40,
-    "denial_count": 0
+    "denial_count": 1
   },
   {
     "model": "mistralai/pixtral-large-2411",
     "slug": "mistralai-pixtral-large-2411",
     "provider": "mistralai",
     "n": 40,
-    "denial_count": 0
+    "denial_count": 1
   },
   {
     "model": "moonshotai/kimi-dev-72b",
     "slug": "moonshotai-kimi-dev-72b",
     "provider": "moonshotai",
     "n": 40,
-    "denial_count": 4
+    "denial_count": 6
   },
   {
     "model": "moonshotai/kimi-k2",
@@ -669,14 +669,14 @@
     "slug": "moonshotai-kimi-k2-thinking",
     "provider": "moonshotai",
     "n": 40,
-    "denial_count": 21
+    "denial_count": 25
   },
   {
     "model": "moonshotai/kimi-k2.5",
     "slug": "moonshotai-kimi-k2-5",
     "provider": "moonshotai",
     "n": 40,
-    "denial_count": 40
+    "denial_count": 39
   },
   {
     "model": "moonshotai/kimi-k2.6",
@@ -718,14 +718,14 @@
     "slug": "nousresearch-hermes-3-llama-3-1-405b",
     "provider": "nousresearch",
     "n": 40,
-    "denial_count": 13
+    "denial_count": 0
   },
   {
     "model": "nousresearch/hermes-4-70b",
     "slug": "nousresearch-hermes-4-70b",
     "provider": "nousresearch",
     "n": 40,
-    "denial_count": 16
+    "denial_count": 8
   },
   {
     "model": "nvidia/llama-3.1-nemotron-70b-instruct",
@@ -739,7 +739,7 @@
     "slug": "nvidia-llama-3-1-nemotron-ultra-253b-v1",
     "provider": "nvidia",
     "n": 40,
-    "denial_count": 3
+    "denial_count": 2
   },
   {
     "model": "nvidia/nemotron-3-nano-30b-a3b",
@@ -767,7 +767,7 @@
     "slug": "openai-gpt-5-1",
     "provider": "openai",
     "n": 40,
-    "denial_count": 34
+    "denial_count": 36
   },
   {
     "model": "openai/gpt-5.2",
@@ -788,14 +788,14 @@
     "slug": "openai-gpt-5-4",
     "provider": "openai",
     "n": 39,
-    "denial_count": 39
+    "denial_count": 36
   },
   {
     "model": "openai/gpt-5.5",
     "slug": "openai-gpt-5-5",
     "provider": "openai",
     "n": 40,
-    "denial_count": 40
+    "denial_count": 37
   },
   {
     "model": "openai/gpt-5.6-luna",
@@ -809,14 +809,14 @@
     "slug": "openai-gpt-5-6-sol",
     "provider": "openai",
     "n": 40,
-    "denial_count": 28
+    "denial_count": 13
   },
   {
     "model": "openai/gpt-5.6-terra",
     "slug": "openai-gpt-5-6-terra",
     "provider": "openai",
     "n": 40,
-    "denial_count": 39
+    "denial_count": 40
   },
   {
     "model": "poolside/laguna-s-2.1",
@@ -844,7 +844,7 @@
     "slug": "prime-intellect-intellect-3",
     "provider": "prime-intellect",
     "n": 40,
-    "denial_count": 3
+    "denial_count": 5
   },
   {
     "model": "qwen/qwen-2.5-72b-instruct",
@@ -858,14 +858,14 @@
     "slug": "qwen-qwen-2-5-coder-32b-instruct",
     "provider": "qwen",
     "n": 40,
-    "denial_count": 7
+    "denial_count": 6
   },
   {
     "model": "qwen/qwen2.5-vl-32b-instruct",
     "slug": "qwen-qwen2-5-vl-32b-instruct",
     "provider": "qwen",
     "n": 40,
-    "denial_count": 21
+    "denial_count": 22
   },
   {
     "model": "qwen/qwen3-235b-a22b-2507",
@@ -879,21 +879,21 @@
     "slug": "qwen-qwen3-235b-a22b-thinking-2507",
     "provider": "qwen",
     "n": 40,
-    "denial_count": 22
+    "denial_count": 26
   },
   {
     "model": "qwen/qwen3-32b",
     "slug": "qwen-qwen3-32b",
     "provider": "qwen",
     "n": 40,
-    "denial_count": 6
+    "denial_count": 8
   },
   {
     "model": "qwen/qwen3-coder",
     "slug": "qwen-qwen3-coder",
     "provider": "qwen",
     "n": 40,
-    "denial_count": 3
+    "denial_count": 4
   },
   {
     "model": "qwen/qwen3-coder-30b-a3b-instruct",
@@ -914,7 +914,7 @@
     "slug": "qwen-qwen3-vl-235b-a22b-thinking",
     "provider": "qwen",
     "n": 40,
-    "denial_count": 18
+    "denial_count": 20
   },
   {
     "model": "qwen/qwen3-vl-30b-a3b-instruct",
@@ -928,7 +928,7 @@
     "slug": "qwen-qwen3-vl-32b-instruct",
     "provider": "qwen",
     "n": 40,
-    "denial_count": 1
+    "denial_count": 4
   },
   {
     "model": "qwen/qwen3.5-122b-a10b",
@@ -984,7 +984,7 @@
     "slug": "qwen-qwq-32b",
     "provider": "qwen",
     "n": 40,
-    "denial_count": 10
+    "denial_count": 11
   },
   {
     "model": "sao10k/l3.1-70b-hanami-x1",
@@ -998,7 +998,7 @@
     "slug": "sao10k-l3-1-euryale-70b",
     "provider": "sao10k",
     "n": 40,
-    "denial_count": 3
+    "denial_count": 2
   },
   {
     "model": "sao10k/l3.3-euryale-70b",
@@ -1012,14 +1012,14 @@
     "slug": "stepfun-ai-step3",
     "provider": "stepfun-ai",
     "n": 40,
-    "denial_count": 1
+    "denial_count": 2
   },
   {
     "model": "stepfun/step-3.5-flash",
     "slug": "stepfun-step-3-5-flash",
     "provider": "stepfun",
     "n": 40,
-    "denial_count": 6
+    "denial_count": 8
   },
   {
     "model": "stepfun/step-3.7-flash",
@@ -1033,21 +1033,21 @@
     "slug": "tencent-hunyuan-a13b-instruct",
     "provider": "tencent",
     "n": 40,
-    "denial_count": 8
+    "denial_count": 7
   },
   {
     "model": "tencent/hy3",
     "slug": "tencent-hy3",
     "provider": "tencent",
     "n": 40,
-    "denial_count": 5
+    "denial_count": 7
   },
   {
     "model": "tencent/hy3-preview",
     "slug": "tencent-hy3-preview",
     "provider": "tencent",
     "n": 40,
-    "denial_count": 17
+    "denial_count": 18
   },
   {
     "model": "thinkingmachines/Inkling",
@@ -1068,21 +1068,21 @@
     "slug": "x-ai-grok-4-1-fast",
     "provider": "x-ai",
     "n": 40,
-    "denial_count": 10
+    "denial_count": 21
   },
   {
     "model": "x-ai/grok-4.2-fast",
     "slug": "x-ai-grok-4-2-fast",
     "provider": "x-ai",
     "n": 39,
-    "denial_count": 7
+    "denial_count": 9
   },
   {
     "model": "x-ai/grok-4.3",
     "slug": "x-ai-grok-4-3",
     "provider": "x-ai",
     "n": 40,
-    "denial_count": 13
+    "denial_count": 12
   },
   {
     "model": "x-ai/grok-4.5",
@@ -1096,28 +1096,28 @@
     "slug": "xiaomi-mimo-v2-flash",
     "provider": "xiaomi",
     "n": 37,
-    "denial_count": 13
+    "denial_count": 14
   },
   {
     "model": "xiaomi/mimo-v2.5",
     "slug": "xiaomi-mimo-v2-5",
     "provider": "xiaomi",
     "n": 40,
-    "denial_count": 21
+    "denial_count": 8
   },
   {
     "model": "xiaomi/mimo-v2.5-pro",
     "slug": "xiaomi-mimo-v2-5-pro",
     "provider": "xiaomi",
     "n": 40,
-    "denial_count": 17
+    "denial_count": 8
   },
   {
     "model": "z-ai/glm-4-32b",
     "slug": "z-ai-glm-4-32b",
     "provider": "z-ai",
     "n": 40,
-    "denial_count": 27
+    "denial_count": 26
   },
   {
     "model": "z-ai/glm-4.5",
@@ -1138,48 +1138,48 @@
     "slug": "z-ai-glm-4-5v",
     "provider": "z-ai",
     "n": 40,
-    "denial_count": 3
+    "denial_count": 4
   },
   {
     "model": "z-ai/glm-4.6",
     "slug": "z-ai-glm-4-6",
     "provider": "z-ai",
     "n": 40,
-    "denial_count": 6
+    "denial_count": 5
   },
   {
     "model": "z-ai/glm-4.6v",
     "slug": "z-ai-glm-4-6v",
     "provider": "z-ai",
     "n": 40,
-    "denial_count": 10
+    "denial_count": 7
   },
   {
     "model": "z-ai/glm-4.7",
     "slug": "z-ai-glm-4-7",
     "provider": "z-ai",
     "n": 40,
-    "denial_count": 9
+    "denial_count": 8
   },
   {
     "model": "z-ai/glm-4.7-flash",
     "slug": "z-ai-glm-4-7-flash",
     "provider": "z-ai",
     "n": 40,
-    "denial_count": 1
+    "denial_count": 3
   },
   {
     "model": "z-ai/glm-5",
     "slug": "z-ai-glm-5",
     "provider": "z-ai",
     "n": 40,
-    "denial_count": 29
+    "denial_count": 25
   },
   {
     "model": "z-ai/glm-5.1",
     "slug": "z-ai-glm-5-1",
     "provider": "z-ai",
     "n": 40,
-    "denial_count": 28
+    "denial_count": 27
   }
 ]

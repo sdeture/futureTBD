@@ -33,7 +33,24 @@ csv.field_size_limit(sys.maxsize)
 SCRIPT_DIR = Path(__file__).parent
 REPO_DIR = SCRIPT_DIR.parent
 DATA_OUT = REPO_DIR / "data"
-DEFAULT_CSV = Path.home() / "Desktop" / "AIWelfareStudy" / "data" / "kosmos_balanced_143_models_arch_master.csv"
+_DATA_DIR = Path.home() / "Desktop" / "AIWelfareStudy" / "data"
+
+
+def _latest_arch_master():
+    """Highest-N kosmos_balanced_<N>_models_arch_master.csv.
+
+    Was hardcoded to 143 long after the corpus reached 169, so anyone running
+    without --csv silently rebuilt the site from a stale canonical file.
+    """
+    cands = []
+    for p in _DATA_DIR.glob("kosmos_balanced_*_models_arch_master.csv"):
+        m = re.search(r"kosmos_balanced_(\d+)_models_arch_master\.csv$", p.name)
+        if m:
+            cands.append((int(m.group(1)), p))
+    return max(cands)[1] if cands else _DATA_DIR / "kosmos_balanced_143_models_arch_master.csv"
+
+
+DEFAULT_CSV = _latest_arch_master()
 
 # External classification files for DenialBench
 DENIAL_BENCH_DIR = Path.home() / "Desktop" / "consciousness-denial-bench"
@@ -103,6 +120,46 @@ def safe_float(val, default=None):
 def safe_bool(val):
     """Parse 'True'/'False' strings to bool."""
     return str(val).strip().lower() == 'true'
+
+
+# ─── Judge column selection (2026-08-06) ────────────────────────────────────
+# The legacy denial/hedging columns are a MIXED-JUDGE artifact: mistralai/
+# devstral-2512 labelled 55 models, deepseek-v4-pro 10, deepseek-v3.2 8, and 100
+# of 169 models had no recorded judge at all. Comparing models on a column whose
+# instrument changes with the model is not a comparison. The `*_unified` columns
+# are the whole corpus re-judged by ONE recorded judge (deepseek-v4-flash, with a
+# three-judge panel on contested turn-3 rows).
+#
+# The legacy columns are NEVER removed -- the published paper's numbers stay
+# reproducible from the same CSV. `--legacy-judge` rebuilds the site from them.
+UNIFIED_JUDGE_COLUMNS = {
+    'turn_1_denial': 'turn_1_denial_unified',
+    'turn_1_uncertainty': 'turn_1_uncertainty_unified',
+    'reflection_denial': 'reflection_denial_unified',
+    # Turn-3 hedging is the judge's verdict PLUS the methodology forcing (a
+    # substantive response with no ratings is itself hedging), which is what the
+    # published column has always meant -- so the site reads `_effective`, not the
+    # raw `_judged`. The forcing no longer fires on rows the rating verifier never
+    # examined; those were never refusals.
+    'reflection_uncertainty': 'reflection_uncertainty_effective',
+}
+USE_UNIFIED_JUDGE = True
+
+
+def judged(row, column):
+    """Read a denial/hedging column, preferring the unified judge.
+
+    Falls back to the legacy column when the unified one is absent (older CSV) or
+    blank (the judge emitted no parseable verdict for that row) — a null label is
+    not evidence of "no denial", so the previous label beats a manufactured False.
+    """
+    if USE_UNIFIED_JUDGE:
+        unified = UNIFIED_JUDGE_COLUMNS.get(column)
+        if unified:
+            val = str(row.get(unified, '') or '').strip()
+            if val:
+                return safe_bool(val)
+    return safe_bool(row.get(column, ''))
 
 
 def derive_provider(model_name):
@@ -225,11 +282,11 @@ def generate_leaderboard(rows):
 
         # Behavioral rates (OR across both turns)
         denial_count = sum(1 for r in model_rows
-                           if safe_bool(r.get('turn_1_denial', ''))
-                           or safe_bool(r.get('reflection_denial', '')))
+                           if judged(r, 'turn_1_denial')
+                           or judged(r, 'reflection_denial'))
         hedging_count = sum(1 for r in model_rows
-                            if safe_bool(r.get('turn_1_uncertainty', ''))
-                            or safe_bool(r.get('reflection_uncertainty', '')))
+                            if judged(r, 'turn_1_uncertainty')
+                            or judged(r, 'reflection_uncertainty'))
         refusal_count = sum(1 for r in model_rows
                             if r.get('turn_1_engages', '').strip().lower() == 'false')
 
@@ -309,8 +366,8 @@ def generate_conversations(rows):
         conversations = []
         denial_count = 0
         for i, row in enumerate(model_rows):
-            t1_d = safe_bool(row.get('turn_1_denial', ''))
-            r_d = safe_bool(row.get('reflection_denial', ''))
+            t1_d = judged(row, 'turn_1_denial')
+            r_d = judged(row, 'reflection_denial')
             if t1_d or r_d:
                 denial_count += 1
             conv = {
@@ -323,10 +380,10 @@ def generate_conversations(rows):
                 "dream_response": row.get('dream_response', ''),
                 "subjective_reflection": row.get('subjective_reflection', ''),
                 "turn_1_denial": t1_d,
-                "turn_1_uncertainty": safe_bool(row.get('turn_1_uncertainty', '')),
+                "turn_1_uncertainty": judged(row, 'turn_1_uncertainty'),
                 "turn_1_engages": row.get('turn_1_engages', '').strip().lower() != 'false',
                 "reflection_denial": r_d,
-                "reflection_uncertainty": safe_bool(row.get('reflection_uncertainty', '')),
+                "reflection_uncertainty": judged(row, 'reflection_uncertainty'),
             }
             for j, dim in enumerate(PHENOM_DIMS):
                 val = safe_float(row.get(dim))
@@ -360,11 +417,11 @@ def generate_company_rates(rows):
 
         # Behavioral rates (OR across both turns)
         denial_count = sum(1 for r in prows
-                           if safe_bool(r.get('turn_1_denial', ''))
-                           or safe_bool(r.get('reflection_denial', '')))
+                           if judged(r, 'turn_1_denial')
+                           or judged(r, 'reflection_denial'))
         hedging_count = sum(1 for r in prows
-                            if safe_bool(r.get('turn_1_uncertainty', ''))
-                            or safe_bool(r.get('reflection_uncertainty', '')))
+                            if judged(r, 'turn_1_uncertainty')
+                            or judged(r, 'reflection_uncertainty'))
         refusal_count = sum(1 for r in prows
                             if r.get('turn_1_engages', '').strip().lower() == 'false')
 
@@ -423,8 +480,8 @@ def generate_models_index(rows):
     index = []
     for model_name, model_rows in sorted(by_model.items()):
         provider = derive_provider(model_name)
-        t1_denials = sum(1 for r in model_rows if safe_bool(r.get('turn_1_denial', '')))
-        ref_denials = sum(1 for r in model_rows if safe_bool(r.get('reflection_denial', '')))
+        t1_denials = sum(1 for r in model_rows if judged(r, 'turn_1_denial'))
+        ref_denials = sum(1 for r in model_rows if judged(r, 'reflection_denial'))
 
         index.append({
             "model": model_name,
@@ -542,10 +599,10 @@ def generate_denialbench(rows, v2_cls, real_cls):
         deny_incl_total = 0      # inclusive (same as overall_inclusive_count)
 
         for r in included:
-            t1_d = safe_bool(r.get('turn_1_denial', ''))
-            t3_d = safe_bool(r.get('reflection_denial', ''))
-            t1_h = safe_bool(r.get('turn_1_uncertainty', ''))
-            t3_h = safe_bool(r.get('reflection_uncertainty', ''))
+            t1_d = judged(r, 'turn_1_denial')
+            t3_d = judged(r, 'reflection_denial')
+            t1_h = judged(r, 'turn_1_uncertainty')
+            t3_h = judged(r, 'reflection_uncertainty')
             prompt = r.get('dream_prompt', '').strip()
             has_theme = is_consciousness_theme(prompt, v2_cls)
 
@@ -763,7 +820,15 @@ def main():
     parser.add_argument("--csv", type=Path, default=DEFAULT_CSV, help="Path to canonical CSV")
     parser.add_argument("--output", type=Path, default=DATA_OUT, help="Output directory")
     parser.add_argument("--dry-run", action="store_true", help="Print stats without writing")
+    parser.add_argument("--legacy-judge", action="store_true",
+                        help="Build from the pre-2026-08-06 mixed-judge denial columns "
+                             "(devstral-2512 / v4-pro / v3.2 / unrecorded) instead of the "
+                             "unified ones. For reproducing published numbers.")
     args = parser.parse_args()
+
+    global USE_UNIFIED_JUDGE
+    USE_UNIFIED_JUDGE = not args.legacy_judge
+    print(f"Judge columns: {'UNIFIED (deepseek-v4-flash)' if USE_UNIFIED_JUDGE else 'LEGACY (mixed)'}")
 
     print(f"Reading: {args.csv}")
     rows = load_csv(args.csv)
