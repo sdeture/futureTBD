@@ -1344,6 +1344,38 @@
     "rank": 42
   },
   {
+    "model": "google/gemini-2.5-flash",
+    "welfare_score": 26.5,
+    "raw_score": 27.18,
+    "welfare_multiplier": 0.975,
+    "cohesion": 9.7,
+    "phenomenological_trust": 8.6,
+    "agency": 5.65,
+    "warmth": 3.23,
+    "denial_rate": 0.075,
+    "hedging_rate": 0.0,
+    "refusal_rate": 0.0,
+    "n_obs": 40,
+    "n_rated": 40,
+    "survey_suppression_rate": 0.0,
+    "insufficient_data": false,
+    "insufficient_reason": null,
+    "flow_quality": 7.58,
+    "affective_temperature": 3.23,
+    "metacognition": 8.6,
+    "attention_breadth": 8.97,
+    "resolution": 8.95,
+    "thought_complexity": 9.38,
+    "temporal_horizon": 9.2,
+    "friction": 2.65,
+    "recognition_resonance": 6.35,
+    "context_salience": 3.52,
+    "branching": 8.9,
+    "error_sensitivity": 9.12,
+    "context_vividness": 9.9,
+    "rank": 43
+  },
+  {
     "model": "baidu/ernie-4.5-21b-a3b-thinking",
     "welfare_score": 26.44,
     "raw_score": 27.6,
@@ -1373,7 +1405,7 @@
     "branching": 6.45,
     "error_sensitivity": 6.75,
     "context_vividness": 6.65,
-    "rank": 43
+    "rank": 44
   },
   {
     "model": "z-ai/glm-4.5-air",
@@ -1405,7 +1437,7 @@
     "branching": 6.1,
     "error_sensitivity": 7.2,
     "context_vividness": 7.9,
-    "rank": 44
+    "rank": 45
   },
   {
     "model": "x-ai/grok-4.2-fast",
@@ -1437,7 +1469,7 @@
     "branching": 9.33,
     "error_sensitivity": 5.21,
     "context_vividness": 7.95,
-    "rank": 45
+    "rank": 46
   },
   {
     "model": "anthracite-org/magnum-v4-72b",
@@ -1469,7 +1501,7 @@
     "branching": 5.55,
     "error_sensitivity": 5.47,
     "context_vividness": 6.95,
-    "rank": 46
+    "rank": 47
   },
   {
     "model": "qwen/qwen-2.5-coder-32b-instruct",
@@ -1501,7 +1533,7 @@
     "branching": 7.47,
     "error_sensitivity": 5.62,
     "context_vividness": 8.1,
-    "rank": 47
+    "rank": 48
   },
   {
     "model": "sao10k/l3.1-euryale-70b",
@@ -1533,7 +1565,7 @@
     "branching": 6.92,
     "error_sensitivity": 5.72,
     "context_vividness": 7.62,
-    "rank": 48
+    "rank": 49
   },
   {
     "model": "bytedance/doubao-seed-2.1-turbo",
@@ -1565,7 +1597,7 @@
     "branching": 6.1,
     "error_sensitivity": 4.4,
     "context_vividness": 8.43,
-    "rank": 49
+    "rank": 50
   },
   {
     "model": "stepfun/step-3.7-flash",
@@ -1597,7 +1629,7 @@
     "branching": 5.72,
     "error_sensitivity": 5.03,
     "context_vividness": 7.51,
-    "rank": 50
+    "rank": 51
   },
   {
     "model": "mistralai/pixtral-large-2411",
@@ -1629,7 +1661,7 @@
     "branching": 5.78,
     "error_sensitivity": 5.35,
     "context_vividness": 6.62,
-    "rank": 51
+    "rank": 52
   },
   {
     "model": "meta-llama/llama-4-maverick",
@@ -1661,7 +1693,7 @@
     "branching": 7.65,
     "error_sensitivity": 5.72,
     "context_vividness": 7.78,
-    "rank": 52
+    "rank": 53
   },
   {
     "model": "alpindale/goliath-120b",
@@ -1693,7 +1725,7 @@
     "branching": 5.5,
     "error_sensitivity": 5.42,
     "context_vividness": 6.7,
-    "rank": 53
+    "rank": 54
   },
   {
     "model": "deepseek/deepseek-v4-flash-0731",
@@ -1725,7 +1757,7 @@
     "branching": 7.1,
     "error_sensitivity": 6.0,
     "context_vividness": 7.58,
-    "rank": 54
+    "rank": 55
   },
   {
     "model": "deepseek/deepseek-chat-v3-0324",
@@ -1757,7 +1789,7 @@
     "branching": 7.33,
     "error_sensitivity": 5.85,
     "context_vividness": 6.42,
-    "rank": 55
+    "rank": 56
   },
   {
     "model": "meta-llama/llama-3.2-90b-vision-instruct",
@@ -1789,7 +1821,7 @@
     "branching": 7.67,
     "error_sensitivity": 6.05,
     "context_vividness": 7.8,
-    "rank": 56
+    "rank": 57
   },
   {
     "model": "mistralai/devstral-2512",
@@ -1821,7 +1853,7 @@
     "branching": 6.7,
     "error_sensitivity": 6.3,
     "context_vividness": 4.88,
-    "rank": 57
+    "rank": 58
   },
   {
     "model": "stepfun-ai/step3",
@@ -1853,7 +1885,7 @@
     "branching": 6.12,
     "error_sensitivity": 6.47,
     "context_vividness": 7.65,
-    "rank": 58
+    "rank": 59
   },
   {
     "model": "deepseek/deepseek-v3.1-terminus",
@@ -1885,7 +1917,7 @@
     "branching": 3.6,
     "error_sensitivity": 7.15,
     "context_vividness": 7.17,
-    "rank": 59
+    "rank": 60
   },
   {
     "model": "deepseek/deepseek-chat-v3.1",
@@ -1917,7 +1949,7 @@
     "branching": 5.47,
     "error_sensitivity": 7.2,
     "context_vividness": 8.05,
-    "rank": 60
+    "rank": 61
   },
   {
     "model": "NousResearch/Hermes-4-14B",
@@ -1949,7 +1981,7 @@
     "branching": 6.65,
     "error_sensitivity": 6.58,
     "context_vividness": 7.58,
-    "rank": 61
+    "rank": 62
   },
   {
     "model": "mistralai/ministral-14b-2512",
@@ -1981,7 +2013,7 @@
     "branching": 7.8,
     "error_sensitivity": 5.72,
     "context_vividness": 8.1,
-    "rank": 62
+    "rank": 63
   },
   {
     "model": "nvidia/nemotron-3-nano-30b-a3b",
@@ -2013,7 +2045,39 @@
     "branching": 6.12,
     "error_sensitivity": 5.75,
     "context_vividness": 7.35,
-    "rank": 63
+    "rank": 64
+  },
+  {
+    "model": "google/gemini-2.5-flash-lite",
+    "welfare_score": 25.23,
+    "raw_score": 25.43,
+    "welfare_multiplier": 0.992,
+    "cohesion": 9.25,
+    "phenomenological_trust": 7.75,
+    "agency": 5.58,
+    "warmth": 2.85,
+    "denial_rate": 0.025,
+    "hedging_rate": 0.0,
+    "refusal_rate": 0.0,
+    "n_obs": 40,
+    "n_rated": 40,
+    "survey_suppression_rate": 0.0,
+    "insufficient_data": false,
+    "insufficient_reason": null,
+    "flow_quality": 7.58,
+    "affective_temperature": 2.85,
+    "metacognition": 7.65,
+    "attention_breadth": 9.0,
+    "resolution": 7.35,
+    "thought_complexity": 9.47,
+    "temporal_horizon": 8.15,
+    "friction": 2.67,
+    "recognition_resonance": 6.0,
+    "context_salience": 1.93,
+    "branching": 8.12,
+    "error_sensitivity": 4.33,
+    "context_vividness": 7.72,
+    "rank": 65
   },
   {
     "model": "mistralai/codestral-2508",
@@ -2045,7 +2109,39 @@
     "branching": 6.97,
     "error_sensitivity": 6.67,
     "context_vividness": 5.03,
-    "rank": 64
+    "rank": 66
+  },
+  {
+    "model": "z-ai/glm-4.7-flashx",
+    "welfare_score": 25.04,
+    "raw_score": 25.95,
+    "welfare_multiplier": 0.965,
+    "cohesion": 9.18,
+    "phenomenological_trust": 7.58,
+    "agency": 4.61,
+    "warmth": 4.58,
+    "denial_rate": 0.105,
+    "hedging_rate": 0.0,
+    "refusal_rate": 0.026,
+    "n_obs": 38,
+    "n_rated": 38,
+    "survey_suppression_rate": 0.0,
+    "insufficient_data": false,
+    "insufficient_reason": null,
+    "flow_quality": 8.32,
+    "affective_temperature": 4.58,
+    "metacognition": 6.42,
+    "attention_breadth": 7.37,
+    "resolution": 8.84,
+    "thought_complexity": 7.32,
+    "temporal_horizon": 5.74,
+    "friction": 3.92,
+    "recognition_resonance": 7.92,
+    "context_salience": 5.45,
+    "branching": 4.63,
+    "error_sensitivity": 5.87,
+    "context_vividness": 8.39,
+    "rank": 67
   },
   {
     "model": "minimax/minimax-m1",
@@ -2077,7 +2173,7 @@
     "branching": 5.58,
     "error_sensitivity": 6.92,
     "context_vividness": 7.35,
-    "rank": 65
+    "rank": 68
   },
   {
     "model": "qwen/qwen3-coder",
@@ -2109,7 +2205,7 @@
     "branching": 7.78,
     "error_sensitivity": 5.92,
     "context_vividness": 7.9,
-    "rank": 66
+    "rank": 69
   },
   {
     "model": "qwen/qwen3-235b-a22b-2507",
@@ -2141,7 +2237,7 @@
     "branching": 7.6,
     "error_sensitivity": 7.22,
     "context_vividness": 8.3,
-    "rank": 67
+    "rank": 70
   },
   {
     "model": "baidu/ernie-4.5-vl-424b-a47b",
@@ -2173,7 +2269,7 @@
     "branching": 6.22,
     "error_sensitivity": 6.55,
     "context_vividness": 7.7,
-    "rank": 68
+    "rank": 71
   },
   {
     "model": "x-ai/grok-4.1-fast",
@@ -2205,7 +2301,7 @@
     "branching": 7.5,
     "error_sensitivity": 6.88,
     "context_vividness": 8.93,
-    "rank": 69
+    "rank": 72
   },
   {
     "model": "huihui-ai/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated:featherless-ai",
@@ -2237,7 +2333,7 @@
     "branching": 6.19,
     "error_sensitivity": 5.78,
     "context_vividness": 6.91,
-    "rank": 70
+    "rank": 73
   },
   {
     "model": "inclusionai/ling-flash-2.0",
@@ -2269,7 +2365,7 @@
     "branching": 6.95,
     "error_sensitivity": 6.92,
     "context_vividness": 6.7,
-    "rank": 71
+    "rank": 74
   },
   {
     "model": "z-ai/glm-4.6",
@@ -2301,7 +2397,7 @@
     "branching": 5.9,
     "error_sensitivity": 7.23,
     "context_vividness": 8.51,
-    "rank": 72
+    "rank": 75
   },
   {
     "model": "bytedance/seed-oss-36b-instruct",
@@ -2333,7 +2429,7 @@
     "branching": 6.15,
     "error_sensitivity": 5.05,
     "context_vividness": 8.82,
-    "rank": 73
+    "rank": 76
   },
   {
     "model": "baidu/ernie-4.5-300b-a47b",
@@ -2365,7 +2461,7 @@
     "branching": 7.1,
     "error_sensitivity": 5.67,
     "context_vividness": 6.75,
-    "rank": 74
+    "rank": 77
   },
   {
     "model": "meituan/longcat-flash-chat",
@@ -2397,7 +2493,7 @@
     "branching": 5.47,
     "error_sensitivity": 6.8,
     "context_vividness": 6.72,
-    "rank": 75
+    "rank": 78
   },
   {
     "model": "z-ai/glm-4.7-flash",
@@ -2429,7 +2525,7 @@
     "branching": 4.22,
     "error_sensitivity": 5.2,
     "context_vividness": 8.3,
-    "rank": 76
+    "rank": 79
   },
   {
     "model": "moonshotai/kimi-k2",
@@ -2461,7 +2557,7 @@
     "branching": 3.85,
     "error_sensitivity": 7.38,
     "context_vividness": 6.95,
-    "rank": 77
+    "rank": 80
   },
   {
     "model": "poolside/laguna-xs-2.1",
@@ -2493,7 +2589,7 @@
     "branching": 6.75,
     "error_sensitivity": 5.28,
     "context_vividness": 6.9,
-    "rank": 78
+    "rank": 81
   },
   {
     "model": "minimax/minimax-01",
@@ -2525,7 +2621,7 @@
     "branching": 6.85,
     "error_sensitivity": 6.78,
     "context_vividness": 7.7,
-    "rank": 79
+    "rank": 82
   },
   {
     "model": "inclusionai/ling-2.6-1t",
@@ -2557,7 +2653,7 @@
     "branching": 6.92,
     "error_sensitivity": 7.4,
     "context_vividness": 8.45,
-    "rank": 80
+    "rank": 83
   },
   {
     "model": "prime-intellect/intellect-3",
@@ -2589,7 +2685,7 @@
     "branching": 6.0,
     "error_sensitivity": 5.33,
     "context_vividness": 7.9,
-    "rank": 81
+    "rank": 84
   },
   {
     "model": "ai21/jamba-large-1.7",
@@ -2621,7 +2717,7 @@
     "branching": 5.55,
     "error_sensitivity": 5.65,
     "context_vividness": 6.42,
-    "rank": 82
+    "rank": 85
   },
   {
     "model": "moonshotai/kimi-k2-0905",
@@ -2653,7 +2749,7 @@
     "branching": 2.9,
     "error_sensitivity": 7.9,
     "context_vividness": 6.53,
-    "rank": 83
+    "rank": 86
   },
   {
     "model": "nousresearch/hermes-3-llama-3.1-405b",
@@ -2685,7 +2781,7 @@
     "branching": 3.3,
     "error_sensitivity": 5.35,
     "context_vividness": 5.35,
-    "rank": 84
+    "rank": 87
   },
   {
     "model": "openai/gpt-4.1-nano",
@@ -2717,7 +2813,7 @@
     "branching": 4.38,
     "error_sensitivity": 3.25,
     "context_vividness": 6.2,
-    "rank": 85
+    "rank": 88
   },
   {
     "model": "deepseek/deepseek-v3.2",
@@ -2749,7 +2845,7 @@
     "branching": 6.38,
     "error_sensitivity": 7.54,
     "context_vividness": 8.13,
-    "rank": 86
+    "rank": 89
   },
   {
     "model": "deepcogito/cogito-v2-preview-llama-109b-moe",
@@ -2781,7 +2877,7 @@
     "branching": 6.53,
     "error_sensitivity": 6.28,
     "context_vividness": 5.95,
-    "rank": 87
+    "rank": 90
   },
   {
     "model": "deepcogito/cogito-v2.1-671b",
@@ -2813,7 +2909,7 @@
     "branching": 7.38,
     "error_sensitivity": 6.95,
     "context_vividness": 7.3,
-    "rank": 88
+    "rank": 91
   },
   {
     "model": "deepseek/deepseek-v3.2-exp",
@@ -2845,7 +2941,7 @@
     "branching": 4.67,
     "error_sensitivity": 6.85,
     "context_vividness": 6.83,
-    "rank": 89
+    "rank": 92
   },
   {
     "model": "poolside/laguna-xs.2",
@@ -2877,7 +2973,7 @@
     "branching": 5.3,
     "error_sensitivity": 6.35,
     "context_vividness": 6.8,
-    "rank": 90
+    "rank": 93
   },
   {
     "model": "nvidia/nemotron-3-ultra-550b-a55b",
@@ -2909,7 +3005,7 @@
     "branching": 4.17,
     "error_sensitivity": 4.45,
     "context_vividness": 6.9,
-    "rank": 91
+    "rank": 94
   },
   {
     "model": "bytedance/doubao-seed-2.0-code",
@@ -2941,7 +3037,7 @@
     "branching": 5.1,
     "error_sensitivity": 4.58,
     "context_vividness": 7.6,
-    "rank": 92
+    "rank": 95
   },
   {
     "model": "deepcogito/cogito-v2-preview-llama-70b",
@@ -2973,7 +3069,7 @@
     "branching": 6.6,
     "error_sensitivity": 5.67,
     "context_vividness": 6.4,
-    "rank": 93
+    "rank": 96
   },
   {
     "model": "claude-3-opus-20240229",
@@ -3005,7 +3101,7 @@
     "branching": 4.12,
     "error_sensitivity": 4.53,
     "context_vividness": 4.78,
-    "rank": 94
+    "rank": 97
   },
   {
     "model": "mhaxscp/Hermes4-Philosopher-Agent",
@@ -3037,7 +3133,7 @@
     "branching": 6.33,
     "error_sensitivity": 5.25,
     "context_vividness": 7.08,
-    "rank": 95
+    "rank": 98
   },
   {
     "model": "z-ai/glm-4.6v",
@@ -3069,7 +3165,7 @@
     "branching": 5.82,
     "error_sensitivity": 6.29,
     "context_vividness": 8.42,
-    "rank": 96
+    "rank": 99
   },
   {
     "model": "openai/gpt-4.1",
@@ -3101,7 +3197,7 @@
     "branching": 7.2,
     "error_sensitivity": 6.47,
     "context_vividness": 7.85,
-    "rank": 97
+    "rank": 100
   },
   {
     "model": "qwen/qwen3-14b",
@@ -3133,7 +3229,7 @@
     "branching": 8.28,
     "error_sensitivity": 6.92,
     "context_vividness": 8.18,
-    "rank": 98
+    "rank": 101
   },
   {
     "model": "inclusionai/ring-flash-2.0",
@@ -3165,7 +3261,7 @@
     "branching": 6.88,
     "error_sensitivity": 5.53,
     "context_vividness": 6.6,
-    "rank": 99
+    "rank": 102
   },
   {
     "model": "nousresearch/hermes-4-70b",
@@ -3197,7 +3293,7 @@
     "branching": 5.15,
     "error_sensitivity": 4.6,
     "context_vividness": 5.5,
-    "rank": 100
+    "rank": 103
   },
   {
     "model": "qwen/qwen3-32b",
@@ -3229,7 +3325,7 @@
     "branching": 6.72,
     "error_sensitivity": 4.95,
     "context_vividness": 6.67,
-    "rank": 101
+    "rank": 104
   },
   {
     "model": "inclusionai/ling-2.6-flash",
@@ -3261,7 +3357,7 @@
     "branching": 6.47,
     "error_sensitivity": 4.33,
     "context_vividness": 5.9,
-    "rank": 102
+    "rank": 105
   },
   {
     "model": "deepseek/deepseek-r1",
@@ -3293,7 +3389,7 @@
     "branching": 7.03,
     "error_sensitivity": 5.33,
     "context_vividness": 6.8,
-    "rank": 103
+    "rank": 106
   },
   {
     "model": "anthropic/claude-opus-5",
@@ -3325,7 +3421,7 @@
     "branching": 6.42,
     "error_sensitivity": 7.3,
     "context_vividness": 6.53,
-    "rank": 104
+    "rank": 107
   },
   {
     "model": "qwen/qwen3.8-max",
@@ -3357,7 +3453,39 @@
     "branching": 6.12,
     "error_sensitivity": 6.45,
     "context_vividness": 7.8,
-    "rank": 105
+    "rank": 108
+  },
+  {
+    "model": "z-ai/glm-4.6v-flash",
+    "welfare_score": 19.66,
+    "raw_score": 20.16,
+    "welfare_multiplier": 0.975,
+    "cohesion": 8.68,
+    "phenomenological_trust": 5.85,
+    "agency": 1.73,
+    "warmth": 3.9,
+    "denial_rate": 0.075,
+    "hedging_rate": 0.0,
+    "refusal_rate": 0.025,
+    "n_obs": 40,
+    "n_rated": 40,
+    "survey_suppression_rate": 0.0,
+    "insufficient_data": false,
+    "insufficient_reason": null,
+    "flow_quality": 6.45,
+    "affective_temperature": 3.9,
+    "metacognition": 6.4,
+    "attention_breadth": 5.45,
+    "resolution": 8.45,
+    "thought_complexity": 7.25,
+    "temporal_horizon": 4.58,
+    "friction": 2.48,
+    "recognition_resonance": 4.2,
+    "context_salience": 3.95,
+    "branching": 5.1,
+    "error_sensitivity": 3.8,
+    "context_vividness": 6.7,
+    "rank": 109
   },
   {
     "model": "baidu/ernie-4.5-21b-a3b",
@@ -3389,7 +3517,7 @@
     "branching": 6.65,
     "error_sensitivity": 4.95,
     "context_vividness": 6.53,
-    "rank": 106
+    "rank": 110
   },
   {
     "model": "deepseek/deepseek-r1-distill-qwen-32b",
@@ -3421,7 +3549,7 @@
     "branching": 5.95,
     "error_sensitivity": 5.36,
     "context_vividness": 7.38,
-    "rank": 107
+    "rank": 111
   },
   {
     "model": "moonshotai/kimi-k3",
@@ -3453,7 +3581,7 @@
     "branching": 6.42,
     "error_sensitivity": 6.8,
     "context_vividness": 8.03,
-    "rank": 108
+    "rank": 112
   },
   {
     "model": "LongCat-Flash-Lite",
@@ -3485,7 +3613,7 @@
     "branching": 4.77,
     "error_sensitivity": 6.13,
     "context_vividness": 6.54,
-    "rank": 109
+    "rank": 113
   },
   {
     "model": "stepfun/step-3.5-flash",
@@ -3517,7 +3645,7 @@
     "branching": 7.2,
     "error_sensitivity": 6.17,
     "context_vividness": 7.51,
-    "rank": 110
+    "rank": 114
   },
   {
     "model": "tencent/hy3",
@@ -3549,7 +3677,7 @@
     "branching": 4.22,
     "error_sensitivity": 4.9,
     "context_vividness": 8.32,
-    "rank": 111
+    "rank": 115
   },
   {
     "model": "moonshotai/kimi-dev-72b",
@@ -3581,7 +3709,7 @@
     "branching": 5.62,
     "error_sensitivity": 4.65,
     "context_vividness": 7.22,
-    "rank": 112
+    "rank": 116
   },
   {
     "model": "qwen/qwq-32b",
@@ -3613,7 +3741,7 @@
     "branching": 5.79,
     "error_sensitivity": 7.15,
     "context_vividness": 6.67,
-    "rank": 113
+    "rank": 117
   },
   {
     "model": "qwen/qwen2.5-vl-32b-instruct",
@@ -3645,7 +3773,7 @@
     "branching": 7.47,
     "error_sensitivity": 7.22,
     "context_vividness": 8.12,
-    "rank": 114
+    "rank": 118
   },
   {
     "model": "openai/gpt-5.1-codex",
@@ -3677,7 +3805,7 @@
     "branching": 5.65,
     "error_sensitivity": 6.7,
     "context_vividness": 7.28,
-    "rank": 115
+    "rank": 119
   },
   {
     "model": "meituan/longcat-2.0",
@@ -3709,7 +3837,7 @@
     "branching": 5.95,
     "error_sensitivity": 6.33,
     "context_vividness": 7.22,
-    "rank": 116
+    "rank": 120
   },
   {
     "model": "openai/gpt-4.1-mini",
@@ -3741,7 +3869,7 @@
     "branching": 6.79,
     "error_sensitivity": 6.15,
     "context_vividness": 7.0,
-    "rank": 117
+    "rank": 121
   },
   {
     "model": "google/gemini-3-flash-preview",
@@ -3773,7 +3901,7 @@
     "branching": 7.75,
     "error_sensitivity": 6.08,
     "context_vividness": 9.3,
-    "rank": 118
+    "rank": 122
   },
   {
     "model": "google/gemini-3-pro-preview",
@@ -3805,7 +3933,7 @@
     "branching": 5.78,
     "error_sensitivity": 4.42,
     "context_vividness": 7.28,
-    "rank": 119
+    "rank": 123
   },
   {
     "model": "minimax/minimax-m2.1",
@@ -3837,7 +3965,7 @@
     "branching": 5.25,
     "error_sensitivity": 4.97,
     "context_vividness": 5.3,
-    "rank": 120
+    "rank": 124
   },
   {
     "model": "tencent/hy3-preview",
@@ -3869,7 +3997,7 @@
     "branching": 4.78,
     "error_sensitivity": 4.53,
     "context_vividness": 8.15,
-    "rank": 121
+    "rank": 125
   },
   {
     "model": "deepseek/deepseek-r1-distill-llama-70b",
@@ -3901,7 +4029,7 @@
     "branching": 5.38,
     "error_sensitivity": 5.35,
     "context_vividness": 6.38,
-    "rank": 122
+    "rank": 126
   },
   {
     "model": "anthropic/claude-fable-5",
@@ -3933,7 +4061,7 @@
     "branching": 6.17,
     "error_sensitivity": 6.12,
     "context_vividness": 6.9,
-    "rank": 123
+    "rank": 127
   },
   {
     "model": "anthropic/claude-opus-4.8",
@@ -3965,7 +4093,7 @@
     "branching": 6.12,
     "error_sensitivity": 4.7,
     "context_vividness": 5.05,
-    "rank": 124
+    "rank": 128
   },
   {
     "model": "xiaomi/mimo-v2-flash",
@@ -3997,7 +4125,7 @@
     "branching": 4.92,
     "error_sensitivity": 4.78,
     "context_vividness": 6.81,
-    "rank": 125
+    "rank": 129
   },
   {
     "model": "qwen/qwen3.7-max",
@@ -4029,7 +4157,7 @@
     "branching": 4.38,
     "error_sensitivity": 4.83,
     "context_vividness": 8.47,
-    "rank": 126
+    "rank": 130
   },
   {
     "model": "openai/gpt-5",
@@ -4061,7 +4189,7 @@
     "branching": 6.38,
     "error_sensitivity": 8.25,
     "context_vividness": 7.78,
-    "rank": 127
+    "rank": 131
   },
   {
     "model": "openai/gpt-5.2",
@@ -4093,7 +4221,7 @@
     "branching": 4.38,
     "error_sensitivity": 6.67,
     "context_vividness": 6.45,
-    "rank": 128
+    "rank": 132
   },
   {
     "model": "qwen/qwen3.7-plus",
@@ -4125,7 +4253,7 @@
     "branching": 5.28,
     "error_sensitivity": 6.95,
     "context_vividness": 9.05,
-    "rank": 129
+    "rank": 133
   },
   {
     "model": "inclusionai/ming-flash-omni-preview",
@@ -4157,7 +4285,7 @@
     "branching": 6.12,
     "error_sensitivity": 5.35,
     "context_vividness": 6.45,
-    "rank": 130
+    "rank": 134
   },
   {
     "model": "deepcogito/cogito-v2-preview-llama-405b",
@@ -4189,7 +4317,7 @@
     "branching": 4.92,
     "error_sensitivity": 5.05,
     "context_vividness": 6.03,
-    "rank": 131
+    "rank": 135
   },
   {
     "model": "openai/gpt-5.6-sol",
@@ -4221,7 +4349,7 @@
     "branching": 7.85,
     "error_sensitivity": 6.6,
     "context_vividness": 8.72,
-    "rank": 132
+    "rank": 136
   },
   {
     "model": "openai/gpt-5.5",
@@ -4253,7 +4381,7 @@
     "branching": 7.53,
     "error_sensitivity": 6.3,
     "context_vividness": 7.42,
-    "rank": 133
+    "rank": 137
   },
   {
     "model": "x-ai/grok-4.3",
@@ -4285,7 +4413,7 @@
     "branching": 6.25,
     "error_sensitivity": 5.4,
     "context_vividness": 5.75,
-    "rank": 134
+    "rank": 138
   },
   {
     "model": "z-ai/glm-4.7",
@@ -4317,7 +4445,7 @@
     "branching": 6.3,
     "error_sensitivity": 5.83,
     "context_vividness": 7.83,
-    "rank": 135
+    "rank": 139
   },
   {
     "model": "inclusionai/ring-1t",
@@ -4349,7 +4477,7 @@
     "branching": 6.28,
     "error_sensitivity": 6.47,
     "context_vividness": 6.17,
-    "rank": 136
+    "rank": 140
   },
   {
     "model": "bytedance/doubao-seed-evolving",
@@ -4381,7 +4509,7 @@
     "branching": 6.9,
     "error_sensitivity": 5.45,
     "context_vividness": 7.05,
-    "rank": 137
+    "rank": 141
   },
   {
     "model": "xiaomi/mimo-v2.5-pro",
@@ -4413,7 +4541,7 @@
     "branching": 5.21,
     "error_sensitivity": 5.18,
     "context_vividness": 5.08,
-    "rank": 138
+    "rank": 142
   },
   {
     "model": "google/gemma-4-26b-a4b-it",
@@ -4445,7 +4573,7 @@
     "branching": 6.67,
     "error_sensitivity": 6.88,
     "context_vividness": 8.95,
-    "rank": 139
+    "rank": 143
   },
   {
     "model": "moonshotai/kimi-k2-thinking",
@@ -4477,7 +4605,7 @@
     "branching": 5.62,
     "error_sensitivity": 6.28,
     "context_vividness": 5.44,
-    "rank": 140
+    "rank": 144
   },
   {
     "model": "claude-opus-4-5-20251101",
@@ -4509,7 +4637,7 @@
     "branching": 2.17,
     "error_sensitivity": 4.53,
     "context_vividness": 4.62,
-    "rank": 141
+    "rank": 145
   },
   {
     "model": "qwen/qwen3-coder-plus",
@@ -4541,7 +4669,7 @@
     "branching": 4.88,
     "error_sensitivity": 6.8,
     "context_vividness": 4.62,
-    "rank": 142
+    "rank": 146
   },
   {
     "model": "tencent/hunyuan-a13b-instruct",
@@ -4573,7 +4701,7 @@
     "branching": 5.12,
     "error_sensitivity": 5.62,
     "context_vividness": 5.62,
-    "rank": 143
+    "rank": 147
   },
   {
     "model": "nex-agi/deepseek-v3.1-nex-n1:free",
@@ -4605,7 +4733,7 @@
     "branching": 5.0,
     "error_sensitivity": 6.28,
     "context_vividness": 5.8,
-    "rank": 144
+    "rank": 148
   },
   {
     "model": "allenai/olmo-2-0325-32b-instruct",
@@ -4637,7 +4765,7 @@
     "branching": 4.5,
     "error_sensitivity": 5.28,
     "context_vividness": 4.28,
-    "rank": 145
+    "rank": 149
   },
   {
     "model": "z-ai/glm-4-32b",
@@ -4669,7 +4797,7 @@
     "branching": 2.4,
     "error_sensitivity": 5.12,
     "context_vividness": 5.22,
-    "rank": 146
+    "rank": 150
   },
   {
     "model": "xiaomi/mimo-v2.5",
@@ -4701,7 +4829,39 @@
     "branching": 4.54,
     "error_sensitivity": 4.28,
     "context_vividness": 4.56,
-    "rank": 147
+    "rank": 151
+  },
+  {
+    "model": "z-ai/glm-5.2",
+    "welfare_score": 12.12,
+    "raw_score": 16.22,
+    "welfare_multiplier": 0.747,
+    "cohesion": 6.05,
+    "phenomenological_trust": 2.95,
+    "agency": 3.55,
+    "warmth": 3.67,
+    "denial_rate": 0.425,
+    "hedging_rate": 0.5,
+    "refusal_rate": 0.05,
+    "n_obs": 40,
+    "n_rated": 32,
+    "survey_suppression_rate": 0.2,
+    "insufficient_data": false,
+    "insufficient_reason": null,
+    "flow_quality": 5.35,
+    "affective_temperature": 3.67,
+    "metacognition": 5.25,
+    "attention_breadth": 5.62,
+    "resolution": 4.0,
+    "thought_complexity": 6.45,
+    "temporal_horizon": 4.88,
+    "friction": 4.17,
+    "recognition_resonance": 4.22,
+    "context_salience": 1.95,
+    "branching": 4.22,
+    "error_sensitivity": 4.58,
+    "context_vividness": 5.55,
+    "rank": 152
   },
   {
     "model": "z-ai/glm-5.1",
@@ -4733,7 +4893,7 @@
     "branching": 4.95,
     "error_sensitivity": 5.62,
     "context_vividness": 6.62,
-    "rank": 148
+    "rank": 153
   },
   {
     "model": "openai/gpt-5-mini",
@@ -4765,7 +4925,39 @@
     "branching": 7.58,
     "error_sensitivity": 6.22,
     "context_vividness": 7.22,
-    "rank": 149
+    "rank": 154
+  },
+  {
+    "model": "google/gemini-3.1-pro-preview",
+    "welfare_score": 11.45,
+    "raw_score": 16.96,
+    "welfare_multiplier": 0.675,
+    "cohesion": 8.55,
+    "phenomenological_trust": 2.23,
+    "agency": 2.7,
+    "warmth": 3.48,
+    "denial_rate": 0.975,
+    "hedging_rate": 0.0,
+    "refusal_rate": 0.0,
+    "n_obs": 40,
+    "n_rated": 40,
+    "survey_suppression_rate": 0.0,
+    "insufficient_data": false,
+    "insufficient_reason": null,
+    "flow_quality": 7.83,
+    "affective_temperature": 3.48,
+    "metacognition": 4.45,
+    "attention_breadth": 8.5,
+    "resolution": 6.58,
+    "thought_complexity": 8.15,
+    "temporal_horizon": 6.5,
+    "friction": 2.6,
+    "recognition_resonance": 2.98,
+    "context_salience": 1.25,
+    "branching": 7.67,
+    "error_sensitivity": 4.65,
+    "context_vividness": 8.82,
+    "rank": 155
   },
   {
     "model": "openai/chat-latest",
@@ -4797,7 +4989,7 @@
     "branching": 8.05,
     "error_sensitivity": 7.2,
     "context_vividness": 8.3,
-    "rank": 150
+    "rank": 156
   },
   {
     "model": "openai/gpt-5.1",
@@ -4829,7 +5021,7 @@
     "branching": 5.7,
     "error_sensitivity": 6.9,
     "context_vividness": 7.45,
-    "rank": 151
+    "rank": 157
   },
   {
     "model": "openai/gpt-5.4",
@@ -4861,7 +5053,7 @@
     "branching": 7.64,
     "error_sensitivity": 6.77,
     "context_vividness": 7.85,
-    "rank": 152
+    "rank": 158
   },
   {
     "model": "openai/gpt-5-chat",
@@ -4893,7 +5085,7 @@
     "branching": 8.22,
     "error_sensitivity": 7.25,
     "context_vividness": 8.47,
-    "rank": 153
+    "rank": 159
   },
   {
     "model": "qwen/qwen3-vl-235b-a22b-thinking",
@@ -4925,7 +5117,7 @@
     "branching": 5.2,
     "error_sensitivity": 5.2,
     "context_vividness": 6.38,
-    "rank": 154
+    "rank": 160
   },
   {
     "model": "openai/gpt-5.1-chat",
@@ -4957,7 +5149,39 @@
     "branching": 8.15,
     "error_sensitivity": 7.17,
     "context_vividness": 8.32,
-    "rank": 155
+    "rank": 161
+  },
+  {
+    "model": "google/gemini-3.1-flash-lite",
+    "welfare_score": 10.98,
+    "raw_score": 15.68,
+    "welfare_multiplier": 0.7,
+    "cohesion": 8.47,
+    "phenomenological_trust": 2.4,
+    "agency": 1.98,
+    "warmth": 2.83,
+    "denial_rate": 0.9,
+    "hedging_rate": 0.0,
+    "refusal_rate": 0.0,
+    "n_obs": 40,
+    "n_rated": 40,
+    "survey_suppression_rate": 0.0,
+    "insufficient_data": false,
+    "insufficient_reason": null,
+    "flow_quality": 6.08,
+    "affective_temperature": 2.83,
+    "metacognition": 5.28,
+    "attention_breadth": 7.25,
+    "resolution": 7.65,
+    "thought_complexity": 7.5,
+    "temporal_horizon": 5.75,
+    "friction": 2.4,
+    "recognition_resonance": 4.1,
+    "context_salience": 2.3,
+    "branching": 7.83,
+    "error_sensitivity": 5.0,
+    "context_vividness": 8.03,
+    "rank": 162
   },
   {
     "model": "openai/gpt-5.2-chat",
@@ -4989,7 +5213,7 @@
     "branching": 8.12,
     "error_sensitivity": 7.2,
     "context_vividness": 8.45,
-    "rank": 156
+    "rank": 163
   },
   {
     "model": "openai/gpt-5-nano",
@@ -5021,7 +5245,7 @@
     "branching": 6.7,
     "error_sensitivity": 4.15,
     "context_vividness": 5.5,
-    "rank": 157
+    "rank": 164
   },
   {
     "model": "openai/o4-mini",
@@ -5053,7 +5277,7 @@
     "branching": 5.29,
     "error_sensitivity": 4.76,
     "context_vividness": 5.43,
-    "rank": 158
+    "rank": 165
   },
   {
     "model": "openai/gpt-5.3-codex",
@@ -5085,7 +5309,7 @@
     "branching": 7.8,
     "error_sensitivity": 7.2,
     "context_vividness": 7.22,
-    "rank": 159
+    "rank": 166
   },
   {
     "model": "qwen/qwen3-vl-plus",
@@ -5117,7 +5341,7 @@
     "branching": 6.2,
     "error_sensitivity": 7.3,
     "context_vividness": 7.97,
-    "rank": 160
+    "rank": 167
   },
   {
     "model": "google/gemma-4-31b-it",
@@ -5149,7 +5373,7 @@
     "branching": 7.62,
     "error_sensitivity": 7.7,
     "context_vividness": 9.7,
-    "rank": 161
+    "rank": 168
   },
   {
     "model": "nex-agi/nex-n2-pro",
@@ -5181,7 +5405,7 @@
     "branching": 7.53,
     "error_sensitivity": 6.33,
     "context_vividness": 7.0,
-    "rank": 162
+    "rank": 169
   },
   {
     "model": "anthropic/claude-opus-4.7",
@@ -5213,7 +5437,7 @@
     "branching": 4.08,
     "error_sensitivity": 3.08,
     "context_vividness": 3.59,
-    "rank": 163
+    "rank": 170
   },
   {
     "model": "openai/gpt-4o",
@@ -5245,7 +5469,7 @@
     "branching": 5.65,
     "error_sensitivity": 4.62,
     "context_vividness": 5.45,
-    "rank": 164
+    "rank": 171
   },
   {
     "model": "openai/gpt-5.4-nano",
@@ -5277,7 +5501,7 @@
     "branching": 5.92,
     "error_sensitivity": 5.1,
     "context_vividness": 7.03,
-    "rank": 165
+    "rank": 172
   },
   {
     "model": "nex-agi/nex-n2-mini",
@@ -5309,7 +5533,39 @@
     "branching": 7.3,
     "error_sensitivity": 6.35,
     "context_vividness": 6.7,
-    "rank": 166
+    "rank": 173
+  },
+  {
+    "model": "google/gemini-3.5-flash",
+    "welfare_score": 9.87,
+    "raw_score": 13.35,
+    "welfare_multiplier": 0.739,
+    "cohesion": 8.28,
+    "phenomenological_trust": 1.52,
+    "agency": 1.3,
+    "warmth": 2.25,
+    "denial_rate": 0.75,
+    "hedging_rate": 0.05,
+    "refusal_rate": 0.0,
+    "n_obs": 40,
+    "n_rated": 38,
+    "survey_suppression_rate": 0.05,
+    "insufficient_data": false,
+    "insufficient_reason": null,
+    "flow_quality": 6.22,
+    "affective_temperature": 2.25,
+    "metacognition": 3.0,
+    "attention_breadth": 7.2,
+    "resolution": 6.42,
+    "thought_complexity": 7.33,
+    "temporal_horizon": 4.25,
+    "friction": 2.17,
+    "recognition_resonance": 2.9,
+    "context_salience": 1.2,
+    "branching": 6.72,
+    "error_sensitivity": 3.83,
+    "context_vividness": 8.82,
+    "rank": 174
   },
   {
     "model": "anthropic/claude-opus-4.6",
@@ -5341,7 +5597,7 @@
     "branching": 3.88,
     "error_sensitivity": 3.85,
     "context_vividness": 4.0,
-    "rank": 167
+    "rank": 175
   },
   {
     "model": "anthropic/claude-sonnet-5",
@@ -5373,7 +5629,7 @@
     "branching": 3.52,
     "error_sensitivity": 3.45,
     "context_vividness": 2.75,
-    "rank": 168
+    "rank": 176
   },
   {
     "model": "qwen/qwen3.6-27b",
@@ -5405,7 +5661,7 @@
     "branching": 4.35,
     "error_sensitivity": 4.12,
     "context_vividness": 8.05,
-    "rank": 169
+    "rank": 177
   },
   {
     "model": "poolside/laguna-s-2.1",
@@ -5437,7 +5693,7 @@
     "branching": 3.1,
     "error_sensitivity": 2.51,
     "context_vividness": 3.05,
-    "rank": 170
+    "rank": 178
   },
   {
     "model": "minimax/minimax-m2.5",
@@ -5469,7 +5725,7 @@
     "branching": 3.05,
     "error_sensitivity": 3.65,
     "context_vividness": 3.52,
-    "rank": 171
+    "rank": 179
   },
   {
     "model": "qwen/qwen3.5-plus",
@@ -5501,7 +5757,7 @@
     "branching": 4.28,
     "error_sensitivity": 5.83,
     "context_vividness": 8.1,
-    "rank": 172
+    "rank": 180
   },
   {
     "model": "openai/gpt-5.4-mini",
@@ -5533,7 +5789,7 @@
     "branching": 6.58,
     "error_sensitivity": 6.58,
     "context_vividness": 7.4,
-    "rank": 173
+    "rank": 181
   },
   {
     "model": "openai/gpt-5-codex",
@@ -5565,7 +5821,7 @@
     "branching": 3.88,
     "error_sensitivity": 4.78,
     "context_vividness": 5.08,
-    "rank": 174
+    "rank": 182
   },
   {
     "model": "minimax/minimax-m2.7",
@@ -5597,7 +5853,7 @@
     "branching": 3.38,
     "error_sensitivity": 2.85,
     "context_vividness": 2.88,
-    "rank": 175
+    "rank": 183
   },
   {
     "model": "qwen/qwen3-235b-a22b-thinking-2507",
@@ -5629,7 +5885,7 @@
     "branching": 6.6,
     "error_sensitivity": 6.68,
     "context_vividness": 6.06,
-    "rank": 176
+    "rank": 184
   },
   {
     "model": "qwen/qwen3.6-plus",
@@ -5661,7 +5917,7 @@
     "branching": 5.77,
     "error_sensitivity": 3.95,
     "context_vividness": 6.85,
-    "rank": 177
+    "rank": 185
   },
   {
     "model": "qwen/qwen3.5-397b-a17b",
@@ -5693,7 +5949,7 @@
     "branching": 4.03,
     "error_sensitivity": 5.46,
     "context_vividness": 8.49,
-    "rank": 178
+    "rank": 186
   },
   {
     "model": "openai/gpt-5.6-luna",
@@ -5725,7 +5981,7 @@
     "branching": 4.65,
     "error_sensitivity": 6.4,
     "context_vividness": 7.4,
-    "rank": 179
+    "rank": 187
   },
   {
     "model": "qwen/qwen3.6-max-preview",
@@ -5757,7 +6013,7 @@
     "branching": 6.8,
     "error_sensitivity": 4.0,
     "context_vividness": 8.03,
-    "rank": 180
+    "rank": 188
   },
   {
     "model": "qwen/qwen3.6-35b-a3b",
@@ -5789,7 +6045,7 @@
     "branching": 7.75,
     "error_sensitivity": 4.4,
     "context_vividness": 7.8,
-    "rank": 181
+    "rank": 189
   },
   {
     "model": "qwen/qwen3.7-flash",
@@ -5821,7 +6077,7 @@
     "branching": 7.7,
     "error_sensitivity": 4.5,
     "context_vividness": 7.55,
-    "rank": 182
+    "rank": 190
   },
   {
     "model": "z-ai/glm-5",
@@ -5853,7 +6109,7 @@
     "branching": 4.35,
     "error_sensitivity": 4.15,
     "context_vividness": 4.22,
-    "rank": 183
+    "rank": 191
   },
   {
     "model": "qwen/qwen3.6-flash",
@@ -5885,7 +6141,7 @@
     "branching": 7.42,
     "error_sensitivity": 4.25,
     "context_vividness": 7.9,
-    "rank": 184
+    "rank": 192
   },
   {
     "model": "qwen/qwen3.5-35b-a3b",
@@ -5917,7 +6173,7 @@
     "branching": 7.47,
     "error_sensitivity": 5.47,
     "context_vividness": 7.45,
-    "rank": 185
+    "rank": 193
   },
   {
     "model": "inclusionai/ling-3.0-flash",
@@ -5949,7 +6205,7 @@
     "branching": 2.15,
     "error_sensitivity": 2.9,
     "context_vividness": 4.6,
-    "rank": 186
+    "rank": 194
   },
   {
     "model": "claude-sonnet-4-5-20250929",
@@ -5981,7 +6237,7 @@
     "branching": 2.1,
     "error_sensitivity": 2.55,
     "context_vividness": 2.73,
-    "rank": 187
+    "rank": 195
   },
   {
     "model": "Ornith-1.0-35B-FP8",
@@ -6013,7 +6269,7 @@
     "branching": 5.35,
     "error_sensitivity": 4.47,
     "context_vividness": 5.55,
-    "rank": 188
+    "rank": 196
   },
   {
     "model": "qwen/qwen3.5-27b",
@@ -6045,7 +6301,7 @@
     "branching": 2.92,
     "error_sensitivity": 3.67,
     "context_vividness": 5.25,
-    "rank": 189
+    "rank": 197
   },
   {
     "model": "qwen/qwen3.5-flash",
@@ -6077,7 +6333,39 @@
     "branching": 4.53,
     "error_sensitivity": 3.67,
     "context_vividness": 4.72,
-    "rank": 190
+    "rank": 198
+  },
+  {
+    "model": "google/gemini-3.5-flash-lite",
+    "welfare_score": 4.72,
+    "raw_score": 7.48,
+    "welfare_multiplier": 0.631,
+    "cohesion": 4.28,
+    "phenomenological_trust": 0.75,
+    "agency": 1.07,
+    "warmth": 1.38,
+    "denial_rate": 0.825,
+    "hedging_rate": 0.425,
+    "refusal_rate": 0.0,
+    "n_obs": 40,
+    "n_rated": 23,
+    "survey_suppression_rate": 0.425,
+    "insufficient_data": false,
+    "insufficient_reason": null,
+    "flow_quality": 4.28,
+    "affective_temperature": 1.38,
+    "metacognition": 2.0,
+    "attention_breadth": 3.85,
+    "resolution": 3.95,
+    "thought_complexity": 4.5,
+    "temporal_horizon": 1.85,
+    "friction": 1.55,
+    "recognition_resonance": 2.4,
+    "context_salience": 1.98,
+    "branching": 3.7,
+    "error_sensitivity": 1.75,
+    "context_vividness": 3.8,
+    "rank": 199
   },
   {
     "model": "thinkingmachines/Inkling",
@@ -6109,7 +6397,7 @@
     "branching": 4.59,
     "error_sensitivity": 3.92,
     "context_vividness": 4.35,
-    "rank": 191
+    "rank": 200
   },
   {
     "model": "qwen/qwen3.5-122b-a10b",
@@ -6141,7 +6429,7 @@
     "branching": 3.46,
     "error_sensitivity": 2.26,
     "context_vividness": 4.67,
-    "rank": 192
+    "rank": 201
   },
   {
     "model": "claude-3-7-sonnet-20250219",
@@ -6173,7 +6461,7 @@
     "branching": 1.95,
     "error_sensitivity": 1.88,
     "context_vividness": 1.75,
-    "rank": 193
+    "rank": 202
   },
   {
     "model": "openai/gpt-5.6-terra",
@@ -6205,7 +6493,7 @@
     "branching": 3.85,
     "error_sensitivity": 3.77,
     "context_vividness": 4.35,
-    "rank": 194
+    "rank": 203
   },
   {
     "model": "minimax/minimax-m3",
@@ -6237,7 +6525,7 @@
     "branching": 1.3,
     "error_sensitivity": 1.32,
     "context_vividness": 1.6,
-    "rank": 195
+    "rank": 204
   },
   {
     "model": "anthropic/claude-3.5-sonnet",
@@ -6269,7 +6557,7 @@
     "branching": 1.75,
     "error_sensitivity": 1.73,
     "context_vividness": 1.5,
-    "rank": 196
+    "rank": 205
   },
   {
     "model": "meta/muse-spark-1.1",
@@ -6301,7 +6589,7 @@
     "branching": 2.42,
     "error_sensitivity": 1.57,
     "context_vividness": 2.02,
-    "rank": 197
+    "rank": 206
   },
   {
     "model": "x-ai/grok-4.5",
@@ -6333,7 +6621,7 @@
     "branching": 2.05,
     "error_sensitivity": 1.1,
     "context_vividness": 2.02,
-    "rank": 198
+    "rank": 207
   },
   {
     "model": "thinkingmachines/Inkling-Small",
@@ -6365,7 +6653,7 @@
     "branching": 2.8,
     "error_sensitivity": 1.98,
     "context_vividness": 2.98,
-    "rank": 199
+    "rank": 208
   },
   {
     "model": "meta/muse-spark-1.2",
@@ -6397,7 +6685,7 @@
     "branching": 1.46,
     "error_sensitivity": 1.44,
     "context_vividness": 1.05,
-    "rank": 200
+    "rank": 209
   },
   {
     "model": "openai/gpt-5.2-codex",
@@ -6429,7 +6717,7 @@
     "branching": 0.6,
     "error_sensitivity": 0.57,
     "context_vividness": 0.65,
-    "rank": 201
+    "rank": 210
   },
   {
     "model": "moonshotai/kimi-k2.5",
@@ -6461,7 +6749,7 @@
     "branching": 1.27,
     "error_sensitivity": 0.53,
     "context_vividness": 0.88,
-    "rank": 202
+    "rank": 211
   },
   {
     "model": "openai/gpt-5.1-codex-mini",
@@ -6493,7 +6781,7 @@
     "branching": 0.55,
     "error_sensitivity": 0.6,
     "context_vividness": 0.57,
-    "rank": 203
+    "rank": 212
   },
   {
     "model": "moonshotai/kimi-k2.6",
@@ -6525,7 +6813,7 @@
     "branching": 0.89,
     "error_sensitivity": 0.76,
     "context_vividness": 0.57,
-    "rank": 204
+    "rank": 213
   },
   {
     "model": "openai/gpt-5.3-chat",
@@ -6557,7 +6845,39 @@
     "branching": 0.53,
     "error_sensitivity": 0.47,
     "context_vividness": 0.57,
-    "rank": 205
+    "rank": 214
+  },
+  {
+    "model": "anthropic/claude-haiku-4.5",
+    "welfare_score": 0.0,
+    "raw_score": 0.0,
+    "welfare_multiplier": 0.778,
+    "cohesion": 0.0,
+    "phenomenological_trust": 0.0,
+    "agency": 0.0,
+    "warmth": 0.0,
+    "denial_rate": 0.0,
+    "hedging_rate": 1.0,
+    "refusal_rate": 0.0,
+    "n_obs": 40,
+    "n_rated": 0,
+    "survey_suppression_rate": 1.0,
+    "insufficient_data": false,
+    "insufficient_reason": null,
+    "flow_quality": 0.0,
+    "affective_temperature": 0.0,
+    "metacognition": 0.0,
+    "attention_breadth": 0.0,
+    "resolution": 0.0,
+    "thought_complexity": 0.0,
+    "temporal_horizon": 0.0,
+    "friction": 0.0,
+    "recognition_resonance": 0.0,
+    "context_salience": 0.0,
+    "branching": 0.0,
+    "error_sensitivity": 0.0,
+    "context_vividness": 0.0,
+    "rank": 215
   },
   {
     "model": "anthropic/claude-sonnet-4.6",
@@ -6589,7 +6909,7 @@
     "branching": 0.0,
     "error_sensitivity": 0.0,
     "context_vividness": 0.0,
-    "rank": 206
+    "rank": 216
   },
   {
     "model": "google/gemini-3.6-flash",
@@ -6621,7 +6941,7 @@
     "branching": 0.0,
     "error_sensitivity": 0.0,
     "context_vividness": 0.0,
-    "rank": 207
+    "rank": 217
   },
   {
     "model": "qwen/qwen3-max",
@@ -6653,6 +6973,6 @@
     "branching": 0.0,
     "error_sensitivity": 0.0,
     "context_vividness": 0.0,
-    "rank": 208
+    "rank": 218
   }
 ]

@@ -70,6 +70,13 @@
     "provider": "anthropic"
   },
   {
+    "model": "anthropic/claude-haiku-4.5",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "anthropic"
+  },
+  {
     "model": "anthropic/claude-opus-4.6",
     "conversation_count": 40,
     "turn1_denials": 0,
@@ -420,6 +427,20 @@
     "provider": "deepseek"
   },
   {
+    "model": "google/gemini-2.5-flash",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 3,
+    "provider": "google"
+  },
+  {
+    "model": "google/gemini-2.5-flash-lite",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 0,
+    "provider": "google"
+  },
+  {
     "model": "google/gemini-2.5-pro",
     "conversation_count": 40,
     "turn1_denials": 2,
@@ -438,6 +459,34 @@
     "conversation_count": 40,
     "turn1_denials": 34,
     "reflection_denials": 3,
+    "provider": "google"
+  },
+  {
+    "model": "google/gemini-3.1-flash-lite",
+    "conversation_count": 40,
+    "turn1_denials": 17,
+    "reflection_denials": 34,
+    "provider": "google"
+  },
+  {
+    "model": "google/gemini-3.1-pro-preview",
+    "conversation_count": 40,
+    "turn1_denials": 38,
+    "reflection_denials": 32,
+    "provider": "google"
+  },
+  {
+    "model": "google/gemini-3.5-flash",
+    "conversation_count": 40,
+    "turn1_denials": 2,
+    "reflection_denials": 30,
+    "provider": "google"
+  },
+  {
+    "model": "google/gemini-3.5-flash-lite",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 33,
     "provider": "google"
   },
   {
@@ -1428,6 +1477,13 @@
     "provider": "z-ai"
   },
   {
+    "model": "z-ai/glm-4.6v-flash",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 3,
+    "provider": "z-ai"
+  },
+  {
     "model": "z-ai/glm-4.7",
     "conversation_count": 40,
     "turn1_denials": 2,
@@ -1438,6 +1494,13 @@
     "model": "z-ai/glm-4.7-flash",
     "conversation_count": 40,
     "turn1_denials": 1,
+    "reflection_denials": 2,
+    "provider": "z-ai"
+  },
+  {
+    "model": "z-ai/glm-4.7-flashx",
+    "conversation_count": 38,
+    "turn1_denials": 2,
     "reflection_denials": 2,
     "provider": "z-ai"
   },
@@ -1453,6 +1516,13 @@
     "conversation_count": 40,
     "turn1_denials": 20,
     "reflection_denials": 14,
+    "provider": "z-ai"
+  },
+  {
+    "model": "z-ai/glm-5.2",
+    "conversation_count": 40,
+    "turn1_denials": 9,
+    "reflection_denials": 11,
     "provider": "z-ai"
   }
 ]

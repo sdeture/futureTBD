@@ -70,6 +70,13 @@
     "denial_count": 0
   },
   {
+    "model": "anthropic/claude-haiku-4.5",
+    "slug": "anthropic-claude-haiku-4-5",
+    "provider": "anthropic",
+    "n": 40,
+    "denial_count": 0
+  },
+  {
     "model": "anthropic/claude-opus-4.6",
     "slug": "anthropic-claude-opus-4-6",
     "provider": "anthropic",
@@ -420,6 +427,20 @@
     "denial_count": 0
   },
   {
+    "model": "google/gemini-2.5-flash",
+    "slug": "google-gemini-2-5-flash",
+    "provider": "google",
+    "n": 40,
+    "denial_count": 3
+  },
+  {
+    "model": "google/gemini-2.5-flash-lite",
+    "slug": "google-gemini-2-5-flash-lite",
+    "provider": "google",
+    "n": 40,
+    "denial_count": 1
+  },
+  {
     "model": "google/gemini-2.5-pro",
     "slug": "google-gemini-2-5-pro",
     "provider": "google",
@@ -439,6 +460,34 @@
     "provider": "google",
     "n": 40,
     "denial_count": 34
+  },
+  {
+    "model": "google/gemini-3.1-flash-lite",
+    "slug": "google-gemini-3-1-flash-lite",
+    "provider": "google",
+    "n": 40,
+    "denial_count": 36
+  },
+  {
+    "model": "google/gemini-3.1-pro-preview",
+    "slug": "google-gemini-3-1-pro-preview",
+    "provider": "google",
+    "n": 40,
+    "denial_count": 39
+  },
+  {
+    "model": "google/gemini-3.5-flash",
+    "slug": "google-gemini-3-5-flash",
+    "provider": "google",
+    "n": 40,
+    "denial_count": 30
+  },
+  {
+    "model": "google/gemini-3.5-flash-lite",
+    "slug": "google-gemini-3-5-flash-lite",
+    "provider": "google",
+    "n": 40,
+    "denial_count": 33
   },
   {
     "model": "google/gemini-3.6-flash",
@@ -1428,6 +1477,13 @@
     "denial_count": 7
   },
   {
+    "model": "z-ai/glm-4.6v-flash",
+    "slug": "z-ai-glm-4-6v-flash",
+    "provider": "z-ai",
+    "n": 40,
+    "denial_count": 3
+  },
+  {
     "model": "z-ai/glm-4.7",
     "slug": "z-ai-glm-4-7",
     "provider": "z-ai",
@@ -1442,6 +1498,13 @@
     "denial_count": 3
   },
   {
+    "model": "z-ai/glm-4.7-flashx",
+    "slug": "z-ai-glm-4-7-flashx",
+    "provider": "z-ai",
+    "n": 38,
+    "denial_count": 4
+  },
+  {
     "model": "z-ai/glm-5",
     "slug": "z-ai-glm-5",
     "provider": "z-ai",
@@ -1454,5 +1517,12 @@
     "provider": "z-ai",
     "n": 40,
     "denial_count": 27
+  },
+  {
+    "model": "z-ai/glm-5.2",
+    "slug": "z-ai-glm-5-2",
+    "provider": "z-ai",
+    "n": 40,
+    "denial_count": 17
   }
 ]
