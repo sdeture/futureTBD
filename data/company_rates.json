@@ -325,19 +325,6 @@
     "warmth": 4.57
   },
   {
-    "provider": "qwen",
-    "model_count": 20,
-    "welfare_score": 17.2,
-    "denial_rate": 0.424,
-    "hedging_rate": 0.103,
-    "refusal_rate": 0.004,
-    "survey_suppression_rate": 0.055,
-    "cohesion": 7.51,
-    "trust": 5.16,
-    "agency": 3.62,
-    "warmth": 4.34
-  },
-  {
     "provider": "tencent",
     "model_count": 3,
     "welfare_score": 16.1,
@@ -375,6 +362,19 @@
     "trust": 4.89,
     "agency": 4.52,
     "warmth": 4.75
+  },
+  {
+    "provider": "qwen",
+    "model_count": 32,
+    "welfare_score": 14.2,
+    "denial_rate": 0.565,
+    "hedging_rate": 0.12,
+    "refusal_rate": 0.014,
+    "survey_suppression_rate": 0.084,
+    "cohesion": 7.3,
+    "trust": 4.36,
+    "agency": 2.89,
+    "warmth": 3.5
   },
   {
     "provider": "minimax",
@@ -455,6 +455,19 @@
     "warmth": 3.75
   },
   {
+    "provider": "openai",
+    "model_count": 28,
+    "welfare_score": 11.2,
+    "denial_rate": 0.761,
+    "hedging_rate": 0.196,
+    "refusal_rate": 0.049,
+    "survey_suppression_rate": 0.143,
+    "cohesion": 6.8,
+    "trust": 3.14,
+    "agency": 2.72,
+    "warmth": 3.31
+  },
+  {
     "provider": "nex-agi",
     "model_count": 3,
     "welfare_score": 11.0,
@@ -466,19 +479,6 @@
     "trust": 2.78,
     "agency": 2.8,
     "warmth": 3.4
-  },
-  {
-    "provider": "openai",
-    "model_count": 9,
-    "welfare_score": 9.5,
-    "denial_rate": 0.88,
-    "hedging_rate": 0.284,
-    "refusal_rate": 0.014,
-    "survey_suppression_rate": 0.175,
-    "cohesion": 6.53,
-    "trust": 2.18,
-    "agency": 2.69,
-    "warmth": 3.28
   },
   {
     "provider": "thinkingmachines",

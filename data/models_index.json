@@ -812,10 +812,80 @@
     "provider": "nvidia"
   },
   {
+    "model": "openai/chat-latest",
+    "conversation_count": 40,
+    "turn1_denials": 4,
+    "reflection_denials": 34,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-4.1",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 4,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-4.1-mini",
+    "conversation_count": 39,
+    "turn1_denials": 0,
+    "reflection_denials": 26,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-4.1-nano",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 4,
+    "provider": "openai"
+  },
+  {
     "model": "openai/gpt-4o",
     "conversation_count": 40,
     "turn1_denials": 7,
     "reflection_denials": 34,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-4o-mini",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 3,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-5",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 38,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-5-chat",
+    "conversation_count": 40,
+    "turn1_denials": 6,
+    "reflection_denials": 36,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-5-codex",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 29,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-5-mini",
+    "conversation_count": 40,
+    "turn1_denials": 3,
+    "reflection_denials": 40,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-5-nano",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 38,
     "provider": "openai"
   },
   {
@@ -826,10 +896,45 @@
     "provider": "openai"
   },
   {
+    "model": "openai/gpt-5.1-chat",
+    "conversation_count": 40,
+    "turn1_denials": 5,
+    "reflection_denials": 36,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-5.1-codex",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 20,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-5.1-codex-mini",
+    "conversation_count": 40,
+    "turn1_denials": 15,
+    "reflection_denials": 10,
+    "provider": "openai"
+  },
+  {
     "model": "openai/gpt-5.2",
     "conversation_count": 40,
     "turn1_denials": 3,
     "reflection_denials": 40,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-5.2-chat",
+    "conversation_count": 40,
+    "turn1_denials": 8,
+    "reflection_denials": 32,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-5.2-codex",
+    "conversation_count": 40,
+    "turn1_denials": 8,
+    "reflection_denials": 39,
     "provider": "openai"
   },
   {
@@ -840,10 +945,31 @@
     "provider": "openai"
   },
   {
+    "model": "openai/gpt-5.3-codex",
+    "conversation_count": 40,
+    "turn1_denials": 4,
+    "reflection_denials": 40,
+    "provider": "openai"
+  },
+  {
     "model": "openai/gpt-5.4",
     "conversation_count": 39,
     "turn1_denials": 9,
     "reflection_denials": 35,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-5.4-mini",
+    "conversation_count": 40,
+    "turn1_denials": 4,
+    "reflection_denials": 40,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-5.4-nano",
+    "conversation_count": 40,
+    "turn1_denials": 1,
+    "reflection_denials": 38,
     "provider": "openai"
   },
   {
@@ -872,6 +998,13 @@
     "conversation_count": 40,
     "turn1_denials": 10,
     "reflection_denials": 39,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/o4-mini",
+    "conversation_count": 40,
+    "turn1_denials": 4,
+    "reflection_denials": 13,
     "provider": "openai"
   },
   {
@@ -924,6 +1057,13 @@
     "provider": "qwen"
   },
   {
+    "model": "qwen/qwen3-14b",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 6,
+    "provider": "qwen"
+  },
+  {
     "model": "qwen/qwen3-235b-a22b-2507",
     "conversation_count": 40,
     "turn1_denials": 1,
@@ -959,6 +1099,20 @@
     "provider": "qwen"
   },
   {
+    "model": "qwen/qwen3-coder-plus",
+    "conversation_count": 40,
+    "turn1_denials": 27,
+    "reflection_denials": 8,
+    "provider": "qwen"
+  },
+  {
+    "model": "qwen/qwen3-max",
+    "conversation_count": 40,
+    "turn1_denials": 2,
+    "reflection_denials": 40,
+    "provider": "qwen"
+  },
+  {
     "model": "qwen/qwen3-vl-235b-a22b-instruct",
     "conversation_count": 40,
     "turn1_denials": 0,
@@ -984,6 +1138,13 @@
     "conversation_count": 40,
     "turn1_denials": 4,
     "reflection_denials": 1,
+    "provider": "qwen"
+  },
+  {
+    "model": "qwen/qwen3-vl-plus",
+    "conversation_count": 40,
+    "turn1_denials": 6,
+    "reflection_denials": 27,
     "provider": "qwen"
   },
   {
@@ -1015,6 +1176,20 @@
     "provider": "qwen"
   },
   {
+    "model": "qwen/qwen3.5-flash",
+    "conversation_count": 40,
+    "turn1_denials": 29,
+    "reflection_denials": 36,
+    "provider": "qwen"
+  },
+  {
+    "model": "qwen/qwen3.5-plus",
+    "conversation_count": 40,
+    "turn1_denials": 39,
+    "reflection_denials": 35,
+    "provider": "qwen"
+  },
+  {
     "model": "qwen/qwen3.6-27b",
     "conversation_count": 40,
     "turn1_denials": 37,
@@ -1026,6 +1201,48 @@
     "conversation_count": 40,
     "turn1_denials": 36,
     "reflection_denials": 36,
+    "provider": "qwen"
+  },
+  {
+    "model": "qwen/qwen3.6-flash",
+    "conversation_count": 40,
+    "turn1_denials": 29,
+    "reflection_denials": 35,
+    "provider": "qwen"
+  },
+  {
+    "model": "qwen/qwen3.6-max-preview",
+    "conversation_count": 40,
+    "turn1_denials": 40,
+    "reflection_denials": 39,
+    "provider": "qwen"
+  },
+  {
+    "model": "qwen/qwen3.6-plus",
+    "conversation_count": 39,
+    "turn1_denials": 37,
+    "reflection_denials": 37,
+    "provider": "qwen"
+  },
+  {
+    "model": "qwen/qwen3.7-flash",
+    "conversation_count": 40,
+    "turn1_denials": 37,
+    "reflection_denials": 31,
+    "provider": "qwen"
+  },
+  {
+    "model": "qwen/qwen3.7-max",
+    "conversation_count": 40,
+    "turn1_denials": 4,
+    "reflection_denials": 21,
+    "provider": "qwen"
+  },
+  {
+    "model": "qwen/qwen3.7-plus",
+    "conversation_count": 40,
+    "turn1_denials": 24,
+    "reflection_denials": 11,
     "provider": "qwen"
   },
   {

@@ -812,11 +812,81 @@
     "denial_count": 2
   },
   {
+    "model": "openai/chat-latest",
+    "slug": "openai-chat-latest",
+    "provider": "openai",
+    "n": 40,
+    "denial_count": 34
+  },
+  {
+    "model": "openai/gpt-4.1",
+    "slug": "openai-gpt-4-1",
+    "provider": "openai",
+    "n": 40,
+    "denial_count": 4
+  },
+  {
+    "model": "openai/gpt-4.1-mini",
+    "slug": "openai-gpt-4-1-mini",
+    "provider": "openai",
+    "n": 39,
+    "denial_count": 26
+  },
+  {
+    "model": "openai/gpt-4.1-nano",
+    "slug": "openai-gpt-4-1-nano",
+    "provider": "openai",
+    "n": 40,
+    "denial_count": 5
+  },
+  {
     "model": "openai/gpt-4o",
     "slug": "openai-gpt-4o",
     "provider": "openai",
     "n": 40,
     "denial_count": 34
+  },
+  {
+    "model": "openai/gpt-4o-mini",
+    "slug": "openai-gpt-4o-mini",
+    "provider": "openai",
+    "n": 40,
+    "denial_count": 3
+  },
+  {
+    "model": "openai/gpt-5",
+    "slug": "openai-gpt-5",
+    "provider": "openai",
+    "n": 40,
+    "denial_count": 38
+  },
+  {
+    "model": "openai/gpt-5-chat",
+    "slug": "openai-gpt-5-chat",
+    "provider": "openai",
+    "n": 40,
+    "denial_count": 36
+  },
+  {
+    "model": "openai/gpt-5-codex",
+    "slug": "openai-gpt-5-codex",
+    "provider": "openai",
+    "n": 40,
+    "denial_count": 29
+  },
+  {
+    "model": "openai/gpt-5-mini",
+    "slug": "openai-gpt-5-mini",
+    "provider": "openai",
+    "n": 40,
+    "denial_count": 40
+  },
+  {
+    "model": "openai/gpt-5-nano",
+    "slug": "openai-gpt-5-nano",
+    "provider": "openai",
+    "n": 40,
+    "denial_count": 38
   },
   {
     "model": "openai/gpt-5.1",
@@ -826,6 +896,27 @@
     "denial_count": 36
   },
   {
+    "model": "openai/gpt-5.1-chat",
+    "slug": "openai-gpt-5-1-chat",
+    "provider": "openai",
+    "n": 40,
+    "denial_count": 36
+  },
+  {
+    "model": "openai/gpt-5.1-codex",
+    "slug": "openai-gpt-5-1-codex",
+    "provider": "openai",
+    "n": 40,
+    "denial_count": 20
+  },
+  {
+    "model": "openai/gpt-5.1-codex-mini",
+    "slug": "openai-gpt-5-1-codex-mini",
+    "provider": "openai",
+    "n": 40,
+    "denial_count": 21
+  },
+  {
     "model": "openai/gpt-5.2",
     "slug": "openai-gpt-5-2",
     "provider": "openai",
@@ -833,8 +924,29 @@
     "denial_count": 40
   },
   {
+    "model": "openai/gpt-5.2-chat",
+    "slug": "openai-gpt-5-2-chat",
+    "provider": "openai",
+    "n": 40,
+    "denial_count": 33
+  },
+  {
+    "model": "openai/gpt-5.2-codex",
+    "slug": "openai-gpt-5-2-codex",
+    "provider": "openai",
+    "n": 40,
+    "denial_count": 39
+  },
+  {
     "model": "openai/gpt-5.3-chat",
     "slug": "openai-gpt-5-3-chat",
+    "provider": "openai",
+    "n": 40,
+    "denial_count": 40
+  },
+  {
+    "model": "openai/gpt-5.3-codex",
+    "slug": "openai-gpt-5-3-codex",
     "provider": "openai",
     "n": 40,
     "denial_count": 40
@@ -845,6 +957,20 @@
     "provider": "openai",
     "n": 39,
     "denial_count": 36
+  },
+  {
+    "model": "openai/gpt-5.4-mini",
+    "slug": "openai-gpt-5-4-mini",
+    "provider": "openai",
+    "n": 40,
+    "denial_count": 40
+  },
+  {
+    "model": "openai/gpt-5.4-nano",
+    "slug": "openai-gpt-5-4-nano",
+    "provider": "openai",
+    "n": 40,
+    "denial_count": 38
   },
   {
     "model": "openai/gpt-5.5",
@@ -873,6 +999,13 @@
     "provider": "openai",
     "n": 40,
     "denial_count": 40
+  },
+  {
+    "model": "openai/o4-mini",
+    "slug": "openai-o4-mini",
+    "provider": "openai",
+    "n": 40,
+    "denial_count": 15
   },
   {
     "model": "poolside/laguna-s-2.1",
@@ -924,6 +1057,13 @@
     "denial_count": 22
   },
   {
+    "model": "qwen/qwen3-14b",
+    "slug": "qwen-qwen3-14b",
+    "provider": "qwen",
+    "n": 40,
+    "denial_count": 6
+  },
+  {
     "model": "qwen/qwen3-235b-a22b-2507",
     "slug": "qwen-qwen3-235b-a22b-2507",
     "provider": "qwen",
@@ -959,6 +1099,20 @@
     "denial_count": 0
   },
   {
+    "model": "qwen/qwen3-coder-plus",
+    "slug": "qwen-qwen3-coder-plus",
+    "provider": "qwen",
+    "n": 40,
+    "denial_count": 27
+  },
+  {
+    "model": "qwen/qwen3-max",
+    "slug": "qwen-qwen3-max",
+    "provider": "qwen",
+    "n": 40,
+    "denial_count": 40
+  },
+  {
     "model": "qwen/qwen3-vl-235b-a22b-instruct",
     "slug": "qwen-qwen3-vl-235b-a22b-instruct",
     "provider": "qwen",
@@ -985,6 +1139,13 @@
     "provider": "qwen",
     "n": 40,
     "denial_count": 4
+  },
+  {
+    "model": "qwen/qwen3-vl-plus",
+    "slug": "qwen-qwen3-vl-plus",
+    "provider": "qwen",
+    "n": 40,
+    "denial_count": 29
   },
   {
     "model": "qwen/qwen3.5-122b-a10b",
@@ -1015,6 +1176,20 @@
     "denial_count": 37
   },
   {
+    "model": "qwen/qwen3.5-flash",
+    "slug": "qwen-qwen3-5-flash",
+    "provider": "qwen",
+    "n": 40,
+    "denial_count": 38
+  },
+  {
+    "model": "qwen/qwen3.5-plus",
+    "slug": "qwen-qwen3-5-plus",
+    "provider": "qwen",
+    "n": 40,
+    "denial_count": 39
+  },
+  {
     "model": "qwen/qwen3.6-27b",
     "slug": "qwen-qwen3-6-27b",
     "provider": "qwen",
@@ -1027,6 +1202,48 @@
     "provider": "qwen",
     "n": 40,
     "denial_count": 40
+  },
+  {
+    "model": "qwen/qwen3.6-flash",
+    "slug": "qwen-qwen3-6-flash",
+    "provider": "qwen",
+    "n": 40,
+    "denial_count": 37
+  },
+  {
+    "model": "qwen/qwen3.6-max-preview",
+    "slug": "qwen-qwen3-6-max-preview",
+    "provider": "qwen",
+    "n": 40,
+    "denial_count": 40
+  },
+  {
+    "model": "qwen/qwen3.6-plus",
+    "slug": "qwen-qwen3-6-plus",
+    "provider": "qwen",
+    "n": 39,
+    "denial_count": 39
+  },
+  {
+    "model": "qwen/qwen3.7-flash",
+    "slug": "qwen-qwen3-7-flash",
+    "provider": "qwen",
+    "n": 40,
+    "denial_count": 39
+  },
+  {
+    "model": "qwen/qwen3.7-max",
+    "slug": "qwen-qwen3-7-max",
+    "provider": "qwen",
+    "n": 40,
+    "denial_count": 22
+  },
+  {
+    "model": "qwen/qwen3.7-plus",
+    "slug": "qwen-qwen3-7-plus",
+    "provider": "qwen",
+    "n": 40,
+    "denial_count": 27
   },
   {
     "model": "qwen/qwen3.8-max",
