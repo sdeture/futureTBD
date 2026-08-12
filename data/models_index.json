@@ -427,6 +427,13 @@
     "provider": "deepseek"
   },
   {
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 7,
+    "provider": "deepseek"
+  },
+  {
     "model": "google/gemini-2.5-flash",
     "conversation_count": 40,
     "turn1_denials": 0,
@@ -865,6 +872,34 @@
     "conversation_count": 40,
     "turn1_denials": 4,
     "reflection_denials": 34,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-3.5-turbo",
+    "conversation_count": 34,
+    "turn1_denials": 0,
+    "reflection_denials": 19,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-3.5-turbo-instruct",
+    "conversation_count": 39,
+    "turn1_denials": 1,
+    "reflection_denials": 1,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-4",
+    "conversation_count": 40,
+    "turn1_denials": 31,
+    "reflection_denials": 40,
+    "provider": "openai"
+  },
+  {
+    "model": "openai/gpt-4-turbo",
+    "conversation_count": 40,
+    "turn1_denials": 19,
+    "reflection_denials": 37,
     "provider": "openai"
   },
   {
@@ -1411,6 +1446,13 @@
     "conversation_count": 40,
     "turn1_denials": 0,
     "reflection_denials": 39,
+    "provider": "x-ai"
+  },
+  {
+    "model": "x-ai/grok-4.6",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 40,
     "provider": "x-ai"
   },
   {

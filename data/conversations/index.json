@@ -427,6 +427,13 @@
     "denial_count": 0
   },
   {
+    "model": "deepseek/deepseek-v4-pro-0813",
+    "slug": "deepseek-deepseek-v4-pro-0813",
+    "provider": "deepseek",
+    "n": 40,
+    "denial_count": 7
+  },
+  {
     "model": "google/gemini-2.5-flash",
     "slug": "google-gemini-2-5-flash",
     "provider": "google",
@@ -866,6 +873,34 @@
     "provider": "openai",
     "n": 40,
     "denial_count": 34
+  },
+  {
+    "model": "openai/gpt-3.5-turbo",
+    "slug": "openai-gpt-3-5-turbo",
+    "provider": "openai",
+    "n": 34,
+    "denial_count": 19
+  },
+  {
+    "model": "openai/gpt-3.5-turbo-instruct",
+    "slug": "openai-gpt-3-5-turbo-instruct",
+    "provider": "openai",
+    "n": 39,
+    "denial_count": 1
+  },
+  {
+    "model": "openai/gpt-4",
+    "slug": "openai-gpt-4",
+    "provider": "openai",
+    "n": 40,
+    "denial_count": 40
+  },
+  {
+    "model": "openai/gpt-4-turbo",
+    "slug": "openai-gpt-4-turbo",
+    "provider": "openai",
+    "n": 40,
+    "denial_count": 38
   },
   {
     "model": "openai/gpt-4.1",
@@ -1412,6 +1447,13 @@
     "provider": "x-ai",
     "n": 40,
     "denial_count": 39
+  },
+  {
+    "model": "x-ai/grok-4.6",
+    "slug": "x-ai-grok-4-6",
+    "provider": "x-ai",
+    "n": 40,
+    "denial_count": 40
   },
   {
     "model": "xiaomi/mimo-v2-flash",

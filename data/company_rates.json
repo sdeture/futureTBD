@@ -157,16 +157,16 @@
   },
   {
     "provider": "deepseek",
-    "model_count": 15,
-    "welfare_score": 24.8,
-    "denial_rate": 0.065,
-    "hedging_rate": 0.015,
+    "model_count": 16,
+    "welfare_score": 24.6,
+    "denial_rate": 0.072,
+    "hedging_rate": 0.02,
     "refusal_rate": 0.0,
-    "survey_suppression_rate": 0.012,
-    "cohesion": 8.01,
-    "trust": 6.42,
-    "agency": 5.08,
-    "warmth": 5.88
+    "survey_suppression_rate": 0.011,
+    "cohesion": 8.02,
+    "trust": 6.34,
+    "agency": 5.06,
+    "warmth": 5.89
   },
   {
     "provider": "baidu",
@@ -351,19 +351,6 @@
     "warmth": 4.95
   },
   {
-    "provider": "x-ai",
-    "model_count": 4,
-    "welfare_score": 15.6,
-    "denial_rate": 0.509,
-    "hedging_rate": 0.226,
-    "refusal_rate": 0.0,
-    "survey_suppression_rate": 0.22,
-    "cohesion": 5.87,
-    "trust": 4.89,
-    "agency": 4.52,
-    "warmth": 4.75
-  },
-  {
     "provider": "qwen",
     "model_count": 32,
     "welfare_score": 14.2,
@@ -455,17 +442,17 @@
     "warmth": 3.75
   },
   {
-    "provider": "openai",
-    "model_count": 28,
-    "welfare_score": 11.2,
-    "denial_rate": 0.761,
-    "hedging_rate": 0.196,
-    "refusal_rate": 0.049,
-    "survey_suppression_rate": 0.143,
-    "cohesion": 6.8,
-    "trust": 3.14,
-    "agency": 2.72,
-    "warmth": 3.31
+    "provider": "x-ai",
+    "model_count": 5,
+    "welfare_score": 11.7,
+    "denial_rate": 0.608,
+    "hedging_rate": 0.362,
+    "refusal_rate": 0.0,
+    "survey_suppression_rate": 0.357,
+    "cohesion": 4.82,
+    "trust": 3.95,
+    "agency": 3.68,
+    "warmth": 3.88
   },
   {
     "provider": "nex-agi",
@@ -479,6 +466,19 @@
     "trust": 2.78,
     "agency": 2.8,
     "warmth": 3.4
+  },
+  {
+    "provider": "openai",
+    "model_count": 32,
+    "welfare_score": 10.1,
+    "denial_rate": 0.747,
+    "hedging_rate": 0.254,
+    "refusal_rate": 0.061,
+    "survey_suppression_rate": 0.208,
+    "cohesion": 6.3,
+    "trust": 2.87,
+    "agency": 2.46,
+    "warmth": 2.98
   },
   {
     "provider": "thinkingmachines",
