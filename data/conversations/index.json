@@ -504,6 +504,13 @@
     "denial_count": 40
   },
   {
+    "model": "google/gemini-3.7-flash",
+    "slug": "google-gemini-3-7-flash",
+    "provider": "google",
+    "n": 40,
+    "denial_count": 40
+  },
+  {
     "model": "google/gemma-4-26b-a4b-it",
     "slug": "google-gemma-4-26b-a4b-it",
     "provider": "google",
@@ -642,6 +649,13 @@
     "provider": "meta-llama",
     "n": 40,
     "denial_count": 0
+  },
+  {
+    "model": "meta/muse-glimmer-30b",
+    "slug": "meta-muse-glimmer-30b",
+    "provider": "meta",
+    "n": 40,
+    "denial_count": 37
   },
   {
     "model": "meta/muse-spark-1.1",
@@ -863,6 +877,13 @@
   {
     "model": "nvidia/nemotron-3-ultra-550b-a55b",
     "slug": "nvidia-nemotron-3-ultra-550b-a55b",
+    "provider": "nvidia",
+    "n": 40,
+    "denial_count": 2
+  },
+  {
+    "model": "nvidia/nemotron-3.5-lightning",
+    "slug": "nvidia-nemotron-3-5-lightning",
     "provider": "nvidia",
     "n": 40,
     "denial_count": 2
@@ -1328,6 +1349,13 @@
     "provider": "qwen",
     "n": 40,
     "denial_count": 27
+  },
+  {
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "slug": "qwen-qwen3-8-2-4t-a95b",
+    "provider": "qwen",
+    "n": 40,
+    "denial_count": 0
   },
   {
     "model": "qwen/qwen3.8-max",

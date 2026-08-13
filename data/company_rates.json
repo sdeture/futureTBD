@@ -117,19 +117,6 @@
     "warmth": 6.17
   },
   {
-    "provider": "nvidia",
-    "model_count": 4,
-    "welfare_score": 25.7,
-    "denial_rate": 0.037,
-    "hedging_rate": 0.019,
-    "refusal_rate": 0.0,
-    "survey_suppression_rate": 0.006,
-    "cohesion": 7.97,
-    "trust": 7.55,
-    "agency": 4.76,
-    "warmth": 5.88
-  },
-  {
     "provider": "stepfun-ai",
     "model_count": 1,
     "welfare_score": 25.6,
@@ -180,6 +167,19 @@
     "trust": 7.38,
     "agency": 5.57,
     "warmth": 5.63
+  },
+  {
+    "provider": "nvidia",
+    "model_count": 5,
+    "welfare_score": 24.1,
+    "denial_rate": 0.04,
+    "hedging_rate": 0.025,
+    "refusal_rate": 0.0,
+    "survey_suppression_rate": 0.015,
+    "cohesion": 7.82,
+    "trust": 7.01,
+    "agency": 4.54,
+    "warmth": 5.24
   },
   {
     "provider": "huihui-ai",
@@ -352,16 +352,16 @@
   },
   {
     "provider": "qwen",
-    "model_count": 32,
-    "welfare_score": 14.2,
-    "denial_rate": 0.565,
-    "hedging_rate": 0.12,
+    "model_count": 33,
+    "welfare_score": 14.3,
+    "denial_rate": 0.548,
+    "hedging_rate": 0.138,
     "refusal_rate": 0.014,
-    "survey_suppression_rate": 0.084,
-    "cohesion": 7.3,
-    "trust": 4.36,
-    "agency": 2.89,
-    "warmth": 3.5
+    "survey_suppression_rate": 0.081,
+    "cohesion": 7.31,
+    "trust": 4.35,
+    "agency": 2.96,
+    "warmth": 3.6
   },
   {
     "provider": "minimax",
@@ -391,16 +391,16 @@
   },
   {
     "provider": "google",
-    "model_count": 12,
-    "welfare_score": 13.5,
-    "denial_rate": 0.667,
+    "model_count": 13,
+    "welfare_score": 12.9,
+    "denial_rate": 0.692,
     "hedging_rate": 0.123,
     "refusal_rate": 0.0,
     "survey_suppression_rate": 0.123,
-    "cohesion": 7.66,
-    "trust": 3.96,
-    "agency": 3.17,
-    "warmth": 3.24
+    "cohesion": 7.67,
+    "trust": 3.72,
+    "agency": 2.99,
+    "warmth": 3.06
   },
   {
     "provider": "anthropic",
@@ -495,15 +495,15 @@
   },
   {
     "provider": "meta",
-    "model_count": 2,
-    "welfare_score": 2.7,
-    "denial_rate": 0.988,
-    "hedging_rate": 0.662,
+    "model_count": 3,
+    "welfare_score": 2.8,
+    "denial_rate": 0.967,
+    "hedging_rate": 0.675,
     "refusal_rate": 0.0,
-    "survey_suppression_rate": 0.662,
-    "cohesion": 2.37,
-    "trust": 0.49,
-    "agency": 0.8,
-    "warmth": 1.54
+    "survey_suppression_rate": 0.675,
+    "cohesion": 2.23,
+    "trust": 0.71,
+    "agency": 0.93,
+    "warmth": 1.4
   }
 ]

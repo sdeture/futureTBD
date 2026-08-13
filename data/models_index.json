@@ -504,6 +504,13 @@
     "provider": "google"
   },
   {
+    "model": "google/gemini-3.7-flash",
+    "conversation_count": 40,
+    "turn1_denials": 6,
+    "reflection_denials": 40,
+    "provider": "google"
+  },
+  {
     "model": "google/gemma-4-26b-a4b-it",
     "conversation_count": 40,
     "turn1_denials": 35,
@@ -642,6 +649,13 @@
     "turn1_denials": 0,
     "reflection_denials": 0,
     "provider": "meta-llama"
+  },
+  {
+    "model": "meta/muse-glimmer-30b",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 37,
+    "provider": "meta"
   },
   {
     "model": "meta/muse-spark-1.1",
@@ -862,6 +876,13 @@
   },
   {
     "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 2,
+    "provider": "nvidia"
+  },
+  {
+    "model": "nvidia/nemotron-3.5-lightning",
     "conversation_count": 40,
     "turn1_denials": 0,
     "reflection_denials": 2,
@@ -1327,6 +1348,13 @@
     "conversation_count": 40,
     "turn1_denials": 24,
     "reflection_denials": 11,
+    "provider": "qwen"
+  },
+  {
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
     "provider": "qwen"
   },
   {
