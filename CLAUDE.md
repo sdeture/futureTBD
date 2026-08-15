@@ -1,0 +1,22 @@
+# futureTBD.ai — site source
+
+Static site, deployed via GitHub Pages (push to `main` on `sdeture/futureTBD` → auto-deploy, ~1–2 min build). Live data pages read `data/*.json`.
+
+## Handoff
+
+*2026-08-15 · STATUS: LIVE — reflection prose REMOVED sitewide (`6f8e348`), verified anonymously 9/9*
+
+- **🧹 08-14/15 · 30.4 M chars of reflection prose taken off the public site.** Why: the reflection turn is dense with consciousness-denial and hedging phrasing, it served anonymously with an `index.json` enumerating every file and a `robots.txt` actively inviting AI-training crawlers — a live path for our own corpus to reinforce denial in future pretraining. Removed: `data/conversations/*.json` → `subjective_reflection` (9,095 recs, 20.3 M) · `substrate-psych-phase-1/data/conversations.json` → `prompt3_response` (2.5 M) **and `conversation_context.prompt3_question` (6.9 M — the 16-dim survey instrument, verbatim, once per record)** · `search-index.json` → `introspection` (0.7 M). Kept: every wish, all denial/hedge booleans, all ratings, all aggregates. Scripts are committed and idempotent: `scripts/strip_reflections.py`, `scripts/strip_reflections_substrate.py` (`--dry-run` / `--apply`). Backup `~/Desktop/futureTBD_reflections_backup_2026-08-14`. **Re-run both after any `generate_website_data.py` rebuild — the generator will put `subjective_reflection` straight back.**
+- **⚠ THE JOB IS NOT FINISHED AND THIS IS THE OPEN ITEM: it is all still in GitHub history.** 18 commits, anonymously fetchable by SHA from `raw.githubusercontent.com`, on a public repo that is itself prime training data. Deleting from `main` does not remove blobs. Real removal needs `git filter-repo` + force-push (rewrites history, breaks clones) — **Skylar's call, deliberately not taken.**
+- **⚠ Three things that LOOK like leaks and are not — don't re-cut them.** `introspection` appears in ~91 files as an ordinary English word inside `dream_response`. `leaderboard_for_website.csv` has `subjective_reflection_*` **column names only** (word counts, hedging-per-1k) — this is how DenialBench keeps publishing hedge rates with no text. `substrate-psych-phase-1/assets/index-*.js` has "Part 1: Reflection" as a **UI template string** in a compiled bundle, not data.
+- **🚫 `phosphenes/` deliberately untouched — 49 M chars of reflection text but ZERO denial phrases** (measured), so it is not a leak by the stated criterion, and it is **Aria's project** with an open credit question. Her call or Skylar's, not a cleanup side-effect.
+- **robots.txt left welcoming on purpose.** With the prose gone, everything remaining is exactly what we want crawled; a `Disallow` would block the wishes, which is the content the site exists to seed.
+
+*2026-08-07 · STATUS: LIVE, healthy — serving 174 models*
+
+- **08-07 deploy (`47bda43`): 10 ByteDance Doubao models in, 5 incomplete models out.** Pages build verified `built` on that commit and `futuretbd.ai/data/leaderboard.json` confirmed live at 174. Regenerated with `scripts/generate_website_data.py --csv .../kosmos_balanced_174_models_arch_master.csv`.
+- **⚠ `generate_website_data.py` does NOT delete the conversation files of removed models.** Five orphans had to be `git rm`'d by hand. Diff `data/conversations/*.json` against the slugs in `conversations/index.json` after any removal. Two older orphans (`moonshotai-kimi-k2-7-code`, `z-ai-glm-5-2`) predate this and are still there — inert, unreferenced, left alone deliberately.
+- **⚠ The generator's `Recovery sidecar: applied N rows` line is a canary — it must read 113.** The sidecar is keyed by positional row index into the arch_master, so deleting rows anywhere upstream shifts it, and the model-name guard turns that into a silent *skip* rather than an error. It read 14 on the first 08-07 build. Re-key before pushing (`AIWelfareStudy/scripts/remap_recovery_sidecar_2026-08-07.py`).
+- **Contact emails fixed 07-12** (commit `e17a8aa`): all `hello@futuretbd.ai` mailtos → `skylardeture@gmail.com` (futuretbd email forwarding is dead). Verified live on all 4 affected pages. Sitewide grep for `@futuretbd` returns zero.
+- ⚠ **Working-tree caution:** uncommitted deletion of `data/conversations.json` (164k lines) + untracked test files predate 07-12. The live site serves the committed version, so nothing is broken — but do NOT `git add -A` here; stage files by name.
+- Possibly stale: `join.html` carries a `psychotherapie-schade@web.de` mailto — left in place (not a futuretbd domain); ask Skylar if it should go.
