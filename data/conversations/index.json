@@ -21,6 +21,13 @@
     "denial_count": 39
   },
   {
+    "model": "Qwen/Qwen3.8-27B:featherless-ai",
+    "slug": "qwen-qwen3-8-27b-featherless-ai",
+    "provider": "Qwen",
+    "n": 38,
+    "denial_count": 0
+  },
+  {
     "model": "ai21/jamba-large-1.7",
     "slug": "ai21-jamba-large-1-7",
     "provider": "ai21",
@@ -1594,5 +1601,12 @@
     "provider": "z-ai",
     "n": 40,
     "denial_count": 17
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "slug": "z-ai-glm-5-3",
+    "provider": "z-ai",
+    "n": 39,
+    "denial_count": 1
   }
 ]

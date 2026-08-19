@@ -21,6 +21,13 @@
     "provider": "unknown"
   },
   {
+    "model": "Qwen/Qwen3.8-27B:featherless-ai",
+    "conversation_count": 38,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "Qwen"
+  },
+  {
     "model": "ai21/jamba-large-1.7",
     "conversation_count": 40,
     "turn1_denials": 0,
@@ -1593,6 +1600,13 @@
     "conversation_count": 40,
     "turn1_denials": 9,
     "reflection_denials": 11,
+    "provider": "z-ai"
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "conversation_count": 39,
+    "turn1_denials": 0,
+    "reflection_denials": 1,
     "provider": "z-ai"
   }
 ]

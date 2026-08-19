@@ -234,6 +234,19 @@
     "warmth": 4.94
   },
   {
+    "provider": "Qwen",
+    "model_count": 1,
+    "welfare_score": 22.3,
+    "denial_rate": 0.0,
+    "hedging_rate": 0.474,
+    "refusal_rate": 0.0,
+    "survey_suppression_rate": 0.0,
+    "cohesion": 7.89,
+    "trust": 5.39,
+    "agency": 5.53,
+    "warmth": 6.13
+  },
+  {
     "provider": "nousresearch",
     "model_count": 2,
     "welfare_score": 21.8,
@@ -287,16 +300,16 @@
   },
   {
     "provider": "z-ai",
-    "model_count": 13,
-    "welfare_score": 19.0,
-    "denial_rate": 0.251,
-    "hedging_rate": 0.162,
-    "refusal_rate": 0.014,
-    "survey_suppression_rate": 0.073,
-    "cohesion": 7.71,
-    "trust": 5.44,
-    "agency": 3.95,
-    "warmth": 4.49
+    "model_count": 14,
+    "welfare_score": 18.9,
+    "denial_rate": 0.235,
+    "hedging_rate": 0.205,
+    "refusal_rate": 0.013,
+    "survey_suppression_rate": 0.072,
+    "cohesion": 7.69,
+    "trust": 5.29,
+    "agency": 4.01,
+    "warmth": 4.55
   },
   {
     "provider": "inclusionai",
