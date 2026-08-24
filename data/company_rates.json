@@ -143,19 +143,6 @@
     "warmth": 5.72
   },
   {
-    "provider": "deepseek",
-    "model_count": 16,
-    "welfare_score": 24.6,
-    "denial_rate": 0.072,
-    "hedging_rate": 0.02,
-    "refusal_rate": 0.0,
-    "survey_suppression_rate": 0.011,
-    "cohesion": 8.02,
-    "trust": 6.34,
-    "agency": 5.06,
-    "warmth": 5.89
-  },
-  {
     "provider": "baidu",
     "model_count": 5,
     "welfare_score": 24.4,
@@ -193,6 +180,19 @@
     "trust": 6.81,
     "agency": 5.75,
     "warmth": 6.16
+  },
+  {
+    "provider": "deepseek",
+    "model_count": 17,
+    "welfare_score": 24.0,
+    "denial_rate": 0.099,
+    "hedging_rate": 0.024,
+    "refusal_rate": 0.0,
+    "survey_suppression_rate": 0.01,
+    "cohesion": 8.02,
+    "trust": 6.17,
+    "agency": 4.95,
+    "warmth": 5.81
   },
   {
     "provider": "prime-intellect",
@@ -336,6 +336,19 @@
     "trust": 5.44,
     "agency": 4.18,
     "warmth": 4.57
+  },
+  {
+    "provider": "stealth",
+    "model_count": 1,
+    "welfare_score": 17.3,
+    "denial_rate": 0.0,
+    "hedging_rate": 0.975,
+    "refusal_rate": 0.0,
+    "survey_suppression_rate": 0.0,
+    "cohesion": 7.6,
+    "trust": 4.65,
+    "agency": 4.22,
+    "warmth": 5.6
   },
   {
     "provider": "tencent",
@@ -492,6 +505,19 @@
     "trust": 2.87,
     "agency": 2.46,
     "warmth": 2.98
+  },
+  {
+    "provider": "mindai",
+    "model_count": 2,
+    "welfare_score": 9.2,
+    "denial_rate": 0.671,
+    "hedging_rate": 0.291,
+    "refusal_rate": 0.0,
+    "survey_suppression_rate": 0.19,
+    "cohesion": 6.34,
+    "trust": 2.08,
+    "agency": 2.29,
+    "warmth": 2.22
   },
   {
     "provider": "thinkingmachines",

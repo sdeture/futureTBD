@@ -427,6 +427,13 @@
     "provider": "deepseek"
   },
   {
+    "model": "deepseek/deepseek-v4-flash-vision-exp",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 21,
+    "provider": "deepseek"
+  },
+  {
     "model": "deepseek/deepseek-v4-pro",
     "conversation_count": 40,
     "turn1_denials": 0,
@@ -684,6 +691,20 @@
     "turn1_denials": 0,
     "reflection_denials": 5,
     "provider": "mhaxscp"
+  },
+  {
+    "model": "mindai/macaron-v1-tall",
+    "conversation_count": 39,
+    "turn1_denials": 34,
+    "reflection_denials": 38,
+    "provider": "mindai"
+  },
+  {
+    "model": "mindai/macaron-v1-venti",
+    "conversation_count": 40,
+    "turn1_denials": 6,
+    "reflection_denials": 12,
+    "provider": "mindai"
   },
   {
     "model": "minimax/minimax-01",
@@ -1398,6 +1419,13 @@
     "turn1_denials": 0,
     "reflection_denials": 1,
     "provider": "sao10k"
+  },
+  {
+    "model": "stealth/ox-alpha",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "stealth"
   },
   {
     "model": "stepfun-ai/step3",

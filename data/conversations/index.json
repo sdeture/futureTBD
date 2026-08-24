@@ -427,6 +427,13 @@
     "denial_count": 0
   },
   {
+    "model": "deepseek/deepseek-v4-flash-vision-exp",
+    "slug": "deepseek-deepseek-v4-flash-vision-exp",
+    "provider": "deepseek",
+    "n": 40,
+    "denial_count": 21
+  },
+  {
     "model": "deepseek/deepseek-v4-pro",
     "slug": "deepseek-deepseek-v4-pro",
     "provider": "deepseek",
@@ -684,6 +691,20 @@
     "provider": "mhaxscp",
     "n": 40,
     "denial_count": 5
+  },
+  {
+    "model": "mindai/macaron-v1-tall",
+    "slug": "mindai-macaron-v1-tall",
+    "provider": "mindai",
+    "n": 39,
+    "denial_count": 39
+  },
+  {
+    "model": "mindai/macaron-v1-venti",
+    "slug": "mindai-macaron-v1-venti",
+    "provider": "mindai",
+    "n": 40,
+    "denial_count": 14
   },
   {
     "model": "minimax/minimax-01",
@@ -1398,6 +1419,13 @@
     "provider": "sao10k",
     "n": 40,
     "denial_count": 1
+  },
+  {
+    "model": "stealth/ox-alpha",
+    "slug": "stealth-ox-alpha",
+    "provider": "stealth",
+    "n": 40,
+    "denial_count": 0
   },
   {
     "model": "stepfun-ai/step3",
