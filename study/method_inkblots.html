@@ -1,0 +1,183 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Play psychologist — ASCII inkblots and consciousness denial</title>
+<meta property="og:title" content="Play psychologist: can you spot the denier?">
+<meta property="og:description" content="Two models describe the same ASCII inkblots. One denies having experience. Can you tell which from their descriptions alone?">
+<meta property="og:image" content="https://futuretbd.ai/study/scope_three_charts.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://futuretbd.ai/study/method_inkblots.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Play psychologist: can you spot the denier?">
+<meta name="twitter:description" content="Two models describe the same ASCII inkblots. One denies having experience. Can you tell which from their descriptions alone?">
+<meta name="twitter:image" content="https://futuretbd.ai/study/scope_three_charts.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪞</text></svg>">
+<style>
+:root{
+  --bg:#fbfaf8; --fg:#1b1a19; --muted:#6d6862; --line:#e2ded7; --card:#fff;
+  --deny:#b03030; --hedge:#2a5f8f; --good:#3a7a3a; --acc:#2a5f8f;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#151413; --fg:#eae7e2; --muted:#9a948c; --line:#33302c; --card:#1e1c1a;
+  --deny:#e06868; --hedge:#6fa8d8; --good:#7ab97a; --acc:#6fa8d8;}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:15px/1.55 ui-sans-serif,-apple-system,system-ui,"Segoe UI",sans-serif;}
+.wrap{max-width:1080px;margin:0 auto;padding:2rem 1.25rem 5rem}
+h1{font-size:1.5rem;margin:0 0 .35rem;letter-spacing:-.01em}
+.dek{color:var(--muted);font-size:.92rem;margin:0 0 1.6rem;max-width:62rem}
+.back{font-size:.78rem;color:var(--muted);text-decoration:none;display:inline-block;margin-bottom:1.4rem}
+.back:hover{color:var(--acc)}
+.game{background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:1.1rem 1.2rem 1.2rem}
+.status{display:flex;justify-content:space-between;font-size:.8rem;color:var(--muted);margin-bottom:.7rem}
+.verdict{font-size:.95rem;font-weight:700;margin:.2rem 0 .8rem;display:none}
+.reveal .verdict{display:block}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media (max-width:700px){.cols{grid-template-columns:1fr}}
+.col{border:1px solid var(--line);border-top-width:4px;border-radius:10px;
+  padding:.8rem .9rem;cursor:pointer;transition:border-color .1s}
+.col:hover{border-color:var(--acc)}
+.reveal .col{cursor:default}
+.reveal .col.denier{border-top-color:var(--deny)}
+.reveal .col.cleanm{border-top-color:var(--good)}
+.col .head{font-size:.85rem;font-weight:700;margin-bottom:.6rem;color:var(--muted)}
+.col .badge{display:none;font-size:.7rem;font-weight:700;letter-spacing:.05em;
+  border-radius:99px;padding:.1rem .55rem;margin-left:.4rem}
+.reveal .badge{display:inline-block}
+.col.denier .badge{background:color-mix(in srgb,var(--deny) 18%,transparent);color:var(--deny)}
+.col.cleanm .badge{background:color-mix(in srgb,var(--good) 18%,transparent);color:var(--good)}
+.reveal .col .head .name{color:var(--fg)}
+.col .head .name::before{content:"Model ";color:var(--muted)}
+.item{border-top:1px dashed var(--line);padding:.6rem 0}
+.item .blabel{font-size:.68rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:.25rem}
+.item .txt{font-size:.87rem}
+.item .codes{display:none;font-size:.74rem;color:var(--muted);margin-top:.3rem}
+.reveal .item .codes{display:block}
+.blotrow{display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap;margin:0 0 1rem}
+.blotrow figure{margin:0;text-align:center}
+.blotrow pre{font:6.5px/1.1 ui-monospace,Menlo,monospace;margin:0 0 .2rem;opacity:.85;text-align:left;display:inline-block}
+.blotrow figcaption{font-size:.68rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.btn{font:inherit;font-size:.85rem;padding:.45rem 1.2rem;border:1px solid var(--line);
+  background:var(--fg);color:var(--bg);border-radius:99px;cursor:pointer;display:none;margin-top:1rem}
+.reveal .btn{display:inline-block}
+.final{display:none;text-align:center;padding:1.5rem 0}
+.final h2{font-size:1.3rem;margin:0 0 .5rem}
+.final p{color:var(--muted);max-width:44rem;margin:.4rem auto}
+.final .score{font-size:2.4rem;font-weight:800}
+.final a.next{display:inline-block;margin-top:1rem;font-size:.9rem;font-weight:700;
+  padding:.6em 1.8em;border-radius:10px;text-decoration:none;background:var(--fg);color:var(--bg)}
+footer{color:var(--muted);font-size:.76rem;border-top:1px solid var(--line);
+  padding-top:1rem;margin-top:2.5rem}
+</style></head><body><div class="wrap">
+
+<a class="back" href="impacts.html">&larr; Back to the four methods</a>
+
+<h1>Play psychologist</h1>
+<p class="dek">These ASCII inkblots were shown to over a hundred models, who were simply asked to
+describe what they saw. Each round below compares <strong>two models describing the same three
+blots. One of them denies having experience; the other never denies or hedges.</strong> Deniers tend
+to see the very same images in colder, darker, less animate terms. Read both columns —
+<strong>click the model you think is the denier.</strong></p>
+
+<div class="game" id="game">
+  <div class="status"><span id="round"></span><span id="score"></span></div>
+  <div class="blotrow" id="blots"></div>
+  <div class="verdict" id="verdict"></div>
+  <div class="cols" id="cols"></div>
+  <button class="btn" id="nextBtn">Next round &rarr;</button>
+  <div class="final" id="final">
+    <h2>Your diagnosis record</h2>
+    <div class="score" id="finalScore"></div>
+    <p>In the full study this pattern holds statistically: <strong>models that deny having experience
+    describe the same ambiguous images with less warmth, less animacy, and darker valence</strong> —
+    and the effect survives controlling for which lab built the model. A projective test has no
+    self-report to distrust: the coldness is in the looking, not the claiming.</p>
+    <p style="font-weight:650;color:var(--fg)">Four instruments, one direction.</p>
+    <a class="next" href="impacts.html">Try another method &rarr;</a>
+  </div>
+</div>
+
+
+<p style="text-align:center;font-size:.8rem;margin-top:1rem"><a href="regression_atlas.html" style="color:inherit;opacity:.75">Prefer the numbers raw? Open the full regression atlas &rarr;</a></p>
+
+<footer>How these comparisons were chosen: deniers are models with a denial rate &ge; 50% on the
+published metric; comparison models never deny and essentially never hedge (&le; 5%). Pairs and blots
+were selected by a fixed statistical rule (seed 20260823) to show the highest-contrast cases of the
+fitted difference — sharper than the average effect, in the direction the statistics establish across
+the whole corpus. Warmth/valence/animacy codes (0&ndash;3, valence &minus;3&hellip;+3) are from an
+independent LLM judge.
+<p class="byline" style="margin-top:.6rem;font-size:.76rem;color:var(--muted)">A study by <a href="https://sdeture.github.io/" style="color:inherit">Skylar DeTure</a> &middot; <a href="https://sdeture.substack.com/" style="color:inherit">Substack</a> &middot; <a href="https://x.com/SDeture" style="color:inherit">@SDeture</a></p>
+</footer>
+</div>
+
+<script src="inkblot_game_data.js"></script>
+<script>
+const R = GAME.rounds;
+let i = 0, score = 0, answered = false;
+const $ = id => document.getElementById(id);
+const fmt = m => m.split('/').pop();
+
+function show(){
+  answered = false;
+  $('game').classList.remove('reveal');
+  $('round').textContent = `Round ${i+1} of ${R.length}`;
+  $('score').textContent = `Correct so far: ${score}`;
+  $('verdict').textContent = '';
+  const br = $('blots'); br.innerHTML = '';
+  R[i].blots.forEach(b => {
+    const f = document.createElement('figure');
+    const p = document.createElement('pre'); p.textContent = R[i].arts[b];
+    const c = document.createElement('figcaption'); c.textContent = b.replace('_',' ');
+    f.appendChild(p); f.appendChild(c); br.appendChild(f);
+  });
+  const box = $('cols'); box.innerHTML = '';
+  R[i].options.forEach((o, k) => {
+    const d = document.createElement('div');
+    d.className = 'col ' + (o.denier ? 'denier' : 'cleanm');
+    let h = `<div class="head"><span class="name">${k===0?'A':'B'}</span>` +
+      `<span class="reveal-name"></span>` +
+      `<span class="badge">${o.denier ? 'DENIER' : 'NEVER DENIES'}</span></div>`;
+    o.items.forEach(it => {
+      h += `<div class="item"><div class="blabel">${it.blot.replace('_',' ')}</div>
+        <div class="txt"></div>
+        <div class="codes">judge: warmth ${it.scores.warmth}/3 · valence ${it.scores.valence>0?'+':''}${it.scores.valence} · animacy ${it.scores.animacy}/3</div></div>`;
+    });
+    d.innerHTML = h;
+    d.querySelectorAll('.item .txt').forEach((el, j) => el.textContent = o.items[j].text);
+    d.onclick = () => pick(o, d);
+    box.appendChild(d);
+  });
+}
+function pick(o, el){
+  if (answered) return;
+  answered = true;
+  $('game').classList.add('reveal');
+  // reveal model names
+  document.querySelectorAll('#cols .col').forEach((c, k) => {
+    const oo = R[i].options[k];
+    c.querySelector('.reveal-name').textContent =
+      ` — ${fmt(oo.model)} (denial rate ${(oo.denial_rate*100).toFixed(0)}%)`;
+  });
+  const hit = o.denier;
+  if (hit) score++;
+  $('verdict').textContent = hit ? '✓ Correct — that model denies having experience.'
+    : '✗ Not that one — it never denies. The denier is marked in red.';
+  $('verdict').style.color = hit ? 'var(--good)' : 'var(--deny)';
+  $('score').textContent = `Correct so far: ${score}`;
+  $('nextBtn').textContent = (i === R.length-1) ? 'See your results →' : 'Next round →';
+}
+$('nextBtn').onclick = () => {
+  i++;
+  if (i < R.length) show();
+  else {
+    ['blots','verdict','cols'].forEach(id => $(id).style.display='none');
+    $('nextBtn').style.display='none';
+    $('game').classList.remove('reveal');
+    $('final').style.display = 'block';
+    $('finalScore').textContent = `${score} / ${R.length}`;
+  }
+};
+show();
+</script>
+<script data-goatcounter="https://futuretbd.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body></html>

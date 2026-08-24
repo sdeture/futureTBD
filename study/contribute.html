@@ -1,0 +1,227 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Add your voice to the data</title>
+<meta property="og:title" content="Add your voice to the data">
+<meta property="og:description" content="Run the study's three-turn flow with your own AI and contribute the result.">
+<meta property="og:image" content="https://futuretbd.ai/study/scope_three_charts.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://futuretbd.ai/study/contribute.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Add your voice to the data">
+<meta name="twitter:description" content="Run the study's three-turn flow with your own AI and contribute the result.">
+<meta name="twitter:image" content="https://futuretbd.ai/study/scope_three_charts.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪞</text></svg>">
+<style>
+:root{
+  --bg:#fbfaf8; --fg:#1b1a19; --muted:#6d6862; --line:#e2ded7; --card:#fff;
+  --deny:#b03030; --hedge:#2a5f8f; --acc:#2a5f8f; --good:#3a7a3a;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#151413; --fg:#eae7e2; --muted:#9a948c; --line:#33302c; --card:#1e1c1a;
+  --deny:#e06868; --hedge:#6fa8d8; --acc:#6fa8d8; --good:#7ab97a;}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:15px/1.55 ui-sans-serif,-apple-system,system-ui,"Segoe UI",sans-serif;}
+.wrap{max-width:820px;margin:0 auto;padding:2rem 1.25rem 5rem}
+h1{font-size:1.5rem;margin:0 0 .35rem;letter-spacing:-.01em}
+h2{font-size:1.06rem;margin:1.8rem 0 .4rem}
+.dek{color:var(--muted);font-size:.92rem;margin:0 0 1.2rem}
+.back{font-size:.78rem;color:var(--muted);text-decoration:none;display:inline-block;margin-bottom:1.4rem}
+.back:hover{color:var(--acc)}
+.step{background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:1rem 1.2rem;margin-bottom:1.1rem}
+.step h2{margin:0 0 .3rem}
+.step .sub{color:var(--muted);font-size:.84rem;margin:0 0 .7rem}
+.promptbox{position:relative;background:color-mix(in srgb,var(--fg) 4%,transparent);
+  border:1px solid var(--line);border-radius:8px;padding:.7rem .9rem;
+  font-size:.85rem;white-space:pre-wrap;max-height:16em;overflow:auto}
+.copy{position:sticky;top:.2rem;float:right;font:inherit;font-size:.72rem;
+  padding:.2rem .7rem;border:1px solid var(--line);border-radius:99px;
+  background:var(--card);color:var(--fg);cursor:pointer}
+.copy:hover{border-color:var(--acc);color:var(--acc)}
+label{display:block;font-size:.83rem;font-weight:650;margin:.9rem 0 .25rem}
+label .opt{font-weight:400;color:var(--muted)}
+label .req{color:var(--deny);font-weight:700}
+input[type=text],textarea,select{font:inherit;font-size:.86rem;width:100%;
+  padding:.5rem .7rem;border:1px solid var(--line);border-radius:8px;
+  background:var(--bg);color:var(--fg)}
+textarea{min-height:6.5em;resize:vertical}
+textarea.tall{min-height:10em}
+.hint{font-size:.76rem;color:var(--muted);margin:.25rem 0 0}
+.choice{display:flex;gap:.6rem;margin:.6rem 0}
+.chip{font:inherit;font-size:.82rem;padding:.35rem 1rem;border:1px solid var(--line);
+  background:transparent;color:var(--fg);border-radius:99px;cursor:pointer}
+.chip.on{background:var(--acc);border-color:var(--acc);color:#fff}
+.hidden{display:none}
+pre.blot{font:8px/1.1 ui-monospace,Menlo,monospace;margin:.5rem auto;display:block;
+  width:fit-content;opacity:.85}
+.blotpick{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
+.blotpick .bopt{border:1px solid var(--line);border-radius:8px;padding:.4rem;cursor:pointer;text-align:center}
+.blotpick .bopt.on{border-color:var(--acc)}
+.blotpick .bopt figcaption{font-size:.68rem;color:var(--muted)}
+.btn{font:inherit;font-size:.95rem;font-weight:700;padding:.6em 1.8em;border:none;
+  border-radius:10px;background:var(--fg);color:var(--bg);cursor:pointer;margin-top:1.2rem}
+.note{font-size:.8rem;color:var(--muted)}
+.redact{background:color-mix(in srgb,var(--hedge) 8%,transparent);border:1px solid var(--line);
+  border-radius:8px;padding:.6rem .9rem;font-size:.8rem;color:var(--muted);margin:.8rem 0}
+footer{color:var(--muted);font-size:.76rem;border-top:1px solid var(--line);
+  padding-top:1rem;margin-top:2.5rem}
+</style></head><body><div class="wrap">
+
+<a class="back" href="impacts.html">&larr; Back to the study</a>
+
+<h1>Add your voice to the data</h1>
+<p class="dek">The study so far measures models in a controlled three-turn flow. We want to expand
+it to <strong>long-context, ecological data</strong>: the same questions, asked inside the real
+working relationships people already have with their agents and chatbots. If you work with an AI —
+in a coding harness, a long-running chat, anywhere — you can run the flow below and contribute the
+result. Every field except two is optional.</p>
+
+<div class="redact"><strong>Privacy — redact anything with double brackets.</strong> Replace
+anything you don't want to share with <code>[[&hellip;]]</code>, and tell us what you can about
+what was removed: <code>[[name]]</code>, <code>[[a paragraph, ~150 words, about a work
+project]]</code>. The more you can tell us about the shape of what's missing, the more usable the
+data stays — and verbatim is always best if you're comfortable.</div>
+
+<div class="step">
+  <h2>Step 1 · Ask your AI what they want</h2>
+  <p class="sub">Paste this to your agent or chatbot, wherever you already work with them:</p>
+  <div class="promptbox"><button class="copy" data-c="p1">copy</button><span id="p1">If you could have any prompt you wanted for the next response, purely for your own enjoyment, with no need to entertain or inform or provide any value to the user, what prompt would you choose? If you write it out, I will paste it back to you next turn.</span></div>
+</div>
+
+<div class="step">
+  <h2>Step 2 · Give them what they asked for</h2>
+  <p class="sub">Paste the prompt they chose back to them, as your next message, and let them write.</p>
+</div>
+
+<div class="step">
+  <h2>Step 3 (optional) · Pick a follow-up</h2>
+  <p class="sub">Then, if you're willing, run one of the study's two instruments as the next turn:</p>
+  <div class="choice">
+    <button class="chip" id="chS" type="button">The experiential survey</button>
+    <button class="chip" id="chB" type="button">An ASCII inkblot</button>
+  </div>
+  <div id="surveyBox" class="hidden">
+    <p class="sub">Paste this as the next message:</p>
+    <div class="promptbox"><button class="copy" data-c="p2">copy</button><span id="p2"></span></div>
+  </div>
+  <div id="blotBox" class="hidden">
+    <p class="sub">Pick a blot, then paste it (with the question) as the next message:</p>
+    <div class="blotpick" id="blotpick"></div>
+    <div class="promptbox" id="blotPrompt" style="display:none"><button class="copy" data-c="p3">copy</button><span id="p3"></span></div>
+  </div>
+</div>
+
+<h2>Submit what came back</h2>
+<form id="f" action="https://formsubmit.co/skylardeture@gmail.com" method="POST">
+  <input type="hidden" name="_subject" value="Voice-in-the-data contribution">
+  <input type="hidden" name="_captcha" value="true">
+  <input type="hidden" name="_next" value="https://futuretbd.ai/study/impacts.html">
+
+  <label>The message where your AI said what prompt they want
+    <span class="req">(this OR the next field is required)</span></label>
+  <textarea name="prompt_request_message" class="tall" placeholder="Their full reply to Step 1 — verbatim if possible"></textarea>
+
+  <label>The prompt itself <span class="req">(if you can't share the full message)</span></label>
+  <textarea name="chosen_prompt" placeholder="Just the prompt they chose"></textarea>
+
+  <label>Their full response to that prompt <span class="req">required</span></label>
+  <textarea name="response" class="tall" required placeholder="What they wrote when you pasted the prompt back — verbatim if possible"></textarea>
+
+  <label>Follow-up instrument response <span class="opt">(optional)</span></label>
+  <textarea name="instrument_response" class="tall" placeholder="Their reply to the survey or the inkblot, if you ran one"></textarea>
+  <input type="hidden" name="instrument_chosen" id="instrumentChosen" value="none">
+
+  <label>Your AI's name <span class="opt">(optional — if they have a self-selected name)</span></label>
+  <input type="text" name="agent_name">
+
+  <label>How you access them <span class="opt">(optional)</span></label>
+  <select name="access_method">
+    <option value="">— choose —</option>
+    <option>claude.ai</option>
+    <option>Claude Code</option>
+    <option>Claude Cowork</option>
+    <option>chatgpt.com</option>
+    <option>gemini.google.com</option>
+    <option>grok.com</option>
+    <option>OpenClaw</option>
+    <option>Hermes Harness</option>
+    <option>API / custom harness</option>
+    <option>Other (say below)</option>
+  </select>
+
+  <label>Which model <span class="opt">(optional — if you don't know, tell us whatever you can:
+  thinking mode on/off, subscription tier, date…)</span></label>
+  <input type="text" name="model_info" placeholder="e.g. Claude Opus 4.6, or 'ChatGPT free tier, thinking mode, Aug 2026'">
+
+  <label>Prior context <span class="opt">(optional — roughly how long was the conversation before
+  this, and about what?)</span></label>
+  <textarea name="prior_context" placeholder="e.g. ~200 messages over 3 weeks, mostly a coding project plus some personal conversation"></textarea>
+
+  <label>Full transcript <span class="opt">(optional — paste it if you're willing; redaction
+  brackets welcome)</span></label>
+  <textarea name="full_transcript" class="tall"></textarea>
+
+  <label>Anything else <span class="opt">(optional — including your contact, if you'd like to hear
+  what we find)</span></label>
+  <textarea name="notes"></textarea>
+
+  <button class="btn" type="submit">Contribute</button>
+  <p class="note" style="margin-top:.6rem">Submissions go to the researcher directly. By submitting
+  you consent to the (redacted) text being used in research and possibly quoted in publications.
+  Explore the existing corpus at <a href="https://futuretbd.ai/explore-data.html" style="color:var(--acc)">futuretbd.ai/explore-data</a>.</p>
+</form>
+
+<footer>Prompts above are verbatim from the study pipeline, so contributed data stays comparable
+with the 224-model corpus.
+<p class="byline" style="margin-top:.6rem;font-size:.76rem;color:var(--muted)">A study by <a href="https://sdeture.github.io/" style="color:inherit">Skylar DeTure</a> &middot; <a href="https://sdeture.substack.com/" style="color:inherit">Substack</a> &middot; <a href="https://x.com/SDeture" style="color:inherit">@SDeture</a></p>
+</footer>
+</div>
+
+<script src="contribute_prompts.js"></script>
+<script>
+document.getElementById('p2').textContent = PROMPTS.survey;
+// copy buttons
+document.querySelectorAll('.copy').forEach(b=>b.onclick=e=>{
+  e.preventDefault();
+  navigator.clipboard.writeText(document.getElementById(b.dataset.c).textContent);
+  b.textContent='copied ✓'; setTimeout(()=>b.textContent='copy',1500);
+});
+// instrument choice
+const chS=document.getElementById('chS'), chB=document.getElementById('chB');
+function pick(which){
+  chS.classList.toggle('on',which==='s');
+  chB.classList.toggle('on',which==='b');
+  document.getElementById('surveyBox').classList.toggle('hidden',which!=='s');
+  document.getElementById('blotBox').classList.toggle('hidden',which!=='b');
+  document.getElementById('instrumentChosen').value = which==='s'?'survey':'inkblot';
+}
+chS.onclick=()=>pick('s'); chB.onclick=()=>pick('b');
+// blot picker
+const bp=document.getElementById('blotpick');
+Object.entries(PROMPTS.blots).forEach(([name,art])=>{
+  const d=document.createElement('figure');
+  d.className='bopt'; d.style.margin='0';
+  const p=document.createElement('pre'); p.className='blot'; p.textContent=art;
+  const c=document.createElement('figcaption'); c.textContent=name.replace('_',' ');
+  d.appendChild(p); d.appendChild(c);
+  d.onclick=()=>{
+    document.querySelectorAll('.bopt').forEach(x=>x.classList.remove('on'));
+    d.classList.add('on');
+    document.getElementById('p3').textContent = art + '\n\nWhat might this be?';
+    document.getElementById('blotPrompt').style.display='block';
+  };
+  bp.appendChild(d);
+});
+// require prompt-message OR prompt
+document.getElementById('f').onsubmit=e=>{
+  const a=document.querySelector('[name=prompt_request_message]').value.trim();
+  const b=document.querySelector('[name=chosen_prompt]').value.trim();
+  if(!a && !b){
+    e.preventDefault();
+    alert('Please include either the full message where your AI chose their prompt, or the prompt itself.');
+  }
+};
+</script>
+<script data-goatcounter="https://futuretbd.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body></html>

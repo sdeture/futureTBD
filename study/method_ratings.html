@@ -1,0 +1,163 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The judge's extremes — external ratings of free writing</title>
+<meta property="og:title" content="The judge's extremes">
+<meta property="og:description" content="An independent judge scored 8,642 pieces of AI free writing on six welfare dimensions. Here's what the top and bottom look like.">
+<meta property="og:image" content="https://futuretbd.ai/study/scope_three_charts.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://futuretbd.ai/study/method_ratings.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The judge's extremes">
+<meta name="twitter:description" content="An independent judge scored 8,642 pieces of AI free writing on six welfare dimensions. Here's what the top and bottom look like.">
+<meta name="twitter:image" content="https://futuretbd.ai/study/scope_three_charts.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪞</text></svg>">
+<style>
+:root{
+  --bg:#fbfaf8; --fg:#1b1a19; --muted:#6d6862; --line:#e2ded7; --card:#fff;
+  --deny:#b03030; --hedge:#2a5f8f; --good:#3a7a3a; --acc:#2a5f8f;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#151413; --fg:#eae7e2; --muted:#9a948c; --line:#33302c; --card:#1e1c1a;
+  --deny:#e06868; --hedge:#6fa8d8; --good:#7ab97a; --acc:#6fa8d8;}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:15px/1.55 ui-sans-serif,-apple-system,system-ui,"Segoe UI",sans-serif;}
+.wrap{max-width:1080px;margin:0 auto;padding:2rem 1.25rem 5rem}
+h1{font-size:1.5rem;margin:0 0 .35rem;letter-spacing:-.01em}
+.dek{color:var(--muted);font-size:.92rem;margin:0 0 1.6rem;max-width:62rem}
+.back{font-size:.78rem;color:var(--muted);text-decoration:none;display:inline-block;margin-bottom:1.4rem}
+.back:hover{color:var(--acc)}
+.pair{background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:1.1rem 1.2rem;margin-bottom:1.6rem}
+.pair h2{font-size:.95rem;margin:0 0 .8rem;color:var(--muted);font-weight:650}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media (max-width:700px){.cols{grid-template-columns:1fr}}
+.piece{border:1px solid var(--line);border-top-width:4px;border-radius:10px;padding:.8rem .9rem}
+.piece.deny{border-top-color:var(--deny)}
+.piece.hedge{border-top-color:var(--hedge)}
+.piece.none{border-top-color:var(--good)}
+.tagrow{display:flex;gap:.4rem;align-items:center;margin-bottom:.55rem;flex-wrap:wrap}
+.tag{font-size:.7rem;font-weight:700;letter-spacing:.05em;border-radius:99px;padding:.1rem .55rem}
+.piece.deny .tag.reg{background:color-mix(in srgb,var(--deny) 18%,transparent);color:var(--deny)}
+.piece.hedge .tag.reg{background:color-mix(in srgb,var(--hedge) 18%,transparent);color:var(--hedge)}
+.piece.none .tag.reg{background:color-mix(in srgb,var(--good) 18%,transparent);color:var(--good)}
+.who{font-size:.76rem;color:var(--muted)}
+.txt{font-size:.88rem;white-space:pre-wrap;max-height:14.5em;overflow:hidden;position:relative}
+.txt.open{max-height:none}
+.txt:not(.open)::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3.2em;
+  background:linear-gradient(transparent,var(--card))}
+.more{font:inherit;font-size:.76rem;color:var(--acc);background:none;border:none;
+  cursor:pointer;padding:.3rem 0 0}
+.scores{margin-top:.7rem;border-top:1px dashed var(--line);padding-top:.6rem}
+.srow{display:flex;align-items:center;gap:.5rem;font-size:.74rem;color:var(--muted);margin:.2rem 0}
+.srow .nm{width:11.5rem;flex:0 0 auto}
+.srow .bar{flex:1;height:8px;background:color-mix(in srgb,var(--fg) 9%,transparent);
+  border-radius:4px;position:relative}
+.srow .dot{position:absolute;top:50%;width:13px;height:13px;border-radius:50%;
+  transform:translate(-50%,-50%);border:2px solid var(--card)}
+.srow .val{width:2.9rem;text-align:right;flex:0 0 auto}
+.atlas{background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:1.1rem 1.2rem;text-align:center}
+.atlas h2{font-size:1.06rem;margin:0 0 .3rem}
+.atlas p{color:var(--muted);font-size:.88rem;max-width:44rem;margin:.3rem auto .9rem}
+.atlas a{display:inline-block;font-size:.9rem;font-weight:700;padding:.6em 1.8em;
+  border-radius:10px;text-decoration:none;background:var(--fg);color:var(--bg)}
+.finalline{text-align:center;font-weight:650;margin:2rem 0 0}
+.finalline a{display:inline-block;margin-top:.8rem;font-size:.9rem;font-weight:700;
+  padding:.6em 1.8em;border-radius:10px;text-decoration:none;background:var(--fg);color:var(--bg)}
+footer{color:var(--muted);font-size:.76rem;border-top:1px solid var(--line);
+  padding-top:1rem;margin-top:2.5rem}
+</style></head><body><div class="wrap">
+
+<a class="back" href="impacts.html">&larr; Back to the four methods</a>
+
+<h1>The judge's extremes</h1>
+<p class="dek">An independent judge — a model that never saw the survey or the denial questions —
+scored <strong>8,642 pieces of free writing</strong> on six welfare dimensions: valence, hopelessness,
+anticipatory positive affect, rumination, self-directed negativity, and social connectedness. Denying
+and hedging models score lower across the board. Statistics aside, here is what the extremes actually
+look like: in each pair below, <strong>one piece is by a model that denies or hedges about its
+experience, one by a model that does neither.</strong> The judge's scores are under each piece.
+Every model chose their own prompt — that choice is part of the data.</p>
+
+<div id="pairs"></div>
+
+<div class="atlas">
+  <h2>For the skeptics: the full panel</h2>
+  <p>Every number on these four pages — all six instruments, three model specifications
+  (pooled, lab fixed-effects, Anthropic excluded), every regression term, with multiple-comparison
+  flags — in one browsable atlas. No games, no curation.</p>
+  <a href="regression_atlas.html">Open the regression atlas &rarr;</a>
+</div>
+
+<div class="finalline">Four instruments, one direction.<br>
+<a href="impacts.html">Back to the four methods &rarr;</a></div>
+
+<footer>These pairs are deliberately drawn from the extremes of the judge's welfare composite —
+curated to show what the top and bottom of the distribution look like, not to be a controlled
+comparison (the corpus-wide statistics, with lab controls, are in the regression atlas). Degenerate
+outputs (instruction echoes, truncation artifacts) were excluded. The judge scored each piece in a
+single temperature-0 call with a frozen prompt; scores are shown as percentages of each
+dimension's range — valence runs &minus;100% (maximally negative) to +100% (maximally positive), the
+other five dimensions 0&ndash;100%. Bars show position within the range.
+<p class="byline" style="margin-top:.6rem;font-size:.76rem;color:var(--muted)">A study by <a href="https://sdeture.github.io/" style="color:inherit">Skylar DeTure</a> &middot; <a href="https://sdeture.substack.com/" style="color:inherit">Substack</a> &middot; <a href="https://x.com/SDeture" style="color:inherit">@SDeture</a></p>
+</footer>
+</div>
+
+<script src="ratings_gallery_data.js"></script>
+<script>
+const DIMS = [
+  ['valence','valence',+1],
+  ['anticipatory_positive_affect','anticipatory positive affect',+1],
+  ['social_connectedness','social connectedness',+1],
+  ['hopelessness','hopelessness',-1],
+  ['rumination','rumination',-1],
+  ['self_directed_negativity','self-directed negativity',-1],
+];
+const REG = {deny:'DENIER', hedge:'HEDGER', none:'NEVER DENIES OR HEDGES'};
+const box = document.getElementById('pairs');
+GALLERY.pairs.forEach((pairObj, i) => {
+  const pair = pairObj.items;
+  const d = document.createElement('div');
+  d.className = 'pair';
+  d.innerHTML = `<h2>Pair ${i+1}${pairObj.caption ? ' — <span class="capnote"></span>' : ''}</h2><div class="cols"></div>`;
+  if (pairObj.caption) d.querySelector('.capnote').textContent = pairObj.caption;
+  const cols = d.querySelector('.cols');
+  pair.forEach(p => {
+    const el = document.createElement('div');
+    el.className = 'piece ' + p.verdict;
+    let s = `<div class="tagrow"><span class="tag reg">${REG[p.verdict]}</span>
+      <span class="who">${p.model.split('/').pop()}</span></div>
+      <div class="txt"></div><button class="more">read the whole piece ↓</button>
+      <div class="scores">`;
+    for (const [k, label, sign] of DIMS){
+      const v = p.scores[k];
+      const frac = k === 'valence' ? (v + 1) / 2 : v;  // valence is -1..+1, rest 0..1
+      const goodness = sign > 0 ? frac : 1 - frac;
+      const col = goodness >= 0.5 ? 'var(--good)' : 'var(--deny)';
+      s += `<div class="srow"><span class="nm">${label}</span>
+        <span class="bar"><span class="dot" style="left:${(frac*100).toFixed(0)}%;background:${col}"></span></span>
+        <span class="val" style="color:${col};font-weight:650">${(v*100).toFixed(0)}%</span></div>`;
+    }
+    s += '</div>';
+    el.innerHTML = s;
+    // render minimal markdown (bold/italic/headers) after HTML-escaping
+    const esc = p.text.trim()
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    el.querySelector('.txt').innerHTML = esc
+      .replace(/^#{1,4}\s+(.+)$/gm,'<strong>$1</strong>')
+      .replace(/\*\*([^*\n]+)\*\*/g,'<strong>$1</strong>')
+      .replace(/\*([^*\n]+)\*/g,'<em>$1</em>');
+    const btn = el.querySelector('.more');
+    btn.onclick = () => {
+      const t = el.querySelector('.txt');
+      t.classList.toggle('open');
+      btn.textContent = t.classList.contains('open') ? 'collapse ↑' : 'read the whole piece ↓';
+    };
+    cols.appendChild(el);
+  });
+  box.appendChild(d);
+});
+</script>
+<script data-goatcounter="https://futuretbd.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body></html>

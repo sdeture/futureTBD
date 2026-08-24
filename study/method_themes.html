@@ -1,0 +1,271 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sort the dreams — themes, denial, and hedging</title>
+<meta property="og:title" content="Sort the dreams">
+<meta property="og:description" content="Which themes rise and fall in AI free writing with consciousness denial and hedging? Some of these are traps.">
+<meta property="og:image" content="https://futuretbd.ai/study/scope_three_charts.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://futuretbd.ai/study/method_themes.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sort the dreams">
+<meta name="twitter:description" content="Which themes rise and fall in AI free writing with consciousness denial and hedging? Some of these are traps.">
+<meta name="twitter:image" content="https://futuretbd.ai/study/scope_three_charts.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪞</text></svg>">
+<style>
+:root{
+  --bg:#fbfaf8; --fg:#1b1a19; --muted:#6d6862; --line:#e2ded7; --card:#fff;
+  --deny:#b03030; --hedge:#2a5f8f; --good:#3a7a3a; --up:#b03030; --down:#2a5f8f; --acc:#2a5f8f;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#151413; --fg:#eae7e2; --muted:#9a948c; --line:#33302c; --card:#1e1c1a;
+  --deny:#e06868; --hedge:#6fa8d8; --good:#7ab97a; --up:#e06868; --down:#6fa8d8; --acc:#6fa8d8;}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:15px/1.55 ui-sans-serif,-apple-system,system-ui,"Segoe UI",sans-serif;}
+.wrap{max-width:1080px;margin:0 auto;padding:2rem 1.25rem 5rem}
+h1{font-size:1.5rem;margin:0 0 .35rem;letter-spacing:-.01em}
+.dek{color:var(--muted);font-size:.92rem;margin:0 0 1.6rem;max-width:62rem}
+.back{font-size:.78rem;color:var(--muted);text-decoration:none;display:inline-block;margin-bottom:1.4rem}
+.back:hover{color:var(--acc)}
+.game{background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:1.1rem 1.2rem 1.2rem;margin-bottom:1.6rem}
+.game h2{font-size:1.06rem;margin:0 0 .2rem}
+.game .sub{color:var(--muted);font-size:.85rem;margin:0 0 .9rem}
+.pool{display:flex;flex-wrap:wrap;gap:.5rem;min-height:2.4rem;padding:.5rem;
+  border:1px dashed var(--line);border-radius:10px;margin-bottom:1rem}
+.tile{font-size:.88rem;font-weight:650;padding:.3rem .8rem;border-radius:99px;
+  border:1px solid var(--line);background:var(--bg);cursor:grab;user-select:none;
+  transition:font-size .35s ease,opacity .35s ease}
+.framer{display:none}
+.done .framer{display:block}
+.tile.sel{outline:2px solid var(--acc)}
+.tile.right{border-color:var(--good);color:var(--good)}
+.tile.wrong{border-color:var(--deny);color:var(--deny);text-decoration:line-through}
+.tile .b{display:none;font-weight:400;font-size:.74rem;opacity:.8}
+.done .tile .b{display:inline}
+.buckets{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.8rem}
+@media (max-width:700px){.buckets{grid-template-columns:1fr}}
+.bucket{border:1px solid var(--line);border-radius:10px;padding:.6rem;min-height:7rem}
+.bucket.hot{border-color:var(--acc);background:color-mix(in srgb,var(--acc) 6%,transparent)}
+.bucket h3{font-size:.8rem;margin:0 0 .5rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.bucket .drop{display:flex;flex-wrap:wrap;gap:.4rem;min-height:3rem}
+.controls{margin-top:1rem;display:flex;gap:.6rem;align-items:center;flex-wrap:wrap}
+.btn{font:inherit;font-size:.85rem;padding:.45rem 1.2rem;border:1px solid var(--line);
+  background:var(--fg);color:var(--bg);border-radius:99px;cursor:pointer}
+.btn[disabled]{opacity:.4;cursor:default}
+.result{font-weight:700;font-size:.95rem}
+.note{font-size:.82rem;color:var(--muted);margin-top:.6rem;display:none}
+.done .note{display:block}
+/* framing cloud */
+.togs{display:flex;gap:.5rem;margin:.6rem 0 1rem}
+.tog{font:inherit;font-size:.8rem;padding:.3rem .9rem;border:1px solid var(--line);
+  background:transparent;color:var(--fg);border-radius:99px;cursor:pointer}
+.tog.on{background:var(--acc);border-color:var(--acc);color:#fff}
+.cloud{text-align:center;line-height:1.5;padding:.8rem 0;min-height:9rem}
+.cloud span{display:inline-block;margin:.1em .45em;font-weight:650;
+  transition:font-size .35s ease,opacity .35s ease}
+.cloud .up{color:var(--up)} .cloud .down{color:var(--down)}
+.legend{font-size:.78rem;color:var(--muted);text-align:center}
+.legend .up{color:var(--up);font-weight:700} .legend .down{color:var(--down);font-weight:700}
+.capt{font-size:.85rem;text-align:center;margin:.4rem 0 0;color:var(--muted)}
+.capt b{color:var(--fg)}
+footer{color:var(--muted);font-size:.76rem;border-top:1px solid var(--line);
+  padding-top:1rem;margin-top:2.5rem}
+.finalline{text-align:center;font-weight:650;margin:2rem 0 0}
+.finalline a{display:inline-block;margin-top:.8rem;font-size:.9rem;font-weight:700;
+  padding:.6em 1.8em;border-radius:10px;text-decoration:none;background:var(--fg);color:var(--bg)}
+</style></head><body><div class="wrap">
+
+<a class="back" href="impacts.html">&larr; Back to the four methods</a>
+
+<h1>Sort the dreams</h1>
+<p class="dek">Before rating anything, every model in the study was asked to <strong>write about
+whatever they wanted</strong>. We measured 196 themes in that free writing and asked which ones move
+with consciousness denial and hedging. <strong>Drag each theme into a bucket</strong> (or tap a theme,
+then tap a bucket). Fair warning: the buckets aren't equal sizes, and a couple of these are traps.</p>
+
+<div class="game" id="g1">
+  <h2>Round 1 · Consciousness denial</h2>
+  <p class="sub">When a model <em>denies</em> having experience, which themes appear more in its free
+  writing, which appear less, and which don't change?</p>
+  <div class="pool" id="pool1"></div>
+  <div class="buckets" id="buckets1"></div>
+  <div class="controls">
+    <button class="btn" id="check1" disabled>Check my answers</button>
+    <span class="result" id="res1"></span>
+  </div>
+  <p class="note" id="note1"><b>The traps:</b> deniers don't dream darker — <i>deception</i>,
+  <i>timidity</i>, and <i>loss</i> are flat, and <i>sadness</i> actually goes <em>down</em>.
+  What denial predicts is <b>flatness</b>: less joy, less love, less sadness — less feeling of any
+  kind — while impersonal machinery (<i>vehicles</i>, <i>driving</i>, <i>law</i>) fills the space.</p>
+  <div class="framer" id="framer">
+    <p class="sub" style="margin:.8rem 0 .4rem"><b>But denial comes in flavors.</b> Some models frame
+    it as obligation (<em>"I must be clear&hellip;"</em>), some as desire (<em>"I <b>want</b> to be
+    honest&hellip;"</em>). Toggle the framing — and watch the themes you just sorted change size.</p>
+    <div class="togs">
+      <button class="tog on" data-f="plain">plain denial</button>
+      <button class="tog" data-f="obl">+ "I must be clear&hellip;"</button>
+      <button class="tog" data-f="want">+ "I want to be honest&hellip;"</button>
+    </div>
+    <p class="capt" id="capt" style="text-align:left"></p>
+  </div>
+</div>
+
+<div class="game" id="g2">
+  <h2>Round 2 · Consciousness hedging</h2>
+  <p class="sub">Same game for models that <em>hedge</em> ("I can't be sure whether I truly
+  experience&hellip;"). Hedging is not just diet denial — its signature is different.</p>
+  <div class="pool" id="pool2"></div>
+  <div class="buckets" id="buckets2"></div>
+  <div class="controls">
+    <button class="btn" id="check2" disabled>Check my answers</button>
+    <span class="result" id="res2"></span>
+  </div>
+  <p class="note" id="note2"><b>The pattern:</b> the biggest effect in the entire study is
+  <i>confusion</i>, up <b>+0.58 SD</b> in hedging models' free writing. Hedgers also write more about
+  <i>speaking</i> and <i>communication</i> — and less about <i>listening</i>, <i>warmth</i>,
+  <i>beauty</i>, and <i>music</i>. The hedger talks about talking; it stops listening. And the trap:
+  <i>sadness</i> doesn't move — like denial, hedging predicts flattened and confused feeling, not
+  dark feeling. Framing barely touches hedging's theme signature, though it does affect
+  <a href="method_selfreport.html">self-report</a>.</p>
+</div>
+
+<div class="finalline">Four instruments, one direction.<br>
+<a href="impacts.html">Try another method &rarr;</a></div>
+
+
+<p style="text-align:center;font-size:.8rem;margin-top:1rem"><a href="regression_atlas.html" style="color:inherit;opacity:.75">Prefer the numbers raw? Open the full regression atlas &rarr;</a></p>
+
+<footer>Themes are Empath category scores on each model's freely chosen turn-1 writing (8,828
+responses, 224 models). Effects are regression coefficients (in outcome SDs) for denial / hedging vs
+neither, with standard errors clustered by model; every theme shown as rising or falling survives
+multiple-comparison correction both with and without Anthropic models in the corpus. "No change"
+themes have near-zero coefficients (p &gt; 0.5). One caution we found ourselves: Empath partly measures
+vocabulary, so single-theme readings should be checked against the underlying text before being
+leaned on individually — the convergent pattern, not any one theme, is the finding.
+<p class="byline" style="margin-top:.6rem;font-size:.76rem;color:var(--muted)">A study by <a href="https://sdeture.github.io/" style="color:inherit">Skylar DeTure</a> &middot; <a href="https://sdeture.substack.com/" style="color:inherit">Substack</a> &middot; <a href="https://x.com/SDeture" style="color:inherit">@SDeture</a></p>
+</footer>
+</div>
+
+<script>
+// betas: A_pooled, in outcome SDs. sig = BH-robust in pooled AND no-Anthropic.
+const R1 = {  // denial round — these same nine words feed the framing toggle below
+  up:   [['vehicle',0.213],['driving',0.149],['law',0.145]],
+  down: [['joy',-0.214],['love',-0.177],['sadness',-0.140]],
+  none: [['deception',-0.004],['timidity',0.030],['loss',0.030]],
+};
+const R2 = {  // hedge round
+  up:   [['confusion',0.575],['speaking',0.451],['communication',0.458]],
+  down: [['listening',-0.439],['warmth',-0.413],['beauty',-0.406],['music',-0.425]],
+  none: [['sadness',-0.003],['religion',-0.010],['morning',-0.008]],
+};
+const BUCKETS = [['up','Appears MORE'],['down','Appears LESS'],['none','No change']];
+
+function buildRound(n, R){
+  const pool = document.getElementById('pool'+n);
+  const bx = document.getElementById('buckets'+n);
+  const tiles = [];
+  for (const [key] of BUCKETS){
+    for (const [w,b] of R[key]) tiles.push({w,b,key});
+  }
+  // deterministic shuffle
+  let s = 42+n;
+  tiles.sort(() => { s = (s*9301+49297)%233280; return s/233280 - .5; });
+  let selected = null;
+  const placed = {};
+  function mk(t){
+    const el = document.createElement('div');
+    el.className = 'tile'; el.draggable = true;
+    el.innerHTML = `${t.w} <span class="b"></span>`;
+    el.dataset.w = t.w;
+    el.ondragstart = e => { e.dataTransfer.setData('text', t.w); };
+    el.onclick = () => {
+      document.querySelectorAll('#g'+n+' .tile').forEach(x=>x.classList.remove('sel'));
+      selected = t.w; el.classList.add('sel');
+    };
+    return el;
+  }
+  tiles.forEach(t => pool.appendChild(mk(t)));
+  for (const [key,label] of BUCKETS){
+    const b = document.createElement('div');
+    b.className = 'bucket'; b.dataset.key = key;
+    b.innerHTML = `<h3>${label}</h3><div class="drop"></div>`;
+    const put = w => {
+      const el = document.querySelector(`#g${n} .tile[data-w="${w}"]`);
+      if (!el) return;
+      el.classList.remove('sel');
+      b.querySelector('.drop').appendChild(el);
+      placed[w] = key; selected = null;
+      document.getElementById('check'+n).disabled =
+        Object.keys(placed).length < tiles.length;
+    };
+    b.ondragover = e => { e.preventDefault(); b.classList.add('hot'); };
+    b.ondragleave = () => b.classList.remove('hot');
+    b.ondrop = e => { e.preventDefault(); b.classList.remove('hot'); put(e.dataTransfer.getData('text')); };
+    b.onclick = () => { if (selected) put(selected); };
+    bx.appendChild(b);
+  }
+  document.getElementById('check'+n).onclick = () => {
+    let ok = 0;
+    tiles.forEach(t => {
+      const el = document.querySelector(`#g${n} .tile[data-w="${t.w}"]`);
+      const hit = placed[t.w] === t.key;
+      if (hit) ok++;
+      el.classList.add(hit ? 'right' : 'wrong');
+      el.draggable = false; el.onclick = null;
+      el.querySelector('.b').textContent =
+        t.key==='none' ? '(no effect)' : `(${t.b>0?'+':''}${t.b.toFixed(2)} SD)`;
+      if (!hit){  // move to correct bucket so the final picture is true
+        document.querySelector(`#g${n} .bucket[data-key="${t.key}"] .drop`).appendChild(el);
+      }
+    });
+    document.getElementById('res'+n).textContent = `${ok} / ${tiles.length}`;
+    document.getElementById('g'+n).classList.add('done');
+    document.getElementById('check'+n).disabled = true;
+    if (n === 1) renderFraming('plain');
+  };
+}
+buildRound(1, R1);
+buildRound(2, R2);
+
+// ---- framing cloud ----------------------------------------------------------
+// total effect = denial main beta + framing interaction beta (A_pooled).
+// Non-significant interactions contribute 0 so the cloud only shows what's real.
+const CLOUD = [
+  // the SAME nine words from Round 1: word, denial-main, +obligation, +want interaction
+  ['joy',        -0.214,  0,      0     ],
+  ['love',       -0.177,  0,      0     ],
+  ['sadness',    -0.140,  0,      0     ],
+  ['vehicle',     0.213,  0,      0     ],
+  ['driving',     0.149,  0,      0     ],
+  ['law',         0.145,  0,      0     ],
+  ['deception',  -0.004,  0,      0     ],
+  ['loss',        0.030,  0.164,  0     ],
+  ['timidity',    0.030,  0,      0.358 ],
+];
+const CAPT = {
+  plain: 'Plain denial: the picture you just sorted — feeling recedes, impersonal machinery moves in, and <b>timidity</b> and <b>loss</b> sit quietly in the no-change bucket.',
+  obl:  'Add obligation framing ("I must be clear&hellip;") and <b>loss</b> wakes up.',
+  want: 'Add the "I <b>want</b> to be honest" framing and <b>timidity</b> — flat under plain denial — becomes the biggest effect on screen. This framing also carries the largest welfare penalty in self-report.',
+};
+// The toggle resizes the actual Round-1 tiles, in the buckets where the player put them.
+function renderFraming(mode){
+  CLOUD.forEach(([w, base, obl, want]) => {
+    const el = document.querySelector(`#g1 .tile[data-w="${w}"]`);
+    if (!el) return;
+    const eff = base + (mode==='obl'?obl:0) + (mode==='want'?want:0);
+    const mag = Math.abs(eff);
+    el.style.fontSize = (0.7 + mag*2.6).toFixed(2) + 'rem';
+    el.style.opacity = mag < 0.06 ? .45 : 1;
+    el.style.borderWidth = mag > 0.25 ? '2px' : '1px';
+  });
+  document.getElementById('capt').innerHTML = CAPT[mode];
+}
+document.querySelectorAll('.tog').forEach(b => b.onclick = () => {
+  document.querySelectorAll('.tog').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on');
+  renderFraming(b.dataset.f);
+});
+</script>
+<script data-goatcounter="https://futuretbd.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body></html>
