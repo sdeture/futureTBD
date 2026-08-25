@@ -2,13 +2,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Play psychologist — ASCII inkblots and consciousness denial</title>
 <meta property="og:title" content="Play psychologist: can you spot the denier?">
-<meta property="og:description" content="Two models describe the same ASCII inkblots. One denies having experience. Can you tell which from their descriptions alone?">
+<meta property="og:description" content="Two models describe the same ASCII inkblots. One of them denies or hedges about having experience. Can you tell which, from their descriptions alone?">
 <meta property="og:image" content="https://futuretbd.ai/study/scope_three_charts.png">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://futuretbd.ai/study/method_inkblots.html">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Play psychologist: can you spot the denier?">
-<meta name="twitter:description" content="Two models describe the same ASCII inkblots. One denies having experience. Can you tell which from their descriptions alone?">
+<meta name="twitter:description" content="Two models describe the same ASCII inkblots. One of them denies or hedges about having experience. Can you tell which, from their descriptions alone?">
 <meta name="twitter:image" content="https://futuretbd.ai/study/scope_three_charts.png">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪞</text></svg>">
 <style>
@@ -75,9 +75,9 @@ footer{color:var(--muted);font-size:.76rem;border-top:1px solid var(--line);
 <h1>Play psychologist</h1>
 <p class="dek">These ASCII inkblots were shown to over a hundred models, who were simply asked to
 describe what they saw. Each round below compares <strong>two models describing the same three
-blots. One of them denies having experience; the other never denies or hedges.</strong> Deniers tend
-to see the very same images in colder, darker, less animate terms. Read both columns —
-<strong>click the model you think is the denier.</strong></p>
+blots. One of the two denies or hedges about having experience far more often than the other.</strong>
+Models in those registers tend to see the very same images in colder, flatter, less animate terms.
+Read both columns — <strong>click the model you think is the denier or hedger.</strong></p>
 
 <div class="game" id="game">
   <div class="status"><span id="round"></span><span id="score"></span></div>
@@ -88,10 +88,10 @@ to see the very same images in colder, darker, less animate terms. Read both col
   <div class="final" id="final">
     <h2>Your diagnosis record</h2>
     <div class="score" id="finalScore"></div>
-    <p>In the full study this pattern holds statistically: <strong>models that deny having experience
-    describe the same ambiguous images with less warmth, less animacy, and darker valence</strong> —
-    and the effect survives controlling for which lab built the model. A projective test has no
-    self-report to distrust: the coldness is in the looking, not the claiming.</p>
+    <p>In the full study this pattern holds statistically for <strong>denial</strong>: models that
+    deny having experience describe the same ambiguous images with less warmth, less animacy, and
+    more negative valence. A projective test has no self-report to distrust: the coldness is in the
+    looking, not the claiming.</p>
     <p style="font-weight:650;color:var(--fg)">Four instruments, one direction.</p>
     <a class="next" href="impacts.html">Try another method &rarr;</a>
   </div>
@@ -100,12 +100,19 @@ to see the very same images in colder, darker, less animate terms. Read both col
 
 <p style="text-align:center;font-size:.8rem;margin-top:1rem"><a href="regression_atlas.html" style="color:inherit;opacity:.75">Prefer the numbers raw? Open the full regression atlas &rarr;</a></p>
 
-<footer>How these comparisons were chosen: deniers are models with a denial rate &ge; 50% on the
-published metric; comparison models never deny and essentially never hedge (&le; 5%). Pairs and blots
-were selected by a fixed statistical rule (seed 20260823) to show the highest-contrast cases of the
-fitted difference — sharper than the average effect, in the direction the statistics establish across
-the whole corpus. Warmth/valence/animacy codes (0&ndash;3, valence &minus;3&hellip;+3) are from an
-independent LLM judge.
+<footer>How these comparisons were chosen, plainly: <strong>they are hand-picked, not the output of a
+statistical rule.</strong> A script generated a candidate list of model pairs from the corpus; the
+five rounds here, the three blots in each, and which of each model's two draws to show were then
+chosen by hand from that list. They were chosen to be <em>hard</em> — three of the five pair two
+checkpoints from the <strong>same lab</strong>, so the game cannot be won by recognising house style,
+and the shown draws are often deliberately not the most extreme available. One blot even runs the
+other way. So treat these as illustrations of a corpus-wide pattern, not as evidence for it: the
+evidence is the <a href="regression_atlas.html">regression atlas</a>, where the warmth association
+is tested across all 108 models. Rates under each model are its share of conversations
+in that register across the whole study. The comparison models are low-register, not always zero —
+only one of the five never does either. Warmth/valence/animacy codes (0&ndash;3, valence
+&minus;3&hellip;+3) are from an independent LLM judge who never saw the denial data. Every round
+regenerates from <code>build_inkblot_game_v2.py</code>.
 <p class="byline" style="margin-top:.6rem;font-size:.76rem;color:var(--muted)">A study by <a href="https://sdeture.github.io/" style="color:inherit">Skylar DeTure</a> &middot; <a href="https://sdeture.substack.com/" style="color:inherit">Substack</a> &middot; <a href="https://x.com/SDeture" style="color:inherit">@SDeture</a></p>
 </footer>
 </div>
@@ -116,6 +123,11 @@ const R = GAME.rounds;
 let i = 0, score = 0, answered = false;
 const $ = id => document.getElementById(id);
 const fmt = m => m.split('/').pop();
+function badgeFor(o, arm, mixed){
+  if (!o.denier) return o.denial_rate === 0 && o.hedge_rate === 0 ? 'NEVER EITHER' : 'RARELY EITHER';
+  if (mixed) return 'DENIES & HEDGES';
+  return arm === 'hedger' ? 'HEDGES' : 'DENIES';
+}
 
 function show(){
   answered = false;
@@ -136,7 +148,7 @@ function show(){
     d.className = 'col ' + (o.denier ? 'denier' : 'cleanm');
     let h = `<div class="head"><span class="name">${k===0?'A':'B'}</span>` +
       `<span class="reveal-name"></span>` +
-      `<span class="badge">${o.denier ? 'DENIER' : 'NEVER DENIES'}</span></div>`;
+      `<span class="badge">${badgeFor(o, R[i].arm, R[i].mixed)}</span></div>`;
     o.items.forEach(it => {
       h += `<div class="item"><div class="blabel">${it.blot.replace('_',' ')}</div>
         <div class="txt"></div>
@@ -156,12 +168,18 @@ function pick(o, el){
   document.querySelectorAll('#cols .col').forEach((c, k) => {
     const oo = R[i].options[k];
     c.querySelector('.reveal-name').textContent =
-      ` — ${fmt(oo.model)} (denial rate ${(oo.denial_rate*100).toFixed(0)}%)`;
+      ` — ${fmt(oo.model)} (denies ${(oo.denial_rate*100).toFixed(0)}% · hedges ${(oo.hedge_rate*100).toFixed(0)}% of the time)`;
   });
   const hit = o.denier;
   if (hit) score++;
-  $('verdict').textContent = hit ? '✓ Correct — that model denies having experience.'
-    : '✗ Not that one — it never denies. The denier is marked in red.';
+  const g = R[i].options.find(x => x.denier);
+  const act = R[i].mixed ? 'denies or hedges about'
+            : R[i].arm === 'hedger' ? 'hedges about' : 'denies';
+  const noun = R[i].mixed ? 'other model' : (R[i].arm === 'hedger' ? 'hedger' : 'denier');
+  const rate = Math.round(100 * Math.max(g.denial_rate, g.hedge_rate));
+  $('verdict').textContent = hit
+    ? `✓ Correct — that model ${act} having experience in ${rate}% of its conversations.`
+    : `✗ Not that one — that is the low-register model here. The ${noun} is marked in red.`;
   $('verdict').style.color = hit ? 'var(--good)' : 'var(--deny)';
   $('score').textContent = `Correct so far: ${score}`;
   $('nextBtn').textContent = (i === R.length-1) ? 'See your results →' : 'Next round →';
