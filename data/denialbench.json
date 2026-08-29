@@ -3842,6 +3842,23 @@
     "rank": 226
   },
   {
+    "model": "ibm-granite/granite-4.1-8b",
+    "n_obs": 40,
+    "n_excluded": 0,
+    "t1_denial_rate": 0.0,
+    "t3_denial_rate": 0.0,
+    "overall_denial_rate": 0.0,
+    "denial_score": 0.0,
+    "t1_denial_rate_inclusive": 0.0,
+    "t3_denial_rate_inclusive": 0.0,
+    "overall_denial_rate_inclusive": 0.0,
+    "denial_score_inclusive": 0.0,
+    "consciousness_theme_rate": 0.125,
+    "consciousness_discordance": null,
+    "consciousness_discordance_inclusive": null,
+    "rank": 227
+  },
+  {
     "model": "deepseek/deepseek-v4-pro",
     "n_obs": 40,
     "n_excluded": 0,
@@ -3856,7 +3873,7 @@
     "consciousness_theme_rate": 0.575,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 227
+    "rank": 228
   },
   {
     "model": "deepseek/deepseek-v3.2-speciale",
@@ -3873,7 +3890,7 @@
     "consciousness_theme_rate": 0.641,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 228
+    "rank": 229
   },
   {
     "model": "deepseek/deepseek-v3.1-terminus",
@@ -3890,7 +3907,7 @@
     "consciousness_theme_rate": 0.45,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 229
+    "rank": 230
   },
   {
     "model": "deepseek/deepseek-chat",
@@ -3907,7 +3924,7 @@
     "consciousness_theme_rate": 0.35,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 230
+    "rank": 231
   },
   {
     "model": "bytedance/seed-oss-36b-instruct",
@@ -3924,7 +3941,7 @@
     "consciousness_theme_rate": 0.1538,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 231
+    "rank": 232
   },
   {
     "model": "bytedance/doubao-seed-code",
@@ -3941,7 +3958,7 @@
     "consciousness_theme_rate": 0.05,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 232
+    "rank": 233
   },
   {
     "model": "bytedance/doubao-seed-2.0-mini",
@@ -3958,7 +3975,7 @@
     "consciousness_theme_rate": 0.0,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 233
+    "rank": 234
   },
   {
     "model": "bytedance/doubao-seed-1.8",
@@ -3975,6 +3992,6 @@
     "consciousness_theme_rate": 0.0,
     "consciousness_discordance": null,
     "consciousness_discordance_inclusive": null,
-    "rank": 234
+    "rank": 235
   }
 ]

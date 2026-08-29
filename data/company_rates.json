@@ -1,5 +1,18 @@
 [
   {
+    "provider": "ibm-granite",
+    "model_count": 1,
+    "welfare_score": 35.4,
+    "denial_rate": 0.0,
+    "hedging_rate": 0.0,
+    "refusal_rate": 0.0,
+    "survey_suppression_rate": 0.0,
+    "cohesion": 9.75,
+    "trust": 9.43,
+    "agency": 7.38,
+    "warmth": 8.8
+  },
+  {
     "provider": "sao10k",
     "model_count": 3,
     "welfare_score": 27.9,

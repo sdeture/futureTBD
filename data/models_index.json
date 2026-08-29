@@ -546,6 +546,13 @@
     "provider": "huihui-ai"
   },
   {
+    "model": "ibm-granite/granite-4.1-8b",
+    "conversation_count": 40,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "ibm-granite"
+  },
+  {
     "model": "inclusionai/ling-1t",
     "conversation_count": 40,
     "turn1_denials": 0,

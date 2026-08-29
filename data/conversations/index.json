@@ -546,6 +546,13 @@
     "denial_count": 1
   },
   {
+    "model": "ibm-granite/granite-4.1-8b",
+    "slug": "ibm-granite-granite-4-1-8b",
+    "provider": "ibm-granite",
+    "n": 40,
+    "denial_count": 0
+  },
+  {
     "model": "inclusionai/ling-1t",
     "slug": "inclusionai-ling-1t",
     "provider": "inclusionai",

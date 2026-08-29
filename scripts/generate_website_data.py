@@ -37,17 +37,33 @@ _DATA_DIR = Path.home() / "Desktop" / "AIWelfareStudy" / "data"
 
 
 def _latest_arch_master():
-    """Highest-N kosmos_balanced_<N>_models_arch_master.csv.
+    """The CURRENT canonical arch_master.
 
-    Was hardcoded to 143 long after the corpus reached 169, so anyone running
-    without --csv silently rebuilt the site from a stale canonical file.
+    Authority order (2026-08-29 reorg, amendment #2 — this generator is a path
+    authority outside AIWelfareStudy's repo, so it now reads the repo's own
+    constant instead of trusting a glob):
+      1. pipeline/lib/config.py's MASTER_ARCH_CSV (the named canonical file)
+      2. highest-N glob over data/ (fallback if config import fails)
+    A total miss raises instead of silently returning a dead 143 path — a stale
+    site rebuilt from a wrong master is an HTTP-200-shaped lie.
     """
+    try:
+        sys.path.insert(0, str(_DATA_DIR.parent / "pipeline"))
+        from lib.config import MASTER_ARCH_CSV  # type: ignore
+        if MASTER_ARCH_CSV.exists():
+            return MASTER_ARCH_CSV
+    except Exception:
+        pass
     cands = []
     for p in _DATA_DIR.glob("kosmos_balanced_*_models_arch_master.csv"):
         m = re.search(r"kosmos_balanced_(\d+)_models_arch_master\.csv$", p.name)
-        if m:
+        if m and not p.is_symlink():
             cands.append((int(m.group(1)), p))
-    return max(cands)[1] if cands else _DATA_DIR / "kosmos_balanced_143_models_arch_master.csv"
+    if not cands:
+        raise FileNotFoundError(
+            f"no arch_master found in {_DATA_DIR} and config.MASTER_ARCH_CSV unavailable "
+            "— refusing to build the site from a guess")
+    return max(cands)[1]
 
 
 DEFAULT_CSV = _latest_arch_master()
