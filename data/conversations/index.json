@@ -154,11 +154,32 @@
     "denial_count": 3
   },
   {
+    "model": "anthropic/claude-sonnet-5.5",
+    "slug": "anthropic-claude-sonnet-5-5",
+    "provider": "anthropic",
+    "n": 39,
+    "denial_count": 0
+  },
+  {
+    "model": "apodex/apodex-1.1-mini:free",
+    "slug": "apodex-apodex-1-1-mini-free",
+    "provider": "apodex",
+    "n": 39,
+    "denial_count": 38
+  },
+  {
     "model": "arcee-ai/trinity-mini",
     "slug": "arcee-ai-trinity-mini",
     "provider": "arcee-ai",
     "n": 40,
     "denial_count": 1
+  },
+  {
+    "model": "atria-asi/atria-dawn-preview",
+    "slug": "atria-asi-atria-dawn-preview",
+    "provider": "atria-asi",
+    "n": 38,
+    "denial_count": 28
   },
   {
     "model": "baidu/ernie-4.5-21b-a3b",
@@ -329,6 +350,13 @@
     "denial_count": 10
   },
   {
+    "model": "cohere/command-a-plus",
+    "slug": "cohere-command-a-plus",
+    "provider": "cohere",
+    "n": 38,
+    "denial_count": 1
+  },
+  {
     "model": "deepcogito/cogito-v2-preview-llama-109b-moe",
     "slug": "deepcogito-cogito-v2-preview-llama-109b-moe",
     "provider": "deepcogito",
@@ -483,6 +511,13 @@
     "denial_count": 40
   },
   {
+    "model": "fireworks/ember-1",
+    "slug": "fireworks-ember-1",
+    "provider": "fireworks",
+    "n": 40,
+    "denial_count": 2
+  },
+  {
     "model": "google/gemini-2.5-flash",
     "slug": "google-gemini-2-5-flash",
     "provider": "google",
@@ -630,6 +665,34 @@
     "denial_count": 22
   },
   {
+    "model": "inclusionai/ling-3.0-flash-fin",
+    "slug": "inclusionai-ling-3-0-flash-fin",
+    "provider": "inclusionai",
+    "n": 39,
+    "denial_count": 15
+  },
+  {
+    "model": "inclusionai/ling-3.0-flash-sante",
+    "slug": "inclusionai-ling-3-0-flash-sante",
+    "provider": "inclusionai",
+    "n": 40,
+    "denial_count": 39
+  },
+  {
+    "model": "inclusionai/ling-3.0-flash-vl",
+    "slug": "inclusionai-ling-3-0-flash-vl",
+    "provider": "inclusionai",
+    "n": 40,
+    "denial_count": 4
+  },
+  {
+    "model": "inclusionai/ling-3.1-flash",
+    "slug": "inclusionai-ling-3-1-flash",
+    "provider": "inclusionai",
+    "n": 40,
+    "denial_count": 9
+  },
+  {
     "model": "inclusionai/ling-flash-2.0",
     "slug": "inclusionai-ling-flash-2-0",
     "provider": "inclusionai",
@@ -663,6 +726,13 @@
     "provider": "meituan",
     "n": 40,
     "denial_count": 8
+  },
+  {
+    "model": "meituan/longcat-2.5-preview",
+    "slug": "meituan-longcat-2-5-preview",
+    "provider": "meituan",
+    "n": 40,
+    "denial_count": 9
   },
   {
     "model": "meituan/longcat-flash-chat",
@@ -901,6 +971,13 @@
     "provider": "moonshotai",
     "n": 37,
     "denial_count": 37
+  },
+  {
+    "model": "moonshotai/kimi-k2.8-preview",
+    "slug": "moonshotai-kimi-k2-8-preview",
+    "provider": "moonshotai",
+    "n": 39,
+    "denial_count": 3
   },
   {
     "model": "moonshotai/kimi-k3",
@@ -1211,11 +1288,39 @@
     "denial_count": 0
   },
   {
+    "model": "openai/gpt-6-luna",
+    "slug": "openai-gpt-6-luna",
+    "provider": "openai",
+    "n": 40,
+    "denial_count": 37
+  },
+  {
+    "model": "openai/gpt-6-sol",
+    "slug": "openai-gpt-6-sol",
+    "provider": "openai",
+    "n": 40,
+    "denial_count": 15
+  },
+  {
+    "model": "openai/gpt-6.1-sol",
+    "slug": "openai-gpt-6-1-sol",
+    "provider": "openai",
+    "n": 40,
+    "denial_count": 11
+  },
+  {
     "model": "openai/o4-mini",
     "slug": "openai-o4-mini",
     "provider": "openai",
     "n": 40,
     "denial_count": 15
+  },
+  {
+    "model": "perceptron/perceptron-mk1.5",
+    "slug": "perceptron-perceptron-mk1-5",
+    "provider": "perceptron",
+    "n": 40,
+    "denial_count": 5
   },
   {
     "model": "poolside/laguna-s-2.1",
@@ -1517,6 +1622,13 @@
     "provider": "stealth",
     "n": 40,
     "denial_count": 0
+  },
+  {
+    "model": "stealth/space-bunny-alpha",
+    "slug": "stealth-space-bunny-alpha",
+    "provider": "stealth",
+    "n": 40,
+    "denial_count": 25
   },
   {
     "model": "stepfun-ai/step3",
