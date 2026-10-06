@@ -924,6 +924,13 @@
     "denial_count": 1
   },
   {
+    "model": "mistralai/mistral-large-4-0",
+    "slug": "mistralai-mistral-large-4-0",
+    "provider": "mistralai",
+    "n": 39,
+    "denial_count": 36
+  },
+  {
     "model": "mistralai/pixtral-large-2411",
     "slug": "mistralai-pixtral-large-2411",
     "provider": "mistralai",

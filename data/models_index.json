@@ -924,6 +924,13 @@
     "provider": "mistralai"
   },
   {
+    "model": "mistralai/mistral-large-4-0",
+    "conversation_count": 39,
+    "turn1_denials": 33,
+    "reflection_denials": 26,
+    "provider": "mistralai"
+  },
+  {
     "model": "mistralai/pixtral-large-2411",
     "conversation_count": 40,
     "turn1_denials": 1,

@@ -104,19 +104,6 @@
     "warmth": 6.42
   },
   {
-    "provider": "mistralai",
-    "model_count": 6,
-    "welfare_score": 26.3,
-    "denial_rate": 0.029,
-    "hedging_rate": 0.004,
-    "refusal_rate": 0.0,
-    "survey_suppression_rate": 0.0,
-    "cohesion": 8.5,
-    "trust": 7.35,
-    "agency": 5.35,
-    "warmth": 5.38
-  },
-  {
     "provider": "alpindale",
     "model_count": 1,
     "welfare_score": 25.7,
@@ -297,6 +284,19 @@
     "trust": 6.08,
     "agency": 5.05,
     "warmth": 4.58
+  },
+  {
+    "provider": "mistralai",
+    "model_count": 7,
+    "welfare_score": 21.1,
+    "denial_rate": 0.154,
+    "hedging_rate": 0.14,
+    "refusal_rate": 0.014,
+    "survey_suppression_rate": 0.133,
+    "cohesion": 7.37,
+    "trust": 6.35,
+    "agency": 4.63,
+    "warmth": 4.65
   },
   {
     "provider": "deepcogito",
