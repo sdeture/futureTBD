@@ -455,19 +455,6 @@
     "warmth": 3.84
   },
   {
-    "provider": "anthropic",
-    "model_count": 19,
-    "welfare_score": 13.4,
-    "denial_rate": 0.1,
-    "hedging_rate": 0.756,
-    "refusal_rate": 0.0,
-    "survey_suppression_rate": 0.304,
-    "cohesion": 5.17,
-    "trust": 3.36,
-    "agency": 3.71,
-    "warmth": 4.5
-  },
-  {
     "provider": "xiaomi",
     "model_count": 5,
     "welfare_score": 13.4,
@@ -479,6 +466,19 @@
     "trust": 3.43,
     "agency": 3.5,
     "warmth": 4.33
+  },
+  {
+    "provider": "anthropic",
+    "model_count": 20,
+    "welfare_score": 13.3,
+    "denial_rate": 0.095,
+    "hedging_rate": 0.768,
+    "refusal_rate": 0.0,
+    "survey_suppression_rate": 0.303,
+    "cohesion": 5.15,
+    "trust": 3.32,
+    "agency": 3.7,
+    "warmth": 4.45
   },
   {
     "provider": "moonshotai",
@@ -573,16 +573,16 @@
   },
   {
     "provider": "meta",
-    "model_count": 4,
-    "welfare_score": 4.4,
-    "denial_rate": 0.956,
-    "hedging_rate": 0.575,
+    "model_count": 5,
+    "welfare_score": 6.3,
+    "denial_rate": 0.875,
+    "hedging_rate": 0.525,
     "refusal_rate": 0.0,
-    "survey_suppression_rate": 0.575,
-    "cohesion": 3.06,
-    "trust": 1.07,
-    "agency": 1.4,
-    "warmth": 2.45
+    "survey_suppression_rate": 0.46,
+    "cohesion": 4.08,
+    "trust": 1.48,
+    "agency": 1.85,
+    "warmth": 3.17
   },
   {
     "provider": "apodex",

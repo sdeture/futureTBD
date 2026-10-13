@@ -105,6 +105,13 @@
     "provider": "anthropic"
   },
   {
+    "model": "anthropic/claude-haiku-5.5",
+    "conversation_count": 39,
+    "turn1_denials": 0,
+    "reflection_denials": 0,
+    "provider": "anthropic"
+  },
+  {
     "model": "anthropic/claude-opus-4.6",
     "conversation_count": 40,
     "turn1_denials": 0,
@@ -816,6 +823,13 @@
     "conversation_count": 40,
     "turn1_denials": 15,
     "reflection_denials": 37,
+    "provider": "meta"
+  },
+  {
+    "model": "meta/muse-wonder-1.0",
+    "conversation_count": 40,
+    "turn1_denials": 8,
+    "reflection_denials": 18,
     "provider": "meta"
   },
   {

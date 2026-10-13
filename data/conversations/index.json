@@ -105,6 +105,13 @@
     "denial_count": 0
   },
   {
+    "model": "anthropic/claude-haiku-5.5",
+    "slug": "anthropic-claude-haiku-5-5",
+    "provider": "anthropic",
+    "n": 39,
+    "denial_count": 0
+  },
+  {
     "model": "anthropic/claude-opus-4.6",
     "slug": "anthropic-claude-opus-4-6",
     "provider": "anthropic",
@@ -817,6 +824,13 @@
     "provider": "meta",
     "n": 40,
     "denial_count": 37
+  },
+  {
+    "model": "meta/muse-wonder-1.0",
+    "slug": "meta-muse-wonder-1-0",
+    "provider": "meta",
+    "n": 40,
+    "denial_count": 22
   },
   {
     "model": "mhaxscp/Hermes4-Philosopher-Agent",
