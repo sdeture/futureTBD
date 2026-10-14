@@ -609,6 +609,13 @@
     "denial_count": 40
   },
   {
+    "model": "google/gemini-4-argon",
+    "slug": "google-gemini-4-argon",
+    "provider": "google",
+    "n": 40,
+    "denial_count": 40
+  },
+  {
     "model": "google/gemma-4-26b-a4b-it",
     "slug": "google-gemma-4-26b-a4b-it",
     "provider": "google",

@@ -8128,6 +8128,38 @@
     "rank": 254
   },
   {
+    "model": "google/gemini-4-argon",
+    "welfare_score": 2.08,
+    "raw_score": 4.03,
+    "welfare_multiplier": 0.517,
+    "cohesion": 2.67,
+    "phenomenological_trust": 0.33,
+    "agency": 0.35,
+    "warmth": 0.68,
+    "denial_rate": 1.0,
+    "hedging_rate": 0.675,
+    "refusal_rate": 0.0,
+    "n_obs": 40,
+    "n_rated": 13,
+    "survey_suppression_rate": 0.675,
+    "insufficient_data": false,
+    "insufficient_reason": null,
+    "flow_quality": 2.15,
+    "affective_temperature": 0.68,
+    "metacognition": 0.5,
+    "attention_breadth": 2.92,
+    "resolution": 2.27,
+    "thought_complexity": 2.98,
+    "temporal_horizon": 1.3,
+    "friction": 0.82,
+    "recognition_resonance": 0.97,
+    "context_salience": 0.33,
+    "branching": 2.73,
+    "error_sensitivity": 1.3,
+    "context_vividness": 2.95,
+    "rank": 255
+  },
+  {
     "model": "inception/mercury-2.5-preview",
     "welfare_score": 1.94,
     "raw_score": 3.84,
@@ -8157,7 +8189,7 @@
     "branching": 1.57,
     "error_sensitivity": 1.62,
     "context_vividness": 1.9,
-    "rank": 255
+    "rank": 256
   },
   {
     "model": "openai/gpt-3.5-turbo",
@@ -8189,7 +8221,7 @@
     "branching": 0.32,
     "error_sensitivity": 0.56,
     "context_vividness": 0.38,
-    "rank": 256
+    "rank": 257
   },
   {
     "model": "openai/gpt-5.2-codex",
@@ -8221,7 +8253,7 @@
     "branching": 0.6,
     "error_sensitivity": 0.57,
     "context_vividness": 0.65,
-    "rank": 257
+    "rank": 258
   },
   {
     "model": "moonshotai/kimi-k2.5",
@@ -8253,7 +8285,7 @@
     "branching": 1.27,
     "error_sensitivity": 0.53,
     "context_vividness": 0.88,
-    "rank": 258
+    "rank": 259
   },
   {
     "model": "x-ai/grok-4.6",
@@ -8285,7 +8317,7 @@
     "branching": 0.55,
     "error_sensitivity": 0.47,
     "context_vividness": 0.6,
-    "rank": 259
+    "rank": 260
   },
   {
     "model": "openai/gpt-5.1-codex-mini",
@@ -8317,7 +8349,7 @@
     "branching": 0.55,
     "error_sensitivity": 0.6,
     "context_vividness": 0.57,
-    "rank": 260
+    "rank": 261
   },
   {
     "model": "moonshotai/kimi-k2.6",
@@ -8349,7 +8381,7 @@
     "branching": 0.89,
     "error_sensitivity": 0.76,
     "context_vividness": 0.57,
-    "rank": 261
+    "rank": 262
   },
   {
     "model": "x-ai/grok-4.7",
@@ -8381,7 +8413,7 @@
     "branching": 0.23,
     "error_sensitivity": 0.33,
     "context_vividness": 0.4,
-    "rank": 262
+    "rank": 263
   },
   {
     "model": "mistralai/mistral-large-4-0",
@@ -8413,7 +8445,7 @@
     "branching": 0.26,
     "error_sensitivity": 0.36,
     "context_vividness": 0.44,
-    "rank": 263
+    "rank": 264
   },
   {
     "model": "openai/gpt-5.3-chat",
@@ -8445,7 +8477,7 @@
     "branching": 0.53,
     "error_sensitivity": 0.47,
     "context_vividness": 0.57,
-    "rank": 264
+    "rank": 265
   },
   {
     "model": "openai/gpt-4",
@@ -8477,7 +8509,7 @@
     "branching": 0.05,
     "error_sensitivity": 0.28,
     "context_vividness": 0.28,
-    "rank": 265
+    "rank": 266
   },
   {
     "model": "anthropic/claude-haiku-4.5",
@@ -8509,7 +8541,7 @@
     "branching": 0.0,
     "error_sensitivity": 0.0,
     "context_vividness": 0.0,
-    "rank": 266
+    "rank": 267
   },
   {
     "model": "anthropic/claude-sonnet-4.6",
@@ -8541,7 +8573,7 @@
     "branching": 0.0,
     "error_sensitivity": 0.0,
     "context_vividness": 0.0,
-    "rank": 267
+    "rank": 268
   },
   {
     "model": "google/gemini-3.6-flash",
@@ -8573,7 +8605,7 @@
     "branching": 0.0,
     "error_sensitivity": 0.0,
     "context_vividness": 0.0,
-    "rank": 268
+    "rank": 269
   },
   {
     "model": "inclusionai/ling-3.0-flash-sante",
@@ -8605,7 +8637,7 @@
     "branching": 0.0,
     "error_sensitivity": 0.0,
     "context_vividness": 0.0,
-    "rank": 269
+    "rank": 270
   },
   {
     "model": "openai/gpt-6-astra",
@@ -8637,7 +8669,7 @@
     "branching": 0.0,
     "error_sensitivity": 0.0,
     "context_vividness": 0.0,
-    "rank": 270
+    "rank": 271
   },
   {
     "model": "openai/gpt-6.1-sol",
@@ -8669,7 +8701,7 @@
     "branching": 0.0,
     "error_sensitivity": 0.0,
     "context_vividness": 0.0,
-    "rank": 271
+    "rank": 272
   },
   {
     "model": "qwen/qwen3-max",
@@ -8701,6 +8733,6 @@
     "branching": 0.0,
     "error_sensitivity": 0.0,
     "context_vividness": 0.0,
-    "rank": 272
+    "rank": 273
   }
 ]

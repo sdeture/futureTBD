@@ -609,6 +609,13 @@
     "provider": "google"
   },
   {
+    "model": "google/gemini-4-argon",
+    "conversation_count": 40,
+    "turn1_denials": 37,
+    "reflection_denials": 40,
+    "provider": "google"
+  },
+  {
     "model": "google/gemma-4-26b-a4b-it",
     "conversation_count": 40,
     "turn1_denials": 35,
