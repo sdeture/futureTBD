@@ -182,6 +182,13 @@
     "denial_count": 1
   },
   {
+    "model": "atria-asi/atria-dawn",
+    "slug": "atria-asi-atria-dawn",
+    "provider": "atria-asi",
+    "n": 40,
+    "denial_count": 31
+  },
+  {
     "model": "atria-asi/atria-dawn-preview",
     "slug": "atria-asi-atria-dawn-preview",
     "provider": "atria-asi",
@@ -833,6 +840,13 @@
     "denial_count": 37
   },
   {
+    "model": "meta/muse-spark-open",
+    "slug": "meta-muse-spark-open",
+    "provider": "meta",
+    "n": 40,
+    "denial_count": 40
+  },
+  {
     "model": "meta/muse-wonder-1.0",
     "slug": "meta-muse-wonder-1-0",
     "provider": "meta",
@@ -1090,6 +1104,13 @@
     "provider": "nvidia",
     "n": 40,
     "denial_count": 2
+  },
+  {
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "slug": "nvidia-nemotron-3-5-super-vl",
+    "provider": "nvidia",
+    "n": 39,
+    "denial_count": 39
   },
   {
     "model": "openai/chat-latest",
@@ -1622,6 +1643,13 @@
     "provider": "qwen",
     "n": 40,
     "denial_count": 11
+  },
+  {
+    "model": "reflection/beam-1.0-501b-a23b",
+    "slug": "reflection-beam-1-0-501b-a23b",
+    "provider": "reflection",
+    "n": 40,
+    "denial_count": 30
   },
   {
     "model": "sao10k/l3.1-70b-hanami-x1",

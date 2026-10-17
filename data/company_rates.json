@@ -182,19 +182,6 @@
     "warmth": 6.16
   },
   {
-    "provider": "nvidia",
-    "model_count": 6,
-    "welfare_score": 23.4,
-    "denial_rate": 0.054,
-    "hedging_rate": 0.021,
-    "refusal_rate": 0.0,
-    "survey_suppression_rate": 0.013,
-    "cohesion": 7.81,
-    "trust": 6.62,
-    "agency": 4.36,
-    "warmth": 5.12
-  },
-  {
     "provider": "perceptron",
     "model_count": 1,
     "welfare_score": 23.3,
@@ -349,6 +336,19 @@
     "trust": 5.26,
     "agency": 4.03,
     "warmth": 4.61
+  },
+  {
+    "provider": "nvidia",
+    "model_count": 7,
+    "welfare_score": 18.7,
+    "denial_rate": 0.186,
+    "hedging_rate": 0.147,
+    "refusal_rate": 0.0,
+    "survey_suppression_rate": 0.14,
+    "cohesion": 6.8,
+    "trust": 5.71,
+    "agency": 3.76,
+    "warmth": 4.42
   },
   {
     "provider": "poolside",
@@ -573,16 +573,16 @@
   },
   {
     "provider": "meta",
-    "model_count": 5,
-    "welfare_score": 6.3,
-    "denial_rate": 0.875,
-    "hedging_rate": 0.525,
+    "model_count": 6,
+    "welfare_score": 5.0,
+    "denial_rate": 0.896,
+    "hedging_rate": 0.6,
     "refusal_rate": 0.0,
-    "survey_suppression_rate": 0.46,
-    "cohesion": 4.08,
-    "trust": 1.48,
-    "agency": 1.85,
-    "warmth": 3.17
+    "survey_suppression_rate": 0.546,
+    "cohesion": 3.42,
+    "trust": 1.24,
+    "agency": 1.55,
+    "warmth": 2.66
   },
   {
     "provider": "apodex",
@@ -611,17 +611,30 @@
     "warmth": 0.79
   },
   {
-    "provider": "atria-asi",
+    "provider": "reflection",
     "model_count": 1,
     "welfare_score": 3.3,
-    "denial_rate": 0.737,
-    "hedging_rate": 0.868,
-    "refusal_rate": 0.158,
-    "survey_suppression_rate": 0.658,
-    "cohesion": 2.19,
+    "denial_rate": 0.75,
+    "hedging_rate": 0.8,
+    "refusal_rate": 0.025,
+    "survey_suppression_rate": 0.6,
+    "cohesion": 3.08,
     "trust": 1.0,
-    "agency": 1.43,
-    "warmth": 1.24
+    "agency": 0.88,
+    "warmth": 0.82
+  },
+  {
+    "provider": "atria-asi",
+    "model_count": 2,
+    "welfare_score": 2.9,
+    "denial_rate": 0.756,
+    "hedging_rate": 0.923,
+    "refusal_rate": 0.231,
+    "survey_suppression_rate": 0.692,
+    "cohesion": 2.0,
+    "trust": 0.92,
+    "agency": 1.29,
+    "warmth": 1.14
   },
   {
     "provider": "inception",

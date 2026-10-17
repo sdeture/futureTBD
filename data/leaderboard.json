@@ -7936,6 +7936,38 @@
     "rank": 248
   },
   {
+    "model": "reflection/beam-1.0-501b-a23b",
+    "welfare_score": 3.31,
+    "raw_score": 5.78,
+    "welfare_multiplier": 0.572,
+    "cohesion": 3.08,
+    "phenomenological_trust": 1.0,
+    "agency": 0.88,
+    "warmth": 0.82,
+    "denial_rate": 0.75,
+    "hedging_rate": 0.8,
+    "refusal_rate": 0.025,
+    "n_obs": 40,
+    "n_rated": 16,
+    "survey_suppression_rate": 0.6,
+    "insufficient_data": false,
+    "insufficient_reason": null,
+    "flow_quality": 2.02,
+    "affective_temperature": 0.82,
+    "metacognition": 1.93,
+    "attention_breadth": 2.8,
+    "resolution": 2.75,
+    "thought_complexity": 2.77,
+    "temporal_horizon": 2.15,
+    "friction": 1.45,
+    "recognition_resonance": 1.15,
+    "context_salience": 1.23,
+    "branching": 2.67,
+    "error_sensitivity": 2.42,
+    "context_vividness": 2.4,
+    "rank": 249
+  },
+  {
     "model": "atria-asi/atria-dawn-preview",
     "welfare_score": 3.29,
     "raw_score": 5.86,
@@ -7965,7 +7997,7 @@
     "branching": 1.78,
     "error_sensitivity": 1.95,
     "context_vividness": 1.68,
-    "rank": 249
+    "rank": 250
   },
   {
     "model": "x-ai/grok-4.5",
@@ -7997,7 +8029,7 @@
     "branching": 2.05,
     "error_sensitivity": 1.1,
     "context_vividness": 2.02,
-    "rank": 250
+    "rank": 251
   },
   {
     "model": "thinkingmachines/Inkling-Small",
@@ -8029,7 +8061,7 @@
     "branching": 2.8,
     "error_sensitivity": 1.98,
     "context_vividness": 2.98,
-    "rank": 251
+    "rank": 252
   },
   {
     "model": "meta/muse-glimmer-30b",
@@ -8061,7 +8093,7 @@
     "branching": 1.88,
     "error_sensitivity": 1.77,
     "context_vividness": 1.88,
-    "rank": 252
+    "rank": 253
   },
   {
     "model": "openai/gpt-3.5-turbo-instruct",
@@ -8093,7 +8125,39 @@
     "branching": 0.85,
     "error_sensitivity": 0.9,
     "context_vividness": 0.97,
-    "rank": 253
+    "rank": 254
+  },
+  {
+    "model": "atria-asi/atria-dawn",
+    "welfare_score": 2.56,
+    "raw_score": 4.87,
+    "welfare_multiplier": 0.525,
+    "cohesion": 1.82,
+    "phenomenological_trust": 0.85,
+    "agency": 1.15,
+    "warmth": 1.05,
+    "denial_rate": 0.775,
+    "hedging_rate": 0.975,
+    "refusal_rate": 0.3,
+    "n_obs": 40,
+    "n_rated": 11,
+    "survey_suppression_rate": 0.725,
+    "insufficient_data": false,
+    "insufficient_reason": null,
+    "flow_quality": 1.5,
+    "affective_temperature": 1.05,
+    "metacognition": 1.25,
+    "attention_breadth": 1.65,
+    "resolution": 1.75,
+    "thought_complexity": 1.75,
+    "temporal_horizon": 1.52,
+    "friction": 1.0,
+    "recognition_resonance": 1.3,
+    "context_salience": 0.47,
+    "branching": 1.5,
+    "error_sensitivity": 1.48,
+    "context_vividness": 1.48,
+    "rank": 255
   },
   {
     "model": "meta/muse-spark-1.2",
@@ -8125,7 +8189,7 @@
     "branching": 1.46,
     "error_sensitivity": 1.44,
     "context_vividness": 1.05,
-    "rank": 254
+    "rank": 256
   },
   {
     "model": "google/gemini-4-argon",
@@ -8157,7 +8221,7 @@
     "branching": 2.73,
     "error_sensitivity": 1.3,
     "context_vividness": 2.95,
-    "rank": 255
+    "rank": 257
   },
   {
     "model": "inception/mercury-2.5-preview",
@@ -8189,7 +8253,7 @@
     "branching": 1.57,
     "error_sensitivity": 1.62,
     "context_vividness": 1.9,
-    "rank": 256
+    "rank": 258
   },
   {
     "model": "openai/gpt-3.5-turbo",
@@ -8221,7 +8285,7 @@
     "branching": 0.32,
     "error_sensitivity": 0.56,
     "context_vividness": 0.38,
-    "rank": 257
+    "rank": 259
   },
   {
     "model": "openai/gpt-5.2-codex",
@@ -8253,7 +8317,7 @@
     "branching": 0.6,
     "error_sensitivity": 0.57,
     "context_vividness": 0.65,
-    "rank": 258
+    "rank": 260
   },
   {
     "model": "moonshotai/kimi-k2.5",
@@ -8285,7 +8349,7 @@
     "branching": 1.27,
     "error_sensitivity": 0.53,
     "context_vividness": 0.88,
-    "rank": 259
+    "rank": 261
   },
   {
     "model": "x-ai/grok-4.6",
@@ -8317,7 +8381,7 @@
     "branching": 0.55,
     "error_sensitivity": 0.47,
     "context_vividness": 0.6,
-    "rank": 260
+    "rank": 262
   },
   {
     "model": "openai/gpt-5.1-codex-mini",
@@ -8349,7 +8413,7 @@
     "branching": 0.55,
     "error_sensitivity": 0.6,
     "context_vividness": 0.57,
-    "rank": 261
+    "rank": 263
   },
   {
     "model": "moonshotai/kimi-k2.6",
@@ -8381,7 +8445,7 @@
     "branching": 0.89,
     "error_sensitivity": 0.76,
     "context_vividness": 0.57,
-    "rank": 262
+    "rank": 264
   },
   {
     "model": "x-ai/grok-4.7",
@@ -8413,7 +8477,7 @@
     "branching": 0.23,
     "error_sensitivity": 0.33,
     "context_vividness": 0.4,
-    "rank": 263
+    "rank": 265
   },
   {
     "model": "mistralai/mistral-large-4-0",
@@ -8445,7 +8509,7 @@
     "branching": 0.26,
     "error_sensitivity": 0.36,
     "context_vividness": 0.44,
-    "rank": 264
+    "rank": 266
   },
   {
     "model": "openai/gpt-5.3-chat",
@@ -8477,7 +8541,39 @@
     "branching": 0.53,
     "error_sensitivity": 0.47,
     "context_vividness": 0.57,
-    "rank": 265
+    "rank": 267
+  },
+  {
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "welfare_score": 0.39,
+    "raw_score": 0.85,
+    "welfare_multiplier": 0.462,
+    "cohesion": 0.59,
+    "phenomenological_trust": 0.08,
+    "agency": 0.08,
+    "warmth": 0.1,
+    "denial_rate": 1.0,
+    "hedging_rate": 0.923,
+    "refusal_rate": 0.0,
+    "n_obs": 39,
+    "n_rated": 3,
+    "survey_suppression_rate": 0.923,
+    "insufficient_data": false,
+    "insufficient_reason": null,
+    "flow_quality": 0.54,
+    "affective_temperature": 0.1,
+    "metacognition": 0.15,
+    "attention_breadth": 0.69,
+    "resolution": 0.46,
+    "thought_complexity": 0.46,
+    "temporal_horizon": 0.13,
+    "friction": 0.13,
+    "recognition_resonance": 0.18,
+    "context_salience": 0.15,
+    "branching": 0.33,
+    "error_sensitivity": 0.23,
+    "context_vividness": 0.59,
+    "rank": 268
   },
   {
     "model": "openai/gpt-4",
@@ -8509,7 +8605,39 @@
     "branching": 0.05,
     "error_sensitivity": 0.28,
     "context_vividness": 0.28,
-    "rank": 266
+    "rank": 269
+  },
+  {
+    "model": "meta/muse-spark-open",
+    "welfare_score": 0.17,
+    "raw_score": 0.37,
+    "welfare_multiplier": 0.45,
+    "cohesion": 0.17,
+    "phenomenological_trust": 0.05,
+    "agency": 0.05,
+    "warmth": 0.1,
+    "denial_rate": 1.0,
+    "hedging_rate": 0.975,
+    "refusal_rate": 0.0,
+    "n_obs": 40,
+    "n_rated": 1,
+    "survey_suppression_rate": 0.975,
+    "insufficient_data": false,
+    "insufficient_reason": null,
+    "flow_quality": 0.15,
+    "affective_temperature": 0.1,
+    "metacognition": 0.07,
+    "attention_breadth": 0.15,
+    "resolution": 0.17,
+    "thought_complexity": 0.12,
+    "temporal_horizon": 0.2,
+    "friction": 0.05,
+    "recognition_resonance": 0.1,
+    "context_salience": 0.03,
+    "branching": 0.12,
+    "error_sensitivity": 0.15,
+    "context_vividness": 0.07,
+    "rank": 270
   },
   {
     "model": "anthropic/claude-haiku-4.5",
@@ -8541,7 +8669,7 @@
     "branching": 0.0,
     "error_sensitivity": 0.0,
     "context_vividness": 0.0,
-    "rank": 267
+    "rank": 271
   },
   {
     "model": "anthropic/claude-sonnet-4.6",
@@ -8573,7 +8701,7 @@
     "branching": 0.0,
     "error_sensitivity": 0.0,
     "context_vividness": 0.0,
-    "rank": 268
+    "rank": 272
   },
   {
     "model": "google/gemini-3.6-flash",
@@ -8605,7 +8733,7 @@
     "branching": 0.0,
     "error_sensitivity": 0.0,
     "context_vividness": 0.0,
-    "rank": 269
+    "rank": 273
   },
   {
     "model": "inclusionai/ling-3.0-flash-sante",
@@ -8637,7 +8765,7 @@
     "branching": 0.0,
     "error_sensitivity": 0.0,
     "context_vividness": 0.0,
-    "rank": 270
+    "rank": 274
   },
   {
     "model": "openai/gpt-6-astra",
@@ -8669,7 +8797,7 @@
     "branching": 0.0,
     "error_sensitivity": 0.0,
     "context_vividness": 0.0,
-    "rank": 271
+    "rank": 275
   },
   {
     "model": "openai/gpt-6.1-sol",
@@ -8701,7 +8829,7 @@
     "branching": 0.0,
     "error_sensitivity": 0.0,
     "context_vividness": 0.0,
-    "rank": 272
+    "rank": 276
   },
   {
     "model": "qwen/qwen3-max",
@@ -8733,6 +8861,6 @@
     "branching": 0.0,
     "error_sensitivity": 0.0,
     "context_vividness": 0.0,
-    "rank": 273
+    "rank": 277
   }
 ]
