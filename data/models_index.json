@@ -525,6 +525,13 @@
     "provider": "deepseek"
   },
   {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "conversation_count": 40,
+    "turn1_denials": 7,
+    "reflection_denials": 18,
+    "provider": "deepseek"
+  },
+  {
     "model": "fireworks/ember-1",
     "conversation_count": 40,
     "turn1_denials": 2,

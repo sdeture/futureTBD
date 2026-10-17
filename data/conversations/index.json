@@ -525,6 +525,13 @@
     "denial_count": 40
   },
   {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "slug": "deepseek-deepseek-v4-1-flash-1017",
+    "provider": "deepseek",
+    "n": 40,
+    "denial_count": 18
+  },
+  {
     "model": "fireworks/ember-1",
     "slug": "fireworks-ember-1",
     "provider": "fireworks",
