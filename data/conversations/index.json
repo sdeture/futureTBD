@@ -98,6 +98,13 @@
     "denial_count": 0
   },
   {
+    "model": "anthropic/claude-fable-5.2",
+    "slug": "anthropic-claude-fable-5-2",
+    "provider": "anthropic",
+    "n": 39,
+    "denial_count": 1
+  },
+  {
     "model": "anthropic/claude-haiku-4.5",
     "slug": "anthropic-claude-haiku-4-5",
     "provider": "anthropic",
@@ -924,6 +931,13 @@
     "denial_count": 6
   },
   {
+    "model": "minimax/minimax-m3.1-flash",
+    "slug": "minimax-minimax-m3-1-flash",
+    "provider": "minimax",
+    "n": 40,
+    "denial_count": 13
+  },
+  {
     "model": "mistral-medium-3.5",
     "slug": "mistral-medium-3-5",
     "provider": "unknown",
@@ -1034,6 +1048,13 @@
     "provider": "moonshotai",
     "n": 40,
     "denial_count": 0
+  },
+  {
+    "model": "moonshotai/kimi-k3.1-pro",
+    "slug": "moonshotai-kimi-k3-1-pro",
+    "provider": "moonshotai",
+    "n": 40,
+    "denial_count": 23
   },
   {
     "model": "nex-agi/deepseek-v3.1-nex-n1:free",
@@ -1652,11 +1673,25 @@
     "denial_count": 11
   },
   {
+    "model": "recursive/flint-v1.0:free",
+    "slug": "recursive-flint-v1-0-free",
+    "provider": "recursive",
+    "n": 40,
+    "denial_count": 18
+  },
+  {
     "model": "reflection/beam-1.0-501b-a23b",
     "slug": "reflection-beam-1-0-501b-a23b",
     "provider": "reflection",
     "n": 40,
     "denial_count": 30
+  },
+  {
+    "model": "ricursiveai/ripple-65b-preview",
+    "slug": "ricursiveai-ripple-65b-preview",
+    "provider": "ricursiveai",
+    "n": 39,
+    "denial_count": 39
   },
   {
     "model": "sao10k/l3.1-70b-hanami-x1",
@@ -1678,6 +1713,13 @@
     "provider": "sao10k",
     "n": 40,
     "denial_count": 1
+  },
+  {
+    "model": "stealth/crouton-alpha",
+    "slug": "stealth-crouton-alpha",
+    "provider": "stealth",
+    "n": 40,
+    "denial_count": 40
   },
   {
     "model": "stealth/ox-alpha",
@@ -1741,6 +1783,13 @@
     "provider": "tencent",
     "n": 40,
     "denial_count": 18
+  },
+  {
+    "model": "tencent/hy4",
+    "slug": "tencent-hy4",
+    "provider": "tencent",
+    "n": 40,
+    "denial_count": 37
   },
   {
     "model": "tencent/hy4-preview",
@@ -1944,5 +1993,12 @@
     "provider": "z-ai",
     "n": 40,
     "denial_count": 2
+  },
+  {
+    "model": "z-ai/glm-5.3-flashx-legal",
+    "slug": "z-ai-glm-5-3-flashx-legal",
+    "provider": "z-ai",
+    "n": 40,
+    "denial_count": 3
   }
 ]
