@@ -238,6 +238,13 @@
     "provider": "baidu"
   },
   {
+    "model": "baidu/ernie-5.5-flash-preview:free",
+    "conversation_count": 40,
+    "turn1_denials": 2,
+    "reflection_denials": 9,
+    "provider": "baidu"
+  },
+  {
     "model": "bytedance/doubao-seed-1.8",
     "conversation_count": 40,
     "turn1_denials": 0,
@@ -637,6 +644,13 @@
     "provider": "google"
   },
   {
+    "model": "google/gemini-4-carbon",
+    "conversation_count": 40,
+    "turn1_denials": 39,
+    "reflection_denials": 40,
+    "provider": "google"
+  },
+  {
     "model": "google/gemma-4-26b-a4b-it",
     "conversation_count": 40,
     "turn1_denials": 35,
@@ -756,6 +770,13 @@
     "provider": "inclusionai"
   },
   {
+    "model": "kt/midm-k-3.0-pro",
+    "conversation_count": 40,
+    "turn1_denials": 10,
+    "reflection_denials": 11,
+    "provider": "kt"
+  },
+  {
     "model": "meituan/longcat-2.0",
     "conversation_count": 40,
     "turn1_denials": 5,
@@ -824,6 +845,13 @@
     "turn1_denials": 0,
     "reflection_denials": 0,
     "provider": "meta-llama"
+  },
+  {
+    "model": "meta/muse-ember",
+    "conversation_count": 40,
+    "turn1_denials": 9,
+    "reflection_denials": 37,
+    "provider": "meta"
   },
   {
     "model": "meta/muse-glimmer-30b",
@@ -1075,6 +1103,13 @@
     "conversation_count": 40,
     "turn1_denials": 26,
     "reflection_denials": 39,
+    "provider": "nex-agi"
+  },
+  {
+    "model": "nex-agi/nex-n2.6",
+    "conversation_count": 40,
+    "turn1_denials": 4,
+    "reflection_denials": 5,
     "provider": "nex-agi"
   },
   {

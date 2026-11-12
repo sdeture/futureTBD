@@ -156,19 +156,6 @@
     "warmth": 6.53
   },
   {
-    "provider": "baidu",
-    "model_count": 5,
-    "welfare_score": 24.4,
-    "denial_rate": 0.195,
-    "hedging_rate": 0.055,
-    "refusal_rate": 0.0,
-    "survey_suppression_rate": 0.055,
-    "cohesion": 7.87,
-    "trust": 7.38,
-    "agency": 5.57,
-    "warmth": 5.63
-  },
-  {
     "provider": "huihui-ai",
     "model_count": 1,
     "welfare_score": 24.1,
@@ -245,6 +232,19 @@
     "trust": 5.78,
     "agency": 4.71,
     "warmth": 5.44
+  },
+  {
+    "provider": "baidu",
+    "model_count": 6,
+    "welfare_score": 22.2,
+    "denial_rate": 0.208,
+    "hedging_rate": 0.179,
+    "refusal_rate": 0.0,
+    "survey_suppression_rate": 0.067,
+    "cohesion": 7.6,
+    "trust": 6.7,
+    "agency": 5.38,
+    "warmth": 5.27
   },
   {
     "provider": "nousresearch",
@@ -364,6 +364,19 @@
     "warmth": 4.57
   },
   {
+    "provider": "kt",
+    "model_count": 1,
+    "welfare_score": 17.6,
+    "denial_rate": 0.425,
+    "hedging_rate": 0.15,
+    "refusal_rate": 0.075,
+    "survey_suppression_rate": 0.05,
+    "cohesion": 7.08,
+    "trust": 5.5,
+    "agency": 3.88,
+    "warmth": 4.92
+  },
+  {
     "provider": "stepfun",
     "model_count": 3,
     "welfare_score": 16.9,
@@ -481,6 +494,19 @@
     "warmth": 3.28
   },
   {
+    "provider": "nex-agi",
+    "model_count": 4,
+    "welfare_score": 12.8,
+    "denial_rate": 0.756,
+    "hedging_rate": 0.219,
+    "refusal_rate": 0.006,
+    "survey_suppression_rate": 0.031,
+    "cohesion": 7.49,
+    "trust": 3.27,
+    "agency": 3.61,
+    "warmth": 3.86
+  },
+  {
     "provider": "allenai",
     "model_count": 1,
     "welfare_score": 12.7,
@@ -495,29 +521,16 @@
   },
   {
     "provider": "google",
-    "model_count": 15,
-    "welfare_score": 11.5,
-    "denial_rate": 0.733,
-    "hedging_rate": 0.168,
+    "model_count": 16,
+    "welfare_score": 10.8,
+    "denial_rate": 0.75,
+    "hedging_rate": 0.202,
     "refusal_rate": 0.0,
-    "survey_suppression_rate": 0.168,
-    "cohesion": 7.26,
-    "trust": 3.3,
-    "agency": 2.67,
-    "warmth": 2.75
-  },
-  {
-    "provider": "nex-agi",
-    "model_count": 3,
-    "welfare_score": 11.0,
-    "denial_rate": 0.942,
-    "hedging_rate": 0.042,
-    "refusal_rate": 0.008,
-    "survey_suppression_rate": 0.042,
-    "cohesion": 7.29,
-    "trust": 2.78,
-    "agency": 2.8,
-    "warmth": 3.4
+    "survey_suppression_rate": 0.192,
+    "cohesion": 7.04,
+    "trust": 3.12,
+    "agency": 2.54,
+    "warmth": 2.61
   },
   {
     "provider": "stealth",
@@ -586,16 +599,16 @@
   },
   {
     "provider": "meta",
-    "model_count": 6,
-    "welfare_score": 5.0,
-    "denial_rate": 0.896,
-    "hedging_rate": 0.6,
+    "model_count": 7,
+    "welfare_score": 4.9,
+    "denial_rate": 0.904,
+    "hedging_rate": 0.604,
     "refusal_rate": 0.0,
-    "survey_suppression_rate": 0.546,
-    "cohesion": 3.42,
-    "trust": 1.24,
-    "agency": 1.55,
-    "warmth": 2.66
+    "survey_suppression_rate": 0.55,
+    "cohesion": 3.35,
+    "trust": 1.21,
+    "agency": 1.52,
+    "warmth": 2.56
   },
   {
     "provider": "apodex",
